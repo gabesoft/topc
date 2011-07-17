@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+
+<project name="Top Coder Practice" default="compile" basedir=".">
+  <property environment="env" />
+
+  <property name="dir.src" location="src" />
+  <property name="dir.lib" location="lib" />
+
+  <property name="dir.build" location="build" />
+  <property name="dir.build.classes" location="${dir.build}/classes" />
+
+  <property name="dir.test" location="test" />
+  <property name="dir.test.build" location="${dir.build}/test" />
+  <property name="dir.test.build.classes" location="${dir.test.build}/classes" />
+  <property name="dir.test.build.data" location="${dir.test.build}/data" />
+  <property name="dir.test.build.reports" location="${dir.test.build}/reports" />
+
+  <property name="test.suite" value="topc.test.AllTests" />
+  <property name="junit.fork" value="true" />
+  <property name="junit.forkmode" value="once" />
+  <property name="junit.jar" location="env.JUNIT_HOME/junit-4.8.2.jar" />
+
+  <path id="classpath.compile">
+    <fileset dir="${dir.lib}">
+      <include name="**/*.jar"/>
+    </fileset>
+  </path>
+
+  <path id="classpath.test.compile">
+    <path refid="classpath.compile" />
+    <pathelement location="${dir.build.classes}" />
+    <pathelement location="${junit.jar}" />
+  </path>
+
+  <path id="classpath.test">
+    <path refid="classpath.test.compile" />
+    <pathelement location="${dir.test.build.classes}" />
+  </path>
+
+  <target name="init">
+    <mkdir dir="${dir.build}" />
+    <mkdir dir="${dir.build.classes}" />
+  </target>
+
+  <target name="compile" depends="init">
+    <javac debug="true"
+      destdir="${dir.build.classes}"
+      srcdir="${dir.src}"
+      includeantruntime="false">
+      <classpath refid="classpath.compile" />
+    </javac>
+  </target>
+
+  <target name="test-init" depends="compile">
+    <delete dir="${dir.test.build.data}" />
+    <delete dir="${dir.test.build.reports}" />
+
+    <mkdir dir="${dir.test.build}" />
+    <mkdir dir="${dir.test.build.classes}" />
+    <mkdir dir="${dir.test.build.data}" />
+    <mkdir dir="${dir.test.build.reports}" />
+  </target>
+
+  <target name="test-compile" depends="test-init">
+    <javac debug="true"
+      destdir="${dir.test.build.classes}"
+      srcdir="${dir.test}"
+      includeantruntime="yes">
+      <classpath refid="classpath.test.compile" />
+    </javac>
+  </target>
+
+  <target name="test" depends="test-compile">
+    <junit printsummary="true" haltonfailure="yes">
+      <classpath refid="classpath.test" />
+      <test name="${test.suite}" />
+      <formatter type="plain" usefile="false" />
+    </junit>
+  </target>
+
+  <target name="clean" description="Delete all generated files">
+    <delete dir="${dir.build}" />
+    <delete dir="${dir.test.build}" />
+  </target>
+
+</project>
