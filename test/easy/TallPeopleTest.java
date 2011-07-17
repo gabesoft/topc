@@ -1,13 +1,13 @@
 package topc.test.easy;
 
-import static org.junit.Assert.*;
 import junit.framework.*;
+import static org.junit.Assert.*;
 import org.junit.Test;
 import topc.easy.*;
 
 public class TallPeopleTest {
   @Test
-  public void testCase1() throws Exception {
+  public void testCase1() {
     String[] people = {
       "9 2 3",
       "4 8 7"};
