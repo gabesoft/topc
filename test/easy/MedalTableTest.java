@@ -9,7 +9,8 @@ import topc.easy.*;
 public class MedalTableTest {
   MedalTable _calc = new MedalTable();
 
-  @Test public void testCase1() {
+  @Test 
+  public void testCase1() {
     String[] data = {"ITA JPN AUS", "KOR TPE UKR", "KOR KOR GBR", "KOR CHN TPE"};
     String[] expected = { 
       "KOR 3 1 0",
