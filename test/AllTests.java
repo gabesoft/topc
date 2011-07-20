@@ -9,5 +9,7 @@ import topc.test.easy.*;
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
   BusinessTasksTest.class,
-  TallPeopleTest.class})
+  TallPeopleTest.class,
+  TableSeatingTest.class
+})
 public class AllTests { }
