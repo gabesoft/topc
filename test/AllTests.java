@@ -10,6 +10,7 @@ import topc.test.easy.*;
 @Suite.SuiteClasses({
   BusinessTasksTest.class,
   TallPeopleTest.class,
-  TableSeatingTest.class
+  TableSeatingTest.class,
+  MedalTableTest.class
 })
 public class AllTests { }
