@@ -69,14 +69,20 @@ public class SmartWordToy {
       Word[] next = new Word[chars.length * 2];
       int count = 0;
       for (int i = 0; i < chars.length; i++) {
-        char[] fw = Arrays.copyOf(chars, chars.length);
-        char[] bk = Arrays.copyOf(chars, chars.length);
+        char[] fw = arrayCopy(chars);
+        char[] bk = arrayCopy(chars);
         fw[i] = (fw[i] == 'z') ? 'a' : (char)(fw[i] + 1);
         bk[i] = (bk[i] == 'a') ? 'z' : (char)(bk[i] - 1);
         next[count++] = new Word(new String(fw), _level + 1);
         next[count++] = new Word(new String(bk), _level + 1);
       }
       return next;
+    }
+
+    char[] arrayCopy(char[] source) {
+      char[] copy = new char[source.length];
+      System.arraycopy(source, 0, copy, 0, copy.length);
+      return copy;
     }
   }
 }
