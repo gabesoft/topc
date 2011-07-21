@@ -11,6 +11,7 @@ import topc.test.easy.*;
   BusinessTasksTest.class,
   TallPeopleTest.class,
   TableSeatingTest.class,
-  MedalTableTest.class
+  MedalTableTest.class,
+  SmartWordToyTest.class
 })
 public class AllTests { }

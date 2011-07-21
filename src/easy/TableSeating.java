@@ -35,8 +35,10 @@ public class TableSeating  {
       // for all choices for the current party size
       for (int j = 0; j < n - i + 1; j++) {
 
-        // only look at seatings that have a table more than the current seating
-        // and the block the tables taken by the current seating
+        // only look at seatings that have tables occupied in different
+        // positions than the current seating
+        // and for the next seating to solve keep the tables of the original 
+        // seating and add the tables of the current seating
         if ((mask & umask) == 0) {
           expected += solve(mask | umask);
           count++;
