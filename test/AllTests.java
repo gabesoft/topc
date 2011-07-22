@@ -5,6 +5,7 @@ import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import topc.test.easy.*;
+import topc.test.bfs.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -12,6 +13,7 @@ import topc.test.easy.*;
   TallPeopleTest.class,
   TableSeatingTest.class,
   MedalTableTest.class,
-  SmartWordToyTest.class
+  SmartWordToyTest.class,
+  RevolvingDoorsTest.class
 })
 public class AllTests { }

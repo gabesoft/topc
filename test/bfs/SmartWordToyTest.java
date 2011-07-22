@@ -1,11 +1,11 @@
-package topc.test.easy;
+package topc.test.bfs;
 
 import junit.framework.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 import java.util.*;
 
-import topc.easy.*;
+import topc.bfs.*;
 
 public class SmartWordToyTest {
   SmartWordToy _calc = new SmartWordToy();
