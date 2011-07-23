@@ -259,11 +259,11 @@ public class RevolvingDoors {
           doori = loci + 1;
           doorj = locj;
           door = _maze[doori][doorj];
-          if (posi == loci && posj < locj && (door & (LEFT_TOP /*| RIGHT_BTM*/)) == 0) {
+          if (posi == loci && posj < locj && (door & LEFT_TOP) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, DOOR_LEFT, DOOR_RIGHT, EMPTY, EMPTY, LEFT_TOP); 
           }
-          else if (posi == loci && posj > locj && (door & (RIGHT_TOP /*| LEFT_BTM*/)) == 0) {
+          else if (posi == loci && posj > locj && (door & RIGHT_TOP) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, DOOR_LEFT, DOOR_RIGHT, EMPTY, EMPTY, RIGHT_TOP); 
           }
@@ -272,11 +272,11 @@ public class RevolvingDoors {
           doori = loci - 1;
           doorj = locj;
           door = _maze[doori][doorj];
-          if (posi == loci && posj < locj && (door & (LEFT_BTM /*| RIGHT_TOP*/)) == 0) {
+          if (posi == loci && posj < locj && (door & LEFT_BTM) == 0){
             maze = copyMaze();
             rotate(maze, doori, doorj, DOOR_LEFT, DOOR_RIGHT, EMPTY, EMPTY, LEFT_BTM); 
           } 
-          else if (posi == loci && posj > locj && (door & (RIGHT_BTM /*| LEFT_TOP*/)) == 0) {
+          else if (posi == loci && posj > locj && (door & RIGHT_BTM) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, DOOR_LEFT, DOOR_RIGHT, EMPTY, EMPTY, RIGHT_BTM); 
           } 
@@ -285,11 +285,11 @@ public class RevolvingDoors {
           doori = loci;
           doorj = locj + 1;
           door = _maze[doori][doorj];
-          if (posj == locj && posi < loci && (door & (UP_LEFT /*| DOWN_RIGHT*/)) == 0) {
+          if (posj == locj && posi < loci && (door & UP_LEFT) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, EMPTY, EMPTY, DOOR_UP, DOOR_DOWN, UP_LEFT); 
           }
-          else if (posj == locj && posi > loci && (door & (DOWN_LEFT /*| UP_RIGHT*/)) == 0) {
+          else if (posj == locj && posi > loci && (door & DOWN_LEFT) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, EMPTY, EMPTY, DOOR_UP, DOOR_DOWN, DOWN_LEFT); 
           }
@@ -298,11 +298,11 @@ public class RevolvingDoors {
           doori = loci;
           doorj = locj - 1;
           door = _maze[doori][doorj];
-          if (posj == locj && posi < loci && (door & (UP_RIGHT /*| DOWN_LEFT*/)) == 0) {
+          if (posj == locj && posi < loci && (door & UP_RIGHT) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, EMPTY, EMPTY, DOOR_UP, DOOR_DOWN, UP_RIGHT); 
           }
-          else if (posj == locj && posi > loci && (door & (DOWN_RIGHT /*| UP_LEFT*/)) == 0) {
+          else if (posj == locj && posi > loci && (door & DOWN_RIGHT) == 0) {
             maze = copyMaze();
             rotate(maze, doori, doorj, EMPTY, EMPTY, DOOR_UP, DOOR_DOWN, DOWN_RIGHT); 
           }
