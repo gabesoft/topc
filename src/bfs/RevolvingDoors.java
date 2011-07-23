@@ -2,7 +2,7 @@ package topc.bfs;
 
 import java.util.*;
 
-// SRM 223 Div 1 : 250
+// SRM 223 Div 1 : 250 (BFS)
 public class RevolvingDoors {
   static public final int EMPTY = -1;
   static public final int WALL = -2;
