@@ -9,11 +9,11 @@ import topc.test.bfs.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
-  BusinessTasksTest.class,
-  TallPeopleTest.class,
-  TableSeatingTest.class,
-  MedalTableTest.class,
-  SmartWordToyTest.class,
+  //BusinessTasksTest.class,
+  //TallPeopleTest.class,
+  //TableSeatingTest.class,
+  //MedalTableTest.class,
+  //SmartWordToyTest.class,
   RevolvingDoorsTest.class
 })
 public class AllTests { }
