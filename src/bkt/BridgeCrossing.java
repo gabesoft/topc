@@ -7,7 +7,30 @@ public class BridgeCrossing {
   Queue<State> states;
   int time;
 
-  public int minTime(int[] times) {
+  public int minTime(int[] t) {
+    int n = t.length;
+    int[] b = new int[n];
+
+    Arrays.sort(t);
+
+    b[0] = t[0];
+    if (n > 1) {
+      b[1] = t[1];
+    }
+    for (int i = 2; i < n; i++) {
+      int one = b[i - 2] + t[0] + t[i] + 2 * t[1];
+      int two = b[i - 1] + t[0] + t[i];
+      b[i] = Math.min(one, two);
+    }
+   
+    return b[n - 1];
+  }
+
+  void debug(Object...os) {
+    System.out.println(Arrays.deepToString(os));
+  }
+
+  public int minTimeOld(int[] times) {
     time = Integer.MAX_VALUE;
     states = new LinkedList<State>();
     states.add(new State(times));
