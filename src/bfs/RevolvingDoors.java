@@ -28,14 +28,17 @@ public class RevolvingDoors {
   int rows = 0;
   int cols = 0;
   Queue<Maze> mazes;
+  HashSet<String> uniqs;
 
   public int turns(String[] map) {
     mazes = new LinkedList<Maze>();
+    uniqs = new HashSet<String>();
     rows = map.length;
     cols = map[0].length();
 
     int[][] maze = new int[rows][cols];
     int start = 0;
+    int end = 0;
     for (int i = 0; i < rows; i++) {
       char[] row = map[i].toCharArray();
       for (int j = 0; j < cols; j++) {
@@ -44,7 +47,10 @@ public class RevolvingDoors {
             maze[i][j] = EMPTY;
             start = encode(i, j);
             break;
-          case 'E': maze[i][j] = END; break;
+          case 'E': 
+            maze[i][j] = EMPTY;
+            end = encode(i, j);
+            break;
           case 'O': maze[i][j] = DOOR; break;
           case '-': maze[i][j] = DOOR_H; break;
           case '|': maze[i][j] = DOOR_V; break;
@@ -70,7 +76,9 @@ public class RevolvingDoors {
       }
     }
 
-    mazes.add(new Maze(maze, 0, start));
+    Maze first = new Maze(maze, 0, start, end);
+    mazes.add(first);
+    uniqs.add(first.toString());
     while (mazes.size() > 0) {
       Maze curr = mazes.remove();
       if (solve(curr)) {
@@ -84,30 +92,19 @@ public class RevolvingDoors {
   boolean solve(Maze maze) {
     boolean cont = true;
     HashSet<Integer> seen = new HashSet<Integer>();
-    //System.out.println("maze.getStart(): " + Arrays.toString(decode(maze.getStart())));
+    HashSet<Integer> mark = new HashSet<Integer>();
     seen.add(maze.getStart());
     while (cont) {
       int size = seen.size();
       Object[] moves = seen.toArray();
       for (int i = 0; i < moves.length; i++) {
-        //System.out.println("curr: " + Arrays.toString(decode((Integer)moves[i])));
-        if (advance((Integer)moves[i], maze, seen)) {
+        int move = ((Integer)moves[i]).intValue();
+        if (!mark.contains(move) && advance(move, maze, seen)) {
           return true;
         }
+        mark.add(move);
       }
-      // TODO: remove start
-      int[][] copy = maze.copyMaze(); 
-      for (int j = 0; j <copy.length; j++) {
-        for (int k = 0; k < copy.length; k++) {
-          int pos = encode(j, k);
-          if (seen.contains(pos)) {
-            copy[j][k] = SEEN;
-          }
-        }
-      }
-      printMaze(copy);
-      // TODO: remove end
-      cont = size < seen.size();  // TODO: remove elements from set and ( cont = set > 0 )
+      cont = size < seen.size();
     }
     return false;
   }
@@ -117,23 +114,24 @@ public class RevolvingDoors {
     for (int cell : maze.getAdjCells(position)) {
       int v = maze.getValue(cell);
       int door = -1;
+
+      if (cell == maze.getEnd() && v == EMPTY) {
+        found = true;
+        break;
+      }
+
       switch (v) {
-        case EMPTY      : 
-          seen.add(cell); 
-          break;
-        case END        : 
-          found = true; 
-          break;
+        case EMPTY      : seen.add(cell); break;
         case DOOR_UP    :
         case DOOR_DOWN  :
         case DOOR_LEFT  :
         case DOOR_RIGHT :
-          Maze next = maze.pushDoor(position, cell);
-          if (next != null) {
-            mazes.add(next);
-            //System.out.println("mazes.size(): " + mazes.size() + " level: " + maze.getLevel());
-          }
-          break;
+                          Maze next = maze.pushDoor(position, cell);
+                          if (next != null && !uniqs.contains(next.toString())) {
+                            mazes.add(next);
+                            uniqs.add(next.toString());
+                          }
+                          break;
       }
     }
     return found;
@@ -176,21 +174,31 @@ public class RevolvingDoors {
     int[][] _maze;
     int _level;
     int _start;
+    int _end;
 
-    public Maze(int[][] maze, int level, int start) {
+    public Maze(int[][] maze, int level, int start, int end) {
       _maze = maze;
       _level = level;
       _start = start;
+      _end = end;
     }
+
     public int getLevel() {
       return _level;
     }
+
     public int getStart() {
       return _start;
     }
+
+    public int getEnd() {
+      return _end;
+    }
+
     public int[][] getMaze() {
       return _maze;
     }
+
     public int[] getAdjCells(int position) {
       int[] loc = RevolvingDoors.decode(position);
       ArrayList<Integer> adj = new ArrayList<Integer>();
@@ -208,26 +216,32 @@ public class RevolvingDoors {
       }
       return res;
     }
+
     public int getValue(int position) {
       int[] loc = RevolvingDoors.decode(position);
       return _maze[loc[0]][loc[1]];
     }
+
     public int getBelow(int position) {
       int[] loc = RevolvingDoors.decode(position);
       return _maze[loc[0]+1][loc[1]];
     }
+
     public int getAbove(int position) {
       int[] loc = RevolvingDoors.decode(position);
       return _maze[loc[0]-1][loc[1]];
     }
+
     public int getLeft(int position) {
       int[] loc = RevolvingDoors.decode(position);
       return _maze[loc[0]][loc[1]-1];
     }
+
     public int getRight(int position) {
       int[] loc = RevolvingDoors.decode(position);
       return _maze[loc[0]][loc[1]+1];
     }
+
     public Maze pushDoor(int position, int doorCell) {
       int[] pos = RevolvingDoors.decode(position);
       int[] loc = RevolvingDoors.decode(doorCell);
@@ -295,9 +309,9 @@ public class RevolvingDoors {
           break;
       }
 
-      //return maze != null ? new Maze(maze, _level + 1, start) : null;
-      return maze != null ? new Maze(maze, _level + 1, start) : null;
+      return maze != null ? new Maze(maze, _level + 1, start, _end) : null;
     }
+
     public void rotate(int[][] maze, int i, int j, int left, int right, int up, int down, int flag) {
       maze[i][j] |= flag;
       maze[i][j+1] = right;
@@ -305,6 +319,7 @@ public class RevolvingDoors {
       maze[i-1][j] = up;
       maze[i+1][j] = down;
     }
+
     public int[][] copyMaze() {
       int rows = _maze.length;
       int cols = _maze[0].length;
@@ -316,37 +331,18 @@ public class RevolvingDoors {
       }
       return copy;
     }
-  }
 
-  class MazeDelta {
-    int _flag;
-    int _right;
-    int _left;
-    int _up;
-    int _down;
-    int _start;
-    int _level;
-    int _i, _j;
-
-    public MazeDelta(int right, int left, int up, int down, int flag, int i, int j, int start, int level) {
-      _flag = flag;
-      _right = right;
-      _left = left;
-      _up = up;
-      _down = down;
-      _start = start;
-      _level = level;
-      _i = i;
-      _j = j;
-    }
-
-    public Maze getMaze(int[][] maze) {
-      maze[_i][_j] |= _flag;
-      maze[_i][_j+1] = _right;
-      maze[_i][_j-1] = _left;
-      maze[_i-1][_j] = _up;
-      maze[_i+1][_j] = _down;
-      return new Maze(maze, _level, _start);
+    public String toString() {
+      int rows = _maze.length;
+      int cols = _maze[0].length;
+      StringBuilder str = new StringBuilder();
+      for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+          str.append(_maze[i][j] > 0 ? 0 : _maze[i][j]);
+        }
+      }
+      str.append(_start);
+      return str.toString();
     }
   }
 }
