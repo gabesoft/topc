@@ -18,6 +18,7 @@ import topc.test.dp.*;
   //SmartWordToyTest.class,
   //RevolvingDoorsTest.class,
   //BridgeCrossingTest.class,
-  ZigZagTest.class
+  //ZigZagTest.class,
+  BadNeighborsTest.class
 })
 public class AllTests { }

@@ -2,7 +2,7 @@ package topc.dp;
 
 import java.util.*;
 
-// 2003 TCCC Semifinals 3 (dynamic programming)
+// 2003 TCCC Semifinals 3 : 300 (dynamic programming)
 public class ZigZag {
   public int longestZigZag(int[] seq) {
     int n = seq.length;
