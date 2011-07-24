@@ -95,7 +95,6 @@ public class BridgeCrossing {
       _time += Math.max(_right[i], _right[j]);
 
       if (_right.length > 2) {
-
         int[] next = new int[_right.length - 1];
         int count = 1;
         next[0] = _left.poll();
