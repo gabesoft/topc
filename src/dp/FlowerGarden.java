@@ -4,6 +4,7 @@ import java.util.*;
 
 // 2004 TCCC Round 1 : 500 (dynamic programming)
 public class FlowerGarden {
+
   int n;
   int[] h;
   int[] b;

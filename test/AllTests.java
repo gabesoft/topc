@@ -20,6 +20,7 @@ import topc.test.dp.*;
   //BridgeCrossingTest.class,
   //ZigZagTest.class,
   //BadNeighborsTest.class,
-  FlowerGardenTest.class
+  //FlowerGardenTest.class,
+  AvoidRoadsTest.class
 })
 public class AllTests { }
