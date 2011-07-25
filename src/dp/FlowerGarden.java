@@ -18,36 +18,27 @@ public class FlowerGarden {
     sort();
 
     List<Integer> o = new ArrayList<Integer>();
-
     for (int i = 0; i < n; i++) {
       int k = -1;
       for (int j = 0; j < i; j++) {
-        if (blocks(i,j)) {
-          k = o.indexOf(h[j]);
-          debug(h[i], "blocks", h[j], "k", k);
-          //k = j > 0 ? j - 1 : 0;
+        if (blocks(i, o.get(j))) {
+          k = j;
           break;
         }
       }
       if (k > -1) {
-        o.add(k, h[i]);
+        o.add(k, i);
       } else {
-        o.add(h[i]);
+        o.add(i);
       }
     }
 
     int[] res = new int[n];
     for (int i = 0; i < n; i++) {
-      res[i] = o.get(i).intValue();
+      res[i] = h[o.get(i).intValue()];
     }
-
-    debug("h", h);
-    debug("b", b);
-    debug("w", w);
-    debug("res", res);
-    System.out.println("");
-
     reverse(res);
+
     return res;
   }
 
