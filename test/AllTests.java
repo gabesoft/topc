@@ -21,6 +21,7 @@ import topc.test.dp.*;
   //ZigZagTest.class,
   //BadNeighborsTest.class,
   //FlowerGardenTest.class,
-  AvoidRoadsTest.class
+  //AvoidRoadsTest.class,
+  JewelryTest.class
 })
 public class AllTests { }
