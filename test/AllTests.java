@@ -22,6 +22,7 @@ import topc.test.dp.*;
   //BadNeighborsTest.class,
   //FlowerGardenTest.class,
   //AvoidRoadsTest.class,
-  JewelryTest.class
+  //JewelryTest.class,
+  StripePainterTest.class
 })
 public class AllTests { }
