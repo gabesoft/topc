@@ -66,7 +66,7 @@ public class Jewelry {
         }
       }
     }
-    
+
     long tot = 0;
     for (int i = 1; i < 30001; i++) {
       for (int j = 0; j < n-1; j++) {
