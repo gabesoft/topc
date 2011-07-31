@@ -4,145 +4,113 @@ import java.util.*;
 
 // SRM 150 Div 1 : 500 (dynamic programming)
 public class StripePainter {
-  int[] colors;
-  //int[] counts;
-  
+  static public final int FST_CHAR = (int)'A';
+  static public final int LST_CHAR = (int)'Z';
+  static public final int NIL_CHAR = 0;
+  HashMap<String, Integer> cache;
+
   public int minStrokes(String stripes) {
-    colors = new int[stripes.length()];
-    char[] chars = stripes.toCharArray();
-    int n = 0;
-    for (int i = 0; i < colors.length; i++) {
-      colors[i] = -1;
-    }
-    for (int i = 0; i < chars.length;) {
-      char c = chars[i];
-      int v = Character.getNumericValue(c);
-      //counts[v-10]++;
-      colors[n++] = v;
-      i++;
-      while (i < chars.length && chars[i] == c) { i++; }
-    }
+    cache = new HashMap<String, Integer>();
+    //debug("FST_CHAR", FST_CHAR);
+    //debug("LST_CHAR", LST_CHAR);
+    //debug("(char)'A'", (char)'A');
+    //debug("(char)'Z'", (char)'Z');
+    //debug("Character.valueOf('A')", Character.valueOf('A'));
+    //debug("Character.valueOf('A')", Character.valueOf('A').charValue());
 
-    boolean cont = true;
-    int min = 0;
-    while (true) {
-      int index = longest();
-      debug("colors", colors);
-      debug("index", index);
-      debug("min", min);
-      if (index == -1) {
-        break;
-      }
-      int c = colors[index];
-      for (int i = index; i < colors.length; i++) {
-        if (colors[i] == -1) {
-          break;
-        }
-        if (colors[i] == c) {
-          colors[i] = -1;
-        }
-      }
-      min++;
-    }
+    return solve(stripes);
 
-    return min;
-
-
-
-    //debug("Character.getNumericValue('A')", Character.getNumericValue('A'));
-    //debug("Character.getNumericValue('Z')", Character.getNumericValue('Z'));
-    //debug("counts", counts);
-    //debug("colors", colors);
-    //return count(0, n);
+    //debug("remdups('ABBCDC')", remdups("ABBCDC"));
+    //debug("remdups('BBCDC')", remdups("BBCDC"));
+    //debug("remdups('BB')", remdups("BB"));
+    //return 0;
   }
 
-  int longest() {
-    int cmax = 0;
-    int tmax = 0;
-    int idx = -1;
-    int color = 0;
+  int solve(String stripes) {
+    String input = remdups(stripes);
+    debug("input", input, cache.containsKey(input) ? cache.get(input) : 0);
 
-    int[][] work = new int[36][2];
-    for (int i = 0; i < colors.length; i++) {
-      if (colors[i] == -1) {
-        if (cmax > tmax) {
-          tmax = cmax;
-          idx = work[color][1];
-        }
-        work = new int[36][2];
-      }
-      while (i < colors.length && colors[i] == -1) { i++; }
-      if (i >= colors.length) {
+    if (input.length() == 0) {
+      return 0; 
+    } 
+    else if (input.length() == 1) {
+      return 1;
+    }
+    else if (input.length() == 2) {
+      return 2;
+    }
+    else if (cache.containsKey(input)) {
+      return cache.get(input);
+    }
+
+    char[] chars = input.toCharArray();
+    assert chars.length > 2;
+
+    if (chars.length == 3) {
+      return (chars[0] == chars[2]) ? 2 : 3;
+    }
+    if (chars.length == 4) {
+      return (chars[0] == chars[3] || chars[0] == chars[2] || chars[1] == chars[3]) ? 3 : 4;
+    }
+
+    int[] counts = new int[LST_CHAR + 1]; 
+    for (int i = 0; i < chars.length; i++) {
+      int c = (int)chars[i];
+      counts[c]++;
+    }
+
+    boolean hasOnes = false;
+    for (int i = 1; i < counts.length; i++) {
+      if (counts[i] == 1) {
+        hasOnes = true;
         break;
       }
-
-      int c = colors[i];
-      int l = i;
-      for (int j = i+1; j < colors.length && colors[j] > -1; j++) {
-        if (colors[j] == c && (j == colors.length - 1 || colors[j+1] == -1)) {
-          l = j;
-        }
-      }
-      if (l > i) {
-        return i;
-      }
-
-      work[c][0]++;
-      if (work[c][0] == 1) {
-        work[c][1] = i;
-      }
-      if (work[c][0] > cmax) {
-        cmax = work[c][0];
-        color = c;
-      }
     }
-
-    if (cmax > tmax) {
-      idx = work[color][1];
-    }
-
-    return idx;
-  }
-
-  int count(int s, int e) {
-    debug(">>", colors);
-    debug(">>", colors[s], s, "-", e);
-    debug("longest()", longest());
 
     int total = 0;
-    for (int i = s; i < e; i++) {
-      int c = colors[i];
-      int l = last(i, e);
-      if (c == -1) { continue; }
-      if (l == -1) {
-        total++;
-      } else {
-        total++;
-        total += count(i+1, l);
-        i = l;
+    if (hasOnes) {
+      for (int i = 1; i < counts.length; i++) {
+        if (counts[i] == 1) {
+          char c = (char)i;
+          for (int j = 0; j < chars.length; j++) {
+            if (chars[j] == c) {
+              chars[j] = (char)NIL_CHAR;
+              total++;
+            }
+          }
+        }
       }
+      total += solve(new String(chars));
+    } else {
+      int min = Integer.MAX_VALUE - 1;
+      for (int i = 0; i < chars.length; i++) {
+        if (chars[i] == NIL_CHAR) { continue; }
+        char[] next = chars.clone();
+        next[i] = NIL_CHAR;
+        int t = solve(new String(next));
+        if (t < min) { min = t; }
+      }
+      total = 1 + min;
     }
 
-    debug("<<", colors[s], s, "-", e, "total", total);
+    cache.put(input, total);
     return total;
   }
 
-  int last(int i, int e) {
-    int index = -1;
-    for (int j = i+1; j < e; j++) {
-      if (colors[j] == colors[i]) {
-        index = j;
-        colors[j] = -1;
-      }
+  String remdups(String input) {
+    if (input.length() == 0) { return input; }
+
+    char[] chars = input.toCharArray();
+    StringBuilder str = new StringBuilder();
+    str.append(chars[0]);
+    for (int i = 1; i < chars.length; i++) {
+      if (chars[i] == NIL_CHAR) { continue; }
+      char p = str.charAt(str.length() - 1);
+      char c = chars[i];
+      if (c != p) { str.append(c); }
     }
-    colors[i] = -1;
-    return index;
-    //for (int j = e-1; j > i; j--) {
-      //if (colors[j] == colors[i]) {
-        //return j;
-      //}
-    //}
-    //return -1;
+
+    return str.toString();
   }
 
   void debug(Object...os) {

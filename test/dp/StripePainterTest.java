@@ -64,7 +64,7 @@ public class StripePainterTest {
     assertEquals(1, _calc.minStrokes("X"));
   }
 
-  @Test
+  //@Test
   public void case12() {
     assertEquals(4, _calc.minStrokes("RGBGRB"));
   }
@@ -89,7 +89,7 @@ public class StripePainterTest {
     assertEquals(26, _calc.minStrokes("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
   }
 
-  //@Test
+  @Test
   public void case17() {
     assertEquals(8, _calc.minStrokes("AEBEACABDABDB"));
   }
