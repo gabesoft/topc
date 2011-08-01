@@ -15,10 +15,15 @@ public class StripePainter {
       }
     }
 
-    return solve(stripes, 0, n-1, '.');
+    int res = solve(stripes, 0, n-1, '.');
+    //debug("data", data);
+
+    return res;
   }
 
   int solve(String input, int left, int right, char c) {
+    //debug("input", input, left, right, c);
+
     if (left > right) { return 0; }
     if (left == right) { return c == input.charAt(left) ? 0 : 1; }
 
@@ -26,7 +31,8 @@ public class StripePainter {
       return data[left][right][c]; 
     }
     if (input.charAt(left) == c) {
-      return data[left][right][c] = solve(input, left + 1, right, c);
+      data[left][right][c] = solve(input, left + 1, right, c);
+      return data[left][right][c]; 
     }
 
     int min = Integer.MAX_VALUE;
