@@ -23,6 +23,7 @@ import topc.test.dp.*;
   //FlowerGardenTest.class,
   //AvoidRoadsTest.class,
   //JewelryTest.class,
+  FibTest.class,
   StripePainterTest.class
 })
 public class AllTests { }
