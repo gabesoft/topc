@@ -22,7 +22,7 @@ public class StripePainter {
   }
 
   int solve(String input, int left, int right, char c) {
-    //debug("input", input, left, right, c);
+    debug("input", input, left, right, c, input.substring(left, right < left ? left : right));
 
     if (left > right) { return 0; }
     if (left == right) { return c == input.charAt(left) ? 0 : 1; }
