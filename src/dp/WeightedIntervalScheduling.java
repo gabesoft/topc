@@ -27,12 +27,28 @@ public class WeightedIntervalScheduling {
     int[] cache = new int[n];
     Arrays.fill(cache, -1);
 
-    int res = solveRec(n - 1, ivals, cache);
+    int resRec = solveRec(n - 1, ivals, cache);
+    int resIter = solveIter(ivals);
+    assert resRec == resIter : "results differ";
 
     printSolution(n - 1, ivals, cache);
     System.out.println("");
+    
+    return resRec;
+  }
 
-    return res;
+  int solveIter(Interval[] ivals) {
+    int n = ivals.length;
+    int[] data = new int[n];
+    
+    data[0] = ivals[0].getWeight();
+    for (int i = 1; i < data.length; i++) {
+      Interval ival = ivals[i];
+      int m = ival.getp() > -1 ? data[ival.getp()] : 0;
+      data[i] = Math.max(ival.getWeight() + m, data[i-1]);
+    }
+
+    return data[n-1];
   }
 
   void printSolution(int k, Interval[] ivals, int[] cache) {

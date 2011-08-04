@@ -10,6 +10,12 @@ public class WeightedIntervalSchedulingTest {
   WeightedIntervalScheduling _calc = new WeightedIntervalScheduling();
 
   @Test 
+  public void case0() {
+    String[] data = { "0:4:2" };
+    assertEquals(2, _calc.maxWeight(data));
+  }
+
+  @Test 
   public void case1() {
     String[] data = { "0:4:2", "1:7:4", "5:9:4", "2:12:7", "10:13:2", "11:14:1" };
     assertEquals(8, _calc.maxWeight(data));

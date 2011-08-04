@@ -44,6 +44,7 @@
 
   <target name="compile" depends="init">
     <javac debug="true"
+      source="1.5"
       destdir="${dir.build.classes}"
       srcdir="${dir.src}"
       includeantruntime="false">
@@ -71,10 +72,11 @@
   </target>
 
   <target name="test" depends="test-compile">
-    <junit printsummary="true" haltonfailure="yes">
+    <junit printsummary="true" haltonfailure="yes" fork="true">
       <classpath refid="classpath.test" />
       <test name="${test.suite}" />
       <formatter type="plain" usefile="false" />
+      <assertions><enable/></assertions>
     </junit>
   </target>
 
