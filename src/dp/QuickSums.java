@@ -3,11 +3,18 @@ package topc.dp;
 import java.util.*;
 
 public class QuickSums {
+  int[][] data;
+
   public int minSums(String numbers, int sum) {
     char[] chars = numbers.toCharArray();
     int n = chars.length;
     int[] nums = new int[n];
-    
+
+    data = new int[sum+1][n+1];
+    for (int i = 0; i < data.length; i++) {
+      Arrays.fill(data[i], -1);
+    }
+
     for (int i = 0; i < chars.length; i++) {
       nums[i] = Character.getNumericValue(chars[i]);
     }
@@ -21,12 +28,14 @@ public class QuickSums {
     if (n == 0) { return sum == 0 ? 0 : 1; }
     if (n == 1) { return nums[0] == sum ? 0 : -1; }
 
-    if (sum == 0) { return arrsum(nums) == 0 ? 0 : -1; }
-    if (sum < 0) { return -1; }
+    int nsum = arrsum(nums);
+    if (sum == 0 && sum == nsum) { return 0; }
+    if (sum < nsum) { return -1; }
+    if (data[sum][n] > -1) { return data[sum][n]; }
 
     int[] n1 = new int[n-1];
     int[] n2 = new int[n-1];
-    
+
     for (int i = 0; i < n1.length; i++) {
       n1[i] = nums[i+1];
       n2[i] = nums[i+1];
@@ -38,10 +47,12 @@ public class QuickSums {
     int b = solve(n2, sum);
 
     if (a == -1 || b == -1) {
-      return a == -1 ? b : a + 1;
+      data[sum][n] = a == -1 ? b : a + 1;
+    } else {
+      data[sum][n] = Math.min(a + 1, b);
     }
 
-    return Math.min(a + 1, b);
+    return data[sum][n];
   }
 
   int arrsum(int[] nums) {
