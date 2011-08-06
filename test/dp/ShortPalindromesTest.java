@@ -25,12 +25,12 @@ public class ShortPalindromesTest {
     assertEquals("Q", _calc.shortest("Q"));
   }
 
-  @Test
+  //@Test
   public void case4() {
     assertEquals("MADAMIMADAM", _calc.shortest("MADAMIMADAM"));
   }
 
-  //@Test
+  @Test
   public void case5() {
     String expected = "AFLRCAGIOEOUAEOCEGRURGECOEAUOEOIGACRLFA";
     String actual = _calc.shortest("ALRCAGOEUAOEURGCOEUOOIGFA");
