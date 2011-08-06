@@ -26,6 +26,7 @@ import topc.test.dp.*;
   //StripePainterTest.class,
   //FibTest.class,
   //WeightedIntervalSchedulingTest.class,
-  QuickSumsTest.class
+  //QuickSumsTest.class,
+  ShortPalindromesTest.class
 })
 public class AllTests { }
