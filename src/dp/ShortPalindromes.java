@@ -27,6 +27,8 @@ public class ShortPalindromes {
     if (i > 0 && j < n - 1 && chars[i-1] == chars[j+1]) {
       char c = chars[i-1];
       add(i - 1, j + 1, c + s + c);
+      //add(i - 1, j, s);
+      //add(i, j + 1, s);
       gen(i - 1, j + 1);
     } else {
       if (i > 0) {
@@ -44,15 +46,23 @@ public class ShortPalindromes {
   }
 
   void add(int i, int j, String str) {
+    //if (9 < i && j < 16) {
+      //debug(">>", i, j, domes[i][j], str);
+    //}
+
     if (domes[i][j] == null) {
       domes[i][j] = str;
     } 
     else if (domes[i][j].length() > str.length()) {
       domes[i][j] = str;
     }
-    else if (domes[i][j].compareTo(str) == 1) {
+    else if (domes[i][j].compareTo(str) > 0) {
       domes[i][j] = str;
     }
+
+    //if (9 < i && j < 16) {
+      //debug("<<", i, j, domes[i][j], str, domes[i][j].compareTo(str));
+    //}
   }
 
   void debug(Object...os) {
