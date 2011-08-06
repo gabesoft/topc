@@ -19,17 +19,17 @@ public class ShortPalindromesTest {
     assertEquals("REDTOCPCOTDER", _calc.shortest("TOPCODER"));
   }
 
-  //@Test
+  @Test
   public void case3() {
     assertEquals("Q", _calc.shortest("Q"));
   }
 
-  //@Test
+  @Test
   public void case4() {
     assertEquals("MADAMIMADAM", _calc.shortest("MADAMIMADAM"));
   }
 
-  //@Test
+  @Test
   public void case5() {
     assertEquals("AFLRCAGIOEOUAEOCEGRURGECOEAUOEOIGACRLFA", _calc.shortest("ALRCAGOEUAOEURGCOEUOOIGFA"));
   }

@@ -3,77 +3,57 @@ package topc.dp;
 import java.util.*;
 
 public class ShortPalindromes {
-  ArrayList<String>[][] domes;
+  Dome[][] domes;
   char[] chars;
   int n;
 
   public String shortest(String base) {
     chars = base.toCharArray();
     n = chars.length;
-    domes = new ArrayList[n][n];
+    domes = new Dome[n][n];
 
     for (int i = 0; i < n; i++) {
-      ArrayList<String> strs = new ArrayList<String>();
-      strs.add(Character.toString(chars[i]));
-      domes[i][i] = strs;
+      Dome dome = new Dome();
+      dome.add(Character.toString(chars[i]));
+      domes[i][i] = dome;
       gen(i,i);
     }
 
-    Collections.sort(domes[0][n-1]);
-    debug("domes[0][n-1].size()", domes[0][n-1].size());
-    debug("domes[0][n-1]", domes[0][n-1]);
-    return domes[0][n-1].get(0);
+    Set<String> best = domes[0][n-1].best();
+
+    debug("best.size()", best.size());
+    debug("best", best);
+
+    return Collections.min(best);
   }
 
   void gen(int i, int j) {
-    debug(i, j);
-
     assert domes[i][j] != null: "null data found";
 
+    Set<String> best = domes[i][j].best();
+
     if (i > 0 && j < n - 1 && chars[i-1] == chars[j+1]) {
-      ArrayList<String> strs = domes[i-1][j+1] != null ? domes[i-1][j+1] : new ArrayList<String>();
+      Dome dome = domes[i-1][j+1] != null ? domes[i-1][j+1] : new Dome();
       char c = chars[i-1];
-      debug("same", i, j, c);
-      for (String s : domes[i][j]) {
-        String next = c + s + c;
-        if (!strs.contains(next)) {
-          strs.add(next);
-        }
+      for (String s : best) { dome.add(c + s + c); }
+      domes[i-1][j+1] = dome;
+      gen(i-1, j+1);
+    } else {
+      if (i > 0 && i-1 != j) {
+        Dome dome = domes[i-1][j] != null ? domes[i-1][j] : new Dome();
+        char c = chars[i-1];
+        for (String s : best) { dome.add(c + s + c); }
+        domes[i-1][j] = dome;
+        gen(i-1, j);
       }
-      domes[i-1][j+1] = strs;
-      return;
-    }
 
-    if (i > 0 && i-1 != j) {
-      //assert domes[i-1][j] == null : "existing data found -1";
-
-      ArrayList<String> strs = domes[i-1][j] != null ? domes[i-1][j] : new ArrayList<String>();
-      char c = chars[i-1];
-      for (String s : domes[i][j]) {
-        String next = c + s + c;
-        if (!strs.contains(next)) {
-          strs.add(next);
-        }
+      if (j < n - 1 && i != j + 1) {
+        Dome dome = domes[i][j+1] != null ? domes[i][j+1] : new Dome();
+        char c = chars[j+1];
+        for (String s : best) { dome.add(c + s + c); }
+        domes[i][j+1] = dome;
+        gen(i, j+1);
       }
-      domes[i-1][j] = strs;
-
-      gen(i-1, j);
-    }
-
-    if (j < n - 1 && i != j + 1) {
-      //assert domes[i][j+1] == null : "existing data found +1";
-
-      ArrayList<String> strs = domes[i][j+1] != null ? domes[i][j+1] : new ArrayList<String>();
-      char c = chars[j + 1];
-      for (String s : domes[i][j]) {
-        String next = c + s + c;
-        if (!strs.contains(next)) {
-          strs.add(next);
-        }
-      }
-      domes[i][j+1] = strs;
-
-      gen(i, j+1);
     }
   }
 
@@ -83,7 +63,8 @@ public class ShortPalindromes {
 
   class Dome {
     int min = Integer.MAX_VALUE;
-    ArrayList<String> items = new ArrayList<String>();
+    int len = min;
+    Set<String> items = new HashSet<String>();
 
     public void add(String s) {
       if (s.length() <= min && !items.contains(s)) {
@@ -92,15 +73,27 @@ public class ShortPalindromes {
       min = Math.min(min, s.length());
     }
 
-    public ArrayList<String> best() {
-      ArrayList<String> shortest = new ArrayList<String>();
-      for (String s : items) {
-        if (s.length() == min) {
-          shortest.add(s);
+    public Set<String> best() {
+      if (len > min) {
+        Set<String> shortest = new HashSet<String>();
+        for (String s : items) {
+          if (s.length() == min) {
+            shortest.add(s);
+          }
         }
+
+        String str = Collections.min(shortest);
+        shortest.clear();
+        shortest.add(str);
+
+        items = shortest;
+        len = min;
       }
-      items = shortest;
       return items;
+    }
+
+    public String toString() {
+      return items.toString();
     }
   }
 }
