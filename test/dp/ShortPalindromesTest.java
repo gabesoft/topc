@@ -1,5 +1,6 @@
 package topc.test.dp;
 
+import java.util.*;
 import junit.framework.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
@@ -31,6 +32,14 @@ public class ShortPalindromesTest {
 
   @Test
   public void case5() {
-    assertEquals("AFLRCAGIOEOUAEOCEGRURGECOEAUOEOIGACRLFA", _calc.shortest("ALRCAGOEUAOEURGCOEUOOIGFA"));
+    String expected = "AFLRCAGIOEOUAEOCEGRURGECOEAUOEOIGACRLFA";
+    String actual = _calc.shortest("ALRCAGOEUAOEURGCOEUOOIGFA");
+    debug("expected.length()", expected.length());
+    debug("actual.length()", actual.length());
+    assertEquals(expected, actual);
+  }
+
+  void debug(Object...os) {
+    System.out.println(Arrays.deepToString(os));
   }
 }
