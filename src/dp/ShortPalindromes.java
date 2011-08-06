@@ -4,16 +4,17 @@ import java.util.*;
 
 public class ShortPalindromes {
   String[][][] domes;
+  Queue<int[]> queue;
   char[] chars;
   int n;
 
   public String shortest(String base) {
     chars = base.toCharArray();
+    queue = new LinkedList<int[]>();
     n = chars.length;
     domes = new String[n][n][n];
 
-    //for (int i = 0; i < n; i++) {
-    for (int i = 12; i < 13; i++) {
+    for (int i = 0; i < n; i++) {
       domes[i][i][i] = Character.toString(chars[i]);
       gen(i, i,i);
     }
@@ -23,23 +24,9 @@ public class ShortPalindromes {
       res[i] = domes[0][n-1][i];
     }
 
-    debug("res", res);
-    return domes[0][n-1][12]; 
+    Arrays.sort(res, new StringComparator());
 
-    //Arrays.sort(res, new StringComparator());
-
-    //return res[0];
-    //return domes[0][n-1];
-  }
-
-  void fill(int i, int j, int k, char c) {
-    if (i < 0 || j > n - 1) { return; }
-
-    String s = domes[i][j][k] != null ? c + domes[i][j][k] + c : Character.toString(c);
-    add(i, j, k, s);
-
-    
-
+    return res[0];
   }
 
   void gen(int i, int j, int k) {
@@ -48,41 +35,52 @@ public class ShortPalindromes {
 
     if (i > 0 && j < n - 1 && chars[i-1] == chars[j+1]) {
       char c = chars[i-1];
-      add(i - 1, j + 1, k, c + s + c);
-      gen(i - 1, j + 1, k);
+      if (add(i - 1, j + 1, k, c + s + c)) {
+        queue.add(new int[] { i - 1, j + 1, k });
+      }
     } else {
       if (i > 0) {
         char c = chars[i-1];
-        add(i - 1, j, k, c + s + c);
-        gen(i - 1, j, k);
+        if (add(i - 1, j, k, make(s, c))) {
+          queue.add(new int[] { i - 1, j, k });
+        }
       }
 
       if (j < n - 1) {
         char c = chars[j+1];
-        add(i, j + 1, k, c + s + c);
-        gen(i, j + 1, k);
+        if (add(i, j + 1, k, make(s, c))) {
+          queue.add(new int[] { i, j + 1, k });
+        }
       }
+    }
+
+    int[] next = queue.poll();
+    if (next != null) {
+      gen(next[0], next[1], next[2]);
     }
   }
 
-  void add(int i, int j, int k, String str) {
-    //if (5 < i && j < 20) {
-      //debug(">>", i, j, domes[i][j][k], str);
-    //}
+  String make(String s, char c) {
+    String cs = Character.toString(c);
+    return cs.equals(s) ? s + cs : cs + s + cs;
+  }
 
-    if (domes[i][j][k] == null) {
-      domes[i][j][k] = str;
+  boolean add(int i, int j, int k, String str) {
+    String curr = domes[i][j][k];
+    String next = curr;
+
+    if (curr == null) {
+      next = str;
     } 
-    else if (domes[i][j][k].length() > str.length()) {
-      domes[i][j][k] = str;
+    else if (curr.length() > str.length()) {
+      next = str;
     }
-    else if (domes[i][j][k].compareTo(str) > 0) {
-      domes[i][j][k] = str;
+    else if (curr.length() == str.length() && curr.compareTo(str) > 0) {
+      next = str;
     }
 
-    if (5 < i && j < 20) {
-      debug("<<", i, j, domes[i][j][k], str, domes[i][j][k].compareTo(str));
-    }
+    domes[i][j][k] = next;
+    return curr != next;
   }
 
   void debug(Object...os) {
