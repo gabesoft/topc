@@ -49,6 +49,7 @@
       srcdir="${dir.src}"
       includeantruntime="false">
       <classpath refid="classpath.compile" />
+      <compilerarg value="-Xlint"/>
     </javac>
   </target>
 

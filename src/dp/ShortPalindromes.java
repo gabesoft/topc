@@ -10,8 +10,9 @@ public class ShortPalindromes {
 
   public String shortest(String base) {
     chars = base.toCharArray();
-    queue = new LinkedList<int[]>();
     n = chars.length;
+
+    queue = new LinkedList<int[]>();
     domes = new String[n][n][n];
 
     for (int i = 0; i < n; i++) {
@@ -25,32 +26,20 @@ public class ShortPalindromes {
     }
 
     Arrays.sort(res, new StringComparator());
-
     return res[0];
   }
 
   void gen(int i, int j, int k) {
-    assert domes[i][j][k] != null: "null data found";
     String s = domes[i][j][k];
 
     if (i > 0 && j < n - 1 && chars[i-1] == chars[j+1]) {
-      char c = chars[i-1];
-      if (add(i - 1, j + 1, k, c + s + c)) {
-        queue.add(new int[] { i - 1, j + 1, k });
-      }
+      add(i - 1, j + 1, k, chars[i-1] + s + chars[i-1]);
     } else {
       if (i > 0) {
-        char c = chars[i-1];
-        if (add(i - 1, j, k, make(s, c))) {
-          queue.add(new int[] { i - 1, j, k });
-        }
+        add(i - 1, j, k, make(s, chars[i-1]));
       }
-
       if (j < n - 1) {
-        char c = chars[j+1];
-        if (add(i, j + 1, k, make(s, c))) {
-          queue.add(new int[] { i, j + 1, k });
-        }
+        add(i, j + 1, k, make(s, chars[j+1]));
       }
     }
 
@@ -60,12 +49,7 @@ public class ShortPalindromes {
     }
   }
 
-  String make(String s, char c) {
-    String cs = Character.toString(c);
-    return cs.equals(s) ? s + cs : cs + s + cs;
-  }
-
-  boolean add(int i, int j, int k, String str) {
+  void add(int i, int j, int k, String str) {
     String curr = domes[i][j][k];
     String next = curr;
 
@@ -80,17 +64,31 @@ public class ShortPalindromes {
     }
 
     domes[i][j][k] = next;
-    return curr != next;
+    if (curr != next) {
+      queue.add(new int[] { i, j, k });
+    }
+  }
+
+  String make(String s, char c) {
+    boolean addone = s.length() % 2 != 0;
+    if (addone) {
+      char[] chars = s.toCharArray();
+      for (int i = 0; i < chars.length; i++) {
+        if (chars[i] != c) { 
+          addone = false;
+          break;
+        }
+      }
+    }
+    return addone ? s + c : c + s + c;
   }
 
   void debug(Object...os) {
     System.out.println(Arrays.deepToString(os));
   }
 
-  class StringComparator implements Comparator {
-    public int compare(Object x, Object y) {
-      String a = (String) x;
-      String b = (String) y;
+  class StringComparator implements Comparator<String> {
+    public int compare(String a, String b) {
       if (a.length() != b.length()) {
         return Integer.valueOf(a.length()).compareTo(Integer.valueOf(b.length()));
       } else {
