@@ -2,6 +2,7 @@ package topc.dp;
 
 import java.util.*;
 
+// SRM 165 Round 1 Div 2 : 1150 (dynamic programming)
 public class ShortPalindromes {
   String[][][] domes;
   Queue<int[]> queue;

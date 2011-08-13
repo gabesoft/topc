@@ -27,6 +27,7 @@ import topc.test.dp.*;
   //FibTest.class,
   //WeightedIntervalSchedulingTest.class,
   //QuickSumsTest.class,
-  ShortPalindromesTest.class
+  //ShortPalindromesTest.class,
+  GameOfLifeDivOneTest.class
 })
 public class AllTests { }
