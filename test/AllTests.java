@@ -30,6 +30,7 @@ import topc.test.dp.*;
   //ShortPalindromesTest.class,
   //GameOfLifeDivOneTest.class,
   //GrafixMaskTest.class,
-  MarketingTest.class
+  //MarketingTest.class,
+  CircuitsTest.class
 })
 public class AllTests { }
