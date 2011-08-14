@@ -1,8 +1,8 @@
-package topc.bfs;
+package topc.graph;
 
 import java.util.*;
 
-// SRM 223 Div 1 : 1000 (BFS)
+// SRM 223 Div 1 : 1000 (graph bfs)
 public class RevolvingDoors {
   static public final int EMPTY = -1;
   static public final int WALL = -2;

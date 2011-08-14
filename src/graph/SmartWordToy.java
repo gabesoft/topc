@@ -1,8 +1,8 @@
-package topc.bfs;
+package topc.graph;
 
 import java.util.*;
 
-// SRM 233 Div 1 : 500
+// SRM 233 Div 1 : 500 (graph bfs)
 public class SmartWordToy {
   public int minPresses(String start, String finish, String[] forbid) {
     HashSet<String> forbidden = getForbidden(forbid);

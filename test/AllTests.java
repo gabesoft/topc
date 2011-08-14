@@ -5,7 +5,7 @@ import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import topc.test.easy.*;
-import topc.test.bfs.*;
+import topc.test.graph.*;
 import topc.test.bkt.*;
 import topc.test.dp.*;
 
@@ -28,6 +28,8 @@ import topc.test.dp.*;
   //WeightedIntervalSchedulingTest.class,
   //QuickSumsTest.class,
   //ShortPalindromesTest.class,
-  GameOfLifeDivOneTest.class
+  //GameOfLifeDivOneTest.class,
+  //GrafixMaskTest.class,
+  MarketingTest.class
 })
 public class AllTests { }
