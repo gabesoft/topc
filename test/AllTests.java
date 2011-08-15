@@ -31,6 +31,7 @@ import topc.test.dp.*;
   //GameOfLifeDivOneTest.class,
   //GrafixMaskTest.class,
   //MarketingTest.class,
-  CircuitsTest.class
+  //CircuitsTest.class,
+  PathFindingTest.class
 })
 public class AllTests { }
