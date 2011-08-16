@@ -32,6 +32,7 @@ import topc.test.dp.*;
   //GrafixMaskTest.class,
   //MarketingTest.class,
   //CircuitsTest.class,
-  PathFindingTest.class
+  //PathFindingTest.class,
+  EscapeTest.class
 })
 public class AllTests { }
