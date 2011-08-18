@@ -11,10 +11,9 @@ public class KiloManX {
   public int leastShots(String[] damageChart, int[] bossHealth) {
     _n = damageChart.length;
     _weight = new int[_n][_n];
-    _cost = new int[_n];
+    _cost = bossHealth;
 
     for (int i = 0; i < _n; i++) {
-      _cost[i] = bossHealth[i];
       char[] chars = damageChart[i].toCharArray();
       for (int j = 0; j < _n; j++) {
         _weight[i][j] = Math.max(1, Character.getNumericValue(chars[j]));
