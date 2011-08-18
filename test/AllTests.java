@@ -33,6 +33,7 @@ import topc.test.dp.*;
   //MarketingTest.class,
   //CircuitsTest.class,
   //PathFindingTest.class,
-  EscapeTest.class
+  //EscapeTest.class,
+  KiloManXTest.class
 })
 public class AllTests { }
