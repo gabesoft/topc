@@ -24,7 +24,7 @@ public class KiloManX2 {
           cost[i] = Math.min(cost[i], cost[pre] + bossHealth[j]);
           for (int k = 0; k < n; k++) {
             if ((i & (1 << k)) != 0 && k != j && weight[k][j] > 0) {
-              cost[i] = Math.min(cost[i], cost[pre] + (bossHealth[j] + weight[k][j] -1) / weight[k][j]);
+              cost[i] = Math.min(cost[i], cost[pre] + (bossHealth[j] + weight[k][j] - 1) / weight[k][j]);
             }
           }
         }

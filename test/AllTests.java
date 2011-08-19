@@ -35,7 +35,7 @@ import topc.test.dp.*;
   //PathFindingTest.class,
   //EscapeTest.class,
   //KiloManXTest.class,
-  KiloManX2Test.class
-  //KiloManX3Test.class
+  //KiloManX2Test.class,
+  KiloManX3Test.class
 })
 public class AllTests { }
