@@ -2,7 +2,7 @@ package topc.graph;
 
 import java.util.*;
 
-// SRM 181 Div 1 : 1000 (dynamic programming)
+// SRM 181 Div 1 : 1000 (graph dijkstra)
 public class KiloManX3 {
   boolean[] seen;
 
@@ -28,8 +28,7 @@ public class KiloManX3 {
           if (i == j) { continue; }
           int damage = damageChart[j].charAt(i) - '0';
           if (((top.weight >> j) & 1) == 1 && damage != 0) {
-            int shots = bossHealth[i] / damage;
-            if (bossHealth[i] % damage != 0) { shots++; }
+            int shots = ceilDiv(bossHealth[i], damage);
             best = Math.min(best, shots);
           }
         }
@@ -39,6 +38,13 @@ public class KiloManX3 {
     }
 
     return 0;
+  }
+
+  int ceilDiv(int a, int b) {
+    int res = a / b;
+    if (a % b != 0) { res++; }
+    assert res == (a + b - 1) / b : "div check failed";
+    return res;
   }
 
   class Node implements Comparable<Node>{

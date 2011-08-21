@@ -36,6 +36,7 @@ import topc.test.dp.*;
   //EscapeTest.class,
   //KiloManXTest.class,
   //KiloManX2Test.class,
-  KiloManX3Test.class
+  //KiloManX3Test.class,
+  RoboCourierTest.class
 })
 public class AllTests { }
