@@ -1,0 +1,1026 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	src/graph/PathFinding.java	/^  static public final int A = 1;$/;"	f	class:PathFinding
+ADJ	src/graph/RevolvingDoors.java	/^  static public final int[] ADJ = { -1, 0, 0, -1, 0, 1, 1, 0 };$/;"	f	class:RevolvingDoors
+AllTests	test/AllTests.java	/^public class AllTests { }$/;"	c
+AvoidRoads	src/dp/AvoidRoads.java	/^public class AvoidRoads {$/;"	c
+AvoidRoadsTest	test/dp/AvoidRoadsTest.java	/^public class AvoidRoadsTest {$/;"	c
+B	src/graph/PathFinding.java	/^  static public final int B = 2;$/;"	f	class:PathFinding
+BadNeighbors	src/dp/BadNeighbors.java	/^public class BadNeighbors {$/;"	c
+BadNeighborsTest	test/dp/BadNeighborsTest.java	/^public class BadNeighborsTest {$/;"	c
+BridgeCrossing	src/bkt/BridgeCrossing.java	/^public class BridgeCrossing {$/;"	c
+BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossingTest {$/;"	c
+BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
+BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
+BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
+Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
+CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
+Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
+Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
+DELTA	test/easy/TableSeatingTest.java	/^  final static double DELTA = 1e-9;$/;"	f	class:TableSeatingTest
+DOOR	src/graph/RevolvingDoors.java	/^  static public final int DOOR = 0;$/;"	f	class:RevolvingDoors
+DOOR_DOWN	src/graph/RevolvingDoors.java	/^  static public final int DOOR_DOWN = -6;$/;"	f	class:RevolvingDoors
+DOOR_H	src/graph/RevolvingDoors.java	/^  static public final int DOOR_H = -100;$/;"	f	class:RevolvingDoors
+DOOR_LEFT	src/graph/RevolvingDoors.java	/^  static public final int DOOR_LEFT = -7;$/;"	f	class:RevolvingDoors
+DOOR_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOOR_RIGHT = -8;$/;"	f	class:RevolvingDoors
+DOOR_UP	src/graph/RevolvingDoors.java	/^  static public final int DOOR_UP = -5;$/;"	f	class:RevolvingDoors
+DOOR_V	src/graph/RevolvingDoors.java	/^  static public final int DOOR_V = -200;$/;"	f	class:RevolvingDoors
+DOWN_LEFT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_LEFT = 1 << 2;$/;"	f	class:RevolvingDoors
+DOWN_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_RIGHT = 1 << 1;$/;"	f	class:RevolvingDoors
+DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
+DungeonEscapeTest	test/graph/DungeonEscapeTest.java	/^public class DungeonEscapeTest {$/;"	c
+EMPTY	src/graph/RevolvingDoors.java	/^  static public final int EMPTY = -1;$/;"	f	class:RevolvingDoors
+END	src/graph/RevolvingDoors.java	/^  static public final int END = -10;$/;"	f	class:RevolvingDoors
+Escape	src/graph/Escape.java	/^public class Escape {$/;"	c
+EscapeTest	test/graph/EscapeTest.java	/^public class EscapeTest {$/;"	c
+F	src/graph/IslandFerries.java	/^  int F = 0;$/;"	f	class:IslandFerries
+Fib	src/easy/Fib.java	/^public class Fib {$/;"	c
+FibTest	test/easy/FibTest.java	/^public class FibTest {$/;"	c
+FlowerGarden	src/dp/FlowerGarden.java	/^public class FlowerGarden {$/;"	c
+FlowerGardenTest	test/dp/FlowerGardenTest.java	/^public class FlowerGardenTest {$/;"	c
+GameOfLifeDivOne	src/dp/GameOfLifeDivOne.java	/^public class GameOfLifeDivOne {$/;"	c
+GameOfLifeDivOneTest	test/dp/GameOfLifeDivOneTest.java	/^public class GameOfLifeDivOneTest {$/;"	c
+GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
+GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
+GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
+I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
+Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(String[] values) {$/;"	m	class:WeightedIntervalScheduling.Interval
+Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(int start, int end, int weight) {$/;"	m	class:WeightedIntervalScheduling.Interval
+Interval	src/dp/WeightedIntervalScheduling.java	/^  class Interval implements Comparable<Interval> {$/;"	c	class:WeightedIntervalScheduling
+IslandFerries	src/graph/IslandFerries.java	/^public class IslandFerries {$/;"	c
+IslandFerriesTest	test/graph/IslandFerriesTest.java	/^public class IslandFerriesTest {$/;"	c
+Jewelry	src/dp/Jewelry.java	/^public class Jewelry {$/;"	c
+JewelryTest	test/dp/JewelryTest.java	/^public class JewelryTest {$/;"	c
+K	src/dp/GameOfLifeDivOne.java	/^  int K;$/;"	f	class:GameOfLifeDivOne
+KiloManX	src/dp/KiloManX.java	/^public class KiloManX {$/;"	c
+KiloManX2	src/dp/KiloManX2.java	/^public class KiloManX2 {$/;"	c
+KiloManX2Test	test/dp/KiloManX2Test.java	/^public class KiloManX2Test {$/;"	c
+KiloManX3	src/graph/KiloManX3.java	/^public class KiloManX3 {$/;"	c
+KiloManX3Test	test/graph/KiloManX3Test.java	/^public class KiloManX3Test {$/;"	c
+KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
+LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
+LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
+LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
+Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
+MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
+Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, int start, int end) {$/;"	m	class:RevolvingDoors.Maze
+Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
+MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
+MedalTableTest	test/easy/MedalTableTest.java	/^public class MedalTableTest {$/;"	c
+N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
+N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
+N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
+N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
+N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marketing
+Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
+Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
+Node	src/graph/Escape.java	/^    public Node(int x, int y, int cost) {$/;"	m	class:Escape.Node
+Node	src/graph/Escape.java	/^  class Node {$/;"	c	class:Escape
+Node	src/graph/GrafixMask.java	/^    public Node(int x, int y) {$/;"	m	class:GrafixMask.Node
+Node	src/graph/GrafixMask.java	/^  class Node {$/;"	c	class:GrafixMask
+Node	src/graph/IslandFerries.java	/^    public Node(int island, int cost) {$/;"	m	class:IslandFerries.Node
+Node	src/graph/IslandFerries.java	/^    public Node(int island, int cost, int f1, int c1) {$/;"	m	class:IslandFerries.Node
+Node	src/graph/IslandFerries.java	/^    public Node(int island, int cost, int f1, int c1, int f2, int c2) {$/;"	m	class:IslandFerries.Node
+Node	src/graph/IslandFerries.java	/^  class Node implements Comparable<Node> {$/;"	c	class:IslandFerries
+Node	src/graph/KiloManX3.java	/^    public Node(int weight, int cost) {$/;"	m	class:KiloManX3.Node
+Node	src/graph/KiloManX3.java	/^  class Node implements Comparable<Node>{$/;"	c	class:KiloManX3
+Node	src/graph/PathFinding.java	/^    public Node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding.Node
+Node	src/graph/PathFinding.java	/^  class Node {$/;"	c	class:PathFinding
+Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:RoboCourier.Node
+Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
+Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
+PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
+PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
+QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
+QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
+RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
+RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
+RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
+RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"	c
+RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
+RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
+RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
+SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
+START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
+ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$/;"	c
+ShortPalindromesTest	test/dp/ShortPalindromesTest.java	/^public class ShortPalindromesTest {$/;"	c
+SmartWordToy	src/graph/SmartWordToy.java	/^public class SmartWordToy {$/;"	c
+SmartWordToyTest	test/graph/SmartWordToyTest.java	/^public class SmartWordToyTest {$/;"	c
+State	src/bkt/BridgeCrossing.java	/^    public State(int[] times) {$/;"	m	class:BridgeCrossing.State
+State	src/bkt/BridgeCrossing.java	/^  class State {$/;"	c	class:BridgeCrossing
+StringComparator	src/dp/ShortPalindromes.java	/^  class StringComparator implements Comparator<String> {$/;"	c	class:ShortPalindromes
+StripePainter	src/dp/StripePainter.java	/^public class StripePainter {$/;"	c
+StripePainterTest	test/dp/StripePainterTest.java	/^public class StripePainterTest {$/;"	c
+T	src/dp/GameOfLifeDivOne.java	/^  int T;$/;"	f	class:GameOfLifeDivOne
+TableSeating	src/easy/TableSeating.java	/^public class TableSeating  {$/;"	c
+TableSeatingTest	test/easy/TableSeatingTest.java	/^public class TableSeatingTest  {$/;"	c
+TallPeople	src/easy/TallPeople.java	/^public class TallPeople  {$/;"	c
+TallPeopleTest	test/easy/TallPeopleTest.java	/^public class TallPeopleTest {$/;"	c
+Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
+Ticket	src/graph/IslandFerries.java	/^  class Ticket {$/;"	c	class:IslandFerries
+UP_LEFT	src/graph/RevolvingDoors.java	/^  static public final int UP_LEFT = 1 << 4;$/;"	f	class:RevolvingDoors
+UP_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int UP_RIGHT = 1 << 3;$/;"	f	class:RevolvingDoors
+WALL	src/graph/RevolvingDoors.java	/^  static public final int WALL = -2;$/;"	f	class:RevolvingDoors
+WeightedIntervalScheduling	src/dp/WeightedIntervalScheduling.java	/^public class WeightedIntervalScheduling {$/;"	c
+WeightedIntervalSchedulingTest	test/dp/WeightedIntervalSchedulingTest.java	/^public class WeightedIntervalSchedulingTest {$/;"	c
+Word	src/graph/SmartWordToy.java	/^    public Word(String word, int level) {$/;"	m	class:SmartWordToy.Word
+Word	src/graph/SmartWordToy.java	/^  class Word {$/;"	c	class:SmartWordToy
+X	src/graph/PathFinding.java	/^  static public final int X = 3;$/;"	f	class:PathFinding
+ZigZag	src/dp/ZigZag.java	/^public class ZigZag {$/;"	c
+ZigZagTest	test/dp/ZigZagTest.java	/^public class ZigZagTest {$/;"	c
+_b	src/easy/MedalTable.java	/^    int _b;$/;"	f	class:MedalTable.Country
+_calc	test/bkt/BridgeCrossingTest.java	/^  BridgeCrossing _calc = new BridgeCrossing();$/;"	f	class:BridgeCrossingTest
+_calc	test/dp/AvoidRoadsTest.java	/^  AvoidRoads _calc = new AvoidRoads();$/;"	f	class:AvoidRoadsTest
+_calc	test/dp/BadNeighborsTest.java	/^  BadNeighbors _calc = new BadNeighbors();$/;"	f	class:BadNeighborsTest
+_calc	test/dp/FlowerGardenTest.java	/^  FlowerGarden _calc = new FlowerGarden();$/;"	f	class:FlowerGardenTest
+_calc	test/dp/GameOfLifeDivOneTest.java	/^  GameOfLifeDivOne _calc = new GameOfLifeDivOne();$/;"	f	class:GameOfLifeDivOneTest
+_calc	test/dp/JewelryTest.java	/^  Jewelry _calc = new Jewelry();$/;"	f	class:JewelryTest
+_calc	test/dp/KiloManX2Test.java	/^  KiloManX2 _calc = new KiloManX2();$/;"	f	class:KiloManX2Test
+_calc	test/dp/KiloManXTest.java	/^  KiloManX _calc = new KiloManX();$/;"	f	class:KiloManXTest
+_calc	test/dp/QuickSumsTest.java	/^  QuickSums _calc = new QuickSums();$/;"	f	class:QuickSumsTest
+_calc	test/dp/ShortPalindromesTest.java	/^  ShortPalindromes _calc = new ShortPalindromes();$/;"	f	class:ShortPalindromesTest
+_calc	test/dp/StripePainterTest.java	/^  StripePainter _calc = new StripePainter();$/;"	f	class:StripePainterTest
+_calc	test/dp/WeightedIntervalSchedulingTest.java	/^  WeightedIntervalScheduling _calc = new WeightedIntervalScheduling();$/;"	f	class:WeightedIntervalSchedulingTest
+_calc	test/dp/ZigZagTest.java	/^  ZigZag _calc = new ZigZag();$/;"	f	class:ZigZagTest
+_calc	test/easy/FibTest.java	/^  Fib _calc = new Fib();$/;"	f	class:FibTest
+_calc	test/easy/MedalTableTest.java	/^  MedalTable _calc = new MedalTable();$/;"	f	class:MedalTableTest
+_calc	test/easy/TableSeatingTest.java	/^  private TableSeating _calc = new TableSeating();$/;"	f	class:TableSeatingTest	file:
+_calc	test/graph/CircuitsTest.java	/^  Circuits _calc = new Circuits();$/;"	f	class:CircuitsTest
+_calc	test/graph/EscapeTest.java	/^  Escape _calc = new Escape();$/;"	f	class:EscapeTest
+_calc	test/graph/GrafixMaskTest.java	/^  GrafixMask _calc = new GrafixMask();$/;"	f	class:GrafixMaskTest
+_calc	test/graph/IslandFerriesTest.java	/^  IslandFerries _calc = new IslandFerries();$/;"	f	class:IslandFerriesTest
+_calc	test/graph/KiloManX3Test.java	/^  KiloManX3 _calc = new KiloManX3();$/;"	f	class:KiloManX3Test
+_calc	test/graph/MarketingTest.java	/^  Marketing _calc = new Marketing();$/;"	f	class:MarketingTest
+_calc	test/graph/PathFindingTest.java	/^  PathFinding _calc = new PathFinding();$/;"	f	class:PathFindingTest
+_calc	test/graph/RevolvingDoorsTest.java	/^  RevolvingDoors _calc = new RevolvingDoors();$/;"	f	class:RevolvingDoorsTest
+_calc	test/graph/RoboCourierTest.java	/^  RoboCourier _calc = new RoboCourier();$/;"	f	class:RoboCourierTest
+_calc	test/graph/SmartWordToyTest.java	/^  SmartWordToy _calc = new SmartWordToy();$/;"	f	class:SmartWordToyTest
+_cost	src/dp/KiloManX.java	/^  int[] _cost;$/;"	f	class:KiloManX
+_end	src/dp/WeightedIntervalScheduling.java	/^    int _end;$/;"	f	class:WeightedIntervalScheduling.Interval
+_end	src/graph/RevolvingDoors.java	/^    int _end;$/;"	f	class:RevolvingDoors.Maze
+_g	src/easy/MedalTable.java	/^    int _g;$/;"	f	class:MedalTable.Country
+_left	src/bkt/BridgeCrossing.java	/^    Queue<Integer> _left;$/;"	f	class:BridgeCrossing.State
+_level	src/graph/RevolvingDoors.java	/^    int _level;$/;"	f	class:RevolvingDoors.Maze
+_level	src/graph/SmartWordToy.java	/^    int _level;$/;"	f	class:SmartWordToy.Word
+_maze	src/graph/RevolvingDoors.java	/^    int[][] _maze;$/;"	f	class:RevolvingDoors.Maze
+_n	src/dp/KiloManX.java	/^  int _n;$/;"	f	class:KiloManX
+_name	src/easy/MedalTable.java	/^    String _name;$/;"	f	class:MedalTable.Country
+_pval	src/dp/WeightedIntervalScheduling.java	/^    int _pval = -1;$/;"	f	class:WeightedIntervalScheduling.Interval
+_right	src/bkt/BridgeCrossing.java	/^    int[] _right;$/;"	f	class:BridgeCrossing.State
+_s	src/easy/MedalTable.java	/^    int _s;$/;"	f	class:MedalTable.Country
+_start	src/dp/WeightedIntervalScheduling.java	/^    int _start;$/;"	f	class:WeightedIntervalScheduling.Interval
+_start	src/graph/RevolvingDoors.java	/^    int _start;$/;"	f	class:RevolvingDoors.Maze
+_time	src/bkt/BridgeCrossing.java	/^    int _time;$/;"	f	class:BridgeCrossing.State
+_weight	src/dp/KiloManX.java	/^  int[][] _weight;$/;"	f	class:KiloManX
+_weight	src/dp/WeightedIntervalScheduling.java	/^    int _weight;$/;"	f	class:WeightedIntervalScheduling.Interval
+_word	src/graph/SmartWordToy.java	/^    String _word;$/;"	f	class:SmartWordToy.Word
+add	src/dp/ShortPalindromes.java	/^  void add(int i, int j, int k, String str) {$/;"	m	class:ShortPalindromes
+addWeights	src/dp/KiloManX.java	/^  int[] addWeights(int[] weight, int boss) {$/;"	m	class:KiloManX
+addb	src/easy/MedalTable.java	/^    public void addb() { _b++; }$/;"	m	class:MedalTable.Country
+addg	src/easy/MedalTable.java	/^    public void addg() { _g++; }$/;"	m	class:MedalTable.Country
+adds	src/easy/MedalTable.java	/^    public void adds() { _s++; }$/;"	m	class:MedalTable.Country
+advance	src/graph/RevolvingDoors.java	/^  boolean advance(int position, Maze maze, HashSet<Integer> seen) {$/;"	m	class:RevolvingDoors
+arrayCopy	src/graph/SmartWordToy.java	/^    char[] arrayCopy(char[] source) {$/;"	m	class:SmartWordToy.Word
+arrayMax	src/easy/TallPeople.java	/^  int arrayMax(int[] array) {$/;"	m	class:TallPeople
+arrayMin	src/easy/TallPeople.java	/^  int arrayMin(int[] array) {$/;"	m	class:TallPeople
+arrsum	src/dp/QuickSums.java	/^  int arrsum(int[] nums) {$/;"	m	class:QuickSums
+avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
+b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
+blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
+buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
+cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
+calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
+case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
+case0	test/dp/KiloManX2Test.java	/^  public void case0() {	$/;"	m	class:KiloManX2Test
+case0	test/dp/KiloManXTest.java	/^  public void case0() {	$/;"	m	class:KiloManXTest
+case0	test/dp/WeightedIntervalSchedulingTest.java	/^  public void case0() {$/;"	m	class:WeightedIntervalSchedulingTest
+case0	test/graph/IslandFerriesTest.java	/^  public void case0() {$/;"	m	class:IslandFerriesTest
+case0	test/graph/KiloManX3Test.java	/^  public void case0() {	$/;"	m	class:KiloManX3Test
+case0	test/graph/RoboCourierTest.java	/^  public void case0() {$/;"	m	class:RoboCourierTest
+case1	test/dp/AvoidRoadsTest.java	/^  public void case1() {$/;"	m	class:AvoidRoadsTest
+case1	test/dp/BadNeighborsTest.java	/^  public void case1() {$/;"	m	class:BadNeighborsTest
+case1	test/dp/FlowerGardenTest.java	/^  public void case1() {$/;"	m	class:FlowerGardenTest
+case1	test/dp/GameOfLifeDivOneTest.java	/^  public void case1() {$/;"	m	class:GameOfLifeDivOneTest
+case1	test/dp/JewelryTest.java	/^  public void case1() {$/;"	m	class:JewelryTest
+case1	test/dp/KiloManX2Test.java	/^  public void case1() {	$/;"	m	class:KiloManX2Test
+case1	test/dp/KiloManXTest.java	/^  public void case1() {	$/;"	m	class:KiloManXTest
+case1	test/dp/QuickSumsTest.java	/^  public void case1() {$/;"	m	class:QuickSumsTest
+case1	test/dp/ShortPalindromesTest.java	/^  public void case1() {$/;"	m	class:ShortPalindromesTest
+case1	test/dp/StripePainterTest.java	/^  public void case1() {$/;"	m	class:StripePainterTest
+case1	test/dp/WeightedIntervalSchedulingTest.java	/^  public void case1() {$/;"	m	class:WeightedIntervalSchedulingTest
+case1	test/dp/ZigZagTest.java	/^  public void case1() {$/;"	m	class:ZigZagTest
+case1	test/easy/FibTest.java	/^  public void case1() {$/;"	m	class:FibTest
+case1	test/graph/CircuitsTest.java	/^  public void case1() {$/;"	m	class:CircuitsTest
+case1	test/graph/DungeonEscapeTest.java	/^  public void case1() {$/;"	m	class:DungeonEscapeTest
+case1	test/graph/EscapeTest.java	/^  public void case1() {$/;"	m	class:EscapeTest
+case1	test/graph/GrafixMaskTest.java	/^  public void case1() {$/;"	m	class:GrafixMaskTest
+case1	test/graph/IslandFerriesTest.java	/^  public void case1() {$/;"	m	class:IslandFerriesTest
+case1	test/graph/KiloManX3Test.java	/^  public void case1() {	$/;"	m	class:KiloManX3Test
+case1	test/graph/MarketingTest.java	/^  public void case1() {$/;"	m	class:MarketingTest
+case1	test/graph/PathFindingTest.java	/^  public void case1() {$/;"	m	class:PathFindingTest
+case1	test/graph/RoboCourierTest.java	/^  public void case1() {$/;"	m	class:RoboCourierTest
+case10	test/dp/QuickSumsTest.java	/^  public void case10() {$/;"	m	class:QuickSumsTest
+case10	test/dp/ShortPalindromesTest.java	/^  public void case10() {$/;"	m	class:ShortPalindromesTest
+case10	test/dp/StripePainterTest.java	/^  public void case10() {$/;"	m	class:StripePainterTest
+case10	test/graph/DungeonEscapeTest.java	/^  public void case10() {$/;"	m	class:DungeonEscapeTest
+case10	test/graph/EscapeTest.java	/^  public void case10() {$/;"	m	class:EscapeTest
+case10	test/graph/MarketingTest.java	/^  public void case10() {$/;"	m	class:MarketingTest
+case11	test/dp/KiloManX2Test.java	/^  public void case11() {$/;"	m	class:KiloManX2Test
+case11	test/dp/KiloManXTest.java	/^  public void case11() {$/;"	m	class:KiloManXTest
+case11	test/dp/QuickSumsTest.java	/^  public void case11() {$/;"	m	class:QuickSumsTest
+case11	test/dp/ShortPalindromesTest.java	/^  public void case11() {$/;"	m	class:ShortPalindromesTest
+case11	test/dp/StripePainterTest.java	/^  public void case11() {$/;"	m	class:StripePainterTest
+case11	test/graph/DungeonEscapeTest.java	/^  public void case11() {$/;"	m	class:DungeonEscapeTest
+case11	test/graph/EscapeTest.java	/^  public void case11() {$/;"	m	class:EscapeTest
+case11	test/graph/IslandFerriesTest.java	/^  public void case11() {$/;"	m	class:IslandFerriesTest
+case11	test/graph/KiloManX3Test.java	/^  public void case11() {$/;"	m	class:KiloManX3Test
+case11	test/graph/MarketingTest.java	/^  public void case11() {$/;"	m	class:MarketingTest
+case11	test/graph/RoboCourierTest.java	/^  public void case11() {$/;"	m	class:RoboCourierTest
+case110	test/dp/KiloManX2Test.java	/^  public void case110() {$/;"	m	class:KiloManX2Test
+case110	test/dp/KiloManXTest.java	/^  public void case110() {$/;"	m	class:KiloManXTest
+case110	test/graph/IslandFerriesTest.java	/^  public void case110() {$/;"	m	class:IslandFerriesTest
+case110	test/graph/KiloManX3Test.java	/^  public void case110() {$/;"	m	class:KiloManX3Test
+case110	test/graph/RoboCourierTest.java	/^  public void case110() {$/;"	m	class:RoboCourierTest
+case111	test/dp/KiloManX2Test.java	/^  public void case111() {$/;"	m	class:KiloManX2Test
+case111	test/dp/KiloManXTest.java	/^  public void case111() {$/;"	m	class:KiloManXTest
+case111	test/graph/IslandFerriesTest.java	/^  public void case111() {$/;"	m	class:IslandFerriesTest
+case111	test/graph/KiloManX3Test.java	/^  public void case111() {$/;"	m	class:KiloManX3Test
+case111	test/graph/RoboCourierTest.java	/^  public void case111() {$/;"	m	class:RoboCourierTest
+case112	test/dp/KiloManX2Test.java	/^  public void case112() {$/;"	m	class:KiloManX2Test
+case112	test/dp/KiloManXTest.java	/^  public void case112() {$/;"	m	class:KiloManXTest
+case112	test/graph/IslandFerriesTest.java	/^  public void case112() {$/;"	m	class:IslandFerriesTest
+case112	test/graph/KiloManX3Test.java	/^  public void case112() {$/;"	m	class:KiloManX3Test
+case112	test/graph/RoboCourierTest.java	/^  public void case112() {$/;"	m	class:RoboCourierTest
+case113	test/dp/KiloManX2Test.java	/^  public void case113() {$/;"	m	class:KiloManX2Test
+case113	test/dp/KiloManXTest.java	/^  public void case113() {$/;"	m	class:KiloManXTest
+case113	test/graph/IslandFerriesTest.java	/^  public void case113() {$/;"	m	class:IslandFerriesTest
+case113	test/graph/KiloManX3Test.java	/^  public void case113() {$/;"	m	class:KiloManX3Test
+case113	test/graph/RoboCourierTest.java	/^  public void case113() {$/;"	m	class:RoboCourierTest
+case114	test/dp/KiloManX2Test.java	/^  public void case114() {$/;"	m	class:KiloManX2Test
+case114	test/dp/KiloManXTest.java	/^  public void case114() {$/;"	m	class:KiloManXTest
+case114	test/graph/IslandFerriesTest.java	/^  public void case114() {$/;"	m	class:IslandFerriesTest
+case114	test/graph/KiloManX3Test.java	/^  public void case114() {$/;"	m	class:KiloManX3Test
+case114	test/graph/RoboCourierTest.java	/^  public void case114() {$/;"	m	class:RoboCourierTest
+case115	test/dp/KiloManX2Test.java	/^  public void case115() {$/;"	m	class:KiloManX2Test
+case115	test/dp/KiloManXTest.java	/^  public void case115() {$/;"	m	class:KiloManXTest
+case115	test/graph/IslandFerriesTest.java	/^  public void case115() {$/;"	m	class:IslandFerriesTest
+case115	test/graph/KiloManX3Test.java	/^  public void case115() {$/;"	m	class:KiloManX3Test
+case115	test/graph/RoboCourierTest.java	/^  public void case115() {$/;"	m	class:RoboCourierTest
+case116	test/dp/KiloManX2Test.java	/^  public void case116() {$/;"	m	class:KiloManX2Test
+case116	test/dp/KiloManXTest.java	/^  public void case116() {$/;"	m	class:KiloManXTest
+case116	test/graph/IslandFerriesTest.java	/^  public void case116() {$/;"	m	class:IslandFerriesTest
+case116	test/graph/KiloManX3Test.java	/^  public void case116() {$/;"	m	class:KiloManX3Test
+case116	test/graph/RoboCourierTest.java	/^  public void case116() {$/;"	m	class:RoboCourierTest
+case117	test/dp/KiloManX2Test.java	/^  public void case117() {$/;"	m	class:KiloManX2Test
+case117	test/dp/KiloManXTest.java	/^  public void case117() {$/;"	m	class:KiloManXTest
+case117	test/graph/IslandFerriesTest.java	/^  public void case117() {$/;"	m	class:IslandFerriesTest
+case117	test/graph/KiloManX3Test.java	/^  public void case117() {$/;"	m	class:KiloManX3Test
+case117	test/graph/RoboCourierTest.java	/^  public void case117() {$/;"	m	class:RoboCourierTest
+case118	test/dp/KiloManX2Test.java	/^  public void case118() {$/;"	m	class:KiloManX2Test
+case118	test/dp/KiloManXTest.java	/^  public void case118() {$/;"	m	class:KiloManXTest
+case118	test/graph/IslandFerriesTest.java	/^  public void case118() {$/;"	m	class:IslandFerriesTest
+case118	test/graph/KiloManX3Test.java	/^  public void case118() {$/;"	m	class:KiloManX3Test
+case118	test/graph/RoboCourierTest.java	/^  public void case118() {$/;"	m	class:RoboCourierTest
+case119	test/dp/KiloManX2Test.java	/^  public void case119() {$/;"	m	class:KiloManX2Test
+case119	test/dp/KiloManXTest.java	/^  public void case119() {$/;"	m	class:KiloManXTest
+case119	test/graph/IslandFerriesTest.java	/^  public void case119() {$/;"	m	class:IslandFerriesTest
+case119	test/graph/KiloManX3Test.java	/^  public void case119() {$/;"	m	class:KiloManX3Test
+case119	test/graph/RoboCourierTest.java	/^  public void case119() {$/;"	m	class:RoboCourierTest
+case12	test/dp/KiloManX2Test.java	/^  public void case12() {$/;"	m	class:KiloManX2Test
+case12	test/dp/KiloManXTest.java	/^  public void case12() {$/;"	m	class:KiloManXTest
+case12	test/dp/QuickSumsTest.java	/^  public void case12() {$/;"	m	class:QuickSumsTest
+case12	test/dp/ShortPalindromesTest.java	/^  public void case12() {$/;"	m	class:ShortPalindromesTest
+case12	test/dp/StripePainterTest.java	/^  public void case12() {$/;"	m	class:StripePainterTest
+case12	test/graph/DungeonEscapeTest.java	/^  public void case12() {$/;"	m	class:DungeonEscapeTest
+case12	test/graph/EscapeTest.java	/^  public void case12() {$/;"	m	class:EscapeTest
+case12	test/graph/IslandFerriesTest.java	/^  public void case12() {$/;"	m	class:IslandFerriesTest
+case12	test/graph/KiloManX3Test.java	/^  public void case12() {$/;"	m	class:KiloManX3Test
+case12	test/graph/MarketingTest.java	/^  public void case12() {$/;"	m	class:MarketingTest
+case12	test/graph/RoboCourierTest.java	/^  public void case12() {$/;"	m	class:RoboCourierTest
+case120	test/dp/KiloManX2Test.java	/^  public void case120() {$/;"	m	class:KiloManX2Test
+case120	test/dp/KiloManXTest.java	/^  public void case120() {$/;"	m	class:KiloManXTest
+case120	test/graph/IslandFerriesTest.java	/^  public void case120() {$/;"	m	class:IslandFerriesTest
+case120	test/graph/KiloManX3Test.java	/^  public void case120() {$/;"	m	class:KiloManX3Test
+case120	test/graph/RoboCourierTest.java	/^  public void case120() {$/;"	m	class:RoboCourierTest
+case121	test/dp/KiloManX2Test.java	/^  public void case121() {$/;"	m	class:KiloManX2Test
+case121	test/dp/KiloManXTest.java	/^  public void case121() {$/;"	m	class:KiloManXTest
+case121	test/graph/IslandFerriesTest.java	/^  public void case121() {$/;"	m	class:IslandFerriesTest
+case121	test/graph/KiloManX3Test.java	/^  public void case121() {$/;"	m	class:KiloManX3Test
+case121	test/graph/RoboCourierTest.java	/^  public void case121() {$/;"	m	class:RoboCourierTest
+case122	test/dp/KiloManX2Test.java	/^  public void case122() {$/;"	m	class:KiloManX2Test
+case122	test/dp/KiloManXTest.java	/^  public void case122() {$/;"	m	class:KiloManXTest
+case122	test/graph/IslandFerriesTest.java	/^  public void case122() {$/;"	m	class:IslandFerriesTest
+case122	test/graph/KiloManX3Test.java	/^  public void case122() {$/;"	m	class:KiloManX3Test
+case122	test/graph/RoboCourierTest.java	/^  public void case122() {$/;"	m	class:RoboCourierTest
+case123	test/dp/KiloManX2Test.java	/^  public void case123() {$/;"	m	class:KiloManX2Test
+case123	test/dp/KiloManXTest.java	/^  public void case123() {$/;"	m	class:KiloManXTest
+case123	test/graph/IslandFerriesTest.java	/^  public void case123() {$/;"	m	class:IslandFerriesTest
+case123	test/graph/KiloManX3Test.java	/^  public void case123() {$/;"	m	class:KiloManX3Test
+case123	test/graph/RoboCourierTest.java	/^  public void case123() {$/;"	m	class:RoboCourierTest
+case124	test/dp/KiloManX2Test.java	/^  public void case124() {$/;"	m	class:KiloManX2Test
+case124	test/dp/KiloManXTest.java	/^  public void case124() {$/;"	m	class:KiloManXTest
+case124	test/graph/IslandFerriesTest.java	/^  public void case124() {$/;"	m	class:IslandFerriesTest
+case124	test/graph/KiloManX3Test.java	/^  public void case124() {$/;"	m	class:KiloManX3Test
+case124	test/graph/RoboCourierTest.java	/^  public void case124() {$/;"	m	class:RoboCourierTest
+case125	test/dp/KiloManX2Test.java	/^  public void case125() {$/;"	m	class:KiloManX2Test
+case125	test/dp/KiloManXTest.java	/^  public void case125() {$/;"	m	class:KiloManXTest
+case125	test/graph/IslandFerriesTest.java	/^  public void case125() {$/;"	m	class:IslandFerriesTest
+case125	test/graph/KiloManX3Test.java	/^  public void case125() {$/;"	m	class:KiloManX3Test
+case125	test/graph/RoboCourierTest.java	/^  public void case125() {$/;"	m	class:RoboCourierTest
+case126	test/dp/KiloManX2Test.java	/^  public void case126() {$/;"	m	class:KiloManX2Test
+case126	test/dp/KiloManXTest.java	/^  public void case126() {$/;"	m	class:KiloManXTest
+case126	test/graph/IslandFerriesTest.java	/^  public void case126() {$/;"	m	class:IslandFerriesTest
+case126	test/graph/KiloManX3Test.java	/^  public void case126() {$/;"	m	class:KiloManX3Test
+case126	test/graph/RoboCourierTest.java	/^  public void case126() {$/;"	m	class:RoboCourierTest
+case127	test/dp/KiloManX2Test.java	/^  public void case127() {$/;"	m	class:KiloManX2Test
+case127	test/dp/KiloManXTest.java	/^  public void case127() {$/;"	m	class:KiloManXTest
+case127	test/graph/IslandFerriesTest.java	/^  public void case127() {$/;"	m	class:IslandFerriesTest
+case127	test/graph/KiloManX3Test.java	/^  public void case127() {$/;"	m	class:KiloManX3Test
+case127	test/graph/RoboCourierTest.java	/^  public void case127() {$/;"	m	class:RoboCourierTest
+case128	test/dp/KiloManX2Test.java	/^  public void case128() {$/;"	m	class:KiloManX2Test
+case128	test/dp/KiloManXTest.java	/^  public void case128() {$/;"	m	class:KiloManXTest
+case128	test/graph/IslandFerriesTest.java	/^  public void case128() {$/;"	m	class:IslandFerriesTest
+case128	test/graph/KiloManX3Test.java	/^  public void case128() {$/;"	m	class:KiloManX3Test
+case128	test/graph/RoboCourierTest.java	/^  public void case128() {$/;"	m	class:RoboCourierTest
+case129	test/dp/KiloManX2Test.java	/^  public void case129() {$/;"	m	class:KiloManX2Test
+case129	test/dp/KiloManXTest.java	/^  public void case129() {$/;"	m	class:KiloManXTest
+case129	test/graph/IslandFerriesTest.java	/^  public void case129() {$/;"	m	class:IslandFerriesTest
+case129	test/graph/KiloManX3Test.java	/^  public void case129() {$/;"	m	class:KiloManX3Test
+case129	test/graph/RoboCourierTest.java	/^  public void case129() {$/;"	m	class:RoboCourierTest
+case13	test/dp/KiloManX2Test.java	/^  public void case13() {$/;"	m	class:KiloManX2Test
+case13	test/dp/KiloManXTest.java	/^  public void case13() {$/;"	m	class:KiloManXTest
+case13	test/dp/QuickSumsTest.java	/^  public void case13() {$/;"	m	class:QuickSumsTest
+case13	test/dp/ShortPalindromesTest.java	/^  public void case13() {$/;"	m	class:ShortPalindromesTest
+case13	test/dp/StripePainterTest.java	/^  public void case13() {$/;"	m	class:StripePainterTest
+case13	test/graph/DungeonEscapeTest.java	/^  public void case13() {$/;"	m	class:DungeonEscapeTest
+case13	test/graph/EscapeTest.java	/^  public void case13() {$/;"	m	class:EscapeTest
+case13	test/graph/IslandFerriesTest.java	/^  public void case13() {$/;"	m	class:IslandFerriesTest
+case13	test/graph/KiloManX3Test.java	/^  public void case13() {$/;"	m	class:KiloManX3Test
+case13	test/graph/MarketingTest.java	/^  public void case13() {$/;"	m	class:MarketingTest
+case13	test/graph/RoboCourierTest.java	/^  public void case13() {$/;"	m	class:RoboCourierTest
+case130	test/dp/KiloManX2Test.java	/^  public void case130() {$/;"	m	class:KiloManX2Test
+case130	test/dp/KiloManXTest.java	/^  public void case130() {$/;"	m	class:KiloManXTest
+case130	test/graph/IslandFerriesTest.java	/^  public void case130() {$/;"	m	class:IslandFerriesTest
+case130	test/graph/KiloManX3Test.java	/^  public void case130() {$/;"	m	class:KiloManX3Test
+case130	test/graph/RoboCourierTest.java	/^  public void case130() {$/;"	m	class:RoboCourierTest
+case131	test/dp/KiloManX2Test.java	/^  public void case131() {$/;"	m	class:KiloManX2Test
+case131	test/dp/KiloManXTest.java	/^  public void case131() {$/;"	m	class:KiloManXTest
+case131	test/graph/IslandFerriesTest.java	/^  public void case131() {$/;"	m	class:IslandFerriesTest
+case131	test/graph/KiloManX3Test.java	/^  public void case131() {$/;"	m	class:KiloManX3Test
+case131	test/graph/RoboCourierTest.java	/^  public void case131() {$/;"	m	class:RoboCourierTest
+case132	test/dp/KiloManX2Test.java	/^  public void case132() {$/;"	m	class:KiloManX2Test
+case132	test/dp/KiloManXTest.java	/^  public void case132() {$/;"	m	class:KiloManXTest
+case132	test/graph/IslandFerriesTest.java	/^  public void case132() {$/;"	m	class:IslandFerriesTest
+case132	test/graph/KiloManX3Test.java	/^  public void case132() {$/;"	m	class:KiloManX3Test
+case133	test/dp/KiloManX2Test.java	/^  public void case133() {$/;"	m	class:KiloManX2Test
+case133	test/dp/KiloManXTest.java	/^  public void case133() {$/;"	m	class:KiloManXTest
+case133	test/graph/IslandFerriesTest.java	/^  public void case133() {$/;"	m	class:IslandFerriesTest
+case133	test/graph/KiloManX3Test.java	/^  public void case133() {$/;"	m	class:KiloManX3Test
+case134	test/graph/IslandFerriesTest.java	/^  public void case134() {$/;"	m	class:IslandFerriesTest
+case14	test/dp/KiloManX2Test.java	/^  public void case14() {$/;"	m	class:KiloManX2Test
+case14	test/dp/KiloManXTest.java	/^  public void case14() {$/;"	m	class:KiloManXTest
+case14	test/dp/QuickSumsTest.java	/^  public void case14() {$/;"	m	class:QuickSumsTest
+case14	test/dp/ShortPalindromesTest.java	/^  public void case14() {$/;"	m	class:ShortPalindromesTest
+case14	test/dp/StripePainterTest.java	/^  public void case14() {$/;"	m	class:StripePainterTest
+case14	test/graph/DungeonEscapeTest.java	/^  public void case14() {$/;"	m	class:DungeonEscapeTest
+case14	test/graph/EscapeTest.java	/^  public void case14() {$/;"	m	class:EscapeTest
+case14	test/graph/IslandFerriesTest.java	/^  public void case14() {$/;"	m	class:IslandFerriesTest
+case14	test/graph/KiloManX3Test.java	/^  public void case14() {$/;"	m	class:KiloManX3Test
+case14	test/graph/MarketingTest.java	/^  public void case14() {$/;"	m	class:MarketingTest
+case14	test/graph/RoboCourierTest.java	/^  public void case14() {$/;"	m	class:RoboCourierTest
+case15	test/dp/KiloManX2Test.java	/^  public void case15() {$/;"	m	class:KiloManX2Test
+case15	test/dp/KiloManXTest.java	/^  public void case15() {$/;"	m	class:KiloManXTest
+case15	test/dp/QuickSumsTest.java	/^  public void case15() {$/;"	m	class:QuickSumsTest
+case15	test/dp/ShortPalindromesTest.java	/^  public void case15() {$/;"	m	class:ShortPalindromesTest
+case15	test/dp/StripePainterTest.java	/^  public void case15() {$/;"	m	class:StripePainterTest
+case15	test/graph/DungeonEscapeTest.java	/^  public void case15() {$/;"	m	class:DungeonEscapeTest
+case15	test/graph/EscapeTest.java	/^  public void case15() {$/;"	m	class:EscapeTest
+case15	test/graph/IslandFerriesTest.java	/^  public void case15() {$/;"	m	class:IslandFerriesTest
+case15	test/graph/KiloManX3Test.java	/^  public void case15() {$/;"	m	class:KiloManX3Test
+case15	test/graph/MarketingTest.java	/^  public void case15() {$/;"	m	class:MarketingTest
+case15	test/graph/RoboCourierTest.java	/^  public void case15() {$/;"	m	class:RoboCourierTest
+case150	test/dp/QuickSumsTest.java	/^  public void case150() {$/;"	m	class:QuickSumsTest
+case151	test/dp/QuickSumsTest.java	/^  public void case151() {$/;"	m	class:QuickSumsTest
+case16	test/dp/KiloManX2Test.java	/^  public void case16() {$/;"	m	class:KiloManX2Test
+case16	test/dp/KiloManXTest.java	/^  public void case16() {$/;"	m	class:KiloManXTest
+case16	test/dp/QuickSumsTest.java	/^  public void case16() {$/;"	m	class:QuickSumsTest
+case16	test/dp/ShortPalindromesTest.java	/^  public void case16() {$/;"	m	class:ShortPalindromesTest
+case16	test/dp/StripePainterTest.java	/^  public void case16() {$/;"	m	class:StripePainterTest
+case16	test/graph/DungeonEscapeTest.java	/^  public void case16() {$/;"	m	class:DungeonEscapeTest
+case16	test/graph/EscapeTest.java	/^  public void case16() {$/;"	m	class:EscapeTest
+case16	test/graph/IslandFerriesTest.java	/^  public void case16() {$/;"	m	class:IslandFerriesTest
+case16	test/graph/KiloManX3Test.java	/^  public void case16() {$/;"	m	class:KiloManX3Test
+case16	test/graph/MarketingTest.java	/^  public void case16() {$/;"	m	class:MarketingTest
+case16	test/graph/RoboCourierTest.java	/^  public void case16() {$/;"	m	class:RoboCourierTest
+case17	test/dp/KiloManX2Test.java	/^  public void case17() {$/;"	m	class:KiloManX2Test
+case17	test/dp/KiloManXTest.java	/^  public void case17() {$/;"	m	class:KiloManXTest
+case17	test/dp/QuickSumsTest.java	/^  public void case17() {$/;"	m	class:QuickSumsTest
+case17	test/dp/ShortPalindromesTest.java	/^  public void case17() {$/;"	m	class:ShortPalindromesTest
+case17	test/dp/StripePainterTest.java	/^  public void case17() {$/;"	m	class:StripePainterTest
+case17	test/graph/DungeonEscapeTest.java	/^  public void case17() {$/;"	m	class:DungeonEscapeTest
+case17	test/graph/EscapeTest.java	/^  public void case17() {$/;"	m	class:EscapeTest
+case17	test/graph/IslandFerriesTest.java	/^  public void case17() {$/;"	m	class:IslandFerriesTest
+case17	test/graph/KiloManX3Test.java	/^  public void case17() {$/;"	m	class:KiloManX3Test
+case17	test/graph/MarketingTest.java	/^  public void case17() {$/;"	m	class:MarketingTest
+case17	test/graph/RoboCourierTest.java	/^  public void case17() {$/;"	m	class:RoboCourierTest
+case18	test/dp/KiloManX2Test.java	/^  public void case18() {$/;"	m	class:KiloManX2Test
+case18	test/dp/KiloManXTest.java	/^  public void case18() {$/;"	m	class:KiloManXTest
+case18	test/dp/QuickSumsTest.java	/^  public void case18() {$/;"	m	class:QuickSumsTest
+case18	test/dp/ShortPalindromesTest.java	/^  public void case18() {$/;"	m	class:ShortPalindromesTest
+case18	test/dp/StripePainterTest.java	/^  public void case18() {$/;"	m	class:StripePainterTest
+case18	test/graph/DungeonEscapeTest.java	/^  public void case18() {$/;"	m	class:DungeonEscapeTest
+case18	test/graph/EscapeTest.java	/^  public void case18() {$/;"	m	class:EscapeTest
+case18	test/graph/IslandFerriesTest.java	/^  public void case18() {$/;"	m	class:IslandFerriesTest
+case18	test/graph/KiloManX3Test.java	/^  public void case18() {$/;"	m	class:KiloManX3Test
+case18	test/graph/MarketingTest.java	/^  public void case18() {$/;"	m	class:MarketingTest
+case18	test/graph/RoboCourierTest.java	/^  public void case18() {$/;"	m	class:RoboCourierTest
+case19	test/dp/KiloManX2Test.java	/^  public void case19() {$/;"	m	class:KiloManX2Test
+case19	test/dp/KiloManXTest.java	/^  public void case19() {$/;"	m	class:KiloManXTest
+case19	test/dp/QuickSumsTest.java	/^  public void case19() {$/;"	m	class:QuickSumsTest
+case19	test/dp/ShortPalindromesTest.java	/^  public void case19() {$/;"	m	class:ShortPalindromesTest
+case19	test/dp/StripePainterTest.java	/^  public void case19() {$/;"	m	class:StripePainterTest
+case19	test/graph/DungeonEscapeTest.java	/^  public void case19() {$/;"	m	class:DungeonEscapeTest
+case19	test/graph/EscapeTest.java	/^  public void case19() {$/;"	m	class:EscapeTest
+case19	test/graph/IslandFerriesTest.java	/^  public void case19() {$/;"	m	class:IslandFerriesTest
+case19	test/graph/KiloManX3Test.java	/^  public void case19() {$/;"	m	class:KiloManX3Test
+case19	test/graph/MarketingTest.java	/^  public void case19() {$/;"	m	class:MarketingTest
+case19	test/graph/RoboCourierTest.java	/^  public void case19() {$/;"	m	class:RoboCourierTest
+case2	test/dp/AvoidRoadsTest.java	/^  public void case2() {$/;"	m	class:AvoidRoadsTest
+case2	test/dp/BadNeighborsTest.java	/^  public void case2() {$/;"	m	class:BadNeighborsTest
+case2	test/dp/FlowerGardenTest.java	/^  public void case2() {$/;"	m	class:FlowerGardenTest
+case2	test/dp/GameOfLifeDivOneTest.java	/^  public void case2() {$/;"	m	class:GameOfLifeDivOneTest
+case2	test/dp/JewelryTest.java	/^  public void case2() {$/;"	m	class:JewelryTest
+case2	test/dp/KiloManX2Test.java	/^  public void case2() {	$/;"	m	class:KiloManX2Test
+case2	test/dp/KiloManXTest.java	/^  public void case2() {	$/;"	m	class:KiloManXTest
+case2	test/dp/QuickSumsTest.java	/^  public void case2() {$/;"	m	class:QuickSumsTest
+case2	test/dp/ShortPalindromesTest.java	/^  public void case2() {$/;"	m	class:ShortPalindromesTest
+case2	test/dp/StripePainterTest.java	/^  public void case2() {$/;"	m	class:StripePainterTest
+case2	test/dp/WeightedIntervalSchedulingTest.java	/^  public void case2() {$/;"	m	class:WeightedIntervalSchedulingTest
+case2	test/dp/ZigZagTest.java	/^  public void case2() {$/;"	m	class:ZigZagTest
+case2	test/easy/FibTest.java	/^  public void case2() {$/;"	m	class:FibTest
+case2	test/graph/CircuitsTest.java	/^  public void case2() {$/;"	m	class:CircuitsTest
+case2	test/graph/DungeonEscapeTest.java	/^  public void case2() {$/;"	m	class:DungeonEscapeTest
+case2	test/graph/EscapeTest.java	/^  public void case2() {$/;"	m	class:EscapeTest
+case2	test/graph/GrafixMaskTest.java	/^  public void case2() {$/;"	m	class:GrafixMaskTest
+case2	test/graph/IslandFerriesTest.java	/^  public void case2() {$/;"	m	class:IslandFerriesTest
+case2	test/graph/KiloManX3Test.java	/^  public void case2() {	$/;"	m	class:KiloManX3Test
+case2	test/graph/MarketingTest.java	/^  public void case2() {$/;"	m	class:MarketingTest
+case2	test/graph/PathFindingTest.java	/^  public void case2() {$/;"	m	class:PathFindingTest
+case2	test/graph/RoboCourierTest.java	/^  public void case2() {$/;"	m	class:RoboCourierTest
+case20	test/dp/QuickSumsTest.java	/^  public void case20() {$/;"	m	class:QuickSumsTest
+case20	test/dp/ShortPalindromesTest.java	/^  public void case20() {$/;"	m	class:ShortPalindromesTest
+case20	test/dp/StripePainterTest.java	/^  public void case20() {$/;"	m	class:StripePainterTest
+case20	test/graph/DungeonEscapeTest.java	/^  public void case20() {$/;"	m	class:DungeonEscapeTest
+case20	test/graph/EscapeTest.java	/^  public void case20() {$/;"	m	class:EscapeTest
+case20	test/graph/MarketingTest.java	/^  public void case20() {$/;"	m	class:MarketingTest
+case21	test/dp/QuickSumsTest.java	/^  public void case21() {$/;"	m	class:QuickSumsTest
+case21	test/dp/ShortPalindromesTest.java	/^  public void case21() {$/;"	m	class:ShortPalindromesTest
+case21	test/dp/StripePainterTest.java	/^  public void case21() {$/;"	m	class:StripePainterTest
+case21	test/graph/DungeonEscapeTest.java	/^  public void case21() {$/;"	m	class:DungeonEscapeTest
+case21	test/graph/EscapeTest.java	/^  public void case21() {$/;"	m	class:EscapeTest
+case21	test/graph/MarketingTest.java	/^  public void case21() {$/;"	m	class:MarketingTest
+case22	test/dp/QuickSumsTest.java	/^  public void case22() {$/;"	m	class:QuickSumsTest
+case22	test/dp/ShortPalindromesTest.java	/^  public void case22() {$/;"	m	class:ShortPalindromesTest
+case22	test/dp/StripePainterTest.java	/^  public void case22() {$/;"	m	class:StripePainterTest
+case22	test/graph/DungeonEscapeTest.java	/^  public void case22() {$/;"	m	class:DungeonEscapeTest
+case22	test/graph/EscapeTest.java	/^  public void case22() {$/;"	m	class:EscapeTest
+case22	test/graph/MarketingTest.java	/^  public void case22() {$/;"	m	class:MarketingTest
+case23	test/dp/QuickSumsTest.java	/^  public void case23() {$/;"	m	class:QuickSumsTest
+case23	test/dp/ShortPalindromesTest.java	/^  public void case23() {$/;"	m	class:ShortPalindromesTest
+case23	test/dp/StripePainterTest.java	/^  public void case23() {$/;"	m	class:StripePainterTest
+case23	test/graph/DungeonEscapeTest.java	/^  public void case23() {$/;"	m	class:DungeonEscapeTest
+case23	test/graph/EscapeTest.java	/^  public void case23() {$/;"	m	class:EscapeTest
+case23	test/graph/MarketingTest.java	/^  public void case23() {$/;"	m	class:MarketingTest
+case230	test/dp/ShortPalindromesTest.java	/^  public void case230() {$/;"	m	class:ShortPalindromesTest
+case24	test/dp/QuickSumsTest.java	/^  public void case24() {$/;"	m	class:QuickSumsTest
+case24	test/dp/ShortPalindromesTest.java	/^  public void case24() {$/;"	m	class:ShortPalindromesTest
+case24	test/dp/StripePainterTest.java	/^  public void case24() {$/;"	m	class:StripePainterTest
+case24	test/graph/DungeonEscapeTest.java	/^  public void case24() {$/;"	m	class:DungeonEscapeTest
+case24	test/graph/EscapeTest.java	/^  public void case24() {$/;"	m	class:EscapeTest
+case24	test/graph/MarketingTest.java	/^  public void case24() {$/;"	m	class:MarketingTest
+case25	test/dp/QuickSumsTest.java	/^  public void case25() {$/;"	m	class:QuickSumsTest
+case25	test/dp/ShortPalindromesTest.java	/^  public void case25() {$/;"	m	class:ShortPalindromesTest
+case25	test/dp/StripePainterTest.java	/^  public void case25() {$/;"	m	class:StripePainterTest
+case25	test/graph/DungeonEscapeTest.java	/^  public void case25() {$/;"	m	class:DungeonEscapeTest
+case25	test/graph/EscapeTest.java	/^  public void case25() {$/;"	m	class:EscapeTest
+case25	test/graph/MarketingTest.java	/^  public void case25() {$/;"	m	class:MarketingTest
+case26	test/dp/QuickSumsTest.java	/^  public void case26() {$/;"	m	class:QuickSumsTest
+case26	test/dp/ShortPalindromesTest.java	/^  public void case26() {$/;"	m	class:ShortPalindromesTest
+case26	test/dp/StripePainterTest.java	/^  public void case26() {$/;"	m	class:StripePainterTest
+case26	test/graph/DungeonEscapeTest.java	/^  public void case26() {$/;"	m	class:DungeonEscapeTest
+case26	test/graph/EscapeTest.java	/^  public void case26() {$/;"	m	class:EscapeTest
+case26	test/graph/MarketingTest.java	/^  public void case26() {$/;"	m	class:MarketingTest
+case27	test/dp/QuickSumsTest.java	/^  public void case27() {$/;"	m	class:QuickSumsTest
+case27	test/dp/ShortPalindromesTest.java	/^  public void case27() {$/;"	m	class:ShortPalindromesTest
+case27	test/dp/StripePainterTest.java	/^  public void case27() {$/;"	m	class:StripePainterTest
+case27	test/graph/DungeonEscapeTest.java	/^  public void case27() {$/;"	m	class:DungeonEscapeTest
+case27	test/graph/EscapeTest.java	/^  public void case27() {$/;"	m	class:EscapeTest
+case27	test/graph/MarketingTest.java	/^  public void case27() {$/;"	m	class:MarketingTest
+case28	test/dp/QuickSumsTest.java	/^  public void case28() {$/;"	m	class:QuickSumsTest
+case28	test/dp/ShortPalindromesTest.java	/^  public void case28() {$/;"	m	class:ShortPalindromesTest
+case28	test/dp/StripePainterTest.java	/^  public void case28() {$/;"	m	class:StripePainterTest
+case28	test/graph/DungeonEscapeTest.java	/^  public void case28() {$/;"	m	class:DungeonEscapeTest
+case28	test/graph/EscapeTest.java	/^  public void case28() {$/;"	m	class:EscapeTest
+case28	test/graph/MarketingTest.java	/^  public void case28() {$/;"	m	class:MarketingTest
+case29	test/dp/ShortPalindromesTest.java	/^  public void case29() {$/;"	m	class:ShortPalindromesTest
+case29	test/dp/StripePainterTest.java	/^  public void case29() {$/;"	m	class:StripePainterTest
+case29	test/graph/DungeonEscapeTest.java	/^  public void case29() {$/;"	m	class:DungeonEscapeTest
+case29	test/graph/EscapeTest.java	/^  public void case29() {$/;"	m	class:EscapeTest
+case29	test/graph/MarketingTest.java	/^  public void case29() {$/;"	m	class:MarketingTest
+case3	test/dp/AvoidRoadsTest.java	/^  public void case3() {$/;"	m	class:AvoidRoadsTest
+case3	test/dp/BadNeighborsTest.java	/^  public void case3() {$/;"	m	class:BadNeighborsTest
+case3	test/dp/FlowerGardenTest.java	/^  public void case3() {$/;"	m	class:FlowerGardenTest
+case3	test/dp/GameOfLifeDivOneTest.java	/^  public void case3() {$/;"	m	class:GameOfLifeDivOneTest
+case3	test/dp/JewelryTest.java	/^  public void case3() {$/;"	m	class:JewelryTest
+case3	test/dp/KiloManX2Test.java	/^  public void case3() {	$/;"	m	class:KiloManX2Test
+case3	test/dp/KiloManXTest.java	/^  public void case3() {	$/;"	m	class:KiloManXTest
+case3	test/dp/QuickSumsTest.java	/^  public void case3() {$/;"	m	class:QuickSumsTest
+case3	test/dp/ShortPalindromesTest.java	/^  public void case3() {$/;"	m	class:ShortPalindromesTest
+case3	test/dp/StripePainterTest.java	/^  public void case3() {$/;"	m	class:StripePainterTest
+case3	test/dp/ZigZagTest.java	/^  public void case3() {$/;"	m	class:ZigZagTest
+case3	test/graph/CircuitsTest.java	/^  public void case3() {$/;"	m	class:CircuitsTest
+case3	test/graph/DungeonEscapeTest.java	/^  public void case3() {$/;"	m	class:DungeonEscapeTest
+case3	test/graph/EscapeTest.java	/^  public void case3() {$/;"	m	class:EscapeTest
+case3	test/graph/GrafixMaskTest.java	/^  public void case3() {$/;"	m	class:GrafixMaskTest
+case3	test/graph/IslandFerriesTest.java	/^  public void case3() {$/;"	m	class:IslandFerriesTest
+case3	test/graph/KiloManX3Test.java	/^  public void case3() {	$/;"	m	class:KiloManX3Test
+case3	test/graph/MarketingTest.java	/^  public void case3() {$/;"	m	class:MarketingTest
+case3	test/graph/PathFindingTest.java	/^  public void case3() {$/;"	m	class:PathFindingTest
+case3	test/graph/RoboCourierTest.java	/^  public void case3()	{$/;"	m	class:RoboCourierTest
+case30	test/dp/ShortPalindromesTest.java	/^  public void case30() {$/;"	m	class:ShortPalindromesTest
+case30	test/dp/StripePainterTest.java	/^  public void case30() {$/;"	m	class:StripePainterTest
+case30	test/graph/DungeonEscapeTest.java	/^  public void case30() {$/;"	m	class:DungeonEscapeTest
+case30	test/graph/EscapeTest.java	/^  public void case30() {$/;"	m	class:EscapeTest
+case30	test/graph/MarketingTest.java	/^  public void case30() {$/;"	m	class:MarketingTest
+case31	test/dp/ShortPalindromesTest.java	/^  public void case31() {$/;"	m	class:ShortPalindromesTest
+case31	test/dp/StripePainterTest.java	/^  public void case31() {$/;"	m	class:StripePainterTest
+case31	test/graph/DungeonEscapeTest.java	/^  public void case31() {$/;"	m	class:DungeonEscapeTest
+case31	test/graph/EscapeTest.java	/^  public void case31() {$/;"	m	class:EscapeTest
+case32	test/dp/ShortPalindromesTest.java	/^  public void case32() {$/;"	m	class:ShortPalindromesTest
+case32	test/dp/StripePainterTest.java	/^  public void case32() {$/;"	m	class:StripePainterTest
+case32	test/graph/DungeonEscapeTest.java	/^  public void case32() {$/;"	m	class:DungeonEscapeTest
+case32	test/graph/EscapeTest.java	/^  public void case32() {$/;"	m	class:EscapeTest
+case33	test/dp/ShortPalindromesTest.java	/^  public void case33() {$/;"	m	class:ShortPalindromesTest
+case33	test/dp/StripePainterTest.java	/^  public void case33() {$/;"	m	class:StripePainterTest
+case33	test/graph/DungeonEscapeTest.java	/^  public void case33() {$/;"	m	class:DungeonEscapeTest
+case33	test/graph/EscapeTest.java	/^  public void case33() {$/;"	m	class:EscapeTest
+case34	test/dp/ShortPalindromesTest.java	/^  public void case34() {$/;"	m	class:ShortPalindromesTest
+case34	test/dp/StripePainterTest.java	/^  public void case34() {$/;"	m	class:StripePainterTest
+case34	test/graph/DungeonEscapeTest.java	/^  public void case34() {$/;"	m	class:DungeonEscapeTest
+case34	test/graph/EscapeTest.java	/^  public void case34() {$/;"	m	class:EscapeTest
+case35	test/dp/ShortPalindromesTest.java	/^  public void case35() {$/;"	m	class:ShortPalindromesTest
+case35	test/dp/StripePainterTest.java	/^  public void case35() {$/;"	m	class:StripePainterTest
+case35	test/graph/DungeonEscapeTest.java	/^  public void case35() {$/;"	m	class:DungeonEscapeTest
+case35	test/graph/EscapeTest.java	/^  public void case35() {$/;"	m	class:EscapeTest
+case36	test/dp/ShortPalindromesTest.java	/^  public void case36() {$/;"	m	class:ShortPalindromesTest
+case36	test/dp/StripePainterTest.java	/^  public void case36() {$/;"	m	class:StripePainterTest
+case36	test/graph/DungeonEscapeTest.java	/^  public void case36() {$/;"	m	class:DungeonEscapeTest
+case36	test/graph/EscapeTest.java	/^  public void case36() {$/;"	m	class:EscapeTest
+case37	test/dp/ShortPalindromesTest.java	/^  public void case37() {$/;"	m	class:ShortPalindromesTest
+case37	test/dp/StripePainterTest.java	/^  public void case37() {$/;"	m	class:StripePainterTest
+case37	test/graph/DungeonEscapeTest.java	/^  public void case37() {$/;"	m	class:DungeonEscapeTest
+case37	test/graph/EscapeTest.java	/^  public void case37() {$/;"	m	class:EscapeTest
+case38	test/dp/ShortPalindromesTest.java	/^  public void case38() {$/;"	m	class:ShortPalindromesTest
+case38	test/graph/DungeonEscapeTest.java	/^  public void case38() {$/;"	m	class:DungeonEscapeTest
+case38	test/graph/EscapeTest.java	/^  public void case38() {$/;"	m	class:EscapeTest
+case39	test/dp/ShortPalindromesTest.java	/^  public void case39() {$/;"	m	class:ShortPalindromesTest
+case39	test/graph/DungeonEscapeTest.java	/^  public void case39() {$/;"	m	class:DungeonEscapeTest
+case39	test/graph/EscapeTest.java	/^  public void case39() {$/;"	m	class:EscapeTest
+case4	test/dp/AvoidRoadsTest.java	/^  public void case4() {$/;"	m	class:AvoidRoadsTest
+case4	test/dp/BadNeighborsTest.java	/^  public void case4() {$/;"	m	class:BadNeighborsTest
+case4	test/dp/FlowerGardenTest.java	/^  public void case4() {$/;"	m	class:FlowerGardenTest
+case4	test/dp/GameOfLifeDivOneTest.java	/^  public void case4() {$/;"	m	class:GameOfLifeDivOneTest
+case4	test/dp/JewelryTest.java	/^  public void case4() {$/;"	m	class:JewelryTest
+case4	test/dp/KiloManX2Test.java	/^  public void case4() {	$/;"	m	class:KiloManX2Test
+case4	test/dp/KiloManXTest.java	/^  public void case4() {	$/;"	m	class:KiloManXTest
+case4	test/dp/QuickSumsTest.java	/^  public void case4() {$/;"	m	class:QuickSumsTest
+case4	test/dp/ShortPalindromesTest.java	/^  public void case4() {$/;"	m	class:ShortPalindromesTest
+case4	test/dp/StripePainterTest.java	/^  public void case4() {$/;"	m	class:StripePainterTest
+case4	test/dp/ZigZagTest.java	/^  public void case4() {$/;"	m	class:ZigZagTest
+case4	test/graph/CircuitsTest.java	/^  public void case4() {$/;"	m	class:CircuitsTest
+case4	test/graph/DungeonEscapeTest.java	/^  public void case4() {$/;"	m	class:DungeonEscapeTest
+case4	test/graph/EscapeTest.java	/^  public void case4() {$/;"	m	class:EscapeTest
+case4	test/graph/GrafixMaskTest.java	/^  public void case4() {$/;"	m	class:GrafixMaskTest
+case4	test/graph/IslandFerriesTest.java	/^  public void case4() {$/;"	m	class:IslandFerriesTest
+case4	test/graph/KiloManX3Test.java	/^  public void case4() {	$/;"	m	class:KiloManX3Test
+case4	test/graph/MarketingTest.java	/^  public void case4() {$/;"	m	class:MarketingTest
+case4	test/graph/PathFindingTest.java	/^  public void case4() {$/;"	m	class:PathFindingTest
+case4	test/graph/RoboCourierTest.java	/^  public void case4()	{$/;"	m	class:RoboCourierTest
+case40	test/dp/ShortPalindromesTest.java	/^  public void case40() {$/;"	m	class:ShortPalindromesTest
+case40	test/graph/DungeonEscapeTest.java	/^  public void case40() {$/;"	m	class:DungeonEscapeTest
+case40	test/graph/EscapeTest.java	/^  public void case40() {$/;"	m	class:EscapeTest
+case41	test/dp/ShortPalindromesTest.java	/^  public void case41() {$/;"	m	class:ShortPalindromesTest
+case41	test/graph/DungeonEscapeTest.java	/^  public void case41() {$/;"	m	class:DungeonEscapeTest
+case41	test/graph/EscapeTest.java	/^  public void case41() {$/;"	m	class:EscapeTest
+case42	test/dp/ShortPalindromesTest.java	/^  public void case42() {$/;"	m	class:ShortPalindromesTest
+case42	test/graph/EscapeTest.java	/^  public void case42() {$/;"	m	class:EscapeTest
+case43	test/dp/ShortPalindromesTest.java	/^  public void case43() {$/;"	m	class:ShortPalindromesTest
+case43	test/graph/EscapeTest.java	/^  public void case43() {$/;"	m	class:EscapeTest
+case44	test/dp/ShortPalindromesTest.java	/^  public void case44() {$/;"	m	class:ShortPalindromesTest
+case44	test/graph/EscapeTest.java	/^  public void case44() {$/;"	m	class:EscapeTest
+case45	test/dp/ShortPalindromesTest.java	/^  public void case45() {$/;"	m	class:ShortPalindromesTest
+case45	test/graph/EscapeTest.java	/^  public void case45() {$/;"	m	class:EscapeTest
+case46	test/dp/ShortPalindromesTest.java	/^  public void case46() {$/;"	m	class:ShortPalindromesTest
+case46	test/graph/EscapeTest.java	/^  public void case46() {$/;"	m	class:EscapeTest
+case47	test/dp/ShortPalindromesTest.java	/^  public void case47() {$/;"	m	class:ShortPalindromesTest
+case47	test/graph/EscapeTest.java	/^  public void case47() {$/;"	m	class:EscapeTest
+case48	test/dp/ShortPalindromesTest.java	/^  public void case48() {$/;"	m	class:ShortPalindromesTest
+case48	test/graph/EscapeTest.java	/^  public void case48() {$/;"	m	class:EscapeTest
+case49	test/dp/ShortPalindromesTest.java	/^  public void case49() {$/;"	m	class:ShortPalindromesTest
+case49	test/graph/EscapeTest.java	/^  public void case49() {$/;"	m	class:EscapeTest
+case5	test/dp/BadNeighborsTest.java	/^  public void case5() {$/;"	m	class:BadNeighborsTest
+case5	test/dp/FlowerGardenTest.java	/^  public void case5() {$/;"	m	class:FlowerGardenTest
+case5	test/dp/GameOfLifeDivOneTest.java	/^  public void case5() {$/;"	m	class:GameOfLifeDivOneTest
+case5	test/dp/JewelryTest.java	/^  public void case5() {$/;"	m	class:JewelryTest
+case5	test/dp/QuickSumsTest.java	/^  public void case5() {$/;"	m	class:QuickSumsTest
+case5	test/dp/ShortPalindromesTest.java	/^  public void case5() {$/;"	m	class:ShortPalindromesTest
+case5	test/dp/StripePainterTest.java	/^  public void case5() {$/;"	m	class:StripePainterTest
+case5	test/dp/ZigZagTest.java	/^  public void case5() {$/;"	m	class:ZigZagTest
+case5	test/graph/CircuitsTest.java	/^  public void case5() {$/;"	m	class:CircuitsTest
+case5	test/graph/DungeonEscapeTest.java	/^  public void case5() {$/;"	m	class:DungeonEscapeTest
+case5	test/graph/EscapeTest.java	/^  public void case5() {$/;"	m	class:EscapeTest
+case5	test/graph/GrafixMaskTest.java	/^  public void case5() {$/;"	m	class:GrafixMaskTest
+case5	test/graph/MarketingTest.java	/^  public void case5() {$/;"	m	class:MarketingTest
+case5	test/graph/PathFindingTest.java	/^  public void case5() {$/;"	m	class:PathFindingTest
+case5	test/graph/RoboCourierTest.java	/^  public void case5()	{$/;"	m	class:RoboCourierTest
+case50	test/dp/ShortPalindromesTest.java	/^  public void case50() {$/;"	m	class:ShortPalindromesTest
+case50	test/graph/EscapeTest.java	/^  public void case50() {$/;"	m	class:EscapeTest
+case51	test/dp/ShortPalindromesTest.java	/^  public void case51() {$/;"	m	class:ShortPalindromesTest
+case51	test/graph/EscapeTest.java	/^  public void case51() {$/;"	m	class:EscapeTest
+case52	test/dp/ShortPalindromesTest.java	/^  public void case52() {$/;"	m	class:ShortPalindromesTest
+case52	test/graph/EscapeTest.java	/^  public void case52() {$/;"	m	class:EscapeTest
+case53	test/dp/ShortPalindromesTest.java	/^  public void case53() {$/;"	m	class:ShortPalindromesTest
+case53	test/graph/EscapeTest.java	/^  public void case53() {$/;"	m	class:EscapeTest
+case54	test/dp/ShortPalindromesTest.java	/^  public void case54() {$/;"	m	class:ShortPalindromesTest
+case54	test/graph/EscapeTest.java	/^  public void case54() {$/;"	m	class:EscapeTest
+case55	test/dp/ShortPalindromesTest.java	/^  public void case55() {$/;"	m	class:ShortPalindromesTest
+case55	test/graph/EscapeTest.java	/^  public void case55() {$/;"	m	class:EscapeTest
+case56	test/graph/EscapeTest.java	/^  public void case56() {$/;"	m	class:EscapeTest
+case57	test/graph/EscapeTest.java	/^  public void case57() {$/;"	m	class:EscapeTest
+case58	test/graph/EscapeTest.java	/^  public void case58() {$/;"	m	class:EscapeTest
+case59	test/graph/EscapeTest.java	/^  public void case59() {$/;"	m	class:EscapeTest
+case6	test/dp/BadNeighborsTest.java	/^  public void case6() {$/;"	m	class:BadNeighborsTest
+case6	test/dp/FlowerGardenTest.java	/^  public void case6() {$/;"	m	class:FlowerGardenTest
+case6	test/dp/JewelryTest.java	/^  public void case6() {$/;"	m	class:JewelryTest
+case6	test/dp/QuickSumsTest.java	/^  public void case6() {$/;"	m	class:QuickSumsTest
+case6	test/dp/ShortPalindromesTest.java	/^  public void case6() {$/;"	m	class:ShortPalindromesTest
+case6	test/dp/StripePainterTest.java	/^  public void case6() {$/;"	m	class:StripePainterTest
+case6	test/dp/ZigZagTest.java	/^  public void case6() {$/;"	m	class:ZigZagTest
+case6	test/graph/CircuitsTest.java	/^  public void case6() {$/;"	m	class:CircuitsTest
+case6	test/graph/DungeonEscapeTest.java	/^  public void case6() {$/;"	m	class:DungeonEscapeTest
+case6	test/graph/EscapeTest.java	/^  public void case6() {$/;"	m	class:EscapeTest
+case6	test/graph/MarketingTest.java	/^  public void case6() {$/;"	m	class:MarketingTest
+case6	test/graph/PathFindingTest.java	/^  public void case6() {$/;"	m	class:PathFindingTest
+case60	test/graph/EscapeTest.java	/^  public void case60() {$/;"	m	class:EscapeTest
+case61	test/graph/EscapeTest.java	/^  public void case61() {$/;"	m	class:EscapeTest
+case62	test/graph/EscapeTest.java	/^  public void case62() {$/;"	m	class:EscapeTest
+case63	test/graph/EscapeTest.java	/^  public void case63() {$/;"	m	class:EscapeTest
+case64	test/graph/EscapeTest.java	/^  public void case64() {$/;"	m	class:EscapeTest
+case65	test/graph/EscapeTest.java	/^  public void case65() {$/;"	m	class:EscapeTest
+case66	test/graph/EscapeTest.java	/^  public void case66() {$/;"	m	class:EscapeTest
+case67	test/graph/EscapeTest.java	/^  public void case67() {$/;"	m	class:EscapeTest
+case68	test/graph/EscapeTest.java	/^  public void case68() {$/;"	m	class:EscapeTest
+case69	test/graph/EscapeTest.java	/^  public void case69() {$/;"	m	class:EscapeTest
+case7	test/dp/JewelryTest.java	/^  public void case7() {$/;"	m	class:JewelryTest
+case7	test/dp/QuickSumsTest.java	/^  public void case7() {$/;"	m	class:QuickSumsTest
+case7	test/dp/ShortPalindromesTest.java	/^  public void case7() {$/;"	m	class:ShortPalindromesTest
+case7	test/dp/StripePainterTest.java	/^  public void case7() {$/;"	m	class:StripePainterTest
+case7	test/graph/DungeonEscapeTest.java	/^  public void case7() {$/;"	m	class:DungeonEscapeTest
+case7	test/graph/EscapeTest.java	/^  public void case7() {$/;"	m	class:EscapeTest
+case7	test/graph/MarketingTest.java	/^  public void case7() {$/;"	m	class:MarketingTest
+case70	test/graph/EscapeTest.java	/^  public void case70() {$/;"	m	class:EscapeTest
+case71	test/graph/EscapeTest.java	/^  public void case71() {$/;"	m	class:EscapeTest
+case72	test/graph/EscapeTest.java	/^  public void case72() {$/;"	m	class:EscapeTest
+case73	test/graph/EscapeTest.java	/^  public void case73() {$/;"	m	class:EscapeTest
+case74	test/graph/EscapeTest.java	/^  public void case74() {$/;"	m	class:EscapeTest
+case75	test/graph/EscapeTest.java	/^  public void case75() {$/;"	m	class:EscapeTest
+case76	test/graph/EscapeTest.java	/^  public void case76() {$/;"	m	class:EscapeTest
+case77	test/graph/EscapeTest.java	/^  public void case77() {$/;"	m	class:EscapeTest
+case78	test/graph/EscapeTest.java	/^  public void case78() {$/;"	m	class:EscapeTest
+case79	test/graph/EscapeTest.java	/^  public void case79() {$/;"	m	class:EscapeTest
+case8	test/dp/QuickSumsTest.java	/^  public void case8() {$/;"	m	class:QuickSumsTest
+case8	test/dp/ShortPalindromesTest.java	/^  public void case8() {$/;"	m	class:ShortPalindromesTest
+case8	test/dp/StripePainterTest.java	/^  public void case8() {$/;"	m	class:StripePainterTest
+case8	test/graph/DungeonEscapeTest.java	/^  public void case8() {$/;"	m	class:DungeonEscapeTest
+case8	test/graph/EscapeTest.java	/^  public void case8() {$/;"	m	class:EscapeTest
+case8	test/graph/MarketingTest.java	/^  public void case8() {$/;"	m	class:MarketingTest
+case80	test/graph/EscapeTest.java	/^  public void case80() {$/;"	m	class:EscapeTest
+case81	test/graph/EscapeTest.java	/^  public void case81() {$/;"	m	class:EscapeTest
+case82	test/graph/EscapeTest.java	/^  public void case82() {$/;"	m	class:EscapeTest
+case83	test/graph/EscapeTest.java	/^  public void case83() {$/;"	m	class:EscapeTest
+case84	test/graph/EscapeTest.java	/^  public void case84() {$/;"	m	class:EscapeTest
+case85	test/graph/EscapeTest.java	/^  public void case85() {$/;"	m	class:EscapeTest
+case86	test/graph/EscapeTest.java	/^  public void case86() {$/;"	m	class:EscapeTest
+case87	test/graph/EscapeTest.java	/^  public void case87() {$/;"	m	class:EscapeTest
+case88	test/graph/EscapeTest.java	/^  public void case88() {$/;"	m	class:EscapeTest
+case89	test/graph/EscapeTest.java	/^  public void case89() {$/;"	m	class:EscapeTest
+case9	test/dp/QuickSumsTest.java	/^  public void case9() {$/;"	m	class:QuickSumsTest
+case9	test/dp/ShortPalindromesTest.java	/^  public void case9() {$/;"	m	class:ShortPalindromesTest
+case9	test/dp/StripePainterTest.java	/^  public void case9() {$/;"	m	class:StripePainterTest
+case9	test/graph/DungeonEscapeTest.java	/^  public void case9() {$/;"	m	class:DungeonEscapeTest
+case9	test/graph/EscapeTest.java	/^  public void case9() {$/;"	m	class:EscapeTest
+case9	test/graph/MarketingTest.java	/^  public void case9() {$/;"	m	class:MarketingTest
+ceilDiv	src/graph/KiloManX3.java	/^  int ceilDiv(int a, int b) {$/;"	m	class:KiloManX3
+chars	src/dp/ShortPalindromes.java	/^  char[] chars;$/;"	f	class:ShortPalindromes
+color	src/graph/Marketing.java	/^  int[] color;$/;"	f	class:Marketing
+cols	src/graph/RevolvingDoors.java	/^  int cols = 0;$/;"	f	class:RevolvingDoors
+compact	src/dp/KiloManX.java	/^  int[] compact(int[] xs, int i) {$/;"	m	class:KiloManX
+compare	src/dp/ShortPalindromes.java	/^    public int compare(String a, String b) {$/;"	m	class:ShortPalindromes.StringComparator
+compareTo	src/dp/WeightedIntervalScheduling.java	/^    public int compareTo(Interval other) {$/;"	m	class:WeightedIntervalScheduling.Interval
+compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/;"	m	class:MedalTable.Country
+compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
+compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	m	class:KiloManX3.Node
+compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
+copy	src/bkt/BridgeCrossing.java	/^    public State copy() {$/;"	m	class:BridgeCrossing.State
+copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
+cost	src/dp/KiloManX.java	/^    public int cost;$/;"	f	class:KiloManX.Node
+cost	src/graph/Escape.java	/^    public int cost;$/;"	f	class:Escape.Node
+cost	src/graph/Escape.java	/^  int[][] cost;$/;"	f	class:Escape
+cost	src/graph/IslandFerries.java	/^    public int cost;$/;"	f	class:IslandFerries.Node
+cost	src/graph/IslandFerries.java	/^    public int cost;$/;"	f	class:IslandFerries.Ticket
+cost	src/graph/KiloManX3.java	/^    public int cost;$/;"	f	class:KiloManX3.Node
+cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.Node
+costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
+costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
+countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
+create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
+data	src/dp/QuickSums.java	/^  int[][] data;$/;"	f	class:QuickSums
+data	src/dp/StripePainter.java	/^  int[][][] data;$/;"	f	class:StripePainter
+debug	src/bkt/BridgeCrossing.java	/^  void debug(Object...os) {$/;"	m	class:BridgeCrossing
+debug	src/dp/AvoidRoads.java	/^  void debug(Object...os) {$/;"	m	class:AvoidRoads
+debug	src/dp/BadNeighbors.java	/^  void debug(Object...os) {$/;"	m	class:BadNeighbors
+debug	src/dp/FlowerGarden.java	/^  void debug(Object...os) {$/;"	m	class:FlowerGarden
+debug	src/dp/GameOfLifeDivOne.java	/^  void debug(Object...os) {$/;"	m	class:GameOfLifeDivOne
+debug	src/dp/Jewelry.java	/^  void debug(Object...os) {$/;"	m	class:Jewelry
+debug	src/dp/KiloManX.java	/^  void debug(Object...os) {$/;"	m	class:KiloManX
+debug	src/dp/QuickSums.java	/^  void debug(Object...os) {$/;"	m	class:QuickSums
+debug	src/dp/ShortPalindromes.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromes
+debug	src/dp/StripePainter.java	/^  void debug(Object...os) {$/;"	m	class:StripePainter
+debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m	class:WeightedIntervalScheduling
+debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
+debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
+debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
+debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
+debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
+debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
+debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
+debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
+debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
+decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
+decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
+dfs	src/graph/Circuits.java	/^  void dfs(int x, int len) {$/;"	m	class:Circuits
+dfs	src/graph/Marketing.java	/^  boolean dfs(int x, int c) {$/;"	m	class:Marketing
+dijkstra	src/graph/IslandFerries.java	/^  void dijkstra() {$/;"	m	class:IslandFerries
+dir	src/graph/RoboCourier.java	/^    public int dir;$/;"	f	class:RoboCourier.Node
+domes	src/dp/ShortPalindromes.java	/^  String[][][] domes;$/;"	f	class:ShortPalindromes
+done	src/bkt/BridgeCrossing.java	/^    public boolean done() {$/;"	m	class:BridgeCrossing.State
+dungeonescape	test/graph/DungeonEscapeTest.java	/^  DungeonEscape dungeonescape = new DungeonEscape();$/;"	f	class:DungeonEscapeTest
+encode	src/dp/AvoidRoads.java	/^  static int encode(int i, int j) {$/;"	m	class:AvoidRoads
+encode	src/graph/RevolvingDoors.java	/^  public static int encode(int i, int j) {$/;"	m	class:RevolvingDoors
+end	src/graph/RoboCourier.java	/^  Node end;$/;"	f	class:RoboCourier
+exitTime	src/graph/DungeonEscape.java	/^  public int exitTime(String[] up, String[] down, String[] east, String[] west, int startLevel, int startEasting) {$/;"	m	class:DungeonEscape
+expand	src/dp/KiloManX.java	/^  int[] expand(int[] xs, int x) {$/;"	m	class:KiloManX
+extendedKey	src/graph/RoboCourier.java	/^    public String extendedKey() {$/;"	m	class:RoboCourier.Node
+fast	src/graph/RoboCourier.java	/^    public boolean fast = false;$/;"	f	class:RoboCourier.Node
+ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFerries.Ticket
+fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	class:Escape
+fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
+fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
+game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
+gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
+generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results) {$/;"	m	class:MedalTable
+getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
+getAdjCells	src/graph/RevolvingDoors.java	/^    public int[] getAdjCells(int position) {$/;"	m	class:RevolvingDoors.Maze
+getBelow	src/graph/RevolvingDoors.java	/^    public int getBelow(int position) {$/;"	m	class:RevolvingDoors.Maze
+getBits	src/easy/TableSeating.java	/^  public int[] getBits(int n, int size) {$/;"	m	class:TableSeating
+getEnd	src/dp/WeightedIntervalScheduling.java	/^    public int getEnd() {$/;"	m	class:WeightedIntervalScheduling.Interval
+getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:RevolvingDoors.Maze
+getExpected	src/easy/TableSeating.java	/^  public double getExpected(int numTables, int[] probValues) {$/;"	m	class:TableSeating
+getForbidden	src/graph/SmartWordToy.java	/^  public HashSet<String> getForbidden(String[] forbid) {$/;"	m	class:SmartWordToy
+getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/;"	m	class:RevolvingDoors.Maze
+getLevel	src/graph/RevolvingDoors.java	/^    public int getLevel() {$/;"	m	class:RevolvingDoors.Maze
+getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:SmartWordToy.Word
+getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	class:RevolvingDoors.Maze
+getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
+getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
+getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
+getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
+getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
+getStart	src/dp/WeightedIntervalScheduling.java	/^    public int getStart() {$/;"	m	class:WeightedIntervalScheduling.Interval
+getStart	src/graph/RevolvingDoors.java	/^    public int getStart() {$/;"	m	class:RevolvingDoors.Maze
+getTask	src/easy/BusinessTasks.java	/^    public String getTask(String[] list, int n) {$/;"	m	class:BusinessTasks
+getTime	src/bkt/BridgeCrossing.java	/^    public int getTime() {$/;"	m	class:BridgeCrossing.State
+getTimes	src/bkt/BridgeCrossing.java	/^    public int[] getTimes() {$/;"	m	class:BridgeCrossing.State
+getValue	src/graph/RevolvingDoors.java	/^    public int getValue(int position) {$/;"	m	class:RevolvingDoors.Maze
+getWeight	src/dp/WeightedIntervalScheduling.java	/^    public int getWeight() {$/;"	m	class:WeightedIntervalScheduling.Interval
+getWord	src/graph/SmartWordToy.java	/^    public String getWord() {$/;"	m	class:SmartWordToy.Word
+getp	src/dp/WeightedIntervalScheduling.java	/^    public int getp() {$/;"	m	class:WeightedIntervalScheduling.Interval
+graph	src/graph/Circuits.java	/^  int[][] graph;$/;"	f	class:Circuits
+graph	src/graph/IslandFerries.java	/^  int[][][] graph;$/;"	f	class:IslandFerries
+graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
+h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
+hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
+howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String[] costs) {$/;"	m	class:Circuits
+howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
+howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
+innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
+island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
+key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
+last	src/dp/KiloManX.java	/^    public int last;$/;"	f	class:KiloManX.Node
+leastShots	src/dp/KiloManX.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX
+leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX2
+leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
+longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
+lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
+m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
+make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
+max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
+maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
+maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
+mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
+minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
+minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
+minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
+minTime	src/bkt/BridgeCrossing.java	/^  public int minTime(int[] t) {$/;"	m	class:BridgeCrossing
+minTimeOld	src/bkt/BridgeCrossing.java	/^  public int minTimeOld(int[] times) {$/;"	m	class:BridgeCrossing
+minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;"	m	class:PathFinding
+move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
+move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost) {$/;"	m	class:RoboCourier.Node
+move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost, boolean fast) {$/;"	m	class:RoboCourier.Node
+move	src/graph/RoboCourier.java	/^    public Node[] move(String to) {$/;"	m	class:RoboCourier.Node
+n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
+n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
+n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
+n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
+n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
+nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
+node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
+node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
+numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
+onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
+ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
+outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$/;"	m	class:GameOfLifeDivOne
+outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escape.Node
+outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
+prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
+printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
+printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
+printSolution	src/dp/WeightedIntervalScheduling.java	/^  void printSolution(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
+probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
+pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
+queue	src/dp/ShortPalindromes.java	/^  Queue<int[]> queue;$/;"	f	class:ShortPalindromes
+readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	m	class:AvoidRoads
+rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
+reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
+reverse	src/dp/FlowerGarden.java	/^  void reverse(int[] arr) {$/;"	m	class:FlowerGarden
+rotate	src/graph/RevolvingDoors.java	/^    public void rotate(int[][] maze, int i, int j, int left, int right, int up, int down, int flag) {$/;"	m	class:RevolvingDoors.Maze
+rows	src/graph/RevolvingDoors.java	/^  int rows = 0;$/;"	f	class:RevolvingDoors
+safe	src/graph/RoboCourier.java	/^  HashMap<String, ArrayList<String>> safe;$/;"	f	class:RoboCourier
+seatings	src/easy/TableSeating.java	/^  double[] seatings;$/;"	f	class:TableSeating
+seen	src/graph/KiloManX3.java	/^  boolean[] seen;$/;"	f	class:KiloManX3
+seen	src/graph/PathFinding.java	/^  int[][][][] seen;$/;"	f	class:PathFinding
+seen	src/graph/RoboCourier.java	/^  HashSet<String> seen;$/;"	f	class:RoboCourier
+setp	src/dp/WeightedIntervalScheduling.java	/^    public void setp(int pval) {$/;"	m	class:WeightedIntervalScheduling.Interval
+shortest	src/dp/ShortPalindromes.java	/^  public String shortest(String base) {$/;"	m	class:ShortPalindromes
+skip	src/dp/AvoidRoads.java	/^  boolean skip(int i, int j) {$/;"	m	class:AvoidRoads
+solve	src/bkt/BridgeCrossing.java	/^  void solve(State s) {$/;"	m	class:BridgeCrossing
+solve	src/dp/KiloManX.java	/^  int solve() {$/;"	m	class:KiloManX
+solve	src/dp/QuickSums.java	/^  int solve(int[] nums, int sum) {$/;"	m	class:QuickSums
+solve	src/dp/StripePainter.java	/^  int solve(String input, int left, int right, char c) {$/;"	m	class:StripePainter
+solve	src/easy/TableSeating.java	/^  double solve(int mask) {$/;"	m	class:TableSeating
+solve	src/graph/RevolvingDoors.java	/^  boolean solve(Maze maze) {$/;"	m	class:RevolvingDoors
+solve	src/graph/RoboCourier.java	/^  int solve() {$/;"	m	class:RoboCourier
+solveIter	src/dp/WeightedIntervalScheduling.java	/^  int solveIter(Interval[] ivals) {$/;"	m	class:WeightedIntervalScheduling
+solveRec	src/dp/WeightedIntervalScheduling.java	/^  int solveRec(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
+sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
+sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
+state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
+state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
+states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
+sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
+swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
+testCase1	test/bkt/BridgeCrossingTest.java	/^  public void testCase1() {$/;"	m	class:BridgeCrossingTest
+testCase1	test/easy/BusinessTasksTest.java	/^  public void testCase1() throws Exception {$/;"	m	class:BusinessTasksTest
+testCase1	test/easy/MedalTableTest.java	/^  public void testCase1() {$/;"	m	class:MedalTableTest
+testCase1	test/easy/TableSeatingTest.java	/^  public void testCase1() {$/;"	m	class:TableSeatingTest
+testCase1	test/easy/TallPeopleTest.java	/^  public void testCase1() {$/;"	m	class:TallPeopleTest
+testCase1	test/graph/RevolvingDoorsTest.java	/^  public void testCase1() {$/;"	m	class:RevolvingDoorsTest
+testCase1	test/graph/SmartWordToyTest.java	/^  public void testCase1() {$/;"	m	class:SmartWordToyTest
+testCase2	test/bkt/BridgeCrossingTest.java	/^  public void testCase2() {$/;"	m	class:BridgeCrossingTest
+testCase2	test/easy/MedalTableTest.java	/^  public void testCase2() {$/;"	m	class:MedalTableTest
+testCase2	test/graph/RevolvingDoorsTest.java	/^  public void testCase2() {$/;"	m	class:RevolvingDoorsTest
+testCase2	test/graph/SmartWordToyTest.java	/^  public void testCase2() {$/;"	m	class:SmartWordToyTest
+testCase3	test/bkt/BridgeCrossingTest.java	/^  public void testCase3() {$/;"	m	class:BridgeCrossingTest
+testCase3	test/easy/MedalTableTest.java	/^  public void testCase3() {$/;"	m	class:MedalTableTest
+testCase3	test/easy/TableSeatingTest.java	/^  public void testCase3() {$/;"	m	class:TableSeatingTest
+testCase3	test/graph/RevolvingDoorsTest.java	/^  public void testCase3() {$/;"	m	class:RevolvingDoorsTest
+testCase3	test/graph/SmartWordToyTest.java	/^  public void testCase3() {$/;"	m	class:SmartWordToyTest
+testCase4	test/bkt/BridgeCrossingTest.java	/^  public void testCase4() {$/;"	m	class:BridgeCrossingTest
+testCase4	test/easy/TableSeatingTest.java	/^  public void testCase4() {$/;"	m	class:TableSeatingTest
+testCase4	test/graph/RevolvingDoorsTest.java	/^  public void testCase4() {$/;"	m	class:RevolvingDoorsTest
+testCase4	test/graph/SmartWordToyTest.java	/^  public void testCase4() {$/;"	m	class:SmartWordToyTest
+testCase5	test/easy/TableSeatingTest.java	/^  public void testCase5() {$/;"	m	class:TableSeatingTest
+testCase5	test/graph/RevolvingDoorsTest.java	/^  public void testCase5() {$/;"	m	class:RevolvingDoorsTest
+testCase5	test/graph/SmartWordToyTest.java	/^  public void testCase5() {$/;"	m	class:SmartWordToyTest
+testCase6	test/graph/RevolvingDoorsTest.java	/^  public void testCase6() {$/;"	m	class:RevolvingDoorsTest
+testCase6	test/graph/SmartWordToyTest.java	/^  public void testCase6() {$/;"	m	class:SmartWordToyTest
+testCase7	test/graph/RevolvingDoorsTest.java	/^  public void testCase7() {$/;"	m	class:RevolvingDoorsTest
+testShouldEncodeDecode	test/graph/RevolvingDoorsTest.java	/^  public void testShouldEncodeDecode() {$/;"	m	class:RevolvingDoorsTest
+testShouldGetBits	test/easy/TableSeatingTest.java	/^  public void testShouldGetBits() {$/;"	m	class:TableSeatingTest
+testShouldGetForbidden	test/graph/SmartWordToyTest.java	/^  public void testShouldGetForbidden() {$/;"	m	class:SmartWordToyTest
+theCount	src/dp/GameOfLifeDivOne.java	/^  public long theCount(String init, int t, int k) {$/;"	m	class:GameOfLifeDivOne
+ticket	src/graph/IslandFerries.java	/^    public int ticket(int ferry) {$/;"	m	class:IslandFerries.Node
+ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:IslandFerries.Node
+ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
+time	src/bkt/BridgeCrossing.java	/^  int time;$/;"	f	class:BridgeCrossing
+timeToDeliver	src/graph/RoboCourier.java	/^  public int timeToDeliver(String[] path) {$/;"	m	class:RoboCourier
+toBits	src/dp/GameOfLifeDivOne.java	/^  String toBits(long k, int n) {$/;"	m	class:GameOfLifeDivOne
+toString	src/dp/WeightedIntervalScheduling.java	/^    public String toString() {$/;"	m	class:WeightedIntervalScheduling.Interval
+toString	src/easy/MedalTable.java	/^    public String toString() {$/;"	m	class:MedalTable.Country
+toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Node
+toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Ticket
+toString	src/graph/RevolvingDoors.java	/^    public String toString() {$/;"	m	class:RevolvingDoors.Maze
+toString	src/graph/RoboCourier.java	/^    public String toString() {$/;"	m	class:RoboCourier.Node
+tokenize	src/easy/TallPeople.java	/^  int[] tokenize(String row) {$/;"	m	class:TallPeople
+topc.bkt	src/bkt/BridgeCrossing.java	/^package topc.bkt;$/;"	p
+topc.dp	src/dp/AvoidRoads.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/BadNeighbors.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/FlowerGarden.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/GameOfLifeDivOne.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/Jewelry.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/KiloManX.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/KiloManX2.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/QuickSums.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/ShortPalindromes.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/StripePainter.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
+topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
+topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
+topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/Escape.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/PathFinding.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/RevolvingDoors.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/SmartWordToy.java	/^package topc.graph;$/;"	p
+topc.test	test/AllTests.java	/^package topc.test;$/;"	p
+topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
+topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/BadNeighborsTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/FlowerGardenTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/GameOfLifeDivOneTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/JewelryTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/KiloManX2Test.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/KiloManXTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/QuickSumsTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/ShortPalindromesTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/StripePainterTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/WeightedIntervalSchedulingTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dp	test/dp/ZigZagTest.java	/^package topc.test.dp;$/;"	p
+topc.test.easy	test/easy/BusinessTasksTest.java	/^package topc.test.easy;$/;"	p
+topc.test.easy	test/easy/FibTest.java	/^package topc.test.easy;$/;"	p
+topc.test.easy	test/easy/MedalTableTest.java	/^package topc.test.easy;$/;"	p
+topc.test.easy	test/easy/TableSeatingTest.java	/^package topc.test.easy;$/;"	p
+topc.test.easy	test/easy/TallPeopleTest.java	/^package topc.test.easy;$/;"	p
+topc.test.graph	test/graph/CircuitsTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/DungeonEscapeTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/EscapeTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/GrafixMaskTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/IslandFerriesTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/KiloManX3Test.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/MarketingTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/PathFindingTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/RevolvingDoorsTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/RoboCourierTest.java	/^package topc.test.graph;$/;"	p
+topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	p
+turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
+uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
+values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
+w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
+weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
+weight	src/graph/KiloManX3.java	/^    public int weight;$/;"	f	class:KiloManX3.Node
+willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
+x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
+x	src/graph/GrafixMask.java	/^    public int x = 0;$/;"	f	class:GrafixMask.Node
+x	src/graph/RoboCourier.java	/^    public int x;$/;"	f	class:RoboCourier.Node
+xa	src/graph/PathFinding.java	/^    public int xa;$/;"	f	class:PathFinding.Node
+xb	src/graph/PathFinding.java	/^    public int xb;$/;"	f	class:PathFinding.Node
+y	src/graph/Escape.java	/^    public int y;$/;"	f	class:Escape.Node
+y	src/graph/GrafixMask.java	/^    public int y = 0;$/;"	f	class:GrafixMask.Node
+y	src/graph/RoboCourier.java	/^    public int y;$/;"	f	class:RoboCourier.Node
+ya	src/graph/PathFinding.java	/^    public int ya;$/;"	f	class:PathFinding.Node
+yb	src/graph/PathFinding.java	/^    public int yb;$/;"	f	class:PathFinding.Node
