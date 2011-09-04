@@ -120,6 +120,7 @@ TableSeating	src/easy/TableSeating.java	/^public class TableSeating  {$/;"	c
 TableSeatingTest	test/easy/TableSeatingTest.java	/^public class TableSeatingTest  {$/;"	c
 TallPeople	src/easy/TallPeople.java	/^public class TallPeople  {$/;"	c
 TallPeopleTest	test/easy/TallPeopleTest.java	/^public class TallPeopleTest {$/;"	c
+TeamBuilder	src/graph/TeamBuilder.java	/^public class TeamBuilder {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
 Ticket	src/graph/IslandFerries.java	/^  class Ticket {$/;"	c	class:IslandFerries
 UP_LEFT	src/graph/RevolvingDoors.java	/^  static public final int UP_LEFT = 1 << 4;$/;"	f	class:RevolvingDoors
@@ -770,6 +771,7 @@ debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:Grafix
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
+debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	class:TeamBuilder	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
@@ -900,6 +902,7 @@ solveIter	src/dp/WeightedIntervalScheduling.java	/^  int solveIter(Interval[] iv
 solveRec	src/dp/WeightedIntervalScheduling.java	/^  int solveRec(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
 sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
+specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
@@ -977,6 +980,7 @@ topc.graph	src/graph/PathFinding.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RevolvingDoors.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/SmartWordToy.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
 topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
