@@ -78,6 +78,8 @@ N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
 N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marketing
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
+Node	src/graph/DungeonEscape.java	/^    public Node(int x, int y, int time) {$/;"	m	class:DungeonEscape.Node
+Node	src/graph/DungeonEscape.java	/^  class Node {$/;"	c	class:DungeonEscape
 Node	src/graph/Escape.java	/^    public Node(int x, int y, int cost) {$/;"	m	class:Escape.Node
 Node	src/graph/Escape.java	/^  class Node {$/;"	c	class:Escape
 Node	src/graph/GrafixMask.java	/^    public Node(int x, int y) {$/;"	m	class:GrafixMask.Node
@@ -942,6 +944,7 @@ ticket	src/graph/IslandFerries.java	/^    public int ticket(int ferry) {$/;"	m	c
 ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:IslandFerries.Node
 ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
 time	src/bkt/BridgeCrossing.java	/^  int time;$/;"	f	class:BridgeCrossing
+time	src/graph/DungeonEscape.java	/^    public final int time;$/;"	f	class:DungeonEscape.Node
 timeToDeliver	src/graph/RoboCourier.java	/^  public int timeToDeliver(String[] path) {$/;"	m	class:RoboCourier
 toBits	src/dp/GameOfLifeDivOne.java	/^  String toBits(long k, int n) {$/;"	m	class:GameOfLifeDivOne
 toString	src/dp/WeightedIntervalScheduling.java	/^    public String toString() {$/;"	m	class:WeightedIntervalScheduling.Interval
@@ -1018,11 +1021,13 @@ w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
 weight	src/graph/KiloManX3.java	/^    public int weight;$/;"	f	class:KiloManX3.Node
 willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
+x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
 x	src/graph/GrafixMask.java	/^    public int x = 0;$/;"	f	class:GrafixMask.Node
 x	src/graph/RoboCourier.java	/^    public int x;$/;"	f	class:RoboCourier.Node
 xa	src/graph/PathFinding.java	/^    public int xa;$/;"	f	class:PathFinding.Node
 xb	src/graph/PathFinding.java	/^    public int xb;$/;"	f	class:PathFinding.Node
+y	src/graph/DungeonEscape.java	/^    public final int y;$/;"	f	class:DungeonEscape.Node
 y	src/graph/Escape.java	/^    public int y;$/;"	f	class:Escape.Node
 y	src/graph/GrafixMask.java	/^    public int y = 0;$/;"	f	class:GrafixMask.Node
 y	src/graph/RoboCourier.java	/^    public int y;$/;"	f	class:RoboCourier.Node
