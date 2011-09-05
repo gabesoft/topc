@@ -28,11 +28,7 @@ public class DungeonEscape {
       }
     }
 
-    int[][] seen = new int[n][m];
-    for (int i = 0; i < n; i++) {
-      Arrays.fill(seen[i], -1);
-    }
-
+    boolean[][] seen = new boolean[n][m];
     PriorityQueue<Node> nodes = new PriorityQueue<Node>();
     Node start = new Node(startLevel, startEasting, 0);
     nodes.offer(start);
@@ -42,10 +38,10 @@ public class DungeonEscape {
 
       if (top.x < 0) { return top.time; }
       if (top.y < 0 || top.x > n - 1 || top.y > m - 1) { continue; }
-      if (seen[top.x][top.y] > -1) { continue; }
+      if (seen[top.x][top.y]) { continue; }
       if (top.time >= m*(n - top.x)) { continue; }
 
-      seen[top.x][top.y] = top.time;
+      seen[top.x][top.y] = true;
       if (u[top.x][top.y] > -1) {
         nodes.offer(new Node(top.x - 1, top.y, top.time + u[top.x][top.y]));
       }
