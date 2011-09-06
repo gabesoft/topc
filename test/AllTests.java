@@ -40,6 +40,7 @@ import topc.test.dp.*;
   //RoboCourierTest.class,
   //IslandFerriesTest.class,
   //DungeonEscapeTest.class,
-  TeamBuilderTest.class
+  //TeamBuilderTest.class,
+  ParkingTest.class
 })
 public class AllTests { }

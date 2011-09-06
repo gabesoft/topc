@@ -90,11 +90,14 @@ Node	src/graph/IslandFerries.java	/^    public Node(int island, int cost, int f1
 Node	src/graph/IslandFerries.java	/^  class Node implements Comparable<Node> {$/;"	c	class:IslandFerries
 Node	src/graph/KiloManX3.java	/^    public Node(int weight, int cost) {$/;"	m	class:KiloManX3.Node
 Node	src/graph/KiloManX3.java	/^  class Node implements Comparable<Node>{$/;"	c	class:KiloManX3
+Node	src/graph/Parking.java	/^    public Node(int x, int y, int time) {$/;"	m	class:Parking.Node
+Node	src/graph/Parking.java	/^  class Node {$/;"	c	class:Parking
 Node	src/graph/PathFinding.java	/^    public Node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding.Node
 Node	src/graph/PathFinding.java	/^  class Node {$/;"	c	class:PathFinding
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
+Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
@@ -197,6 +200,8 @@ blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:F
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
+cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
+carslen	src/graph/Parking.java	/^  int carslen;$/;"	f	class:Parking
 case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
 case0	test/dp/KiloManX2Test.java	/^  public void case0() {	$/;"	m	class:KiloManX2Test
 case0	test/dp/KiloManXTest.java	/^  public void case0() {	$/;"	m	class:KiloManXTest
@@ -729,6 +734,7 @@ case9	test/graph/EscapeTest.java	/^  public void case9() {$/;"	m	class:EscapeTes
 case9	test/graph/MarketingTest.java	/^  public void case9() {$/;"	m	class:MarketingTest
 ceilDiv	src/graph/KiloManX3.java	/^  int ceilDiv(int a, int b) {$/;"	m	class:KiloManX3
 chars	src/dp/ShortPalindromes.java	/^  char[] chars;$/;"	f	class:ShortPalindromes
+cloneMatch	src/graph/Parking.java	/^  int[][] cloneMatch() {$/;"	m	class:Parking
 color	src/graph/Marketing.java	/^  int[] color;$/;"	f	class:Marketing
 cols	src/graph/RevolvingDoors.java	/^  int cols = 0;$/;"	f	class:RevolvingDoors
 compact	src/dp/KiloManX.java	/^  int[] compact(int[] xs, int i) {$/;"	m	class:KiloManX
@@ -738,6 +744,7 @@ compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/
 compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
 compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	m	class:KiloManX3.Node
 compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
+computeWeights	src/graph/Parking.java	/^  void computeWeights(int car) {$/;"	m	class:Parking
 copy	src/bkt/BridgeCrossing.java	/^    public State copy() {$/;"	m	class:BridgeCrossing.State
 copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
 cost	src/dp/KiloManX.java	/^    public int cost;$/;"	f	class:KiloManX.Node
@@ -772,6 +779,7 @@ debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
+debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:Parking	file:
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
 debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	class:TeamBuilder	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
@@ -842,8 +850,10 @@ leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart,
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
+m	src/graph/Parking.java	/^  int m;$/;"	f	class:Parking
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
+match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
@@ -852,6 +862,7 @@ minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, S
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
 minTime	src/bkt/BridgeCrossing.java	/^  public int minTime(int[] t) {$/;"	m	class:BridgeCrossing
+minTime	src/graph/Parking.java	/^  public int minTime(String[] parking) {$/;"	m	class:Parking
 minTimeOld	src/bkt/BridgeCrossing.java	/^  public int minTimeOld(int[] times) {$/;"	m	class:BridgeCrossing
 minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;"	m	class:PathFinding
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
@@ -862,6 +873,7 @@ n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
+n	src/graph/Parking.java	/^  int n;$/;"	f	class:Parking
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
@@ -872,6 +884,7 @@ ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:Game
 outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$/;"	m	class:GameOfLifeDivOne
 outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escape.Node
 outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
+park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
@@ -905,6 +918,8 @@ solveRec	src/dp/WeightedIntervalScheduling.java	/^  int solveRec(int k, Interval
 sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
+spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
+spotslen	src/graph/Parking.java	/^  int spotslen;$/;"	f	class:Parking
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
@@ -945,12 +960,14 @@ ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:Is
 ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
 time	src/bkt/BridgeCrossing.java	/^  int time;$/;"	f	class:BridgeCrossing
 time	src/graph/DungeonEscape.java	/^    public final int time;$/;"	f	class:DungeonEscape.Node
+time	src/graph/Parking.java	/^    public final int time;$/;"	f	class:Parking.Node
 timeToDeliver	src/graph/RoboCourier.java	/^  public int timeToDeliver(String[] path) {$/;"	m	class:RoboCourier
 toBits	src/dp/GameOfLifeDivOne.java	/^  String toBits(long k, int n) {$/;"	m	class:GameOfLifeDivOne
 toString	src/dp/WeightedIntervalScheduling.java	/^    public String toString() {$/;"	m	class:WeightedIntervalScheduling.Interval
 toString	src/easy/MedalTable.java	/^    public String toString() {$/;"	m	class:MedalTable.Country
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Node
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Ticket
+toString	src/graph/Parking.java	/^    public String toString() {$/;"	m	class:Parking.Node
 toString	src/graph/RevolvingDoors.java	/^    public String toString() {$/;"	m	class:RevolvingDoors.Maze
 toString	src/graph/RoboCourier.java	/^    public String toString() {$/;"	m	class:RoboCourier.Node
 tokenize	src/easy/TallPeople.java	/^  int[] tokenize(String row) {$/;"	m	class:TallPeople
@@ -979,6 +996,7 @@ topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/Parking.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/PathFinding.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RevolvingDoors.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
@@ -1024,12 +1042,14 @@ willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	cla
 x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
 x	src/graph/GrafixMask.java	/^    public int x = 0;$/;"	f	class:GrafixMask.Node
+x	src/graph/Parking.java	/^    public final int x;$/;"	f	class:Parking.Node
 x	src/graph/RoboCourier.java	/^    public int x;$/;"	f	class:RoboCourier.Node
 xa	src/graph/PathFinding.java	/^    public int xa;$/;"	f	class:PathFinding.Node
 xb	src/graph/PathFinding.java	/^    public int xb;$/;"	f	class:PathFinding.Node
 y	src/graph/DungeonEscape.java	/^    public final int y;$/;"	f	class:DungeonEscape.Node
 y	src/graph/Escape.java	/^    public int y;$/;"	f	class:Escape.Node
 y	src/graph/GrafixMask.java	/^    public int y = 0;$/;"	f	class:GrafixMask.Node
+y	src/graph/Parking.java	/^    public final int y;$/;"	f	class:Parking.Node
 y	src/graph/RoboCourier.java	/^    public int y;$/;"	f	class:RoboCourier.Node
 ya	src/graph/PathFinding.java	/^    public int ya;$/;"	f	class:PathFinding.Node
 yb	src/graph/PathFinding.java	/^    public int yb;$/;"	f	class:PathFinding.Node
