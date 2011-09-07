@@ -17,6 +17,7 @@ BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossin
 BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
+C	src/graph/Parking.java	/^  int C;$/;"	f	class:Parking
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
@@ -109,6 +110,7 @@ RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"
 RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
+S	src/graph/Parking.java	/^  int S;$/;"	f	class:Parking
 SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
 START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
 ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$/;"	c
@@ -201,7 +203,6 @@ buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
-carslen	src/graph/Parking.java	/^  int carslen;$/;"	f	class:Parking
 case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
 case0	test/dp/KiloManX2Test.java	/^  public void case0() {	$/;"	m	class:KiloManX2Test
 case0	test/dp/KiloManXTest.java	/^  public void case0() {	$/;"	m	class:KiloManXTest
@@ -919,7 +920,6 @@ sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
 spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
-spotslen	src/graph/Parking.java	/^  int spotslen;$/;"	f	class:Parking
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing

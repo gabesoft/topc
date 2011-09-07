@@ -13,14 +13,14 @@ public class Parking {
   int[][] spots;
   int m;
   int n;
-  int carslen;
-  int spotslen;
+  int C;      // number of cars
+  int S;      // number of parking spots
 
   public int minTime(String[] parking) {
-    n         = parking.length;
-    m         = parking[0].length();
-    carslen   = 0;
-    spotslen  = 0;
+    n = parking.length;
+    m = parking[0].length();
+    C = 0;
+    S = 0;
 
     park  = new int[n][m];
     cars  = new int[100][2];
@@ -30,18 +30,18 @@ public class Parking {
       char[] chars = parking[i].toCharArray();
       for (int j = 0; j < m; j++) {
         switch (chars[j]) {
-          case 'X': park[i][j] = -1;              break;
-          case '.': park[i][j] =  0;              break;
-          case 'C': park[i][j] =  1;              break;
-          case 'P': park[i][j] =  2 + spotslen;   break;
+          case 'X': park[i][j] = -1;      break;
+          case '.': park[i][j] =  0;      break;
+          case 'C': park[i][j] =  1;      break;
+          case 'P': park[i][j] =  2 + S;  break;
         }
-        if (park[i][j] == 1) { cars[carslen++]    = new int[] { i, j }; }
-        if (park[i][j] >= 2) { spots[spotslen++]  = new int[] { i, j }; }
+        if (park[i][j] == 1) { cars[C++]  = new int[] { i, j }; }
+        if (park[i][j] >= 2) { spots[S++] = new int[] { i, j }; }
       }
     }
 
-    match = new int[carslen][spotslen];
-    for (int i = 0; i < carslen; i++) {
+    match = new int[C][S];
+    for (int i = 0; i < C; i++) {
       computeWeights(i);
     }
 
@@ -80,8 +80,8 @@ public class Parking {
   }
 
   int[][] cloneMatch() {
-    int[][] clone = new int[carslen][spotslen];
-    for (int i = 0; i < carslen; i++) {
+    int[][] clone = new int[C][S];
+    for (int i = 0; i < C; i++) {
       clone[i] = match[i].clone();
     }
     return clone;
