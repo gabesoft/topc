@@ -32,7 +32,7 @@ public class ParkingTest {
     assertEquals(4, parking.minTime(park));
   }
 
-  //@Test
+  @Test
   public void case5() {
     String[] park = { "CCCCC", ".....", "PXPXP" };
     assertEquals(-1, parking.minTime(park));

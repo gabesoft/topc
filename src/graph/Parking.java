@@ -11,24 +11,24 @@ public class Parking {
   int[][] match;
   int[][] cars;
   int[][] spots;
-  int m;
-  int n;
+  int M;
+  int N;
   int C;      // number of cars
   int S;      // number of parking spots
 
   public int minTime(String[] parking) {
-    n = parking.length;
-    m = parking[0].length();
+    N = parking.length;
+    M = parking[0].length();
     C = 0;
     S = 0;
 
-    park  = new int[n][m];
+    park  = new int[N][M];
     cars  = new int[100][2];
     spots = new int[100][2];
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
       char[] chars = parking[i].toCharArray();
-      for (int j = 0; j < m; j++) {
+      for (int j = 0; j < M; j++) {
         switch (chars[j]) {
           case 'X': park[i][j] = -1;      break;
           case '.': park[i][j] =  0;      break;
@@ -48,9 +48,72 @@ public class Parking {
     //int[][] clone = cloneMatch();
     //clone[0][0] = -1;
     debug("match", match);
+    debug(computeMatching(Integer.MAX_VALUE));
     //debug("clone", clone);
 
     return -2;
+  }
+
+  int computeMatching(int cutoff) {
+    int n = C + S + 2;
+    int s = 0;
+    int t = n - 1;
+    List<Integer>[] graph = new IntegerList[n];
+
+    for (int i = 0; i < n; i++) {
+      graph[i] = new IntegerList();
+    }
+    for (int i = 0; i < C; i++) {
+      graph[s].add(i + 1);
+    }
+    for (int i = C + 1; i < n; i++) {
+      graph[i].add(t);
+    }
+    for (int i = 1; i < C + 1; i++) {
+      for (int j = C + 1; j < C + S + 1; j++) {
+        int w = match[i - 1][j - C - 1];
+        if (w > 0 && w <= cutoff) {
+          graph[i].add(j);
+        }
+      }
+    }
+
+    int matches = 0;
+    Vertex node = null;
+    while ((node = findPath(graph, t)) != null) {
+      matches++;
+      Vertex parent = node.parent;
+      while (parent != null) {
+        graph[parent.id].remove(Integer.valueOf(node.id));
+        if (parent.id < node.id) {
+          graph[node.id].add(parent.id);
+        }
+        node = parent;
+        parent = node.parent;
+      }
+    }
+
+    assert matches <= C : "invalid match count";
+    return matches;
+  }
+
+  Vertex findPath(List<Integer>[] graph, int end) {
+    Queue<Vertex> nodes = new LinkedList<Vertex>();
+    HashSet<Integer> seen = new HashSet<Integer>();
+    nodes.add(new Vertex(0, null));
+
+    while (nodes.size() > 0) {
+      Vertex top = nodes.poll();
+      if(top.id == end) { return top; }
+      if (seen.contains(top.id)) { continue; }
+
+      seen.add(top.id);
+      for (int v : graph[top.id]) {
+        nodes.add(new Vertex(v, top));
+      }
+    }
+
+    return null;
   }
 
   void computeWeights(int car) {
@@ -63,7 +126,7 @@ public class Parking {
       Node top = nodes.poll();
 
       if (seen.contains(top.toString())) { continue; }
-      if (top.x < 0 || top.x > n - 1 || top.y < 0 || top.y > m - 1) { continue; }
+      if (top.x < 0 || top.x > N - 1 || top.y < 0 || top.y > M - 1) { continue; }
       if (park[top.x][top.y] < 0) { continue; }
 
       seen.add(top.toString());
@@ -106,4 +169,17 @@ public class Parking {
       return String.format("%s:%s", x, y);
     }
   }
+
+  class Vertex {
+    public final int id;
+    public final Vertex parent;
+
+    public Vertex(int id, Vertex parent) {
+      this.id = id;
+      this.parent = parent;
+    }
+  }
+
+ @SuppressWarnings("serial")
+ class IntegerList extends LinkedList<Integer> { }
 }

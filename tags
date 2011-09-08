@@ -17,7 +17,7 @@ BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossin
 BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
-C	src/graph/Parking.java	/^  int C;$/;"	f	class:Parking
+C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
@@ -36,6 +36,8 @@ DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
 DungeonEscapeTest	test/graph/DungeonEscapeTest.java	/^public class DungeonEscapeTest {$/;"	c
 EMPTY	src/graph/RevolvingDoors.java	/^  static public final int EMPTY = -1;$/;"	f	class:RevolvingDoors
 END	src/graph/RevolvingDoors.java	/^  static public final int END = -10;$/;"	f	class:RevolvingDoors
+Edge	src/graph/Parking.java	/^    public Edge(int u, int v, boolean fwd) {$/;"	m	class:Parking.Edge
+Edge	src/graph/Parking.java	/^  class Edge {$/;"	c	class:Parking
 Escape	src/graph/Escape.java	/^public class Escape {$/;"	c
 EscapeTest	test/graph/EscapeTest.java	/^public class EscapeTest {$/;"	c
 F	src/graph/IslandFerries.java	/^  int F = 0;$/;"	f	class:IslandFerries
@@ -66,6 +68,7 @@ KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
 LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
+M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
 Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, int start, int end) {$/;"	m	class:RevolvingDoors.Maze
@@ -77,6 +80,7 @@ N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circui
 N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
 N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
 N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marketing
+N	src/graph/Parking.java	/^  int N;$/;"	f	class:Parking
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
 Node	src/graph/DungeonEscape.java	/^    public Node(int x, int y, int time) {$/;"	m	class:DungeonEscape.Node
@@ -110,7 +114,7 @@ RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"
 RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
-S	src/graph/Parking.java	/^  int S;$/;"	f	class:Parking
+S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
 SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
 START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
 ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$/;"	c
@@ -745,6 +749,7 @@ compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/
 compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
 compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	m	class:KiloManX3.Node
 compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
+computeMatching	src/graph/Parking.java	/^  int computeMatching(int cutoff) {$/;"	m	class:Parking
 computeWeights	src/graph/Parking.java	/^  void computeWeights(int car) {$/;"	m	class:Parking
 copy	src/bkt/BridgeCrossing.java	/^    public State copy() {$/;"	m	class:BridgeCrossing.State
 copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
@@ -804,6 +809,8 @@ ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFer
 fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	class:Escape
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+findPath	src/graph/Parking.java	/^  Edge[] findPath(List<Edge>[] graph) {$/;"	m	class:Parking
+fwd	src/graph/Parking.java	/^    public final boolean fwd;$/;"	f	class:Parking.Edge
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
@@ -851,7 +858,6 @@ leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart,
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
-m	src/graph/Parking.java	/^  int m;$/;"	f	class:Parking
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
@@ -874,7 +880,6 @@ n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
-n	src/graph/Parking.java	/^  int n;$/;"	f	class:Parking
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
@@ -1033,7 +1038,9 @@ topc.test.graph	test/graph/RevolvingDoorsTest.java	/^package topc.test.graph;$/;
 topc.test.graph	test/graph/RoboCourierTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	p
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
+u	src/graph/Parking.java	/^    public final int u;$/;"	f	class:Parking.Edge
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
+v	src/graph/Parking.java	/^    public final int v;$/;"	f	class:Parking.Edge
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
