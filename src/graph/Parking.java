@@ -64,7 +64,6 @@ public class Parking {
     while (hi != lo && hi != lo + 1) {
       md = (hi + lo) / 2;
       mc = computeMatching(md);
-      //debug(hi, lo, md, mc, C, S);
       if (mc == C) {
         hi = md;
         best = md;
@@ -85,6 +84,7 @@ public class Parking {
     for (int i = 0; i < n; i++) {
       graph[i] = new IntegerList();
     }
+
     for (int i = 0; i < C; i++) {
       graph[s].add(i + 1);
     }
@@ -162,14 +162,6 @@ public class Parking {
       nodes.add(new Node(top.x, top.y - 1, top.time + 1));
       nodes.add(new Node(top.x, top.y + 1, top.time + 1));
     }
-  }
-
-  int[][] cloneMatch() {
-    int[][] clone = new int[C][S];
-    for (int i = 0; i < C; i++) {
-      clone[i] = match[i].clone();
-    }
-    return clone;
   }
 
   private void debug(Object... os) {
