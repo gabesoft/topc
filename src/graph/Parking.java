@@ -45,13 +45,35 @@ public class Parking {
       computeWeights(i);
     }
 
-    //int[][] clone = cloneMatch();
-    //clone[0][0] = -1;
-    debug("match", match);
-    debug(computeMatching(Integer.MAX_VALUE));
-    //debug("clone", clone);
+    return C == 0 ? 0 : computeBest();
+  }
 
-    return -2;
+  int computeBest() {
+    int hi = 0;
+    int lo = 0;
+    int md = 0;
+    int mc = 0;
+    int best = -1;
+
+    for (int i = 0; i < C; i++) {
+      for (int j = 0; j < S; j++) {
+        hi = 1 + Math.max(hi, match[i][j]);
+      }
+    }
+
+    while (hi != lo && hi != lo + 1) {
+      md = (hi + lo) / 2;
+      mc = computeMatching(md);
+      //debug(hi, lo, md, mc, C, S);
+      if (mc == C) {
+        hi = md;
+        best = md;
+      } else {
+        lo = md;
+      }
+    }
+
+    return best;
   }
 
   int computeMatching(int cutoff) {
@@ -180,6 +202,6 @@ public class Parking {
     }
   }
 
- @SuppressWarnings("serial")
- class IntegerList extends LinkedList<Integer> { }
+  @SuppressWarnings("serial")
+  class IntegerList extends LinkedList<Integer> { }
 }
