@@ -52,7 +52,7 @@ public class Parking {
     int hi = 0;
     int lo = 0;
     int md = 0;
-    int mc = 0;
+    int matchCount = 0;
     int best = -1;
 
     for (int i = 0; i < C; i++) {
@@ -61,14 +61,14 @@ public class Parking {
       }
     }
 
-    while (hi != lo && hi != lo + 1) {
-      md = (hi + lo) / 2;
-      mc = computeMatching(md);
-      if (mc == C) {
+    while (lo < hi) {
+      md = (hi + lo - 1) / 2;
+      matchCount = computeMatching(md);
+      if (matchCount == C) {
         hi = md;
         best = md;
       } else {
-        lo = md;
+        lo = md + 1;
       }
     }
 
