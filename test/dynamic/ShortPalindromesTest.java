@@ -1,11 +1,11 @@
-package topc.test.dp;
+package topc.test.dynamic;
 
 import java.util.*;
 import junit.framework.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import topc.dp.*;
+import topc.dynamic.*;
 
 public class ShortPalindromesTest {
   ShortPalindromes _calc = new ShortPalindromes();

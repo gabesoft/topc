@@ -7,7 +7,7 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 import topc.test.graph.*;
 import topc.test.bkt.*;
-import topc.test.dp.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -41,6 +41,7 @@ import topc.test.dp.*;
   //IslandFerriesTest.class,
   //DungeonEscapeTest.class,
   //TeamBuilderTest.class,
-  ParkingTest.class
+  //ParkingTest.class,
+  StarAdventureTest.class
 })
 public class AllTests { }

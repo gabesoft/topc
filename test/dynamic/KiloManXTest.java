@@ -1,13 +1,13 @@
-package topc.test.dp;
+package topc.test.dynamic;
 
 import junit.framework.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import topc.dp.*;
+import topc.dynamic.*;
 
-public class KiloManX2Test {
-  KiloManX2 _calc = new KiloManX2();
+public class KiloManXTest {
+  KiloManX _calc = new KiloManX();
 
   @Test
   public void case0() {	
