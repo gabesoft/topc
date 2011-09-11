@@ -67,6 +67,7 @@ KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
 LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
+M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -75,6 +76,7 @@ Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
 MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
 MedalTableTest	test/easy/MedalTableTest.java	/^public class MedalTableTest {$/;"	c
 N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
+N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
 N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
 N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
 N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
@@ -101,6 +103,9 @@ Node	src/graph/PathFinding.java	/^  class Node {$/;"	c	class:PathFinding
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
+P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
+P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
+P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
 Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
@@ -120,6 +125,7 @@ ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$
 ShortPalindromesTest	test/dp/ShortPalindromesTest.java	/^public class ShortPalindromesTest {$/;"	c
 SmartWordToy	src/graph/SmartWordToy.java	/^public class SmartWordToy {$/;"	c
 SmartWordToyTest	test/graph/SmartWordToyTest.java	/^public class SmartWordToyTest {$/;"	c
+StarAdventure	src/dynamic/StarAdventure.java	/^public class StarAdventure {$/;"	c
 State	src/bkt/BridgeCrossing.java	/^    public State(int[] times) {$/;"	m	class:BridgeCrossing.State
 State	src/bkt/BridgeCrossing.java	/^  class State {$/;"	c	class:BridgeCrossing
 StringComparator	src/dp/ShortPalindromes.java	/^  class StringComparator implements Comparator<String> {$/;"	c	class:ShortPalindromes
@@ -769,6 +775,7 @@ countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	cl
 create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
 data	src/dp/QuickSums.java	/^  int[][] data;$/;"	f	class:QuickSums
 data	src/dp/StripePainter.java	/^  int[][][] data;$/;"	f	class:StripePainter
+data	src/dynamic/StarAdventure.java	/^  int[][] data;$/;"	f	class:StarAdventure
 debug	src/bkt/BridgeCrossing.java	/^  void debug(Object...os) {$/;"	m	class:BridgeCrossing
 debug	src/dp/AvoidRoads.java	/^  void debug(Object...os) {$/;"	m	class:AvoidRoads
 debug	src/dp/BadNeighbors.java	/^  void debug(Object...os) {$/;"	m	class:BadNeighbors
@@ -781,6 +788,7 @@ debug	src/dp/ShortPalindromes.java	/^  void debug(Object...os) {$/;"	m	class:Sho
 debug	src/dp/StripePainter.java	/^  void debug(Object...os) {$/;"	m	class:StripePainter
 debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m	class:WeightedIntervalScheduling
 debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
+debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
 debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
@@ -811,6 +819,7 @@ ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFer
 fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	class:Escape
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
@@ -874,6 +883,7 @@ minTime	src/bkt/BridgeCrossing.java	/^  public int minTime(int[] t) {$/;"	m	clas
 minTime	src/graph/Parking.java	/^  public int minTime(String[] parking) {$/;"	m	class:Parking
 minTimeOld	src/bkt/BridgeCrossing.java	/^  public int minTimeOld(int[] times) {$/;"	m	class:BridgeCrossing
 minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;"	m	class:PathFinding
+mostStars	src/dynamic/StarAdventure.java	/^  public int mostStars(String[] level) {$/;"	m	class:StarAdventure
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost) {$/;"	m	class:RoboCourier.Node
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost, boolean fast) {$/;"	m	class:RoboCourier.Node
@@ -932,6 +942,7 @@ state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOn
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
+sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
 testCase1	test/bkt/BridgeCrossingTest.java	/^  public void testCase1() {$/;"	m	class:BridgeCrossingTest
 testCase1	test/easy/BusinessTasksTest.java	/^  public void testCase1() throws Exception {$/;"	m	class:BusinessTasksTest
@@ -992,6 +1003,7 @@ topc.dp	src/dp/ShortPalindromes.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/StripePainter.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
+topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
