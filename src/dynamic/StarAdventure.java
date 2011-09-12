@@ -60,10 +60,10 @@ public class StarAdventure {
   }
 
   void computeSums() {
-    for (int i = 0; i < N; i++) {
-      for (int j = 0; j < M; j++) {
-        for (int k = j; k < M; k++) {
-          sums[i][j][k] = sum(i, j, k);
+    for (int y = 0; y < N; y++) {
+      for (int i = 0; i < M; i++) {
+        for (int j = i; j < M; j++) {
+          sums[y][i][j] = sum(y, i, j);
         }
       }
     }
