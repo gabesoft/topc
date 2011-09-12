@@ -10,14 +10,14 @@ public class StarAdventure {
   int N;
   int M;
   int[][] data;
-  int[][][] P1;
-  int[][][] P2;
-  int[][][] P3;
+  int[][][][] P;
+  int[][][] sums;
 
   public int mostStars(String[] level) {
     N = level.length;
     M = level[0].length();
     data = new int[N][M];
+    sums = new int[N][M][M];
 
     for (int i = 0; i < N; i++) {
       char[] chars = level[i].toCharArray();
@@ -26,58 +26,58 @@ public class StarAdventure {
       }
     }
 
-    // TODO: if M <= 3 return sum(data);
+    computeSums();
 
-    P1 = new int[M][N][M];
-    P2 = new int[M][N][M];
-    P3 = new int[M][N][M];
+    if (M <= 3) { return sumAll(); }
 
+    P = new int[N][M][M][M];
     for (int y = 0; y < N; y++) {
       for (int i = 0; i < M - 2; i++) {
         for (int j = i + 1; j < M - 1; j++) {
           for (int k = j + 1; k < M; k++) {
-            P1[0][y][i]      = findBest(y, 0,     i, P1[0]);
-            P2[i + 1][y][j]  = findBest(y, i + 1, j, P2[i + 1]);
-            P3[j + 1][y][k]  = findBest(y, j + 1, k, P3[j + 1]);
-
-            //P1[y][i] = Math.max(P1[y][i], findBest(y, 0,     i, P1));
-            //P2[y][j] = Math.max(P2[y][j], findBest(y, i + 1, j, P2));
-            //P3[y][k] = Math.max(P3[y][k], findBest(y, j + 1, k, P3));
+            P[y][i][j][k] = findBest(y, i, j, k);
           }
         }
       }
     }
 
-    debug("P1", P1);
-    debug("P2", P2);
-    debug("P3", P3);
+    return P[N - 1][M - 3][M - 2][M - 1];
+  }
 
-    int most = 0;
-    for (int i = 0; i < M - 2; i++) {
-      for (int j = i + 1; j < M - 1; j++) {
-        for (int k = j + 1; k < M; k++) {
-          most = Math.max(most, P1[0][N-1][i] + P2[i + 1][N-1][j] + P3[j + 1][N-1][k]);
+  int findBest(int row, int i, int j, int k) {
+    int best = 0;
+    int[][][] p = row == 0 ? new int[M][M][M] : P[row - 1];
+
+    for (int ip = 0; ip < i + 1; ip++) {
+      for (int jp = i + 1; jp < j + 1; jp++) {
+        for (int kp = j + 1; kp < k + 1; kp++) {
+          best = Math.max(best, p[ip][jp][kp] + sums[row][ip][i] + sums[row][jp][j] + sums[row][kp][k]);
         }
       }
     }
 
-    return most;
+    return best;
   }
 
-  int findBest(int row, int start, int end, int[][] pathBest) {
-    int[] path = row == 0 ? new int[M] : pathBest[row - 1];
-    int best = 0;
-    for (int i = start; i < end + 1; i++) {
-      best = Math.max(best, path[i] + sum(row, i, end));
+  void computeSums() {
+    for (int i = 0; i < N; i++) {
+      for (int j = 0; j < M; j++) {
+        for (int k = j; k < M; k++) {
+          sums[i][j][k] = sum(i, j, k);
+        }
+      }
     }
-    return best;
   }
 
   int sum(int row, int start, int end) {
     int res = 0;
-    for (int i = start; i < end + 1; i++) {
-      res += data[row][i];
-    }
+    for (int i = start; i < end + 1; i++) { res += data[row][i]; }
+    return res;
+  }
+
+  int sumAll() {
+    int res = 0;
+    for (int i = 0; i < N; i++) { res += sums[i][0][M - 1]; }
     return res;
   }
 
