@@ -10,7 +10,7 @@ public class StarAdventure {
   int N;
   int M;
   int[][] data;
-  int[][][][] P;
+  int[][][][] best;
   int[][][] sums;
 
   public int mostStars(String[] level) {
@@ -30,33 +30,33 @@ public class StarAdventure {
 
     if (M <= 3) { return sumAll(); }
 
-    P = new int[N][M][M][M];
+    best = new int[N][M][M][M];
     for (int y = 0; y < N; y++) {
       for (int i = 0; i < M - 2; i++) {
         for (int j = i + 1; j < M - 1; j++) {
           for (int k = j + 1; k < M; k++) {
-            P[y][i][j][k] = findBest(y, i, j, k);
+            best[y][i][j][k] = findBest(y, i, j, k);
           }
         }
       }
     }
 
-    return P[N - 1][M - 3][M - 2][M - 1];
+    return best[N - 1][M - 3][M - 2][M - 1];
   }
 
   int findBest(int row, int i, int j, int k) {
-    int best = 0;
-    int[][][] p = row == 0 ? new int[M][M][M] : P[row - 1];
+    int curr = 0;
+    int[][][] prev = row == 0 ? new int[M][M][M] : best[row - 1];
 
     for (int ip = 0; ip < i + 1; ip++) {
       for (int jp = i + 1; jp < j + 1; jp++) {
         for (int kp = j + 1; kp < k + 1; kp++) {
-          best = Math.max(best, p[ip][jp][kp] + sums[row][ip][i] + sums[row][jp][j] + sums[row][kp][k]);
+          curr = Math.max(curr, prev[ip][jp][kp] + sums[row][ip][i] + sums[row][jp][j] + sums[row][kp][k]);
         }
       }
     }
 
-    return best;
+    return curr;
   }
 
   void computeSums() {
