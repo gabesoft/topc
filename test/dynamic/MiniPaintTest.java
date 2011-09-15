@@ -17,9 +17,9 @@ public class MiniPaintTest {
 
   @Test
   public void case1a() {
-    String[] picture = { "BBBBBBBBBBBBBBB", "WWWWWWWWWWWWWWW", "WWWWWWWWWWWWWWW", "WWWWWBBBBBWWWWW", "BWBWBWBWBWBWBWB" };
+    String[] picture = { "BBBBBBBBBBBBBBB", "WWWWWWWWWWWWWWW", "WWWWWWWWWWWWWWW", "WWWWWBBBBBWWWWW", "BWBWBWBWBWBWBWB", "BWBBBWBWBWBBWWB", "WWWWWBBBBBBWWWW" };
     int maxStrokes = 6;
-    assertEquals(0, minipaint.leastBad(picture, maxStrokes));
+    assertEquals(45, minipaint.leastBad(picture, maxStrokes));
   }
 
   //@Test
