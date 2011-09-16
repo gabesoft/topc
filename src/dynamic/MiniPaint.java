@@ -9,12 +9,14 @@ import java.io.*;
 public class MiniPaint {
   byte[][] pic;
   byte[][][] paint;
-  int N;
-  int M;
+  int N;    // row count
+  int M;    // col count
+  int S;    // max strokes
 
   public int leastBad(String[] picture, int maxStrokes) {
     N = picture.length;
     M = picture[0].length();
+    S = maxStrokes;
     pic = new byte[N][M + 1];
 
     for (int i = 0; i < N; i++) {
@@ -48,7 +50,89 @@ public class MiniPaint {
       }
     }
 
+    // TODO: case8, case10 fails
+
+    int all = sumAll();
+    int strokes = allStrokes();
+
+    if (strokes <= S) { 
+      return 0;
+    } else {
+      int max = getMax();
+
+      debug("all", all);
+      debug("max", max);
+
+      return all - max;
+    }
+  }
+
+  int getMax() {
+    int all = sumAll();
+    PriorityQueue<Node> nodes = new PriorityQueue<Node>();
+    //int[][] seen = new int[N][M + 1];
+    int[] seen = new int[N];
+    int max = 0;
+
+    nodes.offer(new Node(0, 0, 0, 0));
+    for (int k = 0; k < pic[0][M]; k++) {
+      int curStrokes = k + 1;
+      nodes.offer(new Node(paint[0][0][k], 0, curStrokes, curStrokes));
+    }
+
+    while (nodes.size() > 0) {
+      Node top = nodes.poll();
+
+      //if (top.totPainted == 140) {
+      //debug(top.row, top.curStrokes, top.totStrokes, top.totPainted);
+      //}
+
+      debug(top.row, top.curStrokes, top.totStrokes, top.totPainted);
+
+      // TODO: order the nodes better and remove this if statement
+      // TODO: remove curStrokes from Node
+      //if (top.totStrokes == S) {
+      //max = Math.max(max, top.totPainted);
+      //}
+
+      if (top.totStrokes == S) { return top.totPainted; }
+      if (top.totPainted == all && top.totStrokes < S) { return top.totPainted; }
+      if (top.totStrokes > S) { continue; }
+      if (top.totPainted <= seen[top.row] || top.row == N - 1) { continue; }
+      //if (seen[top.row][top.curStrokes] > 0 || top.row == N - 1) { continue; }
+      // TODO: stop the ones with same totStrokes that have totPainted < max
+
+      //seen[top.row][top.curStrokes] = top.totPainted;
+      seen[top.row] = top.totPainted;
+      int row = top.row + 1;
+      nodes.offer(new Node(top.totPainted, row, 0, top.totStrokes));
+      for (int k = 0; k < pic[row][M]; k++) {
+        int curStrokes = k + 1;
+        int totPainted = top.totPainted + paint[row][0][k]; 
+        int totStrokes = top.totStrokes + curStrokes;
+        if (totStrokes > S) { break; }
+        nodes.offer(new Node(totPainted, row, curStrokes, totStrokes));
+      }
+    }
+
     return 0;
+  }
+
+  int allStrokes() {
+    int all = 0;
+    for (int i = 0; i < N; i++) {
+      all += pic[i][M];
+    }
+    return all;
+  }
+
+  int sumAll() {
+    int all = 0;
+    for (int i = 0; i < N; i++) {
+      byte strokes = pic[i][M];
+      all += paint[i][0][strokes - 1];
+    }
+    return all;
   }
 
   void computeStrokes() {
@@ -74,6 +158,42 @@ public class MiniPaint {
       }
 
       assert row[0][strokes - 1] == M : "compute strokes malfunction";
+    }
+  }
+
+  class Node implements Comparable<Node> {
+    public int curStrokes;
+    public int totStrokes;
+    public int totPainted;
+    public int row;
+
+    public Node(int totPainted, int row, int curStrokes, int totStrokes) {
+      this.totPainted = totPainted;
+      this.curStrokes = curStrokes;
+      this.totStrokes = totStrokes;
+      this.row = row;
+    }
+
+    public int compareTo(Node other) {
+      //Integer value = totStrokes == 0 
+      //? Integer.valueOf(totPainted) 
+      //: Integer.valueOf(totPainted / totStrokes);
+      //Integer otherValue = other.totStrokes == 0 
+      //? Integer.valueOf(other.totPainted) 
+      //: Integer.valueOf(other.totPainted / other.totStrokes);
+
+      if (totStrokes != other.totStrokes) {
+        return Integer.valueOf(totStrokes).compareTo(other.totStrokes);
+      } else {
+        return Integer.valueOf(other.totPainted).compareTo(totPainted);
+      }
+
+
+      //Integer value = Integer.valueOf(totPainted - totStrokes);
+      //Integer otherValue = Integer.valueOf(other.totPainted - other.totStrokes);
+      //return otherValue.compareTo(value);
+
+      //return Integer.valueOf(other.totPainted).compareTo(Integer.valueOf(totPainted));
     }
   }
 
