@@ -67,6 +67,7 @@ KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
 LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
+M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
@@ -75,8 +76,10 @@ Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, in
 Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
 MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
 MedalTableTest	test/easy/MedalTableTest.java	/^public class MedalTableTest {$/;"	c
+MiniPaint	src/dynamic/MiniPaint.java	/^public class MiniPaint {$/;"	c
 MiniPaintTest	test/dynamic/MiniPaintTest.java	/^public class MiniPaintTest {$/;"	c
 N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
+N	src/dynamic/MiniPaint.java	/^  int N;    \/\/ row count$/;"	f	class:MiniPaint
 N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
 N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
 N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
@@ -85,6 +88,8 @@ N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marke
 N	src/graph/Parking.java	/^  int N;$/;"	f	class:Parking
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
+Node	src/dynamic/MiniPaint.java	/^    public Node(int totPainted, int row, int curStrokes, int totStrokes) {$/;"	m	class:MiniPaint.Node
+Node	src/dynamic/MiniPaint.java	/^  class Node implements Comparable<Node> {$/;"	c	class:MiniPaint
 Node	src/graph/DungeonEscape.java	/^    public Node(int x, int y, int time) {$/;"	m	class:DungeonEscape.Node
 Node	src/graph/DungeonEscape.java	/^  class Node {$/;"	c	class:DungeonEscape
 Node	src/graph/Escape.java	/^    public Node(int x, int y, int cost) {$/;"	m	class:Escape.Node
@@ -119,6 +124,7 @@ RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"
 RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
+S	src/dynamic/MiniPaint.java	/^  int S;    \/\/ max strokes$/;"	f	class:MiniPaint
 S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
 SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
 START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
@@ -204,6 +210,8 @@ addb	src/easy/MedalTable.java	/^    public void addb() { _b++; }$/;"	m	class:Med
 addg	src/easy/MedalTable.java	/^    public void addg() { _g++; }$/;"	m	class:MedalTable.Country
 adds	src/easy/MedalTable.java	/^    public void adds() { _s++; }$/;"	m	class:MedalTable.Country
 advance	src/graph/RevolvingDoors.java	/^  boolean advance(int position, Maze maze, HashSet<Integer> seen) {$/;"	m	class:RevolvingDoors
+allSpaces	src/dynamic/MiniPaint.java	/^  int allSpaces() {$/;"	m	class:MiniPaint
+allStrokes	src/dynamic/MiniPaint.java	/^  int allStrokes() {$/;"	m	class:MiniPaint
 arrayCopy	src/graph/SmartWordToy.java	/^    char[] arrayCopy(char[] source) {$/;"	m	class:SmartWordToy.Word
 arrayMax	src/easy/TallPeople.java	/^  int arrayMax(int[] array) {$/;"	m	class:TallPeople
 arrayMin	src/easy/TallPeople.java	/^  int arrayMin(int[] array) {$/;"	m	class:TallPeople
@@ -845,12 +853,14 @@ cols	src/graph/RevolvingDoors.java	/^  int cols = 0;$/;"	f	class:RevolvingDoors
 compact	src/dp/KiloManX.java	/^  int[] compact(int[] xs, int i) {$/;"	m	class:KiloManX
 compare	src/dp/ShortPalindromes.java	/^    public int compare(String a, String b) {$/;"	m	class:ShortPalindromes.StringComparator
 compareTo	src/dp/WeightedIntervalScheduling.java	/^    public int compareTo(Interval other) {$/;"	m	class:WeightedIntervalScheduling.Interval
+compareTo	src/dynamic/MiniPaint.java	/^    public int compareTo(Node other) {$/;"	m	class:MiniPaint.Node
 compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/;"	m	class:MedalTable.Country
 compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
 compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	m	class:KiloManX3.Node
 compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
 computeBest	src/graph/Parking.java	/^  int computeBest() {$/;"	m	class:Parking
 computeMatching	src/graph/Parking.java	/^  int computeMatching(int cutoff) {$/;"	m	class:Parking
+computeStrokes	src/dynamic/MiniPaint.java	/^  void computeStrokes() {$/;"	m	class:MiniPaint
 computeWeights	src/graph/Parking.java	/^  void computeWeights(int car) {$/;"	m	class:Parking
 copy	src/bkt/BridgeCrossing.java	/^    public State copy() {$/;"	m	class:BridgeCrossing.State
 copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
@@ -866,6 +876,7 @@ costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, St
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
 create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
+curStrokes	src/dynamic/MiniPaint.java	/^    public int curStrokes;$/;"	f	class:MiniPaint.Node
 data	src/dp/QuickSums.java	/^  int[][] data;$/;"	f	class:QuickSums
 data	src/dp/StripePainter.java	/^  int[][][] data;$/;"	f	class:StripePainter
 data	src/dynamic/StarAdventure.java	/^  int[][] data;$/;"	f	class:StarAdventure
@@ -881,6 +892,7 @@ debug	src/dp/ShortPalindromes.java	/^  void debug(Object...os) {$/;"	m	class:Sho
 debug	src/dp/StripePainter.java	/^  void debug(Object...os) {$/;"	m	class:StripePainter
 debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m	class:WeightedIntervalScheduling
 debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
+debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
@@ -957,6 +969,7 @@ innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	cl
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
 last	src/dp/KiloManX.java	/^    public int last;$/;"	f	class:KiloManX.Node
+leastBad	src/dynamic/MiniPaint.java	/^  public int leastBad(String[] picture, int maxStrokes) {$/;"	m	class:MiniPaint
 leastShots	src/dp/KiloManX.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX
 leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX2
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
@@ -966,7 +979,9 @@ m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
+maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$/;"	m	class:MiniPaint
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
+maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
@@ -996,8 +1011,10 @@ ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:Game
 outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$/;"	m	class:GameOfLifeDivOne
 outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escape.Node
 outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
+paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
+pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
@@ -1010,6 +1027,7 @@ rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"
 reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
 reverse	src/dp/FlowerGarden.java	/^  void reverse(int[] arr) {$/;"	m	class:FlowerGarden
 rotate	src/graph/RevolvingDoors.java	/^    public void rotate(int[][] maze, int i, int j, int left, int right, int up, int down, int flag) {$/;"	m	class:RevolvingDoors.Maze
+row	src/dynamic/MiniPaint.java	/^    public int row;$/;"	f	class:MiniPaint.Node
 rows	src/graph/RevolvingDoors.java	/^  int rows = 0;$/;"	f	class:RevolvingDoors
 safe	src/graph/RoboCourier.java	/^  HashMap<String, ArrayList<String>> safe;$/;"	f	class:RoboCourier
 seatings	src/easy/TableSeating.java	/^  double[] seatings;$/;"	f	class:TableSeating
@@ -1097,6 +1115,7 @@ topc.dp	src/dp/ShortPalindromes.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/StripePainter.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
+topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
@@ -1147,6 +1166,8 @@ topc.test.graph	test/graph/PathFindingTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/RevolvingDoorsTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/RoboCourierTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	p
+totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:MiniPaint.Node
+totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node

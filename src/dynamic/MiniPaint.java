@@ -8,7 +8,7 @@ import java.io.*;
 // http://community.topcoder.com/stat?c=problem_statement&pm=1996&rd=4710
 public class MiniPaint {
   byte[][] pic;
-  byte[][][] paint;
+  byte[][][][] paint;
   int N;    // row count
   int M;    // col count
   int S;    // max strokes
@@ -43,18 +43,16 @@ public class MiniPaint {
     computeStrokes();
 
     // TODO: remove debug code below
-    for (int i = 0; i < N; i++) {
-      debug("pic[i]", i, pic[i]);
-    }
+    //for (int i = 0; i < N; i++) {
+      //debug("pic[i]", i, pic[i]);
+    //}
 
-    for (int i = 0; i < N; i++) {
-      debug("pic[i]", i, pic[i]);
-      for (int k = 0; k < pic[i][M]; k++) {
-        debug("\tk", k, paint[i][0][k]);
-      }
-    }
-
-    // TODO: case8, case10 fails
+    //for (int i = 0; i < N; i++) {
+      //debug("pic[i]", i, pic[i]);
+      //for (int k = 0; k < pic[i][M]; k++) {
+        //debug("\tk", k, paint[i][0][k]);
+      //}
+    //}
 
     int spaces = allSpaces();
     int strokes = allStrokes();
@@ -69,6 +67,8 @@ public class MiniPaint {
 
       return spaces - painted;
     }
+
+    //return 0;
   }
 
   int maxPainted() {
@@ -81,7 +81,8 @@ public class MiniPaint {
     //nodes.offer(new Node(0, 0, 0, 0));
     for (int k = 0; k < pic[0][M]; k++) {
       int curStrokes = k + 1;
-      nodes.offer(new Node(paint[0][0][k], 0, curStrokes, curStrokes));
+      int totPainted = Math.max(paint[0][0][k][0], paint[0][1][k][1]);
+      nodes.offer(new Node(totPainted, 0, curStrokes, curStrokes));
     }
 
     while (nodes.size() > 0) {
@@ -112,7 +113,7 @@ public class MiniPaint {
       //nodes.offer(new Node(top.totPainted, row, 0, top.totStrokes));
       for (int k = 0; k < pic[row][M]; k++) {
         int curStrokes = k + 1;
-        int totPainted = top.totPainted + paint[row][0][k]; 
+        int totPainted = top.totPainted + Math.max(paint[row][0][k][0], paint[row][0][k][1]); 
         int totStrokes = top.totStrokes + curStrokes;
 
         // TODO: this if statement should be unnecessary
@@ -137,46 +138,57 @@ public class MiniPaint {
     int all = 0;
     for (int i = 0; i < N; i++) {
       byte strokes = pic[i][M];
-      all += paint[i][0][strokes - 1];
+      //all += paint[i][0][strokes - 1][(M + 1) % 2];
+      all += Math.max(paint[i][0][strokes - 1][0], paint[i][0][strokes - 1][1]);
     }
     return all;
   }
 
   void computeStrokes() {
-    paint = new byte[N][M][M];
+    paint = new byte[N][M][M][2];
 
     for (int i = 0; i < N; i++) {
       byte strokes = pic[i][M];
-      byte[][] row = paint[i];
+      byte[][][] row = paint[i];
+
 
       for (int j = strokes - 1; j > -1; j--) {
+        byte c1 = (byte)(j % 2);
+        byte c2 = (byte)(c1 == 0 ? 1 : 0);
+        //byte c1 = 0;
+        //byte c2 = 1;
 
         //row[j][0] = (byte)maxAltSum(pic[i], j);
         //for (int k = 1; k < strokes; k++) {
 
         for (int k = 0; k < strokes; k++) {
 
-          
           if (j == strokes - 1) {
-            row[j][k] = pic[i][j];
+            row[j][k][c1] = pic[i][j];
+            //row[j][k][c2] = 0;
           } else {
-            byte prev = k == 0 ? 0 : row[j + 1][k - 1];
-            row[j][k] = (byte)Math.max(pic[i][j] + prev, row[j + 1][k]);
+            byte[] prev = k == 0 ? (new byte[2]) : row[j + 1][k - 1];
+            row[j][k][c1] = (byte)Math.max(pic[i][j] + prev[c2], row[j + 1][k][c1]);
+            row[j][k][c2] = row[j + 1][k][c2];
+            //row[j][k][c2] = (byte)Math.max(pic[i][j] + prev[c1], row[j + 1][k][c2]);
 
             if (j == strokes - 2) { continue; }
-            row[j][k] = (byte)Math.max(row[j][k], pic[i][j] + row[j + 2][k]);
+            row[j][k][c1] = (byte)Math.max(row[j][k][c1], pic[i][j] + row[j + 2][k][c1]);
+            //row[j][k][c2] = (byte)Math.max(row[j][k][c2], pic[i][j] + row[j + 2][k][c2]);
           }
         }
       }
 
-      debug(row[0][0], maxAltSum(pic[i], 0), pic[i]);
-      for (int p = 0; p < M; p++) {
-        debug(p, row[p]);
-      }
-      debug(row[0][strokes - 1], M);
+      //for (int p = 0; p < M; p++) {
+        //debug(p, row[p][0]);
+        //debug(p, row[p]);
+      //}
+      //debug(i, pic[i]);
+      //debug(row[0][0], maxAltSum(pic[i], 0));
+      //debug(row[0][strokes - 1], M);
 
-      assert row[0][0] == maxAltSum(pic[i], 0) : "compute strokes malfunction - start";
-      assert row[0][strokes - 1] == M : "compute strokes malfunction - end";
+      assert Math.max(row[0][0][0], row[0][0][1]) == maxAltSum(pic[i], 0) : "compute strokes malfunction - start";
+      assert Math.max(row[0][strokes - 1][0], row[0][strokes - 1][1]) == M : "compute strokes malfunction - end";
     }
   }
 
