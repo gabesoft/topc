@@ -32,7 +32,6 @@ public class MiniPaintTest {
   @Test
   public void case1c() {
     String[] picture = { "BBWWWBBWBBBWWBWBBBWWWWWWWWWWBWBWBWWBBWBBBBBWWWWWBW" };
-    //String[] picture = { "BBWBBBWWWW" };
     int maxStrokes = 1;
     assertEquals(22, minipaint.leastBad(picture, maxStrokes));
   }
