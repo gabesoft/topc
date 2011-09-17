@@ -58,23 +58,23 @@ public class MiniPaint {
     PriorityQueue<Node> nodes = new PriorityQueue<Node>();
 
     for (int k = 0; k < pic[0][M]; k++) {
-      nodes.offer(new Node(0, maxPainted(0, k), k + 1));
+      nodes.offer(new Node(0, k + 1, maxPainted(0, k)));
     }
 
     while (nodes.size() > 0) {
       Node top = nodes.poll();
 
       if (top.totStrokes == S) { return top.totPainted; }
-      if (top.totPainted == all && top.totStrokes < S) { return top.totPainted; }
       if (top.totStrokes > S) { continue; }
+      if (top.totPainted == all) { return top.totPainted; }
       if (top.totPainted <= seen[top.row] || top.row == N - 1) { continue; }
 
       seen[top.row] = top.totPainted;
-      int row = top.row + 1;
-      for (int k = 0; k < pic[row][M]; k++) {
-        int totPainted = top.totPainted + maxPainted(row, k);
+      int nextRow = top.row + 1;
+      for (int k = 0; k < pic[nextRow][M]; k++) {
         int totStrokes = top.totStrokes + k + 1;
-        nodes.offer(new Node(row, totPainted, totStrokes));
+        int totPainted = top.totPainted + maxPainted(nextRow, k);
+        nodes.offer(new Node(nextRow, totStrokes, totPainted));
       }
     }
 
@@ -144,10 +144,10 @@ public class MiniPaint {
     public int totPainted;
     public int row;
 
-    public Node(int row, int totPainted, int totStrokes) {
+    public Node(int row, int totStrokes, int totPainted) {
       this.row = row;
-      this.totPainted = totPainted;
       this.totStrokes = totStrokes;
+      this.totPainted = totPainted;
     }
 
     public int compareTo(Node other) {
