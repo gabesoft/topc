@@ -75,6 +75,7 @@ Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, in
 Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
 MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
 MedalTableTest	test/easy/MedalTableTest.java	/^public class MedalTableTest {$/;"	c
+MiniPaintTest	test/dynamic/MiniPaintTest.java	/^public class MiniPaintTest {$/;"	c
 N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
 N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
 N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
@@ -233,6 +234,7 @@ case1	test/dp/ShortPalindromesTest.java	/^  public void case1() {$/;"	m	class:Sh
 case1	test/dp/StripePainterTest.java	/^  public void case1() {$/;"	m	class:StripePainterTest
 case1	test/dp/WeightedIntervalSchedulingTest.java	/^  public void case1() {$/;"	m	class:WeightedIntervalSchedulingTest
 case1	test/dp/ZigZagTest.java	/^  public void case1() {$/;"	m	class:ZigZagTest
+case1	test/dynamic/MiniPaintTest.java	/^  public void case1() {$/;"	m	class:MiniPaintTest
 case1	test/easy/FibTest.java	/^  public void case1() {$/;"	m	class:FibTest
 case1	test/graph/CircuitsTest.java	/^  public void case1() {$/;"	m	class:CircuitsTest
 case1	test/graph/DungeonEscapeTest.java	/^  public void case1() {$/;"	m	class:DungeonEscapeTest
@@ -246,6 +248,7 @@ case1	test/graph/RoboCourierTest.java	/^  public void case1() {$/;"	m	class:Robo
 case10	test/dp/QuickSumsTest.java	/^  public void case10() {$/;"	m	class:QuickSumsTest
 case10	test/dp/ShortPalindromesTest.java	/^  public void case10() {$/;"	m	class:ShortPalindromesTest
 case10	test/dp/StripePainterTest.java	/^  public void case10() {$/;"	m	class:StripePainterTest
+case10	test/dynamic/MiniPaintTest.java	/^  public void case10() {$/;"	m	class:MiniPaintTest
 case10	test/graph/DungeonEscapeTest.java	/^  public void case10() {$/;"	m	class:DungeonEscapeTest
 case10	test/graph/EscapeTest.java	/^  public void case10() {$/;"	m	class:EscapeTest
 case10	test/graph/MarketingTest.java	/^  public void case10() {$/;"	m	class:MarketingTest
@@ -254,6 +257,7 @@ case11	test/dp/KiloManXTest.java	/^  public void case11() {$/;"	m	class:KiloManX
 case11	test/dp/QuickSumsTest.java	/^  public void case11() {$/;"	m	class:QuickSumsTest
 case11	test/dp/ShortPalindromesTest.java	/^  public void case11() {$/;"	m	class:ShortPalindromesTest
 case11	test/dp/StripePainterTest.java	/^  public void case11() {$/;"	m	class:StripePainterTest
+case11	test/dynamic/MiniPaintTest.java	/^  public void case11() {$/;"	m	class:MiniPaintTest
 case11	test/graph/DungeonEscapeTest.java	/^  public void case11() {$/;"	m	class:DungeonEscapeTest
 case11	test/graph/EscapeTest.java	/^  public void case11() {$/;"	m	class:EscapeTest
 case11	test/graph/IslandFerriesTest.java	/^  public void case11() {$/;"	m	class:IslandFerriesTest
@@ -315,6 +319,7 @@ case12	test/dp/KiloManXTest.java	/^  public void case12() {$/;"	m	class:KiloManX
 case12	test/dp/QuickSumsTest.java	/^  public void case12() {$/;"	m	class:QuickSumsTest
 case12	test/dp/ShortPalindromesTest.java	/^  public void case12() {$/;"	m	class:ShortPalindromesTest
 case12	test/dp/StripePainterTest.java	/^  public void case12() {$/;"	m	class:StripePainterTest
+case12	test/dynamic/MiniPaintTest.java	/^  public void case12() {$/;"	m	class:MiniPaintTest
 case12	test/graph/DungeonEscapeTest.java	/^  public void case12() {$/;"	m	class:DungeonEscapeTest
 case12	test/graph/EscapeTest.java	/^  public void case12() {$/;"	m	class:EscapeTest
 case12	test/graph/IslandFerriesTest.java	/^  public void case12() {$/;"	m	class:IslandFerriesTest
@@ -376,6 +381,7 @@ case13	test/dp/KiloManXTest.java	/^  public void case13() {$/;"	m	class:KiloManX
 case13	test/dp/QuickSumsTest.java	/^  public void case13() {$/;"	m	class:QuickSumsTest
 case13	test/dp/ShortPalindromesTest.java	/^  public void case13() {$/;"	m	class:ShortPalindromesTest
 case13	test/dp/StripePainterTest.java	/^  public void case13() {$/;"	m	class:StripePainterTest
+case13	test/dynamic/MiniPaintTest.java	/^  public void case13() {$/;"	m	class:MiniPaintTest
 case13	test/graph/DungeonEscapeTest.java	/^  public void case13() {$/;"	m	class:DungeonEscapeTest
 case13	test/graph/EscapeTest.java	/^  public void case13() {$/;"	m	class:EscapeTest
 case13	test/graph/IslandFerriesTest.java	/^  public void case13() {$/;"	m	class:IslandFerriesTest
@@ -406,6 +412,7 @@ case14	test/dp/KiloManXTest.java	/^  public void case14() {$/;"	m	class:KiloManX
 case14	test/dp/QuickSumsTest.java	/^  public void case14() {$/;"	m	class:QuickSumsTest
 case14	test/dp/ShortPalindromesTest.java	/^  public void case14() {$/;"	m	class:ShortPalindromesTest
 case14	test/dp/StripePainterTest.java	/^  public void case14() {$/;"	m	class:StripePainterTest
+case14	test/dynamic/MiniPaintTest.java	/^  public void case14() {$/;"	m	class:MiniPaintTest
 case14	test/graph/DungeonEscapeTest.java	/^  public void case14() {$/;"	m	class:DungeonEscapeTest
 case14	test/graph/EscapeTest.java	/^  public void case14() {$/;"	m	class:EscapeTest
 case14	test/graph/IslandFerriesTest.java	/^  public void case14() {$/;"	m	class:IslandFerriesTest
@@ -417,6 +424,7 @@ case15	test/dp/KiloManXTest.java	/^  public void case15() {$/;"	m	class:KiloManX
 case15	test/dp/QuickSumsTest.java	/^  public void case15() {$/;"	m	class:QuickSumsTest
 case15	test/dp/ShortPalindromesTest.java	/^  public void case15() {$/;"	m	class:ShortPalindromesTest
 case15	test/dp/StripePainterTest.java	/^  public void case15() {$/;"	m	class:StripePainterTest
+case15	test/dynamic/MiniPaintTest.java	/^  public void case15() {$/;"	m	class:MiniPaintTest
 case15	test/graph/DungeonEscapeTest.java	/^  public void case15() {$/;"	m	class:DungeonEscapeTest
 case15	test/graph/EscapeTest.java	/^  public void case15() {$/;"	m	class:EscapeTest
 case15	test/graph/IslandFerriesTest.java	/^  public void case15() {$/;"	m	class:IslandFerriesTest
@@ -430,6 +438,7 @@ case16	test/dp/KiloManXTest.java	/^  public void case16() {$/;"	m	class:KiloManX
 case16	test/dp/QuickSumsTest.java	/^  public void case16() {$/;"	m	class:QuickSumsTest
 case16	test/dp/ShortPalindromesTest.java	/^  public void case16() {$/;"	m	class:ShortPalindromesTest
 case16	test/dp/StripePainterTest.java	/^  public void case16() {$/;"	m	class:StripePainterTest
+case16	test/dynamic/MiniPaintTest.java	/^  public void case16() {$/;"	m	class:MiniPaintTest
 case16	test/graph/DungeonEscapeTest.java	/^  public void case16() {$/;"	m	class:DungeonEscapeTest
 case16	test/graph/EscapeTest.java	/^  public void case16() {$/;"	m	class:EscapeTest
 case16	test/graph/IslandFerriesTest.java	/^  public void case16() {$/;"	m	class:IslandFerriesTest
@@ -441,6 +450,7 @@ case17	test/dp/KiloManXTest.java	/^  public void case17() {$/;"	m	class:KiloManX
 case17	test/dp/QuickSumsTest.java	/^  public void case17() {$/;"	m	class:QuickSumsTest
 case17	test/dp/ShortPalindromesTest.java	/^  public void case17() {$/;"	m	class:ShortPalindromesTest
 case17	test/dp/StripePainterTest.java	/^  public void case17() {$/;"	m	class:StripePainterTest
+case17	test/dynamic/MiniPaintTest.java	/^  public void case17() {$/;"	m	class:MiniPaintTest
 case17	test/graph/DungeonEscapeTest.java	/^  public void case17() {$/;"	m	class:DungeonEscapeTest
 case17	test/graph/EscapeTest.java	/^  public void case17() {$/;"	m	class:EscapeTest
 case17	test/graph/IslandFerriesTest.java	/^  public void case17() {$/;"	m	class:IslandFerriesTest
@@ -452,6 +462,7 @@ case18	test/dp/KiloManXTest.java	/^  public void case18() {$/;"	m	class:KiloManX
 case18	test/dp/QuickSumsTest.java	/^  public void case18() {$/;"	m	class:QuickSumsTest
 case18	test/dp/ShortPalindromesTest.java	/^  public void case18() {$/;"	m	class:ShortPalindromesTest
 case18	test/dp/StripePainterTest.java	/^  public void case18() {$/;"	m	class:StripePainterTest
+case18	test/dynamic/MiniPaintTest.java	/^  public void case18() {$/;"	m	class:MiniPaintTest
 case18	test/graph/DungeonEscapeTest.java	/^  public void case18() {$/;"	m	class:DungeonEscapeTest
 case18	test/graph/EscapeTest.java	/^  public void case18() {$/;"	m	class:EscapeTest
 case18	test/graph/IslandFerriesTest.java	/^  public void case18() {$/;"	m	class:IslandFerriesTest
@@ -463,12 +474,16 @@ case19	test/dp/KiloManXTest.java	/^  public void case19() {$/;"	m	class:KiloManX
 case19	test/dp/QuickSumsTest.java	/^  public void case19() {$/;"	m	class:QuickSumsTest
 case19	test/dp/ShortPalindromesTest.java	/^  public void case19() {$/;"	m	class:ShortPalindromesTest
 case19	test/dp/StripePainterTest.java	/^  public void case19() {$/;"	m	class:StripePainterTest
+case19	test/dynamic/MiniPaintTest.java	/^  public void case19() {$/;"	m	class:MiniPaintTest
 case19	test/graph/DungeonEscapeTest.java	/^  public void case19() {$/;"	m	class:DungeonEscapeTest
 case19	test/graph/EscapeTest.java	/^  public void case19() {$/;"	m	class:EscapeTest
 case19	test/graph/IslandFerriesTest.java	/^  public void case19() {$/;"	m	class:IslandFerriesTest
 case19	test/graph/KiloManX3Test.java	/^  public void case19() {$/;"	m	class:KiloManX3Test
 case19	test/graph/MarketingTest.java	/^  public void case19() {$/;"	m	class:MarketingTest
 case19	test/graph/RoboCourierTest.java	/^  public void case19() {$/;"	m	class:RoboCourierTest
+case1a	test/dynamic/MiniPaintTest.java	/^  public void case1a() {$/;"	m	class:MiniPaintTest
+case1b	test/dynamic/MiniPaintTest.java	/^  public void case1b() {$/;"	m	class:MiniPaintTest
+case1c	test/dynamic/MiniPaintTest.java	/^  public void case1c() {$/;"	m	class:MiniPaintTest
 case2	test/dp/AvoidRoadsTest.java	/^  public void case2() {$/;"	m	class:AvoidRoadsTest
 case2	test/dp/BadNeighborsTest.java	/^  public void case2() {$/;"	m	class:BadNeighborsTest
 case2	test/dp/FlowerGardenTest.java	/^  public void case2() {$/;"	m	class:FlowerGardenTest
@@ -481,6 +496,7 @@ case2	test/dp/ShortPalindromesTest.java	/^  public void case2() {$/;"	m	class:Sh
 case2	test/dp/StripePainterTest.java	/^  public void case2() {$/;"	m	class:StripePainterTest
 case2	test/dp/WeightedIntervalSchedulingTest.java	/^  public void case2() {$/;"	m	class:WeightedIntervalSchedulingTest
 case2	test/dp/ZigZagTest.java	/^  public void case2() {$/;"	m	class:ZigZagTest
+case2	test/dynamic/MiniPaintTest.java	/^  public void case2() {$/;"	m	class:MiniPaintTest
 case2	test/easy/FibTest.java	/^  public void case2() {$/;"	m	class:FibTest
 case2	test/graph/CircuitsTest.java	/^  public void case2() {$/;"	m	class:CircuitsTest
 case2	test/graph/DungeonEscapeTest.java	/^  public void case2() {$/;"	m	class:DungeonEscapeTest
@@ -494,24 +510,28 @@ case2	test/graph/RoboCourierTest.java	/^  public void case2() {$/;"	m	class:Robo
 case20	test/dp/QuickSumsTest.java	/^  public void case20() {$/;"	m	class:QuickSumsTest
 case20	test/dp/ShortPalindromesTest.java	/^  public void case20() {$/;"	m	class:ShortPalindromesTest
 case20	test/dp/StripePainterTest.java	/^  public void case20() {$/;"	m	class:StripePainterTest
+case20	test/dynamic/MiniPaintTest.java	/^  public void case20() {$/;"	m	class:MiniPaintTest
 case20	test/graph/DungeonEscapeTest.java	/^  public void case20() {$/;"	m	class:DungeonEscapeTest
 case20	test/graph/EscapeTest.java	/^  public void case20() {$/;"	m	class:EscapeTest
 case20	test/graph/MarketingTest.java	/^  public void case20() {$/;"	m	class:MarketingTest
 case21	test/dp/QuickSumsTest.java	/^  public void case21() {$/;"	m	class:QuickSumsTest
 case21	test/dp/ShortPalindromesTest.java	/^  public void case21() {$/;"	m	class:ShortPalindromesTest
 case21	test/dp/StripePainterTest.java	/^  public void case21() {$/;"	m	class:StripePainterTest
+case21	test/dynamic/MiniPaintTest.java	/^  public void case21() {$/;"	m	class:MiniPaintTest
 case21	test/graph/DungeonEscapeTest.java	/^  public void case21() {$/;"	m	class:DungeonEscapeTest
 case21	test/graph/EscapeTest.java	/^  public void case21() {$/;"	m	class:EscapeTest
 case21	test/graph/MarketingTest.java	/^  public void case21() {$/;"	m	class:MarketingTest
 case22	test/dp/QuickSumsTest.java	/^  public void case22() {$/;"	m	class:QuickSumsTest
 case22	test/dp/ShortPalindromesTest.java	/^  public void case22() {$/;"	m	class:ShortPalindromesTest
 case22	test/dp/StripePainterTest.java	/^  public void case22() {$/;"	m	class:StripePainterTest
+case22	test/dynamic/MiniPaintTest.java	/^  public void case22() {$/;"	m	class:MiniPaintTest
 case22	test/graph/DungeonEscapeTest.java	/^  public void case22() {$/;"	m	class:DungeonEscapeTest
 case22	test/graph/EscapeTest.java	/^  public void case22() {$/;"	m	class:EscapeTest
 case22	test/graph/MarketingTest.java	/^  public void case22() {$/;"	m	class:MarketingTest
 case23	test/dp/QuickSumsTest.java	/^  public void case23() {$/;"	m	class:QuickSumsTest
 case23	test/dp/ShortPalindromesTest.java	/^  public void case23() {$/;"	m	class:ShortPalindromesTest
 case23	test/dp/StripePainterTest.java	/^  public void case23() {$/;"	m	class:StripePainterTest
+case23	test/dynamic/MiniPaintTest.java	/^  public void case23() {$/;"	m	class:MiniPaintTest
 case23	test/graph/DungeonEscapeTest.java	/^  public void case23() {$/;"	m	class:DungeonEscapeTest
 case23	test/graph/EscapeTest.java	/^  public void case23() {$/;"	m	class:EscapeTest
 case23	test/graph/MarketingTest.java	/^  public void case23() {$/;"	m	class:MarketingTest
@@ -519,35 +539,41 @@ case230	test/dp/ShortPalindromesTest.java	/^  public void case230() {$/;"	m	clas
 case24	test/dp/QuickSumsTest.java	/^  public void case24() {$/;"	m	class:QuickSumsTest
 case24	test/dp/ShortPalindromesTest.java	/^  public void case24() {$/;"	m	class:ShortPalindromesTest
 case24	test/dp/StripePainterTest.java	/^  public void case24() {$/;"	m	class:StripePainterTest
+case24	test/dynamic/MiniPaintTest.java	/^  public void case24() {$/;"	m	class:MiniPaintTest
 case24	test/graph/DungeonEscapeTest.java	/^  public void case24() {$/;"	m	class:DungeonEscapeTest
 case24	test/graph/EscapeTest.java	/^  public void case24() {$/;"	m	class:EscapeTest
 case24	test/graph/MarketingTest.java	/^  public void case24() {$/;"	m	class:MarketingTest
 case25	test/dp/QuickSumsTest.java	/^  public void case25() {$/;"	m	class:QuickSumsTest
 case25	test/dp/ShortPalindromesTest.java	/^  public void case25() {$/;"	m	class:ShortPalindromesTest
 case25	test/dp/StripePainterTest.java	/^  public void case25() {$/;"	m	class:StripePainterTest
+case25	test/dynamic/MiniPaintTest.java	/^  public void case25() {$/;"	m	class:MiniPaintTest
 case25	test/graph/DungeonEscapeTest.java	/^  public void case25() {$/;"	m	class:DungeonEscapeTest
 case25	test/graph/EscapeTest.java	/^  public void case25() {$/;"	m	class:EscapeTest
 case25	test/graph/MarketingTest.java	/^  public void case25() {$/;"	m	class:MarketingTest
 case26	test/dp/QuickSumsTest.java	/^  public void case26() {$/;"	m	class:QuickSumsTest
 case26	test/dp/ShortPalindromesTest.java	/^  public void case26() {$/;"	m	class:ShortPalindromesTest
 case26	test/dp/StripePainterTest.java	/^  public void case26() {$/;"	m	class:StripePainterTest
+case26	test/dynamic/MiniPaintTest.java	/^  public void case26() {$/;"	m	class:MiniPaintTest
 case26	test/graph/DungeonEscapeTest.java	/^  public void case26() {$/;"	m	class:DungeonEscapeTest
 case26	test/graph/EscapeTest.java	/^  public void case26() {$/;"	m	class:EscapeTest
 case26	test/graph/MarketingTest.java	/^  public void case26() {$/;"	m	class:MarketingTest
 case27	test/dp/QuickSumsTest.java	/^  public void case27() {$/;"	m	class:QuickSumsTest
 case27	test/dp/ShortPalindromesTest.java	/^  public void case27() {$/;"	m	class:ShortPalindromesTest
 case27	test/dp/StripePainterTest.java	/^  public void case27() {$/;"	m	class:StripePainterTest
+case27	test/dynamic/MiniPaintTest.java	/^  public void case27() {$/;"	m	class:MiniPaintTest
 case27	test/graph/DungeonEscapeTest.java	/^  public void case27() {$/;"	m	class:DungeonEscapeTest
 case27	test/graph/EscapeTest.java	/^  public void case27() {$/;"	m	class:EscapeTest
 case27	test/graph/MarketingTest.java	/^  public void case27() {$/;"	m	class:MarketingTest
 case28	test/dp/QuickSumsTest.java	/^  public void case28() {$/;"	m	class:QuickSumsTest
 case28	test/dp/ShortPalindromesTest.java	/^  public void case28() {$/;"	m	class:ShortPalindromesTest
 case28	test/dp/StripePainterTest.java	/^  public void case28() {$/;"	m	class:StripePainterTest
+case28	test/dynamic/MiniPaintTest.java	/^  public void case28() {$/;"	m	class:MiniPaintTest
 case28	test/graph/DungeonEscapeTest.java	/^  public void case28() {$/;"	m	class:DungeonEscapeTest
 case28	test/graph/EscapeTest.java	/^  public void case28() {$/;"	m	class:EscapeTest
 case28	test/graph/MarketingTest.java	/^  public void case28() {$/;"	m	class:MarketingTest
 case29	test/dp/ShortPalindromesTest.java	/^  public void case29() {$/;"	m	class:ShortPalindromesTest
 case29	test/dp/StripePainterTest.java	/^  public void case29() {$/;"	m	class:StripePainterTest
+case29	test/dynamic/MiniPaintTest.java	/^  public void case29() {$/;"	m	class:MiniPaintTest
 case29	test/graph/DungeonEscapeTest.java	/^  public void case29() {$/;"	m	class:DungeonEscapeTest
 case29	test/graph/EscapeTest.java	/^  public void case29() {$/;"	m	class:EscapeTest
 case29	test/graph/MarketingTest.java	/^  public void case29() {$/;"	m	class:MarketingTest
@@ -562,6 +588,7 @@ case3	test/dp/QuickSumsTest.java	/^  public void case3() {$/;"	m	class:QuickSums
 case3	test/dp/ShortPalindromesTest.java	/^  public void case3() {$/;"	m	class:ShortPalindromesTest
 case3	test/dp/StripePainterTest.java	/^  public void case3() {$/;"	m	class:StripePainterTest
 case3	test/dp/ZigZagTest.java	/^  public void case3() {$/;"	m	class:ZigZagTest
+case3	test/dynamic/MiniPaintTest.java	/^  public void case3() {$/;"	m	class:MiniPaintTest
 case3	test/graph/CircuitsTest.java	/^  public void case3() {$/;"	m	class:CircuitsTest
 case3	test/graph/DungeonEscapeTest.java	/^  public void case3() {$/;"	m	class:DungeonEscapeTest
 case3	test/graph/EscapeTest.java	/^  public void case3() {$/;"	m	class:EscapeTest
@@ -573,41 +600,51 @@ case3	test/graph/PathFindingTest.java	/^  public void case3() {$/;"	m	class:Path
 case3	test/graph/RoboCourierTest.java	/^  public void case3()	{$/;"	m	class:RoboCourierTest
 case30	test/dp/ShortPalindromesTest.java	/^  public void case30() {$/;"	m	class:ShortPalindromesTest
 case30	test/dp/StripePainterTest.java	/^  public void case30() {$/;"	m	class:StripePainterTest
+case30	test/dynamic/MiniPaintTest.java	/^  public void case30() {$/;"	m	class:MiniPaintTest
 case30	test/graph/DungeonEscapeTest.java	/^  public void case30() {$/;"	m	class:DungeonEscapeTest
 case30	test/graph/EscapeTest.java	/^  public void case30() {$/;"	m	class:EscapeTest
 case30	test/graph/MarketingTest.java	/^  public void case30() {$/;"	m	class:MarketingTest
 case31	test/dp/ShortPalindromesTest.java	/^  public void case31() {$/;"	m	class:ShortPalindromesTest
 case31	test/dp/StripePainterTest.java	/^  public void case31() {$/;"	m	class:StripePainterTest
+case31	test/dynamic/MiniPaintTest.java	/^  public void case31() {$/;"	m	class:MiniPaintTest
 case31	test/graph/DungeonEscapeTest.java	/^  public void case31() {$/;"	m	class:DungeonEscapeTest
 case31	test/graph/EscapeTest.java	/^  public void case31() {$/;"	m	class:EscapeTest
 case32	test/dp/ShortPalindromesTest.java	/^  public void case32() {$/;"	m	class:ShortPalindromesTest
 case32	test/dp/StripePainterTest.java	/^  public void case32() {$/;"	m	class:StripePainterTest
+case32	test/dynamic/MiniPaintTest.java	/^  public void case32() {$/;"	m	class:MiniPaintTest
 case32	test/graph/DungeonEscapeTest.java	/^  public void case32() {$/;"	m	class:DungeonEscapeTest
 case32	test/graph/EscapeTest.java	/^  public void case32() {$/;"	m	class:EscapeTest
 case33	test/dp/ShortPalindromesTest.java	/^  public void case33() {$/;"	m	class:ShortPalindromesTest
 case33	test/dp/StripePainterTest.java	/^  public void case33() {$/;"	m	class:StripePainterTest
+case33	test/dynamic/MiniPaintTest.java	/^  public void case33() {$/;"	m	class:MiniPaintTest
 case33	test/graph/DungeonEscapeTest.java	/^  public void case33() {$/;"	m	class:DungeonEscapeTest
 case33	test/graph/EscapeTest.java	/^  public void case33() {$/;"	m	class:EscapeTest
 case34	test/dp/ShortPalindromesTest.java	/^  public void case34() {$/;"	m	class:ShortPalindromesTest
 case34	test/dp/StripePainterTest.java	/^  public void case34() {$/;"	m	class:StripePainterTest
+case34	test/dynamic/MiniPaintTest.java	/^  public void case34() {$/;"	m	class:MiniPaintTest
 case34	test/graph/DungeonEscapeTest.java	/^  public void case34() {$/;"	m	class:DungeonEscapeTest
 case34	test/graph/EscapeTest.java	/^  public void case34() {$/;"	m	class:EscapeTest
 case35	test/dp/ShortPalindromesTest.java	/^  public void case35() {$/;"	m	class:ShortPalindromesTest
 case35	test/dp/StripePainterTest.java	/^  public void case35() {$/;"	m	class:StripePainterTest
+case35	test/dynamic/MiniPaintTest.java	/^  public void case35() {$/;"	m	class:MiniPaintTest
 case35	test/graph/DungeonEscapeTest.java	/^  public void case35() {$/;"	m	class:DungeonEscapeTest
 case35	test/graph/EscapeTest.java	/^  public void case35() {$/;"	m	class:EscapeTest
 case36	test/dp/ShortPalindromesTest.java	/^  public void case36() {$/;"	m	class:ShortPalindromesTest
 case36	test/dp/StripePainterTest.java	/^  public void case36() {$/;"	m	class:StripePainterTest
+case36	test/dynamic/MiniPaintTest.java	/^  public void case36() {$/;"	m	class:MiniPaintTest
 case36	test/graph/DungeonEscapeTest.java	/^  public void case36() {$/;"	m	class:DungeonEscapeTest
 case36	test/graph/EscapeTest.java	/^  public void case36() {$/;"	m	class:EscapeTest
 case37	test/dp/ShortPalindromesTest.java	/^  public void case37() {$/;"	m	class:ShortPalindromesTest
 case37	test/dp/StripePainterTest.java	/^  public void case37() {$/;"	m	class:StripePainterTest
+case37	test/dynamic/MiniPaintTest.java	/^  public void case37() {$/;"	m	class:MiniPaintTest
 case37	test/graph/DungeonEscapeTest.java	/^  public void case37() {$/;"	m	class:DungeonEscapeTest
 case37	test/graph/EscapeTest.java	/^  public void case37() {$/;"	m	class:EscapeTest
 case38	test/dp/ShortPalindromesTest.java	/^  public void case38() {$/;"	m	class:ShortPalindromesTest
+case38	test/dynamic/MiniPaintTest.java	/^  public void case38() {$/;"	m	class:MiniPaintTest
 case38	test/graph/DungeonEscapeTest.java	/^  public void case38() {$/;"	m	class:DungeonEscapeTest
 case38	test/graph/EscapeTest.java	/^  public void case38() {$/;"	m	class:EscapeTest
 case39	test/dp/ShortPalindromesTest.java	/^  public void case39() {$/;"	m	class:ShortPalindromesTest
+case39	test/dynamic/MiniPaintTest.java	/^  public void case39() {$/;"	m	class:MiniPaintTest
 case39	test/graph/DungeonEscapeTest.java	/^  public void case39() {$/;"	m	class:DungeonEscapeTest
 case39	test/graph/EscapeTest.java	/^  public void case39() {$/;"	m	class:EscapeTest
 case4	test/dp/AvoidRoadsTest.java	/^  public void case4() {$/;"	m	class:AvoidRoadsTest
@@ -621,6 +658,7 @@ case4	test/dp/QuickSumsTest.java	/^  public void case4() {$/;"	m	class:QuickSums
 case4	test/dp/ShortPalindromesTest.java	/^  public void case4() {$/;"	m	class:ShortPalindromesTest
 case4	test/dp/StripePainterTest.java	/^  public void case4() {$/;"	m	class:StripePainterTest
 case4	test/dp/ZigZagTest.java	/^  public void case4() {$/;"	m	class:ZigZagTest
+case4	test/dynamic/MiniPaintTest.java	/^  public void case4() {$/;"	m	class:MiniPaintTest
 case4	test/graph/CircuitsTest.java	/^  public void case4() {$/;"	m	class:CircuitsTest
 case4	test/graph/DungeonEscapeTest.java	/^  public void case4() {$/;"	m	class:DungeonEscapeTest
 case4	test/graph/EscapeTest.java	/^  public void case4() {$/;"	m	class:EscapeTest
@@ -631,27 +669,38 @@ case4	test/graph/MarketingTest.java	/^  public void case4() {$/;"	m	class:Market
 case4	test/graph/PathFindingTest.java	/^  public void case4() {$/;"	m	class:PathFindingTest
 case4	test/graph/RoboCourierTest.java	/^  public void case4()	{$/;"	m	class:RoboCourierTest
 case40	test/dp/ShortPalindromesTest.java	/^  public void case40() {$/;"	m	class:ShortPalindromesTest
+case40	test/dynamic/MiniPaintTest.java	/^  public void case40() {$/;"	m	class:MiniPaintTest
 case40	test/graph/DungeonEscapeTest.java	/^  public void case40() {$/;"	m	class:DungeonEscapeTest
 case40	test/graph/EscapeTest.java	/^  public void case40() {$/;"	m	class:EscapeTest
 case41	test/dp/ShortPalindromesTest.java	/^  public void case41() {$/;"	m	class:ShortPalindromesTest
+case41	test/dynamic/MiniPaintTest.java	/^  public void case41() {$/;"	m	class:MiniPaintTest
 case41	test/graph/DungeonEscapeTest.java	/^  public void case41() {$/;"	m	class:DungeonEscapeTest
 case41	test/graph/EscapeTest.java	/^  public void case41() {$/;"	m	class:EscapeTest
 case42	test/dp/ShortPalindromesTest.java	/^  public void case42() {$/;"	m	class:ShortPalindromesTest
+case42	test/dynamic/MiniPaintTest.java	/^  public void case42() {$/;"	m	class:MiniPaintTest
 case42	test/graph/EscapeTest.java	/^  public void case42() {$/;"	m	class:EscapeTest
 case43	test/dp/ShortPalindromesTest.java	/^  public void case43() {$/;"	m	class:ShortPalindromesTest
+case43	test/dynamic/MiniPaintTest.java	/^  public void case43() {$/;"	m	class:MiniPaintTest
 case43	test/graph/EscapeTest.java	/^  public void case43() {$/;"	m	class:EscapeTest
 case44	test/dp/ShortPalindromesTest.java	/^  public void case44() {$/;"	m	class:ShortPalindromesTest
+case44	test/dynamic/MiniPaintTest.java	/^  public void case44() {$/;"	m	class:MiniPaintTest
 case44	test/graph/EscapeTest.java	/^  public void case44() {$/;"	m	class:EscapeTest
 case45	test/dp/ShortPalindromesTest.java	/^  public void case45() {$/;"	m	class:ShortPalindromesTest
+case45	test/dynamic/MiniPaintTest.java	/^  public void case45() {$/;"	m	class:MiniPaintTest
 case45	test/graph/EscapeTest.java	/^  public void case45() {$/;"	m	class:EscapeTest
 case46	test/dp/ShortPalindromesTest.java	/^  public void case46() {$/;"	m	class:ShortPalindromesTest
+case46	test/dynamic/MiniPaintTest.java	/^  public void case46() {$/;"	m	class:MiniPaintTest
 case46	test/graph/EscapeTest.java	/^  public void case46() {$/;"	m	class:EscapeTest
 case47	test/dp/ShortPalindromesTest.java	/^  public void case47() {$/;"	m	class:ShortPalindromesTest
+case47	test/dynamic/MiniPaintTest.java	/^  public void case47() {$/;"	m	class:MiniPaintTest
 case47	test/graph/EscapeTest.java	/^  public void case47() {$/;"	m	class:EscapeTest
 case48	test/dp/ShortPalindromesTest.java	/^  public void case48() {$/;"	m	class:ShortPalindromesTest
+case48	test/dynamic/MiniPaintTest.java	/^  public void case48() {$/;"	m	class:MiniPaintTest
 case48	test/graph/EscapeTest.java	/^  public void case48() {$/;"	m	class:EscapeTest
 case49	test/dp/ShortPalindromesTest.java	/^  public void case49() {$/;"	m	class:ShortPalindromesTest
+case49	test/dynamic/MiniPaintTest.java	/^  public void case49() {$/;"	m	class:MiniPaintTest
 case49	test/graph/EscapeTest.java	/^  public void case49() {$/;"	m	class:EscapeTest
+case4a	test/dynamic/MiniPaintTest.java	/^  public void case4a() {$/;"	m	class:MiniPaintTest
 case5	test/dp/BadNeighborsTest.java	/^  public void case5() {$/;"	m	class:BadNeighborsTest
 case5	test/dp/FlowerGardenTest.java	/^  public void case5() {$/;"	m	class:FlowerGardenTest
 case5	test/dp/GameOfLifeDivOneTest.java	/^  public void case5() {$/;"	m	class:GameOfLifeDivOneTest
@@ -660,6 +709,7 @@ case5	test/dp/QuickSumsTest.java	/^  public void case5() {$/;"	m	class:QuickSums
 case5	test/dp/ShortPalindromesTest.java	/^  public void case5() {$/;"	m	class:ShortPalindromesTest
 case5	test/dp/StripePainterTest.java	/^  public void case5() {$/;"	m	class:StripePainterTest
 case5	test/dp/ZigZagTest.java	/^  public void case5() {$/;"	m	class:ZigZagTest
+case5	test/dynamic/MiniPaintTest.java	/^  public void case5() {$/;"	m	class:MiniPaintTest
 case5	test/graph/CircuitsTest.java	/^  public void case5() {$/;"	m	class:CircuitsTest
 case5	test/graph/DungeonEscapeTest.java	/^  public void case5() {$/;"	m	class:DungeonEscapeTest
 case5	test/graph/EscapeTest.java	/^  public void case5() {$/;"	m	class:EscapeTest
@@ -668,20 +718,30 @@ case5	test/graph/MarketingTest.java	/^  public void case5() {$/;"	m	class:Market
 case5	test/graph/PathFindingTest.java	/^  public void case5() {$/;"	m	class:PathFindingTest
 case5	test/graph/RoboCourierTest.java	/^  public void case5()	{$/;"	m	class:RoboCourierTest
 case50	test/dp/ShortPalindromesTest.java	/^  public void case50() {$/;"	m	class:ShortPalindromesTest
+case50	test/dynamic/MiniPaintTest.java	/^  public void case50() {$/;"	m	class:MiniPaintTest
 case50	test/graph/EscapeTest.java	/^  public void case50() {$/;"	m	class:EscapeTest
 case51	test/dp/ShortPalindromesTest.java	/^  public void case51() {$/;"	m	class:ShortPalindromesTest
+case51	test/dynamic/MiniPaintTest.java	/^  public void case51() {$/;"	m	class:MiniPaintTest
 case51	test/graph/EscapeTest.java	/^  public void case51() {$/;"	m	class:EscapeTest
 case52	test/dp/ShortPalindromesTest.java	/^  public void case52() {$/;"	m	class:ShortPalindromesTest
+case52	test/dynamic/MiniPaintTest.java	/^  public void case52() {$/;"	m	class:MiniPaintTest
 case52	test/graph/EscapeTest.java	/^  public void case52() {$/;"	m	class:EscapeTest
 case53	test/dp/ShortPalindromesTest.java	/^  public void case53() {$/;"	m	class:ShortPalindromesTest
+case53	test/dynamic/MiniPaintTest.java	/^  public void case53() {$/;"	m	class:MiniPaintTest
 case53	test/graph/EscapeTest.java	/^  public void case53() {$/;"	m	class:EscapeTest
 case54	test/dp/ShortPalindromesTest.java	/^  public void case54() {$/;"	m	class:ShortPalindromesTest
+case54	test/dynamic/MiniPaintTest.java	/^  public void case54() {$/;"	m	class:MiniPaintTest
 case54	test/graph/EscapeTest.java	/^  public void case54() {$/;"	m	class:EscapeTest
 case55	test/dp/ShortPalindromesTest.java	/^  public void case55() {$/;"	m	class:ShortPalindromesTest
+case55	test/dynamic/MiniPaintTest.java	/^  public void case55() {$/;"	m	class:MiniPaintTest
 case55	test/graph/EscapeTest.java	/^  public void case55() {$/;"	m	class:EscapeTest
+case56	test/dynamic/MiniPaintTest.java	/^  public void case56() {$/;"	m	class:MiniPaintTest
 case56	test/graph/EscapeTest.java	/^  public void case56() {$/;"	m	class:EscapeTest
+case57	test/dynamic/MiniPaintTest.java	/^  public void case57() {$/;"	m	class:MiniPaintTest
 case57	test/graph/EscapeTest.java	/^  public void case57() {$/;"	m	class:EscapeTest
+case58	test/dynamic/MiniPaintTest.java	/^  public void case58() {$/;"	m	class:MiniPaintTest
 case58	test/graph/EscapeTest.java	/^  public void case58() {$/;"	m	class:EscapeTest
+case59	test/dynamic/MiniPaintTest.java	/^  public void case59() {$/;"	m	class:MiniPaintTest
 case59	test/graph/EscapeTest.java	/^  public void case59() {$/;"	m	class:EscapeTest
 case6	test/dp/BadNeighborsTest.java	/^  public void case6() {$/;"	m	class:BadNeighborsTest
 case6	test/dp/FlowerGardenTest.java	/^  public void case6() {$/;"	m	class:FlowerGardenTest
@@ -690,57 +750,90 @@ case6	test/dp/QuickSumsTest.java	/^  public void case6() {$/;"	m	class:QuickSums
 case6	test/dp/ShortPalindromesTest.java	/^  public void case6() {$/;"	m	class:ShortPalindromesTest
 case6	test/dp/StripePainterTest.java	/^  public void case6() {$/;"	m	class:StripePainterTest
 case6	test/dp/ZigZagTest.java	/^  public void case6() {$/;"	m	class:ZigZagTest
+case6	test/dynamic/MiniPaintTest.java	/^  public void case6() {$/;"	m	class:MiniPaintTest
 case6	test/graph/CircuitsTest.java	/^  public void case6() {$/;"	m	class:CircuitsTest
 case6	test/graph/DungeonEscapeTest.java	/^  public void case6() {$/;"	m	class:DungeonEscapeTest
 case6	test/graph/EscapeTest.java	/^  public void case6() {$/;"	m	class:EscapeTest
 case6	test/graph/MarketingTest.java	/^  public void case6() {$/;"	m	class:MarketingTest
 case6	test/graph/PathFindingTest.java	/^  public void case6() {$/;"	m	class:PathFindingTest
+case60	test/dynamic/MiniPaintTest.java	/^  public void case60() {$/;"	m	class:MiniPaintTest
 case60	test/graph/EscapeTest.java	/^  public void case60() {$/;"	m	class:EscapeTest
+case61	test/dynamic/MiniPaintTest.java	/^  public void case61() {$/;"	m	class:MiniPaintTest
 case61	test/graph/EscapeTest.java	/^  public void case61() {$/;"	m	class:EscapeTest
+case62	test/dynamic/MiniPaintTest.java	/^  public void case62() {$/;"	m	class:MiniPaintTest
 case62	test/graph/EscapeTest.java	/^  public void case62() {$/;"	m	class:EscapeTest
+case63	test/dynamic/MiniPaintTest.java	/^  public void case63() {$/;"	m	class:MiniPaintTest
 case63	test/graph/EscapeTest.java	/^  public void case63() {$/;"	m	class:EscapeTest
+case64	test/dynamic/MiniPaintTest.java	/^  public void case64() {$/;"	m	class:MiniPaintTest
 case64	test/graph/EscapeTest.java	/^  public void case64() {$/;"	m	class:EscapeTest
+case65	test/dynamic/MiniPaintTest.java	/^  public void case65() {$/;"	m	class:MiniPaintTest
 case65	test/graph/EscapeTest.java	/^  public void case65() {$/;"	m	class:EscapeTest
+case66	test/dynamic/MiniPaintTest.java	/^  public void case66() {$/;"	m	class:MiniPaintTest
 case66	test/graph/EscapeTest.java	/^  public void case66() {$/;"	m	class:EscapeTest
+case67	test/dynamic/MiniPaintTest.java	/^  public void case67() {$/;"	m	class:MiniPaintTest
 case67	test/graph/EscapeTest.java	/^  public void case67() {$/;"	m	class:EscapeTest
+case68	test/dynamic/MiniPaintTest.java	/^  public void case68() {$/;"	m	class:MiniPaintTest
 case68	test/graph/EscapeTest.java	/^  public void case68() {$/;"	m	class:EscapeTest
+case69	test/dynamic/MiniPaintTest.java	/^  public void case69() {$/;"	m	class:MiniPaintTest
 case69	test/graph/EscapeTest.java	/^  public void case69() {$/;"	m	class:EscapeTest
 case7	test/dp/JewelryTest.java	/^  public void case7() {$/;"	m	class:JewelryTest
 case7	test/dp/QuickSumsTest.java	/^  public void case7() {$/;"	m	class:QuickSumsTest
 case7	test/dp/ShortPalindromesTest.java	/^  public void case7() {$/;"	m	class:ShortPalindromesTest
 case7	test/dp/StripePainterTest.java	/^  public void case7() {$/;"	m	class:StripePainterTest
+case7	test/dynamic/MiniPaintTest.java	/^  public void case7() {$/;"	m	class:MiniPaintTest
 case7	test/graph/DungeonEscapeTest.java	/^  public void case7() {$/;"	m	class:DungeonEscapeTest
 case7	test/graph/EscapeTest.java	/^  public void case7() {$/;"	m	class:EscapeTest
 case7	test/graph/MarketingTest.java	/^  public void case7() {$/;"	m	class:MarketingTest
+case70	test/dynamic/MiniPaintTest.java	/^  public void case70() {$/;"	m	class:MiniPaintTest
 case70	test/graph/EscapeTest.java	/^  public void case70() {$/;"	m	class:EscapeTest
+case71	test/dynamic/MiniPaintTest.java	/^  public void case71() {$/;"	m	class:MiniPaintTest
 case71	test/graph/EscapeTest.java	/^  public void case71() {$/;"	m	class:EscapeTest
+case72	test/dynamic/MiniPaintTest.java	/^  public void case72() {$/;"	m	class:MiniPaintTest
 case72	test/graph/EscapeTest.java	/^  public void case72() {$/;"	m	class:EscapeTest
+case73	test/dynamic/MiniPaintTest.java	/^  public void case73() {$/;"	m	class:MiniPaintTest
 case73	test/graph/EscapeTest.java	/^  public void case73() {$/;"	m	class:EscapeTest
+case74	test/dynamic/MiniPaintTest.java	/^  public void case74() {$/;"	m	class:MiniPaintTest
 case74	test/graph/EscapeTest.java	/^  public void case74() {$/;"	m	class:EscapeTest
+case75	test/dynamic/MiniPaintTest.java	/^  public void case75() {$/;"	m	class:MiniPaintTest
 case75	test/graph/EscapeTest.java	/^  public void case75() {$/;"	m	class:EscapeTest
+case76	test/dynamic/MiniPaintTest.java	/^  public void case76() {$/;"	m	class:MiniPaintTest
 case76	test/graph/EscapeTest.java	/^  public void case76() {$/;"	m	class:EscapeTest
+case77	test/dynamic/MiniPaintTest.java	/^  public void case77() {$/;"	m	class:MiniPaintTest
 case77	test/graph/EscapeTest.java	/^  public void case77() {$/;"	m	class:EscapeTest
+case78	test/dynamic/MiniPaintTest.java	/^  public void case78() {$/;"	m	class:MiniPaintTest
 case78	test/graph/EscapeTest.java	/^  public void case78() {$/;"	m	class:EscapeTest
+case79	test/dynamic/MiniPaintTest.java	/^  public void case79() {$/;"	m	class:MiniPaintTest
 case79	test/graph/EscapeTest.java	/^  public void case79() {$/;"	m	class:EscapeTest
 case8	test/dp/QuickSumsTest.java	/^  public void case8() {$/;"	m	class:QuickSumsTest
 case8	test/dp/ShortPalindromesTest.java	/^  public void case8() {$/;"	m	class:ShortPalindromesTest
 case8	test/dp/StripePainterTest.java	/^  public void case8() {$/;"	m	class:StripePainterTest
+case8	test/dynamic/MiniPaintTest.java	/^  public void case8() {$/;"	m	class:MiniPaintTest
 case8	test/graph/DungeonEscapeTest.java	/^  public void case8() {$/;"	m	class:DungeonEscapeTest
 case8	test/graph/EscapeTest.java	/^  public void case8() {$/;"	m	class:EscapeTest
 case8	test/graph/MarketingTest.java	/^  public void case8() {$/;"	m	class:MarketingTest
+case80	test/dynamic/MiniPaintTest.java	/^  public void case80() {$/;"	m	class:MiniPaintTest
 case80	test/graph/EscapeTest.java	/^  public void case80() {$/;"	m	class:EscapeTest
+case81	test/dynamic/MiniPaintTest.java	/^  public void case81() {$/;"	m	class:MiniPaintTest
 case81	test/graph/EscapeTest.java	/^  public void case81() {$/;"	m	class:EscapeTest
+case82	test/dynamic/MiniPaintTest.java	/^  public void case82() {$/;"	m	class:MiniPaintTest
 case82	test/graph/EscapeTest.java	/^  public void case82() {$/;"	m	class:EscapeTest
+case83	test/dynamic/MiniPaintTest.java	/^  public void case83() {$/;"	m	class:MiniPaintTest
 case83	test/graph/EscapeTest.java	/^  public void case83() {$/;"	m	class:EscapeTest
+case84	test/dynamic/MiniPaintTest.java	/^  public void case84() {$/;"	m	class:MiniPaintTest
 case84	test/graph/EscapeTest.java	/^  public void case84() {$/;"	m	class:EscapeTest
+case85	test/dynamic/MiniPaintTest.java	/^  public void case85() {$/;"	m	class:MiniPaintTest
 case85	test/graph/EscapeTest.java	/^  public void case85() {$/;"	m	class:EscapeTest
+case86	test/dynamic/MiniPaintTest.java	/^  public void case86() {$/;"	m	class:MiniPaintTest
 case86	test/graph/EscapeTest.java	/^  public void case86() {$/;"	m	class:EscapeTest
+case87	test/dynamic/MiniPaintTest.java	/^  public void case87() {$/;"	m	class:MiniPaintTest
 case87	test/graph/EscapeTest.java	/^  public void case87() {$/;"	m	class:EscapeTest
+case88	test/dynamic/MiniPaintTest.java	/^  public void case88() {$/;"	m	class:MiniPaintTest
 case88	test/graph/EscapeTest.java	/^  public void case88() {$/;"	m	class:EscapeTest
 case89	test/graph/EscapeTest.java	/^  public void case89() {$/;"	m	class:EscapeTest
 case9	test/dp/QuickSumsTest.java	/^  public void case9() {$/;"	m	class:QuickSumsTest
 case9	test/dp/ShortPalindromesTest.java	/^  public void case9() {$/;"	m	class:ShortPalindromesTest
 case9	test/dp/StripePainterTest.java	/^  public void case9() {$/;"	m	class:StripePainterTest
+case9	test/dynamic/MiniPaintTest.java	/^  public void case9() {$/;"	m	class:MiniPaintTest
 case9	test/graph/DungeonEscapeTest.java	/^  public void case9() {$/;"	m	class:DungeonEscapeTest
 case9	test/graph/EscapeTest.java	/^  public void case9() {$/;"	m	class:EscapeTest
 case9	test/graph/MarketingTest.java	/^  public void case9() {$/;"	m	class:MarketingTest
@@ -883,6 +976,7 @@ minTime	src/bkt/BridgeCrossing.java	/^  public int minTime(int[] t) {$/;"	m	clas
 minTime	src/graph/Parking.java	/^  public int minTime(String[] parking) {$/;"	m	class:Parking
 minTimeOld	src/bkt/BridgeCrossing.java	/^  public int minTimeOld(int[] times) {$/;"	m	class:BridgeCrossing
 minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;"	m	class:PathFinding
+minipaint	test/dynamic/MiniPaintTest.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
 mostStars	src/dynamic/StarAdventure.java	/^  public int mostStars(String[] level) {$/;"	m	class:StarAdventure
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost) {$/;"	m	class:RoboCourier.Node
@@ -1036,6 +1130,7 @@ topc.test.dp	test/dp/ShortPalindromesTest.java	/^package topc.test.dp;$/;"	p
 topc.test.dp	test/dp/StripePainterTest.java	/^package topc.test.dp;$/;"	p
 topc.test.dp	test/dp/WeightedIntervalSchedulingTest.java	/^package topc.test.dp;$/;"	p
 topc.test.dp	test/dp/ZigZagTest.java	/^package topc.test.dp;$/;"	p
+topc.test.dynamic	test/dynamic/MiniPaintTest.java	/^package topc.test.dynamic;$/;"	p
 topc.test.easy	test/easy/BusinessTasksTest.java	/^package topc.test.easy;$/;"	p
 topc.test.easy	test/easy/FibTest.java	/^package topc.test.easy;$/;"	p
 topc.test.easy	test/easy/MedalTableTest.java	/^package topc.test.easy;$/;"	p

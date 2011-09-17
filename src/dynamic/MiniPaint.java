@@ -44,7 +44,11 @@ public class MiniPaint {
 
     // TODO: remove debug code below
     for (int i = 0; i < N; i++) {
-      debug("pic[i]", pic[i]);
+      debug("pic[i]", i, pic[i]);
+    }
+
+    for (int i = 0; i < N; i++) {
+      debug("pic[i]", i, pic[i]);
       for (int k = 0; k < pic[i][M]; k++) {
         debug("\tk", k, paint[i][0][k]);
       }
@@ -52,29 +56,29 @@ public class MiniPaint {
 
     // TODO: case8, case10 fails
 
-    int all = sumAll();
+    int spaces = allSpaces();
     int strokes = allStrokes();
 
     if (strokes <= S) { 
       return 0;
     } else {
-      int max = getMax();
+      int painted = maxPainted();
 
-      debug("all", all);
-      debug("max", max);
+      debug("all", spaces, N, M, S);
+      debug("max", painted);
 
-      return all - max;
+      return spaces - painted;
     }
   }
 
-  int getMax() {
-    int all = sumAll();
+  int maxPainted() {
+    int all = allSpaces();
     PriorityQueue<Node> nodes = new PriorityQueue<Node>();
     //int[][] seen = new int[N][M + 1];
     int[] seen = new int[N];
     int max = 0;
 
-    nodes.offer(new Node(0, 0, 0, 0));
+    //nodes.offer(new Node(0, 0, 0, 0));
     for (int k = 0; k < pic[0][M]; k++) {
       int curStrokes = k + 1;
       nodes.offer(new Node(paint[0][0][k], 0, curStrokes, curStrokes));
@@ -87,7 +91,7 @@ public class MiniPaint {
       //debug(top.row, top.curStrokes, top.totStrokes, top.totPainted);
       //}
 
-      debug(top.row, top.curStrokes, top.totStrokes, top.totPainted);
+      //debug(top.row, top.curStrokes, top.totStrokes, top.totPainted);
 
       // TODO: order the nodes better and remove this if statement
       // TODO: remove curStrokes from Node
@@ -105,12 +109,15 @@ public class MiniPaint {
       //seen[top.row][top.curStrokes] = top.totPainted;
       seen[top.row] = top.totPainted;
       int row = top.row + 1;
-      nodes.offer(new Node(top.totPainted, row, 0, top.totStrokes));
+      //nodes.offer(new Node(top.totPainted, row, 0, top.totStrokes));
       for (int k = 0; k < pic[row][M]; k++) {
         int curStrokes = k + 1;
         int totPainted = top.totPainted + paint[row][0][k]; 
         int totStrokes = top.totStrokes + curStrokes;
+
+        // TODO: this if statement should be unnecessary
         if (totStrokes > S) { break; }
+
         nodes.offer(new Node(totPainted, row, curStrokes, totStrokes));
       }
     }
@@ -126,7 +133,7 @@ public class MiniPaint {
     return all;
   }
 
-  int sumAll() {
+  int allSpaces() {
     int all = 0;
     for (int i = 0; i < N; i++) {
       byte strokes = pic[i][M];
@@ -143,8 +150,13 @@ public class MiniPaint {
       byte[][] row = paint[i];
 
       for (int j = strokes - 1; j > -1; j--) {
+
+        //row[j][0] = (byte)maxAltSum(pic[i], j);
+        //for (int k = 1; k < strokes; k++) {
+
         for (int k = 0; k < strokes; k++) {
 
+          
           if (j == strokes - 1) {
             row[j][k] = pic[i][j];
           } else {
@@ -157,8 +169,27 @@ public class MiniPaint {
         }
       }
 
-      assert row[0][strokes - 1] == M : "compute strokes malfunction";
+      debug(row[0][0], maxAltSum(pic[i], 0), pic[i]);
+      for (int p = 0; p < M; p++) {
+        debug(p, row[p]);
+      }
+      debug(row[0][strokes - 1], M);
+
+      assert row[0][0] == maxAltSum(pic[i], 0) : "compute strokes malfunction - start";
+      assert row[0][strokes - 1] == M : "compute strokes malfunction - end";
     }
+  }
+
+  int maxAltSum(byte[] row, int index) {
+    int s1 = 0;
+    int s2 = 0;
+
+    for (int i = index; i < M; i++) {
+      s1 += i % 2 == 0 ? row[i] : 0;
+      s2 += i % 2 != 0 ? row[i] : 0;
+    }
+
+    return Math.max(s1, s2);
   }
 
   class Node implements Comparable<Node> {
