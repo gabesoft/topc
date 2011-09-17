@@ -58,9 +58,7 @@ public class MiniPaint {
     PriorityQueue<Node> nodes = new PriorityQueue<Node>();
 
     for (int k = 0; k < pic[0][M]; k++) {
-      int curStrokes = k + 1;
-      int totPainted = maxPainted(0, k);
-      nodes.offer(new Node(totPainted, 0, curStrokes, curStrokes));
+      nodes.offer(new Node(maxPainted(0, k), 0, k + 1));
     }
 
     while (nodes.size() > 0) {
@@ -74,10 +72,9 @@ public class MiniPaint {
       seen[top.row] = top.totPainted;
       int row = top.row + 1;
       for (int k = 0; k < pic[row][M]; k++) {
-        int curStrokes = k + 1;
         int totPainted = top.totPainted + maxPainted(row, k);
-        int totStrokes = top.totStrokes + curStrokes;
-        nodes.offer(new Node(totPainted, row, curStrokes, totStrokes));
+        int totStrokes = top.totStrokes + k + 1;
+        nodes.offer(new Node(totPainted, row, totStrokes));
       }
     }
 
@@ -112,7 +109,6 @@ public class MiniPaint {
         byte c2 = (byte)(c1 == 0 ? 1 : 0);
 
         for (int k = 0; k < strokes; k++) {
-
           if (j == strokes - 1) {
             row[j][k][c1] = pic[i][j];
           } else {
@@ -127,7 +123,7 @@ public class MiniPaint {
       }
 
       assert maxPainted(i, 0) == maxAltSum(pic[i], 0) : "invalid computation for k = 1";
-      assert maxPainted(i, strokes - 1) == M          : "invalid computation for k = M - 1";
+      assert maxPainted(i, strokes - 1) == M          : "invalid computation for k = M";
     }
   }
 
@@ -144,14 +140,12 @@ public class MiniPaint {
   }
 
   class Node implements Comparable<Node> {
-    public int curStrokes;
     public int totStrokes;
     public int totPainted;
     public int row;
 
-    public Node(int totPainted, int row, int curStrokes, int totStrokes) {
+    public Node(int totPainted, int row, int totStrokes) {
       this.totPainted = totPainted;
-      this.curStrokes = curStrokes;
       this.totStrokes = totStrokes;
       this.row = row;
     }
