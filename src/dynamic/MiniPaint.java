@@ -58,7 +58,7 @@ public class MiniPaint {
     PriorityQueue<Node> nodes = new PriorityQueue<Node>();
 
     for (int k = 0; k < pic[0][M]; k++) {
-      nodes.offer(new Node(maxPainted(0, k), 0, k + 1));
+      nodes.offer(new Node(0, maxPainted(0, k), k + 1));
     }
 
     while (nodes.size() > 0) {
@@ -74,7 +74,7 @@ public class MiniPaint {
       for (int k = 0; k < pic[row][M]; k++) {
         int totPainted = top.totPainted + maxPainted(row, k);
         int totStrokes = top.totStrokes + k + 1;
-        nodes.offer(new Node(totPainted, row, totStrokes));
+        nodes.offer(new Node(row, totPainted, totStrokes));
       }
     }
 
@@ -144,10 +144,10 @@ public class MiniPaint {
     public int totPainted;
     public int row;
 
-    public Node(int totPainted, int row, int totStrokes) {
+    public Node(int row, int totPainted, int totStrokes) {
+      this.row = row;
       this.totPainted = totPainted;
       this.totStrokes = totStrokes;
-      this.row = row;
     }
 
     public int compareTo(Node other) {
