@@ -43,6 +43,7 @@ import topc.test.dynamic.*;
   //TeamBuilderTest.class,
   //ParkingTest.class,
   //StarAdventureTest.class,
-  MiniPaintTest.class
+  //MiniPaintTest.class,
+  MiniPaint2Test.class
 })
 public class AllTests { }
