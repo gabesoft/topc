@@ -47,10 +47,7 @@ public class MNS {
     magic &= sum == a[3] + a[4] + a[5];
     magic &= sum == a[6] + a[7] + a[8];
 
-    if (magic) {
-      S++;
-      //debug(S, a);
-    }
+    if (magic) { S++; }
   }
 
   private void debug(Object... os) {
