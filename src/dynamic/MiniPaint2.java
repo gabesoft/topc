@@ -17,16 +17,16 @@ public class MiniPaint2 {
     int[] best = new int[S];
 
     for (int i = 0; i < N; i++) {
-      int[] a = dostr(picture[i]);
+      int[] row = getRow(picture[i]);
       int[] curr = new int[S];
 
       for (int j = 0; j < S; j++) {
         curr[j] = best[j] + M;
       }
 
-      for (int j = 0; j < a.length; j++) {
+      for (int j = 0; j < row.length; j++) {
         for (int k = j; k < S; k++) {
-          curr[k] = Math.min(curr[k], best[k - j] + a[j]);
+          curr[k] = Math.min(curr[k], best[k - j] + row[j]);
         }
       }
 
@@ -36,10 +36,8 @@ public class MiniPaint2 {
     return best[maxStrokes];
   }
 
-  int[] dostr(String s) {
-    char[] row = s.toCharArray();
+  int[] getRow(String s) {
     int[][] w = new int[M + 1][M + 1];
-    int[] r = new int[M - 1];
 
     for (int i = 0; i < M + 1; i++) { w[i][0] = i; }
 
@@ -52,7 +50,7 @@ public class MiniPaint2 {
       int countW = 0;
 
       for (int b = i - 1; b > -1; b--) {
-        if (row[b] == 'B') {
+        if (s.charAt(b) == 'B') {
           countB++;
         } else {
           countW++;
@@ -65,6 +63,13 @@ public class MiniPaint2 {
       }
     }
 
+    //debug("s", s);
+    //debug("w[M]", w[M]);
+    
     return w[M];
+  }
+
+  void debug(Object...os) {
+    System.out.println(Arrays.deepToString(os));
   }
 }
