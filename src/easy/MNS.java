@@ -49,7 +49,7 @@ public class MNS {
 
     if (magic) {
       S++;
-      debug(S, a);
+      //debug(S, a);
     }
   }
 
