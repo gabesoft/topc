@@ -12,8 +12,7 @@ public class WeirdRooks {
   int M;
   int[] row;
   int[] col;
-  ArrayList<Pair> results;
-  HashSet<String> seen;
+  boolean[][] res;
 
   public String describe(int[] cols) {
     N = cols.length;
@@ -21,8 +20,7 @@ public class WeirdRooks {
     row = new int[N];
     col = new int[M];
     board = new byte[N][M + 1];
-    results = new ArrayList<Pair>();
-    seen = new HashSet<String>();
+    res = new boolean[N + 1][N * M + 1];
 
     for (int i = 0; i < N; i++) {
       for (int j = cols[i]; j < M; j++) {
@@ -32,11 +30,19 @@ public class WeirdRooks {
     }
 
     for (int i = 0; i < N + 1; i++) {
-      backtrack(copyBoard(), new boolean[M], i, 0, i);
+      backtrack(copyBoard(), 0, i, 0, i);
     }
 
-    Collections.sort(results);
-    return join(results, " ");
+    StringBuilder builder = new StringBuilder();
+    for (int i = 0; i < N + 1; i++) {
+      for (int j = 0; j < N * M + 1; j++) {
+        if (res[i][j]) {
+          builder.append(String.format("%s,%s ", i, j));
+        }
+      }
+    }
+
+    return builder.substring(0, builder.length() - 1);
   }
 
   void process(byte[][] solution, int rooks) {
@@ -60,14 +66,10 @@ public class WeirdRooks {
       }
     }
 
-    Pair pair = new Pair(rooks, special);
-    if (!seen.contains(pair.toString())) {
-      seen.add(pair.toString());
-      results.add(pair);
-    }
+    res[rooks][special] = true;
   }
 
-  void backtrack(byte[][] board, boolean[] cols, int rooks, int k, int totalRooks) {
+  void backtrack(byte[][] board, int cols, int rooks, int k, int totalRooks) {
     if (rooks == 0) {
       process(board, totalRooks);
     } else {
@@ -75,11 +77,9 @@ public class WeirdRooks {
 
       for (int i = k; i < N - rooks; i++) {
         for (int j = 0; j < board[i][M]; j++) {
-          if (!cols[j]) {
-            boolean[] next = cols.clone();
-            next[j] = true;
+          if ((cols & 1 << j) == 0) {
             board[i][j] = 2;
-            backtrack(board, next, rooks, i + 1, totalRooks);
+            backtrack(board, (cols | 1 << j), rooks, i + 1, totalRooks);
             board[i][j] = 0;
           }
         }
@@ -106,40 +106,5 @@ public class WeirdRooks {
 
   private void debug(Object... os) {
     System.out.println(Arrays.deepToString(os));
-  }
-
-  private static String join(Collection<?> s, String delimiter) {
-    StringBuilder builder = new StringBuilder();
-    Iterator iter = s.iterator();
-    while (iter.hasNext()) {
-      builder.append(iter.next());
-      if (!iter.hasNext()) {
-        break;                  
-      }
-      builder.append(delimiter);
-    }
-    return builder.toString();
-  }
-
-  class Pair implements Comparable<Pair> {
-    public final int rooks;
-    public final int special;
-
-    public Pair(int rooks, int special) {
-      this.rooks = rooks;
-      this.special = special;
-    }
-
-    public String toString() {
-      return String.format("%s,%s", rooks, special);
-    }
-
-    public int compareTo(Pair other) {
-      if (rooks != other.rooks) {
-        return Integer.valueOf(rooks).compareTo(Integer.valueOf(other.rooks));
-      } else {
-        return Integer.valueOf(special).compareTo(Integer.valueOf(other.special));
-      }
-    }
   }
 }
