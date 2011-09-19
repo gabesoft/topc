@@ -31,10 +31,7 @@ public class WeirdRooks {
       board[i][M] = (byte)cols[i];
     }
 
-    //debug("board", board);
-
     for (int i = 0; i < N + 1; i++) {
-      //debug("i", i);
       backtrack(copyBoard(), new boolean[M], i, 0, i);
     }
 
@@ -47,7 +44,7 @@ public class WeirdRooks {
 
     for (int i = 0; i < N; i++) {
       row[i] = -1;
-      for (int j = 0; j < M; j++) {
+      for (int j = 0; j < board[i][M]; j++) {
         if (solution[i][j] == 2) {
           row[i] = j;
           col[j] = i;
@@ -58,25 +55,16 @@ public class WeirdRooks {
 
     int special = 0;
     for (int i = 0; i < N; i++) {
-      //for (int j = 0; j < M; j++) {
       for (int j = row[i] + 1; j < board[i][M]; j++) {
-        //if (solution[i][j] == 0 && row[i] < j && col[j] < i) {
         if (col[j] < i) { special++; }
       }
     }
 
-    //for (int i = 0; i < N; i++) {
-      //debug(solution[i]);
-    //}
-
-    Pair p = new Pair(rooks, special);
-    //debug("p", p, seen.contains(p.toString()));
-    if (!seen.contains(p.toString())) {
-      seen.add(p.toString());
-      results.add(p);
+    Pair pair = new Pair(rooks, special);
+    if (!seen.contains(pair.toString())) {
+      seen.add(pair.toString());
+      results.add(pair);
     }
-
-    //System.out.println("");
   }
 
   void backtrack(byte[][] board, boolean[] cols, int rooks, int k, int totalRooks) {
@@ -86,9 +74,8 @@ public class WeirdRooks {
       rooks = rooks - 1;
 
       for (int i = k; i < N - rooks; i++) {
-        for (int j = 0; j < M; j++) {
-          if (!cols[j] && board[i][j] == 0) {
-
+        for (int j = 0; j < board[i][M]; j++) {
+          if (!cols[j]) {
             boolean[] next = cols.clone();
             next[j] = true;
             board[i][j] = 2;
@@ -97,6 +84,7 @@ public class WeirdRooks {
           }
         }
       }
+
     }
   }
 
