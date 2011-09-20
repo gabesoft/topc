@@ -8,6 +8,7 @@ import topc.test.easy.*;
 import topc.test.graph.*;
 import topc.test.bkt.*;
 import topc.test.dynamic.*;
+import topc.test.greedy.*;
 import topc.test.stringm.*;
 
 @RunWith(Suite.class)
@@ -48,6 +49,7 @@ import topc.test.stringm.*;
   //MiniPaint2Test.class,
   //MNSTest.class,
   //WeirdRooksTest.class,
-  PoetryTest.class
+  //PoetryTest.class,
+  BioScoreTest.class
 })
 public class AllTests { }
