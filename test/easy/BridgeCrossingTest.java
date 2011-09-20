@@ -1,10 +1,10 @@
-package topc.test.bkt;
+package topc.test.easy;
 
 import junit.framework.*;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
-import topc.bkt.*;
+import topc.easy.*;
 
 public class BridgeCrossingTest {
   BridgeCrossing _calc = new BridgeCrossing();
