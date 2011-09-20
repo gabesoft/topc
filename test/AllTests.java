@@ -8,6 +8,7 @@ import topc.test.easy.*;
 import topc.test.graph.*;
 import topc.test.bkt.*;
 import topc.test.dynamic.*;
+import topc.test.stringm.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -46,6 +47,7 @@ import topc.test.dynamic.*;
   //MiniPaintTest.class,
   //MiniPaint2Test.class,
   //MNSTest.class,
-  WeirdRooksTest.class
+  //WeirdRooksTest.class,
+  PoetryTest.class
 })
 public class AllTests { }
