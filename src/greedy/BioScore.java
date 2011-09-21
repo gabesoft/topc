@@ -11,21 +11,20 @@ public class BioScore {
     double[] freq = getFrequency(knownSet);
     double[] score = new double[10];
     double n = knownSet.length;
-
-    debug("freq", freq);
-
     double best = Integer.MIN_VALUE;
+
     for (int i = 1; i < 11; i++) {
       for (int j = 1; j < 11; j++) {
         for (int k = 1; k < 11; k++) {
           for (int l = 1; l < 11; l++) {
             if ((i + j + k + l) % 2 == 0) {
-              score[1] = i;
-              score[2] = j;
-              score[3] = k;
-              score[4] = l;
+              score[0] = i;
+              score[1] = j;
+              score[2] = k;
+              score[3] = l;
+              score[4] = 10.0;
               score[5] = 10.0;
-              score[6] = 10.0 - (score[1] + score[2] + score[3] + score[4]) / 2.0;
+              score[6] = 10.0 - (score[0] + score[1] + score[2] + score[3]) / 2.0;
               score[7] = -10.0;
               score[8] = -10.0;
               score[9] = -10.0;
@@ -58,7 +57,7 @@ public class BioScore {
           String a = Character.toString(knownSet[i].charAt(k));
           String b = Character.toString(knownSet[j].charAt(k));
           Pair p = Pair.valueOf(a + b);
-          //debug(a, b, p);
+
           switch (p) {
             case AA: freq[0]++; break;
             case CC: freq[1]++; break;
@@ -71,13 +70,7 @@ public class BioScore {
             case CT: case TC: freq[8]++; break;
             case GT: case TG: freq[9]++; break;
           }
-          //debug("knownSet[i]", knownSet[i]);
-          //debug("knownSet[j]", knownSet[j]);
-          //debug("freq", freq);
         }
-          debug("knownSet[i]", knownSet[i]);
-          debug("knownSet[j]", knownSet[j]);
-          debug("freq", freq);
       }
     }
 
