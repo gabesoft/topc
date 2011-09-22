@@ -50,6 +50,7 @@ import topc.test.stringm.*;
   //MNSTest.class,
   //WeirdRooksTest.class,
   //PoetryTest.class,
-  BioScoreTest.class
+  //BioScoreTest.class,
+  GoldMineTest.class
 })
 public class AllTests { }
