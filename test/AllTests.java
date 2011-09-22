@@ -10,6 +10,7 @@ import topc.test.bkt.*;
 import topc.test.dynamic.*;
 import topc.test.greedy.*;
 import topc.test.stringm.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses({
@@ -51,6 +52,7 @@ import topc.test.stringm.*;
   //WeirdRooksTest.class,
   //PoetryTest.class,
   //BioScoreTest.class,
-  GoldMineTest.class
+  //GoldMineTest.class,
+  WorldPeaceTest.class
 })
 public class AllTests { }

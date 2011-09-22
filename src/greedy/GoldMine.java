@@ -19,7 +19,6 @@ public class GoldMine {
 
     for (int i = 0; i < N; i++) {
       String[] mine = mines[i].split(",\\s+");
-      assert mine.length == W : "Failure message";
       for (int j = 0; j < W; j++) {
         perc[i][j] = Double.parseDouble(mine[j]) / 100.0;
       }
