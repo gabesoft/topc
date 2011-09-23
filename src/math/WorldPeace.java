@@ -8,7 +8,23 @@ import java.io.*;
 // http://community.topcoder.com/stat?c=problem_statement&pm=2420&rd=5850
 public class WorldPeace {
   public long numGroups(int k, int[] countries) {
-    return 0L;
+    long groups = 0;
+    int n = countries.length;
+    int m = n - k;
+
+    Arrays.sort(countries);
+    while (countries[m] > 0) {
+      int increment = (countries[m] + 999) / 1000;
+
+      for (int i = m; i < n; i++) {
+        countries[i] = countries[i] - increment;
+      }
+      groups += increment;
+
+      Arrays.sort(countries);
+    }
+
+    return groups;
   }
 
   private void debug(Object... os) {
