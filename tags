@@ -70,6 +70,7 @@ LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 
 M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
+MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
 Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, int start, int end) {$/;"	m	class:RevolvingDoors.Maze
@@ -144,6 +145,8 @@ TableSeating	src/easy/TableSeating.java	/^public class TableSeating  {$/;"	c
 TableSeatingTest	test/easy/TableSeatingTest.java	/^public class TableSeatingTest  {$/;"	c
 TallPeople	src/easy/TallPeople.java	/^public class TallPeople  {$/;"	c
 TallPeopleTest	test/easy/TallPeopleTest.java	/^public class TallPeopleTest {$/;"	c
+Team	src/greedy/MLBRecord.java	/^    public Team(int index, int lo) {$/;"	m	class:MLBRecord.Team
+Team	src/greedy/MLBRecord.java	/^  class Team implements Comparable<Team> {$/;"	c	class:MLBRecord
 TeamBuilder	src/graph/TeamBuilder.java	/^public class TeamBuilder {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
 Ticket	src/graph/IslandFerries.java	/^  class Ticket {$/;"	c	class:IslandFerries
@@ -221,6 +224,7 @@ avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
+buildTeams	src/greedy/MLBRecord.java	/^  void buildTeams(int[] wins) {$/;"	m	class:MLBRecord
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
@@ -954,6 +958,7 @@ compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/
 compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
 compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	m	class:KiloManX3.Node
 compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
+compareTo	src/greedy/MLBRecord.java	/^    public int compareTo(Team other) {$/;"	m	class:MLBRecord.Team
 computeBest	src/graph/Parking.java	/^  int computeBest() {$/;"	m	class:Parking
 computeMatching	src/graph/Parking.java	/^  int computeMatching(int cutoff) {$/;"	m	class:Parking
 computeStrokes	src/dynamic/MiniPaint.java	/^  void computeStrokes() {$/;"	m	class:MiniPaint
@@ -999,6 +1004,7 @@ debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketi
 debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:Parking	file:
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
 debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	class:TeamBuilder	file:
+debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
@@ -1024,6 +1030,7 @@ findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
+games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
 generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results) {$/;"	m	class:MedalTable
 getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1057,18 +1064,22 @@ graph	src/graph/IslandFerries.java	/^  int[][][] graph;$/;"	f	class:IslandFerrie
 graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
 h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
 hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
+hi	src/greedy/MLBRecord.java	/^    public int hi;$/;"	f	class:MLBRecord.Team
 howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String[] costs) {$/;"	m	class:Circuits
 howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
+index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
+k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
 last	src/dp/KiloManX.java	/^    public int last;$/;"	f	class:KiloManX.Node
 leastBad	src/dynamic/MiniPaint.java	/^  public int leastBad(String[] picture, int maxStrokes) {$/;"	m	class:MiniPaint
 leastShots	src/dp/KiloManX.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX
 leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX2
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
+lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
@@ -1099,6 +1110,7 @@ n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
+n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
@@ -1112,6 +1124,7 @@ paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
+populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
@@ -1144,6 +1157,7 @@ solve	src/graph/RoboCourier.java	/^  int solve() {$/;"	m	class:RoboCourier
 solveIter	src/dp/WeightedIntervalScheduling.java	/^  int solveIter(Interval[] ivals) {$/;"	m	class:WeightedIntervalScheduling
 solveRec	src/dp/WeightedIntervalScheduling.java	/^  int solveRec(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
 sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
+sortDesc	src/greedy/MLBRecord.java	/^  void sortDesc(Team[] arr) {$/;"	m	class:MLBRecord
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
 spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
@@ -1153,6 +1167,8 @@ states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCr
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
+teamStatus	src/greedy/MLBRecord.java	/^  public String teamStatus(int[] wins, int gamesLeft, int N) {$/;"	m	class:MLBRecord
+teams	src/greedy/MLBRecord.java	/^  Team[] teams;$/;"	f	class:MLBRecord
 testCase1	test/bkt/BridgeCrossingTest.java	/^  public void testCase1() {$/;"	m	class:BridgeCrossingTest
 testCase1	test/easy/BusinessTasksTest.java	/^  public void testCase1() throws Exception {$/;"	m	class:BusinessTasksTest
 testCase1	test/easy/MedalTableTest.java	/^  public void testCase1() {$/;"	m	class:MedalTableTest
@@ -1232,6 +1248,7 @@ topc.graph	src/graph/RevolvingDoors.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/SmartWordToy.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
+topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
 topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
