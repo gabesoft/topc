@@ -53,6 +53,7 @@ import topc.test.math.*;
   //PoetryTest.class,
   //BioScoreTest.class,
   //GoldMineTest.class,
-  WorldPeaceTest.class
+  //WorldPeaceTest.class,
+  MLBRecordTest.class
 })
 public class AllTests { }
