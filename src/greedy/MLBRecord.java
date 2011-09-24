@@ -43,22 +43,18 @@ public class MLBRecord {
       int available = n * games / 2;
       int lo = teams[i].lo;
       for (int j = i + 1; j < n; j++) {
-        int dx = Math.min(available, Math.min(games, teams[i].lo - teams[j].lo));
+        int dx = Math.min(available, Math.min(games, Math.max(0, lo - teams[j].lo)));
         available = Math.max(0, available - dx);
-        if (lo <= teams[j].lo + dx) {
-          better++;
-        }
+        if (lo <= teams[j].lo + dx) { better++; }
       }
 
       int remaining = Math.max(0, (n * games / 2) - (n - i) * games);
       int hi = teams[i].lo + games;
       for (int j = i - 1; j > -1; j--) {
-        int dx = Math.min(remaining, Math.min(games, Math.abs(hi - teams[j].lo)));
+        int dx = Math.min(remaining, Math.min(games, Math.max(0, hi - teams[j].lo)));
         dx = Math.max(dx, remaining - j * games);
         remaining = Math.max(0, remaining - dx);
-        if (hi < teams[j].lo + dx) {
-          worse++;
-        }
+        if (hi < teams[j].lo + dx) { worse++; }
       }
 
       if (better < k - i) {
