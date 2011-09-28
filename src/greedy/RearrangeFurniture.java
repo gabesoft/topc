@@ -30,10 +30,7 @@ public class RearrangeFurniture {
       int cycleCount = 1;
       int prev = i;
       for (int c = work[i]; c != i; c = work[c]) {
-        if (weights[c] < cycleMin) { 
-          cycleMin = weights[c]; 
-        }
-
+        cycleMin = Math.min(cycleMin, weights[c]);
         cycleSum += weights[c];
         cycleCount++;
 
