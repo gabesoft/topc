@@ -8,72 +8,32 @@ import java.io.*;
 // http://community.topcoder.com/stat?c=problem_statement&pm=2982&rd=5881
 public class HeatDeath {
   public int maxTime(int[] energy) {
+    Arrays.sort(energy);
+
     int n = energy.length;
     int time = 0;
     boolean done = false;
 
-    int avg = 0;
-    for (int i = 0; i < n; i++) {
-      avg += energy[i];
-    }
-    avg /= n;
-    debug("avg", avg);
-
     while (!done) {
-      int a = -1;
-      int b = -1;
-      int v = avg;
-      int u = avg;
-      //int min = 999;
-      //
+      done = true;
 
-      debug("energy", energy);
+      for (int i = 1; i < n; i++) {
+        for (int j = 0; j < n - i; j++) {
+          int a = j;
+          int b = j + i;
+          int dx = energy[b] - energy[a];
+          if (dx > 1) {
+            int amt = dx / 2;
 
-      //Arrays.sort(energy);
-      for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-          int dx = (energy[i] + energy[j]) / 2;
-          int dy = Math.abs(energy[i] - energy[j]);
-          //debug(i, j, dy, dx);
-          if (i != j && dy > 1) {
-            if (a == -1 && b == -1) {
-              a = i;
-              b = j;
-              v = energy[a] + (energy[a] > energy[b] ? -1 : 1);
-              u = energy[b] + (energy[b] > energy[a] ? -1 : 1);
-            }
+            time += amt;
+            energy[a] += amt;
+            energy[b] -= amt;
 
-            int p = dx;
-            int q = (energy[i] + energy[j]) % 2 == 0 ? dx : dx + 1;
-            int cur = Math.abs((avg - p) + (avg - q));
-            int old = Math.abs((avg - v) + (avg - u));
-            //int cur = Math.abs(avg - p) + Math.abs(avg - q);
-            //int old = Math.abs(avg - v) + Math.abs(avg - u);
-            if (cur > old) {
-              debug("dx", dx, energy[i], energy[j], cur, old, p, q);
-              a = i;
-              b = j;
-              v = p;
-              u = q;
-            }
+            done = false;
+            i = n;
+            j = n;
           }
         }
-      }
-
-
-      if (a > -1 && b > -1) {
-        debug(time, a, b, energy[a], "->", v, energy[b], "->", u, energy);
-        time += Math.min(u, v) - Math.min(energy[a], energy[b]);
-        energy[a] = v;
-        energy[b] = u;
-        //time += 1;
-        //energy[a] += energy[a] > energy[b] ? -1 : 1;
-        //energy[b] += energy[b] > energy[a] ? -1 : 1;
-        a = -1;
-        b = -1;
-        //min = 999;
-      } else {
-        done = true;
       }
     }
 
