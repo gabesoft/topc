@@ -56,6 +56,7 @@ import topc.test.math.*;
   //WorldPeaceTest.class,
   //MLBRecordTest.class,
   //RearrangeFurnitureTest.class,
-  HeatDeathTest.class
+  //HeatDeathTest.class,
+  RationalizationTest.class
 })
 public class AllTests { }
