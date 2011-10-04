@@ -57,6 +57,7 @@ import topc.test.math.*;
   //MLBRecordTest.class,
   //RearrangeFurnitureTest.class,
   //HeatDeathTest.class,
-  RationalizationTest.class
+  //RationalizationTest.class,
+  BenfordsLawTest.class
 })
 public class AllTests { }
