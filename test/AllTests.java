@@ -58,6 +58,7 @@ import topc.test.math.*;
   //RearrangeFurnitureTest.class,
   //HeatDeathTest.class,
   //RationalizationTest.class,
-  BenfordsLawTest.class
+  //BenfordsLawTest.class,
+  QuizShowTest.class
 })
 public class AllTests { }

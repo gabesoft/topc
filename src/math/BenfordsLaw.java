@@ -8,8 +8,6 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=1348&rd=4580
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm155
 public class BenfordsLaw {
-  static public final double DELTA = 0.000001;
-
   public int questionableDigit(int[] transactions, int threshold) {
     int n = transactions.length;
 
