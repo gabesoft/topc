@@ -12,24 +12,19 @@ public class BenfordsLaw {
 
   public int questionableDigit(int[] transactions, int threshold) {
     int n = transactions.length;
-    int e = 0;
-    int a = 1;
-    double[][] freq = new double[9][2];
 
-    for (int i = 0; i < 9; i++) {
-      freq[i][e] = (double)n * Math.log10(1.0 + 1.0/(i + 1.0));
-    }
-
+    double[] freq = new double[9];
     for (int i = 0; i < n; i++) {
-      freq[firstDigit(transactions[i]) - 1][a]++;
+      freq[firstDigit(transactions[i]) - 1]++;
     }
 
     int digit = Integer.MAX_VALUE;
     for (int i = 0; i < 9; i++) {
-      if (freq[i][a] == 0.0) { 
+      if (freq[i] == 0.0) { 
         digit = Math.min(digit, i + 1);
       } else {
-        double dx = Math.max(freq[i][e], freq[i][a]) / Math.min(freq[i][e], freq[i][a]);
+        double expected = (double)n * Math.log10(1.0 + 1.0/(i + 1.0));
+        double dx = Math.max(expected, freq[i]) / Math.min(expected, freq[i]);
         if (dx >= threshold) {
           digit = Math.min(digit, i + 1);
         }
