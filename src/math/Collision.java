@@ -11,21 +11,21 @@ public class Collision {
   public double probability(int[] assignments, int ids) {
     int n = assignments.length;
 
-    double p1 = 1.0; // without memory
-    double p2 = 1.0; // with memory
-    double amt1 = 0.0;
-    double amt2 = 0.0;
+    double p1 = 1.0;      // without memory
+    double p2 = 1.0;      // with memory
+    double a1 = 0.0;
+    double a2 = 0.0;
     for (int i = 0; i < n; i++) {
       int c = assignments[i];
       for (int j = 0; j < c; j++) {
-        p1 *= 1.0 - amt1 / ids;
-        p2 *= 1.0 - amt2 / (ids - j);
-        amt1++;
+        p1 *= 1.0 - a1 / ids;
+        p2 *= 1.0 - a2 / (ids - j);
+        a1++;
       }
-      amt2 += c;
+      a2 += c;
     }
 
-    return amt1 <= ids ? p2 - p1 : 0;
+    return a1 <= ids ? p2 - p1 : 0;
   }
 
   private void debug(Object... os) {

@@ -61,6 +61,7 @@ import topc.test.math.*;
   //BenfordsLawTest.class,
   //QuizShowTest.class,
   //BirthdayOddsTest.class,
-  CollisionTest.class
+  //CollisionTest.class,
+  NestedRandomnessTest.class
 })
 public class AllTests { }
