@@ -9,6 +9,7 @@ ADJ	src/graph/RevolvingDoors.java	/^  static public final int[] ADJ = { -1, 0, 0
 AllTests	test/AllTests.java	/^public class AllTests { }$/;"	c
 AvoidRoads	src/dp/AvoidRoads.java	/^public class AvoidRoads {$/;"	c
 AvoidRoadsTest	test/dp/AvoidRoadsTest.java	/^public class AvoidRoadsTest {$/;"	c
+B	src/dynamic/ChessKnight.java	/^  static public final int B = 8;$/;"	f	class:ChessKnight
 B	src/graph/PathFinding.java	/^  static public final int B = 2;$/;"	f	class:PathFinding
 BadNeighbors	src/dp/BadNeighbors.java	/^public class BadNeighbors {$/;"	c
 BadNeighborsTest	test/dp/BadNeighborsTest.java	/^public class BadNeighborsTest {$/;"	c
@@ -19,6 +20,7 @@ BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
 C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
+ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
@@ -996,6 +998,7 @@ debug	src/dp/ShortPalindromes.java	/^  void debug(Object...os) {$/;"	m	class:Sho
 debug	src/dp/StripePainter.java	/^  void debug(Object...os) {$/;"	m	class:StripePainter
 debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m	class:WeightedIntervalScheduling
 debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
+debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
@@ -1037,6 +1040,7 @@ firstDigit	src/math/BenfordsLaw.java	/^  public static int firstDigit(int n) {$/
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
+gcd	src/dynamic/ChessKnight.java	/^  public int gcd(int a, int b)$/;"	m	class:ChessKnight
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
 generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results) {$/;"	m	class:MedalTable
 getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1097,6 +1101,7 @@ maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donation
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
+memo	src/dynamic/ChessKnight.java	/^  double memo[][][][] = new double[B][B][9000][25];$/;"	f	class:ChessKnight
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
@@ -1122,6 +1127,7 @@ nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
 numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
+on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
 outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$/;"	m	class:GameOfLifeDivOne
@@ -1136,6 +1142,8 @@ prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerrie
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
 printSolution	src/dp/WeightedIntervalScheduling.java	/^  void printSolution(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
+prob	src/dynamic/ChessKnight.java	/^  double prob(int x, int y, int s, int k, int n) {$/;"	m	class:ChessKnight
+probability	src/dynamic/ChessKnight.java	/^  public double probability(int x, int y, int n) {$/;"	m	class:ChessKnight
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
 questionableDigit	src/math/BenfordsLaw.java	/^  public int questionableDigit(int[] transactions, int threshold) {$/;"	m	class:BenfordsLaw
@@ -1236,6 +1244,7 @@ topc.dp	src/dp/ShortPalindromes.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/StripePainter.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
+topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p

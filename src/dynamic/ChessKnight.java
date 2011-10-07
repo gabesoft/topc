@@ -99,21 +99,21 @@ public class ChessKnight {
     //return prob[n];
 
     //double d = prob(x - 1, y - 1, 1.0, n);
-    double d = prob(x - 1, y - 1, 1, 0, n);
+    double d = prob(x - 1, y - 1, 0, 0, 0, n);
     //double d = prob(x - 1, y - 1, 1, 1, n);
     debug("d", d);
     return d;
   }
 
-  double memo[][][][] = new double[B][B][9000][25];
+  double memo[][][][][] = new double[B][B][50][50][50];
 
-  double prob(int x, int y, int s, int k, int n) {
-    debug(x, y, s, k, n);
+  double prob(int x, int y, int p3, int p2, int k, int n) {
+    debug(x, y, p3, p2, k, n);
 
-    if (memo[x][y][s][k] > 0.0) { return memo[x][y][s][k]; }
+    //if (memo[x][y][s][k] > 0.0) { return memo[x][y][s][k]; }
 
     //if (n == 0) { return (double)s / Math.pow(8.0, k); }
-    if (n == 0) { return (double)s / (1 << (3 * k)); }
+    if (n == 0) { return (double)(Math.pow(3, p3) * (1 << p2)) / (1 << (1 * k)); }
 
     int sum = 0;
     for (int a = -2; a <= 2; a = a + 4) {
@@ -127,18 +127,37 @@ public class ChessKnight {
       }
     }
 
-    //debug("sum", sum);
+    assert sum != 5 && sum != 7 : "sum was 5 or 7";
+
+    int np3 = p3;
+    int np2 = p2;
+    int nk = k + 3;
+    switch (sum) {
+      case 2: np2 += 1;
+              break;
+      case 3: np3 += 1;
+              break;
+      case 4: np2 += 2;
+              break;
+      case 6: np2 += 1;
+              np3 += 1;
+              break;
+      case 8: np2 += 3;
+              break;
+    }
+    debug("sum", sum, np3 - p3, np2 - p2);
 
     //int s2 = s * sum;
-    //int k2 = k * 8;
+    //int k2 = 1 << (k + 3);
     //int g = gcd(s2, k2);
     //s2 /= g;
     //k2 /= g;
+    //debug("n", n, x, y, s2, k2);
 
     //int s2 = s * sum;
-    //int k2 = k + 1;
-    //while (s2 % 8 == 0 && k2 > 0) {
-      //s2 = s2 / 8;
+    //int k2 = k + 3;
+    //while (s2 % 2 == 0 && k2 > 1) {
+      //s2 = s2 / 2;
       //k2--;
     //}
 
@@ -155,13 +174,15 @@ public class ChessKnight {
         //if (on(x2) && on(y2)) { avg += prob(x2, y2, s2, k2, n - 1); }
         //if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k * 8, n - 1); }
         //if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k * 8, n - 1); }
-        if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k + 1, n - 1); }
-        if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k + 1, n - 1); }
+        //if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k + 3, n - 1); }
+        //if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k + 3, n - 1); }
+        if (on(x1) && on(y1)) { avg += prob(x1, y1, np3, np2, nk, n - 1); }
+        if (on(x2) && on(y2)) { avg += prob(x2, y2, np3, np2, nk, n - 1); }
       }
     }
 
     double res = avg / sum;
-    memo[x][y][s][k] = res;
+    //memo[x][y][s][k] = res;
     return res;
   }
 
