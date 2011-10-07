@@ -79,14 +79,14 @@ public class ChessKnight {
         }
       }
 
-      debug("avg", s / c);
+      //debug("avg", s / c);
 
       for (int j = 0; j < B; j++) {
         //int[] a = new int[B];
         //for (int k = 0; k < B; k++) {
         //a[k] = curr[j][k] ? 1 : 0;
         //}
-        debug(curr[j]);
+        //debug(curr[j]);
       }
       debug();
 
@@ -100,14 +100,20 @@ public class ChessKnight {
 
     //double d = prob(x - 1, y - 1, 1.0, n);
     double d = prob(x - 1, y - 1, 1, 0, n);
+    //double d = prob(x - 1, y - 1, 1, 1, n);
     debug("d", d);
     return d;
   }
 
-  double prob(int x, int y, int s, int k, int n) {
-    //debug(x, y, p, n);
+  double memo[][][][] = new double[B][B][9000][25];
 
-    if (n == 0) { return (double)s / Math.pow(8.0, k); }
+  double prob(int x, int y, int s, int k, int n) {
+    debug(x, y, s, k, n);
+
+    if (memo[x][y][s][k] > 0.0) { return memo[x][y][s][k]; }
+
+    //if (n == 0) { return (double)s / Math.pow(8.0, k); }
+    if (n == 0) { return (double)s / (1 << (3 * k)); }
 
     int sum = 0;
     for (int a = -2; a <= 2; a = a + 4) {
@@ -123,6 +129,21 @@ public class ChessKnight {
 
     //debug("sum", sum);
 
+    //int s2 = s * sum;
+    //int k2 = k * 8;
+    //int g = gcd(s2, k2);
+    //s2 /= g;
+    //k2 /= g;
+
+    //int s2 = s * sum;
+    //int k2 = k + 1;
+    //while (s2 % 8 == 0 && k2 > 0) {
+      //s2 = s2 / 8;
+      //k2--;
+    //}
+
+    //debug("k2", k2);
+
     double avg = 0.0;
     for (int a = -2; a <= 2; a = a + 4) {
       for (int b = -1; b <= 1; b = b + 2) {
@@ -130,6 +151,8 @@ public class ChessKnight {
         int y1 = y + b;
         int x2 = x + b;
         int y2 = y + a;
+        //if (on(x1) && on(y1)) { avg += prob(x1, y1, s2, k2, n - 1); }
+        //if (on(x2) && on(y2)) { avg += prob(x2, y2, s2, k2, n - 1); }
         //if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k * 8, n - 1); }
         //if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k * 8, n - 1); }
         if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k + 1, n - 1); }
@@ -137,7 +160,15 @@ public class ChessKnight {
       }
     }
 
-    return avg / sum;
+    double res = avg / sum;
+    memo[x][y][s][k] = res;
+    return res;
+  }
+
+  public int gcd(int a, int b)
+  {
+    if (b == 0) { return a; }
+    return gcd(b, a % b);
   }
 
   boolean on(int x) {
