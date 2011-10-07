@@ -98,15 +98,16 @@ public class ChessKnight {
 
     //return prob[n];
 
-    double d = prob(x - 1, y - 1, 1.0, n);
+    //double d = prob(x - 1, y - 1, 1.0, n);
+    double d = prob(x - 1, y - 1, 1, 0, n);
     debug("d", d);
     return d;
   }
 
-  double prob(int x, int y, double p, int n) {
+  double prob(int x, int y, int s, int k, int n) {
     //debug(x, y, p, n);
 
-    if (n == 0) { return p; }
+    if (n == 0) { return (double)s / Math.pow(8.0, k); }
 
     int sum = 0;
     for (int a = -2; a <= 2; a = a + 4) {
@@ -129,8 +130,10 @@ public class ChessKnight {
         int y1 = y + b;
         int x2 = x + b;
         int y2 = y + a;
-        if (on(x1) && on(y1)) { avg += prob(x1, y1, p * (sum / 8.0), n - 1); }
-        if (on(x2) && on(y2)) { avg += prob(x2, y2, p * (sum / 8.0), n - 1); }
+        //if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k * 8, n - 1); }
+        //if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k * 8, n - 1); }
+        if (on(x1) && on(y1)) { avg += prob(x1, y1, s * sum, k + 1, n - 1); }
+        if (on(x2) && on(y2)) { avg += prob(x2, y2, s * sum, k + 1, n - 1); }
       }
     }
 
