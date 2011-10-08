@@ -1101,7 +1101,7 @@ maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donation
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
-memo	src/dynamic/ChessKnight.java	/^  double memo[][][][] = new double[B][B][9000][25];$/;"	f	class:ChessKnight
+memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
@@ -1142,7 +1142,8 @@ prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerrie
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
 printSolution	src/dp/WeightedIntervalScheduling.java	/^  void printSolution(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
-prob	src/dynamic/ChessKnight.java	/^  double prob(int x, int y, int s, int k, int n) {$/;"	m	class:ChessKnight
+prob	src/dynamic/ChessKnight.java	/^  double prob(int x, int y, int n) {$/;"	m	class:ChessKnight
+probOrig	src/dynamic/ChessKnight.java	/^  double probOrig(int x, int y, double p, int n) {$/;"	m	class:ChessKnight
 probability	src/dynamic/ChessKnight.java	/^  public double probability(int x, int y, int n) {$/;"	m	class:ChessKnight
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
