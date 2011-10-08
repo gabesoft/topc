@@ -24,10 +24,8 @@ public class ChessKnight {
     double sum = 0.0;
     for (int a = -2; a <= 2; a = a + 4) {
       for (int b = -1; b <= 1; b = b + 2) {
-        int x1 = x + a;
-        int y1 = y + b;
-        int x2 = x + b;
-        int y2 = y + a;
+        int x1 = x + a; int y1 = y + b;
+        int x2 = x + b; int y2 = y + a;
         if (on(x1) && on(y1)) { sum += prob(x1, y1, n - 1); }
         if (on(x2) && on(y2)) { sum += prob(x2, y2, n - 1); }
       }

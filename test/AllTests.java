@@ -63,6 +63,7 @@ import topc.test.math.*;
   //BirthdayOddsTest.class,
   //CollisionTest.class,
   //NestedRandomnessTest.class,
-  ChessKnightTest.class
+  //ChessKnightTest.class,
+  DiceThrowsTest.class
 })
 public class AllTests { }
