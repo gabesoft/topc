@@ -14,39 +14,40 @@ public class DiceThrows {
     Arrays.sort(sidesA);
     Arrays.sort(sidesB);
 
-    double[] A = fillProb(numDiceA, sidesA);
-    double[] B = fillProb(numDiceB, sidesB);
+    double[] probA = getProb(numDiceA, sidesA);
+    double[] probB = getProb(numDiceB, sidesB);
+
+    double[] probBacc = new double[probB.length + 1];
+    for (int i = 1; i < probBacc.length; i++) {
+      probBacc[i] = probBacc[i - 1] + probB[i - 1];
+    }
 
     double prob = 0.0;
-    for (int i = sidesA[0] * numDiceA; i < sidesA[S - 1] * numDiceA  + 1; i++) {
-      for (int j = sidesB[0] * numDiceB; j < Math.min(i, sidesB[S - 1] * numDiceB + 1); j++) {
-        prob += A[i] * B[j];
-      }
+    for (int i = sidesA[0] * numDiceA; i < probA.length; i++) {
+      prob += probA[i] * probBacc[Math.min(i, probBacc.length - 1)];
     }
 
     return prob;
   }
 
-  double[] fillProb(int num, int[] sides) {
-    double pside = 1.0 / S;
+  double[] getProb(int num, int[] sides) {
     int lo = sides[0];
     int hi = sides[S - 1];
-    double[] prev = new double[hi * num + 1];
+    double pside = 1.0 / S;
+    double[] prob = new double[hi * num + 1];
 
-    Arrays.fill(prev, 1.0);
-
+    prob[0] = 1.0;
     for (int t = 1; t < num + 1; t++) {
       double[] curr = new double[hi * num + 1];
       for (int i = 0; i < S; i++) {
         for (int j = lo * (t - 1); j < hi * (t - 1) + 1; j++) {
-          int v = sides[i] + j;
-          curr[v] += pside * prev[j];
+          curr[sides[i] + j] += pside * prob[j];
         }
       }
-      prev = curr;
+      prob = curr;
     }
 
-    return prev;
+    return prob;
   }
 
   void debug(Object... os) {
