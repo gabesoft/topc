@@ -65,6 +65,7 @@ import topc.test.math.*;
   //NestedRandomnessTest.class,
   //ChessKnightTest.class,
   //DiceThrowsTest.class,
-  RockSkippingTest.class
+  //RockSkippingTest.class,
+  PointSystemTest.class
 })
 public class AllTests { }
