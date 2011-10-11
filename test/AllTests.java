@@ -66,6 +66,7 @@ import topc.test.math.*;
   //ChessKnightTest.class,
   //DiceThrowsTest.class,
   //RockSkippingTest.class,
-  PointSystemTest.class
+  //PointSystemTest.class,
+  VolleyballTest.class
 })
 public class AllTests { }
