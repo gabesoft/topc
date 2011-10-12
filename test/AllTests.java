@@ -67,6 +67,8 @@ import topc.test.math.*;
   //DiceThrowsTest.class,
   //RockSkippingTest.class,
   //PointSystemTest.class,
-  VolleyballTest.class
+  //VolleyballTest.class,
+  //GeneticCrossoverTest.class,
+  ProbabilityTreeTest.class
 })
 public class AllTests { }
