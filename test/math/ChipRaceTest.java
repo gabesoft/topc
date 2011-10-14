@@ -21,13 +21,13 @@ public class ChipRaceTest {
     assertArrayEquals(new double[] { 0.3333333333333333, 0.6666666666666666 }, chiprace.chances(chips), DELTA);
   }
 
-  @Test
+  //@Test
   public void case3() {
     int[] chips = { 3, 2, 3 };
     assertArrayEquals(new double[] { 0.725, 0.55, 0.725 }, chiprace.chances(chips), DELTA);
   }
 
-  @Test
+  //@Test
   public void case4() {
     int[] chips = { 0, 1, 2, 3, 4 };
     assertArrayEquals(new double[] { 0.0, 0.23452380952380952, 0.4412698412698413, 0.6083333333333334, 0.7158730158730159 }, chiprace.chances(chips), DELTA);
@@ -183,7 +183,7 @@ public class ChipRaceTest {
     assertArrayEquals(new double[] { 0.739294914116559, 0.6351605813309945, 0.4833672168306709, 0.272529830663496, 0.0, 0.272529830663496, 0.4833672168306709, 0.6351605813309945, 0.739294914116559, 0.739294914116559 }, chiprace.chances(chips), DELTA);
   }
 
-  //@Test
+  @Test
   public void case30() {
     int[] chips = { 4, 3, 4, 2 };
     assertArrayEquals(new double[] { 0.8377067377067378, 0.7485181485181485, 0.8377067377067378, 0.576068376068376 }, chiprace.chances(chips), DELTA);
