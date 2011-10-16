@@ -1,0 +1,348 @@
+package topc.test.math;
+
+import junit.framework.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
+import topc.math.*;
+
+public class OneArmedBanditTest {
+  double DELTA = 1.0e-09;
+  OneArmedBandit onearmedbandit = new OneArmedBandit();
+
+  @Test
+  public void case1() {
+    String[] wheels = { "ABC", "ABC", "ABC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "BBB 5", "CCC 2" };
+    assertEquals(20.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 20.0);
+  }
+
+  @Test
+  public void case2() {
+    String[] wheels = { "ABC", "ABC", "ABC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "AAB 4", "AA- 3", "AB- 2" };
+    assertEquals(8.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 8.0);
+  }
+
+  @Test
+  public void case3() {
+    String[] wheels = { "ABC", "ABC", "ABC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "AA- 5", "A-- 2" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case4() {
+    String[] wheels = { "ABC", "ABC", "BBC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "AAB 4", "AA- 3", "AB- 2" };
+    assertEquals(-1.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * -1.0);
+  }
+
+  @Test
+  public void case5() {
+    String[] wheels = { "DABCDBCDCD", "BCDBDACDCD", "DCDADBCDBC", "DBDCABCDCD" };
+    String jackpotLine = "AAAA";
+    String[] payoffTable = {  };
+    assertEquals(10000.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 10000.0);
+  }
+
+  @Test
+  public void case6() {
+    String[] wheels = { "DABCDBCDCD", "BCDBDACDCD", "DCDADBCDBC", "DBDCABCDCD" };
+    String jackpotLine = "AAAA";
+    String[] payoffTable = { "AAAE 20" };
+    assertEquals(10000.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 10000.0);
+  }
+
+  @Test
+  public void case7() {
+    String[] wheels = { "CAACNABBBBBAVCYKEVBKFXZAHAFBMAKBGC", "NTEEAACDBKRDJRBNBBFBKADUGBGAVFSACD", "INFCBDWFKYGLMAABCDDCEAZFBBBYAATZSD", "DKABHGACDACJBYBBTFWDABYPCABFPRFIDW" };
+    String jackpotLine = "WUWB";
+    String[] payoffTable = { "R--R 875226", "V-RB 878070", "-N-- 28892", "IVK- 715659" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case8() {
+    String[] wheels = { "ACADGBFBADPAHEHAZASBFYC", "BZFAACITNTGAACGYFPESCBA", "ODHAGHGHITFCECLAHDDARBU", "ZNADBCNPRUAFCDZBNUCAEAG" };
+    String jackpotLine = "RPLQ";
+    String[] payoffTable = { "-DAW 841846", "N--C 960900", "TAEZ 890087", "O-U- 971795" };
+    assertEquals(-1.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * -1.0);
+  }
+
+  @Test
+  public void case9() {
+    String[] wheels = { "NHFAFCZR", "BBCUASOB", "GVDZUOLH", "GVBADXGD", "GEAAAMKA", "ANBVDHBF", "BABABEWB", "UHQHACDG", "ZOGCPGHA" };
+    String jackpotLine = "IZQRO----";
+    String[] payoffTable = { "-VFX-MIYL 952968", "A--ZFKYWK 682769", "P-R-EOA-- 469811", "GMFLXDVA- 166335", "BDTINZD-K 672251", "OO-IPUGX- 287188", "-JKSL--LK 957076", "-Y--WJNML 696511", "-KC----KC 718148" };
+    assertEquals(-1.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * -1.0);
+  }
+
+  @Test
+  public void case10() {
+    String[] wheels = { "VAMEKGAHBAECHHIFIKCCAIGFZCE", "VBCADEFDKDPACPIQBAABGLBAADH" };
+    String jackpotLine = "V-";
+    String[] payoffTable = { "OB 340719", "-R 720557" };
+    assertEquals(27.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 27.0);
+  }
+
+  @Test
+  public void case11() {
+    String[] wheels = { "EBZTHHQADAUMNGDEBQGDNONVHOCKZHBAQAEAEDBXTPVA", "FWCICTHDAIBHNBCSDHBJAFEUBMFJBEDCNBHADEDOJBLA", "BACAACGKBEBLEWDVBYFKWUBADFZHYUCMXBKDDAVPCRAH", "JDGCBBLCGCGHDVPBEAGDAGMAZCAIDEBPDGXDXBBDCWLB" };
+    String jackpotLine = "OUDS";
+    String[] payoffTable = { "-EQ- 527986", "BZIO 404356", "--TN 927123", "NH-I 33667" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case12() {
+    String[] wheels = { "YFADGDDBQDEHCDETAAOACJDGEFJBMBGA", "CSCCCECBCUGWPMUFHJSECWDDCADNBPTA", "EPTCBHBHALOAVFAVBHAQPCCKAAEFADEE" };
+    String jackpotLine = "Z-J";
+    String[] payoffTable = { "GX- 908947", "XIR 516597", "-J- 80978" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case13() {
+    String[] wheels = { "KUCMAMMDBDAWCFAJRHF", "CDFAIBBFKIBRRCEEDHQ", "HDBAOGBGTIAFDWIGGRB", "MCAQFBABDABPBVGGDTC", "AUADBHANFAAEWCDBDQB", "XRCFCFAHGAAAAQKADUI" };
+    String jackpotLine = "---LWG";
+    String[] payoffTable = { "-WK-NJ 846548", "-VG-X- 956924", "B----C 431591", "N-INR- 208602", "WUNQLS 727542", "DVGPH- 641147" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case14() {
+    String[] wheels = { "VBZCQABMAEDAQ", "DTJAFPLMCHZPA", "LAFLBAMDEYDCG" };
+    String jackpotLine = "ZHM";
+    String[] payoffTable = { "PPR 216", "-AG 25", "-TF 81" };
+    assertEquals(494.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 494.0);
+  }
+
+  @Test
+  public void case15() {
+    String[] wheels = { "TUKHSFADJQBFBBBYERRBABDAHVADNCWDABALCBBFBG", "EYDAAHABKSDAWBULTEUGCWOBFGHDCTBCAEGBCGBADB", "ABCHBOBWQHDCBEGAGXCPQGFTDKSAAQDTNXHRGGGIBG", "CQDEHMOAAGBQBWFGFBTBARYAHACHCELDLNGNAGVGGD", "DHDDGRBENFTODRDDGFUAAAKDWTBCGIKKHEHACFXASF" };
+    String jackpotLine = "ET-EW";
+    String[] payoffTable = { "NQ-YK 776410", "-DBUM 653917", "-SNNX 145265", "-K-IY 529648", "KMVJ- 670311" };
+    assertEquals(705291.5, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 705291.5);
+  }
+
+  @Test
+  public void case16() {
+    String[] wheels = { "KACACEIBGCVDAKMACAAW", "CECMBDBJCLHFNDCBDDNB", "BYAGBJFDAGBHEGEFVXDR", "UDWFABFAHDXACICQHAEH", "EBHOCHABAHBDAUBZHHAB" };
+    String jackpotLine = "KJ--Z";
+    String[] payoffTable = { "Z-U-U 23", "YUBSA 142", "Q-AN- 92", "ZA-CX 133", "-BE-Z 125" };
+    assertEquals(3500.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 3500.0);
+  }
+
+  @Test
+  public void case17() {
+    String[] wheels = { "QSEUIQKAIQMFRMOSQFYLEZQGMWDERSCCSCLCKFEXPTDA", "DHPKVGMSAARPDUFVNJYJIECGNHDMBRJQKAEVESYUYXBZ", "ZTPIMKHJMRROCDWOZGTKYYFPPAUTAWTGIIIMFJLICZPG", "FHFFVZESQNYBLBQCYQNWCLSKVETYKHNUHGAAFVCQGHMW", "FMBMUZTKNFZSBLFHRQMFLEIJZYWVTVAARRGDWFQEZXGV", "YDDPIFCWAVUYBNNNRTEUQTPUDKBCKXGMGUQAJVNKSUGB" };
+    String jackpotLine = "MZPMRC";
+    String[] payoffTable = { "BNBDKB 768692", "KTOFFV 243825", "PRYZFI 217413", "EVEKKB 960345", "DQWGSE 773600", "MAOOHR 970763", "OQPWTW 961894", "YZIEIA 238531", "OSMNDD 597879", "NPOPDH 387727", "RNIZMK 976616", "RJLDPI 865911", "OBBHYK 106584", "FUJHYE 793724", "INXGUN 129617", "DGBJWC 127348", "KITCBU 947177", "ASWUYZ 651602", "HVDNUQ 93840", "OLFORB 923803", "OIUCSE 621396", "WSCPVO 462283", "CUWILG 951400", "FGFNZD 480817", "OWXNJF 565618" };
+    assertEquals(90868627.25, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 90868627.25);
+  }
+
+  @Test
+  public void case18() {
+    String[] wheels = { "UQKJQXGRWNLSGQPPRKNYALFDEHVBFYAIUNHLYJ", "MAUJZJKYKXEAKLTXEPIRIRHFNGCGHNNBKDMEEW", "HGMXGGHYSMMKHCYMAKYOCQFMFBQINOAQJUDFWK", "ZZHXSULDRYGMWXPMPDLOPFZWHKEMCWFDUJXKKQ", "QFCXTJDNQJJMVHQJNUASMDPFABQILLBHTXBEQE", "THSSFLBEEDQHPAAZFUXZTMWCEPRTWZJTXGGJRR", "CTKMMXWGKJKQXMVGUPIFBMXQOSLSKQHQQAESKG", "JTKWJXDVHSFCIVCYCZIPQVDWJKJDPPNDYMREJY" };
+    String jackpotLine = "FYJPJDTN";
+    String[] payoffTable = { "CUWTFASE 406097", "GYCQMGVN 860264", "ILTIPFTD 945589", "DGIUAFXB 974300", "QLYVXODL 767613", "WWDLBOKF 921813", "NEJPRSPP 51676", "DXSRWPYR 117129", "VLLSHALC 89338", "FLBQJZCD 65680", "GLXVXJNS 990402", "XJBORZME 769154", "XAVJDIXM 400609", "XFDXJNWP 21886", "WRLUQYWT 383511", "ZMFJPFFM 158026", "HCFNDCEB 422791", "ZPPDPMFT 98875", "LDTSBMJT 447176", "ZCUQFUKZ 702783", "VEGUSYIC 50872", "MOQCVYFW 768005", "TPHMBJBU 900731", "KAMDKWIP 555637", "TYCMNILJ 821694", "JGMNVHGP 111939", "PLKOEAGD 982946", "ERNEZZZL 814928", "IJPCRRDW 499619", "OKCFBHLM 226059", "JZOMZJEC 367418", "HUCVLCCH 977765", "XVYSXFYO 162783", "WVNXNFZJ 707788", "WCOMEXTB 850477", "NVISQQCF 840876", "DDAUIRXM 799040" };
+    assertEquals(181144175629.3334, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 181144175629.3334);
+  }
+
+  @Test
+  public void case19() {
+    String[] wheels = { "OPRQZPWUSJMJMPYLCHMYPHZCRLGEJ", "UBETAVAZNLFKYLZPCQWXOIGHAXFJK", "IKOABKHYIOLRCUBJWAFYHEBTUVBJK", "KICNBXMBWVSTTPWBYXGKWHQBZYCVQ", "SETUUDRFXNTFPKARVIAWYTTFGLDCU", "QUKUUSXDZLTVDYRHHAYHFXPWIOIWE", "XOZLRPKSAXSASOIZUYBBACZGJAAVR", "QWSTLPIRAVTHDLYTMXERRELIVTOYN", "BQGIBHPDPXBVENLREYLZOVWLQFJTX", "QSCMRGYRGPZGFQJGQMRMIIETRGKRW" };
+    String jackpotLine = "PNBKXVPTIM";
+    String[] payoffTable = { "FSFGFPWLUY 542461", "XFTWNTHWQH 398199", "ORJEOZMIDU 38409", "APDFCEFXFP 943977", "RTCRWOCFIT 923555", "ZYDZFDGAUC 483193", "WPAUVHGMYD 173907", "BMGXNADQXQ 515874", "QQMNJQTWNN 455346", "MZGTHALZBF 212576", "CVPOTUOATX 46251", "XIXCBEFZUI 818861", "IZIDWCRHZG 275429", "OSEPIKGMFG 447706", "BQZOXIDHNI 870815", "YSFHKIINEM 610915", "NZCTADGNXT 61004", "RRXKPOMRWM 578176" };
+    assertEquals(1095591753385.9402, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 1095591753385.9402);
+  }
+
+  @Test
+  public void case20() {
+    String[] wheels = { "SAOGTFPEGWNWHUJGOTJDMQCKBIOEASTNDNBDKMQHGBSXHBO", "FCROQVYBESVLEKKUHLUYHUUJDQSYTQYYLLERLHQTMUTACVE", "LTSIPESMTMDGLNCCWFBKWETMEEXQCCQAJKSECEHLVNFXERL", "GLFIQFJENCOGAEZTFQDOIQDZXNANJUMIUZQCUNGJRRBFJPQ", "FIQJSUJKVXSFQVVRPSFXSAKFRHDFGHPDVBIRXXRYRTZVDJR", "AZLYPEFKBMQHMVXQLZYPBGAIJTLTCBYSIXYEPEUIGPERVFV", "SEGMGGAHBUXDWXISATOXYSXZQZYOTJEDOUFUXMFSWLHWCUF", "LOTNHJZHCUQNRMKVXLTJEFIAMLNOJTKADDAINVJLGXSOLRI", "LAEVDLVCJBPWEZLPNAVWWJVPWKFFFGAUTJXEHXDTJTQBIND", "MXRPDIIKJTUGGFRQCMAQCUKICZDXWNFKYONQNFIUEJSCGQT" };
+    String jackpotLine = "MEICBHAKBI";
+    String[] payoffTable = { "IARZUYALHB 646880", "UJGAMVAJNU 414338", "RUDSVBJFKG 183976", "VMJCIDPBCS 572329", "LVQQDUHBUP 249", "ETMQHTYFHD 63016", "ZPCGMWETBX 846657", "TKISKALILT 811472", "DSQUQTQKUH 771106", "TBHUUAGFHM 757526", "BNBBSYNGPJ 535126", "KFBMPWHTJJ 654732", "PAKWZCGUWA 983618", "OPLVCRCMFM 345144", "ZGNKCOEAOL 629497", "KDWUNRRRRH 661763", "QJDEPESNRK 840605", "EQNRPMXNIJ 10157", "WQKDYIPTFX 756112", "BNFINUMFMF 246297", "FXWNCAYGRU 749027", "ANTKKCOWCL 409010", "YLENREBVYF 544705", "GHYEZZANCJ 663470", "JVIISWFQEZ 699291", "LSNEBYNFUD 36375", "VUWPBRFLIM 421907", "ZCVXEZHCPW 158113", "YGOWSQENJD 992411", "FFKGGNPPUR 187971", "XILXBVDYAG 359322", "UOLPLWZDOL 620937", "FSDSAQXBWM 303774", "EPGUIZJRAE 64075", "VSBWCRQZCB 803193", "JGVRUGFOBB 749803", "PKRTVETPCV 704410", "LUPWTPDIGN 935434", "GOGOPUDYMK 77564", "LHQAODOEQU 849805", "MRMAICYTRT 592305", "MTTZDMRBMV 16875", "JJIGFLJJHP 512651", "DGCGJFKEYR 405299", "QCRDFMIRQD 438309", "XRNNHKJSRO 875135" };
+    assertEquals(102732679075111.58, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 102732679075111.58);
+  }
+
+  @Test
+  public void case21() {
+    String[] wheels = { "XOHLAXTHQNCNMAUGERGDQQAMKRZJKTLJCYZPXZHLQGCHOXY", "INJULDJKYEEIIVFBRAGWOEBGZZEWVCNCZBPFTHBEKZHDBEC", "MFHINZZKZRJNUHVBEWHLGKOATIVFIRNDGWGEXLVVEPQBQUW", "UYFMJNTZLZAJENIRKROFMTSMFKEWYDZFTKUFFDPUYQXTEER", "NEGVPLDKYPGWCYYIPXKBIYFQPWOMJNHCXFDQEOQFSNARADL", "DXNBVNBUIOUKDQYTIMEPJCFJZPPTOYQYAJUVBQAQKWXEAZT", "DWBUAVMBLIKSFKLOYJIEONSQIPWTDQFMHOSUSUOOFPPGJBK", "NVCPQENTRKSVYWLBXDXYFXSGOULBJSXTWEUOYTZHLQXDPQB", "CEMXAIKKKIAEPEJFHMYXONCGVHMAVBANRMIGYWBQRKSENDW", "HZPBSILFHXBVMAFAMMTKTRSFTPBJREFCBEGYIKZUKJYZZTS" };
+    String jackpotLine = "RAHWRNIZYI";
+    String[] payoffTable = { "ZHTPBJXAFR 56242", "RRDBTSMYGU 479749", "LFMRTEWUTJ 574479", "WYFEZZFCOQ 600692", "IKHMVFERJU 60988", "BDJNKOYWOQ 411282", "NKUUIHWNBA 300356", "VZRNZJQUOZ 740620", "WZTCZOJSPU 483935", "QXITSDOFVQ 251194", "JVYGAFPSQC 932446", "FGKIETFRYQ 452567", "AGZBCGBTNK 84619", "USAVHFUALD 310573", "LJHEJCAEAC 252704", "MJZRVKKQEF 119518", "KRBRSHKRVH 80669", "SHSNKXICYW 669927", "DQMEBXQPQV 863185", "GJPTOEUWIA 233030", "ESLAAHTOLW 68866", "UPWSIDBTIZ 443166", "DQCKAOSYWB 391692", "IHQQTBBJIW 997963", "GQZRXBYWNR 92688", "SISLFEIEIL 896669", "GAPMMECTIB 292500", "DMHHHHIORQ 834918", "BAHUDFQUBJ 846847", "NJPKQZXJLN 364115", "OZPVXUPRNT 523514", "JJTVMHJFYI 635064" };
+    assertEquals(365271732440382.8, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 365271732440382.8);
+  }
+
+  @Test
+  public void case22() {
+    String[] wheels = { "VXQJRHUCUYUOTNUUXCPU", "RFWBMVHDTCRGMBGTAJPM", "JFIQCWYYESZKAXRKNMNR", "QNVITINDKBXIDAQKXKBG", "JMDHUVBGMLSYCBGPAIQC", "FIUPHAOCNWVDQMSBUBMP", "TFRHZLBWSAHEFTBPUNKL", "LUOTJJFRGMRPYBTOKQNN" };
+    String jackpotLine = "YPCGHSSU";
+    String[] payoffTable = {  };
+    assertEquals(25599999999.99999, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 25599999999.99999);
+  }
+
+  @Test
+  public void case23() {
+    String[] wheels = { "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "AZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ" };
+    String jackpotLine = "AAAAAAAAAA";
+    String[] payoffTable = {  };
+    assertEquals(97656249999999970.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 97656249999999970.0);
+  }
+
+  @Test
+  public void case24() {
+    String[] wheels = { "ABBBBBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", "ABBBBBBBBBBZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ" };
+    String jackpotLine = "AAAAAAAAAA";
+    String[] payoffTable = { "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 999999", "BBBBBBBBBB 936532" };
+    assertEquals(101955999968.60522, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 101955999968.60522);
+  }
+
+  @Test
+  public void case25() {
+    String[] wheels = { "AA", "AA" };
+    String jackpotLine = "BB";
+    String[] payoffTable = { "AA 10" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case26() {
+    String[] wheels = { "AAA", "AAA", "AAA" };
+    String jackpotLine = "AAB";
+    String[] payoffTable = { "AAA 100" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case27() {
+    String[] wheels = { "ABC", "ABC", "ABC" };
+    String jackpotLine = "ZZZ";
+    String[] payoffTable = { "AA- 5", "A-- 2" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case28() {
+    String[] wheels = { "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA", "ALKBJADGIAERNNAERLKJGALKFGDAFOIUDOFUIGLKVJXCMVAKLA" };
+    String jackpotLine = "----------";
+    String[] payoffTable = { "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999", "---------- 999999" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case29() {
+    String[] wheels = { "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB" };
+    String jackpotLine = "AAAAAAAAAA";
+    String[] payoffTable = {  };
+    assertEquals(97656249999999970.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 97656249999999970.0);
+  }
+
+  @Test
+  public void case30() {
+    String[] wheels = { "AB", "AB" };
+    String jackpotLine = "CC";
+    String[] payoffTable = { "-- 3" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case31() {
+    String[] wheels = { "ABC", "ABC", "ABC" };
+    String jackpotLine = "AAZ";
+    String[] payoffTable = { "AA- 5", "A-- 2" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case32() {
+    String[] wheels = { "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAZ", "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBZBBBB", "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCZCCCCCCCCCCCCC", "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBZBBBBBBBBBBBBBBBBB", "CCCCCCCCCCCCCCCCCCCCCCCCCCCCCZCCCCCCCCCCCCCCCCCCCC", "BBBBBBBBBBBBBBBBBBBBBBBBBBZBBBBBBBBBBBBBBBBBBBBBBB", "CCCCCCCCCCCCCCCCCCCCCCCZCCCCCCCCCCCCCCCCCCCCCCCCCC", "BBBBBBBBBBBBBBBBBBZBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "CCCCCCCCCCCCCCCCCCCCCZCCCCCCCCCCCCCCCCCCCCCCCCCCCC", "DDDDDDDDDDDDDDDDDDDDDDDDZDDDDDDDDDDDDDDEDDDDDDDDDD" };
+    String jackpotLine = "ZZZZZZZZZZ";
+    String[] payoffTable = {  };
+    assertEquals(97656249999999970.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 97656249999999970.0);
+  }
+
+  @Test
+  public void case33() {
+    String[] wheels = { "A" };
+    String jackpotLine = "B";
+    String[] payoffTable = { "A 500" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case34() {
+    String[] wheels = { "ABC", "ABC", "BBC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "AAB 4", "AA- 3", "AB- 2", "AA- 20", "AB- 30", "AC- 100" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case35() {
+    String[] wheels = { "ABC", "ABC", "BBC" };
+    String jackpotLine = "AAA";
+    String[] payoffTable = { "AAB 4000", "AA- 3", "AB- 2" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case36() {
+    String[] wheels = { "A" };
+    String jackpotLine = "B";
+    String[] payoffTable = { "A 2" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case37() {
+    String[] wheels = { "AAA", "AAA", "AAA" };
+    String jackpotLine = "BBB";
+    String[] payoffTable = { "--- 10000" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+  @Test
+  public void case38() {
+    String[] wheels = { "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB" };
+    String jackpotLine = "BBBBBBBBBB";
+    String[] payoffTable = { "ABABABABAB 10", "BABABABABA 20" };
+    assertEquals(97656241525742510.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 97656241525742510.0);
+  }
+
+  @Test
+  public void case39() {
+    String[] wheels = { "DABCDBCDCD", "BCDBDACDCD", "DCDADBCDBC", "DBDCABCDCD" };
+    String jackpotLine = "DAAA";
+    String[] payoffTable = { "DAAE 20" };
+    assertEquals(2500.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 2500.0);
+  }
+
+  @Test
+  public void case40() {
+    String[] wheels = { "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB", "ABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB" };
+    String jackpotLine = "AAAAAAAAAA";
+    String[] payoffTable = { "AAAAAAAAAA 1" };
+    assertEquals(97656249999999970.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 97656249999999970.0);
+  }
+
+  @Test
+  public void case41() {
+    String[] wheels = { "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA", "AAAAAAAAAABBBBBBBBBBAAAAAAAAAABBBBBBBBBBAAAAAAAAAA" };
+    String jackpotLine = "AAAAAAAAAB";
+    String[] payoffTable = { "AAAAAAAAAA 1" };
+    assertEquals(1.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA * 1.0);
+  }
+
+  @Test
+  public void case42() {
+    String[] wheels = { "A" };
+    String jackpotLine = "B";
+    String[] payoffTable = { "A 10" };
+    assertEquals(0.0, onearmedbandit.progressiveJackpot(wheels, jackpotLine, payoffTable), DELTA);
+  }
+
+}

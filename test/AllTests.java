@@ -71,6 +71,7 @@ import topc.test.math.*;
   //GeneticCrossoverTest.class,
   //ProbabilityTreeTest.class,
   //ChipRaceTest.class,
-  TopFiveTest.class
+  //TopFiveTest.class,
+  OneArmedBanditTest.class
 })
 public class AllTests { }
