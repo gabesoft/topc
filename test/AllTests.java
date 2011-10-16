@@ -70,6 +70,7 @@ import topc.test.math.*;
   //VolleyballTest.class,
   //GeneticCrossoverTest.class,
   //ProbabilityTreeTest.class,
-  ChipRaceTest.class
+  //ChipRaceTest.class,
+  TopFiveTest.class
 })
 public class AllTests { }
