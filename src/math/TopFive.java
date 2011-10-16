@@ -8,23 +8,16 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=4453&rd=7218
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm243
 public class TopFive {
-  int N;
-  int S;
   int[][] scores;
   double[][] probs;
-  double[] pbetter;
-  boolean[] memo;
 
   public double findProbability(String[] results, String[] accuracies, int points) {
-    N = results.length;
-    S = points;
+    int n = results.length;
+    int k = 5;
 
-    memo = new boolean[(1 << N) + 1];
-
-    scores = new int[N][3];
-    probs = new double[N][3];
-
-    for (int i = 0; i < N; i++) {
+    scores = new int[n][3];
+    probs = new double[n][3];
+    for (int i = 0; i < n; i++) {
       String[] rtokens = results[i].split("\\s+");
       String[] atokens = accuracies[i].split("\\s+");
       for (int j = 0; j < 3; j++) {
@@ -33,37 +26,23 @@ public class TopFive {
       }
     }
 
-    pbetter = new double[N];
-    for (int i = 0; i < N; i++) {
-      pbetter[i] = probBetter(i);
+    double[] ans = new double[k];
+    Arrays.fill(ans, 1.0);
+
+    for (int i = 0; i < n; i++) {
+      double otherBetter = probBetter(i, points);
+
+      for (int j = k - 1; j > 0; j--) {
+        ans[j] = otherBetter * ans[j - 1] + (1 - otherBetter) * ans[j];
+      }
+
+      ans[0] = (1 - otherBetter) * ans[0];
     }
 
-    debug("scores", scores);
-    debug("probs", probs);
-    debug("pbetter", pbetter);
-
-    return rec(4, 0);
+    return ans[k - 1];
   }
 
-  double rec(int top, int excluded) {
-    if (memo[excluded] || top < 0) { return 0.0; };
-
-    double p = 1.0;
-    for (int i = 0; i < N; i++) {
-      if (((excluded >> i) & 1) == 1) { continue; }
-      p *= pbetter[i];
-    }
-
-    for (int i = 0; i < N; i++) {
-      if (((excluded >> i) & 1) == 1) { continue; }
-      p += (1.0 - pbetter[i]) * rec(top - 1, excluded | (1 << i));
-    }
-
-    memo[excluded] = true;
-    return p;
-  }
-
-  double probBetter(int i) {
+  double probBetter(int i, int points) {
     int s1 = scores[i][0];
     int s2 = scores[i][1];
     int s3 = scores[i][2];
@@ -76,7 +55,7 @@ public class TopFive {
     for (int j = 0; j < 2; j++) {
       for (int k = 0; k < 2; k++) {
         for (int l = 0; l < 2; l++) {
-          if (j * s1 + k * s2 + l * s3 >= S) {
+          if (j * s1 + k * s2 + l * s3 >= points) {
             double prob1 = (j == 0) ? (1 - p1) : p1;
             double prob2 = (k == 0) ? (1 - p2) : p2;
             double prob3 = (l == 0) ? (1 - p3) : p3;
@@ -86,7 +65,7 @@ public class TopFive {
       }
     }
 
-    return 1 - prob;
+    return prob;
   }
 
   private void debug(Object... os) {
