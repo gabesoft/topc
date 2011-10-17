@@ -73,6 +73,7 @@ import topc.test.math.*;
   //ChipRaceTest.class,
   //TopFiveTest.class,
   //OneArmedBanditTest.class,
-  RangeGameTest.class
+  //RangeGameTest.class,
+  YahtzeeRollTest.class
 })
 public class AllTests { }
