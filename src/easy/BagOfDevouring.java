@@ -42,23 +42,19 @@ public class BagOfDevouring {
     return best;
   }
 
-  double exp(int items, int best) {
-    if (memo[items][best] > -1.0) { return memo[items][best]; }
-
-    int bestValue = values[best];
-    int[] v = values;
-    int[] w = weights;
+  double exp(int items, int item) {
+    if (memo[items][item] > -1.0) { return memo[items][item]; }
 
     int wsum = 0;
-    for (int i = 0; i < w.length; i++) {
-      if ((items >> i & 1) == 0) { wsum += w[i]; }
+    for (int i = 0; i < weights.length; i++) {
+      if ((items >> i & 1) == 0) { wsum += weights[i]; }
     }
 
     double pnone = 1.0;
     double edev = 0.0;
-    for (int i = 0; i < v.length; i++) {
+    for (int i = 0; i < values.length; i++) {
       if ((items >> i & 1) == 0) {
-        double pdev = (double)w[i] / (wsum + 100.0);
+        double pdev = (double)weights[i] / (wsum + 100.0);
         pnone -= pdev;
         edev += pdev * exp(items | (1 << i));
       }
@@ -66,8 +62,8 @@ public class BagOfDevouring {
 
     double enone = pnone * exp(items);
 
-    double res = bestValue + edev + enone;
-    memo[items][best] = res;  
+    double res = values[item] + edev + enone;
+    memo[items][item] = res;  
 
     return res;
   }
