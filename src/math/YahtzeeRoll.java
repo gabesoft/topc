@@ -72,14 +72,7 @@ public class YahtzeeRoll {
 
   boolean smallStraight(int[] dice) {
     for (int i = 0; i < dice.length; i++) {
-      int[] next = new int[dice.length - 1];
-      int j = 0;
-      for (int k = 0; k < dice.length; k++) {
-        if (k != i) {
-          next[j++] = dice[k];
-        }
-      }
-      if (straight(next)) { 
+      if (straight(compact(dice, i))) { 
         return true; 
       }
     }
@@ -105,6 +98,17 @@ public class YahtzeeRoll {
       if (dice[i] != dice[i - 1] + 1) { return false; }
     }
     return true;
+  }
+
+  int[] compact(int[] arr, int skip) {
+    int[] res = new int[arr.length - 1];
+    int index = 0;
+    for (int i = 0; i < arr.length; i++) {
+      if (i != skip) {
+        res[index++] = arr[i];
+      }
+    }
+    return res;
   }
 
   private void debug(Object... os) {
