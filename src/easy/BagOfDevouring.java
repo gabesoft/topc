@@ -46,13 +46,13 @@ public class BagOfDevouring {
     if (memo[items][item] > -1.0) { return memo[items][item]; }
 
     int wsum = 0;
-    for (int i = 0; i < weights.length; i++) {
+    for (int i = 0; i < N; i++) {
       if ((items >> i & 1) == 0) { wsum += weights[i]; }
     }
 
     double pnone = 1.0;
     double edev = 0.0;
-    for (int i = 0; i < values.length; i++) {
+    for (int i = 0; i < N; i++) {
       if ((items >> i & 1) == 0) {
         double pdev = (double)weights[i] / (wsum + 100.0);
         pnone -= pdev;

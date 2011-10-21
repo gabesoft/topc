@@ -75,6 +75,7 @@ import topc.test.math.*;
   //OneArmedBanditTest.class,
   //RangeGameTest.class,
   //YahtzeeRollTest.class,
-  BagOfDevouringTest.class
+  //BagOfDevouringTest.class,
+  RandomFATest.class
 })
 public class AllTests { }
