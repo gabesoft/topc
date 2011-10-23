@@ -44,16 +44,17 @@ public class BaseballLineup {
     double cached = memo[inning][player][batters][outs][runners];
     if (cached > -1.0) { return cached; }
 
-    double res = 0.0;
+    double prob = 0.0;
     for (int action = 0; action < 6; action++) {
-      double prob = probs[player][action];
-      int[] next = hit(action, runners);
-      double rec = exp(inning, (player + 1) % 9, batters + 1, action == 0 ? outs + 1 : outs, next[1]);
-      res += prob * (next[0] + rec);
+      int[] state = hit(action, runners);
+      int runs = state[0];
+      int nextRunners = state[1];
+      double nextRuns = exp(inning, (player + 1) % 9, batters + 1, action == 0 ? outs + 1 : outs, nextRunners);
+      prob += probs[player][action] * (runs + nextRuns);
     }
 
-    memo[inning][player][batters][outs][runners] = res;
-    return res;
+    memo[inning][player][batters][outs][runners] = prob;
+    return prob;
   }
 
   int[] hit(int action, int runners) {
