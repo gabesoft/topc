@@ -15,7 +15,7 @@
   <property name="dir.test.build.data" location="${dir.test.build}/data" />
   <property name="dir.test.build.reports" location="${dir.test.build}/reports" />
 
-  <property name="test.suite" value="topc.test.AllTests" />
+  <property name="test.suite" value="topc.test.Runner" />
   <property name="junit.fork" value="true" />
   <property name="junit.forkmode" value="once" />
   <property name="junit.jar" location="env.JUNIT_HOME/junit-4.8.2.jar" />

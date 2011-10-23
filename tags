@@ -14,6 +14,7 @@ B	src/graph/PathFinding.java	/^  static public final int B = 2;$/;"	f	class:Path
 BadNeighbors	src/dp/BadNeighbors.java	/^public class BadNeighbors {$/;"	c
 BadNeighborsTest	test/dp/BadNeighborsTest.java	/^public class BadNeighborsTest {$/;"	c
 BagOfDevouringTest	test/easy/BagOfDevouringTest.java	/^public class BagOfDevouringTest {$/;"	c
+BaseballLineup	src/math/BaseballLineup.java	/^public class BaseballLineup {$/;"	c
 BenfordsLaw	src/math/BenfordsLaw.java	/^public class BenfordsLaw {$/;"	c
 BridgeCrossing	src/bkt/BridgeCrossing.java	/^public class BridgeCrossing {$/;"	c
 BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossingTest {$/;"	c
@@ -1085,6 +1086,7 @@ debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
 debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	class:TeamBuilder	file:
 debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
+debug	src/math/BaseballLineup.java	/^  private void debug(Object... os) {$/;"	m	class:BaseballLineup	file:
 debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	class:BenfordsLaw	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
@@ -1100,7 +1102,9 @@ encode	src/dp/AvoidRoads.java	/^  static int encode(int i, int j) {$/;"	m	class:
 encode	src/graph/RevolvingDoors.java	/^  public static int encode(int i, int j) {$/;"	m	class:RevolvingDoors
 end	src/graph/RoboCourier.java	/^  Node end;$/;"	f	class:RoboCourier
 exitTime	src/graph/DungeonEscape.java	/^  public int exitTime(String[] up, String[] down, String[] east, String[] west, int startLevel, int startEasting) {$/;"	m	class:DungeonEscape
+exp	src/math/BaseballLineup.java	/^  double exp(int inning, int player, int batters, int outs, int runners) {$/;"	m	class:BaseballLineup
 expand	src/dp/KiloManX.java	/^  int[] expand(int[] xs, int x) {$/;"	m	class:KiloManX
+expectedRuns	src/math/BaseballLineup.java	/^  public double expectedRuns(String[] stats) {$/;"	m	class:BaseballLineup
 extendedKey	src/graph/RoboCourier.java	/^    public String extendedKey() {$/;"	m	class:RoboCourier.Node
 fast	src/graph/RoboCourier.java	/^    public boolean fast = false;$/;"	f	class:RoboCourier.Node
 ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFerries.Ticket
@@ -1148,6 +1152,7 @@ graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
 h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
 hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
 hi	src/greedy/MLBRecord.java	/^    public int hi;$/;"	f	class:MLBRecord.Team
+hit	src/math/BaseballLineup.java	/^  int[] hit(int action, int runners) {$/;"	m	class:BaseballLineup
 howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String[] costs) {$/;"	m	class:Circuits
 howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
@@ -1175,6 +1180,7 @@ maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPai
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
+memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
@@ -1219,6 +1225,7 @@ prob	src/dynamic/ChessKnight.java	/^  double prob(int x, int y, int n) {$/;"	m	c
 probOrig	src/dynamic/ChessKnight.java	/^  double probOrig(int x, int y, double p, int n) {$/;"	m	class:ChessKnight
 probability	src/dynamic/ChessKnight.java	/^  public double probability(int x, int y, int n) {$/;"	m	class:ChessKnight
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
+probs	src/math/BaseballLineup.java	/^  double[][] probs;$/;"	f	class:BaseballLineup
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
 questionableDigit	src/math/BenfordsLaw.java	/^  public int questionableDigit(int[] transactions, int threshold) {$/;"	m	class:BenfordsLaw
 queue	src/dp/ShortPalindromes.java	/^  Queue<int[]> queue;$/;"	f	class:ShortPalindromes
@@ -1341,6 +1348,7 @@ topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/SmartWordToy.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
 topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
+topc.math	src/math/BaseballLineup.java	/^package topc.math;$/;"	p
 topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p

@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.dynamic.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PackageShippingTest.class })
-public class AllTests {
+@Suite.SuiteClasses({ BaseballLineupTest.class })
+public class Runner {
 }

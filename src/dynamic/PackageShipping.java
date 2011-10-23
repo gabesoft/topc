@@ -8,7 +8,7 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=3481&rd=6530
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=tccc05_online_rd_3
 public class PackageShipping {
-  int N;      // citi count
+  int N;      // city count
   int O;      // origin
   int D;      // destination
   int T;      // max time
