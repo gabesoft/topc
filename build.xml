@@ -38,6 +38,7 @@
   </path>
 
   <target name="init">
+    <mkdir dir="${dir.lib}" />
     <mkdir dir="${dir.build}" />
     <mkdir dir="${dir.build.classes}" />
   </target>
