@@ -10,50 +10,44 @@ import java.text.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm179
 public class AntiMatter {
   public String unstable(int[] xform) {
-    //double[][] a = new double[10000][10000];
-
+    int hi = 5000;
+    int lo = -4999;
     boolean[] dist = new boolean[20001];
+    boolean change = true;
 
     dist[0] = true;
-
-    boolean change = true;
     while (change) {
       change = false;
-    //for( int l = 0; l < 200; l++) {
-      for (int k = 0; k < 20001; k++) {
-        for (int i = 0; i < 4; i++) {
-          for (int j = 0; j < 4; j++) {
+
+      for (int k = 0; k < dist.length; k++) {
+        for (int i = 0; i < xform.length; i++) {
+          for (int j = i + 1; j < xform.length; j++) {
             int delta = Math.abs(xform[i] - xform[j]);
-            if (dist[k] && (k + delta) < 20001) {
+
+            if (dist[k] && (k + delta) < dist.length) {
               change |= !dist[k + delta];
               dist[k + delta] = true;
             }
+
             if (dist[k] && (k - delta) > -1) {
               change |= !dist[k - delta];
               dist[k - delta] = true;
             }
+
           }
         }
       }
-    //}
     }
 
-    //for (int i = 0; i < 10000; i++) {
-      //if(dist[i]) { debug(i); }
-    //}
-
-    long res = 0;
-    for (int i = -4999; i < 5001; i++) {
-      for (int j = -4999; j < 5001; j++) {
-        if (dist[Math.abs(i - j)]) { res++; } 
+    long res = 10000;
+    for (int i = lo; i < hi + 1; i++) {
+      for (int j = i + 1; j < hi + 1; j++) {
+        if (dist[j - i]) { res += 2; } 
       }
     }
 
-    debug(res);
     DecimalFormat formatter = new DecimalFormat("#.00000000");
-    double val = res / 100000000.0;
-    //String ans = String.format("%.8g", val);
-    return formatter.format(val);
+    return formatter.format(res / 100000000.0);
   }
 
   private void debug(Object... os) {
