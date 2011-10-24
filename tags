@@ -7,6 +7,7 @@
 A	src/graph/PathFinding.java	/^  static public final int A = 1;$/;"	f	class:PathFinding
 ADJ	src/graph/RevolvingDoors.java	/^  static public final int[] ADJ = { -1, 0, 0, -1, 0, 1, 1, 0 };$/;"	f	class:RevolvingDoors
 AllTests	test/AllTests.java	/^public class AllTests { }$/;"	c
+AntiMatter	src/dynamic/AntiMatter.java	/^public class AntiMatter {$/;"	c
 AvoidRoads	src/dp/AvoidRoads.java	/^public class AvoidRoads {$/;"	c
 AvoidRoadsTest	test/dp/AvoidRoadsTest.java	/^public class AvoidRoadsTest {$/;"	c
 B	src/dynamic/ChessKnight.java	/^  static public final int B = 8;$/;"	f	class:ChessKnight
@@ -1072,6 +1073,7 @@ debug	src/dp/ShortPalindromes.java	/^  void debug(Object...os) {$/;"	m	class:Sho
 debug	src/dp/StripePainter.java	/^  void debug(Object...os) {$/;"	m	class:StripePainter
 debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m	class:WeightedIntervalScheduling
 debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
+debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
@@ -1325,6 +1327,7 @@ topc.dp	src/dp/ShortPalindromes.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/StripePainter.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
+topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
@@ -1387,6 +1390,7 @@ totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:M
 totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
+unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
