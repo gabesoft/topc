@@ -42,7 +42,7 @@ public class AntiMatter {
     long res = 10000;
     for (int i = lo; i < hi + 1; i++) {
       for (int j = i + 1; j < hi + 1; j++) {
-        if (dist[j - i]) { res += 2; } 
+        if (dist[j - i]) { res += 2; }
       }
     }
 
