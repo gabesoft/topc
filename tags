@@ -5,6 +5,7 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 A	src/graph/PathFinding.java	/^  static public final int A = 1;$/;"	f	class:PathFinding
+A	src/math/Hangman42.java	/^  static public final int A = 97;$/;"	f	class:Hangman42
 ADJ	src/graph/RevolvingDoors.java	/^  static public final int[] ADJ = { -1, 0, 0, -1, 0, 1, 1, 0 };$/;"	f	class:RevolvingDoors
 AllTests	test/AllTests.java	/^public class AllTests { }$/;"	c
 AntiMatter	src/dynamic/AntiMatter.java	/^public class AntiMatter {$/;"	c
@@ -56,6 +57,7 @@ GameOfLifeDivOneTest	test/dp/GameOfLifeDivOneTest.java	/^public class GameOfLife
 GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
+Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
 IntegerList	src/graph/Parking.java	/^  class IntegerList extends LinkedList<Integer> { }$/;"	c	class:Parking
 Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(String[] values) {$/;"	m	class:WeightedIntervalScheduling.Interval
@@ -78,6 +80,7 @@ LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 
 M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
+M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	class:Hangman42
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -96,6 +99,7 @@ N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
 N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
 N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marketing
 N	src/graph/Parking.java	/^  int N;$/;"	f	class:Parking
+N	src/math/Hangman42.java	/^  int N;    \/\/ number of words$/;"	f	class:Hangman42
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
 Node	src/dynamic/MiniPaint.java	/^    public Node(int totPainted, int row, int curStrokes, int totStrokes) {$/;"	m	class:MiniPaint.Node
@@ -170,6 +174,7 @@ WeightedIntervalSchedulingTest	test/dp/WeightedIntervalSchedulingTest.java	/^pub
 Word	src/graph/SmartWordToy.java	/^    public Word(String word, int level) {$/;"	m	class:SmartWordToy.Word
 Word	src/graph/SmartWordToy.java	/^  class Word {$/;"	c	class:SmartWordToy
 X	src/graph/PathFinding.java	/^  static public final int X = 3;$/;"	f	class:PathFinding
+Z	src/math/Hangman42.java	/^  static public final int Z = 122 - A + 1;$/;"	f	class:Hangman42
 ZigZag	src/dp/ZigZag.java	/^public class ZigZag {$/;"	c
 ZigZagTest	test/dp/ZigZagTest.java	/^public class ZigZagTest {$/;"	c
 _b	src/easy/MedalTable.java	/^    int _b;$/;"	f	class:MedalTable.Country
@@ -1056,6 +1061,7 @@ cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.N
 costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
+countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
 create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
 curStrokes	src/dynamic/MiniPaint.java	/^    public int curStrokes;$/;"	f	class:MiniPaint.Node
@@ -1091,6 +1097,7 @@ debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
 debug	src/math/BaseballLineup.java	/^  private void debug(Object... os) {$/;"	m	class:BaseballLineup	file:
 debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	class:BenfordsLaw	file:
+debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class:Hangman42	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
@@ -1185,6 +1192,7 @@ maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
+memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
@@ -1228,6 +1236,7 @@ printSolution	src/dp/WeightedIntervalScheduling.java	/^  void printSolution(int 
 prob	src/dynamic/ChessKnight.java	/^  double prob(int x, int y, int n) {$/;"	m	class:ChessKnight
 probOrig	src/dynamic/ChessKnight.java	/^  double probOrig(int x, int y, double p, int n) {$/;"	m	class:ChessKnight
 probability	src/dynamic/ChessKnight.java	/^  public double probability(int x, int y, int n) {$/;"	m	class:ChessKnight
+probability	src/math/Hangman42.java	/^  public double probability(String[] words) {$/;"	m	class:Hangman42
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
 probs	src/math/BaseballLineup.java	/^  double[][] probs;$/;"	f	class:BaseballLineup
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
@@ -1265,6 +1274,7 @@ spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
+states	src/math/Hangman42.java	/^  long[][] states;$/;"	f	class:Hangman42
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
@@ -1355,6 +1365,7 @@ topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
 topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
 topc.math	src/math/BaseballLineup.java	/^package topc.math;$/;"	p
 topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
+topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
@@ -1400,6 +1411,7 @@ weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
 weight	src/graph/KiloManX3.java	/^    public int weight;$/;"	f	class:KiloManX3.Node
 weightedScore	src/math/TestScores.java	/^  public double weightedScore(double[] questions, int testScore) {$/;"	m	class:TestScores
 willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
+win	src/math/Hangman42.java	/^  double win(int state) {$/;"	m	class:Hangman42
 x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
 x	src/graph/GrafixMask.java	/^    public int x = 0;$/;"	f	class:GrafixMask.Node
