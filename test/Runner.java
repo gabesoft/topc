@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ Hangman42Test.class })
+@Suite.SuiteClasses({ KingOfTheCourtTest.class })
 public class Runner {
 }
