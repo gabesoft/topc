@@ -15,7 +15,7 @@ public class KingOfTheCourt {
 
   public double chancesOfWinning(int[] ability) {
     N = ability.length;
-    C = 50;
+    C = 100;
     skill = ability;
 
     //System.out.println("");
@@ -29,35 +29,52 @@ public class KingOfTheCourt {
     set = new HashMap<String, Double>();
 
     //return win(permToIndex(pos), 0, 0);
-    return win(pos, 0, 0);
+    //return win(pos, 0, 0);
+    return win(pos, 0);
     //return winOld(pos, def, 1, 0);
   }
 
 
-  double win(int[] pos, int def, int count) {
+  double win(int[] pos, int count) {
 
     //int[] pos = indexToPerm(posi, N);
 
-    if (def == N - 1) { return pos[0] == 0 ? 1 : 0; }
+    //if (def == N - 1) { return pos[0] == 0 ? 1 : 0; }
     if (count > C) { return 0.0; }
 
+    String key = Arrays.toString(pos) + count;
     //String key = Arrays.toString(pos) + def + count;
-    String key = Arrays.toString(pos) + def + count;
     //String key = Arrays.toString(pos) + (def > 0 ? count : def);
 
     if (set.containsKey(key)) { return set.get(key); }
 
-
     int k = pos[0];
-    int p = pos[1];
+    //int p = pos[1];
 
-    double pprob = (double)skill[p] / (skill[p] + skill[k]);
-    pprob = pprob * pprob;
-    double kprob = 1.0 - pprob;
+    //double pprob = (double)skill[p] / (skill[p] + skill[k]);
+    //pprob = pprob * pprob;
+    //double kprob = 1.0 - pprob;
+    //double prob = 0.0;
 
+    //prob += kprob * win(rot(pos, 1), def + 1, count);
+    //prob += pprob * win(rot(pos, 0), 0, count + 1);
+
+    int[] work = pos;
+    double kprob = 1.0;
     double prob = 0.0;
-    prob += kprob * win(rot(pos, 1), def + 1, count);
-    prob += pprob * win(rot(pos, 0), 0, count + 1);
+
+    for (int i = 1; i < N; i++) {
+      int p = work[1];
+      double pprob = (double)skill[p] / (skill[p] + skill[k]);
+      pprob = pprob * pprob;
+
+      prob += kprob * (pprob * win(rot(work, 0), count + 1));
+      kprob *= (1.0 - pprob);
+
+      work = rot(work, 1);
+    }
+
+    prob += k == 0 ? kprob : 0.0;
 
     //prob += kprob * win(permToIndex(rot(pos, 1)), def + 1, count);
     //prob += pprob * win(permToIndex(rot(pos, 0)), 0, count + 1);
