@@ -64,18 +64,14 @@ public class SnowClearing {
     if (fx == x && fy == y) { return; };
 
     if (nodes[x][y] == null) {
-      nodes[x][y] = node(x, y, n);
+      nodes[x][y] = new Node(x, y, false);
+      nodes[x][y].parent1 = n;
       visit(nodes[x][y], n);
     } 
+
     else if (nodes[x][y].addParent(n)) {
       visit(nodes[x][y], n);
     }
-  }
-
-  Node node(int x, int y, Node parent) {
-    Node n = new Node(x, y, false);
-    n.parent1 = parent;
-    return n;
   }
 
   private void debug(Object... os) {
