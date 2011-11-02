@@ -27,7 +27,7 @@ public class WinningProbabilityTest {
     assertEquals(0.0142857142857, winningprobability.probability(prevWins, prevLosses, gamesLeft, mustWin), DELTA * 0.0142857142857);
   }
 
-  @Test
+  //@Test
   public void case3() {
     int prevWins = 20;
     int prevLosses = 3;
@@ -54,7 +54,7 @@ public class WinningProbabilityTest {
     assertEquals(0.5, winningprobability.probability(prevWins, prevLosses, gamesLeft, mustWin), DELTA * 0.5);
   }
 
-  @Test
+  //@Test
   public void case6() {
     int prevWins = 100;
     int prevLosses = 99;
@@ -63,7 +63,7 @@ public class WinningProbabilityTest {
     assertEquals(0.5053622927646, winningprobability.probability(prevWins, prevLosses, gamesLeft, mustWin), DELTA * 0.5053622927646);
   }
 
-  //@Test
+  @Test
   public void case7() {
     int prevWins = 0;
     int prevLosses = 100;
@@ -81,7 +81,7 @@ public class WinningProbabilityTest {
     assertEquals(0.6790697674418, winningprobability.probability(prevWins, prevLosses, gamesLeft, mustWin), DELTA * 0.6790697674418);
   }
 
-  @Test
+  //@Test
   public void case9() {
     int prevWins = 78;
     int prevLosses = 54;
@@ -108,7 +108,7 @@ public class WinningProbabilityTest {
     assertEquals(0.2813550208361, winningprobability.probability(prevWins, prevLosses, gamesLeft, mustWin), DELTA * 0.2813550208361);
   }
 
-  @Test
+  //@Test
   public void case12() {
     int prevWins = 41;
     int prevLosses = 25;
