@@ -41,6 +41,7 @@ DOOR_UP	src/graph/RevolvingDoors.java	/^  static public final int DOOR_UP = -5;$
 DOOR_V	src/graph/RevolvingDoors.java	/^  static public final int DOOR_V = -200;$/;"	f	class:RevolvingDoors
 DOWN_LEFT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_LEFT = 1 << 2;$/;"	f	class:RevolvingDoors
 DOWN_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_RIGHT = 1 << 1;$/;"	f	class:RevolvingDoors
+Disaster	src/math/Disaster.java	/^public class Disaster {$/;"	c
 DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
 DungeonEscapeTest	test/graph/DungeonEscapeTest.java	/^public class DungeonEscapeTest {$/;"	c
 EMPTY	src/graph/RevolvingDoors.java	/^  static public final int EMPTY = -1;$/;"	f	class:RevolvingDoors
@@ -101,6 +102,7 @@ N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
 N	src/graph/IslandFerries.java	/^  int N = 0;$/;"	f	class:IslandFerries
 N	src/graph/Marketing.java	/^  static public final int N = 64;$/;"	f	class:Marketing
 N	src/graph/Parking.java	/^  int N;$/;"	f	class:Parking
+N	src/math/Disaster.java	/^  int N;$/;"	f	class:Disaster
 N	src/math/Hangman42.java	/^  int N;    \/\/ number of words$/;"	f	class:Hangman42
 N	src/math/KingOfTheCourt.java	/^  int N;$/;"	f	class:KingOfTheCourt
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
@@ -126,6 +128,7 @@ Node	src/graph/PathFinding.java	/^  class Node {$/;"	c	class:PathFinding
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
+Node	src/math/Disaster.java	/^  class Node {$/;"	c	class:Disaster
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
@@ -1102,6 +1105,7 @@ debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
 debug	src/math/BaseballLineup.java	/^  private void debug(Object... os) {$/;"	m	class:BaseballLineup	file:
 debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	class:BenfordsLaw	file:
+debug	src/math/Disaster.java	/^  private void debug(Object... os) {$/;"	m	class:Disaster	file:
 debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class:Hangman42	file:
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
@@ -1121,6 +1125,7 @@ end	src/graph/RoboCourier.java	/^  Node end;$/;"	f	class:RoboCourier
 exitTime	src/graph/DungeonEscape.java	/^  public int exitTime(String[] up, String[] down, String[] east, String[] west, int startLevel, int startEasting) {$/;"	m	class:DungeonEscape
 exp	src/math/BaseballLineup.java	/^  double exp(int inning, int player, int batters, int outs, int runners) {$/;"	m	class:BaseballLineup
 expand	src/dp/KiloManX.java	/^  int[] expand(int[] xs, int x) {$/;"	m	class:KiloManX
+expected	src/math/Disaster.java	/^  public double expected(double b, String[] roads) {$/;"	m	class:Disaster
 expectedRuns	src/math/BaseballLineup.java	/^  public double expectedRuns(String[] stats) {$/;"	m	class:BaseballLineup
 extendedKey	src/graph/RoboCourier.java	/^    public String extendedKey() {$/;"	m	class:RoboCourier.Node
 fast	src/graph/RoboCourier.java	/^    public boolean fast = false;$/;"	f	class:RoboCourier.Node
@@ -1166,6 +1171,7 @@ getp	src/dp/WeightedIntervalScheduling.java	/^    public int getp() {$/;"	m	clas
 graph	src/graph/Circuits.java	/^  int[][] graph;$/;"	f	class:Circuits
 graph	src/graph/IslandFerries.java	/^  int[][][] graph;$/;"	f	class:IslandFerries
 graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
+graph	src/math/Disaster.java	/^  double[][] graph;$/;"	f	class:Disaster
 h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
 hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
 hi	src/greedy/MLBRecord.java	/^    public int hi;$/;"	f	class:MLBRecord.Team
@@ -1375,6 +1381,7 @@ topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
 topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
 topc.math	src/math/BaseballLineup.java	/^package topc.math;$/;"	p
 topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
+topc.math	src/math/Disaster.java	/^package topc.math;$/;"	p
 topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
