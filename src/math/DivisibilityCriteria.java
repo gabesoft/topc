@@ -8,13 +8,11 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=4481&rd=6538
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm239
 public class DivisibilityCriteria {
-  int N;
-  int P;
-
   public int[] multipliers(int N, int P) {
-    this.N = N;
-    this.P = P;
+    return sol2(N, P);
+  }
 
+  int[] sol1(int N, int P) {
     int[] res = new int[N];
     res[0] = 1;
 
@@ -41,6 +39,17 @@ public class DivisibilityCriteria {
     }
 
     reverse(res);
+    return res;
+  }
+
+  int[] sol2(int N, int P) {
+    int[] res = new int[N];
+
+    int mult = 1;
+    for (int i = N - 1; i >= 0; i--) {
+      res[i] = mult;
+      mult = mult * 10 % P;
+    }
 
     return res;
   }
