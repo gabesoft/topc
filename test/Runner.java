@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RefactoringTest.class })
+@Suite.SuiteClasses({ PrimeAnagramsTest.class })
 public class Runner {
 }
