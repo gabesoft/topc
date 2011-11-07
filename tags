@@ -138,6 +138,7 @@ P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
 Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
+PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
 RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
@@ -1072,6 +1073,7 @@ cost	src/graph/KiloManX3.java	/^    public int cost;$/;"	f	class:KiloManX3.Node
 cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.Node
 costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
 countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
 countOperations	src/graph/DivisorInc.java	/^  public int countOperations(int N, int M) {$/;"	m	class:DivisorInc
@@ -1097,6 +1099,7 @@ debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	c
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
+debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
@@ -1165,6 +1168,7 @@ getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }
 getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
 getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
 getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
+getPrimes	src/easy/PrimePalindromic.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:PrimePalindromic
 getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
 getStart	src/dp/WeightedIntervalScheduling.java	/^    public int getStart() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getStart	src/graph/RevolvingDoors.java	/^    public int getStart() {$/;"	m	class:RevolvingDoors.Maze
@@ -1247,12 +1251,14 @@ outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$
 outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escape.Node
 outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
 paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
+palindromic	src/easy/PrimePalindromic.java	/^  boolean palindromic(int n) {$/;"	m	class:PrimePalindromic
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
+prime	src/easy/PrimePalindromic.java	/^  boolean[] prime;$/;"	f	class:PrimePalindromic
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
 printSolution	src/dp/WeightedIntervalScheduling.java	/^  void printSolution(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
@@ -1371,6 +1377,7 @@ topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
