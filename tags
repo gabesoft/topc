@@ -42,6 +42,7 @@ DOOR_V	src/graph/RevolvingDoors.java	/^  static public final int DOOR_V = -200;$
 DOWN_LEFT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_LEFT = 1 << 2;$/;"	f	class:RevolvingDoors
 DOWN_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_RIGHT = 1 << 1;$/;"	f	class:RevolvingDoors
 Disaster	src/math/Disaster.java	/^public class Disaster {$/;"	c
+DivisorInc	src/graph/DivisorInc.java	/^public class DivisorInc {$/;"	c
 DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
 DungeonEscapeTest	test/graph/DungeonEscapeTest.java	/^public class DungeonEscapeTest {$/;"	c
 EMPTY	src/graph/RevolvingDoors.java	/^  static public final int EMPTY = -1;$/;"	f	class:RevolvingDoors
@@ -109,6 +110,8 @@ Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
 Node	src/dynamic/MiniPaint.java	/^    public Node(int totPainted, int row, int curStrokes, int totStrokes) {$/;"	m	class:MiniPaint.Node
 Node	src/dynamic/MiniPaint.java	/^  class Node implements Comparable<Node> {$/;"	c	class:MiniPaint
+Node	src/graph/DivisorInc.java	/^    public Node(int m, int c) {$/;"	m	class:DivisorInc.Node
+Node	src/graph/DivisorInc.java	/^  class Node {$/;"	c	class:DivisorInc
 Node	src/graph/DungeonEscape.java	/^    public Node(int x, int y, int time) {$/;"	m	class:DungeonEscape.Node
 Node	src/graph/DungeonEscape.java	/^  class Node {$/;"	c	class:DungeonEscape
 Node	src/graph/Escape.java	/^    public Node(int x, int y, int cost) {$/;"	m	class:Escape.Node
@@ -247,6 +250,7 @@ bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouri
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
 buildTeams	src/greedy/MLBRecord.java	/^  void buildTeams(int[] wins) {$/;"	m	class:MLBRecord
+c	src/graph/DivisorInc.java	/^    public final int c;$/;"	f	class:DivisorInc.Node
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	class:KingOfTheCourt
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
@@ -1070,6 +1074,7 @@ costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
 countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
+countOperations	src/graph/DivisorInc.java	/^  public int countOperations(int N, int M) {$/;"	m	class:DivisorInc
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
 create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
 curStrokes	src/dynamic/MiniPaint.java	/^    public int curStrokes;$/;"	f	class:MiniPaint.Node
@@ -1094,6 +1099,7 @@ debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
+debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
 debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
@@ -1140,6 +1146,7 @@ game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
 gcd	src/dynamic/ChessKnight.java	/^  public int gcd(int a, int b)$/;"	m	class:ChessKnight
+gcd	src/graph/DivisorInc.java	/^  int gcd(int n, int m) {$/;"	m	class:DivisorInc
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
 generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results) {$/;"	m	class:MedalTable
 getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1183,6 +1190,7 @@ id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
+isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
 k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
@@ -1194,6 +1202,7 @@ leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageCha
 lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
+m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
@@ -1366,6 +1375,7 @@ topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
 topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/DivisorInc.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Escape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
