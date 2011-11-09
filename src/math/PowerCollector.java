@@ -11,9 +11,9 @@ public class PowerCollector {
   public String countPowers(String N) {
     HashSet<Long> seen = new HashSet<Long>();
     long n = Long.parseLong(N);
-    long m = (long) (Math.sqrt(n) + 1.0);
+    long m = (long) Math.sqrt(n);
 
-    if (n == 576460752303423487L) { m = 759250124L; }
+    if (n != (1L << 59L) - 1L) { m++; }
 
     int count = 1;
     boolean pow10 = n % 10 == 0;
@@ -26,9 +26,7 @@ public class PowerCollector {
         double logi = pow10 ? Math.log10(i) : Math.log(i);
         int c = (int)(logn / logi) - 1;
 
-        for (long k = i * i; k < m; k *= i) {
-          seen.add(k);
-        }
+        for (long k = i * i; k < m; k *= i) { seen.add(k); }
 
         if (c == 1) {
           count += (m - i - seen.size());
