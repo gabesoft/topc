@@ -24,10 +24,7 @@ public class PreprimeNumbers {
 
     int[] primes = new int[pcount];
     for (int i = 2; i < prime.length; i++) {
-      if (idx == primes.length) { break; }
-      if (prime[i]) {
-        primes[idx++] = i;
-      }
+      if (prime[i]) { primes[idx++] = i; }
     }
 
     idx = 0;

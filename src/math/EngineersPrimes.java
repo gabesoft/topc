@@ -19,10 +19,7 @@ public class EngineersPrimes {
     int idx = 0;
     int[] primes = new int[pcount];
     for (int i = 2; i < prime.length; i++) {
-      if (idx == primes.length) { break; }
-      if (prime[i]) {
-        primes[idx++] = i;
-      }
+      if (prime[i]) { primes[idx++] = i; }
     }
 
     return (long)primes[N] * (long)primes[N];
