@@ -9,6 +9,10 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm307
 public class PreprimeNumbers {
   public int nthNumber(int n) {
+    return sol1(n);
+  }
+
+  int sol1(int n) {
     int lim = Integer.MAX_VALUE / 300;
     int idx = 0;
     int pcount = 0;
@@ -41,6 +45,32 @@ public class PreprimeNumbers {
 
     Arrays.sort(nums);
     return (int)nums[n + nums.length - idx - 1];
+  }
+
+  int sol2(int n) {
+    int lim = 6000000;
+    int cnt = 0;
+    int[] divs = new int[lim];
+
+    int i;
+    for (i = 2; cnt < n; i++) {
+      if (divs[i] == 0) {
+        for (int j = 2 * i; j < lim; j += i) {
+          int t = j;
+
+          while (t % i == 0) {
+            divs[j]++;
+            t /= i;
+          }
+
+          if (t == 1) { divs[j]--; }
+        }
+      }
+
+      if (divs[i] == 2) { cnt++; }
+    }
+
+    return i - 1;
   }
 
   boolean[] getPrimes(int n) {
