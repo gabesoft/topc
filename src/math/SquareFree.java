@@ -9,7 +9,7 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm190
 public class SquareFree {
   public int getNumber(int n) {
-    int[] m = mobius();
+    int[] m = moebius();
     double[][] mx = new double[m.length][2];
 
     for (int i = 1; i < m.length; i++) {
@@ -46,7 +46,7 @@ public class SquareFree {
     return sum;
   }
 
-  int[] mobius() {
+  int[] moebius() {
     int[] data = new int[1 << 16];
     data[1] = 2;
 
