@@ -21,27 +21,24 @@ public class SquareFree {
     long lo = n;
     long md = (hi + lo) / 2;
 
-    int v = squareFreeUpTo(mx, md);
-    while (hi >= lo) {
-      if (v > n) {
-        hi = md - 1;  
-      } else {
+    int q = squareFreeUpTo(mx, md);
+    while (lo < hi) {
+      if (q < n) {
         lo = md + 1;
+      } else {
+        hi = md;  
       }
       md = (hi + lo) / 2;
-      v = squareFreeUpTo(mx, md);
+      q = squareFreeUpTo(mx, md);
     }
-
-    while (squareFreeUpTo(mx, md - 1) == n) { md--; }
 
     return (int)md;
   }
 
   int squareFreeUpTo(double[][] m, long n) {
     int sum = 0;
-    for (long i = 1L; i * i <= n; i++) {
-      if (m[(int)i][0] == 0.0) { continue; }
-      sum += m[(int)i][0] * (long)(n * m[(int)i][1]);
+    for (int i = 1; i * i <= n; i++) {
+      sum += m[i][0] * (int)(n * m[i][1]);
     }
     return sum;
   }
