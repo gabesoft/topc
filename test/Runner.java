@@ -5,9 +5,8 @@ import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import topc.test.math.*;
-import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ EngineersPrimesTest.class, PreprimeNumbersTest.class })
+@Suite.SuiteClasses({ SquareFreeTest.class })
 public class Runner {
 }
