@@ -21,15 +21,15 @@ public class SquareFree {
     long lo = n;
     long md = (hi + lo) / 2;
 
-    int mv = squareFreeUpTo(mx, md);
+    int v = squareFreeUpTo(mx, md);
     while (hi >= lo) {
-      if (mv > n) {
+      if (v > n) {
         hi = md - 1;  
       } else {
         lo = md + 1;
       }
       md = (hi + lo) / 2;
-      mv = squareFreeUpTo(mx, md);
+      v = squareFreeUpTo(mx, md);
     }
 
     while (squareFreeUpTo(mx, md - 1) == n) { md--; }
