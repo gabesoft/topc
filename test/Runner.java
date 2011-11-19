@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.recursion.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MonomorphicTyperTest.class })
+@Suite.SuiteClasses({ BirdsCountingTest.class })
 public class Runner {
 }
