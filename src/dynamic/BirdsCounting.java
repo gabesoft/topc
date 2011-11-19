@@ -17,10 +17,10 @@ public class BirdsCounting {
     double p = 1.0 / bc[birdsNumber][caughtPerDay];
 
     prob[1][caughtPerDay] = 1.0;
-    for (int days = 2; days < daysNumber + 1; days++) {
+    for (int d = 2; d < daysNumber + 1; d++) {
       for (int i = caughtPerDay; i < birdsNumber + 1; i++) {
         for (int j = i; j >= i - caughtPerDay; j--) {
-          prob[days][i] += p * prob[days - 1][j] * bc[j][caughtPerDay - (i - j)] * bc[birdsNumber - j][i - j];
+          prob[d][i] += p * prob[d - 1][j] * bc[j][caughtPerDay - (i - j)] * bc[birdsNumber - j][i - j];
         }
       }
     }
