@@ -34,9 +34,6 @@ public class PendingTasks {
         T[i] = A[sons[0]] + 1;
         I[i] = A[sons[0]] + 1;
       } else {
-        int bt = 0;
-        int bi = 0;
-
         for (int j = 0; j < l; j++) {
           for (int k = j + 1; k < l; k++) {
             int s1 = sons[j];
@@ -45,18 +42,18 @@ public class PendingTasks {
 
             int t1  = A[s1] + T[s2] + si;
             int t2  = A[s2] + T[s1] + si;
-            if (t1 > bt) { bt = t1; }
-            if (t2 > bt) { bt = t2; }
+            if (t1 > T[i]) { T[i] = t1; }
+            if (t2 > T[i]) { T[i] = t2; }
 
             int i1  = A[s1] + I[s2] + si;
             int i2  = A[s2] + I[s1] + si;
-            if (i1 > bi) { bi = i1; }
-            if (i2 > bi) { bi = i2; }
+            if (i1 > I[i]) { I[i] = i1; }
+            if (i2 > I[i]) { I[i] = i2; }
           }
         }
 
-        T[i] = bt + 2;
-        I[i] = bi + 1;
+        T[i] += 2;
+        I[i] += 1;
       }
     }
 
