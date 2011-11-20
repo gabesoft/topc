@@ -132,6 +132,7 @@ Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:Ro
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
 Node	src/math/Disaster.java	/^  class Node {$/;"	c	class:Disaster
+Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
@@ -145,6 +146,7 @@ RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
 RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
 Rationalization	src/easy/Rationalization.java	/^public class Rationalization {$/;"	c
+RedBlack	src/recursion/RedBlack.java	/^public class RedBlack {$/;"	c
 RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"	c
 RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
@@ -1118,6 +1120,7 @@ debug	src/math/Disaster.java	/^  private void debug(Object... os) {$/;"	m	class:
 debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class:Hangman42	file:
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
+debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
@@ -1243,6 +1246,7 @@ n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
+numTwists	src/recursion/RedBlack.java	/^  public int numTwists(int[] keys) {$/;"	m	class:RedBlack
 numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
@@ -1402,6 +1406,7 @@ topc.math	src/math/Disaster.java	/^package topc.math;$/;"	p
 topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
+topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
 topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
@@ -1440,6 +1445,7 @@ totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:M
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
+val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node

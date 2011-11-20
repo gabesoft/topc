@@ -63,7 +63,7 @@ public class MonomorphicTyper {
 
     parsedArgs.add(parseExpr(curr));
 
-    return new Funct("f_" + name, (Expr[])parsedArgs.toArray(new Expr[0]));
+    return new Funct("f_" + name, parsedArgs.toArray(new Expr[0]));
   }
 
   Defn parseDefn(String input) {
