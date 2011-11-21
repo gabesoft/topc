@@ -8,45 +8,52 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=1874&rd=4645
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm168
 public class DirectoryTree {
+  String[][] paths;
+
   public String[] display(String[] files) {
     Arrays.sort(files);
 
-    String[][] paths = new String[files.length][];
+    paths = new String[files.length][];
 
     for (int i = 0; i < files.length; i++) {
       paths[i] = files[i].split("/");
       paths[i][0] = "ROOT";
     }
 
-    Node root = new Node("ROOT", 0);
-    parse(root, paths, 0, 0);
-    
+    Node root = new Node(paths[0][0]);
+    parse(root, 0, 0);
+
     ArrayList<String> res = root.display();
     return res.toArray(new String[res.size()]);
   }
 
-  int parse(Node parent, String[][] paths, int index, int start) {
+  int parse(Node parent, int index, int start) {
     Node node = null;
 
     for (int i = start; i < paths.length; i++) {
-      if (paths[i].length < index + 1) { return i - 1; }
+      String[] path = paths[i];
 
-      for (int j = index; j > -1; j--) {
-        if (!paths[i][j].equals(paths[parent.index][j])) {
-          return i - 1;
-        }
+      if (path.length < index + 1 || !samePrefix(start, i, index)) {
+        return i - 1;
       }
 
-      if (paths[i].length > index + 1) {
-        if (node == null || !node.name.equals(paths[i][index + 1])) {
-          node = new Node(paths[i][index + 1], i);
-          i = parse(node, paths, index + 1, i);
-          parent.items.add(node);
-        }
+      if (path.length > index + 1) {
+        node = new Node(path[index + 1]);
+        parent.items.add(node);
+        i    = parse(node, index + 1, i);
       }
     }
 
-    return paths.length - 1;
+    return paths.length;
+  }
+
+  boolean samePrefix(int i, int j, int index) {
+    for (int k = index; k > -1; k--) {
+      if (!paths[i][k].equals(paths[j][k])) {
+        return false;
+      }
+    }
+    return true;
   }
 
 
@@ -55,13 +62,11 @@ public class DirectoryTree {
   }
 
   class Node {
-    public final int index;
     public final String name;
     public ArrayList<Node> items;
 
-    public Node(String name, int index) {
+    public Node(String name) {
       this.name  = name;
-      this.index = index;
       this.items = new ArrayList<Node>();
     }
 

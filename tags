@@ -41,6 +41,7 @@ DOOR_UP	src/graph/RevolvingDoors.java	/^  static public final int DOOR_UP = -5;$
 DOOR_V	src/graph/RevolvingDoors.java	/^  static public final int DOOR_V = -200;$/;"	f	class:RevolvingDoors
 DOWN_LEFT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_LEFT = 1 << 2;$/;"	f	class:RevolvingDoors
 DOWN_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_RIGHT = 1 << 1;$/;"	f	class:RevolvingDoors
+DirectoryTree	src/stringm/DirectoryTree.java	/^public class DirectoryTree {$/;"	c
 Disaster	src/math/Disaster.java	/^public class Disaster {$/;"	c
 DivisorInc	src/graph/DivisorInc.java	/^public class DivisorInc {$/;"	c
 DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
@@ -133,6 +134,8 @@ Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
 Node	src/math/Disaster.java	/^  class Node {$/;"	c	class:Disaster
 Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
+Node	src/stringm/DirectoryTree.java	/^    public Node(String name, int index) {$/;"	m	class:DirectoryTree.Node
+Node	src/stringm/DirectoryTree.java	/^  class Node {$/;"	c	class:DirectoryTree
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
@@ -1121,6 +1124,7 @@ debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
+debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
@@ -1128,6 +1132,8 @@ dfs	src/graph/Circuits.java	/^  void dfs(int x, int len) {$/;"	m	class:Circuits
 dfs	src/graph/Marketing.java	/^  boolean dfs(int x, int c) {$/;"	m	class:Marketing
 dijkstra	src/graph/IslandFerries.java	/^  void dijkstra() {$/;"	m	class:IslandFerries
 dir	src/graph/RoboCourier.java	/^    public int dir;$/;"	f	class:RoboCourier.Node
+display	src/stringm/DirectoryTree.java	/^    public ArrayList<String> display() {$/;"	m	class:DirectoryTree.Node
+display	src/stringm/DirectoryTree.java	/^  public String[] display(String[] files) {$/;"	m	class:DirectoryTree
 domes	src/dp/ShortPalindromes.java	/^  String[][][] domes;$/;"	f	class:ShortPalindromes
 done	src/bkt/BridgeCrossing.java	/^    public boolean done() {$/;"	m	class:BridgeCrossing.State
 dungeonescape	test/graph/DungeonEscapeTest.java	/^  DungeonEscape dungeonescape = new DungeonEscape();$/;"	f	class:DungeonEscapeTest
@@ -1195,10 +1201,12 @@ howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
+index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
+items	src/stringm/DirectoryTree.java	/^    public ArrayList<Node> items;$/;"	f	class:DirectoryTree.Node
 k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
 last	src/dp/KiloManX.java	/^    public int last;$/;"	f	class:KiloManX.Node
@@ -1243,6 +1251,7 @@ n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
+name	src/stringm/DirectoryTree.java	/^    public final String name;$/;"	f	class:DirectoryTree.Node
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
@@ -1258,6 +1267,8 @@ paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
 palindromic	src/easy/PrimePalindromic.java	/^  boolean palindromic(int n) {$/;"	m	class:PrimePalindromic
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
+parse	src/stringm/DirectoryTree.java	/^  int parse(Node parent, int index, int start) {$/;"	m	class:DirectoryTree
+paths	src/stringm/DirectoryTree.java	/^  String[][] paths;$/;"	f	class:DirectoryTree
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
@@ -1284,6 +1295,7 @@ rotate	src/math/KingOfTheCourt.java	/^  int[] rotate(int[] input, int index) {$/
 row	src/dynamic/MiniPaint.java	/^    public int row;$/;"	f	class:MiniPaint.Node
 rows	src/graph/RevolvingDoors.java	/^  int rows = 0;$/;"	f	class:RevolvingDoors
 safe	src/graph/RoboCourier.java	/^  HashMap<String, ArrayList<String>> safe;$/;"	f	class:RoboCourier
+samePrefix	src/stringm/DirectoryTree.java	/^  boolean samePrefix(int i, int j, int index) {$/;"	m	class:DirectoryTree
 seatings	src/easy/TableSeating.java	/^  double[] seatings;$/;"	f	class:TableSeating
 seen	src/graph/KiloManX3.java	/^  boolean[] seen;$/;"	f	class:KiloManX3
 seen	src/graph/PathFinding.java	/^  int[][][][] seen;$/;"	f	class:PathFinding
@@ -1360,6 +1372,7 @@ toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	cla
 toString	src/graph/Parking.java	/^    public String toString() {$/;"	m	class:Parking.Node
 toString	src/graph/RevolvingDoors.java	/^    public String toString() {$/;"	m	class:RevolvingDoors.Maze
 toString	src/graph/RoboCourier.java	/^    public String toString() {$/;"	m	class:RoboCourier.Node
+toString	src/stringm/DirectoryTree.java	/^    public String toString() {$/;"	m	class:DirectoryTree.Node
 tokenize	src/easy/TallPeople.java	/^  int[] tokenize(String row) {$/;"	m	class:TallPeople
 topc.bkt	src/bkt/BridgeCrossing.java	/^package topc.bkt;$/;"	p
 topc.dp	src/dp/AvoidRoads.java	/^package topc.dp;$/;"	p
@@ -1407,6 +1420,7 @@ topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
+topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
 topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
