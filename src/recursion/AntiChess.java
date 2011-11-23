@@ -9,19 +9,19 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm266
 public class AntiChess {
   public int sacrifice(String[] white, String black) {
-    // game[i][0] = row pos for piece i
-    // game[i][1] = col pos for piece i
-    int[][] game = new int[white.length + 1][2]; // first is the queen
+    int[][] game = new int[white.length + 1][2];
 
-    game[0][1] = black.charAt(0) - 'a';
-    game[0][0] = black.charAt(1) - '1';
-    
+    read(game[0], black);
     for (int i = 0; i < white.length; i++) {
-      game[i + 1][1] = white[i].charAt(0) - 'a';
-      game[i + 1][0] = white[i].charAt(1) - '1';
+      read(game[i + 1], white[i]);
     }
 
     return moveWhite(game, 0);
+  }
+
+  void read(int[] pos, String val) {
+    pos[1] = val.charAt(0) - 'a';
+    pos[0] = val.charAt(1) - '1';
   }
 
   int moveWhite(int[][] game, int taken) {
@@ -36,15 +36,16 @@ public class AntiChess {
       if (game[i][1] == game[0][1] && game[i][0] == game[0][0] - 1) { continue; }
 
       next = copyGame(game);
+
       next[i][0]++;
       curr = moveBlack(next, taken);
       if (curr > best) { best = curr; }
 
-      if (game[i][0] == 1) {
-        next[i][0]++;
-        curr = moveBlack(next, taken);
-        if (curr > best) { best = curr; }
-      }
+      if (game[i][0] != 1) { continue; }
+
+      next[i][0]++;
+      curr = moveBlack(next, taken);
+      if (curr > best) { best = curr; }
     }
 
     return best == 0 ? taken : best;
@@ -70,19 +71,19 @@ public class AntiChess {
           moves[k][1] = dc;
         }
       }
-      else if (dc == 0) {
+
+      if (dc == 0) {
         int k = r > dr ? 2 : 3;
         if (moves[k][0] == 0 || dr < moves[k][1]) {
           moves[k][0] = i;
           moves[k][1] = dr;
         }
       }
-      else if (dc == dr) {
+
+      if (dc == dr) {
         int k = 0;
-        if (r > qr && c > qc) { k = 4; }
-        if (r > qr && c < qc) { k = 5; }
-        if (r < qr && c > qc) { k = 6; }
-        if (r < qr && c < qc) { k = 7; }
+        if (r > qr) { k = c > qc ? 4 : 5; }
+        if (r < qr) { k = c > qc ? 6 : 7; }
         if (moves[k][0] == 0 || dr < moves[k][1]) {
           moves[k][0] = i;
           moves[k][1] = dr;
