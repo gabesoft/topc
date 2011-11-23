@@ -137,6 +137,7 @@ Node	src/math/Disaster.java	/^  class Node {$/;"	c	class:Disaster
 Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
 Node	src/stringm/DirectoryTree.java	/^    public Node(String name, int index) {$/;"	m	class:DirectoryTree.Node
 Node	src/stringm/DirectoryTree.java	/^  class Node {$/;"	c	class:DirectoryTree
+P	src/recursion/AntiChess.java	/^  int P;$/;"	f	class:AntiChess
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
@@ -245,7 +246,6 @@ addb	src/easy/MedalTable.java	/^    public void addb() { _b++; }$/;"	m	class:Med
 addg	src/easy/MedalTable.java	/^    public void addg() { _g++; }$/;"	m	class:MedalTable.Country
 adds	src/easy/MedalTable.java	/^    public void adds() { _s++; }$/;"	m	class:MedalTable.Country
 advance	src/graph/RevolvingDoors.java	/^  boolean advance(int position, Maze maze, HashSet<Integer> seen) {$/;"	m	class:RevolvingDoors
-allPawnsTaken	src/recursion/AntiChess.java	/^  boolean allPawnsTaken(int[][] game) {$/;"	m	class:AntiChess
 allSpaces	src/dynamic/MiniPaint.java	/^  int allSpaces() {$/;"	m	class:MiniPaint
 allStrokes	src/dynamic/MiniPaint.java	/^  int allStrokes() {$/;"	m	class:MiniPaint
 arrayCopy	src/graph/SmartWordToy.java	/^    char[] arrayCopy(char[] source) {$/;"	m	class:SmartWordToy.Word
@@ -262,6 +262,7 @@ c	src/graph/DivisorInc.java	/^    public final int c;$/;"	f	class:DivisorInc.Nod
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	class:KingOfTheCourt
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
+canTakeQueen	src/recursion/AntiChess.java	/^  boolean canTakeQueen(int[][] game) {$/;"	m	class:AntiChess
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
 case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
 case0	test/dp/KiloManX2Test.java	/^  public void case0() {	$/;"	m	class:KiloManX2Test
@@ -1071,6 +1072,7 @@ computeStrokes	src/dynamic/MiniPaint.java	/^  void computeStrokes() {$/;"	m	clas
 computeWeights	src/graph/Parking.java	/^  void computeWeights(int car) {$/;"	m	class:Parking
 copy	src/bkt/BridgeCrossing.java	/^    public State copy() {$/;"	m	class:BridgeCrossing.State
 copyGame	src/recursion/AntiChess.java	/^  int[][] copyGame(int[][] game) {$/;"	m	class:AntiChess
+copyGame	src/recursion/AntiChess.java	/^  int[][] copyGame(int[][] game, int j) {$/;"	m	class:AntiChess
 copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
 cost	src/dp/KiloManX.java	/^    public int cost;$/;"	f	class:KiloManX.Node
 cost	src/graph/Escape.java	/^    public int cost;$/;"	f	class:Escape.Node
@@ -1249,8 +1251,8 @@ move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	cl
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost) {$/;"	m	class:RoboCourier.Node
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost, boolean fast) {$/;"	m	class:RoboCourier.Node
 move	src/graph/RoboCourier.java	/^    public Node[] move(String to) {$/;"	m	class:RoboCourier.Node
-moveBlack	src/recursion/AntiChess.java	/^  int moveBlack(int[][] game, int taken) {$/;"	m	class:AntiChess
-moveWhite	src/recursion/AntiChess.java	/^  int moveWhite(int[][] game, int taken) {$/;"	m	class:AntiChess
+moveBlack	src/recursion/AntiChess.java	/^  int moveBlack(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
+moveWhite	src/recursion/AntiChess.java	/^  int moveWhite(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
 n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
@@ -1290,10 +1292,9 @@ probability	src/math/Hangman42.java	/^  public double probability(String[] words
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
 probs	src/math/BaseballLineup.java	/^  double[][] probs;$/;"	f	class:BaseballLineup
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
-queenCannotCapture	src/recursion/AntiChess.java	/^  boolean queenCannotCapture(int[][] game) {$/;"	m	class:AntiChess
-queenCaptured	src/recursion/AntiChess.java	/^  boolean queenCaptured(int[][] game) {$/;"	m	class:AntiChess
 questionableDigit	src/math/BenfordsLaw.java	/^  public int questionableDigit(int[] transactions, int threshold) {$/;"	m	class:BenfordsLaw
 queue	src/dp/ShortPalindromes.java	/^  Queue<int[]> queue;$/;"	f	class:ShortPalindromes
+read	src/recursion/AntiChess.java	/^  void read(int[] pos, String val) {$/;"	m	class:AntiChess
 readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	m	class:AvoidRoads
 rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
 reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
@@ -1327,7 +1328,6 @@ sortDesc	src/greedy/MLBRecord.java	/^  void sortDesc(Team[] arr) {$/;"	m	class:M
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
 spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
-stalemate	src/recursion/AntiChess.java	/^  boolean stalemate(int[][] game) {$/;"	m	class:AntiChess
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
