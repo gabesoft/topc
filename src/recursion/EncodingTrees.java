@@ -57,7 +57,7 @@ public class EncodingTrees {
     for (int i = 0; i < j; i++) { nextl[i] = chars[i]; }
     for (int i = j + 1; i < n; i++) { nextr[i - (j + 1)] = chars[i]; }
 
-    return "" + chars[j] + find(indexl, nextl) + find(indexr, nextr);
+    return chars[j] + find(indexl, nextl) + find(indexr, nextr);
   }
 
   void buildt(int n) {
