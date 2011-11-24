@@ -19,7 +19,7 @@ public class AntiChess {
       read(game[i + 1], white[i]);
     }
 
-    return moveWhite(game, 0, 9);
+    return moveWhite(game, 0, 0, 9);
   }
 
   void read(int[] pos, String val) {
@@ -27,8 +27,9 @@ public class AntiChess {
     pos[0] = val.charAt(1) - '1';
   }
 
-  int moveWhite(int[][] game, int taken, int qbest) {
-    if (taken == P || canTakeQueen(game)) { return taken; }
+  int moveWhite(int[][] game, int taken, int alpha, int beta) {
+    if (alpha >= beta) { return 0; }
+    if (canTakeQueen(game)) { return taken; }
 
     int[][] next = null;
     int best = 0;
@@ -40,21 +41,21 @@ public class AntiChess {
       next = copyGame(game);
 
       next[i][0]++;
-      curr = moveBlack(next, taken, qbest);
+      curr = moveBlack(next, taken, best, beta);
       if (curr > best) { best = curr; }
 
       if (game[i][0] != 1) { continue; }
 
       next[i][0]++;
-      curr = moveBlack(next, taken, qbest);
+      curr = moveBlack(next, taken, best, beta);
       if (curr > best) { best = curr; }
     }
 
     return best == 0 ? taken : best;
   }
 
-  int moveBlack(int[][] game, int taken, int qbest) {
-    if (taken >= qbest) { return 9; }
+  int moveBlack(int[][] game, int taken, int alpha, int beta) {
+    if (alpha >= beta) { return 9; }
 
     int[][] moves = new int[8][2];
     int qr = game[0][0];
@@ -98,7 +99,7 @@ public class AntiChess {
         next = copyGame(game, j);
         next[0][0] = game[j][0];
         next[0][1] = game[j][1];
-        curr = moveWhite(next, taken + 1, best);
+        curr = moveWhite(next, taken + 1, alpha, best);
         if (curr < best) { best = curr; }
       }
     }
