@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.recursion.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ AntiChessTest.class })
+@Suite.SuiteClasses({ EncodingTreesTest.class })
 public class Runner {
 }
