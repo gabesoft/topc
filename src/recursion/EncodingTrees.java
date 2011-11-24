@@ -12,12 +12,6 @@ public class EncodingTrees {
 
   public String getCode(int N, int index) {
     buildt(N);
-
-    char[] chars = new char[N];
-    for (int i = 0; i < chars.length; i++) {
-      chars[i] = (char)(i + 'a');
-    }
-
     return find(N, index - 1);
   }
 
