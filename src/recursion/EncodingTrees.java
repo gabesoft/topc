@@ -18,46 +18,35 @@ public class EncodingTrees {
       chars[i] = (char)(i + 'a');
     }
 
-    return index <= T[N] ? find(index, chars) : "";
+    return find(N, index - 1);
   }
 
-  String find(int index, char[] chars) {
-    if (chars.length == 0) { return ""; }
+  String find(int n, int index) {
+    if (index >= T[n]) { return ""; }
 
-    int n = chars.length;
-    int j = 0;
-    int s = 0;
+    int seen = 0;
+    for (int i = 0; i < n; i++) {
+      if (seen + T[n - i - 1] * T[i] > index) {
 
-    for (int i = 1; i < n + 1; i++) {
-      if (s + T[n - i] * T[i - 1] >= index) {
-        j = i - 1;
-        break;
+        int dindex = index - seen;
+        int indexl = dindex / T[n - i - 1];
+        int indexr = dindex % T[n - i - 1];
+        
+        String r1 = find(i, indexl);
+        String shifted = find(n - i - 1, indexr);
+        String r2 = "";
+
+        for (int j = 0; j < shifted.length(); j++) {
+          r2 += (char)(i + 1 + (int)shifted.charAt(j));
+        }
+
+        return (char)(i + 'a') + r1 + r2;
       }
-      s += T[n - i] * T[i - 1];
+
+      seen += T[n - i - 1] * T[i];
     }
 
-    int tl = T[j];
-    int tr = T[n - (j + 1)];
-
-    int dindex = index - s;
-    int indexl = 0;
-    int indexr = 0; 
-    
-    for (int i = 1; i < tl + 1; i++) {
-      if (i * tr >= dindex) {
-        indexl = i;
-        indexr = dindex - (i - 1) * tr;
-        break;
-      }
-    }
-
-    char[] nextl = new char[j];
-    char[] nextr = new char[n - (j + 1)];
-
-    for (int i = 0; i < j; i++) { nextl[i] = chars[i]; }
-    for (int i = j + 1; i < n; i++) { nextr[i - (j + 1)] = chars[i]; }
-
-    return chars[j] + find(indexl, nextl) + find(indexr, nextr);
+    return "";
   }
 
   void buildt(int n) {
