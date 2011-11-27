@@ -36,8 +36,8 @@ public class LongLongNim {
 
       int mask = 0;
       for (int j = i - maxm; j < i; j++) {
-        mask = mask << 1;
-        mask = mask | (game[j] ? 1 : 0);
+        mask <<= 1;
+        mask |=  game[j] ? 1 : 0;
       }
       if (seen.containsKey(mask)) {
         rindex = seen.get(mask);
