@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ LongLongNimTest.class })
+@Suite.SuiteClasses({ StoneGameStrategistTest.class })
 public class Runner {
 }
