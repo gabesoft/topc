@@ -21,14 +21,14 @@ public class Roxor {
     for (int i = 0; i < n; i++) {
       grundy[i] = getGrundy(1 << i, n);
     }
-
-    if (!win(piles)) { return new int[] {}; }
     
     int state = 0;
     for (int i = n - 1; i > -1; i--) {
       state = state << 1;
       state = state | (piles[i] % 2);
     }
+
+    if (!win(state, n)) { return new int[] {}; }
 
     for (int i = 0; i < n; i++) {
       if (piles[i] == 0) { continue; }
@@ -49,14 +49,6 @@ public class Roxor {
     int xor = 0;
     for (int i = 0; i < n; i++) {
       xor ^= (state >> i & 1) * grundy[i];
-    }
-    return xor != 0;
-  }
-
-  boolean win(int[] pos) {
-    int xor = 0;
-    for (int i = 0; i < pos.length; i++) {
-      xor ^= (pos[i] % 2) * grundy[i];
     }
     return xor != 0;
   }
