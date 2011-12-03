@@ -55,21 +55,20 @@ public class Roxor {
 
   int getGrundy(int state, int n) {
     if (cache[state] > -1) { return cache[state]; }
-
-    HashSet<Integer> set = new HashSet<Integer>();
-
+    
+    boolean[] seen = new boolean[1 << 8];
     for (int i = 0; i < n; i++) {
       if ((state >> i & 1) == 0) { continue; }
       for (int j = i + 1; j < n; j++) {
         for (int k = j; k < n; k++) {
           int next = state ^ (1 << i) ^ (1 << j) ^ (1 << k);
-          set.add(getGrundy(next, n));
+          seen[getGrundy(next, n)] = true;
         }
       }
     }
 
     int res = 0;
-    while (set.contains(res)) { res++; }
+    while (seen[res]) { res++; }
 
     cache[state] = res;
     return res;
