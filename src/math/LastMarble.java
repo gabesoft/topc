@@ -35,8 +35,8 @@ public class LastMarble {
     double pb = 1.0 - pr;
 
     prob = 0.0;
-    prob += (r > 0) ? pr * (1.0 - play(r - 1, b, false)) : 0.0;
-    prob += (b > 0) ? pb * (1.0 - play(r, b - 1, !me))   : 0.0;
+    prob += (pr > 0) ? pr * (1.0 - play(r - 1, b, false)) : 0.0;
+    prob += (pb > 0) ? pb * (1.0 - play(r, b - 1, !me))   : 0.0;
     res = Math.max(res, prob);
 
     double prr = 0.0, pbb = 0.0, prb = 0.0;
@@ -46,9 +46,9 @@ public class LastMarble {
       prb = 1.0 - prr - pbb;
 
       prob = 0.0;
-      prob += (r > 1)          ? prr * (1.0 - play(r - 2, b,     false)) : 0.0;
-      prob += (b > 1)          ? pbb * (1.0 - play(r,     b - 2, !me))   : 0.0;
-      prob += (b > 0 && r > 0) ? prb * (1.0 - play(r - 1, b - 1, false)) : 0.0;
+      prob += (prr > 0.0) ? prr * (1.0 - play(r - 2, b,     false)) : 0.0;
+      prob += (pbb > 0.0) ? pbb * (1.0 - play(r,     b - 2, !me))   : 0.0;
+      prob += (prb > 0.0) ? prb * (1.0 - play(r - 1, b - 1, false)) : 0.0;
       res = Math.max(res, prob);
     }
 
@@ -60,10 +60,10 @@ public class LastMarble {
       pbbr = pbb * (Math.max(r, 0) / (n - 2.0)) + prb * (Math.max(b - 1, 0) / (n - 2.0));
 
       prob = 0.0;
-      prob += (r > 2)          ? prrr * (1.0 - play(r - 3, b,     false))  : 0.0;
-      prob += (b > 2)          ? pbbb * (1.0 - play(r,     b - 3, !me))    : 0.0;
-      prob += (r > 1 && b > 0) ? prrb * (1.0 - play(r - 2, b - 1, false))  : 0.0;
-      prob += (r > 0 && b > 1) ? pbbr * (1.0 - play(r - 1, b - 2, false))  : 0.0;
+      prob += (prrr > 0.0) ? prrr * (1.0 - play(r - 3, b,     false))  : 0.0;
+      prob += (pbbb > 0.0) ? pbbb * (1.0 - play(r,     b - 3, !me))    : 0.0;
+      prob += (prrb > 0.0) ? prrb * (1.0 - play(r - 2, b - 1, false))  : 0.0;
+      prob += (pbbr > 0.0) ? pbbr * (1.0 - play(r - 1, b - 2, false))  : 0.0;
       res = Math.max(res, prob);
     }
 
