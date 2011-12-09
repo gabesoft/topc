@@ -27,14 +27,17 @@ public class LastMarble {
     if (r + b == rem) { return me ? 0 : 1; }
     if (memo[r][b][me ? 0 : 1] > -0.5) { return memo[r][b][me ? 0 : 1]; }
 
-    double[] prob = new double[3];
+    double prob = 0.0;
+    double res = 0.0;
 
     double n = r + b;
     double pr = r / n;
     double pb = 1.0 - pr;
 
-    prob[0] += r > 0 ? pr * (1.0 - play(r - 1, b, false)) : 0.0;
-    prob[0] += b > 0 ? pb * (1.0 - play(r, b - 1, !me))   : 0.0;
+    prob = 0.0;
+    prob += (r > 0) ? pr * (1.0 - play(r - 1, b, false)) : 0.0;
+    prob += (b > 0) ? pb * (1.0 - play(r, b - 1, !me))   : 0.0;
+    res = Math.max(res, prob);
 
     double prr = 0.0, pbb = 0.0, prb = 0.0;
     if (n > rem + 1.0) {
@@ -42,9 +45,11 @@ public class LastMarble {
       pbb = pb * (Math.max(b - 1, 0) / (n - 1.0));
       prb = 1.0 - prr - pbb;
 
-      prob[1] += (r > 1)          ? prr * (1.0 - play(r - 2, b,     false)) : 0.0;
-      prob[1] += (b > 1)          ? pbb * (1.0 - play(r,     b - 2, !me))   : 0.0;
-      prob[1] += (b > 0 && r > 0) ? prb * (1.0 - play(r - 1, b - 1, false)) : 0.0;
+      prob = 0.0;
+      prob += (r > 1)          ? prr * (1.0 - play(r - 2, b,     false)) : 0.0;
+      prob += (b > 1)          ? pbb * (1.0 - play(r,     b - 2, !me))   : 0.0;
+      prob += (b > 0 && r > 0) ? prb * (1.0 - play(r - 1, b - 1, false)) : 0.0;
+      res = Math.max(res, prob);
     }
 
     double prrr = 0.0, pbbb = 0.0, prrb = 0.0, pbbr = 0.0;
@@ -54,23 +59,15 @@ public class LastMarble {
       prrb = prr * (Math.max(b, 0) / (n - 2.0)) + prb * (Math.max(r - 1, 0) / (n - 2.0));
       pbbr = pbb * (Math.max(r, 0) / (n - 2.0)) + prb * (Math.max(b - 1, 0) / (n - 2.0));
 
-      prob[2] += (r > 2)          ? prrr * (1.0 - play(r - 3, b,     false))  : 0.0;
-      prob[2] += (b > 2)          ? pbbb * (1.0 - play(r,     b - 3, !me))    : 0.0;
-      prob[2] += (r > 1 && b > 0) ? prrb * (1.0 - play(r - 2, b - 1, false))  : 0.0;
-      prob[2] += (r > 0 && b > 1) ? pbbr * (1.0 - play(r - 1, b - 2, false))  : 0.0;
+      prob = 0.0;
+      prob += (r > 2)          ? prrr * (1.0 - play(r - 3, b,     false))  : 0.0;
+      prob += (b > 2)          ? pbbb * (1.0 - play(r,     b - 3, !me))    : 0.0;
+      prob += (r > 1 && b > 0) ? prrb * (1.0 - play(r - 2, b - 1, false))  : 0.0;
+      prob += (r > 0 && b > 1) ? pbbr * (1.0 - play(r - 1, b - 2, false))  : 0.0;
+      res = Math.max(res, prob);
     }
-
-    double res = max(prob);
 
     memo[r][b][me ? 0 : 1] = res;
-    return res;
-  }
-
-  double max(double[] arr) {
-    double res = arr[0];
-    for (int i = 1; i < arr.length; i++) {
-      res = Math.max(res, arr[i]);
-    }
     return res;
   }
 
