@@ -14,7 +14,50 @@ public class FairWorkload {
   public int getMostWork(int[] folders, int workers) {
     data = folders;
     n = data.length;
+
+    assert partition(0, workers) == binarySearch(workers) : "inconsistent results";
     return partition(0, workers);
+  }
+  
+  int binarySearch(int k) {
+    int lo = max(data);
+    int hi = sum(data);
+
+    while (lo < hi) {
+      int x = lo + (hi - lo) / 2;
+
+      int req = 1;
+      int cur = 0;
+
+      for (int i = 0; i < n; i++) {
+        if (cur  + data[i] <= x) {
+          cur += data[i];
+        } else {
+          req++;
+          cur = data[i];
+        }
+      }
+
+      if (req <= k) {
+        hi = x;
+      } else {
+        lo = x + 1;
+      }
+    }
+
+    return lo;
+  }
+
+  int max(int[] input) {
+    int s = 0;
+    for (int i = 0; i < input.length; i++) { s = Math.max(s, input[i]); }
+    return s;
+  }
+
+  int sum(int[] input) {
+    int s = 0;
+    for (int i = 0; i < input.length; i++) { s += input[i]; }
+    return s;
   }
 
   int partition(int s, int k) {
