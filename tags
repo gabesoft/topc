@@ -54,6 +54,7 @@ EscapeTest	test/graph/EscapeTest.java	/^public class EscapeTest {$/;"	c
 F	src/graph/IslandFerries.java	/^  int F = 0;$/;"	f	class:IslandFerries
 Fib	src/easy/Fib.java	/^public class Fib {$/;"	c
 FibTest	test/easy/FibTest.java	/^public class FibTest {$/;"	c
+FloatingMedian	src/sorting/FloatingMedian.java	/^public class FloatingMedian {$/;"	c
 FlowerGarden	src/dp/FlowerGarden.java	/^public class FlowerGarden {$/;"	c
 FlowerGardenTest	test/dp/FlowerGardenTest.java	/^public class FlowerGardenTest {$/;"	c
 GameOfLifeDivOne	src/dp/GameOfLifeDivOne.java	/^public class GameOfLifeDivOne {$/;"	c
@@ -87,6 +88,7 @@ M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	class:Hangman42
+M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -147,6 +149,7 @@ PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
+R	src/sorting/FloatingMedian.java	/^  int R = 17;$/;"	f	class:FloatingMedian
 RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
 RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
@@ -1130,6 +1133,7 @@ debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
 debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	class:AntiChess	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
+debug	src/sorting/FloatingMedian.java	/^  private void debug(Object... os) {$/;"	m	class:FloatingMedian	file:
 debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
@@ -1210,11 +1214,13 @@ index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRec
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
+insert	src/sorting/FloatingMedian.java	/^  void insert(int x) {$/;"	m	class:FloatingMedian
 isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
 items	src/stringm/DirectoryTree.java	/^    public ArrayList<Node> items;$/;"	f	class:DirectoryTree.Node
 k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
+kth	src/sorting/FloatingMedian.java	/^  long kth(int k) {$/;"	m	class:FloatingMedian
 last	src/dp/KiloManX.java	/^    public int last;$/;"	f	class:KiloManX.Node
 leastBad	src/dynamic/MiniPaint.java	/^  public int leastBad(String[] picture, int maxStrokes) {$/;"	m	class:MiniPaint
 leastShots	src/dp/KiloManX.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX
@@ -1297,6 +1303,7 @@ queue	src/dp/ShortPalindromes.java	/^  Queue<int[]> queue;$/;"	f	class:ShortPali
 read	src/recursion/AntiChess.java	/^  void read(int[] pos, String val) {$/;"	m	class:AntiChess
 readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	m	class:AvoidRoads
 rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
+remove	src/sorting/FloatingMedian.java	/^  void remove(int x) {$/;"	m	class:FloatingMedian
 reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
 reverse	src/dp/FlowerGarden.java	/^  void reverse(int[] arr) {$/;"	m	class:FlowerGarden
 rotate	src/graph/RevolvingDoors.java	/^    public void rotate(int[][] maze, int i, int j, int left, int right, int up, int down, int flag) {$/;"	m	class:RevolvingDoors.Maze
@@ -1334,6 +1341,7 @@ states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCr
 states	src/math/Hangman42.java	/^  long[][] states;$/;"	f	class:Hangman42
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
+sumOfMedians	src/sorting/FloatingMedian.java	/^  public long sumOfMedians(int seed, int mul, int add, int N, int K) {$/;"	m	class:FloatingMedian
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
 teamStatus	src/greedy/MLBRecord.java	/^  public String teamStatus(int[] wins, int gamesLeft, int N) {$/;"	m	class:MLBRecord
 teams	src/greedy/MLBRecord.java	/^  Team[] teams;$/;"	f	class:MLBRecord
@@ -1431,6 +1439,7 @@ topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
+topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
@@ -1467,6 +1476,7 @@ topc.test.graph	test/graph/RoboCourierTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	p
 totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:MiniPaint.Node
 totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
+tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
