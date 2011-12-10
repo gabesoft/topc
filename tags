@@ -52,6 +52,7 @@ END	src/graph/RevolvingDoors.java	/^  static public final int END = -10;$/;"	f	c
 Escape	src/graph/Escape.java	/^public class Escape {$/;"	c
 EscapeTest	test/graph/EscapeTest.java	/^public class EscapeTest {$/;"	c
 F	src/graph/IslandFerries.java	/^  int F = 0;$/;"	f	class:IslandFerries
+FairWorkload	src/easy/FairWorkload.java	/^public class FairWorkload {$/;"	c
 Fib	src/easy/Fib.java	/^public class Fib {$/;"	c
 FibTest	test/easy/FibTest.java	/^public class FibTest {$/;"	c
 FloatingMedian	src/sorting/FloatingMedian.java	/^public class FloatingMedian {$/;"	c
@@ -1112,6 +1113,7 @@ debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	c
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
+debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
@@ -1183,6 +1185,7 @@ getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/
 getLevel	src/graph/RevolvingDoors.java	/^    public int getLevel() {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:SmartWordToy.Word
 getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	class:RevolvingDoors.Maze
+getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
 getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
@@ -1282,6 +1285,7 @@ palindromic	src/easy/PrimePalindromic.java	/^  boolean palindromic(int n) {$/;"	
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 parse	src/stringm/DirectoryTree.java	/^  int parse(Node parent, int index, int start) {$/;"	m	class:DirectoryTree
+partition	src/easy/FairWorkload.java	/^  int partition(int[] input, int s, int k) {$/;"	m	class:FairWorkload
 paths	src/stringm/DirectoryTree.java	/^  String[][] paths;$/;"	f	class:DirectoryTree
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
@@ -1410,6 +1414,7 @@ topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
