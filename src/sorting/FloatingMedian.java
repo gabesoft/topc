@@ -15,13 +15,14 @@ public class FloatingMedian {
   public long sumOfMedians(int seed, int mul, int add, int N, int K) {
     long[] nums = new long[N + 1];
 
-    tree = new int[R][M];
     nums[0] = (int)seed;
     for (int i = 1; i < N + 1; i++) {
       nums[i] = (nums[i - 1] * mul + add) % M;
     }
 
     long sum = 0L;
+
+    tree = new int[R][M];
     for (int i = 0; i < N; i++) {
       insert((int)nums[i]);
       if (i >= K) {
