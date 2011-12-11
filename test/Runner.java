@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SortEstimateTest.class })
+@Suite.SuiteClasses({ AutoLoanTest.class })
 public class Runner {
 }
