@@ -7,7 +7,7 @@ import java.io.*;
 // search, sorting
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=4823&rd=8074
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm277
-public class UnionOfIntervals {
+public class UnionOfIntervals2 {
   public int nthElement(int[] lowerBound, int[] upperBound, int n) {
     Interval[] intervals = buildIntervals(lowerBound, upperBound);
     Arrays.sort(intervals);
@@ -41,10 +41,10 @@ public class UnionOfIntervals {
     ArrayList<Interval> intervals = new ArrayList<Interval>();
     ArrayList<Interval> temp;
 
-    for (int i = 0; i < lb.length; i++) {
+    for (int i = 0; i < raw.length; i++) {
       temp = new ArrayList<Interval>();
 
-      Interval curr = new Interval(raw[i].lb, raw[i].ub);
+      Interval curr = raw[i];
       for (Interval intv : intervals) {
         if (curr!= null && curr.overlap(intv)) {
           curr = breakAndAdd(intv, curr, temp);

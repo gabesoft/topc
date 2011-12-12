@@ -5,8 +5,8 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import topc.search.*;
 
-public class UnionOfIntervalsTest {
-  UnionOfIntervals unionofintervals = new UnionOfIntervals();
+public class UnionOfIntervals2Test {
+  UnionOfIntervals2 unionofintervals = new UnionOfIntervals2();
 
   @Test
   public void case1() {
