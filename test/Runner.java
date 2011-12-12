@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ UnionOfIntervals2Test.class })
+@Suite.SuiteClasses({ UnionOfIntervalsTest.class })
 public class Runner {
 }
