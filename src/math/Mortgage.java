@@ -12,16 +12,16 @@ public class Mortgage {
     long hi = 2000000001L;
     long lo = 0L;
 
-    while (lo < hi) {
-      long mid = lo + (hi - lo + 1) / 2;
+    while (lo + 1 < hi) {
+      long mid = lo + (hi - lo) / 2;
       if (pay(loan, interest, term, mid) < 0) {
-        hi = mid - 1;
+        hi = mid;
       } else {
         lo = mid;
       }
     }
 
-    return (int)lo + 1;
+    return (int)hi;
   }
 
   long pay(long loan, int interest, int term, long payment) {
