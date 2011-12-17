@@ -25,8 +25,8 @@ public class HairCuts {
 
     while (count++ < 200) {
       double mid = lo + (hi - lo) / 2.0;
-      double wks = calc(mins, mid);
-      if (wks < 1.0e-15) {
+      double val = calc(mins, mid);
+      if (val < 1.0e-15) {
         hi = mid;
       } else {
         lo = mid;
