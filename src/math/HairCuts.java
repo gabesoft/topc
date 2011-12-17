@@ -25,7 +25,7 @@ public class HairCuts {
 
     while (count++ < 200) {
       double mid = lo + (hi - lo) / 2.0;
-      double wks = works(mins, mid);
+      double wks = calc(mins, mid);
       if (wks < 1.0e-15) {
         hi = mid;
       } else {
@@ -33,11 +33,11 @@ public class HairCuts {
       }
     }
 
-    double dx = works(mins, lo);
+    double dx = calc(mins, lo);
     return dx >= 0 ? lo : -1;
   }
 
-  double works(double[] mins, double time) {
+  double calc(double[] mins, double time) {
     mins = mins.clone();
 
     for (int i = 1; i < mins.length - 1; i++) {
