@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PackingShapesTest.class })
+@Suite.SuiteClasses({ RemoteRoverTest.class })
 public class Runner {
 }

@@ -15,7 +15,7 @@ public class FloatingMedian {
   public long sumOfMedians(int seed, int mul, int add, int N, int K) {
     long[] nums = new long[N + 1];
 
-    nums[0] = (int)seed;
+    nums[0] = seed;
     for (int i = 1; i < N + 1; i++) {
       nums[i] = (nums[i - 1] * mul + add) % M;
     }
