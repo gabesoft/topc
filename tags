@@ -144,6 +144,7 @@ P	src/recursion/AntiChess.java	/^  int P;$/;"	f	class:AntiChess
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
+PackingShapes	src/geometry/PackingShapes.java	/^public class PackingShapes {$/;"	c
 Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
@@ -1116,6 +1117,7 @@ debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
+debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"	m	class:PackingShapes	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
@@ -1421,6 +1423,7 @@ topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
+topc.geometry	src/geometry/PackingShapes.java	/^package topc.geometry;$/;"	p
 topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DivisorInc.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
@@ -1482,6 +1485,7 @@ topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	
 totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:MiniPaint.Node
 totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
 tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
+tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
