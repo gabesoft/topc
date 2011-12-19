@@ -12,19 +12,50 @@ public class RemoteRover {
   static public final double C = 1.0 - R;
   int[] width;
   int[] speed;
+  double[][] memo;
   int n;
 
   public double optimalTravel(int[] width, int[] speed, int offset) {
     this.n = width.length;
     this.width = width;
     this.speed = speed;
+    this.memo = new double[n + 1][offset + 1];
 
-    return calc(0, offset);
+    //debug(n, width, speed);
+    return calcRaw(0, offset);
+
+    //return calc(0, offset);
+  }
+
+  double calcRaw(int index, int offset) {
+    if (memo[index][offset] > 0.0) { return memo[index][offset]; }
+    if (index  == n - 1) { return time(index, offset); }
+    if (offset == 0.0)   { return time(index, offset) + calcRaw(index + 1, offset); }
+
+    double best = Double.MAX_VALUE / 2.0;
+    int lo = 0;
+    int hi = offset;
+    while (lo < hi) {
+      int mid = (hi + lo) / 2;
+      double cur = time(index, mid) + calcRaw(index + 1, offset - mid);
+
+      if (cur < best) {
+        best = cur;
+        hi = mid;
+      } else {
+        lo = mid + 1;
+      }
+    }
+
+    memo[index][offset] = best;
+    return best;
   }
 
   double calc(int index, double offset) {
     if (index  == n - 1) { return time(index, offset); }
-    if (offset == 0.0) { return time(index, offset) + calc(index + 1, offset); }
+    if (offset == 0.0)   { return time(index, offset) + calc(index + 1, offset); }
+
+    //double raw = memo[index][(int)offset];
 
     double er = 7.0e-4;
 
@@ -48,7 +79,9 @@ public class RemoteRover {
     double f1 = func(x1, offset, index);
     double f2 = func(x2, offset, index);
 
+    int count = 0;
     while (Math.abs(x3 - x0) > er * (Math.abs(x1) + Math.abs(x2))) {
+      count++;
       if (f2 < f1) {
         x0 = x1;
         x1 = x2;
@@ -70,17 +103,17 @@ public class RemoteRover {
     //double lo = 0.0;
     //double hi = offset;
     //while (true) {
-      //double mid = lo + (hi - lo) / 2.0;
-      //double cur = time(index, mid) + calc(index + 1, offset - mid);
+    //double mid = lo + (hi - lo) / 2.0;
+    //double cur = time(index, mid) + calc(index + 1, offset - mid);
 
-      //if (Math.abs(cur - best) < 1.0e-12) { break; }
-      
-      //if (cur < best) {
-        //best = cur;
-        //hi = mid;
-      //} else {
-        //lo = mid;
-      //}
+    //if (Math.abs(cur - best) < 1.0e-12) { break; }
+
+    //if (cur < best) {
+    //best = cur;
+    //hi = mid;
+    //} else {
+    //lo = mid;
+    //}
     //}
 
     //return best;

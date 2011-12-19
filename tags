@@ -24,6 +24,7 @@ BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossin
 BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
+C	src/geometry/RemoteRover.java	/^  static public final double C = 1.0 - R;$/;"	f	class:RemoteRover
 C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
@@ -151,12 +152,14 @@ PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
+R	src/geometry/RemoteRover.java	/^  static public final double R = 0.61803399;$/;"	f	class:RemoteRover
 R	src/sorting/FloatingMedian.java	/^  int R = 17;$/;"	f	class:FloatingMedian
 RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
 RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
 Rationalization	src/easy/Rationalization.java	/^public class Rationalization {$/;"	c
 RedBlack	src/recursion/RedBlack.java	/^public class RedBlack {$/;"	c
+RemoteRover	src/geometry/RemoteRover.java	/^public class RemoteRover {$/;"	c
 RevolvingDoors	src/graph/RevolvingDoors.java	/^public class RevolvingDoors {$/;"	c
 RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDoorsTest {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
@@ -267,6 +270,7 @@ c	src/graph/DivisorInc.java	/^    public final int c;$/;"	f	class:DivisorInc.Nod
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	class:KingOfTheCourt
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
+calc	src/geometry/RemoteRover.java	/^  double calc(int index, double offset) {$/;"	m	class:RemoteRover
 canTakeQueen	src/recursion/AntiChess.java	/^  boolean canTakeQueen(int[][] game) {$/;"	m	class:AntiChess
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
 case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
@@ -1118,6 +1122,7 @@ debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"	m	class:PackingShapes	file:
+debug	src/geometry/RemoteRover.java	/^  private void debug(Object... os) {$/;"	m	class:RemoteRover	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
@@ -1168,6 +1173,7 @@ fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] fer
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 firstDigit	src/math/BenfordsLaw.java	/^  public static int firstDigit(int n) {$/;"	m	class:BenfordsLaw
+func	src/geometry/RemoteRover.java	/^  double func(double x, double offset, int index) {$/;"	m	class:RemoteRover
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
@@ -1267,6 +1273,7 @@ moveWhite	src/recursion/AntiChess.java	/^  int moveWhite(int[][] game, int taken
 n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
+n	src/geometry/RemoteRover.java	/^  int n;$/;"	f	class:RemoteRover
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
@@ -1279,6 +1286,7 @@ numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, St
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
+optimalTravel	src/geometry/RemoteRover.java	/^  public double optimalTravel(int[] width, int[] speed, int offset) {$/;"	m	class:RemoteRover
 outerRec	src/dp/GameOfLifeDivOne.java	/^  long outerRec(char[] init, int pos) {$/;"	m	class:GameOfLifeDivOne
 outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escape.Node
 outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
@@ -1340,6 +1348,7 @@ sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
 sortDesc	src/greedy/MLBRecord.java	/^  void sortDesc(Team[] arr) {$/;"	m	class:MLBRecord
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
+speed	src/geometry/RemoteRover.java	/^  int[] speed;$/;"	f	class:RemoteRover
 spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
@@ -1385,6 +1394,7 @@ ticket	src/graph/IslandFerries.java	/^    public int ticket(int ferry) {$/;"	m	c
 ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:IslandFerries.Node
 ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
 time	src/bkt/BridgeCrossing.java	/^  int time;$/;"	f	class:BridgeCrossing
+time	src/geometry/RemoteRover.java	/^  double time(int index, double offset) {$/;"	m	class:RemoteRover
 time	src/graph/DungeonEscape.java	/^    public final int time;$/;"	f	class:DungeonEscape.Node
 time	src/graph/Parking.java	/^    public final int time;$/;"	f	class:Parking.Node
 timeToDeliver	src/graph/RoboCourier.java	/^  public int timeToDeliver(String[] path) {$/;"	m	class:RoboCourier
@@ -1424,6 +1434,7 @@ topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
 topc.geometry	src/geometry/PackingShapes.java	/^package topc.geometry;$/;"	p
+topc.geometry	src/geometry/RemoteRover.java	/^package topc.geometry;$/;"	p
 topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DivisorInc.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
@@ -1495,6 +1506,7 @@ w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
 weight	src/graph/KiloManX3.java	/^    public int weight;$/;"	f	class:KiloManX3.Node
 weightedScore	src/math/TestScores.java	/^  public double weightedScore(double[] questions, int testScore) {$/;"	m	class:TestScores
+width	src/geometry/RemoteRover.java	/^  int[] width;$/;"	f	class:RemoteRover
 willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
 win	src/math/Hangman42.java	/^  double win(int state) {$/;"	m	class:Hangman42
 win	src/math/KingOfTheCourt.java	/^  double win(int[] pos, int lim) {$/;"	m	class:KingOfTheCourt
