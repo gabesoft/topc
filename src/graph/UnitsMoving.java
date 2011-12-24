@@ -9,11 +9,13 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm278
 public class UnitsMoving {
   int n;
+  double[][] graph;
 
   public double bestTime(String[] start, String[] finish) {
     n = start.length;
 
-    double[][] graph = buildGraph(start, finish);
+    buildGraph(start, finish);
+
     double lo = 0;
     double hi = 10000;
 
@@ -29,7 +31,7 @@ public class UnitsMoving {
 
       for (int i = 0; i < n; i++) {
         Arrays.fill(seen, false);
-        if (!dfs(i, mid, graph, seen, parent)) {
+        if (!dfs(i, mid, seen, parent)) {
           match = false; 
           break;
         }
@@ -45,15 +47,13 @@ public class UnitsMoving {
     return lo;
   }
 
-  boolean dfs(int i, double cutoff, double[][] graph, boolean[] seen, int[] parent) {
+  boolean dfs(int i, double cutoff, boolean[] seen, int[] p) {
     seen[i] = true;
 
     for (int j = 0; j < n; j++) {
       if (graph[i][j] <= cutoff) {
-        boolean found = parent[j] == -1;
-        found = found || (!seen[parent[j]] && dfs(parent[j], cutoff, graph, seen, parent));
-        if (found) {
-          parent[j] = i;
+        if (p[j] == -1 || (!seen[p[j]] && dfs(p[j], cutoff, seen, p))) {
+          p[j] = i;
           return true;
         }
       }
@@ -62,7 +62,7 @@ public class UnitsMoving {
     return false;
   }
 
-  double[][] buildGraph(String[] start, String[] finish) {
+  void buildGraph(String[] start, String[] finish) {
     int[][] st = new int[n][3];
     int[][] en = new int[n][2];
 
@@ -77,7 +77,7 @@ public class UnitsMoving {
       en[i][1] = Integer.parseInt(ftokens[1]);
     }
 
-    double[][] graph = new double[n][n];
+    graph = new double[n][n];
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
         double dx = st[i][0] - en[j][0];
@@ -86,8 +86,6 @@ public class UnitsMoving {
         graph[i][j] = dist / st[i][2];
       }
     }
-
-    return graph;
   }
 
   private void debug(Object... os) {
