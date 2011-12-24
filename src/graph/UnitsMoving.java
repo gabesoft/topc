@@ -19,25 +19,11 @@ public class UnitsMoving {
     double lo = 0;
     double hi = 10000;
 
-    boolean[] seen = new boolean[n];
-    int[] parent = new int[n];
-
     int count = 0;
     while (count++ < 50) {
       double mid = lo + (hi - lo) / 2.0;
-      boolean match = true;
 
-      Arrays.fill(parent, -1);
-
-      for (int i = 0; i < n; i++) {
-        Arrays.fill(seen, false);
-        if (!dfs(i, mid, seen, parent)) {
-          match = false; 
-          break;
-        }
-      }
-
-      if (match) {
+      if (perfectMatch(mid)) {
         hi = mid;
       } else {
         lo = mid;
@@ -45,6 +31,24 @@ public class UnitsMoving {
     }
 
     return lo;
+  }
+
+  boolean perfectMatch(double cutoff) {
+    boolean[] seen = new boolean[n];
+    int[] parent = new int[n];
+
+    Arrays.fill(parent, -1);
+
+    boolean match = true;
+    for (int i = 0; i < n; i++) {
+      Arrays.fill(seen, false);
+      if (!dfs(i, cutoff, seen, parent)) {
+        match = false; 
+        break;
+      }
+    }
+
+    return match;
   }
 
   boolean dfs(int i, double cutoff, boolean[] seen, int[] p) {
