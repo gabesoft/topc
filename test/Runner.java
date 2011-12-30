@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FlagsTest.class })
+@Suite.SuiteClasses({ P8XCoinChangeTest.class })
 public class Runner {
 }
