@@ -92,8 +92,10 @@ M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	class:Hangman42
 M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
+MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
+Matrix	src/dynamic/P8XCoinChange.java	/^class Matrix {$/;"	c
 Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, int start, int end) {$/;"	m	class:RevolvingDoors.Maze
 Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
 MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
@@ -145,6 +147,7 @@ P	src/recursion/AntiChess.java	/^  int P;$/;"	f	class:AntiChess
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
 P3	src/dynamic/StarAdventure.java	/^  int[][] P3;$/;"	f	class:StarAdventure
+P8XCoinChange	src/dynamic/P8XCoinChange.java	/^public class P8XCoinChange {$/;"	c
 PackingShapes	src/geometry/PackingShapes.java	/^public class PackingShapes {$/;"	c
 Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
@@ -1117,6 +1120,7 @@ debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
 debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
+debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
@@ -1224,6 +1228,7 @@ id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
+initMatrix	src/dynamic/P8XCoinChange.java	/^  long[][] initMatrix(int n, int start) {$/;"	m	class:P8XCoinChange
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 insert	src/sorting/FloatingMedian.java	/^  void insert(int x) {$/;"	m	class:FloatingMedian
 isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
@@ -1270,6 +1275,7 @@ move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost, boolea
 move	src/graph/RoboCourier.java	/^    public Node[] move(String to) {$/;"	m	class:RoboCourier.Node
 moveBlack	src/recursion/AntiChess.java	/^  int moveBlack(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
 moveWhite	src/recursion/AntiChess.java	/^  int moveWhite(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
+mul	src/dynamic/P8XCoinChange.java	/^  public static long[][] mul(long[][] a, long[][] b, long mod) {$/;"	m	class:Matrix
 n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
@@ -1300,6 +1306,7 @@ paths	src/stringm/DirectoryTree.java	/^  String[][] paths;$/;"	f	class:Directory
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
+pow	src/dynamic/P8XCoinChange.java	/^  public static long[][] pow(long[][] m, long k, long mod) {$/;"	m	class:Matrix
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 prime	src/easy/PrimePalindromic.java	/^  boolean[] prime;$/;"	f	class:PrimePalindromic
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
@@ -1339,6 +1346,7 @@ solve	src/bkt/BridgeCrossing.java	/^  void solve(State s) {$/;"	m	class:BridgeCr
 solve	src/dp/KiloManX.java	/^  int solve() {$/;"	m	class:KiloManX
 solve	src/dp/QuickSums.java	/^  int solve(int[] nums, int sum) {$/;"	m	class:QuickSums
 solve	src/dp/StripePainter.java	/^  int solve(String input, int left, int right, char c) {$/;"	m	class:StripePainter
+solve	src/dynamic/P8XCoinChange.java	/^  public int solve(long coins_sum, long[] values) {$/;"	m	class:P8XCoinChange
 solve	src/easy/TableSeating.java	/^  double solve(int mask) {$/;"	m	class:TableSeating
 solve	src/graph/RevolvingDoors.java	/^  boolean solve(Maze maze) {$/;"	m	class:RevolvingDoors
 solve	src/graph/RoboCourier.java	/^  int solve() {$/;"	m	class:RoboCourier
@@ -1424,6 +1432,7 @@ topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
 topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
@@ -1499,6 +1508,7 @@ tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedia
 tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
+unit	src/dynamic/P8XCoinChange.java	/^  public static long[][] unit(int n) {$/;"	m	class:Matrix
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
