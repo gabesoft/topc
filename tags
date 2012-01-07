@@ -62,6 +62,7 @@ FlowerGardenTest	test/dp/FlowerGardenTest.java	/^public class FlowerGardenTest {
 GameOfLifeDivOne	src/dp/GameOfLifeDivOne.java	/^public class GameOfLifeDivOne {$/;"	c
 GameOfLifeDivOneTest	test/dp/GameOfLifeDivOneTest.java	/^public class GameOfLifeDivOneTest {$/;"	c
 GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
+Graduation	src/graph/Graduation.java	/^public class Graduation {$/;"	c
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
 Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
@@ -1131,6 +1132,7 @@ debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
 debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
+debug	src/graph/Graduation.java	/^  private void debug(Object... os) {$/;"	m	class:Graduation	file:
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
@@ -1175,6 +1177,7 @@ fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	cl
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
+findPath	src/graph/Graduation.java	/^  int findPath() {$/;"	m	class:Graduation
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 firstDigit	src/math/BenfordsLaw.java	/^  public static int firstDigit(int n) {$/;"	m	class:BenfordsLaw
 func	src/geometry/RemoteRover.java	/^  double func(double x, double offset, int index) {$/;"	m	class:RemoteRover
@@ -1268,6 +1271,7 @@ minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;
 minTweaks	src/easy/Rationalization.java	/^  public int minTweaks(int[] weights, String[] scores, int desired) {$/;"	m	class:Rationalization
 minipaint	test/dynamic/MiniPaint2Test.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
 minipaint	test/dynamic/MiniPaintTest.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
+moreClasses	src/graph/Graduation.java	/^  public String moreClasses(String classesTaken, String[] requirements) {$/;"	m	class:Graduation
 mostStars	src/dynamic/StarAdventure.java	/^  public int mostStars(String[] level) {$/;"	m	class:StarAdventure
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
 move	src/graph/RoboCourier.java	/^    public Node move(int dir, int cost) {$/;"	m	class:RoboCourier.Node
@@ -1448,6 +1452,7 @@ topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DivisorInc.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Escape.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/Graduation.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p

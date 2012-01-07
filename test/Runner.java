@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RookAttackTest.class })
+@Suite.SuiteClasses({ GraduationTest.class })
 public class Runner {
 }
