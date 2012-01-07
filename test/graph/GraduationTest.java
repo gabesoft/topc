@@ -253,27 +253,6 @@ public class GraduationTest {
   }
 
   @Test
-  public void case37() {
-    String classesTaken = "+s>YK^I$/B_yiLQ}%<rX')hJoG|qaVt;bezDZSW";
-    String[] requirements = {  };
-    assertEquals("", graduation.moreClasses(classesTaken, requirements));
-  }
-
-  @Test
-  public void case38() {
-    String classesTaken = "`\\/gc,)^s}OiL&[g";
-    String[] requirements = {  };
-    assertEquals("", graduation.moreClasses(classesTaken, requirements));
-  }
-
-  @Test
-  public void case45() {
-    String classesTaken = "vjT&>]GAZOdu#LEJ![";
-    String[] requirements = {  };
-    assertEquals("", graduation.moreClasses(classesTaken, requirements));
-  }
-
-  @Test
   public void case48() {
     String classesTaken = "H<~U*(is}EmTF";
     String[] requirements = {"2\"Wbx`AI)ePjg;c%YSzi", "2OVL`{FxB'}K[?eSWYczXu.vhdZ&:j", "2i/d_]A{t", "2`\\B$Huj;G]-cOZl&W(hr^?|A_XS)\"", "1+ulqQEb{&CWyZKnthNT.*B", "1?DAc~(:}zrq\\O-Qf]J${a@R<hKx`!gIY./k*X", "2k$", "2:/R", "2*vZi{)=w", "2o+T@RV\\#tJZO^?<Ly,u`YeG'kXH)sg/nEql>:_WCij!]", "1yML", "1nD:VJiT[,N>;ly.vq<)Zm?Lg&H@Ru|}IF\\", "1Jil@Lh.)%~cCxSAo", "2d^@iw\\?&Qmf'DrGo;=sB]`", "1y", "1#H~-+*sOZa@:z\\ygfSuxhGC_", "2DZb", "1vc(", "1[xK>wY,kp-/tTMfD<cZlWhm]}_bRanz:iUQsrP\"V@NoHj", "2W{q*", "1.FP*gR\\OGzv\",XJk]c-}ny);hB/", "1YcbxiGFQsTC", "2Fiq^<#,)S", "2OYcKN&MpQ\\|IAnf#E/~g?\"t(k", "2ZJ=d#K\"UEIr)M_~jhnlY%Ly@>pzV$", "1CP>~<[|AH.l\\,!", "2hnvQg*UTzK\"sDY`JmlH", "2O-r?!#s~lW/INJT>C|eZYm(tf\\&k<$Q`{waH%*Sd", "1mp:Pcy-v{?N(U,sT;[d", "2W$s,+J{kERgmBn~:_Ic!ZPFNxO", "2yw:}UN^ix.&C!m~A(<qTVnF+>uQoabIJH\\G", "2&;CpEdoBw~b(\\sV+aZ}D^@Sfi/#)rNhHeG?Pj\"=<y", "1Es>?INp&_iyPoht<:u[ZqRwv`K%=zb!G]DQ+C", "1!<rYsQnG:L+(E?IX.=Zk~bc)OptH\"ve}[RVzd\\", "2@h~zlGiAOZe:\\{'xk.=cRNm&E>B]n,*(FwHUv", "2TBigr`+y.?t'lD%Ke$;J/q*LS{k!xuw#zOVb|}", "2dzIZq:HSa(nu|{E", "1taZ](LXP_\\<o@wM*}$:?'BhmSfD)zR&%FsG-~I=", "2CJ'$]!:}Ea>", "1@d;uhAWTc/xiX`_^PqVmHEkg'!v*$If,w>Jl<", "1k~GE]zD!jL()TK>U:rmx", "1-aipMoqS?^JKZRy;DIh#:dgCk%AGcOV|Q/bzw@et(jX", "1x_/*)ahTni]fJtQpN=(;C{Pr.wdySLo"}; //*/

@@ -130,31 +130,28 @@ public class Graduation {
       }
     }
 
-    int c = 0;
     classes = new char[C];
     reqGraph = new boolean[n][C];
 
-    List<Character> takenList = new ArrayList<Character>(taken.keySet());
-    Collections.sort(takenList);
-    for (int i = 0; i < takenList.size(); i++) {
-      char ch = takenList.get(i);
+    int c = 0;
+    c = addClasses(taken, c);
+    c = addClasses(chars, c);
+  }
+
+  int addClasses(HashMap<Character, ArrayList<Integer>> map, int c) {
+    List<Character> list = new ArrayList<Character>(map.keySet());
+    Collections.sort(list);
+
+    for (int i = 0; i < list.size(); i++) {
+      char ch = list.get(i);
       classes[c] = ch;
-      for (int j = 0; j < taken.get(ch).size(); j++) {
-        reqGraph[taken.get(ch).get(j)][c] = true;
+      for (int j = 0; j < map.get(ch).size(); j++) {
+        reqGraph[map.get(ch).get(j)][c] = true;
       }
       c++;
     }
 
-    List<Character> charList = new ArrayList<Character>(chars.keySet());
-    Collections.sort(charList);
-    for (int i = 0; i < charList.size(); i++) {
-      char ch = charList.get(i);
-      classes[c] = ch;
-      for (int j = 0; j < chars.get(ch).size(); j++) {
-        reqGraph[chars.get(ch).get(j)][c] = true;
-      }
-      c++;
-    }
+    return c;
   }
 
   private void debug(Object... os) {
