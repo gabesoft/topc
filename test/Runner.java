@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PowerDigitTest.class })
+@Suite.SuiteClasses({ MarbleMachineTest.class })
 public class Runner {
 }
