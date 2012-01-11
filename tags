@@ -31,6 +31,7 @@ Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
 Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
+DAMatrix	src/graph/DrivingAround.java	/^class DAMatrix {$/;"	c
 DELTA	src/math/BenfordsLaw.java	/^  static public final double DELTA = 0.000001;$/;"	f	class:BenfordsLaw
 DELTA	test/easy/BagOfDevouringTest.java	/^  double DELTA = 1.0e-09;$/;"	f	class:BagOfDevouringTest
 DELTA	test/easy/TableSeatingTest.java	/^  final static double DELTA = 1e-9;$/;"	f	class:TableSeatingTest
@@ -46,6 +47,7 @@ DOWN_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int DOWN_RIGHT 
 DirectoryTree	src/stringm/DirectoryTree.java	/^public class DirectoryTree {$/;"	c
 Disaster	src/math/Disaster.java	/^public class Disaster {$/;"	c
 DivisorInc	src/graph/DivisorInc.java	/^public class DivisorInc {$/;"	c
+DrivingAround	src/graph/DrivingAround.java	/^public class DrivingAround {$/;"	c
 DungeonEscape	src/graph/DungeonEscape.java	/^public class DungeonEscape {$/;"	c
 DungeonEscapeTest	test/graph/DungeonEscapeTest.java	/^public class DungeonEscapeTest {$/;"	c
 EMPTY	src/graph/RevolvingDoors.java	/^  static public final int EMPTY = -1;$/;"	f	class:RevolvingDoors
@@ -1130,6 +1132,7 @@ debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"
 debug	src/geometry/RemoteRover.java	/^  private void debug(Object... os) {$/;"	m	class:RemoteRover	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
 debug	src/graph/DivisorInc.java	/^  private void debug(Object... os) {$/;"	m	class:DivisorInc	file:
+debug	src/graph/DrivingAround.java	/^  private void debug(Object... os) {$/;"	m	class:DrivingAround	file:
 debug	src/graph/DungeonEscape.java	/^  private void debug(Object... os) {$/;"	m	class:DungeonEscape	file:
 debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
 debug	src/graph/Graduation.java	/^  private void debug(Object... os) {$/;"	m	class:Graduation	file:
@@ -1280,6 +1283,7 @@ move	src/graph/RoboCourier.java	/^    public Node[] move(String to) {$/;"	m	clas
 moveBlack	src/recursion/AntiChess.java	/^  int moveBlack(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
 moveWhite	src/recursion/AntiChess.java	/^  int moveWhite(int[][] game, int taken, int qbest) {$/;"	m	class:AntiChess
 mul	src/dynamic/P8XCoinChange.java	/^  public static long[][] mul(long[][] a, long[][] b, long mod) {$/;"	m	class:Matrix
+mul	src/graph/DrivingAround.java	/^  public static long[][] mul(long[][] a, long[][] b) {$/;"	m	class:DAMatrix
 n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
@@ -1293,6 +1297,7 @@ node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixM
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
 numTwists	src/recursion/RedBlack.java	/^  public int numTwists(int[] keys) {$/;"	m	class:RedBlack
 numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
+numberOfWays	src/graph/DrivingAround.java	/^  public int numberOfWays(String[] adj, int start, int finish, int time) {$/;"	m	class:DrivingAround
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
@@ -1311,6 +1316,7 @@ permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	cl
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
 pow	src/dynamic/P8XCoinChange.java	/^  public static long[][] pow(long[][] m, long k, long mod) {$/;"	m	class:Matrix
+pow	src/graph/DrivingAround.java	/^  public static long[][] pow(long[][] m, long k) {$/;"	m	class:DAMatrix
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 prime	src/easy/PrimePalindromic.java	/^  boolean[] prime;$/;"	f	class:PrimePalindromic
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
@@ -1450,6 +1456,7 @@ topc.geometry	src/geometry/PackingShapes.java	/^package topc.geometry;$/;"	p
 topc.geometry	src/geometry/RemoteRover.java	/^package topc.geometry;$/;"	p
 topc.graph	src/graph/Circuits.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DivisorInc.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/DrivingAround.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/DungeonEscape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Escape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Graduation.java	/^package topc.graph;$/;"	p
@@ -1514,6 +1521,7 @@ tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width,
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 unit	src/dynamic/P8XCoinChange.java	/^  public static long[][] unit(int n) {$/;"	m	class:Matrix
+unit	src/graph/DrivingAround.java	/^  public static long[][] unit(int n) {$/;"	m	class:DAMatrix
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
