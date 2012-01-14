@@ -17,7 +17,6 @@ public class RadarGuns {
     this.cap  = fineCap;
     this.cost = new int[n][n];
 
-    int maxCost = 0;
     for (int i = 0; i < n; i++) {
       for (int j = 0; j < n; j++) {
         int t1 = enterTimes[i];
@@ -28,7 +27,6 @@ public class RadarGuns {
         } else {
           cost[i][j] = -1;
         }
-        maxCost = Math.max(maxCost, cost[i][j]);
       }
     }
 
