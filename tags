@@ -68,6 +68,8 @@ Graduation	src/graph/Graduation.java	/^public class Graduation {$/;"	c
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
 Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
+Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
+Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
 IntegerList	src/graph/Parking.java	/^  class IntegerList extends LinkedList<Integer> { }$/;"	c	class:Parking
 Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(String[] values) {$/;"	m	class:WeightedIntervalScheduling.Interval
@@ -163,6 +165,7 @@ R	src/sorting/FloatingMedian.java	/^  int R = 17;$/;"	f	class:FloatingMedian
 RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
 RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
+RadarGuns	src/dynamic/RadarGuns.java	/^public class RadarGuns {$/;"	c
 Rationalization	src/easy/Rationalization.java	/^public class Rationalization {$/;"	c
 RedBlack	src/recursion/RedBlack.java	/^public class RedBlack {$/;"	c
 RemoteRover	src/geometry/RemoteRover.java	/^public class RemoteRover {$/;"	c
@@ -171,6 +174,7 @@ RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDo
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
 S	src/dynamic/MiniPaint.java	/^  int S;    \/\/ max strokes$/;"	f	class:MiniPaint
+S	src/dynamic/RadarGuns.java	/^  boolean[] S;$/;"	f	class:Hungarian
 S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
 SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
 START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
@@ -185,6 +189,7 @@ StringComparator	src/dp/ShortPalindromes.java	/^  class StringComparator impleme
 StripePainter	src/dp/StripePainter.java	/^public class StripePainter {$/;"	c
 StripePainterTest	test/dp/StripePainterTest.java	/^public class StripePainterTest {$/;"	c
 T	src/dp/GameOfLifeDivOne.java	/^  int T;$/;"	f	class:GameOfLifeDivOne
+T	src/dynamic/RadarGuns.java	/^  boolean[] T;$/;"	f	class:Hungarian
 TableSeating	src/easy/TableSeating.java	/^public class TableSeating  {$/;"	c
 TableSeatingTest	test/easy/TableSeatingTest.java	/^public class TableSeatingTest  {$/;"	c
 TallPeople	src/easy/TallPeople.java	/^public class TallPeople  {$/;"	c
@@ -255,6 +260,7 @@ _weight	src/dp/KiloManX.java	/^  int[][] _weight;$/;"	f	class:KiloManX
 _weight	src/dp/WeightedIntervalScheduling.java	/^    int _weight;$/;"	f	class:WeightedIntervalScheduling.Interval
 _word	src/graph/SmartWordToy.java	/^    String _word;$/;"	f	class:SmartWordToy.Word
 add	src/dp/ShortPalindromes.java	/^  void add(int i, int j, int k, String str) {$/;"	m	class:ShortPalindromes
+addToTree	src/dynamic/RadarGuns.java	/^  void addToTree(int x, int parentx) {$/;"	m	class:Hungarian
 addWeights	src/dp/KiloManX.java	/^  int[] addWeights(int[] weight, int boss) {$/;"	m	class:KiloManX
 addb	src/easy/MedalTable.java	/^    public void addb() { _b++; }$/;"	m	class:MedalTable.Country
 addg	src/easy/MedalTable.java	/^    public void addg() { _g++; }$/;"	m	class:MedalTable.Country
@@ -266,6 +272,7 @@ arrayCopy	src/graph/SmartWordToy.java	/^    char[] arrayCopy(char[] source) {$/;
 arrayMax	src/easy/TallPeople.java	/^  int arrayMax(int[] array) {$/;"	m	class:TallPeople
 arrayMin	src/easy/TallPeople.java	/^  int arrayMin(int[] array) {$/;"	m	class:TallPeople
 arrsum	src/dp/QuickSums.java	/^  int arrsum(int[] nums) {$/;"	m	class:QuickSums
+augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouring = new BagOfDevouring();$/;"	f	class:BagOfDevouringTest
@@ -278,6 +285,7 @@ cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	clas
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
 calc	src/geometry/RemoteRover.java	/^  double calc(int index, double offset) {$/;"	m	class:RemoteRover
 canTakeQueen	src/recursion/AntiChess.java	/^  boolean canTakeQueen(int[][] game) {$/;"	m	class:AntiChess
+cap	src/dynamic/RadarGuns.java	/^  int cap;$/;"	f	class:RadarGuns
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
 case0	test/dp/BadNeighborsTest.java	/^  public void case0() {$/;"	m	class:BadNeighborsTest
 case0	test/dp/KiloManX2Test.java	/^  public void case0() {	$/;"	m	class:KiloManX2Test
@@ -1090,6 +1098,8 @@ copyGame	src/recursion/AntiChess.java	/^  int[][] copyGame(int[][] game) {$/;"	m
 copyGame	src/recursion/AntiChess.java	/^  int[][] copyGame(int[][] game, int j) {$/;"	m	class:AntiChess
 copyMaze	src/graph/RevolvingDoors.java	/^    public int[][] copyMaze() {$/;"	m	class:RevolvingDoors.Maze
 cost	src/dp/KiloManX.java	/^    public int cost;$/;"	f	class:KiloManX.Node
+cost	src/dynamic/RadarGuns.java	/^  int[][] cost;$/;"	f	class:Hungarian
+cost	src/dynamic/RadarGuns.java	/^  int[][] cost;$/;"	f	class:RadarGuns
 cost	src/graph/Escape.java	/^    public int cost;$/;"	f	class:Escape.Node
 cost	src/graph/Escape.java	/^  int[][] cost;$/;"	f	class:Escape
 cost	src/graph/IslandFerries.java	/^    public int cost;$/;"	f	class:IslandFerries.Node
@@ -1124,6 +1134,8 @@ debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	c
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
+debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
+debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
@@ -1180,6 +1192,7 @@ fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	cl
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
+findMatch	src/dynamic/RadarGuns.java	/^  boolean findMatch(int i, int cutoff, int[] match, boolean[] seen) {$/;"	m	class:RadarGuns
 findPath	src/graph/Graduation.java	/^  int findPath() {$/;"	m	class:Graduation
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 firstDigit	src/math/BenfordsLaw.java	/^  public static int firstDigit(int n) {$/;"	m	class:BenfordsLaw
@@ -1203,12 +1216,14 @@ getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/
 getLevel	src/graph/RevolvingDoors.java	/^    public int getLevel() {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:SmartWordToy.Word
 getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	class:RevolvingDoors.Maze
+getMin	src/dynamic/RadarGuns.java	/^  int getMin() {$/;"	m	class:RadarGuns
 getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
 getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
 getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
 getPrimes	src/easy/PrimePalindromic.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:PrimePalindromic
+getRange	src/dynamic/RadarGuns.java	/^  public int[] getRange(int[] enterTimes, int[] exitTimes, int speedTime, int fineCap) {$/;"	m	class:RadarGuns
 getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
 getStart	src/dp/WeightedIntervalScheduling.java	/^    public int getStart() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getStart	src/graph/RevolvingDoors.java	/^    public int getStart() {$/;"	m	class:RevolvingDoors.Maze
@@ -1234,7 +1249,10 @@ id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
+initLabels	src/dynamic/RadarGuns.java	/^  void initLabels() {$/;"	m	class:Hungarian
+initMatch	src/dynamic/RadarGuns.java	/^  void initMatch() {$/;"	m	class:Hungarian
 initMatrix	src/dynamic/P8XCoinChange.java	/^  long[][] initMatrix(int n, int start) {$/;"	m	class:P8XCoinChange
+initSlack	src/dynamic/RadarGuns.java	/^  void initSlack(int root) {$/;"	m	class:Hungarian
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 insert	src/sorting/FloatingMedian.java	/^  void insert(int x) {$/;"	m	class:FloatingMedian
 isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
@@ -1251,6 +1269,8 @@ leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageCha
 lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
+lx	src/dynamic/RadarGuns.java	/^  int[] lx;       \/\/ x labels$/;"	f	class:Hungarian
+ly	src/dynamic/RadarGuns.java	/^  int[] ly;       \/\/ y labels$/;"	f	class:Hungarian
 m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
@@ -1258,8 +1278,10 @@ match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
 maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$/;"	m	class:MiniPaint
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
+maxMatch	src/dynamic/RadarGuns.java	/^  int maxMatch;$/;"	f	class:Hungarian
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
+maxWeightMatch	src/dynamic/RadarGuns.java	/^  public int maxWeightMatch() {$/;"	m	class:Hungarian
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
@@ -1286,6 +1308,8 @@ mul	src/dynamic/P8XCoinChange.java	/^  public static long[][] mul(long[][] a, lo
 mul	src/graph/DrivingAround.java	/^  public static long[][] mul(long[][] a, long[][] b) {$/;"	m	class:DAMatrix
 n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
+n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:Hungarian
+n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:RadarGuns
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/geometry/RemoteRover.java	/^  int n;$/;"	f	class:RemoteRover
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
@@ -1307,11 +1331,13 @@ outside	src/graph/Escape.java	/^    public boolean outside() {$/;"	m	class:Escap
 outside	src/graph/PathFinding.java	/^  boolean outside(int x, int y) {$/;"	m	class:PathFinding
 paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
 palindromic	src/easy/PrimePalindromic.java	/^  boolean palindromic(int n) {$/;"	m	class:PrimePalindromic
+parent	src/dynamic/RadarGuns.java	/^  int[] parent;   \/\/ used for storing alternating paths$/;"	f	class:Hungarian
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 parse	src/stringm/DirectoryTree.java	/^  int parse(Node parent, int index, int start) {$/;"	m	class:DirectoryTree
 partition	src/easy/FairWorkload.java	/^  int partition(int[] input, int s, int k) {$/;"	m	class:FairWorkload
 paths	src/stringm/DirectoryTree.java	/^  String[][] paths;$/;"	f	class:DirectoryTree
+perfectMatch	src/dynamic/RadarGuns.java	/^  boolean perfectMatch(int cutoff) {$/;"	m	class:RadarGuns
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
@@ -1352,6 +1378,8 @@ setp	src/dp/WeightedIntervalScheduling.java	/^    public void setp(int pval) {$/
 shortest	src/dp/ShortPalindromes.java	/^  public String shortest(String base) {$/;"	m	class:ShortPalindromes
 skill	src/math/KingOfTheCourt.java	/^  int[] skill;$/;"	f	class:KingOfTheCourt
 skip	src/dp/AvoidRoads.java	/^  boolean skip(int i, int j) {$/;"	m	class:AvoidRoads
+slack	src/dynamic/RadarGuns.java	/^  int[] slack ;$/;"	f	class:Hungarian
+slackx	src/dynamic/RadarGuns.java	/^  int[] slackx;   \/\/ l(slackx[y]) + l(y) - w(slackx[y], y) = slack[y]$/;"	f	class:Hungarian
 solve	src/bkt/BridgeCrossing.java	/^  void solve(State s) {$/;"	m	class:BridgeCrossing
 solve	src/dp/KiloManX.java	/^  int solve() {$/;"	m	class:KiloManX
 solve	src/dp/QuickSums.java	/^  int solve(int[] nums, int sum) {$/;"	m	class:QuickSums
@@ -1443,6 +1471,7 @@ topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
@@ -1523,6 +1552,7 @@ uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:Revol
 unit	src/dynamic/P8XCoinChange.java	/^  public static long[][] unit(int n) {$/;"	m	class:Matrix
 unit	src/graph/DrivingAround.java	/^  public static long[][] unit(int n) {$/;"	m	class:DAMatrix
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
+updateLabels	src/dynamic/RadarGuns.java	/^  void updateLabels() {$/;"	m	class:Hungarian
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
@@ -1540,6 +1570,7 @@ x	src/graph/Parking.java	/^    public final int x;$/;"	f	class:Parking.Node
 x	src/graph/RoboCourier.java	/^    public int x;$/;"	f	class:RoboCourier.Node
 xa	src/graph/PathFinding.java	/^    public int xa;$/;"	f	class:PathFinding.Node
 xb	src/graph/PathFinding.java	/^    public int xb;$/;"	f	class:PathFinding.Node
+xmatch	src/dynamic/RadarGuns.java	/^  int[] xmatch;   \/\/ xmatch[x] = vertex matched with x$/;"	f	class:Hungarian
 y	src/graph/DungeonEscape.java	/^    public final int y;$/;"	f	class:DungeonEscape.Node
 y	src/graph/Escape.java	/^    public int y;$/;"	f	class:Escape.Node
 y	src/graph/GrafixMask.java	/^    public int y = 0;$/;"	f	class:GrafixMask.Node
@@ -1547,3 +1578,4 @@ y	src/graph/Parking.java	/^    public final int y;$/;"	f	class:Parking.Node
 y	src/graph/RoboCourier.java	/^    public int y;$/;"	f	class:RoboCourier.Node
 ya	src/graph/PathFinding.java	/^    public int ya;$/;"	f	class:PathFinding.Node
 yb	src/graph/PathFinding.java	/^    public int yb;$/;"	f	class:PathFinding.Node
+ymatch	src/dynamic/RadarGuns.java	/^  int[] ymatch;   \/\/ ymatch[y] = vertex matched with y$/;"	f	class:Hungarian
