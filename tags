@@ -61,6 +61,7 @@ FibTest	test/easy/FibTest.java	/^public class FibTest {$/;"	c
 FloatingMedian	src/sorting/FloatingMedian.java	/^public class FloatingMedian {$/;"	c
 FlowerGarden	src/dp/FlowerGarden.java	/^public class FlowerGarden {$/;"	c
 FlowerGardenTest	test/dp/FlowerGardenTest.java	/^public class FlowerGardenTest {$/;"	c
+FoxAverageSequence	src/dynamic/FoxAverageSequence.java	/^public class FoxAverageSequence {$/;"	c
 GameOfLifeDivOne	src/dp/GameOfLifeDivOne.java	/^public class GameOfLifeDivOne {$/;"	c
 GameOfLifeDivOneTest	test/dp/GameOfLifeDivOneTest.java	/^public class GameOfLifeDivOneTest {$/;"	c
 GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
@@ -97,6 +98,7 @@ M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	class:Hangman42
 M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
+MOD	src/dynamic/FoxAverageSequence.java	/^  static public final long MOD = 1000000007;$/;"	f	class:FoxAverageSequence
 MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -1132,6 +1134,7 @@ debug	src/dp/WeightedIntervalScheduling.java	/^  void debug(Object...os) {$/;"	m
 debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
 debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
+debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
@@ -1208,6 +1211,9 @@ getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {
 getAdjCells	src/graph/RevolvingDoors.java	/^    public int[] getAdjCells(int position) {$/;"	m	class:RevolvingDoors.Maze
 getBelow	src/graph/RevolvingDoors.java	/^    public int getBelow(int position) {$/;"	m	class:RevolvingDoors.Maze
 getBits	src/easy/TableSeating.java	/^  public int[] getBits(int n, int size) {$/;"	m	class:TableSeating
+getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount() {$/;"	m	class:FoxAverageSequence
+getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount(int k, int sum, int last, int lt) {$/;"	m	class:FoxAverageSequence
+getCountDP	src/dynamic/FoxAverageSequence.java	/^  long getCountDP() {$/;"	m	class:FoxAverageSequence
 getEnd	src/dp/WeightedIntervalScheduling.java	/^    public int getEnd() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:RevolvingDoors.Maze
 getExpected	src/easy/TableSeating.java	/^  public double getExpected(int numTables, int[] probValues) {$/;"	m	class:TableSeating
@@ -1284,6 +1290,7 @@ maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String
 maxWeightMatch	src/dynamic/RadarGuns.java	/^  public int maxWeightMatch() {$/;"	m	class:Hungarian
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
+memo	src/dynamic/FoxAverageSequence.java	/^  long[][][][] memo;$/;"	f	class:FoxAverageSequence
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
@@ -1374,6 +1381,7 @@ seatings	src/easy/TableSeating.java	/^  double[] seatings;$/;"	f	class:TableSeat
 seen	src/graph/KiloManX3.java	/^  boolean[] seen;$/;"	f	class:KiloManX3
 seen	src/graph/PathFinding.java	/^  int[][][][] seen;$/;"	f	class:PathFinding
 seen	src/graph/RoboCourier.java	/^  HashSet<String> seen;$/;"	f	class:RoboCourier
+seq	src/dynamic/FoxAverageSequence.java	/^  int[] seq;$/;"	f	class:FoxAverageSequence
 setp	src/dp/WeightedIntervalScheduling.java	/^    public void setp(int pval) {$/;"	m	class:WeightedIntervalScheduling.Interval
 shortest	src/dp/ShortPalindromes.java	/^  public String shortest(String base) {$/;"	m	class:ShortPalindromes
 skill	src/math/KingOfTheCourt.java	/^  int[] skill;$/;"	f	class:KingOfTheCourt
@@ -1436,6 +1444,7 @@ testShouldEncodeDecode	test/graph/RevolvingDoorsTest.java	/^  public void testSh
 testShouldGetBits	test/easy/TableSeatingTest.java	/^  public void testShouldGetBits() {$/;"	m	class:TableSeatingTest
 testShouldGetForbidden	test/graph/SmartWordToyTest.java	/^  public void testShouldGetForbidden() {$/;"	m	class:SmartWordToyTest
 theCount	src/dp/GameOfLifeDivOne.java	/^  public long theCount(String init, int t, int k) {$/;"	m	class:GameOfLifeDivOne
+theCount	src/dynamic/FoxAverageSequence.java	/^  public int theCount(int[] seq) {$/;"	m	class:FoxAverageSequence
 ticket	src/graph/IslandFerries.java	/^    public int ticket(int ferry) {$/;"	m	class:IslandFerries.Node
 ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:IslandFerries.Node
 ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
@@ -1469,6 +1478,7 @@ topc.dp	src/dp/WeightedIntervalScheduling.java	/^package topc.dp;$/;"	p
 topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
 topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p

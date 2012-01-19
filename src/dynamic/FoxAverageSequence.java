@@ -14,15 +14,71 @@ public class FoxAverageSequence {
 
   public int theCount(int[] seq) {
     this.seq = seq;
-    this.memo = new long[seq.length][40 * seq.length][40 + 1][];
-    for (int i = 0; i < memo.length; i++) {
-      for (int j = 0; j < memo[0].length; j++) {
-        for (int k = 0; k < memo[0][0].length; k++) {
-          memo[i][j][k] = new long[] { -1, -1 };
+    //this.memo = new long[seq.length][40 * seq.length][40 + 1][];
+
+    //for (int i = 0; i < memo.length; i++) {
+    //for (int j = 0; j < memo[0].length; j++) {
+    //for (int k = 0; k < memo[0][0].length; k++) {
+    //memo[i][j][k] = new long[] { -1, -1 };
+    //}
+    //}
+    //}
+
+    //debug(getCountDP());
+
+    return (int)getCountDP();
+  }
+
+  long getCountDP() {
+    int maxl = 40 + 1;
+    int maxs = 1;
+    //int n = seq.length;
+
+    for (int i = 0; i < seq.length; i++) {
+      maxs += (seq[i] == -1) ? 40 : seq[i];
+    }
+
+    long[][][][] dp = new long[seq.length][maxs][maxl][2];
+
+    // k = 0
+    int from  = (seq[0] == -1) ? 0 : seq[0];
+    int to    = (seq[0] == -1) ? maxl : seq[0] + 1;
+    for (int last = from; last < to; last++) {
+      dp[0][last][last][1] = 1;
+    }
+
+    // k > 0
+    for (int k = 1; k < dp.length; k++) {
+      for (int sum = 0; sum < maxs; sum++) {
+        from  = (seq[k] == -1) ? 0 : seq[k];
+        to    = (seq[k] == -1) ? maxl : seq[k] + 1;
+        for (int last = from; last < to; last++) {
+          if (last > (sum - last) / k) { break; }
+
+          for (int prev = 0; prev < last + 1; prev++) {
+            dp[k][sum][last][1] += dp[k - 1][sum - last][prev][0];
+            dp[k][sum][last][1] += dp[k - 1][sum - last][prev][1];
+            dp[k][sum][last][1] %= MOD;
+          }
+
+          for (int prev = last + 1; prev < maxl; prev++) {
+            dp[k][sum][last][0] += dp[k - 1][sum - last][prev][1];
+            dp[k][sum][last][1] %= MOD;
+          }
         }
       }
     }
-    return (int)getCount();
+
+    long res = 0;
+    for (int sum = 0; sum < maxs; sum++) {
+      for (int last = 0; last < maxl; last++) {
+        res += dp[seq.length - 1][sum][last][0];
+        res += dp[seq.length - 1][sum][last][1];
+        res %= MOD;
+      }
+    }
+
+    return res;
   }
 
   long getCount() {
@@ -31,8 +87,7 @@ public class FoxAverageSequence {
     } else {
       long res = 0;
       for (int i = 0; i < 41; i++) {
-        long cnt = getCount(1, i, i, 1);
-        res += cnt % MOD;
+        res += getCount(1, i, i, 1) % MOD;
         res %= MOD;
       }
       return res;
@@ -44,27 +99,23 @@ public class FoxAverageSequence {
     if (memo[k][sum][last][lt] > -1) { return memo[k][sum][last][lt]; }
 
     int avg = sum / k;
-    if (seq[k] > -1) {
-      if (seq[k] > avg) { return 0; }
-      if (lt == 1 || (lt == 0 && seq[k] >= last)) {
-        int nextlt = lt == 0 ? 1 : (seq[k] < last) ? 0 : 1;
-        memo[k][sum][last][lt] = getCount(k + 1, sum + seq[k], seq[k], nextlt) % MOD;
-        return memo[k][sum][last][lt];
-      } else {
-        return 0;
-      }
-    }
-
     memo[k][sum][last][lt] = 0;
-    if (lt == 1) {
-      for (int i = 0; i < last; i++) {
-        memo[k][sum][last][lt] += getCount(k + 1, sum + i, i, 0) % MOD;
+
+    if (seq[k] > -1) {
+
+      int i = seq[k];
+      if (i <= avg && (lt == 1 || i >= last)) {
+        memo[k][sum][last][lt] = getCount(k + 1, sum + i, i, (i < last) ? 0 : 1) % MOD;
+      }  
+
+    } else {
+
+      int start = (lt == 1) ? 0 : last;
+      for (int i = start; i < avg + 1; i++) {
+        memo[k][sum][last][lt] += getCount(k + 1, sum + i, i, (i < last) ? 0 : 1) % MOD;
         memo[k][sum][last][lt] %= MOD;
       }
-    }
-    for (int i = last; i < avg + 1; i++) {
-      memo[k][sum][last][lt] += getCount(k + 1, sum + i, i, 1) % MOD;
-      memo[k][sum][last][lt] %= MOD;
+
     }
 
     return memo[k][sum][last][lt];
