@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FoxAverageSequenceTest.class })
+@Suite.SuiteClasses({ AdjacentSwapsTest.class })
 public class Runner {
 }
