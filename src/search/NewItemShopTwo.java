@@ -30,39 +30,22 @@ public class NewItemShopTwo {
       }
     }
 
-    double exp = 0.0;
-    double p1 = 1.0;
-    double p2 = 1.0;
-    int t1 = 0;
-    int t2 = 0;
-
-    double[] p = new double[2];
-    int[] t = new int[2];
+    double exp  = 0.0;
+    double[] p  = new double[2];
+    int[] t     = new int[2];
 
     Arrays.fill(p, 1.0);
 
     for (int h = 0; h < H; h++) {
       for (int c = 0; c < customers.length; c++) {
+        int o = (c + 1) & 1;
         if (time[c][t[c]] == h) {
-          exp += (prob[c][t[c]] / p[c]) * p[c] * p[(c + 1) & 1] * Math.max(cost[c][t[c]], getExpected((c + 1) & 1, t[(c + 1) & 1]));
+          exp += (prob[c][t[c]] / p[c]) * p[c] * p[o] * Math.max(cost[c][t[c]], getExpected(o, t[o]));
           p[c] -= prob[c][t[c]];
           t[c] += 1;
         }
       }
     }
-
-    //for (int h = 0; h < H; h++) {
-      //if (time[0][t1] == h) {
-        //exp += (prob[0][t1] / p1) * p1 * p2 * Math.max(cost[0][t1], getExpected(1, t2));
-        //p1 -= prob[0][t1];
-        //t1 += 1;
-      //}
-      //else if (time[1][t2] == h) {
-        //exp += (prob[1][t2] / p2) * p1 * p2 * Math.max(cost[1][t2], getExpected(0, t1));
-        //p2 -= prob[1][t2];
-        //t2 += 1;
-      //}
-    //}
 
     return exp;
   }
