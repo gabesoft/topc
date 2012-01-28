@@ -8,37 +8,26 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=11674&rd=14762
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+526.5
 public class MagicNaming {
-  int[][] cache;
-  String name;
-
   public int maxReindeers(String magicName) {
-    name  = magicName;
-    cache = new int[magicName.length()][magicName.length()];
-    return getCount(0, 0);
-  }
+    String s = magicName;
+    int n = magicName.length();
+    int[] dp = new int[n];
 
-  int getCount(int index, int prev) {
-    if (index == name.length()) { return 0; }
-    if (cache[index][prev] > 0) { return cache[index][prev]; }
+    for (int i = n - 1; i > -1; i--) {
+      dp[i] = 1;
 
-    String p = name.substring(prev, index);
-    String s = name.substring(index, name.length());
+      for (int j = i + 1; j < n; j++) {
+        if (s.charAt(i) > s.charAt(j)) { continue; }
 
-    int best = 1;
-    for (int i = index + 1; i < name.length(); i++) {
-      if (name.charAt(i) < name.charAt(index)) { continue; }
+        String s1 = s.substring(i, j);
+        String s2 = s.substring(j, n);
+        if ((s1 + s2).compareTo(s2 + s1) > 0) { continue; }
 
-      String s1 = name.substring(index, i);
-      String s2 = name.substring(i, name.length());
-
-      boolean c1 = p.compareTo(s1) <= 0 || (p + s1).compareTo(s1 + p) < 0;
-      boolean c2 = s.compareTo(s2 + s1) <= 0;
-
-      if (c1 && c2) { best = Math.max(best, 1 + getCount(i, index)); }
+        dp[i] = Math.max(dp[i], 1 + dp[j]);
+      }
     }
 
-    cache[index][prev] = best;
-    return best;
+    return dp[0];
   }
 
   private void debug(Object... os) {
