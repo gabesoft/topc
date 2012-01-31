@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MagicNamingTest.class })
+@Suite.SuiteClasses({ SmallBricks31Test.class })
 public class Runner {
 }
