@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SRMSystemTestPhaseTest.class })
+@Suite.SuiteClasses({ CoinReversingTest.class })
 public class Runner {
 }
