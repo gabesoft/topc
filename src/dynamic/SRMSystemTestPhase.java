@@ -19,12 +19,52 @@ public class SRMSystemTestPhase {
     n = description.length;
     desc = description;
     memo = new long[n][4][4];
-    return (int)solve(0, 3, 0);
+
+    long[][][] dp = new long[n + 1][4][4];
+    for (int coder = n - 1; coder > -1; coder--) {
+      boolean s0 = description[coder].charAt(0) == 'Y';
+      boolean s1 = description[coder].charAt(1) == 'Y';
+      boolean s2 = description[coder].charAt(2) == 'Y';
+
+      for (int i = (s0 ? 1 : 0); i < (s0 ? 4 : 1); i++) {
+        for (int j = (s1 ? 1 : 0); j < (s1 ? 4 : 1); j++) {
+          for (int k = (s2 ? 1 : 0); k < (s2 ? 4 : 1); k++) {
+
+            int passed     = (i == P ? 1 : 0) + (j == P ? 1 : 0) + (k == P ? 1 : 0);
+            int challenged = (i == C ? 1 : 0) + (j == C ? 1 : 0) + (k == C ? 1 : 0);
+
+            if (coder == n - 1) {
+              dp[coder][passed][challenged] += 1;
+              continue;
+            } 
+
+            for (int p = 0; p < passed + 1; p++) {
+              for (int c = (p == passed) ? challenged : 0; c < 4; c++) {
+                dp[coder][passed][challenged] += dp[coder + 1][p][c];
+              }
+            }
+
+            dp[coder][passed][challenged] %= MOD;
+          }
+        }
+      }
+    }
+
+    int sum = 0;
+    for (int i = 0; i < 4; i++) {
+      for (int j = 0; j < 4; j++) {
+        sum += dp[0][i][j];
+        sum %= MOD;
+      }
+    }
+
+    assert solve(0, 3, 0) == sum : "results not equal";
+    return sum;
   }
 
   long solve(int index, int passed, int challenged) {
     if (index == n) { return 1; }
-    if (memo[index][passed][challenged] > 0) { return memo[index][passed][challenged] ; }
+    if (memo[index][passed][challenged] > 0) { return memo[index][passed][challenged]; }
 
     long sum = 0;
     boolean s0 = desc[index].charAt(0) == 'Y';
@@ -39,11 +79,12 @@ public class SRMSystemTestPhase {
           int c = (i == C ? 1 : 0) + (j == C ? 1 : 0) + (k == C ? 1 : 0);
 
           if (p < passed) {
-            sum += 1 * solve(index + 1, p, c);
+            sum += solve(index + 1, p, c);
           }
           if (p == passed && c >= challenged) {
-            sum += 1 * solve(index + 1, p, c);
+            sum += solve(index + 1, p, c);
           }
+
         }
       }
     }
