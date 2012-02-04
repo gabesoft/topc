@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ CoinReversingTest.class })
+@Suite.SuiteClasses({ NimTest.class })
 public class Runner {
 }

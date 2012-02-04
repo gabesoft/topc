@@ -73,6 +73,7 @@ Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
+INV2	src/dynamic/Nim.java	/^  long INV2;$/;"	f	class:Nim
 IntegerList	src/graph/Parking.java	/^  class IntegerList extends LinkedList<Integer> { }$/;"	c	class:Parking
 Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(String[] values) {$/;"	m	class:WeightedIntervalScheduling.Interval
 Interval	src/dp/WeightedIntervalScheduling.java	/^    public Interval(int start, int end, int weight) {$/;"	m	class:WeightedIntervalScheduling.Interval
@@ -89,6 +90,7 @@ KiloManX3	src/graph/KiloManX3.java	/^public class KiloManX3 {$/;"	c
 KiloManX3Test	test/graph/KiloManX3Test.java	/^public class KiloManX3Test {$/;"	c
 KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
 KingOfTheCourt	src/math/KingOfTheCourt.java	/^public class KingOfTheCourt {$/;"	c
+L	src/dynamic/Nim.java	/^  int L;$/;"	f	class:Nim
 LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
@@ -100,6 +102,7 @@ M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	cl
 M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 MOD	src/dynamic/FoxAverageSequence.java	/^  static public final long MOD = 1000000007;$/;"	f	class:FoxAverageSequence
+MOD	src/dynamic/Nim.java	/^  static final long MOD = 1000000007L;$/;"	f	class:Nim
 MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -113,6 +116,7 @@ MiniPaintTest	test/dynamic/MiniPaint2Test.java	/^public class MiniPaintTest {$/;
 MiniPaintTest	test/dynamic/MiniPaintTest.java	/^public class MiniPaintTest {$/;"	c
 N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
 N	src/dynamic/MiniPaint.java	/^  int N;    \/\/ row count$/;"	f	class:MiniPaint
+N	src/dynamic/Nim.java	/^  int N;$/;"	f	class:Nim
 N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
 N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
 N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
@@ -122,6 +126,7 @@ N	src/graph/Parking.java	/^  int N;$/;"	f	class:Parking
 N	src/math/Disaster.java	/^  int N;$/;"	f	class:Disaster
 N	src/math/Hangman42.java	/^  int N;    \/\/ number of words$/;"	f	class:Hangman42
 N	src/math/KingOfTheCourt.java	/^  int N;$/;"	f	class:KingOfTheCourt
+Nim	src/dynamic/Nim.java	/^public class Nim {$/;"	c
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
 Node	src/dynamic/MiniPaint.java	/^    public Node(int totPainted, int row, int curStrokes, int totStrokes) {$/;"	m	class:MiniPaint.Node
@@ -1111,6 +1116,7 @@ cost	src/graph/KiloManX3.java	/^    public int cost;$/;"	f	class:KiloManX3.Node
 cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.Node
 costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+count	src/dynamic/Nim.java	/^  public int count(int K, int L) {$/;"	m	class:Nim
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
 countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
@@ -1138,6 +1144,7 @@ debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	c
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
+debug	src/dynamic/Nim.java	/^  private void debug(Object... os) {$/;"	m	class:Nim	file:
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
 debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
@@ -1231,6 +1238,7 @@ getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }
 getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
 getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
 getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
+getPrimes	src/dynamic/Nim.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:Nim
 getPrimes	src/easy/PrimePalindromic.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:PrimePalindromic
 getRange	src/dynamic/RadarGuns.java	/^  public int[] getRange(int[] enterTimes, int[] exitTimes, int speedTime, int fineCap) {$/;"	m	class:RadarGuns
 getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1352,6 +1360,7 @@ perfectMatch	src/dynamic/RadarGuns.java	/^  boolean perfectMatch(int cutoff) {$/
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
 pic	src/dynamic/MiniPaint.java	/^  byte[][] pic;$/;"	f	class:MiniPaint
 populateClinched	src/greedy/MLBRecord.java	/^  void populateClinched(int[] status) {$/;"	m	class:MLBRecord
+pow	src/dynamic/Nim.java	/^  long pow(long x, long y) {$/;"	m	class:Nim
 pow	src/dynamic/P8XCoinChange.java	/^  public static long[][] pow(long[][] m, long k, long mod) {$/;"	m	class:Matrix
 pow	src/graph/DrivingAround.java	/^  public static long[][] pow(long[][] m, long k) {$/;"	m	class:DAMatrix
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
@@ -1486,6 +1495,7 @@ topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/Nim.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
@@ -1561,6 +1571,7 @@ topc.test.graph	test/graph/RoboCourierTest.java	/^package topc.test.graph;$/;"	p
 topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	p
 totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:MiniPaint.Node
 totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
+transform	src/dynamic/Nim.java	/^  void transform(long[] a, int i, int j) {$/;"	m	class:Nim
 tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
 tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
@@ -1568,6 +1579,7 @@ uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:Revol
 unit	src/dynamic/P8XCoinChange.java	/^  public static long[][] unit(int n) {$/;"	m	class:Matrix
 unit	src/graph/DrivingAround.java	/^  public static long[][] unit(int n) {$/;"	m	class:DAMatrix
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
+untransform	src/dynamic/Nim.java	/^  void untransform(long[] a, int i, int j) {$/;"	m	class:Nim
 updateLabels	src/dynamic/RadarGuns.java	/^  void updateLabels() {$/;"	m	class:Hungarian
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
