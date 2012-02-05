@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ NimTest.class })
+@Suite.SuiteClasses({ PrimeCompositeGameTest.class })
 public class Runner {
 }
