@@ -153,6 +153,8 @@ Node	src/graph/RoboCourier.java	/^    public Node(int x, int y) {$/;"	m	class:Ro
 Node	src/graph/RoboCourier.java	/^    public Node(int x, int y, int dir) {$/;"	m	class:RoboCourier.Node
 Node	src/graph/RoboCourier.java	/^  class Node implements Comparable<Node> {$/;"	c	class:RoboCourier
 Node	src/math/Disaster.java	/^  class Node {$/;"	c	class:Disaster
+Node	src/recursion/PermissionTree.java	/^    public Node(int index, int parent) {$/;"	m	class:PermissionTree.Node
+Node	src/recursion/PermissionTree.java	/^  class Node {$/;"	c	class:PermissionTree
 Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
 Node	src/stringm/DirectoryTree.java	/^    public Node(String name, int index) {$/;"	m	class:DirectoryTree.Node
 Node	src/stringm/DirectoryTree.java	/^  class Node {$/;"	c	class:DirectoryTree
@@ -165,6 +167,7 @@ PackingShapes	src/geometry/PackingShapes.java	/^public class PackingShapes {$/;"
 Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
+PermissionTree	src/recursion/PermissionTree.java	/^public class PermissionTree {$/;"	c
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
@@ -287,6 +290,7 @@ bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouri
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
 buildTeams	src/greedy/MLBRecord.java	/^  void buildTeams(int[] wins) {$/;"	m	class:MLBRecord
+buildTree	src/recursion/PermissionTree.java	/^  void buildTree(String[] folders) {$/;"	m	class:PermissionTree
 c	src/graph/DivisorInc.java	/^    public final int c;$/;"	f	class:DivisorInc.Node
 cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeDivOne
 cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	class:KingOfTheCourt
@@ -1174,6 +1178,7 @@ debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
 debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	class:AntiChess	file:
+debug	src/recursion/PermissionTree.java	/^  private void debug(Object... os) {$/;"	m	class:PermissionTree	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
 debug	src/sorting/FloatingMedian.java	/^  private void debug(Object... os) {$/;"	m	class:FloatingMedian	file:
 debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
@@ -1204,6 +1209,7 @@ fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	cl
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
+findHome	src/recursion/PermissionTree.java	/^  public int[] findHome(String[] folders, String[] users) {$/;"	m	class:PermissionTree
 findMatch	src/dynamic/RadarGuns.java	/^  boolean findMatch(int i, int cutoff, int[] match, boolean[] seen) {$/;"	m	class:RadarGuns
 findPath	src/graph/Graduation.java	/^  int findPath() {$/;"	m	class:Graduation
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
@@ -1264,6 +1270,7 @@ howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
+index	src/recursion/PermissionTree.java	/^    public final int index;$/;"	f	class:PermissionTree.Node
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
 initLabels	src/dynamic/RadarGuns.java	/^  void initLabels() {$/;"	m	class:Hungarian
@@ -1352,6 +1359,7 @@ paint	src/dynamic/MiniPaint.java	/^  byte[][][][] paint;$/;"	f	class:MiniPaint
 palindromic	src/easy/PrimePalindromic.java	/^  boolean palindromic(int n) {$/;"	m	class:PrimePalindromic
 parent	src/dynamic/RadarGuns.java	/^  int[] parent;   \/\/ used for storing alternating paths$/;"	f	class:Hungarian
 parent	src/graph/Parking.java	/^    public final Vertex parent;$/;"	f	class:Parking.Vertex
+parent	src/recursion/PermissionTree.java	/^    public final int parent;$/;"	f	class:PermissionTree.Node
 park	src/graph/Parking.java	/^  int[][] park;$/;"	f	class:Parking
 parse	src/stringm/DirectoryTree.java	/^  int parse(Node parent, int index, int start) {$/;"	m	class:DirectoryTree
 partition	src/easy/FairWorkload.java	/^  int partition(int[] input, int s, int k) {$/;"	m	class:FairWorkload
@@ -1411,6 +1419,7 @@ solve	src/graph/RevolvingDoors.java	/^  boolean solve(Maze maze) {$/;"	m	class:R
 solve	src/graph/RoboCourier.java	/^  int solve() {$/;"	m	class:RoboCourier
 solveIter	src/dp/WeightedIntervalScheduling.java	/^  int solveIter(Interval[] ivals) {$/;"	m	class:WeightedIntervalScheduling
 solveRec	src/dp/WeightedIntervalScheduling.java	/^  int solveRec(int k, Interval[] ivals, int[] cache) {$/;"	m	class:WeightedIntervalScheduling
+sons	src/recursion/PermissionTree.java	/^    public final List<Node> sons;$/;"	f	class:PermissionTree.Node
 sort	src/dp/FlowerGarden.java	/^  void sort() {$/;"	m	class:FlowerGarden
 sortDesc	src/greedy/MLBRecord.java	/^  void sortDesc(Team[] arr) {$/;"	m	class:MLBRecord
 sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rectangles) {$/;"	m	class:GrafixMask
@@ -1533,6 +1542,7 @@ topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
+topc.recursion	src/recursion/PermissionTree.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
 topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
@@ -1572,6 +1582,7 @@ topc.test.graph	test/graph/SmartWordToyTest.java	/^package topc.test.graph;$/;"	
 totPainted	src/dynamic/MiniPaint.java	/^    public int totPainted;$/;"	f	class:MiniPaint.Node
 totStrokes	src/dynamic/MiniPaint.java	/^    public int totStrokes;$/;"	f	class:MiniPaint.Node
 transform	src/dynamic/Nim.java	/^  void transform(long[] a, int i, int j) {$/;"	m	class:Nim
+tree	src/recursion/PermissionTree.java	/^  Node tree;$/;"	f	class:PermissionTree
 tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
 tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
@@ -1581,6 +1592,7 @@ unit	src/graph/DrivingAround.java	/^  public static long[][] unit(int n) {$/;"	m
 unstable	src/dynamic/AntiMatter.java	/^  public String unstable(int[] xform) {$/;"	m	class:AntiMatter
 untransform	src/dynamic/Nim.java	/^  void untransform(long[] a, int i, int j) {$/;"	m	class:Nim
 updateLabels	src/dynamic/RadarGuns.java	/^  void updateLabels() {$/;"	m	class:Hungarian
+users	src/recursion/PermissionTree.java	/^    public final Set<String> users;$/;"	f	class:PermissionTree.Node
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
