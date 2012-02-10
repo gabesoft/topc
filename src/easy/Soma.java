@@ -64,7 +64,7 @@ public class Soma {
             int x = pieces[p][o][c][X];
             int y = pieces[p][o][c][Y];
             int z = pieces[p][o][c][Z];
-            if (x == INVALID) { continue; }
+            if (x == INVALID) { break; }
             pat3d[x + fx][y + fy][z + fz] = FILLED;
           }
           used[p] = true;
@@ -75,7 +75,7 @@ public class Soma {
             int x = pieces[p][o][c][X];
             int y = pieces[p][o][c][Y];
             int z = pieces[p][o][c][Z];
-            if (x == INVALID) { continue; }
+            if (x == INVALID) { break; }
             pat3d[x + fx][y + fy][z + fz] = EMPTY;
           }
           used[p] = false;
