@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RoadReconstructionTest.class })
+@Suite.SuiteClasses({ TopographicalImageTest.class })
 public class Runner {
 }
