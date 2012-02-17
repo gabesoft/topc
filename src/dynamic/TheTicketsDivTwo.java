@@ -12,15 +12,14 @@ public class TheTicketsDivTwo {
     return check(n, m, k);
   }
 
-  double check(int friends, int pos, int rem) {
-    if (pos == 0) { return 0; }
-    if (friends == 1) { return pos == 1 ? 1 : 0; }
-    if (rem == 0) { return pos == 1 ? 1 : 0; }
+  double check(int n, int m, int k) {
+    if (n == 1) { return 1; }
+    if (k == 0) { return m == 1 ? 1 : 0; }
+    if (m == 1) { return 1 / 6.0 + 1 / 2.0 * check(n, n, k - 1); }
 
     double sum = 0.0;
-    sum += 1.0 / 6.0 * check(1, pos, rem);
-    sum += 0.5 * check(friends, (pos - 1 == 0) ? friends : pos - 1, rem - 1);
-    sum += (0.5 - (1.0 / 6.0)) * check(friends - 1, pos - 1, rem - 1);
+    sum += 1 / 2.0 * check(n, m - 1, k - 1);
+    sum += 1 / 3.0 * check(n - 1, m - 1, k - 1);
 
     return sum;
   }
