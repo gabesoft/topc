@@ -4,3 +4,5 @@ build/*
 temp
 out*.doc
 .topcgen.yml
+tmp*
+junitwatcher*
