@@ -33,22 +33,22 @@ public class AlternatingLane {
       for (int a = low[i]; a < high[i] + 1; a++) {
         long lo = low[i - 1];
         long hi = high[i - 1];
-        long l  = 0;
-        long r  = 0;
+        int l  = 0;
+        int r  = 0;
 
         if (lo <= a && a <= hi) {
-          l = a - lo;
-          r = hi - a;
+          l = (int)(a - lo);
+          r = (int)(hi - a);
         }
         else if (a > hi) {
-          l = hi - lo + 1;
+          l = (int)(hi - lo + 1);
         }
         else if (a < lo) {
-          r = hi - lo + 1;
+          r = (int)(hi - lo + 1);
         }
 
-        long addl = sums[(int)l];
-        long addr = (l > 0 || a == lo) ? (sums[(int)(l + 1 + r)] - sums[(int)(l + 1)]) : sums[(int)r];
+        long addl = sums[l];
+        long addr = (l > 0 || a == lo) ? (sums[l + 1 + r] - sums[l + 1]) : sums[r];
 
         curr += p * l * a;
         curr -= p * r * a;
