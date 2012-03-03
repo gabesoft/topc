@@ -8,40 +8,61 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=11309&rd=14423
 // editorial: http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis
 public class AlternatingLane {
-  int n;
-  int [] low;
-  int [] high;
-  double[][][] memo;
-
   public double expectedBeauty(int[] low, int[] high) {
-    this.n    = low.length;
-    this.low  = low;
-    this.high = high;
+    int n = low.length;
 
-    this.memo = new double[n][90][90];
-
-    double e  = exp(0, 0, 0);
-
-    debug("e", e);
-
-    return e;
-  }
-
-  double exp(int a1, int a2, int i) {
-    if (i == n) { return a1 == 0 ? 0 : Math.abs(a1 - a2); }
-
-    int lo = low[i];
-    int hi = high[i];
-    int b  = a1 == 0 ? 0 : Math.abs(a1 - a2);
-
-    double p = 1.0 / (hi - lo + 1);
-    double s = (hi - lo + 1) * p * b;
-
-    for (int a = lo; a < hi + 1; a++) {
-      s += p * exp(a2, a, i + 1);
+    int max = high[0];
+    for (int i = 0; i < n; i++) {
+      max = Math.max(max, high[i]);
     }
 
-    return s;
+    long[] sums = new long[max + 2];
+    for (int i = 2; i < sums.length; i++) {
+      sums[i] = sums[i - 1] + (i - 1);
+    }
+
+    double prev   = 0;
+    for (int i = 1; i < n; i++) {
+
+      double p1 = 1.0 / (high[i - 1] - low[i - 1] + 1);
+      double p2 = 1.0 / (high[i] - low[i] + 1);
+      double p  = p1 * p2;
+
+      double curr = 0;
+
+      for (int a = low[i]; a < high[i] + 1; a++) {
+        long lo = low[i - 1];
+        long hi = high[i - 1];
+        long l  = 0;
+        long r  = 0;
+
+        if (lo <= a && a <= hi) {
+          l = a - lo;
+          r = hi - a;
+        }
+        else if (a > hi) {
+          l = hi - lo + 1;
+        }
+        else if (a < lo) {
+          r = hi - lo + 1;
+        }
+
+        long addl = sums[(int)l];
+        long addr = (l > 0 || a == lo) ? (sums[(int)(l + 1 + r)] - sums[(int)(l + 1)]) : sums[(int)r];
+
+        curr += p * l * a;
+        curr -= p * r * a;
+
+        curr -= p * (l * lo + addl);
+        curr += p * (r * lo + addr);
+
+        curr += p2 * prev;
+      }
+
+      prev = curr;
+    }
+
+    return prev;
   }
 
   private void debug(Object... os) {
