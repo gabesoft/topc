@@ -20,12 +20,39 @@ public class CarelessSecretary {
     fact = buildFactTable(N);
     memo = new long[k][1 << (k + 1)];
 
-    long res = rec(0, 0);
+    long res1 = count(0, 0);
+    long res2 = count();
 
-    return (int)res;
+    assert res1 == res2 : "solutions don't match";
+
+    return (int)res1;
   }
 
-  long rec(int i, int mask) {
+  long count() {
+    long[][] dp = new long[n + 1][k + 1];
+
+    dp[0][0] = 1;
+    for (int i = 1; i < n + 1; i++) {
+      for (int j = 0; j < Math.min(i, k) + 1; j++) {
+        if (j == 0) {
+          dp[i][j] = i * dp[i - 1][j] % MOD;
+          continue;
+        }
+        if (j == 1 && i <= j) { continue; }
+        if (j == 1) {
+          dp[i][j] = (i - j) * (dp[i - 2][j - 1] + dp[i - 1][j]) % MOD;
+          continue;
+        }
+        dp[i][j] += (i - j) * (dp[i - 2][j - 1] + dp[i - 1][j]);
+        dp[i][j] += (j - 1) * (dp[i - 2][j - 2] + dp[i - 1][j - 1]);
+        dp[i][j] %= MOD;
+      }
+    }
+
+    return dp[n][k];
+  }
+
+  long count(int i, int mask) {
     if (i == k) { return fact[n - k]; }
     if (memo[i][mask] > 0) { return memo[i][mask]; }
 
@@ -34,12 +61,12 @@ public class CarelessSecretary {
 
     for (int j = 0; j < k; j++) {
       if (j != i && (mask & 1 << j) == 0) { 
-        sum += rec(i + 1, mask | (1 << j));
+        sum += count(i + 1, mask | (1 << j));
         sum %= MOD;
       }
     }
 
-    sum += (n - k - i + used) * rec(i + 1, mask);
+    sum += (n - k - i + used) * count(i + 1, mask);
     sum %= MOD;
 
     memo[i][mask] = sum;
