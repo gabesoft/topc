@@ -22,10 +22,30 @@ public class CarelessSecretary {
 
     long res1 = count(0, 0);
     long res2 = count();
+    long res3 = countInEx();
 
-    assert res1 == res2 : "solutions don't match";
+    assert res1 == res2 : "solutions 1 and 2 don't match";
+    assert res1 == res3 : "solutions 1 and 3 don't match";
 
     return (int)res1;
+  }
+
+  // count using the inclusion-exclusion principle
+  long countInEx() {
+    long[][] bc = binomialCoefficient(k, MOD);
+    long res = fact[n];
+
+    for (int i = 1; i < k + 1; i++) {
+      if (i % 2 == 0) {
+        res += bc[k][i] * fact[n - i];
+      } else {
+        res -= (bc[k][i] * fact[n - i]) % MOD;
+        res += MOD;
+      }
+      res %= MOD;
+    }
+
+    return res;
   }
 
   long count() {
@@ -71,6 +91,21 @@ public class CarelessSecretary {
 
     memo[i][mask] = sum;
     return sum;
+  }
+
+  public static long[][] binomialCoefficient(long n, long mod) {
+    long[][] bc = new long[(int)n + 1][(int)n + 1];
+    if (mod == 1) { return bc; }
+
+    for (int i = 0; i < n + 1; i++) {
+      bc[i][0] = 1;
+      for (int j = 1; j < i + 1; j++) {
+        bc[i][j] = bc[i - 1][j - 1] + bc[i - 1][j];
+        bc[i][j] = (bc[i][j] >= mod) ? (bc[i][j] - mod) : bc[i][j];
+      }
+    }
+
+    return bc;
   }
 
   long[] buildFactTable(int n) {
