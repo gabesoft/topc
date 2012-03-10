@@ -106,6 +106,7 @@ MOD	src/dynamic/FoxAverageSequence.java	/^  static public final long MOD = 10000
 MOD	src/dynamic/Nim.java	/^  static final long MOD = 1000000007L;$/;"	f	class:Nim
 MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 MOD	src/dynamic/TheCowDivTwo.java	/^  final long MOD = 1000000007L;$/;"	f	class:TheCowDivTwo
+MakeSquare	src/dynamic/MakeSquare.java	/^public class MakeSquare {$/;"	c
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
 Matrix	src/dynamic/P8XCoinChange.java	/^class Matrix {$/;"	c
@@ -1161,6 +1162,7 @@ debug	src/dynamic/AdjacentSwaps.java	/^  private void debug(Object... os) {$/;"	
 debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
+debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/Nim.java	/^  private void debug(Object... os) {$/;"	m	class:Nim	file:
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
@@ -1202,6 +1204,7 @@ debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
+delete	src/dynamic/MakeSquare.java	/^  int delete(int c) {$/;"	m	class:MakeSquare
 dfs	src/graph/Circuits.java	/^  void dfs(int x, int len) {$/;"	m	class:Circuits
 dfs	src/graph/Marketing.java	/^  boolean dfs(int x, int c) {$/;"	m	class:Marketing
 dijkstra	src/graph/IslandFerries.java	/^  void dijkstra() {$/;"	m	class:IslandFerries
@@ -1317,6 +1320,7 @@ ly	src/dynamic/RadarGuns.java	/^  int[] ly;       \/\/ y labels$/;"	f	class:Hung
 m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
+match	src/dynamic/MakeSquare.java	/^  int match(char c1, char c2) {$/;"	m	class:MakeSquare
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
 maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$/;"	m	class:MiniPaint
@@ -1332,6 +1336,7 @@ memo	src/dynamic/TheCowDivTwo.java	/^  long[][][] memo;$/;"	f	class:TheCowDivTwo
 memo	src/dynamic/YetAnotherORProblem.java	/^  long[][] memo;$/;"	f	class:YetAnotherORProblem
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
+minChanges	src/dynamic/MakeSquare.java	/^  public int minChanges(String S) {$/;"	m	class:MakeSquare
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
@@ -1527,6 +1532,7 @@ topc.dynamic	src/dynamic/AdjacentSwaps.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Nim.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p

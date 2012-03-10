@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheCowDivTwoTest.class })
+@Suite.SuiteClasses({ MakeSquareTest.class })
 public class Runner {
 }
