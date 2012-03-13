@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MakeSquareTest.class })
+@Suite.SuiteClasses({ CssRulesTest.class })
 public class Runner {
 }
