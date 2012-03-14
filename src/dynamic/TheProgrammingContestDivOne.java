@@ -10,14 +10,14 @@ import java.io.*;
 public class TheProgrammingContestDivOne {
   int n;
   int T;
-  long[][] memo;
+  int[][] memo;
   Item[] items;
 
   public int find(int T, int[] maxPoints, int[] pointsPerMinute, int[] requiredTime) {
     this.T = T;
     this.n = maxPoints.length;
     this.items = new Item[n];
-    this.memo = new long[n][T + 1];
+    this.memo = new int[n][T + 1];
 
     for (int i = 0; i < n; i++) {
       Arrays.fill(memo[i], -1);
@@ -29,10 +29,10 @@ public class TheProgrammingContestDivOne {
 
     Arrays.sort(items, new ItemCompare());
 
-    return (int)solve(0,0);
+    return solve(0,0);
   }
 
-  long solve(int k, int t) {
+  int solve(int k, int t) {
     if (k == n    ) { return 0; }
     if (t >= T + 1) { return 0; }
     if (memo[k][t] > -1) { return memo[k][t]; }
@@ -42,13 +42,13 @@ public class TheProgrammingContestDivOne {
 
     long res = 0;
     if (tk + t <= T) {
-      res = Math.max((long)wk + solve(k + 1, (int)(t + tk)), solve(k + 1, t));
+      res = Math.max(wk + solve(k + 1, (int)(t + tk)), solve(k + 1, t));
     } else {
       res = solve(k + 1, t);
     }
 
-    memo[k][t] = res;
-    return res;
+    memo[k][t] = (int)res;
+    return (int)res;
   }
 
   private void debug(Object... os) {
