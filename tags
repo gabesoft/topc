@@ -70,6 +70,7 @@ GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
 Graduation	src/graph/Graduation.java	/^public class Graduation {$/;"	c
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
+H	src/dynamic/WeirdTimes.java	/^    int H = 24;$/;"	f	class:WeirdTimes
 Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
@@ -85,6 +86,7 @@ Jewelry	src/dp/Jewelry.java	/^public class Jewelry {$/;"	c
 JewelryTest	test/dp/JewelryTest.java	/^public class JewelryTest {$/;"	c
 K	src/dp/GameOfLifeDivOne.java	/^  int K;$/;"	f	class:GameOfLifeDivOne
 K	src/dynamic/TheCowDivTwo.java	/^  int K;$/;"	f	class:TheCowDivTwo
+K	src/dynamic/WeirdTimes.java	/^    int K;$/;"	f	class:WeirdTimes
 KiloManX	src/dp/KiloManX.java	/^public class KiloManX {$/;"	c
 KiloManX2	src/dp/KiloManX2.java	/^public class KiloManX2 {$/;"	c
 KiloManX2Test	test/dp/KiloManX2Test.java	/^public class KiloManX2Test {$/;"	c
@@ -123,6 +125,7 @@ N	src/dynamic/MiniPaint.java	/^  int N;    \/\/ row count$/;"	f	class:MiniPaint
 N	src/dynamic/Nim.java	/^  int N;$/;"	f	class:Nim
 N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
 N	src/dynamic/TheCowDivTwo.java	/^  int N;$/;"	f	class:TheCowDivTwo
+N	src/dynamic/WeirdTimes.java	/^    int N;$/;"	f	class:WeirdTimes
 N	src/dynamic/YetAnotherORProblem.java	/^  int N;$/;"	f	class:YetAnotherORProblem
 N	src/graph/Circuits.java	/^  static public final int N = 64;$/;"	f	class:Circuits
 N	src/graph/Escape.java	/^  static public final int N = 501;$/;"	f	class:Escape
@@ -234,6 +237,7 @@ Vertex	src/graph/Parking.java	/^  class Vertex {$/;"	c	class:Parking
 WALL	src/graph/RevolvingDoors.java	/^  static public final int WALL = -2;$/;"	f	class:RevolvingDoors
 WeightedIntervalScheduling	src/dp/WeightedIntervalScheduling.java	/^public class WeightedIntervalScheduling {$/;"	c
 WeightedIntervalSchedulingTest	test/dp/WeightedIntervalSchedulingTest.java	/^public class WeightedIntervalSchedulingTest {$/;"	c
+WeirdTimes	src/dynamic/WeirdTimes.java	/^public class WeirdTimes {$/;"	c
 Word	src/graph/SmartWordToy.java	/^    public Word(String word, int level) {$/;"	m	class:SmartWordToy.Word
 Word	src/graph/SmartWordToy.java	/^  class Word {$/;"	c	class:SmartWordToy
 X	src/graph/PathFinding.java	/^  static public final int X = 3;$/;"	f	class:PathFinding
@@ -300,6 +304,7 @@ arrayCopy	src/graph/SmartWordToy.java	/^    char[] arrayCopy(char[] source) {$/;
 arrayMax	src/easy/TallPeople.java	/^  int arrayMax(int[] array) {$/;"	m	class:TallPeople
 arrayMin	src/easy/TallPeople.java	/^  int arrayMin(int[] array) {$/;"	m	class:TallPeople
 arrsum	src/dp/QuickSums.java	/^  int arrsum(int[] nums) {$/;"	m	class:QuickSums
+assign	src/dynamic/WeirdTimes.java	/^    void assign(int v, int i) {$/;"	m	class:WeirdTimes
 augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
@@ -1299,6 +1304,7 @@ cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.N
 costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 count	src/dynamic/Nim.java	/^  public int count(int K, int L) {$/;"	m	class:Nim
+count	src/dynamic/WeirdTimes.java	/^    int[][] count;$/;"	f	class:WeirdTimes
 count	src/dynamic/YetAnotherORProblem.java	/^  long count(int t, int eq) {$/;"	m	class:YetAnotherORProblem
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
@@ -1337,6 +1343,7 @@ debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
+debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
 debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) {$/;"	m	class:YetAnotherORProblem	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
@@ -1419,6 +1426,7 @@ getColorValue	src/dynamic/CssRules.java	/^    private int getColorValue(String c
 getCount	src/dynamic/AdjacentSwaps.java	/^  long getCount(int[] p) {$/;"	m	class:AdjacentSwaps
 getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount() {$/;"	m	class:FoxAverageSequence
 getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount(int k, int sum, int last, int lt) {$/;"	m	class:FoxAverageSequence
+getCount	src/dynamic/WeirdTimes.java	/^    int getCount(int v, int i) {$/;"	m	class:WeirdTimes
 getCountDP	src/dynamic/FoxAverageSequence.java	/^  long getCountDP() {$/;"	m	class:FoxAverageSequence
 getEnd	src/dp/WeightedIntervalScheduling.java	/^    public int getEnd() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:RevolvingDoors.Maze
@@ -1433,6 +1441,7 @@ getMinimalCssRuleCount	src/dynamic/CssRules.java	/^  public int getMinimalCssRul
 getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNameValue	src/dynamic/CssRules.java	/^    private int getNameValue(String name) {$/;"	m	class:CssRules.Tag	file:
+getNext	src/dynamic/WeirdTimes.java	/^    int getNext(int h, int i) {$/;"	m	class:WeirdTimes
 getNext	src/graph/SmartWordToy.java	/^    public Word[] getNext() {$/;"	m	class:SmartWordToy.Word
 getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, int[] bloom, int[] wilt) {$/;"	m	class:FlowerGarden
 getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
@@ -1457,6 +1466,8 @@ h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
 hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
 hi	src/greedy/MLBRecord.java	/^    public int hi;$/;"	f	class:MLBRecord.Team
 hit	src/math/BaseballLineup.java	/^  int[] hit(int action, int runners) {$/;"	m	class:BaseballLineup
+hourValues	src/dynamic/WeirdTimes.java	/^    public int[] hourValues(int[] minuteValues, int K) {$/;"	m	class:WeirdTimes
+hours	src/dynamic/WeirdTimes.java	/^    int[] hours; $/;"	f	class:WeirdTimes
 howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String[] costs) {$/;"	m	class:Circuits
 howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
@@ -1466,9 +1477,11 @@ index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRec
 index	src/recursion/PermissionTree.java	/^    public final int index;$/;"	f	class:PermissionTree.Node
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
 indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/;"	m	class:KingOfTheCourt
+initCount	src/dynamic/WeirdTimes.java	/^    void initCount() {$/;"	m	class:WeirdTimes
 initLabels	src/dynamic/RadarGuns.java	/^  void initLabels() {$/;"	m	class:Hungarian
 initMatch	src/dynamic/RadarGuns.java	/^  void initMatch() {$/;"	m	class:Hungarian
 initMatrix	src/dynamic/P8XCoinChange.java	/^  long[][] initMatrix(int n, int start) {$/;"	m	class:P8XCoinChange
+initNext	src/dynamic/WeirdTimes.java	/^    void initNext() {$/;"	m	class:WeirdTimes
 initSlack	src/dynamic/RadarGuns.java	/^  void initSlack(int root) {$/;"	m	class:Hungarian
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 insert	src/sorting/FloatingMedian.java	/^  void insert(int x) {$/;"	m	class:FloatingMedian
@@ -1505,6 +1518,7 @@ mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:Revolving
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
 memo	src/dynamic/FoxAverageSequence.java	/^  long[][][][] memo;$/;"	f	class:FoxAverageSequence
 memo	src/dynamic/TheCowDivTwo.java	/^  long[][][] memo;$/;"	f	class:TheCowDivTwo
+memo	src/dynamic/WeirdTimes.java	/^    int[][] memo;$/;"	f	class:WeirdTimes
 memo	src/dynamic/YetAnotherORProblem.java	/^  long[][] memo;$/;"	f	class:YetAnotherORProblem
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
@@ -1519,6 +1533,7 @@ minTurns	src/graph/PathFinding.java	/^  public int minTurns(String[] board) {$/;
 minTweaks	src/easy/Rationalization.java	/^  public int minTweaks(int[] weights, String[] scores, int desired) {$/;"	m	class:Rationalization
 minipaint	test/dynamic/MiniPaint2Test.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
 minipaint	test/dynamic/MiniPaintTest.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
+mins	src/dynamic/WeirdTimes.java	/^    int[] mins;$/;"	f	class:WeirdTimes
 moreClasses	src/graph/Graduation.java	/^  public String moreClasses(String classesTaken, String[] requirements) {$/;"	m	class:Graduation
 mostStars	src/dynamic/StarAdventure.java	/^  public int mostStars(String[] level) {$/;"	m	class:StarAdventure
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
@@ -1542,6 +1557,7 @@ n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
 name	src/dynamic/CssRules.java	/^    public final int name;$/;"	f	class:CssRules.Tag
 name	src/graph/RoadReconstruction.java	/^    public final String name;$/;"	f	class:RoadReconstruction.Node
 name	src/stringm/DirectoryTree.java	/^    public final String name;$/;"	f	class:DirectoryTree.Node
+next	src/dynamic/WeirdTimes.java	/^    int[][] next;$/;"	f	class:WeirdTimes
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
@@ -1722,6 +1738,7 @@ topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/WeirdTimes.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/YetAnotherORProblem.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
