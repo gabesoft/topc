@@ -30,6 +30,7 @@ C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
+ColorfulMazeTwo	src/dynamic/ColorfulMazeTwo.java	/^public class ColorfulMazeTwo {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
 Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
 CssRules	src/dynamic/CssRules.java	/^public class CssRules {$/;"	c
@@ -1283,6 +1284,7 @@ compareTo	src/graph/KiloManX3.java	/^    public int compareTo(Node other) {$/;"	
 compareTo	src/graph/RoadReconstruction.java	/^    public int compareTo(Node other) {$/;"	m	class:RoadReconstruction.Node
 compareTo	src/graph/RoboCourier.java	/^    public int compareTo(Node other) {$/;"	m	class:RoboCourier.Node
 compareTo	src/greedy/MLBRecord.java	/^    public int compareTo(Team other) {$/;"	m	class:MLBRecord.Team
+compute	src/dynamic/ColorfulMazeTwo.java	/^  double compute(String[] maze, int[] trap) {$/;"	m	class:ColorfulMazeTwo
 computeBest	src/graph/Parking.java	/^  int computeBest() {$/;"	m	class:Parking
 computeMatching	src/graph/Parking.java	/^  int computeMatching(int cutoff) {$/;"	m	class:Parking
 computeStrokes	src/dynamic/MiniPaint.java	/^  void computeStrokes() {$/;"	m	class:MiniPaint
@@ -1333,6 +1335,7 @@ debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
 debug	src/dynamic/AdjacentSwaps.java	/^  private void debug(Object... os) {$/;"	m	class:AdjacentSwaps	file:
 debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
+debug	src/dynamic/ColorfulMazeTwo.java	/^  private void debug(Object... os) {$/;"	m	class:ColorfulMazeTwo	file:
 debug	src/dynamic/CssRules.java	/^  private void debug(Object... os) {$/;"	m	class:CssRules	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
 debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
@@ -1447,6 +1450,8 @@ getOrdering	src/dp/FlowerGarden.java	/^  public int[] getOrdering(int[] height, 
 getPeople	src/easy/TallPeople.java	/^  public int[] getPeople(String[] people) {$/;"	m	class:TallPeople
 getPrimes	src/dynamic/Nim.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:Nim
 getPrimes	src/easy/PrimePalindromic.java	/^  boolean[] getPrimes(int n) {$/;"	m	class:PrimePalindromic
+getProb	src/dynamic/ColorfulMazeTwo.java	/^  double getProb(char c, int[] trap, boolean[] seen) {$/;"	m	class:ColorfulMazeTwo
+getProbability	src/dynamic/ColorfulMazeTwo.java	/^  public double getProbability(String[] maze, int[] trap) {$/;"	m	class:ColorfulMazeTwo
 getRange	src/dynamic/RadarGuns.java	/^  public int[] getRange(int[] enterTimes, int[] exitTimes, int speedTime, int fineCap) {$/;"	m	class:RadarGuns
 getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
 getStart	src/dp/WeightedIntervalScheduling.java	/^    public int getStart() {$/;"	m	class:WeightedIntervalScheduling.Interval
@@ -1729,6 +1734,7 @@ topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
 topc.dynamic	src/dynamic/AdjacentSwaps.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/ColorfulMazeTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/CssRules.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
