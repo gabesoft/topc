@@ -25,6 +25,7 @@ BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossin
 BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
+C	src/dynamic/Flags.java	/^  int C;          \/\/ number of colors that can be followed by others$/;"	f	class:Flags
 C	src/geometry/RemoteRover.java	/^  static public final double C = 1.0 - R;$/;"	f	class:RemoteRover
 C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
@@ -65,6 +66,7 @@ F	src/graph/IslandFerries.java	/^  int F = 0;$/;"	f	class:IslandFerries
 FairWorkload	src/easy/FairWorkload.java	/^public class FairWorkload {$/;"	c
 Fib	src/easy/Fib.java	/^public class Fib {$/;"	c
 FibTest	test/easy/FibTest.java	/^public class FibTest {$/;"	c
+Flags	src/dynamic/Flags.java	/^public class Flags {$/;"	c
 FloatingMedian	src/sorting/FloatingMedian.java	/^public class FloatingMedian {$/;"	c
 FlowerGarden	src/dp/FlowerGarden.java	/^public class FlowerGarden {$/;"	c
 FlowerGardenTest	test/dp/FlowerGardenTest.java	/^public class FlowerGardenTest {$/;"	c
@@ -104,6 +106,7 @@ LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
 LIM	src/math/KingOfTheCourt.java	/^  static public final int LIM = 100;$/;"	f	class:KingOfTheCourt
+M	src/dynamic/Flags.java	/^  double[][] M;   \/\/ colors matrix$/;"	f	class:Flags
 M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
@@ -126,6 +129,7 @@ MiniPaint	src/dynamic/MiniPaint.java	/^public class MiniPaint {$/;"	c
 MiniPaintTest	test/dynamic/MiniPaint2Test.java	/^public class MiniPaintTest {$/;"	c
 MiniPaintTest	test/dynamic/MiniPaintTest.java	/^public class MiniPaintTest {$/;"	c
 N	src/dp/GameOfLifeDivOne.java	/^  int N;$/;"	f	class:GameOfLifeDivOne
+N	src/dynamic/Flags.java	/^  int N;          \/\/ number of colors$/;"	f	class:Flags
 N	src/dynamic/MiniPaint.java	/^  int N;    \/\/ row count$/;"	f	class:MiniPaint
 N	src/dynamic/Nim.java	/^  int N;$/;"	f	class:Nim
 N	src/dynamic/StarAdventure.java	/^  int N;$/;"	f	class:StarAdventure
@@ -1393,6 +1397,7 @@ count	src/dynamic/WeirdTimes.java	/^    int[][] count;$/;"	f	class:WeirdTimes
 count	src/dynamic/YetAnotherORProblem.java	/^  long count(int t, int eq) {$/;"	m	class:YetAnotherORProblem
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
+countFlags	src/dynamic/Flags.java	/^  long countFlags(long stripes) {$/;"	m	class:Flags
 countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
 countOperations	src/graph/DivisorInc.java	/^  public int countOperations(int N, int M) {$/;"	m	class:DivisorInc
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
@@ -1421,6 +1426,7 @@ debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	
 debug	src/dynamic/ColorfulMaze.java	/^    private void debug(Object... os) {$/;"	m	class:ColorfulMaze	file:
 debug	src/dynamic/ColorfulMazeTwo.java	/^  private void debug(Object... os) {$/;"	m	class:ColorfulMazeTwo	file:
 debug	src/dynamic/CssRules.java	/^  private void debug(Object... os) {$/;"	m	class:CssRules	file:
+debug	src/dynamic/Flags.java	/^  private void debug(Object... os) {$/;"	m	class:Flags	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
 debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
@@ -1571,6 +1577,7 @@ indexToPerm	src/math/KingOfTheCourt.java	/^  int[] indexToPerm(int j, int d) {$/
 initCount	src/dynamic/WeirdTimes.java	/^    void initCount() {$/;"	m	class:WeirdTimes
 initLabels	src/dynamic/RadarGuns.java	/^  void initLabels() {$/;"	m	class:Hungarian
 initMatch	src/dynamic/RadarGuns.java	/^  void initMatch() {$/;"	m	class:Hungarian
+initMatrix	src/dynamic/Flags.java	/^  void initMatrix(String[] forbidden) {$/;"	m	class:Flags
 initMatrix	src/dynamic/P8XCoinChange.java	/^  long[][] initMatrix(int n, int start) {$/;"	m	class:P8XCoinChange
 initNext	src/dynamic/WeirdTimes.java	/^    void initNext() {$/;"	m	class:WeirdTimes
 initSlack	src/dynamic/RadarGuns.java	/^  void initSlack(int root) {$/;"	m	class:Hungarian
@@ -1659,6 +1666,7 @@ next	src/dynamic/WeirdTimes.java	/^    int[][] next;$/;"	f	class:WeirdTimes
 nextGen	src/dp/GameOfLifeDivOne.java	/^  long nextGen(long curr, int n) {$/;"	m	class:GameOfLifeDivOne
 node	src/graph/GrafixMask.java	/^  Node node(int x, int y) {$/;"	m	class:GrafixMask
 node	src/graph/PathFinding.java	/^  Node node(int xa, int ya, int xb, int yb, int count) {$/;"	m	class:PathFinding
+numStripes	src/dynamic/Flags.java	/^  public long numStripes(String numFlags, String[] forbidden) {$/;"	m	class:Flags
 numTwists	src/recursion/RedBlack.java	/^  public int numTwists(int[] keys) {$/;"	m	class:RedBlack
 numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
 numberOfWays	src/graph/DrivingAround.java	/^  public int numberOfWays(String[] adj, int start, int finish, int time) {$/;"	m	class:DrivingAround
@@ -1834,6 +1842,7 @@ topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ColorfulMaze.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ColorfulMazeTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/CssRules.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/Flags.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
