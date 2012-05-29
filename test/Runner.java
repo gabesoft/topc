@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.graph.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ColorfulDecorationTest.class })
+@Suite.SuiteClasses({ NameInputTest.class })
 public class Runner {
 }
