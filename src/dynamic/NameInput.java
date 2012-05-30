@@ -11,6 +11,8 @@ public class NameInput {
     String pred;
     String name;
     int[][] memo;
+    int[][][] cpos;
+    char[] chars;
 
     public int countUpDownKeyPresses(String[] predictionSequence, String[] name) {
         this.pred = "";
@@ -23,50 +25,120 @@ public class NameInput {
             this.name += name[i];
         }
 
-        this.memo = new int[this.name.length()][this.pred.length()];
+        memo = new int[this.name.length()][pred.length()];
+        for (int i = 0; i < memo.length; i++) {
+            Arrays.fill(memo[i], -1);
+        }
+
+        chars = new char[10 + 26 + 26];
+        fillChars();
+
+        cpos = new int[pred.length()][128][];
+        fillCPos();
 
         return count(0, 0);
     }
 
+    void fillCPos() {
+        int plen = pred.length();
+        for (int p = 0; p < plen; p++) {
+            for (int k = 0; k < chars.length; k++) {
+                char c = chars[k];
+                if (pred.indexOf(c) == -1) { continue; }
+
+                int j1 = -1;
+                int j2 = -1;
+                int v1 =  0;
+                int v2 =  0;
+
+                for (int i = p; i < p + plen; i++) {
+                    int j  = i > plen - 1 ? i - plen : i;
+                    int cc = pred.charAt(j);
+                    if (c == cc) {
+                        j1 = (j1 == -1) ? j : j1;
+                        j2 = j;
+                    }
+                }
+
+                cpos[p][(int)c] = new int[] { j1, j2, dist(p, j1), dist(p, j2) };
+            }
+        }
+    }
+
+    int dist(int p, int i) {
+        if (i == -1) { return -1; }
+
+        int plen = pred.length();
+        return i < p
+            ? Math.min(p - i, plen - p + i)
+            : Math.min(i - p, plen - i + p);
+    }
+
+    void fillChars() {
+        int idx = 0;
+
+        for (int i = 0; i < 10; i++) {
+            chars[idx++] = (char)('0' + i);
+        }
+
+        for (int i = 0; i < 26; i++) {
+            chars[idx]      = (char)('A' + i);
+            chars[idx + 26] = (char)('a' + i);
+            idx++;
+        }
+    }
+
     int count(int n, int p) {
-        if (memo[n][p] > 0) { return memo[n][p]; }
+        if (memo[n][p] > -1) { return memo[n][p]; }
 
         char c   = name.charAt(n);
         int plen = pred.length();
         int best = -1;
 
-        if (n == name.length() - 1) {
-            for (int i = p; i < plen; i++) {
-                if (pred.charAt(i) == c) {
-                    best = best == -1 ? (i - p) : Math.min(best, i - p);
-                    break;
+        if (n == name.length() - 1 && n > 0 && name.charAt(n - 1) == c) {
+            best = 0;
+        } else if (n == name.length() - 1) {
+            int[] pos = cpos[p][(int)c];
+
+            if (pos != null) {
+                if (pos[0] != -1) {
+                    int v = pos[2];
+                    best = best == -1 ? v : Math.min(best, v);
+                }
+                if (pos[1] != -1) {
+                    int v = pos[3];
+                    best = best == -1 ? v : Math.min(best, v);
                 }
             }
-            for (int i = p; i > -1; i--) {
-                if (pred.charAt(i) == c) {
-                    best = best == -1 ? (p - i) : Math.min(best, p - i);
-                    break;
-                }
-            }
-        } else if (n > 0 && name.charAt(n - 1) == c) { 
-            return count(n + 1, p);
+        } else if (n > 0 && name.charAt(n - 1) == c || pred.charAt(p) == c) { 
+            best = count(n + 1, p);
         } else {
-            for (int i = p; i < p + plen; i++) {
+            int j1 = -1;
+            int j2 = -1;
+            int v1 =  0;
+            int v2 =  0;
+            int[] pos = cpos[p][(int)c];
+            if (pos != null) {
+                j1 = pos[0];
+                j2 = pos[1];
+                v1 = pos[2];
+                v2 = pos[3];
+            }
 
-                int j   = i > plen - 1 ? i - plen : i;
-                char cc = pred.charAt(j);
+            if (j1 != -1) {
+                int next = count(n + 1, j1);
+                if (next == -1) { return -1; }
 
-                if (c == cc) {
-                    int next = count(n + 1, j);
-                    if (next == -1) { return -1; }
+                int curr = v1 + next;
+                best     = best == -1 ? curr : Math.min(best, curr);
+            }
 
-                    int v = j < p 
-                        ? Math.min(p - j, plen - p + j)
-                        : Math.min(j - p, plen - j + p);
-                    int curr = v + next;
+            if (j2 != -1 && j2 != j1) {
+                int next = count(n + 1, j2);
+                if (next == -1) { return -1; }
 
-                    best = best == -1 ? curr : Math.min(best, curr);
-                }
+                int curr = v2 + next;
+                best     = best == -1 ? curr : Math.min(best, curr);
             }
         }
 
