@@ -20,6 +20,7 @@ public class NumberPyramids {
         top = top - (1 << r);
         if (top < 0) { return 0; }
 
+        // binomial coefficient C(r, k), r is fixed
         bc[0] = 1;
         for (int i = 0; i < r + 1; i++) {
             for (int j = i; j > 0; j--) {
@@ -27,6 +28,8 @@ public class NumberPyramids {
             }
         }
 
+        // finds the number of solutions to the eq
+        // B = A0*x0 + A1*x1 + A2*x2 + .. + An*xn
         dp[0] = 1;
         for (int i = 0; i < r + 1; i++) {
             for (int j = bc[i]; j < top + 1; j++) {

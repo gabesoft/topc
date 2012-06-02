@@ -115,6 +115,7 @@ M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 MOD	src/dynamic/FoxAverageSequence.java	/^  static public final long MOD = 1000000007;$/;"	f	class:FoxAverageSequence
 MOD	src/dynamic/Nim.java	/^  static final long MOD = 1000000007L;$/;"	f	class:Nim
+MOD	src/dynamic/NumberPyramids.java	/^    final int MOD = 1000000009;$/;"	f	class:NumberPyramids
 MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 MOD	src/dynamic/TheCowDivTwo.java	/^  final long MOD = 1000000007L;$/;"	f	class:TheCowDivTwo
 MakeSquare	src/dynamic/MakeSquare.java	/^public class MakeSquare {$/;"	c
@@ -178,6 +179,7 @@ Node	src/recursion/PermissionTree.java	/^  class Node {$/;"	c	class:PermissionTr
 Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
 Node	src/stringm/DirectoryTree.java	/^    public Node(String name, int index) {$/;"	m	class:DirectoryTree.Node
 Node	src/stringm/DirectoryTree.java	/^  class Node {$/;"	c	class:DirectoryTree
+NumberPyramids	src/dynamic/NumberPyramids.java	/^public class NumberPyramids {$/;"	c
 P	src/recursion/AntiChess.java	/^  int P;$/;"	f	class:AntiChess
 P1	src/dynamic/StarAdventure.java	/^  int[][] P1;$/;"	f	class:StarAdventure
 P2	src/dynamic/StarAdventure.java	/^  int[][] P2;$/;"	f	class:StarAdventure
@@ -1393,6 +1395,7 @@ cost	src/graph/RoboCourier.java	/^    public int cost;$/;"	f	class:RoboCourier.N
 costs	src/graph/IslandFerries.java	/^  int[] costs;$/;"	f	class:IslandFerries
 costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 count	src/dynamic/Nim.java	/^  public int count(int K, int L) {$/;"	m	class:Nim
+count	src/dynamic/NumberPyramids.java	/^    public int count(int baseLength, int top) {$/;"	m	class:NumberPyramids
 count	src/dynamic/WeirdTimes.java	/^    int[][] count;$/;"	f	class:WeirdTimes
 count	src/dynamic/YetAnotherORProblem.java	/^  long count(int t, int eq) {$/;"	m	class:YetAnotherORProblem
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
@@ -1431,6 +1434,7 @@ debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {
 debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/Nim.java	/^  private void debug(Object... os) {$/;"	m	class:Nim	file:
+debug	src/dynamic/NumberPyramids.java	/^    private void debug(Object... os) {$/;"	m	class:NumberPyramids	file:
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
 debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
@@ -1847,6 +1851,7 @@ topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Nim.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/NumberPyramids.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
