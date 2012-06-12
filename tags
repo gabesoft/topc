@@ -75,6 +75,7 @@ FoxAverageSequence	src/dynamic/FoxAverageSequence.java	/^public class FoxAverage
 GameOfLifeDivOne	src/dp/GameOfLifeDivOne.java	/^public class GameOfLifeDivOne {$/;"	c
 GameOfLifeDivOneTest	test/dp/GameOfLifeDivOneTest.java	/^public class GameOfLifeDivOneTest {$/;"	c
 GetKey	src/dp/KiloManX.java	/^  String GetKey(int[] xs) {$/;"	m	class:KiloManX
+Gifts	src/dynamic/Gifts.java	/^public class Gifts {$/;"	c
 Graduation	src/graph/Graduation.java	/^public class Graduation {$/;"	c
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
@@ -114,6 +115,7 @@ M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
 M	src/graph/Parking.java	/^  int M;$/;"	f	class:Parking
 M	src/math/Hangman42.java	/^  int M;    \/\/ number of letters per word$/;"	f	class:Hangman42
 M	src/sorting/FloatingMedian.java	/^  int M = 65536;$/;"	f	class:FloatingMedian
+MAXG	src/dynamic/Gifts.java	/^    int MAXG = 16;$/;"	f	class:Gifts
 MLBRecord	src/greedy/MLBRecord.java	/^public class MLBRecord {$/;"	c
 MOD	src/dynamic/FoxAverageSequence.java	/^  static public final long MOD = 1000000007;$/;"	f	class:FoxAverageSequence
 MOD	src/dynamic/Nim.java	/^  static final long MOD = 1000000007L;$/;"	f	class:Nim
@@ -150,6 +152,8 @@ N	src/math/KingOfTheCourt.java	/^  int N;$/;"	f	class:KingOfTheCourt
 Nim	src/dynamic/Nim.java	/^public class Nim {$/;"	c
 Node	src/dp/KiloManX.java	/^    public Node(int[] values, int[] weight, int cost) {$/;"	m	class:KiloManX.Node
 Node	src/dp/KiloManX.java	/^  class Node {$/;"	c	class:KiloManX
+Node	src/dynamic/Gifts.java	/^        public Node(int x, int y, int px, int py, int gifts, int time) {$/;"	m	class:Gifts.Node
+Node	src/dynamic/Gifts.java	/^    class Node implements Comparable<Node> {$/;"	c	class:Gifts
 Node	src/dynamic/MiniPaint.java	/^    public Node(int totPainted, int row, int curStrokes, int totStrokes) {$/;"	m	class:MiniPaint.Node
 Node	src/dynamic/MiniPaint.java	/^  class Node implements Comparable<Node> {$/;"	c	class:MiniPaint
 Node	src/graph/DivisorInc.java	/^    public Node(int m, int c) {$/;"	m	class:DivisorInc.Node
@@ -1369,6 +1373,7 @@ cols	src/graph/RevolvingDoors.java	/^  int cols = 0;$/;"	f	class:RevolvingDoors
 compact	src/dp/KiloManX.java	/^  int[] compact(int[] xs, int i) {$/;"	m	class:KiloManX
 compare	src/dp/ShortPalindromes.java	/^    public int compare(String a, String b) {$/;"	m	class:ShortPalindromes.StringComparator
 compareTo	src/dp/WeightedIntervalScheduling.java	/^    public int compareTo(Interval other) {$/;"	m	class:WeightedIntervalScheduling.Interval
+compareTo	src/dynamic/Gifts.java	/^        public int compareTo(Node other) {$/;"	m	class:Gifts.Node
 compareTo	src/dynamic/MiniPaint.java	/^    public int compareTo(Node other) {$/;"	m	class:MiniPaint.Node
 compareTo	src/easy/MedalTable.java	/^    public int compareTo(Country other) {$/;"	m	class:MedalTable.Country
 compareTo	src/graph/IslandFerries.java	/^    public int compareTo(Node other) {$/;"	m	class:IslandFerries.Node
@@ -1405,6 +1410,7 @@ count	src/dynamic/YetAnotherORProblem.java	/^  long count(int t, int eq) {$/;"	m
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
 count	src/graph/PathFinding.java	/^    public int count;$/;"	f	class:PathFinding.Node
 countFlags	src/dynamic/Flags.java	/^  long countFlags(long stripes) {$/;"	m	class:Flags
+countOnes	src/dynamic/Gifts.java	/^    int countOnes(int mask) {$/;"	m	class:Gifts
 countOnes	src/math/Hangman42.java	/^  int countOnes(int mask) {$/;"	m	class:Hangman42
 countOperations	src/graph/DivisorInc.java	/^  public int countOperations(int N, int M) {$/;"	m	class:DivisorInc
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
@@ -1435,6 +1441,7 @@ debug	src/dynamic/ColorfulMazeTwo.java	/^  private void debug(Object... os) {$/;
 debug	src/dynamic/CssRules.java	/^  private void debug(Object... os) {$/;"	m	class:CssRules	file:
 debug	src/dynamic/Flags.java	/^  private void debug(Object... os) {$/;"	m	class:Flags	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
+debug	src/dynamic/Gifts.java	/^    private void debug(Object... os) {$/;"	m	class:Gifts	file:
 debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/Nim.java	/^  private void debug(Object... os) {$/;"	m	class:Nim	file:
@@ -1494,6 +1501,8 @@ domes	src/dp/ShortPalindromes.java	/^  String[][][] domes;$/;"	f	class:ShortPali
 done	src/bkt/BridgeCrossing.java	/^    public boolean done() {$/;"	m	class:BridgeCrossing.State
 dp	src/dynamic/ColorfulMaze.java	/^    double dp(int r, int c, int d, int s) {$/;"	m	class:ColorfulMaze
 dungeonescape	test/graph/DungeonEscapeTest.java	/^  DungeonEscape dungeonescape = new DungeonEscape();$/;"	f	class:DungeonEscapeTest
+dx	src/dynamic/Gifts.java	/^    int [] dx = {0, 0, 1, -1};$/;"	f	class:Gifts
+dy	src/dynamic/Gifts.java	/^    int [] dy = {1, -1, 0, 0}; $/;"	f	class:Gifts
 encode	src/dp/AvoidRoads.java	/^  static int encode(int i, int j) {$/;"	m	class:AvoidRoads
 encode	src/graph/RevolvingDoors.java	/^  public static int encode(int i, int j) {$/;"	m	class:RevolvingDoors
 end	src/graph/RoboCourier.java	/^  Node end;$/;"	f	class:RoboCourier
@@ -1508,6 +1517,7 @@ ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFer
 fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	class:Escape
 fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) {$/;"	m	class:GrafixMask
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
+find	src/dynamic/Gifts.java	/^    int find(char[][] graph, int lim) {$/;"	m	class:Gifts
 find	src/dynamic/TheCowDivTwo.java	/^  public int find(int N, int K) {$/;"	m	class:TheCowDivTwo
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findHome	src/recursion/PermissionTree.java	/^  public int[] findHome(String[] folders, String[] users) {$/;"	m	class:PermissionTree
@@ -1558,6 +1568,7 @@ getProbability	src/dynamic/ColorfulMazeTwo.java	/^  public double getProbability
 getRange	src/dynamic/RadarGuns.java	/^  public int[] getRange(int[] enterTimes, int[] exitTimes, int speedTime, int fineCap) {$/;"	m	class:RadarGuns
 getRight	src/graph/RevolvingDoors.java	/^    public int getRight(int position) {$/;"	m	class:RevolvingDoors.Maze
 getStart	src/dp/WeightedIntervalScheduling.java	/^    public int getStart() {$/;"	m	class:WeightedIntervalScheduling.Interval
+getStart	src/dynamic/Gifts.java	/^    Node getStart(char[][] graph) {$/;"	m	class:Gifts
 getStart	src/graph/RevolvingDoors.java	/^    public int getStart() {$/;"	m	class:RevolvingDoors.Maze
 getTask	src/easy/BusinessTasks.java	/^    public String getTask(String[] list, int n) {$/;"	m	class:BusinessTasks
 getTime	src/bkt/BridgeCrossing.java	/^    public int getTime() {$/;"	m	class:BridgeCrossing.State
@@ -1566,10 +1577,13 @@ getValue	src/graph/RevolvingDoors.java	/^    public int getValue(int position) {
 getWeight	src/dp/WeightedIntervalScheduling.java	/^    public int getWeight() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getWord	src/graph/SmartWordToy.java	/^    public String getWord() {$/;"	m	class:SmartWordToy.Word
 getp	src/dp/WeightedIntervalScheduling.java	/^    public int getp() {$/;"	m	class:WeightedIntervalScheduling.Interval
+gifts	src/dynamic/Gifts.java	/^        public final int gifts;$/;"	f	class:Gifts.Node
 graph	src/graph/Circuits.java	/^  int[][] graph;$/;"	f	class:Circuits
 graph	src/graph/IslandFerries.java	/^  int[][][] graph;$/;"	f	class:IslandFerries
 graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
 graph	src/math/Disaster.java	/^  double[][] graph;$/;"	f	class:Disaster
+gx	src/dynamic/Gifts.java	/^    int [] gx;$/;"	f	class:Gifts
+gy	src/dynamic/Gifts.java	/^    int [] gy;$/;"	f	class:Gifts
 h	src/dp/FlowerGarden.java	/^  int[] h;$/;"	f	class:FlowerGarden
 hasLoc	src/graph/RoboCourier.java	/^    public boolean hasLoc(int x, int y) {$/;"	m	class:RoboCourier.Node
 hi	src/greedy/MLBRecord.java	/^    public int hi;$/;"	f	class:MLBRecord.Team
@@ -1613,6 +1627,7 @@ lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] de
 lx	src/dynamic/RadarGuns.java	/^  int[] lx;       \/\/ x labels$/;"	f	class:Hungarian
 ly	src/dynamic/RadarGuns.java	/^  int[] ly;       \/\/ y labels$/;"	f	class:Hungarian
 m	src/dynamic/ColorfulMaze.java	/^    int m;$/;"	f	class:ColorfulMaze
+m	src/dynamic/Gifts.java	/^    int m;$/;"	f	class:Gifts
 m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
@@ -1622,6 +1637,7 @@ matchCount	src/dynamic/NumbersAndMatches.java	/^    int matchCount(int from, int
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
 maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$/;"	m	class:MiniPaint
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
+maxGifts	src/dynamic/Gifts.java	/^    public int maxGifts(String[] city, int T) {$/;"	m	class:Gifts
 maxMatch	src/dynamic/RadarGuns.java	/^  int maxMatch;$/;"	f	class:Hungarian
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
@@ -1667,6 +1683,7 @@ n	src/dp/FlowerGarden.java	/^  int n;$/;"	f	class:FlowerGarden
 n	src/dp/ShortPalindromes.java	/^  int n;$/;"	f	class:ShortPalindromes
 n	src/dynamic/AdjacentSwaps.java	/^  int n;$/;"	f	class:AdjacentSwaps
 n	src/dynamic/ColorfulMaze.java	/^    int n;$/;"	f	class:ColorfulMaze
+n	src/dynamic/Gifts.java	/^    int n;$/;"	f	class:Gifts
 n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:Hungarian
 n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:RadarGuns
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
@@ -1725,6 +1742,8 @@ probability	src/math/Hangman42.java	/^  public double probability(String[] words
 probs	src/easy/TableSeating.java	/^  double[] probs;$/;"	f	class:TableSeating
 probs	src/math/BaseballLineup.java	/^  double[][] probs;$/;"	f	class:BaseballLineup
 pushDoor	src/graph/RevolvingDoors.java	/^    public Maze pushDoor(int position, int doorCell) {$/;"	m	class:RevolvingDoors.Maze
+px	src/dynamic/Gifts.java	/^        public final int px;$/;"	f	class:Gifts.Node
+py	src/dynamic/Gifts.java	/^        public final int py;$/;"	f	class:Gifts.Node
 questionableDigit	src/math/BenfordsLaw.java	/^  public int questionableDigit(int[] transactions, int threshold) {$/;"	m	class:BenfordsLaw
 queue	src/dp/ShortPalindromes.java	/^  Queue<int[]> queue;$/;"	f	class:ShortPalindromes
 r	src/dynamic/ColorfulMaze.java	/^        public final int r;$/;"	f	class:ColorfulMaze.Pt
@@ -1824,6 +1843,7 @@ ticket	src/graph/IslandFerries.java	/^    public int ticket(int ferry) {$/;"	m	c
 ticket1	src/graph/IslandFerries.java	/^    public Ticket ticket1;$/;"	f	class:IslandFerries.Node
 ticket2	src/graph/IslandFerries.java	/^    public Ticket ticket2;$/;"	f	class:IslandFerries.Node
 time	src/bkt/BridgeCrossing.java	/^  int time;$/;"	f	class:BridgeCrossing
+time	src/dynamic/Gifts.java	/^        public final int time;$/;"	f	class:Gifts.Node
 time	src/geometry/RemoteRover.java	/^  double time(int index, double offset) {$/;"	m	class:RemoteRover
 time	src/graph/DungeonEscape.java	/^    public final int time;$/;"	f	class:DungeonEscape.Node
 time	src/graph/Parking.java	/^    public final int time;$/;"	f	class:Parking.Node
@@ -1831,6 +1851,7 @@ timeToDeliver	src/graph/RoboCourier.java	/^  public int timeToDeliver(String[] p
 toBits	src/dp/GameOfLifeDivOne.java	/^  String toBits(long k, int n) {$/;"	m	class:GameOfLifeDivOne
 toString	src/dp/WeightedIntervalScheduling.java	/^    public String toString() {$/;"	m	class:WeightedIntervalScheduling.Interval
 toString	src/dynamic/CssRules.java	/^    public String toString() {$/;"	m	class:CssRules.Tag
+toString	src/dynamic/Gifts.java	/^        public String toString() {$/;"	m	class:Gifts.Node
 toString	src/easy/MedalTable.java	/^    public String toString() {$/;"	m	class:MedalTable.Country
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Node
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Ticket
@@ -1860,6 +1881,7 @@ topc.dynamic	src/dynamic/ColorfulMazeTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/CssRules.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Flags.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/Gifts.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Nim.java	/^package topc.dynamic;$/;"	p
@@ -1970,6 +1992,7 @@ width	src/geometry/RemoteRover.java	/^  int[] width;$/;"	f	class:RemoteRover
 willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
 win	src/math/Hangman42.java	/^  double win(int state) {$/;"	m	class:Hangman42
 win	src/math/KingOfTheCourt.java	/^  double win(int[] pos, int lim) {$/;"	m	class:KingOfTheCourt
+x	src/dynamic/Gifts.java	/^        public final int x;$/;"	f	class:Gifts.Node
 x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
 x	src/graph/GrafixMask.java	/^    public int x = 0;$/;"	f	class:GrafixMask.Node
@@ -1978,6 +2001,7 @@ x	src/graph/RoboCourier.java	/^    public int x;$/;"	f	class:RoboCourier.Node
 xa	src/graph/PathFinding.java	/^    public int xa;$/;"	f	class:PathFinding.Node
 xb	src/graph/PathFinding.java	/^    public int xb;$/;"	f	class:PathFinding.Node
 xmatch	src/dynamic/RadarGuns.java	/^  int[] xmatch;   \/\/ xmatch[x] = vertex matched with x$/;"	f	class:Hungarian
+y	src/dynamic/Gifts.java	/^        public final int y;$/;"	f	class:Gifts.Node
 y	src/graph/DungeonEscape.java	/^    public final int y;$/;"	f	class:DungeonEscape.Node
 y	src/graph/Escape.java	/^    public int y;$/;"	f	class:Escape.Node
 y	src/graph/GrafixMask.java	/^    public int y = 0;$/;"	f	class:GrafixMask.Node
