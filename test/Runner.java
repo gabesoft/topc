@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WickedTeacherTest.class })
+@Suite.SuiteClasses({ DancingCouplesTest.class })
 public class Runner {
 }
