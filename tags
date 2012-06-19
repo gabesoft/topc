@@ -219,6 +219,7 @@ RevolvingDoorsTest	test/graph/RevolvingDoorsTest.java	/^public class RevolvingDo
 RoadReconstruction	src/graph/RoadReconstruction.java	/^public class RoadReconstruction {$/;"	c
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
+RotatingTriangles	src/dynamic/RotatingTriangles.java	/^public class RotatingTriangles {$/;"	c
 S	src/dynamic/MiniPaint.java	/^  int S;    \/\/ max strokes$/;"	f	class:MiniPaint
 S	src/dynamic/RadarGuns.java	/^  boolean[] S;$/;"	f	class:Hungarian
 S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
@@ -1405,6 +1406,7 @@ costs	src/graph/IslandFerries.java	/^  public int[] costs(String[] ferryLegs, St
 count	src/dynamic/Nim.java	/^  public int count(int K, int L) {$/;"	m	class:Nim
 count	src/dynamic/NumberPyramids.java	/^    public int count(int baseLength, int top) {$/;"	m	class:NumberPyramids
 count	src/dynamic/NumbersAndMatches.java	/^    long count(int d, int moves, int matches) {$/;"	m	class:NumbersAndMatches
+count	src/dynamic/RotatingTriangles.java	/^  public int count(String[] grid) {$/;"	m	class:RotatingTriangles
 count	src/dynamic/WeirdTimes.java	/^    int[][] count;$/;"	f	class:WeirdTimes
 count	src/dynamic/YetAnotherORProblem.java	/^  long count(int t, int eq) {$/;"	m	class:YetAnotherORProblem
 count	src/easy/PrimePalindromic.java	/^  public int count(int A, int B) {$/;"	m	class:PrimePalindromic
@@ -1450,6 +1452,7 @@ debug	src/dynamic/NumbersAndMatches.java	/^    private void debug(Object... os) 
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
 debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
+debug	src/dynamic/RotatingTriangles.java	/^  private void debug(Object... os) {$/;"	m	class:RotatingTriangles	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
 debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
@@ -1889,6 +1892,7 @@ topc.dynamic	src/dynamic/NumberPyramids.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/NumbersAndMatches.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/RotatingTriangles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/WeirdTimes.java	/^package topc.dynamic;$/;"	p
