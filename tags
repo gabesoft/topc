@@ -220,6 +220,7 @@ RoadReconstruction	src/graph/RoadReconstruction.java	/^public class RoadReconstr
 RoboCourier	src/graph/RoboCourier.java	/^public class RoboCourier {$/;"	c
 RoboCourierTest	test/graph/RoboCourierTest.java	/^public class RoboCourierTest {$/;"	c
 RotatingTriangles	src/dynamic/RotatingTriangles.java	/^public class RotatingTriangles {$/;"	c
+Runner	test/Runner.java	/^public class Runner {$/;"	c
 S	src/dynamic/MiniPaint.java	/^  int S;    \/\/ max strokes$/;"	f	class:MiniPaint
 S	src/dynamic/RadarGuns.java	/^  boolean[] S;$/;"	f	class:Hungarian
 S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
@@ -248,9 +249,11 @@ Team	src/greedy/MLBRecord.java	/^  class Team implements Comparable<Team> {$/;"	
 TeamBuilder	src/graph/TeamBuilder.java	/^public class TeamBuilder {$/;"	c
 TestScores	src/math/TestScores.java	/^public class TestScores {$/;"	c
 TheCowDivTwo	src/dynamic/TheCowDivTwo.java	/^public class TheCowDivTwo {$/;"	c
+TheEasyChase	src/dynamic/TheEasyChase.java	/^public class TheEasyChase {$/;"	c
 TheProgrammingContestDivOneTest	test/dynamic/TheProgrammingContestDivOneTest.java	/^public class TheProgrammingContestDivOneTest {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
 Ticket	src/graph/IslandFerries.java	/^  class Ticket {$/;"	c	class:IslandFerries
+UNK	src/dynamic/TheEasyChase.java	/^    int UNK  = 987654321;$/;"	f	class:TheEasyChase
 UP_LEFT	src/graph/RevolvingDoors.java	/^  static public final int UP_LEFT = 1 << 4;$/;"	f	class:RevolvingDoors
 UP_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int UP_RIGHT = 1 << 3;$/;"	f	class:RevolvingDoors
 Vertex	src/graph/Parking.java	/^    public Vertex(int id, Vertex parent) {$/;"	m	class:Parking.Vertex
@@ -1423,6 +1426,7 @@ curStrokes	src/dynamic/MiniPaint.java	/^    public int curStrokes;$/;"	f	class:M
 data	src/dp/QuickSums.java	/^  int[][] data;$/;"	f	class:QuickSums
 data	src/dp/StripePainter.java	/^  int[][][] data;$/;"	f	class:StripePainter
 data	src/dynamic/StarAdventure.java	/^  int[][] data;$/;"	f	class:StarAdventure
+dc	src/dynamic/TheEasyChase.java	/^    int dc[] = {0,0,-1,1,0,0,-2,2};$/;"	f	class:TheEasyChase
 debug	src/bkt/BridgeCrossing.java	/^  void debug(Object...os) {$/;"	m	class:BridgeCrossing
 debug	src/dp/AvoidRoads.java	/^  void debug(Object...os) {$/;"	m	class:AvoidRoads
 debug	src/dp/BadNeighbors.java	/^  void debug(Object...os) {$/;"	m	class:BadNeighbors
@@ -1455,6 +1459,7 @@ debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hung
 debug	src/dynamic/RotatingTriangles.java	/^  private void debug(Object... os) {$/;"	m	class:RotatingTriangles	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
+debug	src/dynamic/TheEasyChase.java	/^    private void debug(Object... os) {$/;"	m	class:TheEasyChase	file:
 debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
 debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) {$/;"	m	class:YetAnotherORProblem	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
@@ -1503,6 +1508,7 @@ display	src/stringm/DirectoryTree.java	/^  public String[] display(String[] file
 domes	src/dp/ShortPalindromes.java	/^  String[][][] domes;$/;"	f	class:ShortPalindromes
 done	src/bkt/BridgeCrossing.java	/^    public boolean done() {$/;"	m	class:BridgeCrossing.State
 dp	src/dynamic/ColorfulMaze.java	/^    double dp(int r, int c, int d, int s) {$/;"	m	class:ColorfulMaze
+dr	src/dynamic/TheEasyChase.java	/^    int dr[] = {-1,1,0,0,-2,2,0,0};$/;"	f	class:TheEasyChase
 dungeonescape	test/graph/DungeonEscapeTest.java	/^  DungeonEscape dungeonescape = new DungeonEscape();$/;"	f	class:DungeonEscapeTest
 dx	src/dynamic/Gifts.java	/^    int [] dx = {0, 0, 1, -1};$/;"	f	class:Gifts
 dy	src/dynamic/Gifts.java	/^    int [] dy = {1, -1, 0, 0}; $/;"	f	class:Gifts
@@ -1895,6 +1901,7 @@ topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RotatingTriangles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/TheEasyChase.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/WeirdTimes.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/YetAnotherORProblem.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
@@ -1937,6 +1944,7 @@ topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
 topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
+topc.test	test/Runner.java	/^package topc.test;$/;"	p
 topc.test.bkt	test/bkt/BridgeCrossingTest.java	/^package topc.test.bkt;$/;"	p
 topc.test.dp	test/dp/AvoidRoadsTest.java	/^package topc.test.dp;$/;"	p
 topc.test.dp	test/dp/BadNeighborsTest.java	/^package topc.test.dp;$/;"	p
@@ -1996,6 +2004,7 @@ width	src/geometry/RemoteRover.java	/^  int[] width;$/;"	f	class:RemoteRover
 willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	class:GameOfLifeDivOne
 win	src/math/Hangman42.java	/^  double win(int state) {$/;"	m	class:Hangman42
 win	src/math/KingOfTheCourt.java	/^  double win(int[] pos, int lim) {$/;"	m	class:KingOfTheCourt
+winner	src/dynamic/TheEasyChase.java	/^    public String winner(int n, int rowWhite, int colWhite, int rowBlack, int colBlack) {$/;"	m	class:TheEasyChase
 x	src/dynamic/Gifts.java	/^        public final int x;$/;"	f	class:Gifts.Node
 x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
