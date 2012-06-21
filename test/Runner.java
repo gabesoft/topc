@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RotatingTrianglesTest.class })
+@Suite.SuiteClasses({ BarracksEasyTest.class })
 public class Runner {
 }
