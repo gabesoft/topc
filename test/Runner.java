@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ InfiniteSequenceTest.class })
+@Suite.SuiteClasses({ ClosestRegexTest.class })
 public class Runner {
 }
