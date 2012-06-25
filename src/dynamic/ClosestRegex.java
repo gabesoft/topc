@@ -98,6 +98,7 @@ public class ClosestRegex {
         System.out.println(Arrays.deepToString(os));
     }
 
+    @SuppressWarnings("serial")
     class Pair extends AbstractMap.SimpleEntry<String, Integer> {
         public Pair(String k, int v) {
             super(k, v);

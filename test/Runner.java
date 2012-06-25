@@ -7,6 +7,10 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MarblesInABagTest.class })
+@Suite.SuiteClasses({ 
+    CheapestRouteTest.class
+  , CheapestRouteTest2.class 
+  , CheapestRouteTest3.class 
+})
 public class Runner {
 }

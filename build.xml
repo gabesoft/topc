@@ -37,7 +37,7 @@
     <pathelement location="${dir.test.build.classes}" />
   </path>
 
-  <target name="init">
+  <target name="init" depends="clean">
     <mkdir dir="${dir.lib}" />
     <mkdir dir="${dir.build}" />
     <mkdir dir="${dir.build.classes}" />
