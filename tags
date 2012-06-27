@@ -251,6 +251,7 @@ TestScores	src/math/TestScores.java	/^public class TestScores {$/;"	c
 TheCowDivTwo	src/dynamic/TheCowDivTwo.java	/^public class TheCowDivTwo {$/;"	c
 TheEasyChase	src/dynamic/TheEasyChase.java	/^public class TheEasyChase {$/;"	c
 TheProgrammingContestDivOneTest	test/dynamic/TheProgrammingContestDivOneTest.java	/^public class TheProgrammingContestDivOneTest {$/;"	c
+TheSumOfLuckyNumbers	src/dynamic/TheSumOfLuckyNumbers.java	/^public class TheSumOfLuckyNumbers {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
 Ticket	src/graph/IslandFerries.java	/^  class Ticket {$/;"	c	class:IslandFerries
 UNK	src/dynamic/TheEasyChase.java	/^    int UNK  = 987654321;$/;"	f	class:TheEasyChase
@@ -1460,6 +1461,7 @@ debug	src/dynamic/RotatingTriangles.java	/^  private void debug(Object... os) {$
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
 debug	src/dynamic/TheEasyChase.java	/^    private void debug(Object... os) {$/;"	m	class:TheEasyChase	file:
+debug	src/dynamic/TheSumOfLuckyNumbers.java	/^    private void debug(Object... os) {$/;"	m	class:TheSumOfLuckyNumbers	file:
 debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
 debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) {$/;"	m	class:YetAnotherORProblem	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
@@ -1541,6 +1543,7 @@ games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
 gcd	src/dynamic/ChessKnight.java	/^  public int gcd(int a, int b)$/;"	m	class:ChessKnight
 gcd	src/graph/DivisorInc.java	/^  int gcd(int n, int m) {$/;"	m	class:DivisorInc
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
+genNums	src/dynamic/TheSumOfLuckyNumbers.java	/^    void genNums(int c, String s) {$/;"	m	class:TheSumOfLuckyNumbers
 generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results) {$/;"	m	class:MedalTable
 getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
 getAdjCells	src/graph/RevolvingDoors.java	/^    public int[] getAdjCells(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1712,6 +1715,7 @@ numTwists	src/recursion/RedBlack.java	/^  public int numTwists(int[] keys) {$/;"
 numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, String[] bad) {$/;"	m	class:AvoidRoads
 numberOfWays	src/graph/DrivingAround.java	/^  public int numberOfWays(String[] adj, int start, int finish, int time) {$/;"	m	class:DrivingAround
 nums	src/dynamic/NumbersAndMatches.java	/^    int[] nums = { 6, 3, 5, 5, 4, 5, 6, 3, 7, 6 };$/;"	f	class:NumbersAndMatches
+nums	src/dynamic/TheSumOfLuckyNumbers.java	/^    int [] nums;$/;"	f	class:TheSumOfLuckyNumbers
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
@@ -1810,6 +1814,7 @@ states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCr
 states	src/math/Hangman42.java	/^  long[][] states;$/;"	f	class:Hangman42
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
+sum	src/dynamic/TheSumOfLuckyNumbers.java	/^    public int[] sum(int n) {$/;"	m	class:TheSumOfLuckyNumbers
 sumOfMedians	src/sorting/FloatingMedian.java	/^  public long sumOfMedians(int seed, int mul, int add, int N, int K) {$/;"	m	class:FloatingMedian
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
 tag	src/dynamic/CssRules.java	/^    public final Tag tag;$/;"	f	class:CssRules.Result
@@ -1902,6 +1907,7 @@ topc.dynamic	src/dynamic/RotatingTriangles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheEasyChase.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/TheSumOfLuckyNumbers.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/WeirdTimes.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/YetAnotherORProblem.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
