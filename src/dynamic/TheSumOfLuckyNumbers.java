@@ -14,7 +14,7 @@ public class TheSumOfLuckyNumbers {
     public int[] sum(int n) {
         nums = new int[126];
 
-        genNums("");
+        genNums(0);
         Arrays.sort(nums);
 
         int [][] dp = new int[n + 1][];
@@ -49,17 +49,17 @@ public class TheSumOfLuckyNumbers {
         return res;
     }
 
-    void genNums(String s) {
-        int n1 = Integer.parseInt(s + "4");
-        int n2 = Integer.parseInt(s + "7");
+    void genNums(int x) {
+        int n1 = x * 10 + 4;
+        int n2 = x * 10 + 7;
 
         if (n1 < 1000000) {
             nums[N++] = n1;
-            genNums(s + "4");
+            genNums(n1);
         }
         if (n2 < 1000000) {
             nums[N++] = n2;
-            genNums(s + "7");
+            genNums(n2);
         }
     }
 
