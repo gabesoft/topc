@@ -209,6 +209,7 @@ RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
 RIGHT_TOP	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_TOP = 1 << 7;$/;"	f	class:RevolvingDoors
 RadarGuns	src/dynamic/RadarGuns.java	/^public class RadarGuns {$/;"	c
+RandomSort	src/dynamic/RandomSort.java	/^public class RandomSort {$/;"	c
 Rationalization	src/easy/Rationalization.java	/^public class Rationalization {$/;"	c
 RedBlack	src/recursion/RedBlack.java	/^public class RedBlack {$/;"	c
 RemoteRover	src/geometry/RemoteRover.java	/^public class RemoteRover {$/;"	c
@@ -1457,6 +1458,7 @@ debug	src/dynamic/NumbersAndMatches.java	/^    private void debug(Object... os) 
 debug	src/dynamic/P8XCoinChange.java	/^  private void debug(Object... os) {$/;"	m	class:P8XCoinChange	file:
 debug	src/dynamic/RadarGuns.java	/^  private void debug(Object... os) {$/;"	m	class:RadarGuns	file:
 debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hungarian
+debug	src/dynamic/RandomSort.java	/^    private void debug(Object... os) {$/;"	m	class:RandomSort	file:
 debug	src/dynamic/RotatingTriangles.java	/^  private void debug(Object... os) {$/;"	m	class:RotatingTriangles	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
@@ -1557,6 +1559,7 @@ getCount	src/dynamic/WeirdTimes.java	/^    int getCount(int v, int i) {$/;"	m	cl
 getCountDP	src/dynamic/FoxAverageSequence.java	/^  long getCountDP() {$/;"	m	class:FoxAverageSequence
 getEnd	src/dp/WeightedIntervalScheduling.java	/^    public int getEnd() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:RevolvingDoors.Maze
+getExpected	src/dynamic/RandomSort.java	/^    public double getExpected(int[] permutation) {$/;"	m	class:RandomSort
 getExpected	src/easy/TableSeating.java	/^  public double getExpected(int numTables, int[] probValues) {$/;"	m	class:TableSeating
 getForbidden	src/graph/SmartWordToy.java	/^  public HashSet<String> getForbidden(String[] forbid) {$/;"	m	class:SmartWordToy
 getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/;"	m	class:RevolvingDoors.Maze
@@ -1763,6 +1766,7 @@ r	src/dynamic/ColorfulMaze.java	/^        public final int r;$/;"	f	class:Colorf
 read	src/recursion/AntiChess.java	/^  void read(int[] pos, String val) {$/;"	m	class:AntiChess
 readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	m	class:AvoidRoads
 rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
+rec	src/dynamic/RandomSort.java	/^    double rec(int[] perm) {$/;"	m	class:RandomSort
 rec	src/dynamic/TheCowDivTwo.java	/^  long rec(int n, int k, int sum) {$/;"	m	class:TheCowDivTwo
 remove	src/sorting/FloatingMedian.java	/^  void remove(int x) {$/;"	m	class:FloatingMedian
 rest	src/dynamic/CssRules.java	/^    public final String rest;$/;"	f	class:CssRules.Result
@@ -1816,6 +1820,7 @@ sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLife
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
 sum	src/dynamic/TheSumOfLuckyNumbers.java	/^    public int[] sum(int n) {$/;"	m	class:TheSumOfLuckyNumbers
 sumOfMedians	src/sorting/FloatingMedian.java	/^  public long sumOfMedians(int seed, int mul, int add, int N, int K) {$/;"	m	class:FloatingMedian
+swap	src/dynamic/RandomSort.java	/^    int[] swap(int i, int j, int[] arr) {$/;"	m	class:RandomSort
 swapped	src/graph/PathFinding.java	/^  boolean swapped(Node a, Node b) {$/;"	m	class:PathFinding
 tag	src/dynamic/CssRules.java	/^    public final Tag tag;$/;"	f	class:CssRules.Result
 teamStatus	src/greedy/MLBRecord.java	/^  public String teamStatus(int[] wins, int gamesLeft, int N) {$/;"	m	class:MLBRecord
@@ -1903,6 +1908,7 @@ topc.dynamic	src/dynamic/NumberPyramids.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/NumbersAndMatches.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/P8XCoinChange.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/RandomSort.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RotatingTriangles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
