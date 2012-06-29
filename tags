@@ -109,6 +109,7 @@ LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
 LIM	src/math/KingOfTheCourt.java	/^  static public final int LIM = 100;$/;"	f	class:KingOfTheCourt
+LargestGap	src/easy/LargestGap.java	/^public class LargestGap {$/;"	c
 M	src/dynamic/Flags.java	/^  double[][] M;   \/\/ colors matrix$/;"	f	class:Flags
 M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
 M	src/dynamic/StarAdventure.java	/^  int M;$/;"	f	class:StarAdventure
@@ -197,6 +198,8 @@ Parking	src/graph/Parking.java	/^public class Parking {$/;"	c
 PathFinding	src/graph/PathFinding.java	/^public class PathFinding {$/;"	c
 PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {$/;"	c
 PermissionTree	src/recursion/PermissionTree.java	/^public class PermissionTree {$/;"	c
+Piece	src/easy/LargestGap.java	/^        public Piece(int index, int length, boolean block) {$/;"	m	class:LargestGap.Piece
+Piece	src/easy/LargestGap.java	/^    class Piece {$/;"	c	class:LargestGap
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 Pt	src/dynamic/ColorfulMaze.java	/^        public Pt(int r, int c) {$/;"	m	class:ColorfulMaze.Pt
 Pt	src/dynamic/ColorfulMaze.java	/^    class Pt {$/;"	c	class:ColorfulMaze
@@ -335,6 +338,7 @@ augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouring = new BagOfDevouring();$/;"	f	class:BagOfDevouringTest
+block	src/easy/LargestGap.java	/^        boolean block;$/;"	f	class:LargestGap.Piece
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
 buildTeams	src/greedy/MLBRecord.java	/^  void buildTeams(int[] wins) {$/;"	m	class:MLBRecord
@@ -1467,6 +1471,7 @@ debug	src/dynamic/TheSumOfLuckyNumbers.java	/^    private void debug(Object... o
 debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
 debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) {$/;"	m	class:YetAnotherORProblem	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
+debug	src/easy/LargestGap.java	/^    private void debug(Object... os) {$/;"	m	class:LargestGap	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"	m	class:PackingShapes	file:
@@ -1562,6 +1567,7 @@ getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:Rev
 getExpected	src/dynamic/RandomSort.java	/^    public double getExpected(int[] permutation) {$/;"	m	class:RandomSort
 getExpected	src/easy/TableSeating.java	/^  public double getExpected(int numTables, int[] probValues) {$/;"	m	class:TableSeating
 getForbidden	src/graph/SmartWordToy.java	/^  public HashSet<String> getForbidden(String[] forbid) {$/;"	m	class:SmartWordToy
+getLargest	src/easy/LargestGap.java	/^    public int getLargest(String[] board) {$/;"	m	class:LargestGap
 getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/RevolvingDoors.java	/^    public int getLevel() {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:SmartWordToy.Word
@@ -1610,6 +1616,7 @@ howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
 id	src/dynamic/CssRules.java	/^    public final String id;$/;"	f	class:CssRules.Tag
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
+index	src/easy/LargestGap.java	/^        int index;$/;"	f	class:LargestGap.Piece
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 index	src/recursion/PermissionTree.java	/^    public final int index;$/;"	f	class:PermissionTree.Node
 index	src/stringm/DirectoryTree.java	/^    public final int index;$/;"	f	class:DirectoryTree.Node
@@ -1628,6 +1635,7 @@ isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:Diviso
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
 items	src/stringm/DirectoryTree.java	/^    public ArrayList<Node> items;$/;"	f	class:DirectoryTree.Node
 join	src/dynamic/CssRules.java	/^  String join(String[] input) {$/;"	m	class:CssRules
+join	src/easy/LargestGap.java	/^    String join(String[] s) {$/;"	m	class:LargestGap
 k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
 kth	src/sorting/FloatingMedian.java	/^  long kth(int k) {$/;"	m	class:FloatingMedian
@@ -1636,6 +1644,7 @@ leastBad	src/dynamic/MiniPaint.java	/^  public int leastBad(String[] picture, in
 leastShots	src/dp/KiloManX.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX
 leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX2
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
+length	src/easy/LargestGap.java	/^        int length;$/;"	f	class:LargestGap.Piece
 lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
@@ -1667,6 +1676,7 @@ memo	src/dynamic/WeirdTimes.java	/^    int[][] memo;$/;"	f	class:WeirdTimes
 memo	src/dynamic/YetAnotherORProblem.java	/^  long[][] memo;$/;"	f	class:YetAnotherORProblem
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
+merge	src/easy/LargestGap.java	/^        public Piece merge(Piece other) {$/;"	m	class:LargestGap.Piece
 minChanges	src/dynamic/MakeSquare.java	/^  public int minChanges(String S) {$/;"	m	class:MakeSquare
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
@@ -1871,6 +1881,7 @@ toBits	src/dp/GameOfLifeDivOne.java	/^  String toBits(long k, int n) {$/;"	m	cla
 toString	src/dp/WeightedIntervalScheduling.java	/^    public String toString() {$/;"	m	class:WeightedIntervalScheduling.Interval
 toString	src/dynamic/CssRules.java	/^    public String toString() {$/;"	m	class:CssRules.Tag
 toString	src/dynamic/Gifts.java	/^        public String toString() {$/;"	m	class:Gifts.Node
+toString	src/easy/LargestGap.java	/^        public String toString() {$/;"	m	class:LargestGap.Piece
 toString	src/easy/MedalTable.java	/^    public String toString() {$/;"	m	class:MedalTable.Country
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Node
 toString	src/graph/IslandFerries.java	/^    public String toString() {$/;"	m	class:IslandFerries.Ticket
@@ -1919,6 +1930,7 @@ topc.dynamic	src/dynamic/YetAnotherORProblem.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/LargestGap.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
