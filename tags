@@ -25,12 +25,14 @@ BridgeCrossingTest	test/bkt/BridgeCrossingTest.java	/^public class BridgeCrossin
 BusinessTasks	src/easy/BusinessTasks.java	/^public class BusinessTasks {$/;"	c
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^  public BusinessTasksTest(String name) {$/;"	m	class:BusinessTasksTest
 BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksTest extends TestCase {$/;"	c
+C	src/dynamic/CollectingMarbles.java	/^    int C;$/;"	f	class:CollectingMarbles
 C	src/dynamic/Flags.java	/^  int C;          \/\/ number of colors that can be followed by others$/;"	f	class:Flags
 C	src/geometry/RemoteRover.java	/^  static public final double C = 1.0 - R;$/;"	f	class:RemoteRover
 C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
 CircuitsTest	test/graph/CircuitsTest.java	/^public class CircuitsTest {$/;"	c
+CollectingMarbles	src/dynamic/CollectingMarbles.java	/^public class CollectingMarbles {$/;"	c
 ColorfulMaze	src/dynamic/ColorfulMaze.java	/^public class ColorfulMaze {$/;"	c
 ColorfulMazeTest	test/dynamic/ColorfulMazeTest.java	/^public class ColorfulMazeTest {$/;"	c
 ColorfulMazeTwo	src/dynamic/ColorfulMazeTwo.java	/^public class ColorfulMazeTwo {$/;"	c
@@ -263,6 +265,7 @@ UP_LEFT	src/graph/RevolvingDoors.java	/^  static public final int UP_LEFT = 1 <<
 UP_RIGHT	src/graph/RevolvingDoors.java	/^  static public final int UP_RIGHT = 1 << 3;$/;"	f	class:RevolvingDoors
 Vertex	src/graph/Parking.java	/^    public Vertex(int id, Vertex parent) {$/;"	m	class:Parking.Vertex
 Vertex	src/graph/Parking.java	/^  class Vertex {$/;"	c	class:Parking
+W	src/dynamic/CollectingMarbles.java	/^    int [] W;$/;"	f	class:CollectingMarbles
 WALL	src/graph/RevolvingDoors.java	/^  static public final int WALL = -2;$/;"	f	class:RevolvingDoors
 WeightedIntervalScheduling	src/dp/WeightedIntervalScheduling.java	/^public class WeightedIntervalScheduling {$/;"	c
 WeightedIntervalSchedulingTest	test/dp/WeightedIntervalSchedulingTest.java	/^public class WeightedIntervalSchedulingTest {$/;"	c
@@ -1448,6 +1451,7 @@ debug	src/dp/ZigZag.java	/^  void debug(Object...os) {$/;"	m	class:ZigZag
 debug	src/dynamic/AdjacentSwaps.java	/^  private void debug(Object... os) {$/;"	m	class:AdjacentSwaps	file:
 debug	src/dynamic/AntiMatter.java	/^  private void debug(Object... os) {$/;"	m	class:AntiMatter	file:
 debug	src/dynamic/ChessKnight.java	/^  private void debug(Object... os) {$/;"	m	class:ChessKnight	file:
+debug	src/dynamic/CollectingMarbles.java	/^    private void debug(Object... os) {$/;"	m	class:CollectingMarbles	file:
 debug	src/dynamic/ColorfulMaze.java	/^    private void debug(Object... os) {$/;"	m	class:ColorfulMaze	file:
 debug	src/dynamic/ColorfulMazeTwo.java	/^  private void debug(Object... os) {$/;"	m	class:ColorfulMazeTwo	file:
 debug	src/dynamic/CssRules.java	/^  private void debug(Object... os) {$/;"	m	class:CssRules	file:
@@ -1669,6 +1673,7 @@ maxWeightMatch	src/dynamic/RadarGuns.java	/^  public int maxWeightMatch() {$/;"	
 maze	src/dynamic/ColorfulMaze.java	/^    char[][] maze;$/;"	f	class:ColorfulMaze
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
+memo	src/dynamic/CollectingMarbles.java	/^    int [][][] memo;$/;"	f	class:CollectingMarbles
 memo	src/dynamic/ColorfulMaze.java	/^    double[][][][] memo;$/;"	f	class:ColorfulMaze
 memo	src/dynamic/FoxAverageSequence.java	/^  long[][][][] memo;$/;"	f	class:FoxAverageSequence
 memo	src/dynamic/TheCowDivTwo.java	/^  long[][][] memo;$/;"	f	class:TheCowDivTwo
@@ -1690,6 +1695,7 @@ minipaint	test/dynamic/MiniPaint2Test.java	/^  MiniPaint minipaint = new MiniPai
 minipaint	test/dynamic/MiniPaintTest.java	/^  MiniPaint minipaint = new MiniPaint();$/;"	f	class:MiniPaintTest
 mins	src/dynamic/WeirdTimes.java	/^    int[] mins;$/;"	f	class:WeirdTimes
 moreClasses	src/graph/Graduation.java	/^  public String moreClasses(String classesTaken, String[] requirements) {$/;"	m	class:Graduation
+mostMarbles	src/dynamic/CollectingMarbles.java	/^    public int mostMarbles(int[] marblesWeights, int bagCapacity, int numberOfBags) {$/;"	m	class:CollectingMarbles
 mostStars	src/dynamic/StarAdventure.java	/^  public int mostStars(String[] level) {$/;"	m	class:StarAdventure
 move	src/bkt/BridgeCrossing.java	/^    public void move(int i, int j) {$/;"	m	class:BridgeCrossing.State
 move	src/dynamic/ColorfulMaze.java	/^    int[][] move = new int[][] { new int[] { -1, 0, 1, 0 }, new int[] { 0, -1, 0, 1 } }; \/\/ TODO: remove$/;"	f	class:ColorfulMaze
@@ -1776,6 +1782,7 @@ r	src/dynamic/ColorfulMaze.java	/^        public final int r;$/;"	f	class:Colorf
 read	src/recursion/AntiChess.java	/^  void read(int[] pos, String val) {$/;"	m	class:AntiChess
 readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	m	class:AvoidRoads
 rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
+rec	src/dynamic/CollectingMarbles.java	/^    int rec(int marbles, int bag, int space) {$/;"	m	class:CollectingMarbles
 rec	src/dynamic/RandomSort.java	/^    double rec(int[] perm) {$/;"	m	class:RandomSort
 rec	src/dynamic/TheCowDivTwo.java	/^  long rec(int n, int k, int sum) {$/;"	m	class:TheCowDivTwo
 remove	src/sorting/FloatingMedian.java	/^  void remove(int x) {$/;"	m	class:FloatingMedian
@@ -1906,6 +1913,7 @@ topc.dp	src/dp/ZigZag.java	/^package topc.dp;$/;"	p
 topc.dynamic	src/dynamic/AdjacentSwaps.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/AntiMatter.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ChessKnight.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/CollectingMarbles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ColorfulMaze.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/ColorfulMazeTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/CssRules.java	/^package topc.dynamic;$/;"	p
