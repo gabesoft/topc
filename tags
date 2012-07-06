@@ -232,6 +232,7 @@ S	src/dynamic/RadarGuns.java	/^  boolean[] S;$/;"	f	class:Hungarian
 S	src/graph/Parking.java	/^  int S;      \/\/ number of parking spots$/;"	f	class:Parking
 SEEN	src/graph/RevolvingDoors.java	/^  static public final int SEEN = -4;$/;"	f	class:RevolvingDoors
 START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	f	class:RevolvingDoors
+SetOfPatterns	src/math/SetOfPatterns.java	/^public class SetOfPatterns {$/;"	c
 ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$/;"	c
 ShortPalindromesTest	test/dp/ShortPalindromesTest.java	/^public class ShortPalindromesTest {$/;"	c
 SmartWordToy	src/graph/SmartWordToy.java	/^public class SmartWordToy {$/;"	c
@@ -1499,6 +1500,7 @@ debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	cla
 debug	src/math/Disaster.java	/^  private void debug(Object... os) {$/;"	m	class:Disaster	file:
 debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class:Hangman42	file:
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
+debug	src/math/SetOfPatterns.java	/^    private void debug(Object... os) {$/;"	m	class:SetOfPatterns	file:
 debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	class:TestScores	file:
 debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	class:AntiChess	file:
 debug	src/recursion/PermissionTree.java	/^  private void debug(Object... os) {$/;"	m	class:PermissionTree	file:
@@ -1618,6 +1620,7 @@ hours	src/dynamic/WeirdTimes.java	/^    int[] hours; $/;"	f	class:WeirdTimes
 howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String[] costs) {$/;"	m	class:Circuits
 howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
+howMany	src/math/SetOfPatterns.java	/^    public int howMany(String[] patterns, int k) {$/;"	m	class:SetOfPatterns
 id	src/dynamic/CssRules.java	/^    public final String id;$/;"	f	class:CssRules.Tag
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 index	src/easy/LargestGap.java	/^        int index;$/;"	f	class:LargestGap.Piece
@@ -1658,6 +1661,7 @@ m	src/dynamic/ColorfulMaze.java	/^    int m;$/;"	f	class:ColorfulMaze
 m	src/dynamic/Gifts.java	/^    int m;$/;"	f	class:Gifts
 m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
+m	src/math/SetOfPatterns.java	/^    int m;$/;"	f	class:SetOfPatterns
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
 match	src/dynamic/MakeSquare.java	/^  int match(char c1, char c2) {$/;"	m	class:MakeSquare
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
@@ -1722,6 +1726,7 @@ n	src/geometry/RemoteRover.java	/^  int n;$/;"	f	class:RemoteRover
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
 n	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 n	src/greedy/MLBRecord.java	/^  int n;$/;"	f	class:MLBRecord
+n	src/math/SetOfPatterns.java	/^    int n;$/;"	f	class:SetOfPatterns
 name	src/dynamic/CssRules.java	/^    public final int name;$/;"	f	class:CssRules.Tag
 name	src/graph/RoadReconstruction.java	/^    public final String name;$/;"	f	class:RoadReconstruction.Node
 name	src/stringm/DirectoryTree.java	/^    public final String name;$/;"	f	class:DirectoryTree.Node
@@ -1753,6 +1758,7 @@ parse	src/stringm/DirectoryTree.java	/^  int parse(Node parent, int index, int s
 parseAttr	src/dynamic/CssRules.java	/^  String parseAttr(String input) {$/;"	m	class:CssRules
 parseTag	src/dynamic/CssRules.java	/^  Result parseTag(String text) {$/;"	m	class:CssRules
 partition	src/easy/FairWorkload.java	/^  int partition(int[] input, int s, int k) {$/;"	m	class:FairWorkload
+pat	src/math/SetOfPatterns.java	/^    char [][] pat;$/;"	f	class:SetOfPatterns
 paths	src/stringm/DirectoryTree.java	/^  String[][] paths;$/;"	f	class:DirectoryTree
 perfectMatch	src/dynamic/RadarGuns.java	/^  boolean perfectMatch(int cutoff) {$/;"	m	class:RadarGuns
 permToIndex	src/math/KingOfTheCourt.java	/^  int permToIndex(int[] p) {$/;"	m	class:KingOfTheCourt
@@ -1969,6 +1975,7 @@ topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
 topc.math	src/math/Disaster.java	/^package topc.math;$/;"	p
 topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
+topc.math	src/math/SetOfPatterns.java	/^package topc.math;$/;"	p
 topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/PermissionTree.java	/^package topc.recursion;$/;"	p
