@@ -73,6 +73,7 @@ public class LittleTree {
         System.out.println(Arrays.deepToString(os));
     }
 
+    @SuppressWarnings("serial")
     class IntegerList extends ArrayList<Integer> {
 
     }
