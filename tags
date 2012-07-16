@@ -249,6 +249,7 @@ TableSeating	src/easy/TableSeating.java	/^public class TableSeating  {$/;"	c
 TableSeatingTest	test/easy/TableSeatingTest.java	/^public class TableSeatingTest  {$/;"	c
 Tag	src/dynamic/CssRules.java	/^    public Tag(String name, String id, String color) {$/;"	m	class:CssRules.Tag
 Tag	src/dynamic/CssRules.java	/^  class Tag {$/;"	c	class:CssRules
+TakeSubstringGame	src/dynamic/TakeSubstringGame.java	/^public class TakeSubstringGame {$/;"	c
 TallPeople	src/easy/TallPeople.java	/^public class TallPeople  {$/;"	c
 TallPeopleTest	test/easy/TallPeopleTest.java	/^public class TallPeopleTest {$/;"	c
 Team	src/greedy/MLBRecord.java	/^    public Team(int index, int lo) {$/;"	m	class:MLBRecord.Team
@@ -1470,6 +1471,7 @@ debug	src/dynamic/RadarGuns.java	/^  void debug(Object... os) {$/;"	m	class:Hung
 debug	src/dynamic/RandomSort.java	/^    private void debug(Object... os) {$/;"	m	class:RandomSort	file:
 debug	src/dynamic/RotatingTriangles.java	/^  private void debug(Object... os) {$/;"	m	class:RotatingTriangles	file:
 debug	src/dynamic/StarAdventure.java	/^  private void debug(Object... os) {$/;"	m	class:StarAdventure	file:
+debug	src/dynamic/TakeSubstringGame.java	/^    private void debug(Object... os) {$/;"	m	class:TakeSubstringGame	file:
 debug	src/dynamic/TheCowDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheCowDivTwo	file:
 debug	src/dynamic/TheEasyChase.java	/^    private void debug(Object... os) {$/;"	m	class:TheEasyChase	file:
 debug	src/dynamic/TheSumOfLuckyNumbers.java	/^    private void debug(Object... os) {$/;"	m	class:TheSumOfLuckyNumbers	file:
@@ -1680,6 +1682,7 @@ memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];
 memo	src/dynamic/CollectingMarbles.java	/^    int [][][] memo;$/;"	f	class:CollectingMarbles
 memo	src/dynamic/ColorfulMaze.java	/^    double[][][][] memo;$/;"	f	class:ColorfulMaze
 memo	src/dynamic/FoxAverageSequence.java	/^  long[][][][] memo;$/;"	f	class:FoxAverageSequence
+memo	src/dynamic/TakeSubstringGame.java	/^    int [][] memo;$/;"	f	class:TakeSubstringGame
 memo	src/dynamic/TheCowDivTwo.java	/^  long[][][] memo;$/;"	f	class:TheCowDivTwo
 memo	src/dynamic/WeirdTimes.java	/^    int[][] memo;$/;"	f	class:WeirdTimes
 memo	src/dynamic/YetAnotherORProblem.java	/^  long[][] memo;$/;"	f	class:YetAnotherORProblem
@@ -1790,11 +1793,13 @@ readBad	src/dp/AvoidRoads.java	/^  HashSet<Integer> readBad(String[] bad) {$/;"	
 rec	src/dp/GameOfLifeDivOne.java	/^  long rec(int stage, int at, int have) {$/;"	m	class:GameOfLifeDivOne
 rec	src/dynamic/CollectingMarbles.java	/^    int rec(int marbles, int bag, int space) {$/;"	m	class:CollectingMarbles
 rec	src/dynamic/RandomSort.java	/^    double rec(int[] perm) {$/;"	m	class:RandomSort
+rec	src/dynamic/TakeSubstringGame.java	/^    int rec(int n, boolean turn) {$/;"	m	class:TakeSubstringGame
 rec	src/dynamic/TheCowDivTwo.java	/^  long rec(int n, int k, int sum) {$/;"	m	class:TheCowDivTwo
 remove	src/sorting/FloatingMedian.java	/^  void remove(int x) {$/;"	m	class:FloatingMedian
 rest	src/dynamic/CssRules.java	/^    public final String rest;$/;"	f	class:CssRules.Result
 reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
 reverse	src/dp/FlowerGarden.java	/^  void reverse(int[] arr) {$/;"	m	class:FlowerGarden
+reverse	src/dynamic/TakeSubstringGame.java	/^    void reverse(int[] arr) {$/;"	m	class:TakeSubstringGame
 rotate	src/graph/RevolvingDoors.java	/^    public void rotate(int[][] maze, int i, int j, int left, int right, int up, int down, int flag) {$/;"	m	class:RevolvingDoors.Maze
 rotate	src/math/KingOfTheCourt.java	/^  int[] rotate(int[] input, int index) {$/;"	m	class:KingOfTheCourt
 row	src/dynamic/MiniPaint.java	/^    public int row;$/;"	f	class:MiniPaint.Node
@@ -1810,12 +1815,14 @@ seen	src/graph/PathFinding.java	/^  int[][][][] seen;$/;"	f	class:PathFinding
 seen	src/graph/RoboCourier.java	/^  HashSet<String> seen;$/;"	f	class:RoboCourier
 selectReconstruction	src/graph/RoadReconstruction.java	/^  public String selectReconstruction(String[] roads) {$/;"	m	class:RoadReconstruction
 seq	src/dynamic/FoxAverageSequence.java	/^  int[] seq;$/;"	f	class:FoxAverageSequence
+set	src/dynamic/TakeSubstringGame.java	/^    HashSet<Integer> set = new HashSet<Integer>();$/;"	f	class:TakeSubstringGame
 setp	src/dp/WeightedIntervalScheduling.java	/^    public void setp(int pval) {$/;"	m	class:WeightedIntervalScheduling.Interval
 shortest	src/dp/ShortPalindromes.java	/^  public String shortest(String base) {$/;"	m	class:ShortPalindromes
 skill	src/math/KingOfTheCourt.java	/^  int[] skill;$/;"	f	class:KingOfTheCourt
 skip	src/dp/AvoidRoads.java	/^  boolean skip(int i, int j) {$/;"	m	class:AvoidRoads
 slack	src/dynamic/RadarGuns.java	/^  int[] slack ;$/;"	f	class:Hungarian
 slackx	src/dynamic/RadarGuns.java	/^  int[] slackx;   \/\/ l(slackx[y]) + l(y) - w(slackx[y], y) = slack[y]$/;"	f	class:Hungarian
+smemo	src/dynamic/TakeSubstringGame.java	/^    int [][] smemo;$/;"	f	class:TakeSubstringGame
 solve	src/bkt/BridgeCrossing.java	/^  void solve(State s) {$/;"	m	class:BridgeCrossing
 solve	src/dp/KiloManX.java	/^  int solve() {$/;"	m	class:KiloManX
 solve	src/dp/QuickSums.java	/^  int solve(int[] nums, int sum) {$/;"	m	class:QuickSums
@@ -1839,6 +1846,7 @@ state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOn
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
 states	src/math/Hangman42.java	/^  long[][] states;$/;"	f	class:Hangman42
+subs	src/dynamic/TakeSubstringGame.java	/^    int[] subs(int n, boolean asc) {$/;"	m	class:TakeSubstringGame
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
 sum	src/dynamic/TheSumOfLuckyNumbers.java	/^    public int[] sum(int n) {$/;"	m	class:TheSumOfLuckyNumbers
@@ -1936,6 +1944,7 @@ topc.dynamic	src/dynamic/RadarGuns.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RandomSort.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/RotatingTriangles.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/StarAdventure.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/TakeSubstringGame.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheCowDivTwo.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheEasyChase.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/TheSumOfLuckyNumbers.java	/^package topc.dynamic;$/;"	p
@@ -2044,6 +2053,7 @@ willHave	src/dp/GameOfLifeDivOne.java	/^  int willHave(char[] state) {$/;"	m	cla
 win	src/math/Hangman42.java	/^  double win(int state) {$/;"	m	class:Hangman42
 win	src/math/KingOfTheCourt.java	/^  double win(int[] pos, int lim) {$/;"	m	class:KingOfTheCourt
 winner	src/dynamic/TheEasyChase.java	/^    public String winner(int n, int rowWhite, int colWhite, int rowBlack, int colBlack) {$/;"	m	class:TheEasyChase
+winningMove	src/dynamic/TakeSubstringGame.java	/^    public int winningMove(int n) {$/;"	m	class:TakeSubstringGame
 x	src/dynamic/Gifts.java	/^        public final int x;$/;"	f	class:Gifts.Node
 x	src/graph/DungeonEscape.java	/^    public final int x;$/;"	f	class:DungeonEscape.Node
 x	src/graph/Escape.java	/^    public int x;$/;"	f	class:Escape.Node
