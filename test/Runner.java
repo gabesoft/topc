@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TakeSubstringGameTest.class })
+@Suite.SuiteClasses({ SameDigitsTest.class })
 public class Runner {
 }
