@@ -13,8 +13,8 @@ public class PlatformJumper {
     double g;
     int n;
     int[][] data;
+    int[] memo;
     boolean[][] jumps;
-    int [] memo;
 
     public int maxCoins(String[] platforms, int v, int g) {
         this.v = v;

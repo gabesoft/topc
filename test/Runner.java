@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PlatformJumperTest.class })
+@Suite.SuiteClasses({ InsertSortTest.class })
 public class Runner {
 }
