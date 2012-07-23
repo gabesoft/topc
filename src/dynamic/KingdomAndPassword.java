@@ -8,77 +8,154 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=11869&rd=15170
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+548
 public class KingdomAndPassword {
-    long INF = Long.MAX_VALUE / 4;
     int n;
-    int[] R;        // digits restricted
-    int[] D;        // digits available
-    long[] P;       // powers of 10
+    int[] cs;
+    int[] old;
+    int[] rt;
+    int[] res;
+    int[][][] dp;
     long pass;
 
     public long newPassword(long oldPassword, int[] restrictedDigits) {
-        n    = restrictedDigits.length;
-        R = restrictedDigits;
-        D = new int[n];
+        n    = 0;
         pass = oldPassword;
+        rt   = restrictedDigits;
+        cs   = new int[rt.length];
 
-        long x  = oldPassword;
-        int idx = 0;
-        while (x > 0L) {
-            D[idx++] = (int)(x % 10);
+        long x = oldPassword;
+        while (x > 0) {
+            cs[n++] = (int)(x % 10);
             x = x / 10;
         }
 
-        P = new long[n + 1];
-        P[0] = 1;
-        for (int i = 1; i < n + 1; i++) {
-            P[i] = 10 * P[i - 1];
+        old = new int[n];
+        for (int i = 0; i < n; i++) {
+            old[i] = cs[n - 1 - i];
         }
 
-        debug(D);
-        debug(P);
+        Arrays.sort(cs);
 
-        //return 0;
-        return rec(0, 0, true);
+        boolean canBeSame = true; 
+        for (int i = 0; i < n; i++) {
+            if (old[i] == rt[i]) {
+                canBeSame = false;
+                break;
+            }
+        }
+
+        if (canBeSame) { return oldPassword; }
+
+        dp  = new int[1 << n][n + 2][2];
+        res = new int[n];
+
+        long a = -1L;
+        long b = -1L;
+
+        clear(dp);
+        if (lower(0, 0, 0) == 1) {
+            findLower(0, 0, 0);
+            a = 0;
+            for (int i = 0; i < n; i++) {
+                a = a * 10 + res[i];
+            }
+        }
+
+        clear(dp);
+        if (upper(0, 0, 0) == 1) {
+            findUpper(0, 0, 0);
+            b = 0;
+            for (int i = 0; i < n; i++) {
+                b = b * 10 + res[i];
+            }
+        }
+
+        if (a == -1) { return b; }
+        if (b == -1) { return a; }
+
+        if (Math.abs(a - oldPassword) > Math.abs(b - oldPassword)) {
+            return b;
+        }
+        if (Math.abs(a - oldPassword) > Math.abs(b - oldPassword)) {
+            return a;
+        }
+
+        return a;
     }
 
-    long rec(int digits, int d, boolean lt) {
-        if (d == n) { return 0; }
+    int lower(int s, int i, int ok) {
+        if (dp[s][i][ok] != -1) { return dp[s][i][ok]; }
+        if (i == n) {
+            dp[s][i][ok] = ok;
+            return dp[s][i][ok];
+        }
 
-        int k     = n - 1 - d;
-        long best = 0;
-        long pow  = P[k];
-        long old  = pass % P[k + 1];
-        //long old = pass;
-
-        for (int i = 0; i < n; i++) {
-            if (off(digits, i) && R[d] != D[i]) {
-                //debug("DIGIT", D[i], D[d], d, D[i] <= D[d]);
-
-                long next = rec(digits | (1 << i), d + 1, D[i] <= D[k]);
-                long num  = D[i] * pow + next;
-
-
-                if (next == -1) { continue; }
-
-                long d1 = Math.abs(old - num);
-                long d2 = Math.abs(old - best);
-                //if (d == 0) {
-                    //debug(digits, d, i, "\t", k, next, "\t", best, num, "\t", old, "\t", d1, d2, lt);
-                //}
-                if (best == 0) { 
-                    best = num;
-                } else if (lt ? d1 < d2 : d1 > d2) {
-                    best = num; 
-                //} else if (d1 < d2) {
-                    //best = num; 
-                } else if (d1 == d2) {
-                    best = Math.min(best, num);
+        dp[s][i][ok] = 0;
+        for (int j = n - 1; j > -1; j--) {
+            if (off(s, j) && cs[j] != rt[i] && (ok == 1 || cs[j] <= old[i])) {
+                if (lower(s | (1 << j), i + 1, (ok == 1 || cs[j] < old[i]) ? 1 : 0) == 1) {
+                    dp[s][i][ok] = 1;
+                    return dp[s][i][ok];
                 }
             }
         }
 
-        //debug("END", digits, d, best);
-        return best == 0 ? -1 : best;
+        return dp[s][i][ok];
+    }
+
+    void findLower(int s, int i, int ok) {
+        if (i == n) { return; }
+
+        for (int j = n - 1; j > -1; j--) {
+            if (off(s, j) && cs[j] != rt[i] && (ok == 1 || cs[j] <= old[i])) {
+                if (lower(s | (1 << j), i + 1, (ok == 1 || cs[j] < old[i]) ? 1 : 0) == 1) {
+                    res[i] = cs[j];
+                    findLower(s | (1 << j), i + 1, (ok == 1 || cs[j] < old[i]) ? 1 : 0);
+                    return;
+                }
+            }
+        }
+    }
+
+    int upper(int s, int i, int ok) {
+        if (dp[s][i][ok] != -1) { return dp[s][i][ok]; }
+        if (i == n) {
+            dp[s][i][ok] = ok;
+            return dp[s][i][ok];
+        }
+
+        dp[s][i][ok] = 0;
+        for (int j = 0; j < n; j++) {
+            if (off(s, j) && cs[j] != rt[i] && (ok == 1 || cs[j] >= old[i])) {
+                if (upper(s | (1 << j), i + 1, (ok == 1 || cs[j] > old[i]) ? 1 : 0) == 1) {
+                    dp[s][i][ok] = 1;
+                    return dp[s][i][ok];
+                }
+            }
+        }
+
+        return dp[s][i][ok];
+    }
+
+    void findUpper(int s, int i, int ok) {
+        if (i == n) { return; }
+
+        for (int j = 0; j < n; j++) {
+            if (off(s, j) && cs[j] != rt[i] && (ok == 1 || cs[j] >= old[i])) {
+                if (upper(s | (1 << j), i + 1, (ok == 1 || cs[j] > old[i]) ? 1 : 0) == 1) {
+                    res[i] = cs[j];
+                    findUpper(s | (1 << j), i + 1, (ok == 1 || cs[j] > old[i]) ? 1 : 0);
+                    return;
+                }
+            }
+        }
+    }
+
+    void clear(int[][][] dp) {
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                Arrays.fill(dp[i][j], -1);
+            }
+        }
     }
 
     boolean off(int mask, int d) {
