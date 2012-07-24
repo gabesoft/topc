@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RelativelyPrimeSubsetTest.class })
+@Suite.SuiteClasses({ BoggleScoreTest.class })
 public class Runner {
 }
