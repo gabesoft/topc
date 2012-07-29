@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FastPostmanTest.class })
+@Suite.SuiteClasses({ IncreasingSubsequencesTest.class })
 public class Runner {
 }
