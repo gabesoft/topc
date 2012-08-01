@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MinimumVariancePartitionTest.class })
+@Suite.SuiteClasses({ ExtendedHappyNumbersTest.class })
 public class Runner {
 }
