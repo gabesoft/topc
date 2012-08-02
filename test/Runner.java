@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ExtendedHappyNumbersTest.class })
+@Suite.SuiteClasses({ ProbabilisticTranslatorTest.class })
 public class Runner {
 }
