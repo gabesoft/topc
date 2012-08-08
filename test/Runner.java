@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ NiceOrUglyTest.class })
+@Suite.SuiteClasses({ LexStringWriterTest.class })
 public class Runner {
 }
