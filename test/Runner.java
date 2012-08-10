@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SimplifiedDartsTest.class })
+@Suite.SuiteClasses({ ParallelProgrammingTest.class })
 public class Runner {
 }
