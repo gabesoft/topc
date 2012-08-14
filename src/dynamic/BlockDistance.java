@@ -8,6 +8,7 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=6417&rd=9986
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm306
 public class BlockDistance {
+    int INF = Integer.MAX_VALUE / 4;
     int n1;
     int n2;
     char[] t1;
@@ -42,23 +43,22 @@ public class BlockDistance {
             Arrays.fill(memo[i], -2);
         }
 
-        return dist(0, 0);
+        int res = dist(0, 0);
+
+        return res == INF ? -1 : res;
     }
 
     int dist(int i1, int i2) {
         if (i1 == n1 && i2 == n2) { return 0; }
         if (i1 == n1) { return 1; }
-        if (i2 == n2) { return -1; }
+        if (i2 == n2) { return INF; }
         if (t1[i1] == t2[i2]) { return dist(i1 + 1, i2 + 1); }
         if (memo[i1][i2] > -2) { return memo[i1][i2]; }
 
-        int best = -1;
+        int best = INF;
         for (int i = i2 + 1; i < n2; i++) {
             if (t1[i1] == t2[i]) {
-                int next = dist(i1, i);
-                if (next != -1) {
-                    best = (best == -1) ? 1 + next : Math.min(best, 1 + next);
-                }
+                best = Math.min(best, 1 + dist(i1, i));
             }
         }
 
