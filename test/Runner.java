@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BlockDistanceTest.class })
+@Suite.SuiteClasses({ CorrectingParenthesizationTest.class })
 public class Runner {
 }
