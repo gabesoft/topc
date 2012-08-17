@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PolyMoveTest.class })
+@Suite.SuiteClasses({ ConditionalTest.class })
 public class Runner {
 }
