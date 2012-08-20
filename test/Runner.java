@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ConditionalTest.class })
+@Suite.SuiteClasses({ IndicatorMotionDrawingTest.class })
 public class Runner {
 }
