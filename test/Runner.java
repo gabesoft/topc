@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PalindromistTest.class })
+@Suite.SuiteClasses({ FixedSizeSumsTest.class })
 public class Runner {
 }
