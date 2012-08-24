@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FixedSizeSumsTest.class })
+@Suite.SuiteClasses({ BinarySearchableTest.class })
 public class Runner {
 }
