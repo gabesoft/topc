@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BinarySearchableTest.class })
+@Suite.SuiteClasses({ SafeRemovalTest.class })
 public class Runner {
 }
