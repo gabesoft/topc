@@ -127,6 +127,7 @@ MOD	src/dynamic/Nim.java	/^  static final long MOD = 1000000007L;$/;"	f	class:Ni
 MOD	src/dynamic/NumberPyramids.java	/^    final int MOD = 1000000009;$/;"	f	class:NumberPyramids
 MOD	src/dynamic/P8XCoinChange.java	/^  static public final long MOD = 1000003;$/;"	f	class:P8XCoinChange
 MOD	src/dynamic/TheCowDivTwo.java	/^  final long MOD = 1000000007L;$/;"	f	class:TheCowDivTwo
+MOD	src/easy/SpacetskE.java	/^    int MOD = 1000000007;$/;"	f	class:SpacetskE
 MakeSquare	src/dynamic/MakeSquare.java	/^public class MakeSquare {$/;"	c
 Marketing	src/graph/Marketing.java	/^public class Marketing {$/;"	c
 MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
@@ -239,6 +240,7 @@ ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$
 ShortPalindromesTest	test/dp/ShortPalindromesTest.java	/^public class ShortPalindromesTest {$/;"	c
 SmartWordToy	src/graph/SmartWordToy.java	/^public class SmartWordToy {$/;"	c
 SmartWordToyTest	test/graph/SmartWordToyTest.java	/^public class SmartWordToyTest {$/;"	c
+SpacetskE	src/easy/SpacetskE.java	/^public class SpacetskE {$/;"	c
 StarAdventure	src/dynamic/StarAdventure.java	/^public class StarAdventure {$/;"	c
 State	src/bkt/BridgeCrossing.java	/^    public State(int[] times) {$/;"	m	class:BridgeCrossing.State
 State	src/bkt/BridgeCrossing.java	/^  class State {$/;"	c	class:BridgeCrossing
@@ -345,6 +347,7 @@ augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouring = new BagOfDevouring();$/;"	f	class:BagOfDevouringTest
+binomialCoefficient	src/easy/SpacetskE.java	/^    public static int[][] binomialCoefficient(int n, int mod) {$/;"	m	class:SpacetskE
 block	src/easy/LargestGap.java	/^        boolean block;$/;"	f	class:LargestGap.Piece
 blockdistance	test/dynamic/BlockDistanceTest.java	/^    BlockDistance blockdistance = new BlockDistance();$/;"	f	class:BlockDistanceTest
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
@@ -1448,6 +1451,7 @@ countOperations	src/graph/DivisorInc.java	/^  public int countOperations(int N, 
 countReachable	src/graph/IslandFerries.java	/^  void countReachable() {$/;"	m	class:IslandFerries
 countRules	src/dynamic/CssRules.java	/^  int countRules(Tag t, boolean covered) {$/;"	m	class:CssRules
 countSequences	src/dynamic/YetAnotherORProblem.java	/^  public int countSequences(long[] R) {$/;"	m	class:YetAnotherORProblem
+countsets	src/easy/SpacetskE.java	/^    public int  countsets(int L, int H, int K) {$/;"	m	class:SpacetskE
 create	src/graph/Escape.java	/^    public Node create(int dx, int dy) {$/;"	m	class:Escape.Node
 curStrokes	src/dynamic/MiniPaint.java	/^    public int curStrokes;$/;"	f	class:MiniPaint.Node
 data	src/dp/QuickSums.java	/^  int[][] data;$/;"	f	class:QuickSums
@@ -1497,6 +1501,7 @@ debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/easy/LargestGap.java	/^    private void debug(Object... os) {$/;"	m	class:LargestGap	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
+debug	src/easy/SpacetskE.java	/^    private void debug(Object... os) {$/;"	m	class:SpacetskE	file:
 debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"	m	class:PackingShapes	file:
 debug	src/geometry/RemoteRover.java	/^  private void debug(Object... os) {$/;"	m	class:RemoteRover	file:
 debug	src/graph/Circuits.java	/^  void debug(Object...os) {$/;"	m	class:Circuits
@@ -1572,6 +1577,7 @@ game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
 gcd	src/dynamic/ChessKnight.java	/^  public int gcd(int a, int b)$/;"	m	class:ChessKnight
+gcd	src/easy/SpacetskE.java	/^int gcd(int a, int b)$/;"	m	class:SpacetskE
 gcd	src/graph/DivisorInc.java	/^  int gcd(int n, int m) {$/;"	m	class:DivisorInc
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
 genNums	src/dynamic/TheSumOfLuckyNumbers.java	/^    void genNums(int c, String s) {$/;"	m	class:TheSumOfLuckyNumbers
@@ -1974,6 +1980,7 @@ topc.easy	src/easy/LargestGap.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/SpacetskE.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
 topc.geometry	src/geometry/PackingShapes.java	/^package topc.geometry;$/;"	p
