@@ -1577,7 +1577,7 @@ game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
 games	src/greedy/MLBRecord.java	/^  int games;$/;"	f	class:MLBRecord
 gcd	src/dynamic/ChessKnight.java	/^  public int gcd(int a, int b)$/;"	m	class:ChessKnight
-gcd	src/easy/SpacetskE.java	/^int gcd(int a, int b)$/;"	m	class:SpacetskE
+gcd	src/easy/SpacetskE.java	/^    int gcd(int a, int b)$/;"	m	class:SpacetskE
 gcd	src/graph/DivisorInc.java	/^  int gcd(int n, int m) {$/;"	m	class:DivisorInc
 gen	src/dp/ShortPalindromes.java	/^  void gen(int i, int j, int k) {$/;"	m	class:ShortPalindromes
 genNums	src/dynamic/TheSumOfLuckyNumbers.java	/^    void genNums(int c, String s) {$/;"	m	class:TheSumOfLuckyNumbers

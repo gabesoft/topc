@@ -59,7 +59,7 @@ public class SpacetskE {
     }
 
     public static int[][] binomialCoefficient(int n, int mod) {
-        int[][] bc = new int[(int)n + 1][(int)n + 1];
+        int[][] bc = new int[n + 1][n + 1];
         if (mod == 1) { return bc; }
 
         for (int i = 0; i < n + 1; i++) {
