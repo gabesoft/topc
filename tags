@@ -37,6 +37,7 @@ CollectingMarbles	src/dynamic/CollectingMarbles.java	/^public class CollectingMa
 ColorfulMaze	src/dynamic/ColorfulMaze.java	/^public class ColorfulMaze {$/;"	c
 ColorfulMazeTest	test/dynamic/ColorfulMazeTest.java	/^public class ColorfulMazeTest {$/;"	c
 ColorfulMazeTwo	src/dynamic/ColorfulMazeTwo.java	/^public class ColorfulMazeTwo {$/;"	c
+CorrectMultiplicationTwo	src/easy/CorrectMultiplicationTwo.java	/^public class CorrectMultiplicationTwo {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
 Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
 CssRules	src/dynamic/CssRules.java	/^public class CssRules {$/;"	c
@@ -1497,6 +1498,7 @@ debug	src/dynamic/TheEasyChase.java	/^    private void debug(Object... os) {$/;"
 debug	src/dynamic/TheSumOfLuckyNumbers.java	/^    private void debug(Object... os) {$/;"	m	class:TheSumOfLuckyNumbers	file:
 debug	src/dynamic/WeirdTimes.java	/^    private void debug(Object... os) {$/;"	m	class:WeirdTimes	file:
 debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) {$/;"	m	class:YetAnotherORProblem	file:
+debug	src/easy/CorrectMultiplicationTwo.java	/^    private void debug(Object... os) {$/;"	m	class:CorrectMultiplicationTwo	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/LargestGap.java	/^    private void debug(Object... os) {$/;"	m	class:LargestGap	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
@@ -1604,6 +1606,7 @@ getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:S
 getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	class:RevolvingDoors.Maze
 getMin	src/dynamic/RadarGuns.java	/^  int getMin() {$/;"	m	class:RadarGuns
 getMinimalCssRuleCount	src/dynamic/CssRules.java	/^  public int getMinimalCssRuleCount(String[] xhtml) {$/;"	m	class:CssRules
+getMinimum	src/easy/CorrectMultiplicationTwo.java	/^    public int getMinimum(int a, int b, int c) {$/;"	m	class:CorrectMultiplicationTwo
 getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNameValue	src/dynamic/CssRules.java	/^    private int getNameValue(String name) {$/;"	m	class:CssRules.Tag	file:
@@ -1795,6 +1798,7 @@ pow	src/dynamic/P8XCoinChange.java	/^  public static long[][] pow(long[][] m, lo
 pow	src/graph/DrivingAround.java	/^  public static long[][] pow(long[][] m, long k) {$/;"	m	class:DAMatrix
 prices	src/graph/IslandFerries.java	/^  int[][] prices;$/;"	f	class:IslandFerries
 prime	src/easy/PrimePalindromic.java	/^  boolean[] prime;$/;"	f	class:PrimePalindromic
+primeFactors	src/easy/CorrectMultiplicationTwo.java	/^    List<Integer> primeFactors(int n) {$/;"	m	class:CorrectMultiplicationTwo
 print	src/dynamic/CssRules.java	/^    public void print(String pad) {$/;"	m	class:CssRules.Tag
 printGen	src/dp/GameOfLifeDivOne.java	/^  void printGen(int n, int t) {$/;"	m	class:GameOfLifeDivOne
 printMaze	src/graph/RevolvingDoors.java	/^  public void printMaze(int[][] maze) {$/;"	m	class:RevolvingDoors
@@ -1974,6 +1978,7 @@ topc.dynamic	src/dynamic/TheSumOfLuckyNumbers.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/WeirdTimes.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/YetAnotherORProblem.java	/^package topc.dynamic;$/;"	p
 topc.easy	src/easy/BusinessTasks.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/CorrectMultiplicationTwo.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/LargestGap.java	/^package topc.easy;$/;"	p
