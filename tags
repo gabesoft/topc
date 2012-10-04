@@ -192,6 +192,7 @@ Node	src/recursion/PermissionTree.java	/^  class Node {$/;"	c	class:PermissionTr
 Node	src/recursion/RedBlack.java	/^  class Node {$/;"	c	class:RedBlack
 Node	src/stringm/DirectoryTree.java	/^    public Node(String name, int index) {$/;"	m	class:DirectoryTree.Node
 Node	src/stringm/DirectoryTree.java	/^  class Node {$/;"	c	class:DirectoryTree
+NumberLabyrinthDiv2	src/graph/NumberLabyrinthDiv2.java	/^public class NumberLabyrinthDiv2 {$/;"	c
 NumberPyramids	src/dynamic/NumberPyramids.java	/^public class NumberPyramids {$/;"	c
 NumbersAndMatches	src/dynamic/NumbersAndMatches.java	/^public class NumbersAndMatches {$/;"	c
 P	src/recursion/AntiChess.java	/^  int P;$/;"	f	class:AntiChess
@@ -332,6 +333,7 @@ _weight	src/dp/KiloManX.java	/^  int[][] _weight;$/;"	f	class:KiloManX
 _weight	src/dp/WeightedIntervalScheduling.java	/^    int _weight;$/;"	f	class:WeightedIntervalScheduling.Interval
 _word	src/graph/SmartWordToy.java	/^    String _word;$/;"	f	class:SmartWordToy.Word
 add	src/dp/ShortPalindromes.java	/^  void add(int i, int j, int k, String str) {$/;"	m	class:ShortPalindromes
+addNodes	src/graph/NumberLabyrinthDiv2.java	/^    void addNodes(int v, int k, int moves) {$/;"	m	class:NumberLabyrinthDiv2
 addToTree	src/dynamic/RadarGuns.java	/^  void addToTree(int x, int parentx) {$/;"	m	class:Hungarian
 addWeights	src/dp/KiloManX.java	/^  int[] addWeights(int[] weight, int boss) {$/;"	m	class:KiloManX
 addb	src/easy/MedalTable.java	/^    public void addb() { _b++; }$/;"	m	class:MedalTable.Country
@@ -1516,6 +1518,7 @@ debug	src/graph/Graduation.java	/^  private void debug(Object... os) {$/;"	m	cla
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
+debug	src/graph/NumberLabyrinthDiv2.java	/^    private void debug(Object... os) {$/;"	m	class:NumberLabyrinthDiv2	file:
 debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:Parking	file:
 debug	src/graph/RoadReconstruction.java	/^  private void debug(Object... os) {$/;"	m	class:RoadReconstruction	file:
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
@@ -1610,6 +1613,7 @@ getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	cla
 getMin	src/dynamic/RadarGuns.java	/^  int getMin() {$/;"	m	class:RadarGuns
 getMinimalCssRuleCount	src/dynamic/CssRules.java	/^  public int getMinimalCssRuleCount(String[] xhtml) {$/;"	m	class:CssRules
 getMinimum	src/easy/CorrectMultiplicationTwo.java	/^    public int getMinimum(int a, int b, int c) {$/;"	m	class:CorrectMultiplicationTwo
+getMinimumNumberOfMoves	src/graph/NumberLabyrinthDiv2.java	/^    public int getMinimumNumberOfMoves(String[] board, int r1, int c1, int r2, int c2, int K) {$/;"	m	class:NumberLabyrinthDiv2
 getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNameValue	src/dynamic/CssRules.java	/^    private int getNameValue(String name) {$/;"	m	class:CssRules.Tag	file:
@@ -2004,6 +2008,7 @@ topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/NumberLabyrinthDiv2.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Parking.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/PathFinding.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RevolvingDoors.java	/^package topc.graph;$/;"	p
