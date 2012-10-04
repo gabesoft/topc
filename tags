@@ -263,6 +263,7 @@ TeamBuilder	src/graph/TeamBuilder.java	/^public class TeamBuilder {$/;"	c
 TestScores	src/math/TestScores.java	/^public class TestScores {$/;"	c
 TheCowDivTwo	src/dynamic/TheCowDivTwo.java	/^public class TheCowDivTwo {$/;"	c
 TheEasyChase	src/dynamic/TheEasyChase.java	/^public class TheEasyChase {$/;"	c
+TheLuckyBasesDivTwo	src/search/TheLuckyBasesDivTwo.java	/^public class TheLuckyBasesDivTwo {$/;"	c
 TheProgrammingContestDivOneTest	test/dynamic/TheProgrammingContestDivOneTest.java	/^public class TheProgrammingContestDivOneTest {$/;"	c
 TheSumOfLuckyNumbers	src/dynamic/TheSumOfLuckyNumbers.java	/^public class TheSumOfLuckyNumbers {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
@@ -1530,6 +1531,7 @@ debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	clas
 debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	class:AntiChess	file:
 debug	src/recursion/PermissionTree.java	/^  private void debug(Object... os) {$/;"	m	class:PermissionTree	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
+debug	src/search/TheLuckyBasesDivTwo.java	/^    private void debug(Object... os) {$/;"	m	class:TheLuckyBasesDivTwo	file:
 debug	src/sorting/FloatingMedian.java	/^  private void debug(Object... os) {$/;"	m	class:FloatingMedian	file:
 debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
@@ -1568,6 +1570,7 @@ fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) 
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 find	src/dynamic/Gifts.java	/^    int find(char[][] graph, int lim) {$/;"	m	class:Gifts
 find	src/dynamic/TheCowDivTwo.java	/^  public int find(int N, int K) {$/;"	m	class:TheCowDivTwo
+find	src/search/TheLuckyBasesDivTwo.java	/^    public long find(long n) {$/;"	m	class:TheLuckyBasesDivTwo
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findHome	src/recursion/PermissionTree.java	/^  public int[] findHome(String[] folders, String[] users) {$/;"	m	class:PermissionTree
 findMatch	src/dynamic/RadarGuns.java	/^  boolean findMatch(int i, int cutoff, int[] match, boolean[] seen) {$/;"	m	class:RadarGuns
@@ -1683,6 +1686,7 @@ length	src/easy/LargestGap.java	/^        int length;$/;"	f	class:LargestGap.Pie
 lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
+lucky	src/search/TheLuckyBasesDivTwo.java	/^    boolean lucky(long n, long b) {$/;"	m	class:TheLuckyBasesDivTwo
 lx	src/dynamic/RadarGuns.java	/^  int[] lx;       \/\/ x labels$/;"	f	class:Hungarian
 ly	src/dynamic/RadarGuns.java	/^  int[] ly;       \/\/ y labels$/;"	f	class:Hungarian
 m	src/dynamic/ColorfulMaze.java	/^    int m;$/;"	f	class:ColorfulMaze
@@ -2018,6 +2022,7 @@ topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/PermissionTree.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
+topc.search	src/search/TheLuckyBasesDivTwo.java	/^package topc.search;$/;"	p
 topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
