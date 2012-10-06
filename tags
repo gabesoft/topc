@@ -41,6 +41,7 @@ CorrectMultiplicationTwo	src/easy/CorrectMultiplicationTwo.java	/^public class C
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
 Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
 CssRules	src/dynamic/CssRules.java	/^public class CssRules {$/;"	c
+CubeRoll	src/math/CubeRoll.java	/^public class CubeRoll {$/;"	c
 D	src/dynamic/NumbersAndMatches.java	/^    int[][] D = new int[][] {$/;"	f	class:NumbersAndMatches
 DAMatrix	src/graph/DrivingAround.java	/^class DAMatrix {$/;"	c
 DELTA	src/math/BenfordsLaw.java	/^  static public final double DELTA = 0.000001;$/;"	f	class:BenfordsLaw
@@ -88,6 +89,7 @@ Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
+INF	src/math/CubeRoll.java	/^    final int INF = 1000000000;$/;"	f	class:CubeRoll
 INV2	src/dynamic/Nim.java	/^  long INV2;$/;"	f	class:Nim
 IndicatorMotionDrawingTest	test/dynamic/IndicatorMotionDrawingTest.java	/^public class IndicatorMotionDrawingTest {$/;"	c
 IntegerList	src/graph/Parking.java	/^  class IntegerList extends LinkedList<Integer> { }$/;"	c	class:Parking
@@ -355,6 +357,7 @@ binomialCoefficient	src/easy/SpacetskE.java	/^    public static int[][] binomial
 block	src/easy/LargestGap.java	/^        boolean block;$/;"	f	class:LargestGap.Piece
 blockdistance	test/dynamic/BlockDistanceTest.java	/^    BlockDistance blockdistance = new BlockDistance();$/;"	f	class:BlockDistanceTest
 blocks	src/dp/FlowerGarden.java	/^  boolean blocks(int i, int j) {$/;"	m	class:FlowerGarden
+boundedCase	src/math/CubeRoll.java	/^    int boundedCase(int left, int init, int goal, int right) {$/;"	m	class:CubeRoll
 buildGraph	src/graph/RoboCourier.java	/^  void buildGraph(String[] path) {$/;"	m	class:RoboCourier
 buildTeams	src/greedy/MLBRecord.java	/^  void buildTeams(int[] wins) {$/;"	m	class:MLBRecord
 buildTree	src/recursion/PermissionTree.java	/^  void buildTree(String[] folders) {$/;"	m	class:PermissionTree
@@ -1526,6 +1529,7 @@ debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
 debug	src/math/BaseballLineup.java	/^  private void debug(Object... os) {$/;"	m	class:BaseballLineup	file:
 debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	class:BenfordsLaw	file:
+debug	src/math/CubeRoll.java	/^    private void debug(Object... os) {$/;"	m	class:CubeRoll	file:
 debug	src/math/Disaster.java	/^  private void debug(Object... os) {$/;"	m	class:Disaster	file:
 debug	src/math/Hangman42.java	/^  private void debug(Object... os) {$/;"	m	class:Hangman42	file:
 debug	src/math/KingOfTheCourt.java	/^  private void debug(Object... os) {$/;"	m	class:KingOfTheCourt	file:
@@ -1614,6 +1618,7 @@ getMin	src/dynamic/RadarGuns.java	/^  int getMin() {$/;"	m	class:RadarGuns
 getMinimalCssRuleCount	src/dynamic/CssRules.java	/^  public int getMinimalCssRuleCount(String[] xhtml) {$/;"	m	class:CssRules
 getMinimum	src/easy/CorrectMultiplicationTwo.java	/^    public int getMinimum(int a, int b, int c) {$/;"	m	class:CorrectMultiplicationTwo
 getMinimumNumberOfMoves	src/graph/NumberLabyrinthDiv2.java	/^    public int getMinimumNumberOfMoves(String[] board, int r1, int c1, int r2, int c2, int K) {$/;"	m	class:NumberLabyrinthDiv2
+getMinimumSteps	src/math/CubeRoll.java	/^    public int getMinimumSteps(int initPos, int goalPos, int[] holePos) {$/;"	m	class:CubeRoll
 getMostWork	src/easy/FairWorkload.java	/^  public int getMostWork(int[] folders, int workers) {$/;"	m	class:FairWorkload
 getName	src/easy/MedalTable.java	/^    public String getName() { return _name; }$/;"	m	class:MedalTable.Country
 getNameValue	src/dynamic/CssRules.java	/^    private int getNameValue(String name) {$/;"	m	class:CssRules.Tag	file:
@@ -2019,6 +2024,7 @@ topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
 topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
 topc.math	src/math/BaseballLineup.java	/^package topc.math;$/;"	p
 topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
+topc.math	src/math/CubeRoll.java	/^package topc.math;$/;"	p
 topc.math	src/math/Disaster.java	/^package topc.math;$/;"	p
 topc.math	src/math/Hangman42.java	/^package topc.math;$/;"	p
 topc.math	src/math/KingOfTheCourt.java	/^package topc.math;$/;"	p
@@ -2076,6 +2082,7 @@ tree	src/recursion/PermissionTree.java	/^  Node tree;$/;"	f	class:PermissionTree
 tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
 tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
+unboundedCase	src/math/CubeRoll.java	/^    int unboundedCase(int dist) {$/;"	m	class:CubeRoll
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
 unit	src/dynamic/P8XCoinChange.java	/^  public static long[][] unit(int n) {$/;"	m	class:Matrix
 unit	src/graph/DrivingAround.java	/^  public static long[][] unit(int n) {$/;"	m	class:DAMatrix
