@@ -242,6 +242,7 @@ START	src/graph/RevolvingDoors.java	/^  static public final int START = -3;$/;"	
 SetOfPatterns	src/math/SetOfPatterns.java	/^public class SetOfPatterns {$/;"	c
 ShortPalindromes	src/dp/ShortPalindromes.java	/^public class ShortPalindromes {$/;"	c
 ShortPalindromesTest	test/dp/ShortPalindromesTest.java	/^public class ShortPalindromesTest {$/;"	c
+SlimeXResidentSlime	src/easy/SlimeXResidentSlime.java	/^public class SlimeXResidentSlime {$/;"	c
 SmartWordToy	src/graph/SmartWordToy.java	/^public class SmartWordToy {$/;"	c
 SmartWordToyTest	test/graph/SmartWordToyTest.java	/^public class SmartWordToyTest {$/;"	c
 SpacetskE	src/easy/SpacetskE.java	/^public class SpacetskE {$/;"	c
@@ -1509,6 +1510,7 @@ debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	cl
 debug	src/easy/LargestGap.java	/^    private void debug(Object... os) {$/;"	m	class:LargestGap	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
+debug	src/easy/SlimeXResidentSlime.java	/^    private void debug(Object... os) {$/;"	m	class:SlimeXResidentSlime	file:
 debug	src/easy/SpacetskE.java	/^    private void debug(Object... os) {$/;"	m	class:SpacetskE	file:
 debug	src/geometry/PackingShapes.java	/^  private void debug(Object... os) {$/;"	m	class:PackingShapes	file:
 debug	src/geometry/RemoteRover.java	/^  private void debug(Object... os) {$/;"	m	class:RemoteRover	file:
@@ -1570,6 +1572,7 @@ expand	src/dp/KiloManX.java	/^  int[] expand(int[] xs, int x) {$/;"	m	class:Kilo
 expected	src/math/Disaster.java	/^  public double expected(double b, String[] roads) {$/;"	m	class:Disaster
 expectedRuns	src/math/BaseballLineup.java	/^  public double expectedRuns(String[] stats) {$/;"	m	class:BaseballLineup
 extendedKey	src/graph/RoboCourier.java	/^    public String extendedKey() {$/;"	m	class:RoboCourier.Node
+exterminate	src/easy/SlimeXResidentSlime.java	/^    public int exterminate(String[] field) {$/;"	m	class:SlimeXResidentSlime
 fast	src/graph/RoboCourier.java	/^    public boolean fast = false;$/;"	f	class:RoboCourier.Node
 ferry	src/graph/IslandFerries.java	/^    public int ferry;$/;"	f	class:IslandFerries.Ticket
 fill	src/graph/Escape.java	/^  void fill(String[] regions, int value) {$/;"	m	class:Escape
@@ -1998,6 +2001,7 @@ topc.easy	src/easy/LargestGap.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/SlimeXResidentSlime.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/SpacetskE.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TableSeating.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/TallPeople.java	/^package topc.easy;$/;"	p
