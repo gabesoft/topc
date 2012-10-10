@@ -25,7 +25,7 @@ public class CutTheNumbers {
                         s += x;
                         x = 0;
                     } else {
-                        x = x * 10 + (int)(board[i].charAt(j) - '0');
+                        x = x * 10 + (board[i].charAt(j) - '0');
                     }
                 }
                 s += x;
@@ -38,7 +38,7 @@ public class CutTheNumbers {
                         s += x;
                         x = 0;
                     } else {
-                        x = x * 10 + (int)(board[i].charAt(j) - '0');
+                        x = x * 10 + (board[i].charAt(j) - '0');
                     }
                 }
                 s += x;

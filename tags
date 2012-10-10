@@ -89,6 +89,7 @@ Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
+INF	src/graph/KingdomXCitiesandVillagesAnother.java	/^    int INF = Integer.MAX_VALUE \/ 4;$/;"	f	class:KingdomXCitiesandVillagesAnother
 INF	src/math/CubeRoll.java	/^    final int INF = 1000000000;$/;"	f	class:CubeRoll
 INV2	src/dynamic/Nim.java	/^  long INV2;$/;"	f	class:Nim
 IndicatorMotionDrawingTest	test/dynamic/IndicatorMotionDrawingTest.java	/^public class IndicatorMotionDrawingTest {$/;"	c
@@ -111,6 +112,7 @@ KiloManX3	src/graph/KiloManX3.java	/^public class KiloManX3 {$/;"	c
 KiloManX3Test	test/graph/KiloManX3Test.java	/^public class KiloManX3Test {$/;"	c
 KiloManXTest	test/dp/KiloManXTest.java	/^public class KiloManXTest {$/;"	c
 KingOfTheCourt	src/math/KingOfTheCourt.java	/^public class KingOfTheCourt {$/;"	c
+KingdomXCitiesandVillagesAnother	src/graph/KingdomXCitiesandVillagesAnother.java	/^public class KingdomXCitiesandVillagesAnother {$/;"	c
 L	src/dynamic/Nim.java	/^  int L;$/;"	f	class:Nim
 LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -1, -1, -1, 9, 20, -1, -1, 24, 6, -1, -1, -1, -1, -1, -1, -1, -1, -1, 5, -1, -1, -1, 10 };$/;"	f	class:RoboCourier
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
@@ -1522,6 +1524,7 @@ debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
 debug	src/graph/Graduation.java	/^  private void debug(Object... os) {$/;"	m	class:Graduation	file:
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
+debug	src/graph/KingdomXCitiesandVillagesAnother.java	/^    private void debug(Object... os) {$/;"	m	class:KingdomXCitiesandVillagesAnother	file:
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
 debug	src/graph/NumberLabyrinthDiv2.java	/^    private void debug(Object... os) {$/;"	m	class:NumberLabyrinthDiv2	file:
 debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:Parking	file:
@@ -1547,6 +1550,7 @@ debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	clas
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
 delete	src/dynamic/MakeSquare.java	/^  int delete(int c) {$/;"	m	class:MakeSquare
+determineLength	src/graph/KingdomXCitiesandVillagesAnother.java	/^    public double determineLength(int[] cityX, int[] cityY, int[] villageX, int[] villageY) {$/;"	m	class:KingdomXCitiesandVillagesAnother
 dfs	src/graph/Circuits.java	/^  void dfs(int x, int len) {$/;"	m	class:Circuits
 dfs	src/graph/Marketing.java	/^  boolean dfs(int x, int c) {$/;"	m	class:Marketing
 differentNumbers	src/dynamic/NumbersAndMatches.java	/^    public long differentNumbers(long N, int K) {$/;"	m	class:NumbersAndMatches
@@ -2016,6 +2020,7 @@ topc.graph	src/graph/Graduation.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/KingdomXCitiesandVillagesAnother.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/NumberLabyrinthDiv2.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Parking.java	/^package topc.graph;$/;"	p
