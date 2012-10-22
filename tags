@@ -40,6 +40,7 @@ ColorfulMazeTwo	src/dynamic/ColorfulMazeTwo.java	/^public class ColorfulMazeTwo 
 CorrectMultiplicationTwo	src/easy/CorrectMultiplicationTwo.java	/^public class CorrectMultiplicationTwo {$/;"	c
 Country	src/easy/MedalTable.java	/^    public Country(String name) {$/;"	m	class:MedalTable.Country
 Country	src/easy/MedalTable.java	/^  private class Country implements Comparable<Country>{$/;"	c	class:MedalTable
+CrazyLine	src/greedy/CrazyLine.java	/^public class CrazyLine {$/;"	c
 CssRules	src/dynamic/CssRules.java	/^public class CssRules {$/;"	c
 CubeRoll	src/math/CubeRoll.java	/^public class CubeRoll {$/;"	c
 D	src/dynamic/NumbersAndMatches.java	/^    int[][] D = new int[][] {$/;"	f	class:NumbersAndMatches
@@ -1531,6 +1532,7 @@ debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:
 debug	src/graph/RoadReconstruction.java	/^  private void debug(Object... os) {$/;"	m	class:RoadReconstruction	file:
 debug	src/graph/RoboCourier.java	/^  void debug(Object...os) {$/;"	m	class:RoboCourier
 debug	src/graph/TeamBuilder.java	/^  private void debug(Object... os) {$/;"	m	class:TeamBuilder	file:
+debug	src/greedy/CrazyLine.java	/^    private void debug(Object... os) {$/;"	m	class:CrazyLine	file:
 debug	src/greedy/MLBRecord.java	/^  private void debug(Object... os) {$/;"	m	class:MLBRecord	file:
 debug	src/math/BaseballLineup.java	/^  private void debug(Object... os) {$/;"	m	class:BaseballLineup	file:
 debug	src/math/BenfordsLaw.java	/^  private void debug(Object... os) {$/;"	m	class:BenfordsLaw	file:
@@ -1716,6 +1718,7 @@ match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 matchCount	src/dynamic/NumbersAndMatches.java	/^    int matchCount(int from, int to) {$/;"	m	class:NumbersAndMatches
 max	src/graph/Circuits.java	/^  int max;$/;"	f	class:Circuits
 maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$/;"	m	class:MiniPaint
+maxCrazyness	src/greedy/CrazyLine.java	/^    public int maxCrazyness(int[] heights) {$/;"	m	class:CrazyLine
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
 maxGifts	src/dynamic/Gifts.java	/^    public int maxGifts(String[] city, int T) {$/;"	m	class:Gifts
 maxMatch	src/dynamic/RadarGuns.java	/^  int maxMatch;$/;"	f	class:Hungarian
@@ -2030,6 +2033,7 @@ topc.graph	src/graph/RoadReconstruction.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/RoboCourier.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/SmartWordToy.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/TeamBuilder.java	/^package topc.graph;$/;"	p
+topc.greedy	src/greedy/CrazyLine.java	/^package topc.greedy;$/;"	p
 topc.greedy	src/greedy/MLBRecord.java	/^package topc.greedy;$/;"	p
 topc.math	src/math/BaseballLineup.java	/^package topc.math;$/;"	p
 topc.math	src/math/BenfordsLaw.java	/^package topc.math;$/;"	p
