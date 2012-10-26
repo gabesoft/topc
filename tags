@@ -87,6 +87,7 @@ GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
 H	src/dynamic/WeirdTimes.java	/^    int H = 24;$/;"	f	class:WeirdTimes
 Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
+HeightRound	src/dynamic/HeightRound.java	/^public class HeightRound {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
@@ -1491,6 +1492,7 @@ debug	src/dynamic/CssRules.java	/^  private void debug(Object... os) {$/;"	m	cla
 debug	src/dynamic/Flags.java	/^  private void debug(Object... os) {$/;"	m	class:Flags	file:
 debug	src/dynamic/FoxAverageSequence.java	/^  private void debug(Object... os) {$/;"	m	class:FoxAverageSequence	file:
 debug	src/dynamic/Gifts.java	/^    private void debug(Object... os) {$/;"	m	class:Gifts	file:
+debug	src/dynamic/HeightRound.java	/^    private void debug(Object... os) {$/;"	m	class:HeightRound	file:
 debug	src/dynamic/MakeSquare.java	/^  private void debug(Object... os) {$/;"	m	class:MakeSquare	file:
 debug	src/dynamic/MiniPaint.java	/^  private void debug(Object... os) {$/;"	m	class:MiniPaint	file:
 debug	src/dynamic/Nim.java	/^  private void debug(Object... os) {$/;"	m	class:Nim	file:
@@ -1606,6 +1608,7 @@ generate	src/easy/MedalTable.java	/^  public String[] generate(String[] results)
 getAbove	src/graph/RevolvingDoors.java	/^    public int getAbove(int position) {$/;"	m	class:RevolvingDoors.Maze
 getAdjCells	src/graph/RevolvingDoors.java	/^    public int[] getAdjCells(int position) {$/;"	m	class:RevolvingDoors.Maze
 getBelow	src/graph/RevolvingDoors.java	/^    public int getBelow(int position) {$/;"	m	class:RevolvingDoors.Maze
+getBestRound	src/dynamic/HeightRound.java	/^    public int[] getBestRound(int[] heights) {$/;"	m	class:HeightRound
 getBits	src/easy/TableSeating.java	/^  public int[] getBits(int n, int size) {$/;"	m	class:TableSeating
 getColorValue	src/dynamic/CssRules.java	/^    private int getColorValue(String color) {$/;"	m	class:CssRules.Tag	file:
 getCount	src/dynamic/AdjacentSwaps.java	/^  long getCount(int[] p) {$/;"	m	class:AdjacentSwaps
@@ -1613,6 +1616,7 @@ getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount() {$/;"	m	class:F
 getCount	src/dynamic/FoxAverageSequence.java	/^  long getCount(int k, int sum, int last, int lt) {$/;"	m	class:FoxAverageSequence
 getCount	src/dynamic/WeirdTimes.java	/^    int getCount(int v, int i) {$/;"	m	class:WeirdTimes
 getCountDP	src/dynamic/FoxAverageSequence.java	/^  long getCountDP() {$/;"	m	class:FoxAverageSequence
+getDiff	src/dynamic/HeightRound.java	/^    int getDiff(int[] arr) {$/;"	m	class:HeightRound
 getEnd	src/dp/WeightedIntervalScheduling.java	/^    public int getEnd() {$/;"	m	class:WeightedIntervalScheduling.Interval
 getEnd	src/graph/RevolvingDoors.java	/^    public int getEnd() {$/;"	m	class:RevolvingDoors.Maze
 getExpected	src/dynamic/RandomSort.java	/^    public double getExpected(int[] permutation) {$/;"	m	class:RandomSort
@@ -1984,6 +1988,7 @@ topc.dynamic	src/dynamic/CssRules.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Flags.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/FoxAverageSequence.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Gifts.java	/^package topc.dynamic;$/;"	p
+topc.dynamic	src/dynamic/HeightRound.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MakeSquare.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/MiniPaint.java	/^package topc.dynamic;$/;"	p
 topc.dynamic	src/dynamic/Nim.java	/^package topc.dynamic;$/;"	p
