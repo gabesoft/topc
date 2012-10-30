@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.dynamic.*;
+import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ HeightRoundTest.class })
+@Suite.SuiteClasses({ BestApproximationDiv2Test.class })
 public class Runner {
 }
