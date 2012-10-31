@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BatchSystemTest.class })
+@Suite.SuiteClasses({ SignalIntelligenceTest.class })
 public class Runner {
 }
