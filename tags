@@ -141,6 +141,7 @@ MarketingTest	test/graph/MarketingTest.java	/^public class MarketingTest {$/;"	c
 Matrix	src/dynamic/P8XCoinChange.java	/^class Matrix {$/;"	c
 Maze	src/graph/RevolvingDoors.java	/^    public Maze(int[][] maze, int level, int start, int end) {$/;"	m	class:RevolvingDoors.Maze
 Maze	src/graph/RevolvingDoors.java	/^  class Maze {$/;"	c	class:RevolvingDoors
+MazeOnFire	src/graph/MazeOnFire.java	/^public class MazeOnFire {$/;"	c
 MedalTable	src/easy/MedalTable.java	/^public class MedalTable {$/;"	c
 MedalTableTest	test/easy/MedalTableTest.java	/^public class MedalTableTest {$/;"	c
 MiniPaint	src/dynamic/MiniPaint.java	/^public class MiniPaint {$/;"	c
@@ -272,6 +273,7 @@ TestScores	src/math/TestScores.java	/^public class TestScores {$/;"	c
 TheCowDivTwo	src/dynamic/TheCowDivTwo.java	/^public class TheCowDivTwo {$/;"	c
 TheEasyChase	src/dynamic/TheEasyChase.java	/^public class TheEasyChase {$/;"	c
 TheLuckyBasesDivTwo	src/search/TheLuckyBasesDivTwo.java	/^public class TheLuckyBasesDivTwo {$/;"	c
+TheMoviesLevelThreeDivTwo	src/search/TheMoviesLevelThreeDivTwo.java	/^public class TheMoviesLevelThreeDivTwo {$/;"	c
 TheProgrammingContestDivOneTest	test/dynamic/TheProgrammingContestDivOneTest.java	/^public class TheProgrammingContestDivOneTest {$/;"	c
 TheSumOfLuckyNumbers	src/dynamic/TheSumOfLuckyNumbers.java	/^public class TheSumOfLuckyNumbers {$/;"	c
 Ticket	src/graph/IslandFerries.java	/^    public Ticket(int ferry, int cost) {$/;"	m	class:IslandFerries.Ticket
@@ -1529,6 +1531,7 @@ debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:Grafix
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/KingdomXCitiesandVillagesAnother.java	/^    private void debug(Object... os) {$/;"	m	class:KingdomXCitiesandVillagesAnother	file:
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
+debug	src/graph/MazeOnFire.java	/^  private void debug(Object... os) {$/;"	m	class:MazeOnFire	file:
 debug	src/graph/NumberLabyrinthDiv2.java	/^    private void debug(Object... os) {$/;"	m	class:NumberLabyrinthDiv2	file:
 debug	src/graph/Parking.java	/^  private void debug(Object... os) {$/;"	m	class:Parking	file:
 debug	src/graph/RoadReconstruction.java	/^  private void debug(Object... os) {$/;"	m	class:RoadReconstruction	file:
@@ -1548,6 +1551,7 @@ debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	
 debug	src/recursion/PermissionTree.java	/^  private void debug(Object... os) {$/;"	m	class:PermissionTree	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
 debug	src/search/TheLuckyBasesDivTwo.java	/^    private void debug(Object... os) {$/;"	m	class:TheLuckyBasesDivTwo	file:
+debug	src/search/TheMoviesLevelThreeDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheMoviesLevelThreeDivTwo	file:
 debug	src/sorting/FloatingMedian.java	/^  private void debug(Object... os) {$/;"	m	class:FloatingMedian	file:
 debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
@@ -1589,6 +1593,7 @@ fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] fer
 find	src/dynamic/Gifts.java	/^    int find(char[][] graph, int lim) {$/;"	m	class:Gifts
 find	src/dynamic/TheCowDivTwo.java	/^  public int find(int N, int K) {$/;"	m	class:TheCowDivTwo
 find	src/search/TheLuckyBasesDivTwo.java	/^    public long find(long n) {$/;"	m	class:TheLuckyBasesDivTwo
+find	src/search/TheMoviesLevelThreeDivTwo.java	/^  public int find(int[] timeJ, int[] timeB) {$/;"	m	class:TheMoviesLevelThreeDivTwo
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findHome	src/recursion/PermissionTree.java	/^  public int[] findHome(String[] folders, String[] users) {$/;"	m	class:PermissionTree
 findMatch	src/dynamic/RadarGuns.java	/^  boolean findMatch(int i, int cutoff, int[] match, boolean[] seen) {$/;"	m	class:RadarGuns
@@ -1657,6 +1662,7 @@ getWeight	src/dp/WeightedIntervalScheduling.java	/^    public int getWeight() {$
 getWord	src/graph/SmartWordToy.java	/^    public String getWord() {$/;"	m	class:SmartWordToy.Word
 getp	src/dp/WeightedIntervalScheduling.java	/^    public int getp() {$/;"	m	class:WeightedIntervalScheduling.Interval
 gifts	src/dynamic/Gifts.java	/^        public final int gifts;$/;"	f	class:Gifts.Node
+good	src/search/TheMoviesLevelThreeDivTwo.java	/^  boolean good(int mask, int[] timeJ, int[] timeB) {$/;"	m	class:TheMoviesLevelThreeDivTwo
 graph	src/graph/Circuits.java	/^  int[][] graph;$/;"	f	class:Circuits
 graph	src/graph/IslandFerries.java	/^  int[][][] graph;$/;"	f	class:IslandFerries
 graph	src/graph/Marketing.java	/^  int[][] graph;$/;"	f	class:Marketing
@@ -1729,6 +1735,7 @@ maxMatch	src/dynamic/RadarGuns.java	/^  int maxMatch;$/;"	f	class:Hungarian
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
 maxWeightMatch	src/dynamic/RadarGuns.java	/^  public int maxWeightMatch() {$/;"	m	class:Hungarian
+maximumTurns	src/graph/MazeOnFire.java	/^  public int maximumTurns(String[] maze) {$/;"	m	class:MazeOnFire
 maze	src/dynamic/ColorfulMaze.java	/^    char[][] maze;$/;"	f	class:ColorfulMaze
 mazes	src/graph/RevolvingDoors.java	/^  Queue<Maze> mazes;$/;"	f	class:RevolvingDoors
 memo	src/dynamic/ChessKnight.java	/^  double[][][] memo = new double[B][B][100];$/;"	f	class:ChessKnight
@@ -2030,6 +2037,7 @@ topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KingdomXCitiesandVillagesAnother.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/MazeOnFire.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/NumberLabyrinthDiv2.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Parking.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/PathFinding.java	/^package topc.graph;$/;"	p
@@ -2052,6 +2060,7 @@ topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/PermissionTree.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
 topc.search	src/search/TheLuckyBasesDivTwo.java	/^package topc.search;$/;"	p
+topc.search	src/search/TheMoviesLevelThreeDivTwo.java	/^package topc.search;$/;"	p
 topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
@@ -2111,6 +2120,7 @@ users	src/recursion/PermissionTree.java	/^    public final Set<String> users;$/;
 val	src/recursion/RedBlack.java	/^    public final int val;$/;"	f	class:RedBlack.Node
 values	src/dp/KiloManX.java	/^    public int[] values;$/;"	f	class:KiloManX.Node
 w	src/dp/FlowerGarden.java	/^  int[] w;$/;"	f	class:FlowerGarden
+watchesAll	src/search/TheMoviesLevelThreeDivTwo.java	/^  boolean watchesAll(int mask, int[] time1, int[] time2) {$/;"	m	class:TheMoviesLevelThreeDivTwo
 weight	src/dp/KiloManX.java	/^    public int[] weight;$/;"	f	class:KiloManX.Node
 weight	src/graph/KiloManX3.java	/^    public int weight;$/;"	f	class:KiloManX3.Node
 weightedScore	src/math/TestScores.java	/^  public double weightedScore(double[] questions, int testScore) {$/;"	m	class:TestScores
