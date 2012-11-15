@@ -214,6 +214,7 @@ PathFindingTest	test/graph/PathFindingTest.java	/^public class PathFindingTest {
 PermissionTree	src/recursion/PermissionTree.java	/^public class PermissionTree {$/;"	c
 Piece	src/easy/LargestGap.java	/^        public Piece(int index, int length, boolean block) {$/;"	m	class:LargestGap.Piece
 Piece	src/easy/LargestGap.java	/^    class Piece {$/;"	c	class:LargestGap
+PizzaDelivery	src/easy/PizzaDelivery.java	/^public class PizzaDelivery {$/;"	c
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 Pt	src/dynamic/ColorfulMaze.java	/^        public Pt(int r, int c) {$/;"	m	class:ColorfulMaze.Pt
 Pt	src/dynamic/ColorfulMaze.java	/^    class Pt {$/;"	c	class:ColorfulMaze
@@ -360,6 +361,7 @@ augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouring = new BagOfDevouring();$/;"	f	class:BagOfDevouringTest
+bfs	src/easy/PizzaDelivery.java	/^    int bfs(String[] terrain, int sr, sc, er, ec) {$/;"	m	class:PizzaDelivery
 binomialCoefficient	src/easy/SpacetskE.java	/^    public static int[][] binomialCoefficient(int n, int mod) {$/;"	m	class:SpacetskE
 block	src/easy/LargestGap.java	/^        boolean block;$/;"	f	class:LargestGap.Piece
 blockdistance	test/dynamic/BlockDistanceTest.java	/^    BlockDistance blockdistance = new BlockDistance();$/;"	f	class:BlockDistanceTest
@@ -374,6 +376,7 @@ cache	src/dp/GameOfLifeDivOne.java	/^  long[][][] cache;$/;"	f	class:GameOfLifeD
 cache	src/math/KingOfTheCourt.java	/^  HashMap<String, Double> cache;$/;"	f	class:KingOfTheCourt
 calc	src/easy/Fib.java	/^  public long calc(int n) {$/;"	m	class:Fib
 calc	src/geometry/RemoteRover.java	/^  double calc(int index, double offset) {$/;"	m	class:RemoteRover
+calcBestTimes	src/easy/PizzaDelivery.java	/^    int[] calcBestTimes(String[] terrain) {$/;"	m	class:PizzaDelivery
 canTakeQueen	src/recursion/AntiChess.java	/^  boolean canTakeQueen(int[][] game) {$/;"	m	class:AntiChess
 cap	src/dynamic/RadarGuns.java	/^  int cap;$/;"	f	class:RadarGuns
 cars	src/graph/Parking.java	/^  int[][] cars;$/;"	f	class:Parking
@@ -1515,6 +1518,7 @@ debug	src/dynamic/YetAnotherORProblem.java	/^  private void debug(Object... os) 
 debug	src/easy/CorrectMultiplicationTwo.java	/^    private void debug(Object... os) {$/;"	m	class:CorrectMultiplicationTwo	file:
 debug	src/easy/FairWorkload.java	/^  private void debug(Object... os) {$/;"	m	class:FairWorkload	file:
 debug	src/easy/LargestGap.java	/^    private void debug(Object... os) {$/;"	m	class:LargestGap	file:
+debug	src/easy/PizzaDelivery.java	/^    private void debug(Object... os) {$/;"	m	class:PizzaDelivery	file:
 debug	src/easy/PrimePalindromic.java	/^  private void debug(Object... os) {$/;"	m	class:PrimePalindromic	file:
 debug	src/easy/Rationalization.java	/^  private void debug(Object... os) {$/;"	m	class:Rationalization	file:
 debug	src/easy/SlimeXResidentSlime.java	/^    private void debug(Object... os) {$/;"	m	class:SlimeXResidentSlime	file:
@@ -1558,6 +1562,7 @@ debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	clas
 decode	src/dp/AvoidRoads.java	/^  static int[] decode(int x) {$/;"	m	class:AvoidRoads
 decode	src/graph/RevolvingDoors.java	/^  public static int[] decode(int x) {$/;"	m	class:RevolvingDoors
 delete	src/dynamic/MakeSquare.java	/^  int delete(int c) {$/;"	m	class:MakeSquare
+deliverAll	src/easy/PizzaDelivery.java	/^    public int deliverAll(String[] terrain) {$/;"	m	class:PizzaDelivery
 determineLength	src/graph/KingdomXCitiesandVillagesAnother.java	/^    public double determineLength(int[] cityX, int[] cityY, int[] villageX, int[] villageY) {$/;"	m	class:KingdomXCitiesandVillagesAnother
 dfs	src/graph/Circuits.java	/^  void dfs(int x, int len) {$/;"	m	class:Circuits
 dfs	src/graph/Marketing.java	/^  boolean dfs(int x, int c) {$/;"	m	class:Marketing
@@ -1574,7 +1579,9 @@ dp	src/dynamic/ColorfulMaze.java	/^    double dp(int r, int c, int d, int s) {$/
 dr	src/dynamic/TheEasyChase.java	/^    int dr[] = {-1,1,0,0,-2,2,0,0};$/;"	f	class:TheEasyChase
 dungeonescape	test/graph/DungeonEscapeTest.java	/^  DungeonEscape dungeonescape = new DungeonEscape();$/;"	f	class:DungeonEscapeTest
 dx	src/dynamic/Gifts.java	/^    int [] dx = {0, 0, 1, -1};$/;"	f	class:Gifts
+dx	src/easy/PizzaDelivery.java	/^    int [] dx = {0, 0, 1, -1};$/;"	f	class:PizzaDelivery
 dy	src/dynamic/Gifts.java	/^    int [] dy = {1, -1, 0, 0}; $/;"	f	class:Gifts
+dy	src/easy/PizzaDelivery.java	/^    int [] dy = {1, -1, 0, 0}; $/;"	f	class:PizzaDelivery
 encode	src/dp/AvoidRoads.java	/^  static int encode(int i, int j) {$/;"	m	class:AvoidRoads
 encode	src/graph/RevolvingDoors.java	/^  public static int encode(int i, int j) {$/;"	m	class:RevolvingDoors
 end	src/graph/RoboCourier.java	/^  Node end;$/;"	f	class:RoboCourier
@@ -1681,6 +1688,7 @@ howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"
 howMany	src/math/SetOfPatterns.java	/^    public int howMany(String[] patterns, int k) {$/;"	m	class:SetOfPatterns
 id	src/dynamic/CssRules.java	/^    public final String id;$/;"	f	class:CssRules.Tag
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
+ids	src/easy/PizzaDelivery.java	/^    HashMap<String, Integer> ids;$/;"	f	class:PizzaDelivery
 index	src/easy/LargestGap.java	/^        int index;$/;"	f	class:LargestGap.Piece
 index	src/greedy/MLBRecord.java	/^    public final int index;$/;"	f	class:MLBRecord.Team
 index	src/recursion/PermissionTree.java	/^    public final int index;$/;"	f	class:PermissionTree.Node
@@ -1702,6 +1710,7 @@ island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandF
 items	src/stringm/DirectoryTree.java	/^    public ArrayList<Node> items;$/;"	f	class:DirectoryTree.Node
 join	src/dynamic/CssRules.java	/^  String join(String[] input) {$/;"	m	class:CssRules
 join	src/easy/LargestGap.java	/^    String join(String[] s) {$/;"	m	class:LargestGap
+k	src/easy/PizzaDelivery.java	/^    int k;$/;"	f	class:PizzaDelivery
 k	src/greedy/MLBRecord.java	/^  int k;$/;"	f	class:MLBRecord
 key	src/dp/KiloManX.java	/^    public String key;$/;"	f	class:KiloManX.Node
 kth	src/sorting/FloatingMedian.java	/^  long kth(int k) {$/;"	m	class:FloatingMedian
@@ -1712,6 +1721,7 @@ leastShots	src/dp/KiloManX2.java	/^  public int leastShots(String[] damageChart,
 leastShots	src/graph/KiloManX3.java	/^  public int leastShots(String[] damageChart, int[] bossHealth) {$/;"	m	class:KiloManX3
 length	src/easy/LargestGap.java	/^        int length;$/;"	f	class:LargestGap.Piece
 lo	src/greedy/MLBRecord.java	/^    public final int lo;$/;"	f	class:MLBRecord.Team
+loc	src/easy/PizzaDelivery.java	/^    int loc[][];$/;"	f	class:PizzaDelivery
 longestZigZag	src/dp/ZigZag.java	/^  public int longestZigZag(int[] seq) {$/;"	m	class:ZigZag
 lowest	src/graph/Escape.java	/^  public int lowest(String[] harmful, String[] deadly) {$/;"	m	class:Escape
 lucky	src/search/TheLuckyBasesDivTwo.java	/^    boolean lucky(long n, long b) {$/;"	m	class:TheLuckyBasesDivTwo
@@ -1719,6 +1729,7 @@ lx	src/dynamic/RadarGuns.java	/^  int[] lx;       \/\/ x labels$/;"	f	class:Hung
 ly	src/dynamic/RadarGuns.java	/^  int[] ly;       \/\/ y labels$/;"	f	class:Hungarian
 m	src/dynamic/ColorfulMaze.java	/^    int m;$/;"	f	class:ColorfulMaze
 m	src/dynamic/Gifts.java	/^    int m;$/;"	f	class:Gifts
+m	src/easy/PizzaDelivery.java	/^    int m;$/;"	f	class:PizzaDelivery
 m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Node
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 m	src/math/SetOfPatterns.java	/^    int m;$/;"	f	class:SetOfPatterns
@@ -1784,6 +1795,7 @@ n	src/dynamic/ColorfulMaze.java	/^    int n;$/;"	f	class:ColorfulMaze
 n	src/dynamic/Gifts.java	/^    int n;$/;"	f	class:Gifts
 n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:Hungarian
 n	src/dynamic/RadarGuns.java	/^  int n;$/;"	f	class:RadarGuns
+n	src/easy/PizzaDelivery.java	/^    int n;$/;"	f	class:PizzaDelivery
 n	src/easy/TableSeating.java	/^  int n;$/;"	f	class:TableSeating
 n	src/geometry/RemoteRover.java	/^  int n;$/;"	f	class:RemoteRover
 n	src/graph/Marketing.java	/^  int n;$/;"	f	class:Marketing
@@ -1870,6 +1882,7 @@ runCont	src/dynamic/ColorfulMaze.java	/^    double runCont(int dangerous, int sa
 sacrifice	src/recursion/AntiChess.java	/^  public int sacrifice(String[] white, String black) {$/;"	m	class:AntiChess
 safe	src/graph/RoboCourier.java	/^  HashMap<String, ArrayList<String>> safe;$/;"	f	class:RoboCourier
 samePrefix	src/stringm/DirectoryTree.java	/^  boolean samePrefix(int i, int j, int index) {$/;"	m	class:DirectoryTree
+sc	src/easy/PizzaDelivery.java	/^    int sc;$/;"	f	class:PizzaDelivery
 seatings	src/easy/TableSeating.java	/^  double[] seatings;$/;"	f	class:TableSeating
 seen	src/graph/KiloManX3.java	/^  boolean[] seen;$/;"	f	class:KiloManX3
 seen	src/graph/PathFinding.java	/^  int[][][][] seen;$/;"	f	class:PathFinding
@@ -1902,6 +1915,7 @@ sortedAreas	src/graph/GrafixMask.java	/^  public int[] sortedAreas(String[] rect
 specialLocations	src/graph/TeamBuilder.java	/^  public int[] specialLocations(String[] paths) {$/;"	m	class:TeamBuilder
 speed	src/geometry/RemoteRover.java	/^  int[] speed;$/;"	f	class:RemoteRover
 spots	src/graph/Parking.java	/^  int[][] spots;$/;"	f	class:Parking
+sr	src/easy/PizzaDelivery.java	/^    int sr;$/;"	f	class:PizzaDelivery
 stat	src/dynamic/ColorfulMaze.java	/^    int[][][][] stat;$/;"	f	class:ColorfulMaze
 state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOne
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
@@ -2018,6 +2032,7 @@ topc.easy	src/easy/FairWorkload.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Fib.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/LargestGap.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/MedalTable.java	/^package topc.easy;$/;"	p
+topc.easy	src/easy/PizzaDelivery.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/PrimePalindromic.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/Rationalization.java	/^package topc.easy;$/;"	p
 topc.easy	src/easy/SlimeXResidentSlime.java	/^package topc.easy;$/;"	p
