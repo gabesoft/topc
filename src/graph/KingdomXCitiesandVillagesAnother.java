@@ -54,7 +54,7 @@ public class KingdomXCitiesandVillagesAnother {
                 }
             }
 
-            if (best == INF) { break; }
+           if (best == INF) { break; }
 
             sum += best;
 
