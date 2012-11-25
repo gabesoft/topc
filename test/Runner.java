@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheLockDivTwoTest.class })
+@Suite.SuiteClasses({ PerfectPermutationHardTest.class })
 public class Runner {
 }
