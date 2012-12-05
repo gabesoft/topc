@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TreesDivisionTest.class })
+@Suite.SuiteClasses({ PointInPolygonTest.class })
 public class Runner {
 }
