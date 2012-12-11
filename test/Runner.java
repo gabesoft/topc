@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TVTowerTest.class })
+@Suite.SuiteClasses({ SatellitesTest.class })
 public class Runner {
 }

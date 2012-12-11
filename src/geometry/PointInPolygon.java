@@ -102,7 +102,7 @@ public class PointInPolygon {
         return Math.sqrt(d1 * d1 + d2 * d2);
     }
 
-    // computes the cross product AB x BC
+    // computes the norm of the cross product |AB x BC|
     int cross(int ax, int ay, int bx, int by, int cx, int cy) {
         int abx = bx - ax;
         int aby = by - ay;
