@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ConvexPolygonTest.class })
+@Suite.SuiteClasses({ SurveyorTest.class })
 public class Runner {
 }
