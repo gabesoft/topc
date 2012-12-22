@@ -12,20 +12,22 @@ public class PiecesMover {
     int [] dy = {1, -1, 0, 0}; 
 
     public int getMinimumMoves(String[] board) {
-        int n            = 0;
-        boolean grid[][] = new boolean[5][5];
+        int n      = 0;
+        int grid[] = new int[5];
 
         for (int i = 0; i < board.length; i++) {
             for (int j = 0; j < board[i].length(); j++) {
-                grid[i][j] = board[i].charAt(j) == '*';
-                if (grid[i][j]) { n++; }
+                if (board[i].charAt(j) == '*') {
+                    grid[i] |= (1 << j);
+                    n++;
+                }
             }
         }
 
         Queue<Node> nodes    = new LinkedList<Node>();
         HashSet<String> seen = new HashSet<String>();
 
-        nodes.offer(new Node(0, clone(grid)));
+        nodes.offer(new Node(0, grid.clone()));
 
         while (nodes.size() > 0) {
             Node top = nodes.poll();
@@ -35,18 +37,20 @@ public class PiecesMover {
 
             seen.add(top.toString());
 
-            boolean curr[][] = top.grid;
+            int curr[] = top.grid;
 
-            for (int i = 0; i < curr.length; i++) {
-                for (int j = 0; j < curr[i].length; j++) {
-                    if (curr[i][j]) {
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 5; j++) {
+                    if (((curr[i] >> j) & 1) == 1) {
                         for (int k = 0; k < dx.length; k++) {
                             int r = i + dx[k];
                             int c = j + dy[k];
                             if (0 <= r && r < 5 && 0 <= c && c < 5) {
-                                boolean next[][] = clone(curr);
-                                next[i][j] = false;
-                                next[r][c] = true;
+                                int next[] = curr.clone();
+
+                                next[i] &= ~(1 << j);
+                                next[r] |= (1 << c);
+
                                 nodes.offer(new Node(top.moves + 1, next));
                             }
                         }
@@ -73,24 +77,16 @@ public class PiecesMover {
     }
 
     class Node {
-        public final boolean[][] grid;
+        public final int[] grid;
         public final int moves;
 
-        public Node(int moves, boolean[][] grid) {
+        public Node(int moves, int[] grid) {
             this.moves = moves;
             this.grid  = grid;
         }
 
         public String toString() {
-            String s = "";
-            for (int i = 0; i < grid.length; i++) {
-                for (int j = 0; j < grid[i].length; j++) {
-                    if (grid[i][j]) {
-                        s += String.format("(%s,%s)", i ,j);
-                    }
-                }
-            }
-            return s;
+            return Arrays.toString(grid);
         }
 
         public boolean connected(int n) {
@@ -98,9 +94,9 @@ public class PiecesMover {
             int r = -1;
             int c = -1;
 
-            for (int i = 0; i < grid.length; i++) {
-                for (int j = 0; j < grid[0].length; j++) {
-                    if (grid[i][j]) {
+            for (int i = 0; i < 5; i++) {
+                for (int j = 0; j < 5; j++) {
+                    if (((grid[i] >> j) & 1) == 1) {
                         r = i;
                         c = j;
                     }
@@ -111,7 +107,7 @@ public class PiecesMover {
         }
 
         int dfs(boolean[][] seen, int r, int c) {
-            if (seen[r][c] || !grid[r][c]) { return 0; }
+            if (seen[r][c] || ((grid[r] >> c) & 1) == 0) { return 0; }
 
             seen[r][c] = true;
 
