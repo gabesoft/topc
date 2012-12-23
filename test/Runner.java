@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PiecesMoverTest.class })
+@Suite.SuiteClasses({ DistinctDigitsTest.class })
 public class Runner {
 }
