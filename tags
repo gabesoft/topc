@@ -86,6 +86,7 @@ Gifts	src/dynamic/Gifts.java	/^public class Gifts {$/;"	c
 Graduation	src/graph/Graduation.java	/^public class Graduation {$/;"	c
 GrafixMask	src/graph/GrafixMask.java	/^public class GrafixMask {$/;"	c
 GrafixMaskTest	test/graph/GrafixMaskTest.java	/^public class GrafixMaskTest {$/;"	c
+GuitarChords	src/search/GuitarChords.java	/^public class GuitarChords {$/;"	c
 H	src/dynamic/WeirdTimes.java	/^    int H = 24;$/;"	f	class:WeirdTimes
 Hangman42	src/math/Hangman42.java	/^public class Hangman42 {$/;"	c
 HeightRound	src/dynamic/HeightRound.java	/^public class HeightRound {$/;"	c
@@ -368,6 +369,7 @@ augment	src/dynamic/RadarGuns.java	/^  void augment() {$/;"	m	class:Hungarian
 avoid	src/dp/AvoidRoads.java	/^  HashSet<Integer> avoid;$/;"	f	class:AvoidRoads
 b	src/dp/FlowerGarden.java	/^  int[] b;$/;"	f	class:FlowerGarden
 bagofdevouring	test/easy/BagOfDevouringTest.java	/^  BagOfDevouring bagofdevouring = new BagOfDevouring();$/;"	f	class:BagOfDevouringTest
+best	src/search/GuitarChords.java	/^    int best;$/;"	f	class:GuitarChords
 bfs	src/easy/PizzaDelivery.java	/^    int bfs(String[] terrain, int sr, sc, er, ec) {$/;"	m	class:PizzaDelivery
 binomialCoefficient	src/easy/SpacetskE.java	/^    public static int[][] binomialCoefficient(int n, int mod) {$/;"	m	class:SpacetskE
 block	src/easy/LargestGap.java	/^        boolean block;$/;"	f	class:LargestGap.Piece
@@ -1423,6 +1425,7 @@ case99	test/dynamic/TheProgrammingContestDivOneTest.java	/^  public void case99(
 ceilDiv	src/graph/KiloManX3.java	/^  int ceilDiv(int a, int b) {$/;"	m	class:KiloManX3
 chancesOfWinning	src/math/KingOfTheCourt.java	/^  public double chancesOfWinning(int[] ability) {$/;"	m	class:KingOfTheCourt
 chars	src/dp/ShortPalindromes.java	/^  char[] chars;$/;"	f	class:ShortPalindromes
+chord	src/search/GuitarChords.java	/^    int[] chord;$/;"	f	class:GuitarChords
 cloneMatch	src/graph/Parking.java	/^  int[][] cloneMatch() {$/;"	m	class:Parking
 color	src/dynamic/CssRules.java	/^    public final int color;$/;"	f	class:CssRules.Tag
 color	src/graph/Marketing.java	/^  int[] color;$/;"	f	class:Marketing
@@ -1564,6 +1567,7 @@ debug	src/math/TestScores.java	/^  private void debug(Object... os) {$/;"	m	clas
 debug	src/recursion/AntiChess.java	/^  private void debug(Object... os) {$/;"	m	class:AntiChess	file:
 debug	src/recursion/PermissionTree.java	/^  private void debug(Object... os) {$/;"	m	class:PermissionTree	file:
 debug	src/recursion/RedBlack.java	/^  private void debug(Object... os) {$/;"	m	class:RedBlack	file:
+debug	src/search/GuitarChords.java	/^    private void debug(Object... os) {$/;"	m	class:GuitarChords	file:
 debug	src/search/MatchString.java	/^    private void debug(Object... os) {$/;"	m	class:MatchString	file:
 debug	src/search/TheLuckyBasesDivTwo.java	/^    private void debug(Object... os) {$/;"	m	class:TheLuckyBasesDivTwo	file:
 debug	src/search/TheMoviesLevelThreeDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheMoviesLevelThreeDivTwo	file:
@@ -1611,6 +1615,8 @@ fillArea	src/graph/GrafixMask.java	/^  int fillArea(int x, int y, int[][] grid) 
 fillStructures	src/graph/IslandFerries.java	/^  void fillStructures(String[] ferryLegs, String[] ferryPrices) {$/;"	m	class:IslandFerries
 find	src/dynamic/Gifts.java	/^    int find(char[][] graph, int lim) {$/;"	m	class:Gifts
 find	src/dynamic/TheCowDivTwo.java	/^  public int find(int N, int K) {$/;"	m	class:TheCowDivTwo
+find	src/search/GuitarChords.java	/^    void find(int[] chord, int index) {$/;"	m	class:GuitarChords
+find	src/search/GuitarChords.java	/^    void find(int[] chord, int mask, int index, int min, int max) {$/;"	m	class:GuitarChords
 find	src/search/MatchString.java	/^    int find(String text, char c, int index) {$/;"	m	class:MatchString
 find	src/search/TheLuckyBasesDivTwo.java	/^    public long find(long n) {$/;"	m	class:TheLuckyBasesDivTwo
 find	src/search/TheMoviesLevelThreeDivTwo.java	/^  public int find(int[] timeJ, int[] timeB) {$/;"	m	class:TheMoviesLevelThreeDivTwo
@@ -1621,6 +1627,7 @@ findPath	src/graph/Graduation.java	/^  int findPath() {$/;"	m	class:Graduation
 findPath	src/graph/Parking.java	/^  Vertex findPath(List<Integer>[] graph, int end) {$/;"	m	class:Parking
 findRight	src/search/MatchString.java	/^    int findRight(String matchString, String[] matchWords, int index) {$/;"	m	class:MatchString
 firstDigit	src/math/BenfordsLaw.java	/^  public static int firstDigit(int n) {$/;"	m	class:BenfordsLaw
+fret	src/search/GuitarChords.java	/^    int fret(int note, int string) {$/;"	m	class:GuitarChords
 func	src/geometry/RemoteRover.java	/^  double func(double x, double offset, int index) {$/;"	m	class:RemoteRover
 game	src/graph/Escape.java	/^  int[][] game;$/;"	f	class:Escape
 game	src/graph/PathFinding.java	/^  int[][] game;$/;"	f	class:PathFinding
@@ -1652,6 +1659,7 @@ getLargest	src/easy/LargestGap.java	/^    public int getLargest(String[] board) 
 getLeft	src/graph/RevolvingDoors.java	/^    public int getLeft(int position) {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/RevolvingDoors.java	/^    public int getLevel() {$/;"	m	class:RevolvingDoors.Maze
 getLevel	src/graph/SmartWordToy.java	/^    public int getLevel() {$/;"	m	class:SmartWordToy.Word
+getMap	src/search/GuitarChords.java	/^    HashMap<String, Integer> getMap() {$/;"	m	class:GuitarChords
 getMaze	src/graph/RevolvingDoors.java	/^    public int[][] getMaze() {$/;"	m	class:RevolvingDoors.Maze
 getMin	src/dynamic/RadarGuns.java	/^  int getMin() {$/;"	m	class:RadarGuns
 getMinimalCssRuleCount	src/dynamic/CssRules.java	/^  public int getMinimalCssRuleCount(String[] xhtml) {$/;"	m	class:CssRules
@@ -1720,6 +1728,7 @@ initNext	src/dynamic/WeirdTimes.java	/^    void initNext() {$/;"	m	class:WeirdTi
 initSlack	src/dynamic/RadarGuns.java	/^  void initSlack(int root) {$/;"	m	class:Hungarian
 innerRec	src/dp/GameOfLifeDivOne.java	/^  long innerRec(char[] state) {$/;"	m	class:GameOfLifeDivOne
 insert	src/sorting/FloatingMedian.java	/^  void insert(int x) {$/;"	m	class:FloatingMedian
+isOff	src/search/GuitarChords.java	/^    boolean isOff(int n, int bit) {$/;"	m	class:GuitarChords
 isPrime	src/graph/DivisorInc.java	/^  boolean isPrime(int n){$/;"	m	class:DivisorInc
 island	src/graph/IslandFerries.java	/^    public int island;$/;"	f	class:IslandFerries.Node
 items	src/stringm/DirectoryTree.java	/^    public ArrayList<Node> items;$/;"	f	class:DirectoryTree.Node
@@ -1832,6 +1841,7 @@ numWays	src/dp/AvoidRoads.java	/^  public long numWays(int width, int height, St
 numberOfWays	src/graph/DrivingAround.java	/^  public int numberOfWays(String[] adj, int start, int finish, int time) {$/;"	m	class:DrivingAround
 nums	src/dynamic/NumbersAndMatches.java	/^    int[] nums = { 6, 3, 5, 5, 4, 5, 6, 3, 7, 6 };$/;"	f	class:NumbersAndMatches
 nums	src/dynamic/TheSumOfLuckyNumbers.java	/^    int [] nums;$/;"	f	class:TheSumOfLuckyNumbers
+off	src/search/GuitarChords.java	/^    int off(int n, int bit) {$/;"	m	class:GuitarChords
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
@@ -1939,6 +1949,8 @@ state	src/dp/GameOfLifeDivOne.java	/^  char[] state;$/;"	f	class:GameOfLifeDivOn
 state	src/graph/Circuits.java	/^  int[] state;$/;"	f	class:Circuits
 states	src/bkt/BridgeCrossing.java	/^  Queue<State> states;$/;"	f	class:BridgeCrossing
 states	src/math/Hangman42.java	/^  long[][] states;$/;"	f	class:Hangman42
+stretch	src/search/GuitarChords.java	/^    public int stretch(String[] strings, String[] chord) {$/;"	m	class:GuitarChords
+strings	src/search/GuitarChords.java	/^    int[] strings;$/;"	f	class:GuitarChords
 subs	src/dynamic/TakeSubstringGame.java	/^    int[] subs(int n, boolean asc) {$/;"	m	class:TakeSubstringGame
 sum	src/dp/GameOfLifeDivOne.java	/^  int sum(int[] arr) {$/;"	m	class:GameOfLifeDivOne
 sum	src/dynamic/StarAdventure.java	/^  int sum(int row, int start, int end) {$/;"	m	class:StarAdventure
@@ -2094,6 +2106,7 @@ topc.math	src/math/TestScores.java	/^package topc.math;$/;"	p
 topc.recursion	src/recursion/AntiChess.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/PermissionTree.java	/^package topc.recursion;$/;"	p
 topc.recursion	src/recursion/RedBlack.java	/^package topc.recursion;$/;"	p
+topc.search	src/search/GuitarChords.java	/^package topc.search;$/;"	p
 topc.search	src/search/MatchString.java	/^package topc.search;$/;"	p
 topc.search	src/search/TheLuckyBasesDivTwo.java	/^package topc.search;$/;"	p
 topc.search	src/search/TheMoviesLevelThreeDivTwo.java	/^package topc.search;$/;"	p
