@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SmoothNumbersHardTest.class })
+@Suite.SuiteClasses({ HillWalkerTest.class })
 public class Runner {
 }
