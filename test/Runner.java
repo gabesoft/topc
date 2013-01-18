@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ JollyJumpersTest.class })
+@Suite.SuiteClasses({ DivisibleByDigitsTest.class })
 public class Runner {
 }
