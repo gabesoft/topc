@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.sorting.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PlayerExtractionTest.class })
+@Suite.SuiteClasses({ IsoscelesTriangulationsTest.class })
 public class Runner {
 }
