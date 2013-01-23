@@ -14,6 +14,7 @@ AntiMatter	src/dynamic/AntiMatter.java	/^public class AntiMatter {$/;"	c
 AvoidRoads	src/dp/AvoidRoads.java	/^public class AvoidRoads {$/;"	c
 AvoidRoadsTest	test/dp/AvoidRoadsTest.java	/^public class AvoidRoadsTest {$/;"	c
 B	src/dynamic/ChessKnight.java	/^  static public final int B = 8;$/;"	f	class:ChessKnight
+B	src/graph/JumpingBoard.java	/^    String B[];$/;"	f	class:JumpingBoard
 B	src/graph/PathFinding.java	/^  static public final int B = 2;$/;"	f	class:PathFinding
 BadNeighbors	src/dp/BadNeighbors.java	/^public class BadNeighbors {$/;"	c
 BadNeighborsTest	test/dp/BadNeighborsTest.java	/^public class BadNeighborsTest {$/;"	c
@@ -29,6 +30,7 @@ BusinessTasksTest	test/easy/BusinessTasksTest.java	/^public class BusinessTasksT
 C	src/dynamic/CollectingMarbles.java	/^    int C;$/;"	f	class:CollectingMarbles
 C	src/dynamic/Flags.java	/^  int C;          \/\/ number of colors that can be followed by others$/;"	f	class:Flags
 C	src/geometry/RemoteRover.java	/^  static public final double C = 1.0 - R;$/;"	f	class:RemoteRover
+C	src/graph/JumpingBoard.java	/^    int C;$/;"	f	class:JumpingBoard
 C	src/graph/Parking.java	/^  int C;      \/\/ number of cars$/;"	f	class:Parking
 ChessKnight	src/dynamic/ChessKnight.java	/^public class ChessKnight {$/;"	c
 Circuits	src/graph/Circuits.java	/^public class Circuits {$/;"	c
@@ -93,6 +95,7 @@ HeightRound	src/dynamic/HeightRound.java	/^public class HeightRound {$/;"	c
 Hungarian	src/dynamic/RadarGuns.java	/^  public Hungarian(int[][] cost) {$/;"	m	class:Hungarian
 Hungarian	src/dynamic/RadarGuns.java	/^class Hungarian {$/;"	c
 I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
+INF	src/graph/JumpingBoard.java	/^    int INF = 987654321;$/;"	f	class:JumpingBoard
 INF	src/graph/KingdomXCitiesandVillagesAnother.java	/^    int INF = Integer.MAX_VALUE \/ 4;$/;"	f	class:KingdomXCitiesandVillagesAnother
 INF	src/math/CubeRoll.java	/^    final int INF = 1000000000;$/;"	f	class:CubeRoll
 INV2	src/dynamic/Nim.java	/^  long INV2;$/;"	f	class:Nim
@@ -105,6 +108,7 @@ IslandFerries	src/graph/IslandFerries.java	/^public class IslandFerries {$/;"	c
 IslandFerriesTest	test/graph/IslandFerriesTest.java	/^public class IslandFerriesTest {$/;"	c
 Jewelry	src/dp/Jewelry.java	/^public class Jewelry {$/;"	c
 JewelryTest	test/dp/JewelryTest.java	/^public class JewelryTest {$/;"	c
+JumpingBoard	src/graph/JumpingBoard.java	/^public class JumpingBoard {$/;"	c
 K	src/dp/GameOfLifeDivOne.java	/^  int K;$/;"	f	class:GameOfLifeDivOne
 K	src/dynamic/ElectronicScarecrows.java	/^    int K;$/;"	f	class:ElectronicScarecrows
 K	src/dynamic/NumbersAndMatches.java	/^    int K;$/;"	f	class:NumbersAndMatches
@@ -228,6 +232,7 @@ QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
 R	src/dynamic/YetAnotherORProblem.java	/^  long[] R;$/;"	f	class:YetAnotherORProblem
 R	src/geometry/RemoteRover.java	/^  static public final double R = 0.61803399;$/;"	f	class:RemoteRover
+R	src/graph/JumpingBoard.java	/^    int R;$/;"	f	class:JumpingBoard
 R	src/sorting/FloatingMedian.java	/^  int R = 17;$/;"	f	class:FloatingMedian
 RDIR	src/graph/RoboCourier.java	/^  static public final int[] RDIR = { -1, -1, -1, -1, -1, 20, 10, -1, -1, 5, 24, -1, -1, -1, -1, -1, -1, -1, -1, -1, 6, -1, -1, -1, 9 };$/;"	f	class:RoboCourier
 RIGHT_BTM	src/graph/RevolvingDoors.java	/^  static public final int RIGHT_BTM = 1 << 5;$/;"	f	class:RevolvingDoors
@@ -1546,6 +1551,7 @@ debug	src/graph/Escape.java	/^  void debug(Object...os) {$/;"	m	class:Escape
 debug	src/graph/Graduation.java	/^  private void debug(Object... os) {$/;"	m	class:Graduation	file:
 debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:GrafixMask
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
+debug	src/graph/JumpingBoard.java	/^    private void debug(Object... os) {$/;"	m	class:JumpingBoard	file:
 debug	src/graph/KingdomXCitiesandVillagesAnother.java	/^    private void debug(Object... os) {$/;"	m	class:KingdomXCitiesandVillagesAnother	file:
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
 debug	src/graph/MazeOnFire.java	/^  private void debug(Object... os) {$/;"	m	class:MazeOnFire	file:
@@ -1768,6 +1774,7 @@ maxAltSum	src/dynamic/MiniPaint.java	/^  int maxAltSum(byte[] row, int index) {$
 maxCrazyness	src/greedy/CrazyLine.java	/^    public int maxCrazyness(int[] heights) {$/;"	m	class:CrazyLine
 maxDonations	src/dp/BadNeighbors.java	/^  public int maxDonations(int[] donations) {$/;"	m	class:BadNeighbors
 maxGifts	src/dynamic/Gifts.java	/^    public int maxGifts(String[] city, int T) {$/;"	m	class:Gifts
+maxJumps	src/graph/JumpingBoard.java	/^    public int maxJumps(String[] board) {$/;"	m	class:JumpingBoard
 maxMatch	src/dynamic/RadarGuns.java	/^  int maxMatch;$/;"	f	class:Hungarian
 maxPainted	src/dynamic/MiniPaint.java	/^  int maxPainted() {$/;"	m	class:MiniPaint
 maxWeight	src/dp/WeightedIntervalScheduling.java	/^  public int maxWeight(String[] intervals) {$/;"	m	class:WeightedIntervalScheduling
@@ -1783,6 +1790,7 @@ memo	src/dynamic/TakeSubstringGame.java	/^    int [][] memo;$/;"	f	class:TakeSub
 memo	src/dynamic/TheCowDivTwo.java	/^  long[][][] memo;$/;"	f	class:TheCowDivTwo
 memo	src/dynamic/WeirdTimes.java	/^    int[][] memo;$/;"	f	class:WeirdTimes
 memo	src/dynamic/YetAnotherORProblem.java	/^  long[][] memo;$/;"	f	class:YetAnotherORProblem
+memo	src/graph/JumpingBoard.java	/^    int memo[][];$/;"	f	class:JumpingBoard
 memo	src/math/BaseballLineup.java	/^  double[][][][][] memo;$/;"	f	class:BaseballLineup
 memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
 merge	src/easy/LargestGap.java	/^        public Piece merge(Piece other) {$/;"	m	class:LargestGap.Piece
@@ -1896,6 +1904,7 @@ rec	src/dynamic/CollectingMarbles.java	/^    int rec(int marbles, int bag, int s
 rec	src/dynamic/RandomSort.java	/^    double rec(int[] perm) {$/;"	m	class:RandomSort
 rec	src/dynamic/TakeSubstringGame.java	/^    int rec(int n, boolean turn) {$/;"	m	class:TakeSubstringGame
 rec	src/dynamic/TheCowDivTwo.java	/^  long rec(int n, int k, int sum) {$/;"	m	class:TheCowDivTwo
+rec	src/graph/JumpingBoard.java	/^    int rec(int r, int c) {$/;"	m	class:JumpingBoard
 remove	src/sorting/FloatingMedian.java	/^  void remove(int x) {$/;"	m	class:FloatingMedian
 rest	src/dynamic/CssRules.java	/^    public final String rest;$/;"	f	class:CssRules.Result
 reverse	src/dp/BadNeighbors.java	/^  void reverse(int[] arr) {$/;"	m	class:BadNeighbors
@@ -2081,6 +2090,7 @@ topc.graph	src/graph/Escape.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Graduation.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/GrafixMask.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/JumpingBoard.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KingdomXCitiesandVillagesAnother.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p

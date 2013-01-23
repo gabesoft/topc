@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FloodReliefTest.class })
+@Suite.SuiteClasses({ JumpingBoardTest.class })
 public class Runner {
 }
