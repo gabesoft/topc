@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.graph.*;
+import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ JumpingBoardTest.class })
+@Suite.SuiteClasses({ ProgrammingDeviceTest.class })
 public class Runner {
 }
