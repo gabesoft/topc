@@ -77,13 +77,6 @@ public class WebsiteRank {
         return false;
     }
 
-    boolean contains(int[] a, int x) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] == x) { return true; }
-        }
-        return false;
-    }
-
     long count(int w) {
         if (memo[w] > -1) { return memo[w]; }
 
@@ -97,18 +90,6 @@ public class WebsiteRank {
 
         memo[w] = c;
         return c;
-    }
-
-    long turnOn(long mask, int k) {
-        return mask | (1L << k);
-    }
-
-    boolean off(long mask, int k) {
-        return !on(mask, k);
-    }
-
-    boolean on(long mask, int k) {
-        return ((mask >> k) & 1) == 1;
     }
 
     int[] toArray(ArrayList<Integer> list) {
