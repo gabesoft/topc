@@ -98,6 +98,7 @@ I	src/graph/IslandFerries.java	/^  int I = 0;$/;"	f	class:IslandFerries
 INF	src/graph/JumpingBoard.java	/^    int INF = 987654321;$/;"	f	class:JumpingBoard
 INF	src/graph/KingdomXCitiesandVillagesAnother.java	/^    int INF = Integer.MAX_VALUE \/ 4;$/;"	f	class:KingdomXCitiesandVillagesAnother
 INF	src/math/CubeRoll.java	/^    final int INF = 1000000000;$/;"	f	class:CubeRoll
+INF	src/simulation/QuantumAlchemy.java	/^    int INF = 1000000000;$/;"	f	class:QuantumAlchemy
 INV2	src/dynamic/Nim.java	/^  long INV2;$/;"	f	class:Nim
 IndicatorMotionDrawingTest	test/dynamic/IndicatorMotionDrawingTest.java	/^public class IndicatorMotionDrawingTest {$/;"	c
 IntegerList	src/graph/Parking.java	/^  class IntegerList extends LinkedList<Integer> { }$/;"	c	class:Parking
@@ -228,6 +229,7 @@ Point	src/dynamic/ElectronicScarecrows.java	/^    class Point implements Compara
 PrimePalindromic	src/easy/PrimePalindromic.java	/^public class PrimePalindromic {$/;"	c
 Pt	src/dynamic/ColorfulMaze.java	/^        public Pt(int r, int c) {$/;"	m	class:ColorfulMaze.Pt
 Pt	src/dynamic/ColorfulMaze.java	/^    class Pt {$/;"	c	class:ColorfulMaze
+QuantumAlchemy	src/simulation/QuantumAlchemy.java	/^public class QuantumAlchemy {$/;"	c
 QuickSums	src/dp/QuickSums.java	/^public class QuickSums {$/;"	c
 QuickSumsTest	test/dp/QuickSumsTest.java	/^public class QuickSumsTest {$/;"	c
 R	src/dynamic/YetAnotherORProblem.java	/^  long[] R;$/;"	f	class:YetAnotherORProblem
@@ -1577,6 +1579,7 @@ debug	src/search/GuitarChords.java	/^    private void debug(Object... os) {$/;"	
 debug	src/search/MatchString.java	/^    private void debug(Object... os) {$/;"	m	class:MatchString	file:
 debug	src/search/TheLuckyBasesDivTwo.java	/^    private void debug(Object... os) {$/;"	m	class:TheLuckyBasesDivTwo	file:
 debug	src/search/TheMoviesLevelThreeDivTwo.java	/^  private void debug(Object... os) {$/;"	m	class:TheMoviesLevelThreeDivTwo	file:
+debug	src/simulation/QuantumAlchemy.java	/^    private void debug(Object... os) {$/;"	m	class:QuantumAlchemy	file:
 debug	src/sorting/FloatingMedian.java	/^  private void debug(Object... os) {$/;"	m	class:FloatingMedian	file:
 debug	src/stringm/DirectoryTree.java	/^  private void debug(Object... os) {$/;"	m	class:DirectoryTree	file:
 debug	test/dp/ShortPalindromesTest.java	/^  void debug(Object...os) {$/;"	m	class:ShortPalindromesTest
@@ -1626,6 +1629,7 @@ find	src/search/GuitarChords.java	/^    void find(int[] chord, int mask, int ind
 find	src/search/MatchString.java	/^    int find(String text, char c, int index) {$/;"	m	class:MatchString
 find	src/search/TheLuckyBasesDivTwo.java	/^    public long find(long n) {$/;"	m	class:TheLuckyBasesDivTwo
 find	src/search/TheMoviesLevelThreeDivTwo.java	/^  public int find(int[] timeJ, int[] timeB) {$/;"	m	class:TheMoviesLevelThreeDivTwo
+find	src/simulation/QuantumAlchemy.java	/^    int find(int[] data, String s) {$/;"	m	class:QuantumAlchemy
 findBest	src/dynamic/StarAdventure.java	/^  int findBest(int row, int start, int end, int[][] pathBest) {$/;"	m	class:StarAdventure
 findHome	src/recursion/PermissionTree.java	/^  public int[] findHome(String[] folders, String[] users) {$/;"	m	class:PermissionTree
 findMatch	src/dynamic/RadarGuns.java	/^  boolean findMatch(int i, int cutoff, int[] match, boolean[] seen) {$/;"	m	class:RadarGuns
@@ -1766,6 +1770,7 @@ m	src/graph/DivisorInc.java	/^    public final int m;$/;"	f	class:DivisorInc.Nod
 m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 m	src/math/SetOfPatterns.java	/^    int m;$/;"	f	class:SetOfPatterns
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
+map	src/simulation/QuantumAlchemy.java	/^    HashMap<Integer, String> map;$/;"	f	class:QuantumAlchemy
 match	src/dynamic/MakeSquare.java	/^  int match(char c1, char c2) {$/;"	m	class:MakeSquare
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 matchCount	src/dynamic/NumbersAndMatches.java	/^    int matchCount(int from, int to) {$/;"	m	class:NumbersAndMatches
@@ -1796,6 +1801,7 @@ memo	src/math/Hangman42.java	/^  double[] memo;$/;"	f	class:Hangman42
 merge	src/easy/LargestGap.java	/^        public Piece merge(Piece other) {$/;"	m	class:LargestGap.Piece
 minChanges	src/dynamic/MakeSquare.java	/^  public int minChanges(String S) {$/;"	m	class:MakeSquare
 minPresses	src/graph/SmartWordToy.java	/^  public int minPresses(String start, String finish, String[] forbid) {$/;"	m	class:SmartWordToy
+minSteps	src/simulation/QuantumAlchemy.java	/^    public int minSteps(String initial, String[] reactions) {$/;"	m	class:QuantumAlchemy
 minStrokes	src/dp/StripePainter.java	/^  public int minStrokes(String stripes) {$/;"	m	class:StripePainter
 minSums	src/dp/QuickSums.java	/^  public int minSums(String numbers, int sum) {$/;"	m	class:QuickSums
 minTime	src/bkt/BridgeCrossing.java	/^  public int minTime(int[] t) {$/;"	m	class:BridgeCrossing
@@ -1850,7 +1856,9 @@ numberOfWays	src/graph/DrivingAround.java	/^  public int numberOfWays(String[] a
 nums	src/dynamic/NumbersAndMatches.java	/^    int[] nums = { 6, 3, 5, 5, 4, 5, 6, 3, 7, 6 };$/;"	f	class:NumbersAndMatches
 nums	src/dynamic/TheSumOfLuckyNumbers.java	/^    int [] nums;$/;"	f	class:TheSumOfLuckyNumbers
 off	src/search/GuitarChords.java	/^    int off(int n, int bit) {$/;"	m	class:GuitarChords
+off	src/simulation/QuantumAlchemy.java	/^    boolean off(int mask, int k) {$/;"	m	class:QuantumAlchemy
 on	src/dynamic/ChessKnight.java	/^  boolean on(int x) {$/;"	m	class:ChessKnight
+on	src/simulation/QuantumAlchemy.java	/^    boolean on(int mask, int k) {$/;"	m	class:QuantumAlchemy
 onDeadly	src/graph/Escape.java	/^    public boolean onDeadly() {$/;"	m	class:Escape.Node
 ones	src/dp/GameOfLifeDivOne.java	/^  int ones(long k, int n) {$/;"	m	class:GameOfLifeDivOne
 optimalTravel	src/geometry/RemoteRover.java	/^  public double optimalTravel(int[] width, int[] speed, int offset) {$/;"	m	class:RemoteRover
@@ -2120,6 +2128,7 @@ topc.search	src/search/GuitarChords.java	/^package topc.search;$/;"	p
 topc.search	src/search/MatchString.java	/^package topc.search;$/;"	p
 topc.search	src/search/TheLuckyBasesDivTwo.java	/^package topc.search;$/;"	p
 topc.search	src/search/TheMoviesLevelThreeDivTwo.java	/^package topc.search;$/;"	p
+topc.simulation	src/simulation/QuantumAlchemy.java	/^package topc.simulation;$/;"	p
 topc.sorting	src/sorting/FloatingMedian.java	/^package topc.sorting;$/;"	p
 topc.stringm	src/stringm/DirectoryTree.java	/^package topc.stringm;$/;"	p
 topc.test	test/AllTests.java	/^package topc.test;$/;"	p
@@ -2167,6 +2176,8 @@ trap	src/dynamic/ColorfulMaze.java	/^    double[] trap;$/;"	f	class:ColorfulMaze
 tree	src/recursion/PermissionTree.java	/^  Node tree;$/;"	f	class:PermissionTree
 tree	src/sorting/FloatingMedian.java	/^  int[][] tree;$/;"	f	class:FloatingMedian
 tryToFit	src/geometry/PackingShapes.java	/^  public String[] tryToFit(int width, int height, String[] shapes) {$/;"	m	class:PackingShapes
+turnOff	src/simulation/QuantumAlchemy.java	/^    int turnOff(int mask, int k) {$/;"	m	class:QuantumAlchemy
+turnOn	src/simulation/QuantumAlchemy.java	/^    int turnOn(int mask, int k) {$/;"	m	class:QuantumAlchemy
 turns	src/graph/RevolvingDoors.java	/^  public int turns(String[] map) {$/;"	m	class:RevolvingDoors
 unboundedCase	src/math/CubeRoll.java	/^    int unboundedCase(int dist) {$/;"	m	class:CubeRoll
 uniqs	src/graph/RevolvingDoors.java	/^  HashSet<String> uniqs;$/;"	f	class:RevolvingDoors
