@@ -128,6 +128,7 @@ LDIR	src/graph/RoboCourier.java	/^  static public final int[] LDIR = { -1, -1, -
 LEFT_BTM	src/graph/RevolvingDoors.java	/^  static public final int LEFT_BTM = 1 << 6;$/;"	f	class:RevolvingDoors
 LEFT_TOP	src/graph/RevolvingDoors.java	/^  static public final int LEFT_TOP = 1 << 8;$/;"	f	class:RevolvingDoors
 LIM	src/math/KingOfTheCourt.java	/^  static public final int LIM = 100;$/;"	f	class:KingOfTheCourt
+LandAndSea	src/graph/LandAndSea.java	/^public class LandAndSea {$/;"	c
 LargestGap	src/easy/LargestGap.java	/^public class LargestGap {$/;"	c
 M	src/dynamic/Flags.java	/^  double[][] M;   \/\/ colors matrix$/;"	f	class:Flags
 M	src/dynamic/MiniPaint.java	/^  int M;    \/\/ col count$/;"	f	class:MiniPaint
@@ -1555,6 +1556,7 @@ debug	src/graph/GrafixMask.java	/^  void debug(Object...os) {$/;"	m	class:Grafix
 debug	src/graph/IslandFerries.java	/^  void debug(Object...os) {$/;"	m	class:IslandFerries
 debug	src/graph/JumpingBoard.java	/^    private void debug(Object... os) {$/;"	m	class:JumpingBoard	file:
 debug	src/graph/KingdomXCitiesandVillagesAnother.java	/^    private void debug(Object... os) {$/;"	m	class:KingdomXCitiesandVillagesAnother	file:
+debug	src/graph/LandAndSea.java	/^    private void debug(Object... os) {$/;"	m	class:LandAndSea	file:
 debug	src/graph/Marketing.java	/^  void debug(Object...os) {$/;"	m	class:Marketing
 debug	src/graph/MazeOnFire.java	/^  private void debug(Object... os) {$/;"	m	class:MazeOnFire	file:
 debug	src/graph/NumberLabyrinthDiv2.java	/^    private void debug(Object... os) {$/;"	m	class:NumberLabyrinthDiv2	file:
@@ -1719,6 +1721,7 @@ howLong	src/graph/Circuits.java	/^  public int howLong(String[] connects, String
 howMany	src/dp/Jewelry.java	/^  public long howMany(int[] values) {$/;"	m	class:Jewelry
 howMany	src/graph/Marketing.java	/^  public long howMany(String[] compete) {$/;"	m	class:Marketing
 howMany	src/math/SetOfPatterns.java	/^    public int howMany(String[] patterns, int k) {$/;"	m	class:SetOfPatterns
+howManyIslands	src/graph/LandAndSea.java	/^    public int[] howManyIslands(String[] seaMap) {$/;"	m	class:LandAndSea
 id	src/dynamic/CssRules.java	/^    public final String id;$/;"	f	class:CssRules.Tag
 id	src/graph/Parking.java	/^    public final int id;$/;"	f	class:Parking.Vertex
 ids	src/easy/PizzaDelivery.java	/^    HashMap<String, Integer> ids;$/;"	f	class:PizzaDelivery
@@ -1771,6 +1774,7 @@ m	src/graph/PathFinding.java	/^  int m, n;$/;"	f	class:PathFinding
 m	src/math/SetOfPatterns.java	/^    int m;$/;"	f	class:SetOfPatterns
 make	src/dp/ShortPalindromes.java	/^  String make(String s, char c) {$/;"	m	class:ShortPalindromes
 map	src/simulation/QuantumAlchemy.java	/^    HashMap<Integer, String> map;$/;"	f	class:QuantumAlchemy
+markIsland	src/graph/LandAndSea.java	/^    void markIsland(int[][] graph, int row, int col, int id) {$/;"	m	class:LandAndSea
 match	src/dynamic/MakeSquare.java	/^  int match(char c1, char c2) {$/;"	m	class:MakeSquare
 match	src/graph/Parking.java	/^  int[][] match;$/;"	f	class:Parking
 matchCount	src/dynamic/NumbersAndMatches.java	/^    int matchCount(int from, int to) {$/;"	m	class:NumbersAndMatches
@@ -2101,6 +2105,7 @@ topc.graph	src/graph/IslandFerries.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/JumpingBoard.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KiloManX3.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/KingdomXCitiesandVillagesAnother.java	/^package topc.graph;$/;"	p
+topc.graph	src/graph/LandAndSea.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/Marketing.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/MazeOnFire.java	/^package topc.graph;$/;"	p
 topc.graph	src/graph/NumberLabyrinthDiv2.java	/^package topc.graph;$/;"	p
