@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MostLikelyTest.class })
+@Suite.SuiteClasses({ LikelyWordTest.class })
 public class Runner {
 }
