@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SynchronizingGuidepostsTest.class })
+@Suite.SuiteClasses({ CannibalsTest.class })
 public class Runner {
 }
