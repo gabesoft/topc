@@ -9,48 +9,46 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm291
 public class CrazySwitches {
     public int minimumActions(int[] switches) {
-        int n      = switches.length;
-        int last   = n - 1;
-        int lastOn = 1 << last;
+        int n     = switches.length;
+        int d[][] = new int[n][1 << n];
+        int mq[]  = new int[2 * (1 << n) * n];
+        int rq[]  = new int[2 * (1 << n) * n];
 
-        Queue<Integer> rooms  = new LinkedList<Integer>();
-        Queue<Integer> lights = new LinkedList<Integer>();
-        Queue<Integer> counts = new LinkedList<Integer>();
-        boolean seen[][]      = new boolean[n][1 << n];
+        int h = (1 << n) * n;
+        int t = (1 << n) * n + 1;
 
-        rooms.offer(0);
-        lights.offer(1);
-        counts.offer(0);
+        mq[h] = 1;
+        rq[h] = 0;
 
-        while (rooms.size() > 0) {
-            int room  = rooms.poll();
-            int light = lights.poll();
-            int count = counts.poll();
-
-            if (room == last && light == lastOn) { return count; }
-            if (seen[room][light]) { continue; }
-
-            seen[room][light] = true;
+        d[0][1] = 1;
+        while (h < t) {
+            int m = mq[h];
+            int r = rq[h];
+            h++;
 
             for (int i = 0; i < n; i++) {
-                if (i != room && isOn(light, i)) {
-                    rooms.offer(i);
-                    lights.offer(light);
-                    counts.offer(count + 1);
+                if (i != r && switches[i] == r) {
+                    int nm = flip(m, i);
+                    if (d[r][nm] == 0) {
+                        d[r][nm] = d[r][m];
+                        h--;
+                        mq[h] = nm;
+                        rq[h] = r;
+                    }
                 }
-            }
 
-
-            for (int i = 0; i < n; i++) {
-                if (i != room && switches[i] == room) {
-                    rooms.offer(room);
-                    lights.offer(flip(light, i));
-                    counts.offer(count);
+                if (i != r && isOn(m, i)) {
+                    if (d[i][m] == 0) {
+                        d[i][m] = d[r][m] + 1;
+                        mq[t] = m;
+                        rq[t] = i;
+                        t++;
+                    }
                 }
             }
         }
 
-        return -1;
+        return d[n - 1][1 << (n - 1)] - 1;
     }
 
     boolean isOff(int mask, int bit) {
@@ -62,7 +60,7 @@ public class CrazySwitches {
     }
 
     int flip(int mask, int bit) {
-        return isOn(mask, bit) ? off(mask, bit) : on(mask, bit);
+        return mask ^ (1 << bit);
     }
 
     int on(int mask, int bit) {
