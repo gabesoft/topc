@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ CrazySwitchesTest.class })
+@Suite.SuiteClasses({ GalaxyTripTest.class })
 public class Runner {
 }
