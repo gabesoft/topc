@@ -69,21 +69,6 @@ public class TurnOffLights {
 
     int press(int state, int k) {
         return state ^ moves[k];
-
-        //int r = k / 4;
-        //int c = k % 4;
-
-        //int next = flip(state, k);
-
-        //for (int i = 0; i < dr.length; i++) {
-            //int nr = r + dr[i];
-            //int nc = c + dc[i];
-            //if (0 <= nr && nr < 4 && 0 <= nc && nc < 4) {
-                //next = flip(next, nr * 4 + nc);
-            //}
-        //}
-
-        //return next;
     }
 
     int hold(int state, int k) {
