@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.recursion.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SnakeCountTest.class })
+@Suite.SuiteClasses({ FactorialGCDTest.class })
 public class Runner {
 }
