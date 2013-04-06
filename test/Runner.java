@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FactorialGCDTest.class })
+@Suite.SuiteClasses({ GroupingNumbersTest.class })
 public class Runner {
 }
