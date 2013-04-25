@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RegimentArmingTest.class })
+@Suite.SuiteClasses({ SecurityBunkerTest.class })
 public class Runner {
 }
