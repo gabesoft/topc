@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.recursion.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ZCurveTest.class })
+@Suite.SuiteClasses({ PipePuzzleTest.class })
 public class Runner {
 }
