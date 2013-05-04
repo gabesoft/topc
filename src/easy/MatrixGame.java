@@ -25,7 +25,7 @@ public class MatrixGame {
                 best = next;
             }
         }
-        
+
         return best;
     }
 
