@@ -35,8 +35,6 @@ public class StockQuotes {
                 exs[exch] = new Exch(exch);
             }
 
-            exs[exch].add(bid, ask);
-
             int bestb = 0;
             int besta = 1001;
 
@@ -45,6 +43,7 @@ public class StockQuotes {
                 bestb = Math.max(bestb, bestBid[j]);
             }
 
+            exs[exch].add(bid, ask);
             exs[10].add(bestb, besta);
         }
 
