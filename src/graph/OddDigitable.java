@@ -19,6 +19,7 @@ public class OddDigitable {
         while (nums.size() > 0) {
             int c    = nums.poll();
             String s = strs.poll();
+
             if (c == M && s.length() > 0) { return s; }
 
             for (int j = 1; j < 10; j += 2) {
