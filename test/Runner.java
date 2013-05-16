@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BitStringsTest.class })
+@Suite.SuiteClasses({ ContractWorkTest.class })
 public class Runner {
 }
