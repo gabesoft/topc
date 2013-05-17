@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.graph.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WordTrainTest.class })
+@Suite.SuiteClasses({ CalcButtonTest.class })
 public class Runner {
 }
