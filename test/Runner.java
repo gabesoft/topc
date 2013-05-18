@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ CalcButtonTest.class })
+@Suite.SuiteClasses({ CalcRootTest.class })
 public class Runner {
 }
