@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ComputerExpertTest.class })
+@Suite.SuiteClasses({ HammingNumbersTest.class })
 public class Runner {
 }
