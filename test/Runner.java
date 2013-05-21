@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MirrorPathTest.class })
+@Suite.SuiteClasses({ ComputerExpertTest.class })
 public class Runner {
 }
