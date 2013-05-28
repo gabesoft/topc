@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ DistinctRemaindersTest.class })
+@Suite.SuiteClasses({ WolfPackDivTwoTest.class })
 public class Runner {
 }
