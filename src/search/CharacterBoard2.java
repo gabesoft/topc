@@ -10,9 +10,11 @@ import java.io.*;
 public class CharacterBoard2 {
     long MOD = 1000000009L;
     int W;
+    long memo[];
 
     public int countGenerators(String[] fragment, int W, int i0, int j0) {
         this.W = W;
+        this.memo = new long[W + 1];
 
         HashSet<Character> set = new HashSet<Character>();
         for (int i = 0; i < fragment.length; i++) {
@@ -32,6 +34,7 @@ public class CharacterBoard2 {
 
             Arrays.fill(S, '?');
 
+            int w = S.length;
             for (int j = 0; j < fragment.length; j++) {
                 for (int k = 0; k < fragment[j].length(); k++) {
                     int p  = position(i, j, k);
@@ -39,6 +42,8 @@ public class CharacterBoard2 {
 
                     if (S[p] != '?' && S[p] != c) {
                         valid = false;
+                    } else if (S[p] == '?') {
+                        w--;
                     }
 
                     S[p] = c;
@@ -46,7 +51,7 @@ public class CharacterBoard2 {
             }
 
             if (valid) {
-                sum += count(S);
+                sum += count(w);
                 sum %= MOD;
             }
         }
@@ -54,15 +59,12 @@ public class CharacterBoard2 {
         return (int)sum;
     }
 
-    private long count(char[] S) {
-        long c = 1;
-        for (int i = 0; i < S.length; i++) {
-            if (S[i] == '?') {
-                c *= 26;
-                c %= MOD;
-            }
-        }
-        return c;
+    private long count(int w) {
+        if (w == 0) { return 1; }
+        if (memo[w] > 0) { return memo[w]; }
+
+        memo[w] = (26 * count(w - 1)) % MOD;
+        return memo[w];
     }
 
     private int position(int len, int r, int c) {
