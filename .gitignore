@@ -1,5 +1,6 @@
 NERD_tree_*
 build/*
+.DS_Store
 *.log
 temp
 out*.doc
