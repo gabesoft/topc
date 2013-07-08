@@ -53,19 +53,23 @@ public class Thesaurus {
     }
 
     public class Entry implements Comparable<Entry> {
-        String[] words;
         HashSet<String> set;
 
+        public Entry(HashSet<String> set) {
+            this.set = set;
+        }
+
         public Entry(String text) {
-            this.words = text.split("\\s+");
-            this.set   = new HashSet<String>(Arrays.asList(this.words));
-            Arrays.sort(words);
+            this.set = new HashSet<String>(Arrays.asList(text.split("\\s+")));
         }
 
         public Entry combine(Entry e) {
-            String[] words = differentWords(e);
-            return (e.words.length - words.length > 1)
-                ? new Entry(toString() + " " + join(words))
+            HashSet<String> combined = new HashSet<String>();
+            combined.addAll(set);
+            combined.addAll(e.set);
+
+            return (combined.size() + 2 <= e.set.size() + set.size())
+                ? new Entry(combined)
                 : null;
         }
 
@@ -74,27 +78,13 @@ public class Thesaurus {
         }
 
         public String toString() {
-            return join(words);
+            return join(set);
         }
 
-        private String[] differentWords(Entry e) {
-            ArrayList<String> ws = new ArrayList<String>();
+        private String join(HashSet<String> set) {
+            String[] ws = set.toArray(new String[0]);
+            Arrays.sort(ws);
 
-            for (int i = 0; i < e.words.length; i++) {
-                if (!set.contains(e.words[i])) {
-                    ws.add(e.words[i]);
-                }
-            }
-
-            String[] diff = new String[ws.size()];
-            for (int i = 0; i < diff.length; i++) {
-                diff[i] = ws.get(i);
-            }
-
-            return diff;
-        }
-
-        private String join(String[] ws) {
             String r = "";
             for (int i = 0; i < ws.length; i++) {
                 r += ws[i];
