@@ -35,23 +35,13 @@ public class Uptime {
         secs = secs % MIN;
 
         String r = "";
-        if (days > 0) {
-            r += days + "d";
-        }
-        if (hours > 0) {
-            if (r.length() > 0) { r += " "; }
-            r += hours + "h";
-        }
-        if (mins > 0) {
-            if (r.length() > 0) { r += " "; }
-            r += mins + "m";
-        }
-        if (secs > 0) {
-            if (r.length() > 0) { r += " "; }
-            r += secs + "s";
-        }
 
-        return r;
+        if (days > 0) { r += days + "d "; }
+        if (hours > 0) { r += hours + "h "; }
+        if (mins > 0) { r += mins + "m "; }
+        if (secs > 0) { r += secs + "s "; }
+
+        return r.trim();
     }
 
     private Date parse(String d) {
