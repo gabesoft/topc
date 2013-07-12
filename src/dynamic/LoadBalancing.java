@@ -9,7 +9,6 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm209
 public class LoadBalancing {
     int MAX = 102400;
-    int INF = 1 << 30;
     int n;
     int data[];
     int memo[][];
@@ -23,19 +22,41 @@ public class LoadBalancing {
             data[i] /= 1024;
         }
 
-        return find(0, 0) * 1024;
+        //return find1(0, 0) * 1024;
+        return find2() * 1024;
     }
 
-    private int find(int d, int k) {
+    // dp (faster)
+    private int find2() {
+        int M[]   = new int[MAX * 2 + 1];
+        int total = 0;
+
+        M[0] = 1;
+        for (int i = 0; i < n; i++) {
+            total += data[i];
+            for (int j = MAX * 2; j >= 0; j--) {
+                if (M[j] == 1) {
+                    M[j + data[i]] = 1;
+                }
+            }
+        }
+
+        for (int i = (total + 1) / 2; true; i++) {
+            if (M[i] == 1) { return i; }
+        }
+    }
+
+    // backtracking (slower)
+    private int find1(int d, int k) {
         if (k == n) { return d; }
         if (memo[d][k] > 0) { return memo[d][k]; }
 
         int v = data[k];
-        int x = d + v > MAX ? INF : find(d + v, k + 1);
+        int x = d + v > MAX ? MAX : find1(d + v, k + 1);
 
         int nextd = Math.abs(v - d);
         int time  = v > d ? d : v;
-        int y     = time + find(Math.abs(nextd), k + 1);
+        int y     = time + find1(Math.abs(nextd), k + 1);
 
         memo[d][k] = Math.min(x, y);
         return memo[d][k];
