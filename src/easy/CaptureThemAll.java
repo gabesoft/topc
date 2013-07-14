@@ -13,17 +13,24 @@ public class CaptureThemAll {
     int n = 8;
 
     public int fastKnight(String knight, String rook, String queen) {
-        int kc = knight.charAt(0) - 'a';
-        int kr = knight.charAt(1) - '1';
-        int rc = rook.charAt(0) - 'a';
-        int rr = rook.charAt(1) - '1';
-        int qc = queen.charAt(0) - 'a';
-        int qr = queen.charAt(1) - '1';
+        int r[] = new int[3];
+        int c[] = new int[3];
 
-        int distq[][] = computeDist(qr, qc);
-        int distr[][] = computeDist(rr, rc);
+        extractPosition(r, c, 0, knight);
+        extractPosition(r, c, 1, rook);
+        extractPosition(r, c, 2, queen);
 
-        return Math.min(distq[kr][kc] + distr[qr][qc], distr[kr][kc] + distq[rr][rc]);
+        int distq[][] = computeDist(r[2], c[2]);
+        int distr[][] = computeDist(r[1], c[1]);
+
+        return Math.min(
+                distq[r[0]][c[0]] + distr[r[2]][c[2]],
+                distr[r[0]][c[0]] + distq[r[1]][c[1]]);
+    }
+
+    private void extractPosition(int[] r, int[] c, int k, String pos) {
+        c[k] = pos.charAt(0) - 'a';
+        r[k] = pos.charAt(1) - '1';
     }
 
     private int[][] computeDist(int row, int col) {
