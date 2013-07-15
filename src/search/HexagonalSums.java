@@ -8,11 +8,12 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=2921&rd=5851
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm205
 public class HexagonalSums {
-    int[] H;
+    int INF = 1 << 20;
     public int minLength(int N) {
-        H = buildHexTable(N);
-
+        int[] H = buildHexTable(N);
         int[] M = new int[N + 1];
+
+        Arrays.fill(M, INF);
         for (int i = 0; i < H.length; i++) {
             int h = H[i];
             if (h <= N) {
@@ -23,11 +24,11 @@ public class HexagonalSums {
         boolean change = true;
         while (change) {
             change = false;
-
+            if (M[N] < INF) { break; }
             for (int i = 0; i < H.length; i++) {
                 int h = H[i];
                 for (int j = 0; j + h < M.length; j++) {
-                    if (M[j] > 0 && (M[j + h] == 0 || M[j + h] > M[j] + 1)) {
+                    if (M[j] > 0 && (M[j + h] > M[j] + 1)) {
                         M[j + h] = M[j] + 1;
                         change = true;
                     }
