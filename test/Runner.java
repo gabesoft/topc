@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ComplexIntegersTest.class })
+@Suite.SuiteClasses({ WaterLevelTest.class })
 public class Runner {
 }
