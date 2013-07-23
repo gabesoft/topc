@@ -91,16 +91,10 @@ public class CuboidJoin {
         }
 
         private long[] intersection(long a, long b, long c, long d) {
-            if ((a <= c && d <= b) || (a >= c && d >= b)) {
-                return new long[] { Math.max(a, c), Math.min(b, d) };
-            }
-            if (c < a && d < b && d > a) {
-                return new long[] { a, d };
-            }
-            if (c > a && d > b && c < b) {
-                return new long[] { c, b };
-            }
-            return null;
+            long x1 = Math.max(a, c);
+            long x2 = Math.min(b, d);
+
+            return x1 < x2 ? new long[] { x1, x2 } : null;
         }
 
         public String toString() {
