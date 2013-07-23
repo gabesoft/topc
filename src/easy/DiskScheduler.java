@@ -14,10 +14,56 @@ public class DiskScheduler {
     int n;
 
     public int optimize(int start, int[] sectors) {
-        n    = sectors.length;
-        sect = sectors.clone();
+        n = sectors.length;
 
+        //return solve1(start, sectors); // slower
+        return solve2(start, sectors);
+    }
+
+    private int solve2(int start, int[] sectors) {
+        Arrays.sort(sectors);
+        int min = Integer.MAX_VALUE;
+
+        for (int i = 0; i < n; i++) {
+            int prev = sectors[(i - 1 + n) % n];
+            int next = sectors[(i + 1) % n];
+
+            int dist1 = dist(start, sectors[i], 1);
+            if (dist(start, next, 1) >= dist1) {
+                dist1 += dist(sectors[i], next, -1);
+            }
+
+            int dist2 = dist(start, sectors[i], -1);
+            if (dist(start, prev, -1) >= dist2) {
+                dist2 += dist(sectors[i], prev, 1);
+            }
+
+            min = Math.min(min, Math.min(dist1, dist2));
+        }
+
+        return min;
+    }
+
+    private int dist(int a, int b, int dir) {
+        int count = 0;
+        while (a != b) {
+            a += dir;
+            count++;
+            if (a == 101) {
+                a = 1;
+            }
+            if (a == 0) {
+                a = 100;
+            }
+        }
+
+        return count;
+    }
+
+    private int solve1(int start, int[] sectors) {
         if (n == 1) { return dist(start, sectors[0]); }
+
+        sect = sectors.clone();
 
         for (int i = 0; i < n; i++) {
             if (sect[i] < 50) {
