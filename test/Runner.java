@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ DiskSchedulerTest.class })
+@Suite.SuiteClasses({ EigenVectorTest.class })
 public class Runner {
 }
