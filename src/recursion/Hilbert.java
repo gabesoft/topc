@@ -8,10 +8,8 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=2376&rd=4745
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm185
 public class Hilbert {
-    int steps[][] = new int[][] { new int[] { 0, 3 }, new int[] { 1, 2 } };
-
     public int steps(int k, int x, int y) {
-        if (k == 1) { return steps[y - 1][x - 1]; }
+        if (k == 0) { return 0; }
 
         int k2 = 1 << (k - 1);  // 2 ^ (k - 1)
         int k4 = k2 * k2;       // 4 ^ (k - 1)
