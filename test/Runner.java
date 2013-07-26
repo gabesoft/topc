@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.encryption.*;
+import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RSABreakerTest.class })
+@Suite.SuiteClasses({ PulseRadarTest.class })
 public class Runner {
 }
