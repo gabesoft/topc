@@ -14,9 +14,29 @@ public class Books {
     public int sortMoves(String[] titles) {
         n    = titles.length;
         data = titles;
-        return count(0);
+        return count();
+        //return count(0);
     }
 
+    // dp
+    private int count() {
+        int dp[] = new int[n];
+        int c    = 0;
+
+        for (int i = 0; i < n; i++) {
+            dp[i] = 1;
+            for (int j = 0; j < i; j++) {
+                if (data[i].compareTo(data[j]) >= 0) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
+                }
+            }
+            c = Math.max(c, dp[i]);
+        }
+
+        return n - c;
+    }
+
+    // brute force
     private int count(int mask) {
         for (int i = 0; i < n - 1; i++) {
             if (on(mask, i)) { continue; }
