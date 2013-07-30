@@ -23,10 +23,35 @@ public class WindowWasher {
             Arrays.fill(memo[i], -1);
         }
 
-        return search(0, width);
+        return greedy(width); // faster
+        //return dp(0, width);
     }
 
-    private int search(int k, int w) {
+    private int greedy(int width) {
+        int next[] = new int[n];
+        int i = 0;
+
+        while (true) {
+            int washed = 0;
+            int nexti  = INF;
+
+            for (int j = 0; j < n; j++) {
+                washed += i / T[j];
+                if (next[j] == i) {
+                    next[j] += T[j];
+                }
+                nexti = Math.min(nexti, next[j]);
+            }
+
+            if (washed >= width) {
+                return i;
+            }
+
+            i = nexti;
+        }
+    }
+
+    private int dp(int k, int w) {
         if (w == 0) { return 0; }
         if (k == n) { return INF; }
         if (memo[k][w] > -1) { return memo[k][w]; }
@@ -34,7 +59,7 @@ public class WindowWasher {
         int best = INF;
         for (int i = 0; i < w + 1; i++) {
             int time = T[k] * i;
-            int rest = search(k + 1, w - i);
+            int rest = dp(k + 1, w - i);
             best = Math.min(best, Math.max(time, rest));
         }
 
