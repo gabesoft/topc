@@ -17,37 +17,25 @@ public class WhatSort {
         }
 
         Record[] sorted = original.clone();
+        String method   = "NOT";
 
-        //debug("ORG", sorted);
-
-        String method = "NOT";
-
-        Arrays.sort(sorted, new Naw());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "NAW" : "IND";
-        }
-        Arrays.sort(sorted, new Nwa());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "NWA" : "IND";
-        }
-        Arrays.sort(sorted, new Anw());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "ANW" : "IND";
-        }
-        Arrays.sort(sorted, new Awn());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "AWN" : "IND";
-        }
-        Arrays.sort(sorted, new Wan());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "WAN" : "IND";
-        }
-        Arrays.sort(sorted, new Wna());
-        if (arraysEqual(original, sorted)) {
-            method = method.equals("NOT") ? "WNA" : "IND";
-        }
+        method = sortAndCompare(original, sorted, method, new RecordCompare("NAW"));
+        method = sortAndCompare(original, sorted, method, new RecordCompare("NWA"));
+        method = sortAndCompare(original, sorted, method, new RecordCompare("ANW"));
+        method = sortAndCompare(original, sorted, method, new RecordCompare("AWN"));
+        method = sortAndCompare(original, sorted, method, new RecordCompare("WAN"));
+        method = sortAndCompare(original, sorted, method, new RecordCompare("WNA"));
 
         return method;
+    }
+
+    private String sortAndCompare(Record[] original, Record[] sorted, String method, RecordCompare comp) {
+        Arrays.sort(sorted, comp);
+        if (arraysEqual(original, sorted)) {
+            return method.equals("NOT") ? comp.order : "IND";
+        } else {
+            return method;
+        }
     }
 
     private boolean arraysEqual(Record[] a1, Record[] a2) {
@@ -63,75 +51,38 @@ public class WhatSort {
         System.out.println(Arrays.deepToString(os));
     }
 
-    public class Wna implements Comparator<Record> {
+    public class RecordCompare implements Comparator<Record> {
+        public final String order;
+
+        public RecordCompare(String order) {
+            this.order = order;
+        }
+
         public int compare(Record x, Record y) {
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
+            int[] data = new int[3];
+            data[0] = x.name.compareTo(y.name);
+            data[1] = x.age - y.age;
+            data[2] = y.weight - x.weight;
+            return compare(data);
+        }
+
+        private int compare(int[] data) {
+            int d0 = code(order.charAt(0));
+            int d1 = code(order.charAt(1));
+            int d2 = code(order.charAt(2));
+
+            if (data[d0] != 0) { return data[d0]; }
+            if (data[d1] != 0) { return data[d1]; }
+            if (data[d2] != 0) { return data[d2]; }
+
             return 0;
         }
-    }
 
-    public class Wan implements Comparator<Record> {
-        public int compare(Record x, Record y) {
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            return 0;
-        }
-    }
-
-    public class Awn implements Comparator<Record> {
-        public int compare(Record x, Record y) {
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            return 0;
-        }
-    }
-
-    public class Anw implements Comparator<Record> {
-        public int compare(Record x, Record y) {
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            return 0;
-        }
-    }
-
-    public class Nwa implements Comparator<Record> {
-        public int compare(Record x, Record y) {
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
-            return 0;
-        }
-    }
-
-    public class Naw implements Comparator<Record> {
-        public int compare(Record x, Record y) {
-            int n = x.name.compareTo(y.name);
-            if (n != 0) { return n; }
-            int a = x.age - y.age;
-            if (a != 0) { return a; }
-            int w = y.weight - x.weight;
-            if (w != 0) { return w; }
-            return 0;
+        private int code(char c) {
+            if (c == 'N') { return 0; }
+            if (c == 'A') { return 1; }
+            if (c == 'W') { return 2; }
+            return -1;
         }
     }
 
