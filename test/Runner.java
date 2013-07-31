@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.sorting.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ OrchardTest.class })
+@Suite.SuiteClasses({ WhatSortTest.class })
 public class Runner {
 }
