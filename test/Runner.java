@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.sorting.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WhatSortTest.class })
+@Suite.SuiteClasses({ PoolTest.class })
 public class Runner {
 }
