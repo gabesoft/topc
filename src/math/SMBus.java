@@ -9,6 +9,67 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm162
 public class SMBus {
     public int transmitTime(String[] messages, int[] times) {
+        return solve1(messages, times);
+        //return solve2(messages, times);
+    }
+
+    private int solve2(String[] messages, int[] times) {
+        int n = times.length;
+
+        Message[] msg = new Message[n];
+        for (int i = 0; i < n; i++) {
+            msg[i] = new Message(messages[i], times[i]);
+        }
+
+        int transmitted = 0;
+        int time = 0;
+        while (transmitted < n) {
+            for (int i = 0; i < n; i++) {
+                if (!msg[i].done) {
+                    msg[i].transmitting = true;
+                }
+            }
+
+            int bit = 0;
+            boolean transmitting = true;
+            while (transmitting) {
+                int t  = 0;
+                char k = '9';
+
+                for (int i = 0; i < n; i++) {
+                    if (msg[i].transmitting) {
+                        t = Math.max(t, msg[i].time);
+                        if (bit < msg[i].data.length()) {
+                            char c = msg[i].data.charAt(bit);
+                            if (c < k) {
+                                k = c;
+                            }
+                        } else {
+                            msg[i].transmitting = false;
+                            msg[i].done = true;
+                            transmitted++;
+                            transmitting = false;
+                        }
+                    }
+                }
+
+                for (int i = 0; i < n; i++) {
+                    if (msg[i].transmitting && msg[i].data.charAt(bit) > k) {
+                        msg[i].transmitting = false;
+                    }
+                }
+
+                if (transmitting) {
+                    time += t;
+                    bit++;
+                }
+            }
+        }
+
+        return time;
+    }
+
+    public int solve1(String[] messages, int[] times) {
         int n = times.length;
 
         Message[] msg = new Message[n];
@@ -73,6 +134,8 @@ public class SMBus {
     public class Message implements Comparable<Message> {
         public final String data;
         public final int time;
+        public boolean transmitting;
+        public boolean done;
 
         public Message(String d, int t) {
             data = d;
@@ -84,7 +147,7 @@ public class SMBus {
         }
 
         public String toString() {
-            return String.format("%s:%s", data, time);
+            return String.format("%s:%s:%s", data, time, done ? 'D' : (transmitting ? 'T' : 'S'));
         }
     }
 }
