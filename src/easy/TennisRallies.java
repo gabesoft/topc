@@ -16,8 +16,38 @@ public class TennisRallies {
         A = allowed;
         L = numLength;
 
+        //return bruteForce(forbidden);
+        return rec(allowed, "", forbidden); // faster
+    }
+
+    private int rec(int allowed, String curr, String[] forbidden) {
+        if (curr.length() == L) { return 1; }
+
+        int count = 0;
+        for (int i = 0; i < 2; i++) {
+            int a  = allowed;
+            char c = (char)(i + 'c');
+
+            String next = curr + c;
+            for (int j = 0; j < forbidden.length; j++) {
+                if (next.endsWith(forbidden[j])) {
+                    a--;
+                }
+            }
+
+            if (a <= 0) {
+                continue;
+            }
+
+            count += rec(a, next, forbidden);
+        }
+
+        return count;
+    }
+
+    private int bruteForce(String[] forbidden) {
         int k   = 0;
-        int max = 1 << numLength;
+        int max = 1 << L;
 
         F = new int[forbidden.length][3];
         for (int i = 0; i < forbidden.length; i++) {
@@ -30,12 +60,13 @@ public class TennisRallies {
         }
 
         for (int i = 0; i < max; i++) {
-            if (countForbidden(i) < allowed) {
+            if (countForbidden(i) < A) {
                 k++;
             }
         }
 
         return k;
+
     }
 
     private int countForbidden(int seq) {
