@@ -9,9 +9,24 @@ import java.io.*;
 // editorial: http://www.topcoder.com/tc?module=Static&d1=match_editorials&d2=srm155
 public class PaternityTest {
     public int[] possibleFathers(String child, String mother, String[] men) {
+        //return solve1(child, mother, men);
+        return solve2(child, mother, men); // faster
+    }
+
+    private int[] solve2(String child, String mother, String[] men) {
+        boolean match[] = new boolean[men.length];
+        for (int i = 0; i < men.length; i++) {
+            if (matches(child, mother, men[i])) {
+                match[i] = true;
+            }
+        }
+        return toIntArray(match);
+    }
+
+    // brute force
+    private int[] solve1(String child, String mother, String[] men) {
         int n = child.length() / 2;
         int k = 1 << (n * 2);
-        int m = 0;
 
         boolean match[] = new boolean[men.length];
         for (int i = 0; i < k; i++) {
@@ -22,22 +37,45 @@ public class PaternityTest {
                     }
                     if (matches(child, men[j], ~i)) {
                         match[j] = true;
-                        m++;
                     }
                 }
             }
         }
 
+        return toIntArray(match);
+    }
+
+    private int[] toIntArray(boolean[] match) {
+        int m = 0;
+        for (int i = 0; i < match.length; i++) {
+            if (match[i]) { m++; }
+        }
+
         int r[] = new int[m];
         int j   = 0;
 
-        for (int i = 0; i < men.length; i++) {
+        for (int i = 0; i < match.length; i++) {
             if (match[i]) {
                 r[j++] = i;
             }
         }
 
         return r;
+    }
+
+    private boolean matches(String a, String b, String c) {
+        int n = a.length();
+        int match = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (a.charAt(i) == c.charAt(i)) {
+                match++;
+            } else if (a.charAt(i) != b.charAt(i)) {
+                return false;
+            }
+        }
+
+        return match >= n / 2;
     }
 
     private boolean matches(String a, String b, int k) {
