@@ -19,11 +19,58 @@ public class ProblemWriting {
             return "dotForm is not in dot notation, check character 0.";
         }
 
-        int index = check(dotForm, 0);
+        //int index = check(dotForm, 0);
+        int index = check(dotForm);
 
         return index == -1 ? "" : String.format("dotForm is not in dot notation, check character %s.", index);
     }
 
+    // state machine
+    private int check(String text) {
+        final int S0 = 0, S1 = 1, S2 = 2, S3 = 3;
+
+        boolean valid = true;
+        int STATE     = S0;
+
+        for (int i = 0; i < n; i++) {
+            char c = text.charAt(i);
+            valid = true;
+
+            switch (STATE) {
+                case S0: 
+                    if (Character.isDigit(c)) {
+                        STATE = S1;
+                    } else {
+                        valid = false;
+                    }
+                    break;
+                case S1:
+                case S2:
+                    if (c == '.') {
+                        STATE = S2;
+                    } else if (isOperator(c)) {
+                        STATE = S3;
+                    } else {
+                        valid = false;
+                    }
+                    break;
+                case S3:
+                    if (c == '.') {
+                        STATE = S3;
+                    } else if (Character.isDigit(c)) {
+                        STATE = S1;
+                    } else {
+                        valid = false;
+                    }
+            }
+
+            if (!valid) { return i; }
+        }
+
+        return (STATE != S1) ? n : -1;
+    }
+
+    // recursive
     private int check(String text, int index) {
         if (index == n) { return -1; }
         if (index == n - 1) { return Character.isDigit(text.charAt(index)) ? -1 : index; }
