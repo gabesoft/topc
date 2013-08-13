@@ -19,42 +19,57 @@ public class GUMIAndSongsDiv1 {
             tunes[i] = new Tune(duration[i], tone[i]);
         }
 
-        Arrays.sort(tunes);
+        Arrays.sort(tunes, new Comparator<Tune>() {
+            @Override
+            public int compare(Tune t1, Tune t2) {
+                return t1.tone - t2.tone;
+            }
+        });
 
-        return find(0, -1, T);
-    }
+        int best = 0;
+        for (int first = 0; first < n; first++) {
+            for (int last = first; last < n; last++) {
+                int timeLeft = T - (tunes[last].tone - tunes[first].tone);
+                if (timeLeft < 0) { continue; }
 
-    private int find(int curr, int last, int time) {
-        if (curr == n) { return 0; }
+                Tune[] curr = new Tune[last - first + 1];
+                System.arraycopy(tunes, first, curr, 0, curr.length);
 
-        int a = find(curr + 1, last, time);
-        int b = 0;
+                Arrays.sort(curr, new Comparator<Tune>() {
+                    @Override
+                    public int compare(Tune t1, Tune t2) {
+                        return t1.duration - t2.duration;
+                    }
+                });
 
-        int x = last == -1 ? 0 : Math.abs(tunes[last].t - tunes[curr].t);
-        int y = tunes[curr].d;
+                int count = 0;
+                for (Tune t : curr) {
+                    if (t.duration <= timeLeft) {
+                        timeLeft -= t.duration;
+                        count++;
+                    } else {
+                        break;
+                    }
+                }
 
-        if (x + y <= time) {
-            b = 1 + find(curr + 1, curr, time - (x + y));
+                best = Math.max(best, count);
+            }
         }
 
-        return Math.max(a, b);
+        return best;
     }
 
     private void debug(Object... os) {
         System.out.println(Arrays.deepToString(os));
     }
 
-    public class Tune implements Comparable<Tune> {
-        public final int d;
-        public final int t;
+    public class Tune {
+        public final int duration;
+        public final int tone;
 
         public Tune(int d, int t) {
-            this.d = d;
-            this.t = t;
-        }
-
-        public int compareTo(Tune o) {
-            return (t == o.t) ? d - o.d : t - o.t;
+            duration = d;
+            tone     = t;
         }
     }
 }

@@ -24,7 +24,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(0, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case3() {
     int[] duration = { 1, 2, 3, 4 };
     int[] tone = { 1, 1, 1, 1 };
@@ -80,7 +80,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case10() {
     int[] duration = { 71698, 25829, 92925, 87120, 4308 };
     int[] tone = { 41241, 84705, 50068, 9381, 68273 };
@@ -96,7 +96,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case12() {
     int[] duration = { 179, 83, 682, 226, 901 };
     int[] tone = { 4, 10, 6, 4, 4 };
@@ -104,7 +104,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case13() {
     int[] duration = { 2, 3, 9, 3, 5 };
     int[] tone = { 251, 132, 926, 218, 86 };
@@ -112,7 +112,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case14() {
     int[] duration = { 671, 966, 372, 546, 655 };
     int[] tone = { 67, 519, 185, 340, 896 };
@@ -120,7 +120,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case15() {
     int[] duration = { 639, 730, 732, 521, 853 };
     int[] tone = { 361, 250, 732, 864, 579 };
@@ -128,7 +128,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case16() {
     int[] duration = { 849, 396, 997, 143, 702 };
     int[] tone = { 835, 116, 987, 693, 764 };
@@ -136,7 +136,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case17() {
     int[] duration = { 70, 735, 277, 638, 154 };
     int[] tone = { 926, 440, 109, 244, 976 };
@@ -144,7 +144,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case18() {
     int[] duration = { 339, 98, 765, 465, 219 };
     int[] tone = { 354, 976, 23, 875, 699 };
@@ -152,7 +152,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case19() {
     int[] duration = { 76136, 2067, 15819, 55113, 63628 };
     int[] tone = { 360, 61, 668, 799, 643 };
@@ -160,7 +160,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case20() {
     int[] duration = { 50915, 62052, 39540, 27862, 56793 };
     int[] tone = { 560, 593, 50, 759, 439 };
@@ -168,7 +168,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case21() {
     int[] duration = { 375, 566, 719, 218, 102 };
     int[] tone = { 35787, 12046, 3659, 47231, 52845 };
@@ -176,7 +176,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case22() {
     int[] duration = { 468, 10, 859, 816, 962 };
     int[] tone = { 56044, 31099, 64384, 96421, 46554 };
@@ -184,7 +184,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case23() {
     int[] duration = { 96051, 84888, 34755, 87326, 62425 };
     int[] tone = { 13462, 85123, 19534, 95191, 26131 };
@@ -192,7 +192,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case24() {
     int[] duration = { 63766, 84188, 59242, 84235, 55284 };
     int[] tone = { 61496, 58983, 7643, 55717, 32479 };
@@ -200,7 +200,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case25() {
     int[] duration = { 59421, 9920, 29338, 20541, 36730 };
     int[] tone = { 3775, 68693, 31488, 3518, 8739 };
@@ -208,7 +208,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case26() {
     int[] duration = { 17669, 87511, 1786, 60060, 40006 };
     int[] tone = { 28505, 20156, 64207, 53296, 81014 };
@@ -216,7 +216,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case27() {
     int[] duration = { 71292, 27034, 35610, 23973, 87293 };
     int[] tone = { 75664, 68481, 24331, 75470, 46328 };
@@ -224,7 +224,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case28() {
     int[] duration = { 187, 585, 484, 172, 936 };
     int[] tone = { 413, 389, 151, 538, 307 };
@@ -232,7 +232,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case29() {
     int[] duration = { 838, 934, 258, 307, 451 };
     int[] tone = { 65, 611, 33, 376, 404 };
@@ -240,7 +240,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case30() {
     int[] duration = { 3, 1, 4, 1, 8, 6, 2, 10, 9, 3 };
     int[] tone = { 2, 7, 8, 8, 8, 9, 8, 6, 7, 9 };
@@ -248,7 +248,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case31() {
     int[] duration = { 51, 15, 31, 130, 68, 121, 122, 170, 193, 175 };
     int[] tone = { 8, 10, 7, 3, 9, 3, 1, 8, 10, 7 };
@@ -256,7 +256,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case32() {
     int[] duration = { 53023, 45951, 43380, 15366, 86457, 49831, 54849, 60501, 50694, 2303 };
     int[] tone = { 39428, 94977, 86527, 2937, 71943, 57128, 65248, 82284, 45507, 75374 };
@@ -264,7 +264,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case33() {
     int[] duration = { 19109, 84713, 88078, 2266, 27211, 19498, 34756, 14757, 83884, 86386 };
     int[] tone = { 46787, 50309, 72804, 11851, 61994, 38498, 96529, 78535, 46003, 45216 };
@@ -272,7 +272,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case34() {
     int[] duration = { 1063, 74682, 86458, 75096, 50427, 65424, 9743, 46847, 40988, 7718 };
     int[] tone = { 56818, 81116, 3415, 23025, 57870, 57006, 68862, 95064, 76676, 51676 };
@@ -280,7 +280,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case35() {
     int[] duration = { 51937, 1348, 69569, 7714, 16213, 14378, 80777, 16745, 99022, 38318 };
     int[] tone = { 80549, 93375, 27179, 32739, 5733, 19012, 67935, 71932, 72481, 23732 };
@@ -288,7 +288,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(7, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case36() {
     int[] duration = { 7, 9, 5, 5, 5, 2, 9, 2, 1, 9 };
     int[] tone = { 1, 1, 5, 10, 3, 6, 5, 4, 6, 2 };
@@ -296,7 +296,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case37() {
     int[] duration = { 701, 79, 882, 507, 33, 784, 814, 706, 814, 493 };
     int[] tone = { 7, 10, 5, 1, 2, 4, 8, 5, 9, 6 };
@@ -304,7 +304,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(7, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case38() {
     int[] duration = { 7, 4, 7, 3, 8, 6, 1, 5, 4, 5 };
     int[] tone = { 376, 271, 8, 790, 976, 781, 847, 981, 179, 503 };
@@ -312,7 +312,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case39() {
     int[] duration = { 141, 394, 381, 821, 936, 406, 159, 654, 286, 40 };
     int[] tone = { 941, 795, 109, 918, 166, 257, 990, 22, 205, 480 };
@@ -320,7 +320,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case40() {
     int[] duration = { 449, 284, 244, 469, 111, 379, 924, 619, 27, 389 };
     int[] tone = { 788, 829, 193, 725, 712, 444, 177, 765, 923, 901 };
@@ -328,7 +328,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case41() {
     int[] duration = { 848, 801, 200, 58, 265, 523, 82, 496, 308, 285 };
     int[] tone = { 728, 392, 610, 408, 484, 359, 33, 550, 980, 861 };
@@ -336,7 +336,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case42() {
     int[] duration = { 732, 599, 310, 890, 646, 403, 734, 800, 226, 622 };
     int[] tone = { 64, 726, 316, 112, 77, 504, 300, 1, 884, 938 };
@@ -344,7 +344,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case43() {
     int[] duration = { 259, 987, 143, 612, 619, 735, 770, 821, 568, 954 };
     int[] tone = { 707, 96, 724, 129, 289, 72, 559, 834, 801, 936 };
@@ -352,7 +352,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case44() {
     int[] duration = { 33030, 64591, 23612, 84493, 25815, 64670, 40973, 19552, 86373, 54139 };
     int[] tone = { 337, 920, 233, 836, 855, 532, 119, 838, 749, 847 };
@@ -360,7 +360,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case45() {
     int[] duration = { 87701, 57134, 3503, 39051, 39308, 38688, 80259, 35892, 7055, 34372 };
     int[] tone = { 805, 397, 402, 825, 770, 160, 197, 5, 486, 963 };
@@ -368,7 +368,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case46() {
     int[] duration = { 50, 58, 277, 191, 988, 568, 982, 822, 650, 43 };
     int[] tone = { 49311, 51244, 92490, 16648, 85755, 51951, 39414, 70516, 78023, 16685 };
@@ -376,7 +376,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(10, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case47() {
     int[] duration = { 509, 193, 343, 986, 933, 461, 341, 259, 959, 763 };
     int[] tone = { 91199, 24440, 1391, 46689, 58872, 47142, 96840, 37581, 89768, 76472 };
@@ -384,7 +384,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case48() {
     int[] duration = { 78061, 2254, 25620, 11094, 97011, 37984, 34363, 61987, 93369, 22808 };
     int[] tone = { 3692, 55041, 18814, 49292, 66171, 58886, 84131, 17095, 51165, 2759 };
@@ -392,7 +392,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case49() {
     int[] duration = { 24947, 23816, 8309, 35677, 32600, 30431, 86143, 65185, 81532, 24208 };
     int[] tone = { 42811, 45003, 31189, 34742, 38043, 17781, 79625, 34977, 71683, 31082 };
@@ -400,7 +400,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case50() {
     int[] duration = { 81815, 64753, 40941, 10000, 68829, 66095, 9759, 84471, 6241, 19251 };
     int[] tone = { 31330, 80131, 31367, 78834, 18668, 60809, 37603, 88958, 35302, 60176 };
@@ -408,7 +408,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(9, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case51() {
     int[] duration = { 77702, 10887, 83539, 10899, 56270, 80679, 58081, 55784, 94372, 65543 };
     int[] tone = { 30966, 50961, 47229, 13671, 32920, 16969, 77340, 82918, 35935, 94711 };
@@ -416,7 +416,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case52() {
     int[] duration = { 59413, 16462, 86138, 20767, 88829, 31175, 27367, 59640, 15256, 5077 };
     int[] tone = { 89509, 50364, 89962, 50330, 29083, 86363, 43744, 59423, 67076, 29856 };
@@ -424,7 +424,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case53() {
     int[] duration = { 515, 559, 53, 994, 500, 616, 485, 617, 36, 927 };
     int[] tone = { 169, 110, 992, 433, 292, 319, 465, 714, 112, 520 };
@@ -432,7 +432,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case54() {
     int[] duration = { 409, 118, 684, 232, 602, 585, 357, 28, 850, 145 };
     int[] tone = { 632, 926, 441, 675, 547, 791, 998, 692, 324, 340 };
@@ -440,7 +440,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(10, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case55() {
     int[] duration = { 3, 9, 10, 9, 4, 5, 4, 7, 1, 4, 8, 1, 1, 3, 1, 2, 8, 9, 7, 9, 8, 4, 3, 10, 10 };
     int[] tone = { 5, 5, 2, 5, 2, 6, 8, 4, 2, 6, 2, 8, 9, 4, 10, 5, 6, 8, 8, 2, 9, 9, 6, 1, 3 };
@@ -448,7 +448,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(11, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case56() {
     int[] duration = { 143, 102, 175, 198, 77, 81, 182, 178, 41, 83, 104, 12, 75, 13, 33, 7, 83, 178, 65, 199, 85, 154, 9, 36, 78 };
     int[] tone = { 9, 3, 4, 8, 7, 3, 9, 7, 2, 5, 9, 9, 9, 9, 5, 10, 9, 9, 3, 8, 5, 4, 10, 1, 9 };
@@ -456,7 +456,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(15, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case57() {
     int[] duration = { 84399, 74644, 92699, 7380, 65938, 74869, 34903, 91344, 79756, 39937, 96039, 3852, 26706, 89766, 95731, 13207, 47558, 46910, 82341, 16806, 45582, 91992, 49306, 10580, 19595 };
     int[] tone = { 66771, 97227, 59357, 74165, 47410, 45963, 88512, 90978, 54750, 31655, 61299, 97935, 45962, 2342, 64750, 70118, 49924, 43097, 37554, 85025, 24915, 38110, 3241, 31235, 55511 };
@@ -464,7 +464,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(13, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case58() {
     int[] duration = { 64696, 60755, 55155, 68344, 12131, 84814, 61725, 36168, 33574, 49840, 55866, 98356, 1484, 53245, 37773, 79197, 10297, 38252, 26056, 23287, 82299, 57489, 37358, 60553, 62720 };
     int[] tone = { 38650, 89106, 51624, 76477, 32323, 96105, 4334, 91849, 55074, 58896, 52029, 58787, 70362, 50116, 79399, 83151, 57315, 46938, 41379, 45241, 67875, 28368, 51595, 68652, 50736 };
@@ -472,7 +472,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(11, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case59() {
     int[] duration = { 60353, 49092, 34219, 66237, 74369, 80227, 61814, 15106, 11641, 48214, 34708, 3797, 71741, 96713, 88653, 53976, 57636, 80535, 29297, 80542, 14892, 13597, 34870, 29078, 72652 };
     int[] tone = { 21336, 4546, 66871, 97732, 9847, 91351, 1675, 14108, 51246, 43912, 51633, 35003, 28443, 33595, 43554, 88268, 71136, 59074, 71509, 95413, 52896, 76043, 52900, 39849, 62716 };
@@ -480,7 +480,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(17, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case60() {
     int[] duration = { 47942, 29827, 37268, 1294, 98465, 30514, 41870, 90386, 82344, 96694, 72347, 58877, 37685, 27239, 15766, 60489, 77478, 46355, 97306, 94663, 75596, 23726, 67477, 26543, 52692 };
     int[] tone = { 85331, 35091, 10301, 76792, 85219, 86756, 6848, 44213, 96048, 16636, 11779, 58076, 65164, 63926, 83189, 65909, 7740, 82687, 63280, 20203, 10927, 30791, 59856, 43011, 34801 };
@@ -488,7 +488,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(21, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case61() {
     int[] duration = { 2, 10, 8, 6, 9, 9, 6, 10, 6, 8, 1, 1, 3, 9, 10, 3, 1, 4, 1, 9, 5, 2, 4, 8, 4 };
     int[] tone = { 3, 10, 2, 3, 9, 4, 8, 2, 10, 5, 2, 1, 9, 5, 5, 2, 4, 4, 3, 1, 7, 6, 4, 9, 9 };
@@ -496,7 +496,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(11, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case62() {
     int[] duration = { 129, 378, 817, 16, 479, 830, 426, 777, 887, 235, 737, 655, 665, 447, 831, 418, 303, 251, 842, 622, 380, 505, 597, 758, 383 };
     int[] tone = { 3, 7, 6, 5, 5, 2, 2, 8, 10, 1, 8, 2, 3, 4, 8, 8, 5, 3, 4, 1, 7, 10, 8, 5, 2 };
@@ -504,7 +504,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(22, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case63() {
     int[] duration = { 4, 3, 7, 3, 1, 4, 7, 5, 6, 7, 1, 9, 9, 5, 5, 4, 5, 9, 4, 3, 5, 7, 6, 2, 3 };
     int[] tone = { 995, 288, 522, 58, 733, 302, 494, 921, 57, 377, 988, 512, 57, 269, 390, 493, 839, 714, 71, 235, 217, 402, 84, 177, 573 };
@@ -512,7 +512,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case64() {
     int[] duration = { 41, 642, 626, 842, 428, 509, 345, 596, 566, 211, 711, 607, 676, 678, 237, 771, 294, 780, 785, 971, 612, 882, 464, 356, 873 };
     int[] tone = { 933, 730, 169, 543, 280, 941, 747, 650, 821, 925, 922, 18, 986, 94, 535, 218, 924, 69, 669, 92, 209, 878, 267, 483, 40 };
@@ -520,7 +520,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(13, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case65() {
     int[] duration = { 376, 930, 428, 896, 869, 441, 774, 643, 465, 228, 505, 75, 59, 90, 126, 571, 242, 957, 574, 767, 317, 631, 316, 636, 800 };
     int[] tone = { 102, 719, 343, 506, 213, 643, 582, 982, 981, 816, 803, 47, 426, 448, 516, 97, 72, 91, 390, 615, 877, 624, 122, 374, 699 };
@@ -528,7 +528,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(16, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case66() {
     int[] duration = { 462, 221, 265, 691, 67, 913, 687, 651, 804, 25, 565, 577, 306, 893, 73, 805, 577, 697, 86, 955, 193, 16, 645, 334, 376 };
     int[] tone = { 985, 972, 777, 395, 499, 772, 146, 686, 150, 899, 503, 233, 139, 875, 467, 654, 485, 145, 566, 398, 717, 135, 429, 801, 995 };
@@ -536,7 +536,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(14, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case67() {
     int[] duration = { 858, 716, 224, 674, 527, 686, 244, 677, 724, 167, 224, 553, 65, 910, 229, 560, 819, 119, 547, 320, 115, 292, 52, 274, 464 };
     int[] tone = { 721, 412, 935, 881, 381, 451, 863, 684, 285, 928, 102, 116, 475, 203, 39, 191, 125, 259, 753, 510, 56, 277, 666, 264, 245 };
@@ -544,7 +544,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case68() {
     int[] duration = { 716, 404, 170, 108, 5, 771, 619, 432, 738, 463, 629, 142, 605, 287, 741, 331, 767, 675, 126, 456, 112, 795, 326, 429, 265 };
     int[] tone = { 681, 236, 834, 551, 46, 280, 673, 534, 199, 302, 372, 979, 822, 774, 972, 8, 659, 239, 768, 374, 842, 940, 125, 895, 551 };
@@ -552,7 +552,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(12, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case69() {
     int[] duration = { 96891, 6024, 99, 77786, 36879, 82451, 83531, 7689, 78039, 9674, 160, 9675, 79162, 24909, 90892, 23405, 51187, 43928, 45635, 56392, 47041, 99751, 68319, 39698, 92602 };
     int[] tone = { 125, 475, 864, 990, 946, 93, 830, 743, 967, 439, 989, 593, 369, 852, 437, 886, 467, 163, 683, 721, 537, 958, 619, 521, 617 };
@@ -560,7 +560,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(19, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case70() {
     int[] duration = { 90458, 27208, 3274, 82785, 81976, 4330, 9378, 96607, 28455, 43662, 1532, 41184, 54374, 97566, 76146, 99837, 84354, 95575, 11725, 17436, 65460, 459, 95466, 87879, 62281 };
     int[] tone = { 94, 783, 32, 946, 836, 206, 379, 737, 889, 216, 176, 864, 836, 800, 751, 713, 515, 498, 375, 171, 123, 58, 775, 757, 849 };
@@ -568,7 +568,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(9, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case71() {
     int[] duration = { 475, 834, 576, 854, 855, 130, 194, 595, 865, 380, 827, 791, 948, 118, 817, 545, 926, 9, 131, 74, 110, 928, 663, 651, 736 };
     int[] tone = { 26540, 29937, 5039, 23154, 74761, 98273, 91206, 77313, 29900, 27816, 32688, 46612, 32568, 84368, 95774, 75692, 1557, 55086, 9005, 46429, 15281, 6158, 15009, 38908, 91520 };
@@ -576,7 +576,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(21, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case72() {
     int[] duration = { 402, 436, 648, 883, 350, 113, 534, 880, 877, 853, 9, 348, 122, 926, 415, 803, 807, 224, 547, 118, 753, 146, 933, 902, 696 };
     int[] tone = { 48766, 27527, 90503, 84362, 19092, 60466, 63970, 38283, 78283, 44398, 60969, 32028, 297, 92177, 61841, 41247, 24254, 18618, 84014, 74689, 62972, 74487, 51323, 32174, 95282 };
@@ -584,7 +584,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(8, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case73() {
     int[] duration = { 10994, 78907, 64802, 99989, 80084, 69251, 63438, 28209, 81005, 55903, 12919, 10455, 90452, 61337, 98279, 87818, 89538, 4263, 20755, 96705, 71394, 17309, 18429, 88619, 46268 };
     int[] tone = { 10319, 91167, 88057, 15798, 70828, 84072, 13476, 16815, 83014, 99362, 81814, 23764, 46453, 25420, 47798, 11702, 58893, 49306, 20735, 6, 79556, 22677, 33264, 71675, 25679 };
@@ -592,7 +592,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(23, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case74() {
     int[] duration = { 49828, 51183, 83212, 2556, 4618, 36843, 28528, 11325, 5513, 90867, 86419, 37256, 11166, 79169, 34712, 91829, 82092, 12547, 32693, 57026, 94951, 46236, 20760, 54299, 6883 };
     int[] tone = { 91374, 13731, 29783, 6350, 64482, 98122, 61340, 64238, 93542, 23147, 30016, 2561, 89174, 88204, 66102, 1669, 34461, 62261, 60452, 65951, 85437, 25864, 90616, 81761, 77265 };
@@ -600,7 +600,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case75() {
     int[] duration = { 5419, 51542, 73813, 48792, 52984, 22703, 86084, 80193, 51407, 7614, 19031, 83223, 71559, 75119, 77066, 35245, 70543, 45683, 94984, 63392, 70030, 60088, 229, 87362, 98432 };
     int[] tone = { 46004, 10265, 72165, 29510, 50819, 51337, 84533, 44902, 29301, 91274, 34016, 70614, 94194, 41590, 98072, 52270, 14192, 65827, 58655, 10541, 77671, 89612, 67834, 81295, 59699 };
@@ -608,7 +608,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(11, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case76() {
     int[] duration = { 59614, 28788, 74801, 11444, 49178, 33796, 34223, 40782, 96485, 71412, 79184, 90568, 96809, 54581, 21701, 16096, 23606, 25712, 38919, 22414, 82963, 54742, 95997, 7062, 98310 };
     int[] tone = { 53824, 44535, 95974, 2755, 41221, 29260, 63503, 37364, 13004, 31675, 17111, 18, 4727, 32665, 16749, 79387, 54279, 48280, 87780, 86106, 74698, 67056, 26010, 11903, 64934 };
@@ -616,7 +616,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case77() {
     int[] duration = { 52348, 82521, 83304, 5340, 93095, 55583, 18427, 57087, 44225, 61172, 66823, 50547, 25548, 78988, 69619, 58972, 65938, 64743, 65619, 14060, 66307, 55053, 88868, 62221, 36355 };
     int[] tone = { 42605, 5722, 36139, 21177, 35104, 53945, 69381, 33972, 85621, 84812, 78368, 72253, 43080, 18201, 23871, 375, 34678, 78064, 4715, 29473, 21488, 27914, 30975, 7911, 99152 };
@@ -624,7 +624,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case78() {
     int[] duration = { 533, 162, 618, 643, 841, 749, 225, 847, 162, 566, 797, 205, 556, 927, 523, 239, 685, 318, 202, 52, 825, 169, 359, 650, 869 };
     int[] tone = { 237, 423, 745, 998, 235, 673, 639, 733, 698, 28, 586, 268, 324, 688, 895, 275, 883, 466, 384, 623, 142, 44, 37, 354, 259 };
@@ -632,7 +632,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case79() {
     int[] duration = { 886, 803, 328, 612, 229, 492, 693, 943, 29, 415, 998, 798, 960, 896, 692, 968, 223, 403, 688, 181, 267, 400, 371, 429, 906 };
     int[] tone = { 44, 809, 772, 647, 362, 919, 221, 646, 786, 904, 638, 402, 492, 792, 546, 372, 764, 869, 603, 795, 871, 951, 730, 595, 700 };
@@ -640,7 +640,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(25, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case80() {
     int[] duration = { 2, 2, 5, 9, 4, 3, 7, 1, 2, 10, 8, 6, 2, 3, 3, 8, 10, 5, 5, 5, 5, 5, 7, 7, 9, 10, 8, 10, 4, 3, 9, 2, 4, 2, 3, 3, 9, 6, 1, 6, 5, 1, 4, 7, 10, 10, 6, 6, 2, 3 };
     int[] tone = { 9, 8, 9, 3, 3, 9, 5, 4, 9, 9, 1, 3, 7, 6, 7, 5, 8, 9, 5, 7, 4, 4, 5, 2, 7, 10, 6, 8, 6, 6, 9, 8, 3, 7, 9, 1, 2, 9, 6, 10, 5, 9, 4, 6, 9, 1, 1, 6, 1, 7 };
@@ -648,7 +648,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(12, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case81() {
     int[] duration = { 77, 60, 179, 141, 198, 132, 87, 147, 70, 192, 75, 132, 159, 150, 151, 166, 42, 83, 179, 98, 124, 113, 10, 5, 181, 49, 159, 190, 4, 148, 158, 159, 142, 63, 24, 119, 1, 51, 95, 132, 61, 67, 50, 67, 125, 165, 57, 178, 43, 171 };
     int[] tone = { 8, 5, 2, 1, 10, 4, 9, 10, 10, 6, 8, 8, 8, 7, 10, 7, 1, 10, 10, 7, 10, 2, 4, 2, 7, 2, 6, 6, 5, 2, 7, 1, 4, 2, 9, 9, 7, 9, 4, 10, 2, 4, 1, 7, 7, 1, 9, 8, 3, 1 };
@@ -656,7 +656,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(29, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case82() {
     int[] duration = { 78296, 33852, 4983, 94714, 21944, 28642, 33563, 8683, 50919, 28925, 6882, 13774, 17262, 43017, 35154, 12516, 6161, 10086, 87121, 6875, 89534, 85576, 12083, 97149, 24436, 31610, 95131, 33539, 99371, 86938, 86538, 72815, 64106, 21108, 40694, 23344, 82931, 59900, 42857, 32347, 57437, 9470, 65040, 83453, 58520, 60762, 50469, 49668, 58533, 49841 };
     int[] tone = { 51268, 3375, 37588, 86092, 36503, 93044, 47399, 87316, 62823, 53836, 52875, 18028, 64831, 99208, 79131, 26832, 90235, 20621, 49758, 64755, 43316, 49506, 78642, 78709, 61785, 71903, 44299, 51383, 46228, 30119, 39341, 64241, 60380, 98236, 71360, 85226, 84927, 809, 58311, 38566, 62680, 3234, 67646, 92282, 32888, 60227, 76155, 89417, 49625, 13059 };
@@ -664,7 +664,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(12, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case83() {
     int[] duration = { 32224, 5612, 75411, 63449, 40365, 66874, 85476, 49413, 8654, 43841, 43938, 24526, 72003, 42865, 63353, 15301, 9594, 39159, 98659, 10104, 94226, 84929, 96548, 6048, 18271, 84759, 32732, 10984, 68853, 42366, 85887, 68055, 86796, 93412, 24297, 83955, 36909, 27612, 55225, 70306, 45929, 15048, 83232, 88911, 59454, 2915, 2790, 67189, 33847, 38870 };
     int[] tone = { 95284, 3828, 74237, 21764, 22595, 44627, 24351, 3555, 64540, 52014, 48947, 99906, 7439, 58569, 35557, 3218, 98800, 1750, 92341, 4946, 1312, 95261, 88019, 81384, 41671, 41212, 6211, 35001, 67457, 60910, 31024, 47815, 14636, 18773, 81537, 32975, 58788, 47032, 75009, 74269, 84323, 29895, 89345, 1279, 10268, 93015, 93079, 19341, 20992, 17158 };
@@ -672,7 +672,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(29, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case84() {
     int[] duration = { 20490, 51570, 96036, 85097, 56308, 12003, 47456, 30601, 27654, 5127, 26141, 33949, 67597, 20314, 98840, 59113, 53465, 98091, 28308, 36200, 55687, 20694, 43662, 85536, 11230, 76885, 54183, 18718, 34307, 76524, 18500, 96439, 99506, 26027, 98378, 71402, 27765, 33410, 17336, 57071, 10565, 98111, 56162, 68743, 93243, 92206, 64449, 94018, 69891, 72085 };
     int[] tone = { 92004, 2087, 59702, 79469, 63217, 19076, 14478, 65794, 67654, 92318, 23722, 13039, 71486, 92716, 40634, 51307, 47351, 84810, 1753, 33904, 73848, 83112, 85946, 45448, 99910, 75634, 60117, 87337, 41359, 45165, 70336, 77067, 75390, 71819, 49426, 45263, 23840, 32627, 31771, 77217, 36991, 7224, 12338, 56930, 46893, 212, 46342, 66416, 14846, 73669 };
@@ -680,7 +680,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(40, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case85() {
     int[] duration = { 59493, 88830, 30367, 74061, 71962, 2218, 61615, 16618, 38724, 30155, 83314, 24131, 31717, 86380, 3904, 48430, 58039, 58975, 66438, 78278, 477, 29637, 66843, 77387, 9054, 22704, 92685, 34601, 6692, 16514, 62166, 85937, 30316, 62042, 65529, 41085, 89614, 16898, 46962, 8160, 95891, 8853, 47279, 42080, 52279, 5248, 12724, 24868, 24521, 43094 };
     int[] tone = { 70330, 10073, 24437, 75313, 12073, 45279, 55234, 80391, 1126, 18274, 46457, 62798, 20015, 80301, 98501, 56254, 93784, 55321, 9817, 31977, 19924, 86191, 5168, 80248, 82758, 2668, 90061, 74562, 44064, 59609, 67466, 88728, 6253, 34780, 25997, 1699, 47181, 65519, 62338, 86038, 53152, 33120, 45898, 59760, 78620, 84715, 51793, 54765, 16536, 10172 };
@@ -688,7 +688,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(43, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case86() {
     int[] duration = { 9, 2, 6, 5, 8, 7, 3, 2, 3, 8, 5, 6, 7, 2, 3, 6, 6, 6, 5, 1, 3, 8, 8, 8, 2, 2, 7, 8, 7, 5, 3, 4, 1, 2, 10, 5, 10, 5, 5, 9, 7, 2, 4, 7, 9, 9, 3, 10, 1, 2 };
     int[] tone = { 8, 6, 2, 7, 3, 3, 5, 4, 1, 4, 3, 3, 1, 10, 3, 10, 8, 5, 6, 6, 8, 7, 7, 6, 5, 2, 4, 8, 9, 9, 6, 4, 9, 10, 6, 7, 1, 5, 5, 5, 3, 3, 6, 9, 5, 6, 5, 8, 3, 2 };
@@ -696,7 +696,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(13, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case87() {
     int[] duration = { 934, 486, 375, 612, 621, 45, 549, 511, 474, 354, 558, 341, 777, 808, 470, 67, 553, 105, 91, 324, 611, 479, 513, 81, 965, 329, 221, 435, 681, 451, 704, 906, 666, 961, 546, 420, 446, 835, 193, 187, 124, 976, 985, 889, 543, 672, 170, 511, 178, 767 };
     int[] tone = { 5, 5, 8, 1, 1, 8, 9, 5, 4, 6, 5, 7, 6, 3, 4, 3, 3, 5, 5, 1, 9, 6, 8, 6, 8, 7, 2, 8, 4, 3, 9, 7, 4, 6, 6, 10, 3, 4, 6, 6, 6, 7, 3, 10, 10, 8, 5, 1, 10, 10 };
@@ -704,7 +704,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(17, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case88() {
     int[] duration = { 10, 8, 8, 7, 1, 1, 1, 2, 1, 8, 3, 3, 7, 8, 6, 5, 3, 7, 1, 4, 2, 3, 6, 1, 9, 2, 7, 6, 3, 9, 4, 9, 8, 9, 9, 3, 4, 2, 3, 1, 2, 4, 7, 5, 3, 8, 6, 7, 7, 9 };
     int[] tone = { 709, 877, 467, 12, 363, 467, 506, 147, 436, 240, 575, 954, 762, 638, 331, 635, 80, 334, 401, 591, 173, 644, 999, 176, 739, 928, 579, 598, 430, 785, 459, 753, 21, 902, 478, 597, 881, 6, 223, 520, 284, 846, 750, 102, 963, 871, 698, 722, 659, 43 };
@@ -712,7 +712,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(39, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case89() {
     int[] duration = { 534, 651, 135, 944, 722, 187, 618, 541, 915, 764, 343, 287, 218, 566, 405, 7, 451, 335, 850, 625, 481, 654, 582, 799, 617, 536, 333, 31, 589, 323, 897, 574, 938, 108, 666, 911, 110, 514, 41, 14, 172, 425, 342, 935, 504, 877, 516, 954, 790, 396 };
     int[] tone = { 816, 849, 953, 306, 238, 240, 495, 113, 52, 622, 753, 8, 848, 440, 720, 58, 116, 11, 414, 439, 766, 871, 984, 989, 692, 670, 439, 243, 939, 744, 418, 796, 385, 522, 138, 43, 602, 363, 777, 966, 371, 90, 303, 532, 797, 397, 481, 587, 187, 562 };
@@ -720,7 +720,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(22, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case90() {
     int[] duration = { 657, 942, 947, 214, 415, 685, 401, 953, 208, 58, 176, 536, 169, 330, 478, 566, 427, 635, 683, 587, 788, 295, 290, 768, 265, 185, 250, 847, 290, 281, 462, 223, 867, 697, 812, 175, 395, 683, 877, 706, 633, 303, 989, 354, 933, 434, 826, 860, 160, 496 };
     int[] tone = { 395, 135, 560, 80, 361, 854, 433, 631, 390, 872, 365, 215, 69, 724, 38, 403, 420, 325, 164, 839, 337, 260, 799, 290, 678, 105, 899, 785, 670, 708, 993, 151, 746, 215, 223, 980, 637, 959, 93, 820, 238, 202, 114, 852, 613, 264, 176, 544, 521, 749 };
@@ -728,7 +728,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(33, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case91() {
     int[] duration = { 318, 120, 790, 662, 811, 177, 914, 764, 947, 624, 636, 367, 9, 418, 843, 770, 725, 586, 913, 914, 769, 297, 635, 195, 406, 364, 246, 394, 546, 458, 940, 285, 75, 904, 969, 801, 357, 715, 38, 820, 491, 903, 98, 251, 873, 70, 584, 964, 795, 1 };
     int[] tone = { 308, 644, 752, 209, 556, 556, 109, 513, 524, 321, 570, 754, 453, 740, 967, 567, 352, 36, 90, 782, 359, 581, 151, 872, 813, 840, 106, 841, 790, 798, 761, 168, 694, 792, 993, 591, 974, 60, 168, 686, 816, 639, 279, 738, 78, 348, 637, 106, 180, 162 };
@@ -736,7 +736,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(25, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case92() {
     int[] duration = { 255, 955, 392, 436, 918, 546, 530, 422, 893, 795, 478, 229, 835, 831, 884, 779, 599, 449, 976, 462, 293, 915, 590, 746, 14, 511, 613, 224, 969, 121, 686, 981, 796, 877, 763, 141, 197, 861, 356, 453, 693, 774, 452, 337, 949, 175, 503, 278, 317, 263 };
     int[] tone = { 142, 978, 823, 793, 359, 38, 179, 216, 269, 243, 123, 342, 347, 829, 543, 148, 202, 77, 290, 779, 129, 892, 111, 727, 424, 742, 517, 610, 939, 457, 194, 138, 332, 571, 33, 478, 127, 528, 358, 379, 299, 186, 663, 1000, 775, 459, 795, 200, 610, 749 };
@@ -744,7 +744,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(26, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case93() {
     int[] duration = { 778, 672, 104, 727, 624, 8, 935, 451, 126, 460, 585, 567, 472, 807, 472, 615, 628, 633, 859, 226, 785, 514, 415, 537, 338, 982, 327, 36, 739, 281, 515, 636, 348, 728, 282, 148, 219, 218, 281, 975, 836, 111, 56, 278, 645, 722, 415, 654, 9, 44 };
     int[] tone = { 630, 881, 628, 767, 539, 834, 655, 994, 845, 182, 414, 102, 662, 814, 110, 224, 354, 509, 259, 436, 6, 181, 201, 401, 488, 179, 175, 667, 705, 252, 413, 791, 407, 255, 446, 593, 326, 80, 485, 486, 293, 576, 180, 874, 452, 743, 626, 103, 648, 494 };
@@ -752,7 +752,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(4, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case94() {
     int[] duration = { 93956, 76237, 64081, 19128, 55416, 6864, 29660, 86022, 92428, 15781, 90977, 74031, 23437, 85574, 99857, 54858, 92704, 23810, 81910, 92868, 29638, 49410, 55437, 47409, 18014, 19144, 69007, 68822, 97996, 27802, 1149, 73378, 76430, 4074, 59121, 52582, 64992, 87352, 4199, 5348, 83099, 72174, 72912, 84933, 13288, 67531, 35522, 18329, 64576, 75252 };
     int[] tone = { 560, 661, 281, 199, 962, 382, 39, 207, 877, 278, 185, 959, 542, 14, 780, 784, 804, 700, 742, 757, 83, 937, 920, 818, 246, 830, 548, 268, 424, 718, 356, 10, 106, 531, 821, 576, 602, 476, 220, 135, 398, 662, 792, 552, 922, 694, 364, 466, 438, 171 };
@@ -760,7 +760,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(43, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case95() {
     int[] duration = { 66490, 41134, 32133, 45982, 38329, 66002, 73556, 85666, 55572, 5018, 21772, 47747, 12576, 83890, 38025, 97782, 4179, 1146, 29118, 90600, 96010, 24207, 25083, 58060, 79365, 23951, 63563, 90185, 39379, 35709, 43192, 12175, 11553, 92605, 48081, 1200, 86647, 24567, 43036, 70978, 6682, 21322, 75238, 31802, 94211, 96919, 26296, 79061, 70197, 45149 };
     int[] tone = { 50, 748, 1, 696, 308, 350, 648, 286, 350, 644, 351, 393, 567, 36, 815, 800, 962, 200, 39, 174, 589, 583, 295, 777, 83, 504, 668, 126, 229, 101, 39, 891, 645, 733, 936, 36, 68, 87, 569, 299, 804, 374, 178, 998, 769, 665, 935, 408, 811, 420 };
@@ -768,7 +768,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case96() {
     int[] duration = { 633, 971, 479, 517, 263, 599, 3, 660, 923, 234, 821, 421, 29, 522, 491, 52, 127, 762, 997, 720, 815, 249, 194, 59, 770, 163, 720, 444, 569, 312, 259, 70, 943, 975, 961, 84, 664, 24, 454, 689, 418, 399, 414, 329, 209, 624, 459, 498, 353, 258 };
     int[] tone = { 46795, 61424, 41394, 75307, 23604, 86523, 36683, 24135, 17859, 63241, 70807, 71094, 96778, 21089, 5483, 43979, 85789, 641, 75024, 5804, 80007, 10102, 29603, 23114, 14882, 44287, 35460, 22231, 99080, 80243, 94712, 39361, 85038, 17309, 59262, 47066, 5949, 90781, 33864, 62598, 18125, 48415, 39611, 7379, 6997, 7622, 91376, 67250, 17028, 92406 };
@@ -776,7 +776,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case97() {
     int[] duration = { 477, 164, 260, 605, 698, 46, 771, 679, 947, 844, 220, 275, 873, 792, 705, 272, 82, 127, 955, 857, 303, 917, 495, 426, 362, 683, 281, 490, 84, 819, 975, 190, 244, 35, 370, 957, 317, 678, 300, 732, 110, 171, 529, 634, 410, 18, 302, 551, 666, 656 };
     int[] tone = { 2149, 63658, 43474, 95775, 13124, 46602, 24224, 57795, 45160, 30944, 24098, 6290, 68496, 50907, 5783, 41667, 18569, 7764, 57942, 70446, 28152, 37854, 12541, 41376, 7870, 57440, 68650, 12238, 54180, 47381, 31039, 12916, 76533, 88288, 12896, 33532, 53657, 40571, 22664, 98008, 62324, 8433, 21013, 48538, 69837, 3246, 10853, 48771, 37531, 40644 };
@@ -784,7 +784,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(40, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case98() {
     int[] duration = { 38997, 58929, 46595, 80328, 7240, 62661, 40272, 33636, 47392, 20162, 99065, 46140, 81061, 30061, 48921, 4435, 88689, 90455, 38815, 30651, 84724, 14860, 47968, 92174, 4596, 66174, 55563, 72100, 91994, 48476, 78968, 91967, 9936, 53301, 8535, 62895, 37951, 4309, 81706, 1267, 84243, 37829, 30280, 11022, 4386, 4432, 80821, 61340, 67623, 11936 };
     int[] tone = { 26919, 56263, 64903, 7942, 20723, 3035, 98799, 94394, 28541, 5709, 94722, 13618, 49850, 70531, 99087, 17813, 14055, 60582, 90081, 47146, 65798, 27775, 47608, 83704, 13799, 75077, 76764, 40308, 30587, 59298, 81914, 96689, 38739, 21365, 19493, 17800, 470, 12163, 22764, 87672, 19751, 47703, 24212, 87077, 81636, 10903, 25071, 56044, 91805, 24093 };
@@ -792,7 +792,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(32, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case99() {
     int[] duration = { 51804, 26322, 718, 22371, 49675, 59244, 30045, 2132, 85115, 33618, 64522, 63119, 7960, 83208, 86490, 65698, 58283, 10421, 77743, 56234, 5770, 16366, 6114, 25351, 3570, 50620, 14400, 99228, 52879, 81767, 45625, 65273, 92967, 22727, 12797, 33742, 40679, 77293, 35983, 42138, 23256, 49896, 29764, 5371, 99206, 37396, 92663, 29578, 50251, 27717 };
     int[] tone = { 531, 38374, 41718, 25058, 81985, 41518, 84096, 66296, 99726, 1065, 8798, 9485, 10408, 43539, 86098, 66147, 29355, 28399, 13786, 65835, 23059, 68272, 92175, 19674, 25285, 25108, 84967, 75327, 44825, 34751, 42665, 16972, 27671, 88632, 41072, 18891, 7991, 9849, 8316, 4168, 69904, 75064, 84778, 86686, 74033, 72297, 27252, 81065, 89691, 20178 };
@@ -800,7 +800,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(19, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case100() {
     int[] duration = { 57889, 79107, 95820, 80389, 91737, 25703, 82800, 80294, 90187, 85208, 77801, 59044, 37446, 21098, 67835, 77186, 10266, 25016, 28483, 93515, 55429, 189, 90855, 73672, 20368, 76948, 90998, 74835, 79832, 28796, 66560, 6622, 60171, 29933, 5978, 28663, 82894, 62419, 86034, 19744, 68512, 94490, 28457, 54778, 55946, 76914, 16919, 27445, 43507, 62856 };
     int[] tone = { 66900, 72540, 15937, 38382, 70537, 62067, 19322, 86823, 91959, 24412, 33978, 66663, 32585, 52495, 75572, 58299, 77763, 46026, 56380, 35556, 44985, 35294, 47561, 91256, 54319, 81292, 90042, 30117, 31771, 78583, 26911, 29792, 28866, 73640, 954, 38287, 64190, 56342, 82436, 38086, 2991, 71623, 15557, 12005, 68895, 58269, 63201, 90712, 65706, 44291 };
@@ -808,7 +808,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(22, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case101() {
     int[] duration = { 30087, 49472, 76651, 13539, 53260, 1645, 13846, 38101, 121, 97534, 6819, 65365, 80900, 33412, 43960, 93550, 58578, 76995, 37429, 4550, 30796, 91103, 43642, 13518, 77270, 23637, 37064, 88425, 56342, 10886, 25876, 29988, 96260, 21429, 60905, 27533, 6019, 69365, 96531, 40946, 54404, 67334, 13266, 35848, 96589, 45965, 13296, 64414, 50644, 63010 };
     int[] tone = { 71909, 9041, 4495, 88982, 23341, 28494, 26048, 19152, 1705, 31198, 97873, 44831, 93930, 82409, 10627, 52243, 53694, 85216, 26864, 54707, 71014, 74496, 72308, 28189, 31460, 67954, 98748, 61816, 64997, 90405, 99955, 21043, 55209, 76404, 80211, 81318, 99980, 27536, 24083, 91537, 22817, 78725, 18937, 55555, 51319, 8494, 53817, 4226, 56933, 67949 };
@@ -816,7 +816,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(38, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case102() {
     int[] duration = { 79326, 69807, 60471, 86018, 31504, 39186, 41963, 18813, 73643, 39035, 10393, 26878, 18882, 22752, 36264, 88849, 13209, 40153, 47928, 93618, 64856, 85863, 84565, 43749, 6916, 93958, 83230, 26585, 65420, 31027, 85908, 2368, 82364, 7692, 42157, 44109, 77930, 98303, 73264, 97738, 78836, 23705, 49439, 89826, 47794, 17371, 85289, 25188, 15110, 66681 };
     int[] tone = { 94860, 9537, 11698, 86041, 48101, 6672, 4196, 15623, 74071, 67308, 10087, 25788, 96374, 81867, 78127, 45085, 77048, 7061, 95678, 35677, 80246, 87228, 75305, 37472, 50869, 76382, 94137, 46874, 31852, 7258, 3355, 47281, 7763, 34242, 20012, 6748, 39931, 80456, 65037, 78169, 32249, 90644, 22522, 80098, 6881, 36713, 31895, 73115, 35282, 34002 };
@@ -824,7 +824,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(25, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case103() {
     int[] duration = { 160, 394, 139, 907, 49, 699, 221, 618, 822, 301, 186, 269, 741, 461, 924, 81, 135, 841, 654, 482, 763, 802, 55, 362, 453, 963, 538, 727, 763, 38, 361, 175, 830, 330, 691, 876, 769, 229, 340, 629, 461, 518, 898, 158, 353, 576, 785, 366, 668, 595 };
     int[] tone = { 139, 284, 62, 1000, 48, 188, 260, 269, 287, 216, 824, 953, 170, 875, 51, 185, 548, 881, 480, 22, 285, 91, 457, 255, 127, 80, 788, 669, 186, 957, 824, 36, 187, 181, 187, 381, 250, 456, 398, 522, 11, 585, 651, 449, 464, 679, 456, 849, 220, 896 };
@@ -832,7 +832,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case104() {
     int[] duration = { 327, 927, 465, 363, 694, 341, 61, 753, 49, 948, 405, 154, 47, 150, 447, 235, 345, 979, 371, 87, 131, 140, 896, 595, 623, 642, 184, 311, 114, 568, 77, 560, 988, 990, 383, 413, 624, 8, 762, 998, 351, 824, 709, 551, 487, 493, 114, 223, 248, 199 };
     int[] tone = { 670, 163, 415, 497, 587, 765, 143, 419, 749, 158, 456, 967, 365, 915, 428, 989, 448, 660, 915, 873, 319, 802, 33, 391, 738, 523, 574, 379, 605, 851, 449, 236, 436, 477, 632, 515, 189, 782, 815, 474, 671, 455, 190, 381, 826, 356, 411, 852, 418, 83 };
@@ -840,7 +840,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case105() {
     int[] duration = { 54205, 83556, 38393, 60005, 23395, 70033, 46068, 59055, 92760, 20873, 37652, 89390, 51269, 10770, 33814, 46035, 21803, 59081, 33398, 76793, 78710, 62075, 25123, 96038, 5646, 66910 };
     int[] tone = { 69501, 46174, 56480, 20997, 61241, 85262, 85388, 93541, 41439, 80814, 82598, 12093, 59702, 59896, 3922, 92366, 91777, 90204, 9896, 40851, 35438, 18509, 71126, 38159, 74033, 91177 };
@@ -848,7 +848,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(16, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case106() {
     int[] duration = { 75174, 36422, 25783, 12290, 89327, 90324, 83805, 83100, 20002, 97911, 15874, 88420, 56670, 253, 60703, 85199, 12847, 88989, 49329, 78390, 44583, 45377, 72714, 88820, 17118, 97376, 97725, 74318, 20986, 34228, 33366, 34864, 12902, 15207, 44158, 14160, 19211, 33368, 21365, 79803, 78160 };
     int[] tone = { 92689, 29504, 42194, 90669, 89929, 52505, 51304, 61455, 64868, 7288, 68123, 19866, 35881, 98785, 88483, 26517, 77246, 58474, 52224, 6518, 26153, 92041, 10432, 4711, 92800, 31974, 11431, 6787, 37592, 68461, 89882, 45395, 27068, 4375, 99716, 4203, 47833, 91011, 82928, 67402, 32056 };
@@ -856,7 +856,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(6, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case107() {
     int[] duration = { 59823, 42463, 32289, 99928, 66473, 88972, 11381, 78025, 36417, 93053, 25280, 35797, 96137, 26712, 59214, 84580, 1013, 94218, 13748, 64390, 34866, 12163, 95711, 25060, 79948, 93222, 3102, 99497, 55819, 37742, 15397, 70421, 73030, 57030, 30389, 71567, 5332, 69262, 44918, 23840, 67315, 60096, 85522, 29826, 14107, 48975, 31296, 9176, 49572, 5350 };
     int[] tone = { 73740, 69895, 12917, 94799, 12086, 23448, 34623, 12074, 453, 6612, 10786, 82554, 33616, 5448, 47004, 76536, 19133, 92357, 95352, 4417, 92374, 48514, 73975, 49297, 69422, 89170, 81520, 185, 78752, 40659, 68980, 38423, 49240, 531, 10503, 45990, 6200, 84557, 74694, 24545, 38489, 32520, 61313, 5777, 83556, 94390, 30845, 63762, 16822, 34823 };
@@ -864,7 +864,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(37, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case108() {
     int[] duration = { 8262, 12590, 51997, 21544, 79885, 43584, 15083, 66324, 44102, 59227, 40528, 40056, 20113, 89075, 15428, 79850, 10267, 40990, 97967, 92001, 84318, 50753, 39419, 20239, 70487, 20655, 706, 85975, 92978, 10081, 25761, 91669, 7954, 54493, 52717, 1117, 8550, 57796, 44611, 456, 56574, 35286, 52070, 78089, 27928 };
     int[] tone = { 93521, 62456, 28357, 17194, 62550, 95318, 78091, 36366, 87565, 78613, 88832, 64900, 12601, 91334, 30553, 81255, 63689, 61254, 47557, 87826, 38447, 83640, 88087, 83641, 20509, 51944, 4485, 99423, 6927, 83747, 34901, 50893, 34737, 15153, 18358, 10391, 24074, 64615, 12904, 82315, 51753, 99678, 68344, 51829, 77881 };
@@ -872,7 +872,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(31, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case109() {
     int[] duration = { 67943, 73833, 63291, 7091, 69874, 50689, 7889, 1999, 854, 71838, 50692, 648, 20271, 80801, 75791, 59863, 62900, 39101, 78682, 72, 17949, 50396, 60468, 9907, 92417, 75803, 87575, 57136, 52090, 74769, 42313, 21506, 40877, 89887, 3199, 25046, 36025, 36041, 21275, 64005, 99431, 11530, 22722, 66590 };
     int[] tone = { 2274, 70728, 94388, 59770, 18717, 64431, 46728, 89052, 30737, 78447, 97790, 67201, 34569, 88549, 31852, 6521, 13409, 32245, 18663, 4712, 62255, 67310, 30952, 13481, 86434, 9969, 58022, 50230, 20539, 23701, 9939, 53252, 10004, 76514, 12807, 83455, 42103, 81594, 14558, 85117, 33905, 91439, 20613, 98985 };
@@ -880,7 +880,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(40, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case110() {
     int[] duration = { 54333, 84904, 88019, 61451, 25006, 7431, 85009, 69130, 70849, 70033, 81758, 62024, 45480, 68310, 78429, 95629, 78882, 73824, 53, 79435, 38463, 90577, 51510, 50798, 81104, 96449, 2427, 51055, 94189, 15391, 76989, 66960, 61563, 44523, 21975 };
     int[] tone = { 24514, 34778, 92639, 75178, 86240, 88050, 55942, 67132, 85758, 47274, 17412, 50189, 30009, 2633, 91804, 7768, 9529, 30933, 52857, 84, 27623, 8830, 13874, 61327, 41091, 35234, 38053, 88731, 98296, 936, 50363, 62855, 61800, 86907, 79379 };
@@ -888,7 +888,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(17, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case111() {
     int[] duration = { 40204, 99441, 90498, 51942, 99525, 605, 94454, 70076, 21254, 96627, 65119, 21534, 70014, 12120, 47094 };
     int[] tone = { 59728, 34681, 21248, 50367, 18503, 41983, 81330, 12627, 74063, 17555, 25104, 47214, 4463, 34063, 52038 };
@@ -896,7 +896,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case112() {
     int[] duration = { 54659, 63494, 27790, 50039, 10367, 66633, 77036, 61832, 90215, 33366, 80700, 7163, 97987, 49973, 27996 };
     int[] tone = { 45635, 61263, 38316, 89633, 53247, 46399, 22496, 81579, 22363, 4516, 5, 71955, 51488, 85451, 87622 };
@@ -904,7 +904,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(9, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case113() {
     int[] duration = { 47507, 72407, 92871, 881, 83216 };
     int[] tone = { 30381, 19569, 72831, 8507, 12589 };
@@ -912,7 +912,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case114() {
     int[] duration = { 48462, 26046, 60927, 22584, 27890, 9955, 92816, 94732, 42230, 88450, 38691, 15967, 50245, 26428, 21209, 26943, 11855, 73009, 52602, 90695, 87400, 85080, 20106, 9301, 22981, 67788, 11223, 70527, 3414, 37945, 3800, 50955 };
     int[] tone = { 95477, 15930, 34307, 71126, 75887, 31497, 64367, 5747, 70655, 70826, 94527, 33025, 38959, 19623, 10924, 71927, 69602, 54388, 36729, 26610, 61459, 18443, 11831, 27164, 77262, 94664, 39558, 93884, 93581, 57536, 15413, 83358 };
@@ -920,7 +920,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(29, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case115() {
     int[] duration = { 9, 11, 13, 17 };
     int[] tone = { 2, 1, 3, 4 };
@@ -928,7 +928,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case116() {
     int[] duration = { 10, 10, 10 };
     int[] tone = { 58, 58, 58 };
@@ -936,7 +936,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case117() {
     int[] duration = { 5423, 21864, 754, 20005, 21959, 5406, 24211, 3384, 15343, 11462, 7291, 6942, 14499, 19387, 26537, 2985, 4601, 23305, 4873, 31722, 28503, 10450, 10054, 14508, 30180, 25329, 736, 11842, 2364, 9436, 16510, 1411, 1128, 7375, 22405, 4626, 32525, 3111, 10985, 30179, 29411, 9996, 31300, 7674, 21865, 5970, 26917, 31862, 31192, 9889 };
     int[] tone = { 4266, 9167, 20309, 21460, 20305, 10076, 20330, 22432, 19211, 25880, 12471, 23670, 22930, 7333, 12773, 28074, 17149, 30609, 4316, 25044, 4754, 26329, 566, 17527, 27099, 31147, 15603, 736, 2556, 4464, 28270, 24657, 1859, 5898, 10895, 30047, 23297, 5466, 11331, 16025, 18328, 23814, 31273, 32362, 17110, 5497, 17295, 30273, 23169, 24363 };
@@ -944,7 +944,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(40, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case118() {
     int[] duration = { 87, 21, 20, 73, 97, 57, 12, 80, 86, 97, 98, 85, 41, 12, 89, 15, 41, 17, 68, 37, 21, 1, 9, 65, 4, 67, 38, 91, 46, 82, 7, 98, 21, 70, 99, 41, 21, 65, 11, 1, 8, 12, 77, 62, 52, 69, 56, 33, 98, 97 };
     int[] tone = { 88, 27, 89, 2, 96, 32, 4, 93, 89, 50, 58, 70, 15, 48, 31, 2, 27, 20, 31, 3, 23, 86, 69, 12, 59, 61, 85, 67, 77, 34, 29, 3, 75, 42, 50, 37, 56, 45, 51, 68, 89, 17, 4, 47, 9, 14, 29, 59, 43, 3 };
@@ -952,7 +952,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(12, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case119() {
     int[] duration = { 1, 100 };
     int[] tone = { 1, 100 };
@@ -960,7 +960,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case120() {
     int[] duration = { 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000 };
     int[] tone = { 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000 };
@@ -968,7 +968,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case121() {
     int[] duration = { 10, 5 };
     int[] tone = { 1, 2 };
@@ -976,7 +976,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case122() {
     int[] duration = { 1, 20, 1 };
     int[] tone = { 1, 5, 10 };
@@ -984,7 +984,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case123() {
     int[] duration = { 1 };
     int[] tone = { 1 };
@@ -992,7 +992,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case124() {
     int[] duration = { 3, 5, 4, 11 };
     int[] tone = { 2, 1, 3, 1 };
@@ -1000,7 +1000,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case125() {
     int[] duration = { 2, 2 };
     int[] tone = { 10, 26 };
@@ -1008,7 +1008,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case126() {
     int[] duration = { 1, 2, 3 };
     int[] tone = { 1, 1000, 1 };
@@ -1016,7 +1016,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case127() {
     int[] duration = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
     int[] tone = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50 };
@@ -1024,7 +1024,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case128() {
     int[] duration = { 8, 4, 2 };
     int[] tone = { 3, 2, 4 };
@@ -1032,7 +1032,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case129() {
     int[] duration = { 1 };
     int[] tone = { 1 };
@@ -1040,7 +1040,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case130() {
     int[] duration = { 23097, 2377, 27730, 4837, 93346, 33435, 57827, 42923, 73786, 24579, 67737, 83502, 65692, 33975, 59559, 57844, 52489, 23144, 33220, 63896, 29161, 51901, 47164, 90802, 56559, 67883, 1792, 5701, 53659, 58131, 67196, 21605, 49370, 69656, 64105, 50723, 22536, 16923, 44057, 28247, 61653, 12533, 67504, 58281, 19460, 74160, 34291, 12252, 36240, 75362 };
     int[] tone = { 58104, 45559, 79882, 34184, 81245, 49904, 62590, 13659, 38100, 35415, 64244, 25841, 67548, 17469, 62674, 75698, 95563, 96096, 55518, 57685, 37863, 76724, 13664, 49175, 60724, 57967, 91494, 25368, 21159, 63152, 9090, 64754, 57562, 41293, 12590, 19030, 5272, 9849, 29072, 22885, 99384, 7374, 67704, 13255, 70918, 13436, 69830, 26988, 32892, 71886 };
@@ -1048,7 +1048,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(39, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case131() {
     int[] duration = { 10, 10, 12, 11 };
     int[] tone = { 1000, 2000, 3000, 4000 };
@@ -1056,7 +1056,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case132() {
     int[] duration = { 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000 };
     int[] tone = { 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000, 100000 };
@@ -1064,7 +1064,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case133() {
     int[] duration = { 2, 2, 2, 3, 3 };
     int[] tone = { 100, 1000, 10000, 1, 2 };
@@ -1072,7 +1072,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case134() {
     int[] duration = { 100, 400, 50 };
     int[] tone = { 100, 200, 350 };
@@ -1080,7 +1080,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case135() {
     int[] duration = { 126, 56357, 19330, 80872, 58500, 47986, 35029, 89594, 82282, 74659, 17411, 85892, 71048, 51352, 30399, 1499, 9141, 36445, 14731, 16590, 98850, 44568, 11908, 467, 892, 37787, 53165, 57117, 60175, 60715, 16623, 66303, 45078, 35212, 5704, 60767, 78330, 80259, 51987, 30195, 87595, 72666, 95588, 92569, 53934, 14234, 46207, 23533, 86222, 20960 };
     int[] tone = { 77964, 84363, 99677, 99967, 61149, 39243, 26621, 29728, 84012, 2375, 37586, 9263, 67719, 5622, 879, 91877, 27588, 27289, 58790, 69117, 83759, 72648, 48493, 20536, 74372, 46845, 45795, 94913, 74442, 10828, 59903, 38523, 73499, 60895, 57239, 36133, 15156, 22510, 42515, 80286, 51709, 98996, 75153, 34556, 16898, 65729, 49189, 6354, 69974, 50480 };
@@ -1088,7 +1088,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(38, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case136() {
     int[] duration = { 100000, 100000, 100000, 32768, 1024, 100000, 100000, 100000, 256, 100000, 100000, 128, 100000, 100000, 2, 100000, 100000, 100000, 8192, 100000, 4096, 100000, 64, 65536, 100000, 100000, 100000, 100000, 32, 512, 16384, 100000, 4, 100000, 100000, 100000, 100000, 8, 1, 100000, 100000, 2048, 100000, 16, 100000, 100000, 100000, 100000, 100000, 100000 };
     int[] tone = { 1400, 1900, 3400, 4400, 4000, 4500, 3000, 2600, 2000, 2100, 2900, 300, 700, 3600, 4800, 500, 1300, 4300, 3900, 1600, 1500, 3100, 2800, 2200, 4200, 3800, 1000, 400, 2500, 2700, 1700, 200, 600, 800, 4600, 2400, 1100, 5000, 1800, 3700, 1200, 3300, 2300, 900, 3200, 100, 3500, 4700, 4900, 4100 };
@@ -1096,7 +1096,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case137() {
     int[] duration = { 8, 4, 2, 5, 3, 1, 3, 4, 5, 6, 7, 8, 2, 3, 4, 3, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3, 5, 3 };
     int[] tone = { 3, 2, 4, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 2, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 4, 1, 2, 3, 1, 2 };
@@ -1104,7 +1104,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(12, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case138() {
     int[] duration = { 1, 6, 7, 6, 1 };
     int[] tone = { 1, 2, 3, 4, 5 };
@@ -1112,7 +1112,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case139() {
     int[] duration = { 1, 2, 2 };
     int[] tone = { 1, 100, 100 };
@@ -1136,7 +1136,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(6, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case142() {
     int[] duration = { 100, 10, 100, 10, 100, 10 };
     int[] tone = { 1, 2, 3, 4, 5, 6 };
@@ -1144,7 +1144,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(6, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case143() {
     int[] duration = { 1 };
     int[] tone = { 1 };
@@ -1152,7 +1152,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case144() {
     int[] duration = { 1, 2, 3 };
     int[] tone = { 10, 1, 9 };
@@ -1160,7 +1160,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case145() {
     int[] duration = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
     int[] tone = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
@@ -1168,7 +1168,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(45, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case146() {
     int[] duration = { 100000 };
     int[] tone = { 100000 };
@@ -1176,7 +1176,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case147() {
     int[] duration = { 1, 2, 3 };
     int[] tone = { 1, 1000, 2 };
@@ -1192,7 +1192,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(6, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case149() {
     int[] duration = { 100 };
     int[] tone = { 100 };
@@ -1200,7 +1200,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case150() {
     int[] duration = { 5, 3, 1 };
     int[] tone = { 1, 2, 10 };
@@ -1208,7 +1208,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case151() {
     int[] duration = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007 };
     int[] tone = { 1, 10, 2, 9, 3, 8, 4, 7, 5, 6, 1000, 1001, 1002, 1003, 1004, 1005, 1006, 1007 };
@@ -1216,7 +1216,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(10, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case152() {
     int[] duration = { 1000 };
     int[] tone = { 100000 };
@@ -1224,7 +1224,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(0, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case153() {
     int[] duration = { 10, 20, 30 };
     int[] tone = { 10, 10000, 10 };
@@ -1232,7 +1232,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case154() {
     int[] duration = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
     int[] tone = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
@@ -1240,7 +1240,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case155() {
     int[] duration = { 1, 10, 10, 10, 1 };
     int[] tone = { 1, 2, 3, 4, 5 };
@@ -1248,7 +1248,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(5, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case156() {
     int[] duration = { 1, 1 };
     int[] tone = { 99, 100 };
@@ -1256,7 +1256,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(2, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case157() {
     int[] duration = { 18, 6, 10, 11 };
     int[] tone = { 8, 14, 4, 24 };
@@ -1264,7 +1264,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case158() {
     int[] duration = { 87, 21, 20, 73, 97, 57, 12, 80, 86, 97, 98, 85, 41, 12, 89, 15, 41, 17, 68, 37, 21, 1, 9, 65, 4, 67, 38, 91, 46, 82, 7, 98, 21, 70, 99, 41, 21, 65, 11, 1, 8, 12, 77, 62, 52, 69, 56, 33, 98, 97 };
     int[] tone = { 88, 27, 89, 2, 96, 32, 4, 93, 89, 50, 58, 70, 15, 48, 31, 2, 27, 20, 31, 3, 23, 86, 69, 12, 59, 61, 85, 67, 77, 34, 29, 3, 75, 42, 50, 37, 56, 45, 51, 68, 89, 17, 4, 47, 9, 14, 29, 59, 43, 3 };
@@ -1272,7 +1272,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case159() {
     int[] duration = { 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 65536, 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768 };
     int[] tone = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
@@ -1280,7 +1280,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(50, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case160() {
     int[] duration = { 99248, 85364, 97981, 95095, 90982, 89733, 81447, 82205, 86904, 93059, 97802, 87060, 80412, 82815, 87823, 91736, 97370, 99380, 89039, 95742, 95596, 93011, 86748, 88942, 90770, 92454, 81923, 93818, 96444, 84662, 91315, 82459, 92550, 90243, 94028, 91732, 90024, 92649, 88242, 93055, 96435, 80928, 99413, 91768, 92827, 86728, 82181, 95784, 94994, 85500 };
     int[] tone = { 12100, 98669, 17265, 88456, 14768, 47444, 66488, 34089, 59314, 48424, 52386, 901, 23909, 51513, 54808, 70221, 94409, 13877, 92579, 59594, 31970, 44867, 60715, 79866, 97257, 1172, 55787, 11621, 37354, 34179, 12940, 73204, 54134, 98535, 46905, 19595, 76035, 77454, 45851, 32544, 20506, 37557, 59982, 37011, 85848, 70206, 8027, 72040, 7457, 27658 };
@@ -1288,7 +1288,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(45, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case161() {
     int[] duration = { 10 };
     int[] tone = { 1 };
@@ -1296,7 +1296,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case162() {
     int[] duration = { 1, 1, 100 };
     int[] tone = { 1, 3, 2 };
@@ -1304,7 +1304,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case163() {
     int[] duration = { 21897, 4705, 67887, 67930, 93469, 38351, 51942, 83097, 3458, 5347, 52970, 67115, 771, 38342, 6685, 41749, 68678, 58898, 93044, 84617, 52693, 9197, 65392, 41601, 70119, 91032, 76220 };
     int[] tone = { 26246, 4747, 73608, 32824, 63264, 75641, 99104, 36535, 24705, 98255, 72266, 75336, 65152, 7270, 63164, 88471, 27272, 43642, 76650, 47774, 23778, 27491, 35927, 16652, 48652, 89766, 90921 };
@@ -1312,7 +1312,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(16, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case164() {
     int[] duration = { 5687, 7749, 5960, 3054, 5472, 28559, 14175, 28419, 9294, 4989, 28079, 10509, 5508, 16152, 21863, 31115, 14171, 8421, 22090, 3908, 2887, 19222, 13839, 25635, 605, 3586, 22792, 2884, 25362, 22227, 30211, 9551, 15430, 26238, 16750, 28421, 2433, 29945, 21438, 7704, 27772, 5288, 20241, 64, 8163, 27160, 2065, 4235, 1881, 3055 };
     int[] tone = { 13852, 30453, 189, 7971, 28323, 9784, 23211, 875, 28624, 3045, 5190, 9203, 32364, 1716, 18997, 16468, 23295, 5912, 29932, 16835, 4665, 32279, 23597, 28808, 11408, 15961, 25550, 7603, 299, 13183, 5564, 5386, 12287, 13238, 3392, 27461, 1848, 28555, 10113, 31870, 22490, 1025, 7499, 12003, 32168, 29408, 27150, 19886, 7749, 30033 };
@@ -1320,7 +1320,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(34, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case165() {
     int[] duration = { 5 };
     int[] tone = { 2 };
@@ -1328,7 +1328,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case166() {
     int[] duration = { 100, 100, 100 };
     int[] tone = { 100, 100, 100 };
@@ -1336,7 +1336,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case167() {
     int[] duration = { 100, 50 };
     int[] tone = { 1, 2 };
@@ -1344,7 +1344,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case168() {
     int[] duration = { 514, 836, 597, 452, 114, 382, 530, 657, 578, 566, 423, 720, 697, 404, 770, 559, 546, 194, 910, 20, 666, 431 };
     int[] tone = { 488, 269, 393, 427, 903, 835, 761, 35, 670, 104, 444, 342, 196, 753, 577, 748, 795, 960, 672, 568, 276, 720 };
@@ -1352,7 +1352,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(18, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case169() {
     int[] duration = { 1, 2, 3 };
     int[] tone = { 1, 1000, 1001 };
@@ -1368,7 +1368,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(3, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case171() {
     int[] duration = { 854, 978 };
     int[] tone = { 409, 229 };
@@ -1376,7 +1376,7 @@ public class GUMIAndSongsDiv1Test {
     assertEquals(1, gumiandsongsdiv1.maxSongs(duration, tone, T));
   }
 
-  //@Test
+  @Test
   public void case172() {
     int[] duration = { 1, 3, 1 };
     int[] tone = { 1, 6, 11 };
