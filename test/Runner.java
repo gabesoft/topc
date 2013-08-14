@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.geometry.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TriangleXorTest.class })
+@Suite.SuiteClasses({ PiecewiseLinearFunctionTest.class })
 public class Runner {
 }
