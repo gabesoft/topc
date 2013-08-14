@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PiecewiseLinearFunctionTest.class })
+@Suite.SuiteClasses({ TrafficCongestionTest.class })
 public class Runner {
 }
