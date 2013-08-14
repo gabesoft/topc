@@ -9,6 +9,41 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+587
 public class TriangleXor {
     public int theArea(int W) {
+        return solve1(W);
+        //return solve2(W);   // faster
+    }
+
+    private int solve2(int W) {
+        double total = 0;
+        double n     = W;
+
+        if (W % 2 == 0) {
+            total += n / 4.0;
+        }
+
+        for (int i = 1; i < W + 1; i += 2) {
+            double ti = n * i / (i + n);
+            double tj = n * (i - 1) / (i - 1 + n);
+            total += (ti - tj);
+        }
+
+        for (int i = 1; i + 1 <= W; i += 2) {
+            double r = n - i;
+
+            double x = n * i / (i + n);
+            double w = (n - 2 * x) / r;
+
+            double y2 = (i + 1) / (i + n + 1);
+            double y0 = (i - 1) / (i + n - 1);
+            double h  = y2 - y0;
+
+            total += w * h * r / 2.0;
+        }
+
+        return (int)Math.floor(total);
+    }
+
+    private int solve1(int W) {
         Triangle[] triangles = new Triangle[W + 1];
 
         for (int i = 0; i < W + 1; i++) {
@@ -82,12 +117,9 @@ public class TriangleXor {
             double c2 = a2 * p3[0] + b2 * p3[1];
 
             double det = a1 * b2 - a2 * b1;
-            //debug(p1, p2, p3, p4, det);
-            if (det == 0) {
-                return null;
-            } else {
-                return new double[] { (b2 * c1 - b1 * c2) / det, (a1 * c2 - a2 * c1) / det };
-            }
+            assert det != 0 : "Zero determinant";
+
+            return new double[] { (b2 * c1 - b1 * c2) / det, (a1 * c2 - a2 * c1) / det };
         }
 
         public String toString() {
