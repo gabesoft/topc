@@ -9,6 +9,68 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+582
 public class SpaceWarDiv1 {
     public long minimalFatigue(int[] magicalGirlStrength, int[] enemyStrength, long[] enemyCount) {
+        return solve1(magicalGirlStrength, enemyStrength, enemyCount);
+        //return solve2(magicalGirlStrength, enemyStrength, enemyCount);
+    }
+
+    private long solve2(int[] magicalGirlStrength, int[] enemyStrength, long[] enemyCount) {
+        Enemy[] enemies = new Enemy[enemyStrength.length];
+
+        for (int i = 0; i < enemies.length; i++) {
+            enemies[i] = new Enemy(enemyStrength[i], enemyCount[i]);
+        }
+
+        Arrays.sort(magicalGirlStrength);
+        Arrays.sort(enemies);
+
+        if (magicalGirlStrength[magicalGirlStrength.length - 1] < enemies[enemies.length - 1].strength) {
+            return -1;
+        }
+
+        long lo = 0;
+        long hi = (long)1e18;
+
+        while (hi - lo > 1) {
+            long mid = (lo + hi) / 2;
+            if (!possible(mid, magicalGirlStrength, enemies)) {
+                lo = mid;
+            } else {
+                hi = mid;
+            }
+        }
+
+        return lo + 1;
+    }
+
+    private boolean possible(long maxBattles, int[] magicalGirlStrength, Enemy[] enemies) {
+        int gi = 0;
+        int ei = 0;
+
+        long nbattles = maxBattles;
+        long nleft    = enemies[0].count;
+
+        while (gi < magicalGirlStrength.length && ei < enemies.length) {
+            if (nleft == 0) {
+                ei++;
+                if (ei < enemies.length) {
+                    nleft = enemies[ei].count;
+                }
+                continue;
+            }
+            if (magicalGirlStrength[gi] < enemies[ei].strength || nbattles == 0) {
+                gi++;
+                nbattles = maxBattles;
+                continue;
+            }
+            long batt  = Math.min(nleft, nbattles);
+            nleft     -= batt;
+            nbattles  -= batt;
+        }
+
+        return ei == enemies.length;
+    }
+
+    private long solve1(int[] magicalGirlStrength, int[] enemyStrength, long[] enemyCount) {
         int n = magicalGirlStrength.length;
         int m = enemyStrength.length;
 
@@ -87,10 +149,27 @@ public class SpaceWarDiv1 {
         }
 
         return fatigue;
+
     }
 
     private void debug(Object... os) {
         System.out.println(Arrays.deepToString(os));
+    }
+
+    public class Enemy implements Comparable<Enemy> {
+        public final int strength;
+        public final long count;
+
+        public Enemy(int s, long c) {
+            strength = s;
+            count    = c;
+        }
+
+        public int compareTo(Enemy e) {
+            return (strength != e.strength)
+                ? strength - e.strength
+                : Long.valueOf(count).compareTo(e.count);
+        }
     }
 
     public class MGirl implements Comparable<MGirl> {
