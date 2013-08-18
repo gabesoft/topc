@@ -13,6 +13,7 @@ public class SpaceWarDiv1 {
         //return solve2(magicalGirlStrength, enemyStrength, enemyCount);
     }
 
+    // binary search
     private long solve2(int[] magicalGirlStrength, int[] enemyStrength, long[] enemyCount) {
         Enemy[] enemies = new Enemy[enemyStrength.length];
 
@@ -70,6 +71,7 @@ public class SpaceWarDiv1 {
         return ei == enemies.length;
     }
 
+    // greedy
     private long solve1(int[] magicalGirlStrength, int[] enemyStrength, long[] enemyCount) {
         int n = magicalGirlStrength.length;
         int m = enemyStrength.length;
