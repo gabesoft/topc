@@ -22,8 +22,8 @@ public class GooseInZooDivOne {
         boolean[][] seen = new boolean[n][m];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                if (field[i].charAt(j) == 'v') {
-                    int c = bfs(field, seen, dist, i, j);
+                if (field[i].charAt(j) == 'v' && !seen[i][j]) {
+                    int c = dfs(field, seen, dist, i, j);
                     if (c > 0) {
                         even += (c % 2 == 0 ? 1 : 0);
                         odd  += (c % 2 == 0 ? 0 : 1);
@@ -66,6 +66,24 @@ public class GooseInZooDivOne {
         r %= MOD;
 
         return (int)r;
+    }
+
+    private int dfs(String[] field, boolean[][] seen, int dist, int r, int c) {
+        int count = 1;
+
+        seen[r][c] = true;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (seen[i][j]) { continue; }
+
+                int d = Math.abs(i - r) + Math.abs(j - c);
+                if (field[i].charAt(j) == 'v' && d <= dist) {
+                    count += dfs(field, seen, dist, i, j);
+                }
+            }
+        }
+
+        return count;
     }
 
     private int bfs(String[] field, boolean[][] seen, int dist, int row, int col) {
