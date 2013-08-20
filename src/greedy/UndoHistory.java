@@ -9,6 +9,41 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+579
 public class UndoHistory {
     public int minPresses(String[] lines) {
+        return solve1(lines);
+        //return solve2(lines);
+    }
+
+    private int solve2(String[] lines) {
+        int cost = lines[0].length() + 1;
+
+        for (int i = 1; i < lines.length; i++) {
+            int icost = 1000000000;
+
+            for (int j = 0; j < i; j++) {
+                int k = 0;
+                while (k < lines[i].length() && k < lines[j].length()) {
+                    if (lines[i].charAt(k) == lines[j].charAt(k)) {
+                        k++;
+                    } else {
+                        break;
+                    }
+                }
+
+                int ijcost = 2 + (lines[i].length() - k) + 1;
+                if (j == i - 1 && k == lines[j].length()) {
+                    ijcost -= 2;
+                }
+
+                icost = Math.min(icost, ijcost);
+            }
+
+            cost += icost;
+        }
+
+        return cost;
+    }
+
+    private int solve1(String[] lines) {
         HashSet<String> undo = new HashSet<String>();
 
         int ops       = 0;
@@ -54,5 +89,9 @@ public class UndoHistory {
             }
         }
         return "";
+    }
+
+    private void debug(Object... os) {
+        System.out.println(Arrays.deepToString(os));
     }
 }
