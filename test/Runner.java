@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ EllysRoomAssignmentsDiv1Test.class })
+@Suite.SuiteClasses({ FruitTreesTest.class })
 public class Runner {
 }
