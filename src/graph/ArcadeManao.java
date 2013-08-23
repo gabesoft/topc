@@ -8,9 +8,50 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=12504&rd=15496
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+576
 public class ArcadeManao {
-    int INF = 1 << 30;
+    int INF = 49;
+    int h = 0;
+    int w = 0;
 
     public int shortestLadder(String[] level, int coinRow, int coinColumn) {
+        //return solve1(level, coinRow, coinColumn);
+        return solve2(level, coinRow, coinColumn);
+    }
+
+    private int solve2(String[] level, int coinRow, int coinColumn) {
+        h = level.length;
+        w = level[0].length();
+
+        for (int L = 0; L < INF; L++) {
+            boolean seen[][] = new boolean[h][w];
+
+            dfs(level, seen, h - 1, 0, L);
+            if (seen[coinRow - 1][coinColumn - 1]) {
+                return L;
+            }
+        }
+
+        return INF;
+    }
+
+    private void dfs(String[] level, boolean[][] seen, int i, int j, int L) {
+        if (seen[i][j]) { return; }
+
+        seen[i][j] = true;
+
+        if (j > 0 && level[i].charAt(j - 1) == 'X') {
+            dfs(level, seen, i, j - 1, L);
+        }
+        if (j < w - 1 && level[i].charAt(j + 1) == 'X') {
+            dfs(level, seen, i, j + 1, L);
+        }
+        for (int y = 0; y < h; y++) {
+            if (Math.abs(y - i) <= L && level[y].charAt(j) == 'X') {
+                dfs(level, seen, y, j, L);
+            }
+        }
+    }
+
+    private int solve1(String[] level, int coinRow, int coinColumn) {
         char grid[][] = new char[level.length][level[0].length()];
 
         char k    = '0';
