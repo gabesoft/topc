@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.stringm.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheLargestStringTest.class })
+@Suite.SuiteClasses({ TheNumberGameTest.class })
 public class Runner {
 }
