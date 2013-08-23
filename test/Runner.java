@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.graph.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ArcadeManaoTest.class })
+@Suite.SuiteClasses({ TheNumberGameDivOneTest.class })
 public class Runner {
 }
