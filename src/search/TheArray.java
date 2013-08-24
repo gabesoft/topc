@@ -9,26 +9,17 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis
 public class TheArray {
     public int find(int n, int d, int first, int last) {
-        int a = Math.max(first, last);
-        int b = Math.min(first, last);
-
-        int k = a;
-        for (int i = 1; i < n - 1; i++) {
-            if (Math.abs((k + d) - b) <= (n - i - 1) * d) {
-                k += d;
-            } else {
-                int l = 0;
-                for (int j = 1; j < d; j++) {
-                    if (Math.abs((k + j) - b) <= (n - i - 1) * d) {
-                        l = j;
-                    }
-                }
-                k += l;
-                break;
-            }
+        int max = Math.max(first, last);
+        for (int i = 1; i < n; i++) {
+            int p = topMove(first, d, i);
+            int q = topMove(last, d, n - i - 1);
+            max   = Math.max(max, Math.min(p, q));
         }
+        return max;
+    }
 
-        return k;
+    private int topMove(int x, int d, int s) {
+        return x + s * d;
     }
 
     private void debug(Object... os) {
