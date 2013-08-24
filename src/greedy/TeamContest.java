@@ -11,39 +11,22 @@ public class TeamContest {
     public int worstRank(int[] strength) {
         int n  = strength.length;
 
-        int x  = Math.min(strength[0], Math.min(strength[1], strength[2]));
-        int y  = Math.max(strength[0], Math.max(strength[1], strength[2]));
-        int st = x + y;
+        Arrays.sort(strength, 0, 3);
+        Arrays.sort(strength, 3, n);
 
-        int others[] = new int[n - 3];
-        for (int i = 3; i < n; i++) {
-            others[i - 3] = strength[i];
-        }
+        int st = strength[0] + strength[2];
 
-        Arrays.sort(others);
-
+        int i = 3;
+        int j = n - 1;
         int rank = 1;
 
-        boolean taken[] = new boolean[others.length];
-        for (int i = others.length - 1; i > -1; i--) {
-            if (taken[i]) { continue; }
-
-            int k = -1;
-            int a = others[i];
-            int b = 0;
-
-            for (int j = i - 1; j > -1; j--) {
-                if (a + others[j] > st && !taken[j]) {
-                    b = others[j];
-                    k = j;
-                }
-            }
-
-            if (k > -1 && k < i - 1) {
-                taken[i] = true;
-                taken[k] = true;
-                taken[k + 1] = true;
+        while (i < j) {
+            if (strength[i] + strength[j] > st) {
                 rank++;
+                i += 2;
+                j -= 1;
+            } else {
+                i += 3;
             }
         }
 
