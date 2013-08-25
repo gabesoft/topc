@@ -1,0 +1,30 @@
+package topc.search;
+
+import java.util.*;
+import java.io.*;
+
+// TCO13 Round 1B Division I Level One - 250
+// greedy, simple search, iteration, sorting
+// statement: http://community.topcoder.com/stat?c=problem_statement&pm=12450&rd=15580
+// editorial: http://apps.topcoder.com/wiki/display/tc/Algorithm+Problem+Set+Analysis
+public class EllysPairs {
+    public int getDifference(int[] knowledge) {
+        Arrays.sort(knowledge);
+
+        int n = knowledge.length;
+        int m = n / 2;
+        int groups[] = new int[m];
+
+        for (int i = 0; i < m; i++) {
+            groups[i] = knowledge[i] + knowledge[n - i - 1];
+        }
+
+        Arrays.sort(groups);
+
+        return groups[m - 1] - groups[0];
+    }
+
+    private void debug(Object... os) {
+        System.out.println(Arrays.deepToString(os));
+    }
+}
