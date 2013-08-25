@@ -29,23 +29,15 @@ public class RobotHerb {
         if (dir == 2) {
             return T % 2 == 0 ? 0 : dist(x, y);
         } 
-        if (dir == 1) {
-            switch (T % 4) {
-                case 1: return dist(x, y);
-                case 2: return dist(x + y, y - x);
-                case 3: return dist(y, x);
-                case 0: return 0;
-            }
-        } else {
-            switch (T % 4) {
-                case 1: return dist(x, y);
-                case 2: return dist(x - y, y + x);
-                case 3: return dist(y, x);
-                case 0: return 0;
-            }
+
+        if (T % 4 == 2) {
+            return dist(x + y, x - y);
+        }
+        if (T % 4 == 0) {
+            return 0;
         }
 
-        return -1;
+        return dist(x, y);
     }
 
     private long dist(long x, long y) {
