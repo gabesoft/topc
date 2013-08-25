@@ -11,17 +11,19 @@ public class EllysPairs {
     public int getDifference(int[] knowledge) {
         Arrays.sort(knowledge);
 
-        int n = knowledge.length;
-        int m = n / 2;
-        int groups[] = new int[m];
+        int n     = knowledge.length;
+        int m     = n / 2;
+        int worst = 2000;
+        int best  = 0;
 
         for (int i = 0; i < m; i++) {
-            groups[i] = knowledge[i] + knowledge[n - i - 1];
+            int quality = knowledge[i] + knowledge[n - i - 1];
+
+            best  = Math.max(best, quality);
+            worst = Math.min(worst, quality);
         }
 
-        Arrays.sort(groups);
-
-        return groups[m - 1] - groups[0];
+        return best - worst;
     }
 
     private void debug(Object... os) {
