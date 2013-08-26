@@ -10,52 +10,22 @@ import java.io.*;
 public class TheDevice {
     public int minimumAdditional(String[] plates) {
         int n = plates[0].length();
-        int m = plates.length * (plates.length - 1) / 2;
 
-        int A[][] = new int[n][m];
-        int O[][] = new int[n][m];
-        int X[][] = new int[n][m];
-
-        int p = 0;
-        for (int i = 0; i < plates.length; i++) {
-            for (int j = i + 1; j < plates.length; j++) {
-                String p1 = plates[i];
-                String p2 = plates[j];
-
-                for (int b = 0; b < n; b++) {
-                    int x = p1.charAt(b) - '0';
-                    int y = p2.charAt(b) - '0';
-
-                    A[b][p] = x & y;
-                    O[b][p] = x | y;
-                    X[b][p] = x ^ y;
+        int need = 0;
+        for (int i = 0; i < n; i++) {
+            int z = 0;
+            for (int j = 0; j < plates.length; j++) {
+                if (plates[j].charAt(i) == '0') {
+                    z++;
                 }
-
-                p++;
             }
+
+            int o = plates.length - z;
+            int x = 2 - Math.min(2, o) + 1 - Math.min(1, z);
+            need = Math.max(need, x);
         }
 
-        int max = 0;
-        for (int b = 0; b < n; b++) {
-            int curr = 0;
-            curr += equal(A[b], O[b]);
-            curr += equal(A[b], X[b]);
-            curr += equal(O[b], X[b]);
-            max = Math.max(max, curr);
-        }
-
-        if (max > 2) { return 2; }
-        if (max > 0) { return 1; }
-        return 0;
-    }
-
-    private int equal(int[] a, int[] b) {
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] != b[i]) {
-                return 0;
-            }
-        }
-        return 1;
+        return need;
     }
 
     private void debug(Object... os) {
