@@ -64,7 +64,7 @@ public class MonstersValley {
         }
 
         public int compareTo(Node o) {
-            return (cost != o.cost) ? cost - o.cost : Long.valueOf(o.dread).compareTo(dread);
+            return cost - o.cost;
         }
 
         public String toString() {

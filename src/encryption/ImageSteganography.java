@@ -71,7 +71,7 @@ public class ImageSteganography {
         int n = 0;
         for (int i = pos; i < pos + 3; i++) {
             n *= 10;
-            n += (int)(img[i] - '0');
+            n += (img[i] - '0');
         }
 
         int bytes[] = toBytes(n, 8);

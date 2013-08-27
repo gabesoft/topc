@@ -80,7 +80,7 @@ public class ArcadeManao {
             if (last == 'X') { k++; }
         }
 
-        int n = (int)(k - '0') + 1;
+        int n = (k - '0') + 1;
         int graph[][] = new int[n][n];
 
         for (int i1 = 0; i1 < grid.length; i1++) {
@@ -88,8 +88,8 @@ public class ArcadeManao {
                 for (int i2 = i1 + 1; i2 < grid.length; i2++) {
                     for (int j2 = 0; j2 < grid[0].length; j2++) {
                         if (j1 == j2 && grid[i1][j1] != '.' && grid[i2][j2] != '.') {
-                            int u = (int)(grid[i1][j1] - '0');
-                            int v = (int)(grid[i2][j2] - '0');
+                            int u = grid[i1][j1] - '0';
+                            int v = grid[i2][j2] - '0';
 
                             graph[u][v] = i2 - i1;
                             graph[v][u] = i2 - i1;

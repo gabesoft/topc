@@ -18,7 +18,7 @@ public class QuantumAlchemy {
 
         for (int i = 0; i < reactions.length; i++) {
             String parts[] = reactions[i].split("->");
-            map.put((int)(parts[1].charAt(0) - 'A'), parts[0]);
+            map.put((parts[1].charAt(0) - 'A'), parts[0]);
         }
 
         int data[] = new int[26];
