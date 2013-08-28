@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.greedy.*;
+import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FoxAndHandleTest.class })
+@Suite.SuiteClasses({ PastingPaintingDivOneTest.class })
 public class Runner {
 }
