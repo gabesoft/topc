@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ StampTest.class })
+@Suite.SuiteClasses({ FoxAndMountainEasyTest.class })
 public class Runner {
 }
