@@ -30,28 +30,20 @@ public class FloodFill3D {
                 xslice[i][j] = cs == ct && ct == 'x' ? 0 : 1;
                 oslice[i][j] = cs == ct && ct == 'o' ? 0 : 1;
             }
-            //debug('x', i, xslice[i]);
         }
 
-
-        //for (int i = 0; i < ns; i++) {
-        //debug('o', i, oslice[i]);
-        //}
-
-        long white  = 0;
         long xwhite = count(xslice, 0);
         long owhite = count(oslice, 0);
         int st      = 0;
         int en      = nu - 1;
 
+        long white  = 0;
         while (st < nu && u.charAt(st) == u.charAt(0)) {
             white += (u.charAt(st++) == 'x') ? xwhite : owhite;
         }
         while (en > st && u.charAt(en) == u.charAt(nu - 1)) {
             white += (u.charAt(en--) == 'x') ? xwhite : owhite;
         }
-
-        //debug("BEFORE", white, st, en);
 
         for (int i = 0; i < ns; i++) {
             for (int j = 0; j < nt; j++) {
@@ -65,11 +57,6 @@ public class FloodFill3D {
         floodBorders(xslice, 2);
         floodBorders(oslice, 2);
 
-        //for (int i = 0; i < ns; i++) {
-        //debug('o', i, oslice[i]);
-        //}
-
-
         long xborder = count(xslice, 2);
         long oborder = count(oslice, 2);
 
@@ -77,13 +64,7 @@ public class FloodFill3D {
             white += (u.charAt(i) == 'x') ? xborder : oborder;
         }
 
-        //debug(ns, nt, nu, xwhite, owhite, xborder, oborder, white);
-
-        long L = ns;
-        long M = nt;
-        long W = nu;
-
-        return L * M * W - white;
+        return (long)ns * (long)nt * (long)nu - white;
     }
 
     private void floodBorders(int[][] slice, int x) {
@@ -97,46 +78,72 @@ public class FloodFill3D {
         }
     }
 
-    private void flood(int[][] slice, int row, int col, int x) {
-        if (slice[row][col] != 0) { return; }
+    private void flood(int[][] slice, int r, int c, int x) {
+        if (slice[r][c] != 0) { return; }
+
+        slice[r][c] = x;
 
         int n = slice.length;
         int m = slice[0].length;
-        //int k = 2 * Math.max(m, n);
-        int k = m * n;
 
-        int rows[] = new int[k];
-        int cols[] = new int[k];
+        int rmax = 0;
+        int rmin = 0;
+        int cmin = 0;
+        int cmax = 0;
 
-        int h = 0;
-        int t = 0;
-
-        rows[t] = row;
-        cols[t] = col;
-        t++;
-
-        while (h < t) {
-            int r = rows[h];
-            int c = cols[h];
-            h++;
-            if (h >= k) {
-                h -= k;
+        for (int i = r + 1; i < n; i++) {
+            if (slice[i][c] == 0) {
+                slice[i][c] = x;
+                rmax = i;
+            } else {
+                break;
             }
+        }
 
-            slice[r][c] = x;
+        for (int i = r - 1; i > -1; i--) {
+            if (slice[i][c] == 0) {
+                slice[i][c] = x;
+                rmin = i;
+            } else {
+                break;
+            }
+        }
 
-            for (int i = 0; i < dr.length; i++) {
-                int nr = r + dr[i];
-                int nc = c + dc[i];
+        for (int i = c + 1; i < m; i++) {
+            if (slice[r][i] == 0) {
+                slice[r][i] = x;
+                cmax = i;
+            } else {
+                break;
+            }
+        }
 
-                if (0 <= nr && nr < n && 0 <= nc && nc < m && slice[nr][nc] == 0) {
-                    rows[t] = nr;
-                    cols[t] = nc;
-                    t++;
-                    if (t >= k) {
-                        t -= k;
-                    }
-                }
+        for (int i = c - 1; i > -1; i--) {
+            if (slice[r][i] == 0) {
+                slice[r][i] = x;
+                cmin = i;
+            } else {
+                break;
+            }
+        }
+
+        for (int i = rmin; i <= rmax; i++) {
+            if (i == r) { continue; }
+            if (c - 1 >= 0) {
+                flood(slice, i, c - 1, x);
+            }
+            if (c + 1 < m) {
+                flood(slice, i, c + 1, x);
+            }
+        }
+
+        for (int i = cmin; i <= cmax; i++) {
+            if (i == c) { continue; }
+            if (r - 1 >= 0) {
+                flood(slice, r - 1, i, x);
+            }
+            if (r + 1 < n) {
+                flood(slice, r + 1, i, x);
             }
         }
     }
