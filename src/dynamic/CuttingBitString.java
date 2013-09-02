@@ -11,6 +11,36 @@ public class CuttingBitString {
     String[] valid;
 
     public int getmin(String S) {
+        //return solve1(S);
+        return solve2(S);
+    }
+
+    // dp
+    private int solve2(String s) {
+        int n   = s.length();
+        int f[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            f[i] = -1;
+
+            if (isPow5(s.substring(0, i + 1))) {
+                f[i] = 1;
+            } else {
+                for (int j = 1; j < i + 1; j++) {
+                    if (isPow5(s.substring(j, i + 1)) && f[j - 1] != -1) {
+                        if (f[i] == -1 || f[i] > f[j - 1] + 1) {
+                            f[i] = f[j - 1] + 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        return f[n - 1];
+    }
+
+    // recursive
+    private int solve1(String s) {
         valid = new String[25];
         valid[0] = "1";
 
@@ -20,7 +50,24 @@ public class CuttingBitString {
             valid[i] = toBinary(x);
         }
 
-        return cut(S, 0);
+        return cut(s, 0);
+    }
+
+    private boolean isPow5(String s) {
+        if (s.length() == 0 || s.charAt(0) == '0') { return false; }
+
+        long t = 0;
+        int n  = s.length();
+
+        for (int i = 0; i < n; i++) {
+            t = t * 2 + (s.charAt(i) == '1' ? 1 : 0);
+        }
+
+        while ((t % 5) == 0) {
+            t /= 5;
+        }
+
+        return t == 1;
     }
 
     private int cut(String s, int k) {
