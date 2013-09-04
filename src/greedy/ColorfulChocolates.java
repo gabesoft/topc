@@ -9,9 +9,48 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+551
 public class ColorfulChocolates {
     public int maximumSpread(String chocolates, int maxSwaps) {
+        //return solve1(chocolates, maxSwaps);
+        return solve2(chocolates, maxSwaps);
+    }
+
+    private int solve2(String chocolates, int maxSwaps) {
+        int n = chocolates.length();
+        int best = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                int cost = 0;
+                int spread = 0;
+
+                int k = i;
+                int l = j;
+
+                char color = chocolates.charAt(i);
+
+                while (k < n && l < n) {
+                    if (cost + Math.abs(k - l) > maxSwaps) { break; }
+
+                    spread++;
+                    cost += Math.abs(k - l);
+
+                    k++;
+                    while (k < n && chocolates.charAt(k) != color) {
+                        k++;
+                    }
+
+                    l++;
+                }
+
+                best = Math.max(best, spread);
+            }
+        }
+
+        return best;
+    }
+
+    private int solve1(String chocolates, int maxSwaps) {
         int n = chocolates.length();
 
-        int best = 0;
+        int best    = 0;
         char[] choc = chocolates.toCharArray();
 
         for (int i = 0; i < n; i++) {
