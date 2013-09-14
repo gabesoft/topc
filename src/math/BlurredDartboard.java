@@ -11,33 +11,16 @@ public class BlurredDartboard {
     public int minThrows(int[] points, int P) {
         int n = points.length;
 
-        int[] max = new int[n];
+        int[] max        = new int[n];
         boolean[] hidden = new boolean[n];
-        int maxVisible = 0;
-        int hcount = 0;
+        int maxVisible   = 0;
 
         Arrays.fill(hidden, true);
         for (int i = 0; i < n; i++) {
             maxVisible = Math.max(maxVisible, points[i]);
+
             if (points[i] > 0) {
                 hidden[points[i] - 1] = false;
-            } else {
-                hcount++;
-            }
-        }
-
-        if (hcount == 1) {
-            for (int i = 0; i < n; i++) {
-                if (hidden[i]) {
-                    for (int j = 0; j < n; j++) {
-                        if (points[j] == 0) {
-                            points[j] = (i + 1);
-                            hidden[i] = false;
-                            maxVisible = Math.max(maxVisible, points[j]);
-                            break;
-                        }
-                    }
-                }
             }
         }
 
@@ -58,8 +41,8 @@ public class BlurredDartboard {
             int k1 = i;
             int k2 = i + 1;
 
-            int v1 = max[i - 1];
-            int v2 = max[i];
+            int v1 = max[k1 - 1];
+            int v2 = max[k2 - 1];
 
             if (v2 * k1 > v1 * k2) {
                 start = i;
@@ -72,14 +55,10 @@ public class BlurredDartboard {
         r *= (start + 1);
 
         if (v < P) {
-            if (start == 0) {
-                r += 1;
-            } else {
-                for (int i = 0; i < start + 1; i++) {
-                    if (v + max[i] >= P) {
-                        r += (i + 1);
-                        break;
-                    }
+            for (int i = 0; i < start + 1; i++) {
+                if (v + max[i] >= P) {
+                    r += (i + 1);
+                    break;
                 }
             }
         }
