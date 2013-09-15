@@ -9,7 +9,62 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+541
 public class AntsMeet {
     final int INF = 1 << 30;
+
     public int countAnts(int[] x, int[] y, String direction) {
+        return solve1(x, y, direction); // faster
+        //return solve2(x, y, direction);
+    }
+
+    private int solve2(int[] x, int[] y, String direction) {
+        int n = x.length;
+
+        int dx[] = new int[n];
+        int dy[] = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            char dir = direction.charAt(i);
+            if (dir == 'E' || dir == 'W') {
+                dx[i] = dir == 'E' ? 1 : -1;
+            }
+            if (dir == 'N' || dir == 'S') {
+                dy[i] = dir == 'N' ? 1 : -1;
+            }
+        }
+
+        boolean[] on = new boolean[n];
+
+        Arrays.fill(on, true);
+
+        int t = 0;
+        while (t <= 4000) {
+            for (int i = 0; i < n; i++) {
+                if (!on[i]) { continue; }
+
+                for (int j = i + 1; j < n; j++) {
+                    if (!on[j]) { continue; }
+
+                    boolean yeq = 2 * y[i] + dy[i] * t == 2 * y[j] + dy[j] * t;
+                    boolean xeq = 2 * x[i] + dx[i] * t == 2 * x[j] + dx[j] * t;
+                    if (yeq && xeq) {
+                        on[i] = false;
+                        on[j] = false;
+                    }
+                }
+            }
+            t++;
+        }
+
+        int count = 0;
+        for (int i = 0; i < n; i++) {
+            if (on[i]) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+
+    private int solve1(int[] x, int[] y, String direction) {
         int n = x.length;
 
         boolean[] on = new boolean[n];
@@ -60,6 +115,7 @@ public class AntsMeet {
         }
 
         return count;
+
     }
 
     private int meetTime(int x1, int y1, int x2, int y2, char dir1, char dir2) {
