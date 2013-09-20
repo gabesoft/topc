@@ -9,47 +9,41 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/TCO+2012+Round+1b
 public class FoxAndDoraemon {
     int[] W;
+    int n;
     int split;
     int INF = 1 << 30;
-    int memo[][][];
+    int dp[][];
 
     public int minTime(int[] workCost, int splitCost) {
         Arrays.sort(workCost);
 
-        int n = workCost.length;
+        n     = workCost.length;
         W     = workCost;
         split = splitCost;
 
-        memo = new int[n][n][n];
-        for (int i = 0; i < memo.length; i++) {
-            for (int j = 0; j < memo[i].length; j++) {
-                Arrays.fill(memo[i][j], -1);
-            }
+        dp = new int[n][n];
+        for (int i = 0; i < dp.length; i++) {
+            Arrays.fill(dp[i], -1);
         }
 
-        return run(n - 1, 1, 0);
+        return run(1, 0);
     }
 
-    private int run(int t, int f, int used) {
-        if (t < 0) { return 0; }
-        if (f - used >= t + 1) { return W[t]; }
+    private int run(int foxes, int done) {
+        if (foxes >= n - done) { return W[n - done - 1]; }
+        if (done == n) { return 0; }
+        if (foxes == 0) { return INF; }
 
-        if (memo[t][f][used] > -1) { return memo[t][f][used]; }
+        if (dp[foxes][done] > -1) { return dp[foxes][done]; }
 
-        int best  = split + run(t, 2 * f, used);
-        int fresh = f - used;
+        int result = INF;
 
-        for (int i = 1; i < fresh; i++) {
-            int r = run(t - i, 2 * (f - i), used);
-            best  = Math.min(best, Math.max(W[t], split + r));
-        }
+        result = Math.min(result, Math.max(W[n - done - 1], run(foxes - 1, done + 1)));
+        result = Math.min(result, split + run(foxes * 2, done));
 
-        if (fresh > 0) {
-            best = Math.min(best, W[t] + run(t - fresh, f, f));
-        }
+        dp[foxes][done] = result;
 
-        memo[t][f][used] = best;
-        return best;
+        return result;
     }
 
     private void debug(Object... os) {
