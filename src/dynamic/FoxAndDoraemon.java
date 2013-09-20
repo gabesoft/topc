@@ -15,6 +15,25 @@ public class FoxAndDoraemon {
     int dp[][];
 
     public int minTime(int[] workCost, int splitCost) {
+        return solve2(workCost, splitCost);
+    }
+
+    private int solve2(int[] workCost, int splitCost) {
+        Queue<Integer> queue = new PriorityQueue<Integer>();
+        for (int i = 0; i < workCost.length; i++) {
+            queue.offer(workCost[i]);
+        }
+
+        while (queue.size() > 1) {
+            int a = queue.poll();
+            int b = queue.poll();
+            queue.offer(Math.max(a, b) + splitCost);
+        }
+
+        return queue.poll();
+    }
+
+    private int solve1(int[] workCost, int splitCost) {
         Arrays.sort(workCost);
 
         n     = workCost.length;
