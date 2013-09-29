@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ EllysCheckersTest.class })
+@Suite.SuiteClasses({ CasketOfStarTest.class })
 public class Runner {
 }
