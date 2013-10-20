@@ -10,46 +10,27 @@ import java.io.*;
 public class Cut {
     public int getMaximum(int[] eelLengths, int maxCuts) {
 
-        ArrayList<Integer> mul10 = new ArrayList<Integer>();
-        ArrayList<Integer> others = new ArrayList<Integer>();
+        Arrays.sort(eelLengths);
 
         int count = 0;
 
-        for (int i = 0; i < eelLengths.length; i++) {
-            int eel = eelLengths[i];
-            if (eel == 10) {
-                count++;
-            } else if (eel % 10 == 0) {
-                mul10.add(eel);
-            } else {
-                others.add(eel);
+        for (int eel : eelLengths) {
+            if (eel % 10 == 0) {
+                if (maxCuts >= eel / 10 - 1) {
+                    maxCuts -= eel / 10 - 1;
+                    count   += eel / 10;
+                } else {
+                    count   += maxCuts;
+                    maxCuts  = 0;
+                }
             }
         }
 
-        Collections.sort(mul10);
-        Collections.sort(others);
-
-        for (Integer eel : mul10) {
-            while (eel > 10 && maxCuts > 0) {
-                count++;
-                eel -= 10;
-                maxCuts--;
-            }
-            if (eel == 10) {
-                count++;
-            }
-            if (maxCuts == 0) {
-                break;
-            }
-        }
-
-        for (int i = others.size() - 1; i > -1; i--) {
-            int eel = others.get(i);
-
-            while (eel > 10 && maxCuts > 0) {
-                count++;
-                eel -= 10;
-                maxCuts--;
+        for (int eel : eelLengths) {
+            if (eel % 10 != 0) {
+                int c    = Math.min(maxCuts, eel / 10);
+                count   += c;
+                maxCuts -= c;
             }
         }
 
