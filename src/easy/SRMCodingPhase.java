@@ -32,7 +32,7 @@ public class SRMCodingPhase {
 
         int l = Math.min(skills[index] - 1, luck);
 
-        if (time >= skills[index] - l) {        // solve with luck
+        if (time >= skills[index] - l) {         // solve with luck
             int v = points[index] - penalty[index] * (skills[index] - l);
             best = Math.max(best, v + solve(index - 1, luck - l, time - (skills[index] - l)));
         }

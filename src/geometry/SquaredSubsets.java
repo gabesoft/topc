@@ -48,7 +48,7 @@ public class SquaredSubsets {
                 }
             }
         }
-                        
+
         return memo.size();
     }
 

@@ -64,7 +64,7 @@ public class ComputerExpert {
             }
         }
 
-        public boolean fire(HashSet state) {
+        public boolean fire(HashSet<String> state) {
             for (int i = 0; i < input.length; i++) {
                 boolean found = false;
                 for (int j = 0; j < input[i].length; j++) {
