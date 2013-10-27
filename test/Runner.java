@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PerfectlyFairGameTest.class })
+@Suite.SuiteClasses({ EventOrderTest.class })
 public class Runner {
 }
