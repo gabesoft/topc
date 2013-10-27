@@ -26,9 +26,7 @@ public class EventOrder {
             ways[i] = pow(pairs, longEvents) * pow(i, instantEvents) % MOD;
             for (int j = 0; j < i; j++) {
                 ways[i] = (ways[i] - ways[j] * comb % MOD + MOD) % MOD;
-                if (j + 1 < i) {
-                    comb = comb * (i - j) % MOD * inv[j + 1] % MOD;
-                }
+                comb    = comb * (i - j) % MOD * inv[j + 1] % MOD;
             }
         }
 
