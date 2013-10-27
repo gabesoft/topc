@@ -26,7 +26,7 @@ public class PerfectlyFairGame {
             }
         }
 
-        memo = new double[darts * 2 + 1][darts * 10 + 1][darts * 10 + 1];
+        memo = new double[darts * 2 + 1][darts * 9 + 1][darts * 9 + 1];
 
         for (int i = 0; i < memo.length; i++) {
             for (int j = 0; j < memo[0].length; j++) {
@@ -42,39 +42,54 @@ public class PerfectlyFairGame {
             if (dick == jane) { return 0.5; }
             return dick > jane ? 0 : 1;
         }
+
         if (memo[darts][dick][jane] > -1.0) {
             return memo[darts][dick][jane];
         }
 
-        if (darts % 2 == 0) {   // dick's turn
-            double best = 1.0;
+        double next[] = new double[10];
+
+        if (darts % 2 == 0) {
+            double best = 10.0;
+
+            for (int i = 0; i < 10; i++) {
+                next[i] = play(darts - 1, dick + i, jane);
+            }
+
             for (int i = 1; i < n - 1; i++) {
                 for (int j = 1; j < m - 1; j++) {
                     double curr = 0;
                     for (int k = 0; k < 9; k++) {
                         int v = B[i + dr[k]][j + dc[k]];
-                        curr += play(darts - 1, dick + v, jane);
+                        curr += next[v];
                     }
-                    best = Math.min(best, curr / 9.0);
+                    best = Math.min(best, curr);
                 }
             }
-            memo[darts][dick][jane] = best;
-            return best;
-        } else {                // jane's turn
+
+            memo[darts][dick][jane] = best / 9.0;
+        } else {
             double best = 0.0;
+
+            for (int i = 0; i < 10; i++) {
+                next[i] = play(darts - 1, dick, jane + i);
+            }
+
             for (int i = 1; i < n - 1; i++) {
                 for (int j = 1; j < m - 1; j++) {
                     double curr = 0;
                     for (int k = 0; k < 9; k++) {
                         int v = B[i + dr[k]][j + dc[k]];
-                        curr += play(darts - 1, dick, jane + v);
+                        curr += next[v];
                     }
-                    best = Math.max(best, curr / 9.0);
+                    best = Math.max(best, curr);
                 }
             }
-            memo[darts][dick][jane] = best;
-            return best;
+
+            memo[darts][dick][jane] = best / 9.0;
         }
+
+        return memo[darts][dick][jane]; 
     }
 
     private void debug(Object... os) {
