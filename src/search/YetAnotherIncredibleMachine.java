@@ -14,43 +14,30 @@ public class YetAnotherIncredibleMachine {
         int n = platformLength.length;
         long count = 1;
 
-        Arrays.sort(balls);
-
         for (int i = 0; i < n; i++) {
-            long pos  = 0;
-            int end   = platformMount[i];
-            int start = platformMount[i] - platformLength[i];
+            int len = platformLength[i];
+            int max = platformMount[i];
+            int min = max - len;
 
-            for (int j = start; j <= end; j++) {
-                if (canPlace(j, platformLength[i], balls)) {
-                    pos++;
+            for (int ball : balls) {
+                if (platformMount[i] >= ball) {
+                    min = Math.max(min, ball + 1);
+                }
+                if (platformMount[i] <= ball) {
+                    max = Math.min(max, ball - 1 - len);
                 }
             }
 
-            count *= pos;
+            int ways = 0;
+            if (max >= min) {
+                ways = (max - min + 1);
+            }
+
+            count *= ways;
             count %= MOD;
         }
 
         return (int)count;
-    }
-
-    private boolean canPlace(int left, int len, int[] balls) {
-        if (balls[0] > left + len) { return true; }
-        if (balls[balls.length - 1] < left) { return true; }
-
-        int start = left;
-        int end   = left + len;
-
-        for (int i = 0; i < balls.length; i++) {
-            if (left <= balls[i] && balls[i] <= end) {
-                return false;
-            }
-            if (balls[i] > end) {
-                break;
-            }
-        }
-
-        return true;
     }
 
     private void debug(Object... os) {
