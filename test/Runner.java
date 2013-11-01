@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.geometry.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ManhattanPatrolTest.class })
+@Suite.SuiteClasses({ MysteriousRestaurantTest.class })
 public class Runner {
 }
