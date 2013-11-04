@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheAlmostLuckyNumbersDivOneTest.class })
+@Suite.SuiteClasses({ TripleStringsTest.class })
 public class Runner {
 }
