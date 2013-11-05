@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ LuckyRemainderTest.class })
+@Suite.SuiteClasses({ DivideAndShiftTest.class })
 public class Runner {
 }
