@@ -10,8 +10,37 @@ import java.io.*;
 public class DivideAndShift {
     int[] primes;
     public int getLeast(int N, int M) {
-        primes = primesUpTo(N);
-        return find(N, M);
+        return solve1(N, M);
+        //return solve2(N, M);
+    }
+
+    private int solve2(int n, int m) {
+        int res = n;
+        m--;
+
+        for (int y = 1; y <= n; y++) {
+            if (n % y == 0) {
+                int x = n / y;
+                int c = 0;
+                for (int p = 2; p <= x / p; p++) {
+                    while (x % p == 0) {
+                        c++;
+                        x /= p;
+                    }
+                }
+                c += (x != 1 ? 1 : 0);
+
+                int s = Math.min(m % y, y - m % y);
+                res = Math.min(res, s + c);
+            }
+        }
+
+        return res;
+    }
+
+    private int solve1(int n, int m) {
+        primes = primesUpTo(n);
+        return find(n, m);
     }
 
     private int find(int n, int m) {
@@ -55,10 +84,10 @@ public class DivideAndShift {
         int m = 0;
         for (int i = 1; i < sieve.length; i++) {
             if (sieve[i] == i) {
-                //debug(m, k, i);
                 primes[m++] = i;
             }
         }
+
         return primes;
     }
 
