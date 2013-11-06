@@ -10,7 +10,7 @@ import java.io.*;
 public class TheNumbersWithLuckyLastDigit {
     public int find(int n) {
         int c = 0;
-        while (n >= 7) {
+        while (n >= 4) {
             if (n % 10 == 7 || n % 10 == 4) {
                 return c + 1;
             }
@@ -18,7 +18,7 @@ public class TheNumbersWithLuckyLastDigit {
             c++;
         }
 
-        return n == 4 ? c + 1 : -1;
+        return -1;
     }
 
     private void debug(Object... os) {
