@@ -9,63 +9,35 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+500
 public class MafiaGame {
     public double probabilityToLose(int N, int[] decisions) {
+        Arrays.sort(decisions);
 
-        int n       = decisions.length;
-        double prob = 1;
-        int prev    = N;
-        int round   = 0;
+        int count = 0;
+        int maxCount = 0;
+        int playersWithMaxCount = 0;
 
-        int[] votes = new int[N];
-        for (int i = 0; i < n; i++) {
-            votes[decisions[i]]++;
+        for (int i = 0; i < decisions.length; i++) {
+            if (i == 0 || decisions[i] == decisions[i - 1]) {
+                count++;
+            } else {
+                count = 1;
+            }
+
+            if (count > maxCount) {
+                playersWithMaxCount = 1;
+                maxCount = count;
+            } else if (count == maxCount) {
+                playersWithMaxCount++;
+            }
         }
 
-        Arrays.sort(votes);
+        int c = playersWithMaxCount;
+        if (c == decisions.length) { return 0; }
 
         while (true) {
-            int[] xs = new int[prev];
-            int m = 0;
-
-            for (int i = 0; i < prev; i++) {
-                xs[i] += votes[N - i - 1];
-                m     += votes[N - i - 1];
-            }
-
-            for (int i = m; i < N; i++) {
-                Arrays.sort(xs);
-                xs[0]++;
-            }
-
-            Arrays.sort(xs);
-
-            int max  = xs[xs.length - 1];
-            int curr = 0;
-
-            for (int i = xs.length - 1; i > -1; i--) {
-                if (xs[i] == max) {
-                    curr++;
-                } else {
-                    break;
-                }
-            }
-
-            if (curr == prev) {
-                return 0;
-            }
-
-            if (round > 0) {
-                prob *= (curr / (double)prev);
-            }
-
-            prev = curr;
-            round++;
-
-            if (curr == 1) {
-                break;
-            }
+            if (c == 0) { return 0; }
+            if (c == 1) { return 1.0 / playersWithMaxCount; }
+            c = N % c;
         }
-
-        return prob;
     }
 
     private void debug(Object... os) {
