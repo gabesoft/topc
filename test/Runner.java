@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PermutationSignatureTest.class })
+@Suite.SuiteClasses({ ColoredStrokesTest.class })
 public class Runner {
 }
