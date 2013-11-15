@@ -9,61 +9,24 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+493
 public class StonesGame {
     public String winner(int N, int M, int K, int L) {
-        if (K == 1) { return "Draw"; }
+        if (reachable(N, M, K, L)) { return "Romeo"; }
 
-        int k = reachable(N, M, K, L, true);
-
-        if (k == 1) {
-            return "Romeo";
-        }
-        if (k == 2) {
-            return "Strangelet";
+        for (int i = 1; i <= N; i++) {
+            if (reachable(N, M, K, i) && !reachable(N, i, K, L)) {
+                return "Draw";
+            }
         }
 
-        return "Draw";
+        return "Strangelet";
     }
 
-    private int reachable(int N, int M, int K, int L, boolean first) {
-        int start = Math.max(1, M - K + 1);
-        int end   = Math.min(N - K + 1, M);
-        int delta = start - (M - K + 1);
+    private boolean reachable(int N, int M, int K, int L) {
+        int D = Math.abs(M - L);
 
-        if (!first) {
-            if ((start + delta) % 2 != L % 2) { return 0; }
-
-            if (start + delta <= L && L <= (end + delta + (end - start + 1))) {
-                return 1;
-            } else {
-                return 0;
-            }
-        }
-
-        boolean all = true;
-        int count   = 0;
-
-        for (int i = start; i <= end; i++) {
-            int x = i + delta;
-
-            delta++;
-
-            if (x == L) {
-                return 1;
-            }
-
-            if (first && all) {
-                all &= (reachable(N, x, K, L, false) == 1);
-            }
-
-            if (x != M) {
-                count++;
-            }
-        }
-
-        if (first && all && count > 0) {
-            return 2;
-        }
-
-        return 0;
+        return (K + 1) % 2 == D % 2
+            && Math.min(M, L) - (K - (D + 1)) / 2 >= 1
+            && Math.max(M, L) + (K - (D + 1)) / 2 <= N
+            && D <= K;
     }
 
     private void debug(Object... os) {
