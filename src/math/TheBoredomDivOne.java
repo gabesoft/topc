@@ -8,52 +8,42 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=11193&rd=14241
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+488
 public class TheBoredomDivOne {
-    double[][][] memo;
-    final int lim = 1500;
+    double[] memo;
+    int t;
 
     public double find(int n, int m) {
-        memo = new double[n + m + 1][m + 1][lim + 1];
+        t    = n + m;
+        memo = new double[m + 1];
 
-        for (int i = 0; i < memo.length; i++) {
-            for (int j = 0; j < memo[i].length; j++) {
-                Arrays.fill(memo[i][j], -2.0);
-            }
-        }
+        Arrays.fill(memo, -2.0);
 
-        return rec(n, m, 0);
+        return rec(m);
     }
 
-    private double rec(int n, int m, int h) {
-        if (m == 0) { return h; }
-        if (h >= lim) { return 0; }
-        if (memo[n][m][h] > -1.0) { return memo[n][m][h]; }
+    private double rec(int m) {
+        if (m == 0) { return 0; }
+        if (memo[m] > -1.0) { return memo[m]; }
 
-        h++;
-        double tot = (n + m) * (n + m - 1);
-        double pn  = (n * (n - 1)) / tot;
-        double pm  = (m * (m - 1)) / tot;
-        double a   = 0;
+        int n = t - m;
+
+        double all = t * (t - 1);
+        double p0  = n * (n - 1) / all;
+        double p2  = m * (m - 1) / all;
+        double p1  = 1 - (p0 + p2);
         double b   = 0;
         double c   = 0;
 
-        // 2 from n
-        if (n > 1) {
-            a = pn * rec(n, m, h);
-        }
-
-        // 2 from m
         if (m > 1) {
-            b = pm * rec(n + 2, m - 2, h);
+            b = p2 * rec(m - 2);
         }
 
-        // 1 from both
         if (n > 0 && m > 0) {
-            c = (1 - (pn + pm)) * rec(n + 1, m - 1, h);
+            c = p1 * rec(m - 1);
         }
 
-        memo[n][m][h - 1] = a + b + c;
+        memo[m] = (1 + b + c) / (1 - p0);
 
-        return memo[n][m][h - 1];
+        return memo[m];
     }
 
     private void debug(Object... os) {
