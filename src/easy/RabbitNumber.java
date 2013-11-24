@@ -9,7 +9,26 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+484
 public class RabbitNumber {
     public int theCount(int low, int high) {
+        return solve1(low, high);
+        //return solve2(low, high);
+    }
+
+    private int solve1(int low, int high) {
         return countleq(high) - countleq(low - 1);
+    }
+
+    private int solve2(int low, int high) {
+        int count = 0;
+        for (int i = 0; i < (1 << 20); i++) {
+            long x = 0;
+            for (int j = 0; j < 10; j++) {
+                x = x * 10 + ((i >> (2 * j)) & 3);
+            }
+            if (x >= low && x <= high && isRabbit(x)) {
+                count++;
+            }
+        }
+        return count;
     }
 
     private int countleq(int n) {
