@@ -15,6 +15,18 @@ public class BankLottery {
     double memo[][];
 
     public double expectedAmount(int[] accountBalance, int weeklyJackpot, int weekCount) {
+        return solve2(accountBalance, weeklyJackpot, weekCount);
+    }
+
+    private double solve2(int[] accountBalance, int weeklyJackpot, int weekCount) {
+        double total = 0;
+        for (int x : accountBalance) {
+            total += x;
+        }
+        return accountBalance[0] + (accountBalance[0] / total) * weeklyJackpot * weekCount;
+    }
+
+    private double solve1(int[] accountBalance, int weeklyJackpot, int weekCount) {
         if (accountBalance[0] == 0) { return 0; }
 
         J    = weeklyJackpot;
