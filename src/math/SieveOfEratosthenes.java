@@ -9,7 +9,7 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/TCO'10+Online+Round+3
 public class SieveOfEratosthenes {
     public int lastScratch(int maxNum) {
-        int lim = (int)Math.sqrt(maxNum);
+        int lim     = (int)Math.sqrt(maxNum);
         int sieve[] = buildSieve(lim * 2L);
         int largest = 0;
 
@@ -22,10 +22,9 @@ public class SieveOfEratosthenes {
 
         int last = largest;
         for (int i = largest; i * largest <= maxNum; i++) {
-            if (largest != 2 && i < sieve.length && sieve[i] == 0) { 
-                continue;
+            if (largest == 2 || sieve[i] == 1) {
+                last = i * largest;
             }
-            last = i * largest;
         }
 
         return last;
