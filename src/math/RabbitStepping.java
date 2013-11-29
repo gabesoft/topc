@@ -9,6 +9,27 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+475
 public class RabbitStepping {
     public double getExpected(String field, int r) {
+        //return solve1(field, r);
+        return solve2(field, r);
+    }
+
+    private double solve2(String field, int r) {
+        int n = field.length();
+        int sum = 0;
+        int cnt = 0;
+
+        for (int h = 0; h < (1 << n); h++) {
+            if (Integer.bitCount(h) == r) {
+                sum += Integer.bitCount(h & 0x55555) % 2;
+                sum += Integer.bitCount(h & 0xaaaaa) % 2;
+                cnt += 1;
+            }
+        }
+
+        return sum / (double) cnt;
+    }
+
+    private double solve1(String field, int r) {
         int counts[] = new int[3];
 
         int n   = field.length();
