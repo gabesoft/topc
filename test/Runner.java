@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PotatoGameTest.class })
+@Suite.SuiteClasses({ SumRectangleTest.class })
 public class Runner {
 }
