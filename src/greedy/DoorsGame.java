@@ -31,12 +31,7 @@ public class DoorsGame {
         }
 
         int common = charsInCommon(jdoors, bdoors);
-        if (common == 0 && jcnt <= bcnt) {
-            return 1 + (jcnt - 1) * 2;
-        }
-        if (common == 0 && jcnt > bcnt) {
-            return -(bcnt * 2);
-        }
+
         if (bcnt - jcnt >= common) {
             return 1 + (jcnt - 1) * 2;
         }
