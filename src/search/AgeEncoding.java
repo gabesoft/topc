@@ -12,8 +12,6 @@ public class AgeEncoding {
         double hi = 100;
         double lo = 0;
 
-        double prev = -1;
-
         int c = 0;
         while (c++ < 100) {
             double mid  = lo + (hi - lo) / 2.0;
@@ -24,8 +22,6 @@ public class AgeEncoding {
             } else {
                 hi = mid;
             }
-
-            prev = curr;
         }
 
         int l = candlesLine.length();
