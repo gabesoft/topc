@@ -15,12 +15,10 @@ public class RabbitNumbering {
 
         int n  = maxNumber.length;
         long r = 1;
-        long k = 0;
 
         for (int i = 0; i < n; i++) {
-            r *= Math.max(0L, maxNumber[i] - k);
+            r *= Math.max(0L, maxNumber[i] - i);
             r %= MOD;
-            k++;
         }
 
         return (int)r;
