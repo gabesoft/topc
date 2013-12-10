@@ -22,13 +22,43 @@ public class TheQuestionsAndAnswersDivOne {
             A[i] = answers[i] == "Yes" ? 1 : 0;
         }
 
+        //return solve1();
+        return solve2();
+    }
+
+    private int solve2() {
+        return count(0, Q, 0, 0);
+    }
+
+    private int count(int index, int un, int yn, int nn) {
+        if (index == n) { return un == 0 ? 1 : 0; }
+
+        int c = 0;
+
+        if (un > 0 && A[index] == 1) {
+            c += un * count(index + 1, un - 1, yn + 1, nn);
+        } 
+        if (un > 0 && A[index] == 0) {
+            c += un * count(index + 1, un - 1, yn, nn + 1);
+        }
+
+        if (A[index] == 1 && yn > 0) {
+            c += yn * count(index + 1, un, yn, nn);
+        }
+        if (A[index] == 0 && nn > 0) {
+            c += nn * count(index + 1, un, yn, nn);
+        }
+
+        return c;
+    }
+
+    private int solve1() {
         memo = new int[1 << Q][1 << Q][n];
         for (int i = 0; i < memo.length; i++) {
             for (int j = 0; j < memo[i].length; j++) {
                 Arrays.fill(memo[i][j], -1);
             }
         }
-
         return count(0, 0, 0);
     }
 
@@ -36,23 +66,23 @@ public class TheQuestionsAndAnswersDivOne {
         if (index == n) { return used == (1 << Q) - 1 ? 1 : 0; }
         if (memo[ans][used][index] > -1) { return memo[ans][used][index]; }
 
-            int c = 0;
-            for (int i = 0; i < Q; i++) {
-                if (bit(used, i) == 1 && bit(ans, i) != A[index]) {
-                    continue;
-                }
-                c += count(ans | (A[index] << i), used | (1 << i), index + 1);
+        int c = 0;
+        for (int i = 0; i < Q; i++) {
+            if (bit(used, i) == 1 && bit(ans, i) != A[index]) {
+                continue;
             }
-
-            memo[ans][used][index] = c;
-            return c;
+            c += count(ans | (A[index] << i), used | (1 << i), index + 1);
         }
 
-        private int bit(int mask, int k) {
-            return (mask >> k) & 1;
-        }
-
-        private void debug(Object... os) {
-            System.out.println(Arrays.deepToString(os));
-        }
+        memo[ans][used][index] = c;
+        return c;
     }
+
+    private int bit(int mask, int k) {
+        return (mask >> k) & 1;
+    }
+
+    private void debug(Object... os) {
+        System.out.println(Arrays.deepToString(os));
+    }
+}
