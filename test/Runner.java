@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ InequalitiesTest.class })
+@Suite.SuiteClasses({ BouncingBallsTest.class })
 public class Runner {
 }
