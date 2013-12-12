@@ -9,7 +9,7 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+459
 public class Inequalities {
     public int maximumSubset(String[] inequalities) {
-        int n = inequalities.length;
+        int n   = inequalities.length;
         Eq[] eq = new Eq[n];
 
         for (int i = 0; i < n; i++) {
@@ -17,7 +17,7 @@ public class Inequalities {
         }
 
         int max = 0;
-        for (double i = -10; i < 1001; i += 0.5) {
+        for (double i = -1; i < 1001; i += 0.5) {
             max = Math.max(max, countMatching(eq, i));
         }
 
