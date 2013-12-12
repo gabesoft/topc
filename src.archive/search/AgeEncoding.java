@@ -40,7 +40,7 @@ public class AgeEncoding {
     private double check(String n, double base) {
         int l = n.length();
 
-        double y = (int)(n.charAt(l - 1) - '0');
+        double y = n.charAt(l - 1) - '0';
         double b = base;
         for (int i = l - 2; i > -1; i--) {
             int d = n.charAt(i) - '0';
