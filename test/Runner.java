@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MagicalSourceTest.class })
+@Suite.SuiteClasses({ OrderedNimTest.class })
 public class Runner {
 }
