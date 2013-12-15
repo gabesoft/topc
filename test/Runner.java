@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ NotTwoTest.class })
+@Suite.SuiteClasses({ MagicalSourceTest.class })
 public class Runner {
 }
