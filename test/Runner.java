@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ OrderedNimTest.class })
+@Suite.SuiteClasses({ MaxTriangleTest.class })
 public class Runner {
 }
