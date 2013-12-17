@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.recursion.*;
+import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheBlackJackDivOneTest.class })
+@Suite.SuiteClasses({ KnightsTourTest.class })
 public class Runner {
 }
