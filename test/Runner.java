@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ErdosNumberTest.class })
+@Suite.SuiteClasses({ GooseTattarrattatDiv1Test.class })
 public class Runner {
 }

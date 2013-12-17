@@ -19,10 +19,6 @@ public class ErdosNumber {
         while (queue.size() > 0) {
             String top = queue.poll();
 
-            //if (en.containsKey(top)) { continue; }
-
-            //en.put(top, n++);
-
             int n = en.get(top) + 1;
             for (int i = 0; i < pub.length; i++) {
                 String[] names = pub[i].split("\\s+");
