@@ -9,49 +9,36 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+590
 public class FoxAndChess {
     public String ableToMove(String begin, String target) {
-        int n = begin.length();
+        ArrayList<Integer> x = extract(begin);
+        ArrayList<Integer> y = extract(target);
 
-        Stack<Character> stack = new Stack<Character>();
-
-        for (int i = 0; i < n; i++) {
-            if (begin.charAt(i) == '.') { continue; }
-            stack.push(begin.charAt(i));
+        if (x.size() != y.size()) {
+            return "Impossible";
         }
 
-        for (int i = n - 1; i > -1; i--) {
-            if (target.charAt(i) == '.') { continue; }
-            if (stack.size() == 0) { return "Impossible"; }
-
-            char b = stack.pop();
-            char t = target.charAt(i);
-            if (b != t) {
+        for (int i = 0; i < x.size(); i++) {
+            if (begin.charAt(x.get(i)) != target.charAt(y.get(i))) {
+                return "Impossible";
+            }
+            if (begin.charAt(x.get(i)) == 'R' && y.get(i) < x.get(i)) {
+                return "Impossible";
+            }
+            if (begin.charAt(x.get(i)) == 'L' && y.get(i) > x.get(i)) {
                 return "Impossible";
             }
         }
 
-        int r = 0;
-        int l = 0;
-        for (int i = 0; i < n; i++) {
-            if (begin.charAt(i) == 'R') {
-                r++;
-            }
-            if (target.charAt(i) == 'R') {
-                r--;
-            }
+        return "Possible";
+    }
 
-            if (target.charAt(i) == 'L') {
-                l++;
-            }
-            if (begin.charAt(i) == 'L') {
-                l--;
-            }
-
-            if (r < 0 || l < 0) {
-                return "Impossible";
+    private ArrayList<Integer> extract(String str) {
+        ArrayList<Integer> seq = new ArrayList<Integer>();
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) != '.') {
+                seq.add(i);
             }
         }
-
-        return stack.size() == 0 ? "Possible" : "Impossible";
+        return seq;
     }
 
     private void debug(Object... os) {
