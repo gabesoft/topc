@@ -46,7 +46,7 @@ public class GoodNumbers {
                     }
                 }
 
-                if (((cs ^ cs2) & 1) == 1) {
+                if (cs % 2 != cs2 % 2) {    // exactly one is odd
                     res += multiples(N, r);
                 } else {
                     res -= multiples(N, r);
