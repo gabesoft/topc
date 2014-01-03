@@ -16,20 +16,31 @@ public class WinterAndPresents {
             minSum = Math.min(minSum, apple[i] + orange[i]);
         }
 
+        Arrays.sort(apple);
+        Arrays.sort(orange);
+
         long res = 0;
         for (int i = 1; i <= minSum; i++) {
-            int maxA = 0;
-            int maxO = 0;
-
-            for (int j = 0; j < n; j++) {
-                maxA += Math.min(i, apple[j]);
-                maxO += Math.min(i, orange[j]);
-            }
+            int maxA = max(apple, i);
+            int maxO = max(orange, i);
 
             res += (maxO - (n * (long)i - maxA) + 1L);
         }
 
         return res;
+    }
+
+    private int max(int[] items, int v) {
+        int n = items.length;
+        int s = 0;
+        int k = 0;
+
+        while (k < n && items[k] < v) {
+            s += items[k];
+            k++;
+        }
+
+        return s + v * (n - k);
     }
 
     private void debug(Object... os) {
