@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WinterAndReindeersTest.class })
+@Suite.SuiteClasses({ SumOfPowerTest.class })
 public class Runner {
 }
