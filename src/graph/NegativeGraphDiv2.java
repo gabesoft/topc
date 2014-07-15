@@ -13,7 +13,6 @@ public class NegativeGraphDiv2 {
     public long findMin(int N, int[] s, int[] t, int[] weight, int charges) {
         int[][] dist = new int[N][N];
 
-        // Floyd-Warshall
         for (int i = 0; i < N; i++) {
             Arrays.fill(dist[i], INF);
             dist[i][i] = 0;
@@ -26,6 +25,7 @@ public class NegativeGraphDiv2 {
             dist[u][v] = Math.min(dist[u][v], w);
         }
 
+        // Floyd-Warshall
         for (int k = 0; k < N; k++) {
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
@@ -35,10 +35,13 @@ public class NegativeGraphDiv2 {
         }
 
         int[][] xdist = new int[charges + 1][N];
+
+        // base case (O,u) to (O, N)
         for (int i = 0; i < N; i++) {
             xdist[0][i] = dist[i][N - 1];
         }
 
+        // recursive case (k, u) to (0, N)
         for (int k = 1; k <= charges; k++) {
             for (int i = 0; i < N; i++) {
                 xdist[k][i] = xdist[k - 1][i];
