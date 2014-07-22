@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WinterAndPresentsTest.class })
+@Suite.SuiteClasses({ ManySquaresTest.class })
 public class Runner {
 }
