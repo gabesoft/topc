@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.parsing.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BishopMoveTest.class })
+@Suite.SuiteClasses({ BracketExpressionsTest.class })
 public class Runner {
 }
