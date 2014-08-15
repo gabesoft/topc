@@ -7,6 +7,8 @@ import java.io.*;
 // adj theory
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=13251&rd=16016
 // editorial: http://apps.topcoder.com/wiki/display/tc/TCO+2014+Round+2c
+
+@SuppressWarnings("unchecked")
 public class CliqueGraph {
   public static final int INF = 123456789;
 
