@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.simulation.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ WakingUpEasyTest.class })
+@Suite.SuiteClasses({ ColorfulCoinsEasyTest.class })
 public class Runner {
 }
