@@ -9,8 +9,7 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+615
 public class AmebaDiv1 {
     public int count(int[] X) {
-        HashSet<Integer> set  = new HashSet<Integer>();
-        HashSet<Integer> seen = new HashSet<Integer>();
+        HashSet<Integer> set = new HashSet<Integer>();
 
         for (int i = 0; i < X.length; i++) {
             fill(X, set, X[i]);
@@ -18,12 +17,10 @@ public class AmebaDiv1 {
 
         int c = 0;
         for (int i = 0; i < X.length; i++) {
-            if (seen.contains(X[i])) { continue; }
             if (!set.contains(X[i])) {
                 c++;
+                set.add(X[i]);
             }
-
-            seen.add(X[i]);
         }
 
         return c;
