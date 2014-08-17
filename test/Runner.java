@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.search.*;
+import topc.test.graph.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ AmebaDiv1Test.class })
+@Suite.SuiteClasses({ LongLongTripDiv1Test.class })
 public class Runner {
 }
