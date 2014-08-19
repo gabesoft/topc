@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ InterestingNumberTest.class })
+@Suite.SuiteClasses({ LCMSetEasyTest.class })
 public class Runner {
 }
