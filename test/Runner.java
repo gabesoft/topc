@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TaroFriendsTest.class })
+@Suite.SuiteClasses({ TaroCardsTest.class })
 public class Runner {
 }
