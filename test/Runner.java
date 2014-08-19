@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.greedy.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PowersOfTwoTest.class })
+@Suite.SuiteClasses({ EmoticonsDiv1Test.class })
 public class Runner {
 }
