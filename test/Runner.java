@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PalindromicSubstringsDiv2Test.class })
+@Suite.SuiteClasses({ CombinationLockDiv2Test.class })
 public class Runner {
 }
