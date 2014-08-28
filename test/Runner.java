@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ MiddleCodeTest.class })
+@Suite.SuiteClasses({ SplitIntoPairsTest.class })
 public class Runner {
 }
