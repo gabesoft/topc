@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.simulation.*;
+import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TypoCoderDiv2Test.class })
+@Suite.SuiteClasses({ PilingRectsDiv2Test.class })
 public class Runner {
 }
