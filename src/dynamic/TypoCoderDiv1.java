@@ -15,35 +15,32 @@ public class TypoCoderDiv1 {
     int memo[][];
 
     public int getmax(int[] D, int X) {
-        this.n    = D.length;
-        this.D    = D;
-        this.memo = new int[n][BROWN + 1];
+      this.memo = new int[D.length][BROWN + 1];
+      this.D = D;
 
-        for (int[] m : memo) {
-            Arrays.fill(m, -1);
-        }
+      for (int i = 0; i < memo.length; i++) {
+        Arrays.fill(memo[i], -1);
+      }
 
-        return maxChanges(0, X);
+      return maxChanges(0, X);
     }
 
     private int maxChanges(int k, int score) {
-        if (k == n) { return 0; }
-        if (memo[k][score] > -1) { return memo[k][score]; }
+      if (k == D.length) { return 0; }
+      if (k == D.length - 1) { return (score < BROWN && score + D[k] >= BROWN) ? 1 : 0; }
+      if (memo[k][score] > -1) { return memo[k][score]; }
 
-        int a = maxChanges(k + 1, Math.max(0, score - D[k]));
-        int b = 0;
+      int a = maxChanges(k + 1, Math.max(0, Math.max(0, score - D[k])));
+      int b = 0;
 
-        if (k == n - 1) {
-            b = score + D[k] >= BROWN ? 1 : 0;
-        } else if (score + D[k] >= BROWN && score + D[k] - D[k + 1] < BROWN) {
-            b = 2 + maxChanges(k + 2, Math.max(0, score + D[k] - D[k + 1]));
-        } else if (score + D[k] < BROWN) {
-            b = maxChanges(k + 1, score + D[k]);
-        }
+      if (score + D[k] < BROWN) {
+        b = maxChanges(k + 1, score + D[k]);
+      } else if (score + D[k] - D[k + 1] < BROWN) {
+        b = 2 + maxChanges(k + 2, Math.max(0, score + D[k] - D[k + 1]));
+      }
 
-        memo[k][score] = Math.max(a, b);
-
-        return memo[k][score];
+      memo[k][score] = Math.max(a, b);
+      return memo[k][score];
     }
 
     private void debug(Object... os) {
