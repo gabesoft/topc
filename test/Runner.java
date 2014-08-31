@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ORSolitaireDiv2Test.class })
+@Suite.SuiteClasses({ PalindromeMatrixDiv2Test.class })
 public class Runner {
 }
