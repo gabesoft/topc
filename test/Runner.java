@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.math.*;
+import topc.test.dynamic.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BigFatInteger2Test.class })
+@Suite.SuiteClasses({ SimilarNames2Test.class })
 public class Runner {
 }
