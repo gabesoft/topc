@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FoxAndFencingEasyTest.class })
+@Suite.SuiteClasses({ LittleElephantAndDoubleTest.class })
 public class Runner {
 }
