@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ LittleElephantAndPermutationDiv2Test.class })
+@Suite.SuiteClasses({ LittleElephantAndArrayTest.class })
 public class Runner {
 }
