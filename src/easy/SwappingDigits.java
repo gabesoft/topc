@@ -10,8 +10,7 @@ import java.math.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+583
 public class SwappingDigits {
     public String minNumber(String num) {
-        String best = num;
-        BigInteger k = new BigInteger(best);
+        BigInteger k = new BigInteger(num);
         char[] chars = num.toCharArray();
 
         for (int i = 0; i < chars.length; i++) {
@@ -19,10 +18,8 @@ public class SwappingDigits {
                 if (i != j) {
                     swap(chars, i, j);
                     if (chars[0] > '0') {
-                        String s = new String(chars);
-                        BigInteger p = new BigInteger(s);
+                        BigInteger p = new BigInteger(new String(chars));
                         if (p.compareTo(k) < 0) {
-                            best = s;
                             k = p;
                         }
                     }
@@ -31,7 +28,7 @@ public class SwappingDigits {
             }
         }
 
-        return best;
+        return k.toString();
     }
 
     private void swap(char[] c, int i, int j) {
