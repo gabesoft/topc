@@ -39,7 +39,7 @@ public class ConvertibleStrings {
   private void ratePermutation() {
     int dif = 0;
     for (int i = 0; i < A.length(); i++) {
-      if (p[(int)(A.charAt(i) - 'A')] != B.charAt(i)) {
+      if (p[(A.charAt(i) - 'A')] != B.charAt(i)) {
         dif++;
       }
     }
