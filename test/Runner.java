@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PrimalUnlicensedCreaturesTest.class })
+@Suite.SuiteClasses({ UndoHistoryTest.class })
 public class Runner {
 }
