@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TreeUnionDiv2Test.class })
+@Suite.SuiteClasses({ ShoutterDiv2Test.class })
 public class Runner {
 }
