@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.greedy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ DeerInZooDivTwoTest.class })
+@Suite.SuiteClasses({ GooseInZooDivTwoTest.class })
 public class Runner {
 }
