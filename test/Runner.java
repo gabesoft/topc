@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.graph.*;
+import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ArcadeManaoTest.class })
+@Suite.SuiteClasses({ CharacterBoard2Test.class })
 public class Runner {
 }
