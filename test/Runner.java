@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.stringm.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheNumberGameDiv2Test.class })
+@Suite.SuiteClasses({ PolygonTraversal2Test.class })
 public class Runner {
 }
