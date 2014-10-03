@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.simulation.*;
+import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FoxAndMp3EasyTest.class })
+@Suite.SuiteClasses({ MagicMoleculeEasyTest.class })
 public class Runner {
 }
