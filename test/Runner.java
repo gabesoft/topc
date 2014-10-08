@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.simulation.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FauxPalindromesTest.class })
+@Suite.SuiteClasses({ AlternateColorsTest.class })
 public class Runner {
 }
