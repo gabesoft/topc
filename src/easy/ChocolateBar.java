@@ -8,46 +8,27 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=12190&rd=15178
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+556
 public class ChocolateBar {
-    int n = 0;
-    char chars[] = null;
-    int dp[][];
-
     public int maxLength(String letters) {
-        if (letters.length() <= 1) { return letters.length(); }
+        int n = letters.length();
+        int best = 0;
 
-        n = letters.length();
-        chars = letters.toCharArray();
-        dp = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = i; j < n; j++) {
+                int len = j - i + 1;
 
-        return len(0, n - 1);
-    }
+                for (int x = i; x <= j && len > 0; x++) {
+                    for (int y = x + 1; y <= j; y++) {
+                        if (letters.charAt(x) == letters.charAt(y)) {
+                            len = 0;
+                            break;
+                        }
+                    }
+                }
 
-    private int len(int s, int e) {
-        if (e - s < 1) { return e - s + 1; }
-        if (dp[s][e] > 0) { return dp[s][e]; }
-
-        int cnt[] = new int[26];
-
-        boolean valid = true;
-        for (int i = s; i <= e; i++) {
-            char c = chars[i];
-            cnt[c - 'a']++;
-            if (cnt[c - 'a'] > 1) {
-                valid = false;
-                break;
+                best = Math.max(best, len);
             }
         }
 
-        if (valid) {
-            dp[s][e] = e - s + 1;
-        } else {
-            dp[s][e] = Math.max(len(s + 1, e), len(s, e - 1));
-        }
-
-        return dp[s][e];
-    }
-
-    private void debug(Object... os) {
-        System.out.println(Arrays.deepToString(os));
+        return best;
     }
 }
