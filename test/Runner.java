@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ LonglongestPathTreeTest.class })
+@Suite.SuiteClasses({ MountainRangesTest.class })
 public class Runner {
 }
