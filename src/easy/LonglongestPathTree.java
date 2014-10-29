@@ -10,13 +10,32 @@ import java.io.*;
 public class LonglongestPathTree {
     int n = 0;
     Edge[] edges = null;
+    int[][] graph = null;
+    long[][] costs = null;
 
     public long getLength(int[] A, int[] B, int[] L) {
         n = A.length;
         edges = new Edge[n];
 
+        int[] cnt = new int[n + 1];
         for (int i = 0; i < n; i++) {
             edges[i] = new Edge(A[i], B[i], L[i]);
+            cnt[A[i]]++;
+            cnt[B[i]]++;
+        }
+
+        graph = new int[n + 1][];
+        costs = new long[n + 1][n + 1];
+        for (int i = 0; i < cnt.length; i++) {
+            graph[i] = new int[cnt[i]];
+        }
+
+        int[] indx = new int[n + 1];
+        for (Edge e : edges) {
+            graph[e.u][indx[e.u]++] = e.v;
+            graph[e.v][indx[e.v]++] = e.u;
+            costs[e.u][e.v] = e.cost;
+            costs[e.v][e.u] = e.cost;
         }
 
         long best = 0;
@@ -35,21 +54,26 @@ public class LonglongestPathTree {
 
         seen[node] = true;
 
+        Edge e = edges[skip];
         long n = node;
         long best = 0;
 
-        for (int i = 0; i < edges.length; i++) {
-            if (i == skip) { continue; }
+        for (int i = 0; i < graph[node].length; i++) {
+            if (node == e.u && graph[node][i] == e.v) {
+                continue;
+            }
+            if (node == e.v && graph[node][i] == e.u) {
+                continue;
+            }
+            if (seen[graph[node][i]]) {
+                continue;
+            }
 
-            long[] next = null;
-            if (edges[i].u == node && !seen[edges[i].v]) {
-                next = dfs(seen, edges[i].v, skip);
-            }
-            if (edges[i].v == node && !seen[edges[i].u]) {
-                next = dfs(seen, edges[i].u, skip);
-            }
-            if (next != null && next[1] + edges[i].cost > best) {
-                best = next[1] + edges[i].cost;
+            long[] next = dfs(seen, graph[node][i], skip);
+            long ecost = costs[node][graph[node][i]];
+
+            if (next != null && next[1] + ecost > best) {
+                best = next[1] + ecost;
                 n = next[0];
             }
         }
@@ -76,10 +100,6 @@ public class LonglongestPathTree {
             this.u = u;
             this.v = v;
             this.cost = cost;
-        }
-
-        public String toString() {
-            return u + ":" + v + "(" + cost + ")";
         }
     }
 }
