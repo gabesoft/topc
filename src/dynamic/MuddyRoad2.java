@@ -9,13 +9,8 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+555
 public class MuddyRoad2 {
   public static final int MOD = 555555555;
-  int W[] = null;
 
   public int theCount(int N, int muddyCount) {
-    W = new int[2 * N - muddyCount + 3];
-
-    Arrays.fill(W, -1);
-
     int cnt[][] = new int[muddyCount + 1][N - muddyCount + 3];
 
     for (int s = -1; s < cnt[0].length - 1; s++) {
@@ -41,17 +36,8 @@ public class MuddyRoad2 {
     return cnt[muddyCount][2];
   }
 
-  private int ways(int x) {
-    if (x == 0) { return 0; }
-    if (x == 1) { return 1; }
-    if (W[x] > -1) { return W[x]; }
-
-    W[x] = ways(x - 1) + ways(x - 2);
-    return W[x];
-  }
-
   private boolean even(int x) {
-    return x <= 0 || ways(x) % 2 == 0;
+    return x <= 0 || x % 3 == 0;
   }
 
   private void debug(Object... os) {
