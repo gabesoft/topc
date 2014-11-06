@@ -8,39 +8,33 @@ import java.io.*;
 // statement: http://community.topcoder.com/stat?c=problem_statement&pm=12146&rd=15174
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+552
 public class FoxPaintingBalls {
-    public long theMax(long R, long G, long B, int N) {
-        int mod = N % 3;
-        long x = Math.min(R, Math.min(G, B));
+  public long theMax(long R, long G, long B, long N) {
 
-        if (mod == 2) {
-            long y = (N - 2) / 3;
-            long t = 1 + y + 3 * y * (y + 1) / 2;
+    long sum = R + G + B;
+    long mod = N % 3;
+    long min = Math.min(R, Math.min(G, B));
+    long x = (N * (N + 1) / 2) / 3L;
 
-            return x / t;
-        }
-        if (mod == 0) {
-            long y = N / 3 - 1;
-            long t = 2 + 2 * y + 3 * y * (y + 1) / 2;
+    if (N == 1) { return sum; }
+    if (mod == 0 || mod == 2) { return min / x; }
 
-            return x / t;
-        }
+    long l = 0;
+    long r = sum;
+    long m = 0;
 
-        if (mod == 1) {
-            long y = (N - 1) / 3;
-            long t = 1 + 3 * y * (y + 1) / 2;
-            long t3 = t + (t - 1) + (t - 1);
-
-            long z = (R / t3) * 3;
-            long r = x - (R / t3) * t3;
-
-            debug(t, t3, z, r, 10010 / 4);
-            return z + r / t;
-        }
-
-        return -1;
+    while (l <= r) {
+      m = (l + r) / 2;
+      if (min / x >= m && sum - 3 * x * m >= m) {
+        l = m + 1;
+      } else {
+        r = m - 1;
+      }
     }
 
-    private void debug(Object... os) {
-        System.out.println(Arrays.deepToString(os));
-    }
+    return l - 1;
+  }
+
+  private void debug(Object... os) {
+    System.out.println(Arrays.deepToString(os));
+  }
 }
