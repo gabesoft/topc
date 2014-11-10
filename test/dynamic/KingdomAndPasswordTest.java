@@ -8,14 +8,14 @@ import topc.dynamic.*;
 public class KingdomAndPasswordTest {
     KingdomAndPassword kingdomandpassword = new KingdomAndPassword();
 
-    //@Test
+    @Test
     public void case1() {
         long oldPassword = 548L;
         int[] restrictedDigits = { 5, 1, 8 };
         assertEquals(485L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case2() {
         long oldPassword = 7777L;
         int[] restrictedDigits = { 4, 7, 4, 7 };
@@ -36,7 +36,7 @@ public class KingdomAndPasswordTest {
         assertEquals(127L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case5() {
         long oldPassword = 241529363573463L;
         int[] restrictedDigits = { 1, 4, 5, 7, 3, 9, 8, 1, 7, 6, 3, 2, 6, 4, 5 };
@@ -127,7 +127,7 @@ public class KingdomAndPasswordTest {
         assertEquals(426422414L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case18() {
         long oldPassword = 1985196L;
         int[] restrictedDigits = { 9, 9, 8, 5, 6, 1, 1 };
@@ -141,7 +141,7 @@ public class KingdomAndPasswordTest {
         assertEquals(4338746596458L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case20() {
         long oldPassword = 66259L;
         int[] restrictedDigits = { 5, 6, 9, 2, 6 };
@@ -169,7 +169,7 @@ public class KingdomAndPasswordTest {
         assertEquals(853353551L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case24() {
         long oldPassword = 7993235L;
         int[] restrictedDigits = { 9, 9, 3, 5, 3, 2, 7 };
@@ -197,14 +197,14 @@ public class KingdomAndPasswordTest {
         assertEquals(-1L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case28() {
         long oldPassword = 938394L;
         int[] restrictedDigits = { 9, 3, 3, 9, 4, 8 };
         assertEquals(899433L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case29() {
         long oldPassword = 8433L;
         int[] restrictedDigits = { 3, 8, 3, 4 };
@@ -218,7 +218,7 @@ public class KingdomAndPasswordTest {
         assertEquals(7999666554433311L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case31() {
         long oldPassword = 27799539L;
         int[] restrictedDigits = { 4, 1, 7, 7, 3, 6, 2, 9 };
@@ -239,7 +239,7 @@ public class KingdomAndPasswordTest {
         assertEquals(1395981945L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case34() {
         long oldPassword = 83L;
         int[] restrictedDigits = { 8, 4 };
@@ -281,7 +281,7 @@ public class KingdomAndPasswordTest {
         assertEquals(821112125356798L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case40() {
         long oldPassword = 659L;
         int[] restrictedDigits = { 5, 8, 8 };
@@ -295,7 +295,7 @@ public class KingdomAndPasswordTest {
         assertEquals(54342234547686L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case42() {
         long oldPassword = 64454L;
         int[] restrictedDigits = { 5, 4, 5, 3, 4 };
@@ -337,7 +337,7 @@ public class KingdomAndPasswordTest {
         assertEquals(174L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case48() {
         long oldPassword = 91296294L;
         int[] restrictedDigits = { 2, 3, 9, 7, 2, 2, 9, 4 };
@@ -365,7 +365,7 @@ public class KingdomAndPasswordTest {
         assertEquals(31488455542333L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case52() {
         long oldPassword = 9962L;
         int[] restrictedDigits = { 9, 6, 6, 5 };
@@ -379,21 +379,21 @@ public class KingdomAndPasswordTest {
         assertEquals(218876752414L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case54() {
         long oldPassword = 411L;
         int[] restrictedDigits = { 1, 2, 8 };
         assertEquals(411L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case55() {
         long oldPassword = 6646113L;
         int[] restrictedDigits = { 9, 6, 1, 2, 1, 6, 3 };
         assertEquals(6466311L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case56() {
         long oldPassword = 2952L;
         int[] restrictedDigits = { 2, 3, 5, 2 };
@@ -596,7 +596,7 @@ public class KingdomAndPasswordTest {
         assertEquals(-1L, kingdomandpassword.newPassword(oldPassword, restrictedDigits));
     }
 
-    //@Test
+    @Test
     public void case85() {
         long oldPassword = 3941L;
         int[] restrictedDigits = { 5, 9, 5, 5 };

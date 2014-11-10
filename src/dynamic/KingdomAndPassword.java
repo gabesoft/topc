@@ -14,6 +14,8 @@ public class KingdomAndPassword {
     int digits[] = null;
     int sorted[] = null;
     long old[][] = null;
+    long base[] = null;
+    long dp[][][] = null;
 
     public long newPassword(long oldPassword, int[] restrictedDigits) {
         ArrayList<Integer> dg = new ArrayList<Integer>();
@@ -46,40 +48,33 @@ public class KingdomAndPassword {
             }
         }
 
+        base = new long[n];
+
+        for (int k = 0; k < n; k++) {
+            base[k] = 1;
+            for (int i = k + 1; i < n; i++) {
+                base[k] *= 10;
+            }
+        }
+
+        dp = new long[1 << n][n][2];
+        for (long[][] d1 : dp) {
+            for (long[] d2 : d1) {
+                Arrays.fill(d2, -1);
+            }
+        }
+
+        debug(base);
         debug("OLD0", old[0], oldPassword);
         debug("OLD1", old[1], oldPassword);
 
         Arrays.sort(sorted);
         debug(digits, sorted, oldPassword);
 
-        //int next[] = new int[n];
-        //boolean taken[] = new boolean[n];
-        //for (int i = 0; i < n; i++) {
-        //int diff = 10;
-        //int digit = -1;
-
-        //for (int j = 0; j < n; j++) {
-        //if (restrictedDigits[i] == sorted[j] || taken[j]) {
-        //continue;
-        //}
-        //int d = Math.abs(digits[i] - sorted[j]);
-        //if (d < diff) {
-        //diff = d;
-        //digit = j;
-        //}
-        //}
-
-        //if (digit == -1) {
-        //debug(next, taken);
-        //return -1;
-        //} else {
-        //taken[digit] = true;
-        //next[i] = sorted[digit];
-        //}
-        //}
-
         long r1 = find(0, 1, 0);
         long r2 = find(0, 0, n - 1);
+
+        debug(r1, r2);
 
         if (Math.abs(oldPassword - r1) < Math.abs(oldPassword - r2)) {
             return r1;
@@ -87,6 +82,7 @@ public class KingdomAndPassword {
         if (Math.abs(oldPassword - r2) < Math.abs(oldPassword - r1)) {
             return r2;
         }
+
         return Math.min(r1, r2);
 
         //return find(0, n - 1);
@@ -95,14 +91,15 @@ public class KingdomAndPassword {
     private long find(int taken, int dir, int k) {
         if (k == -1) { return 0; }
         if (k == n) { return 0; }
+        if (dp[taken][k][dir] > -1) { return dp[taken][k][dir]; }
 
         long best = INF;
         long rest = -1;
 
-        long base = 1;
-        for (int i = k + 1; i < n; i++) {
-            base *= 10;
-        }
+        //long base = 1;
+        //for (int i = k + 1; i < n; i++) {
+            //base *= 10;
+        //}
 
         //debug(k, base);
 
@@ -117,7 +114,7 @@ public class KingdomAndPassword {
                 continue;
             }
 
-            long curr = dir == 0 ? next * 10 + sorted[i] : sorted[i] * base + next;
+            long curr = dir == 0 ? next * 10 + sorted[i] : sorted[i] * base[k] + next;
             long d = Math.abs(old[dir][k] - curr);
 
             //debug('F', k, curr, best, old[dir][k], d);
@@ -140,7 +137,7 @@ public class KingdomAndPassword {
             //}
         }
 
-        //debug(k, Integer.toBinaryString(taken), rest);
+        dp[taken][k][dir] = rest;
         return rest;
     }
 
