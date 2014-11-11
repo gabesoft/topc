@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.dynamic.*;
+import topc.test.geometry.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ KingdomAndPasswordTest.class })
+@Suite.SuiteClasses({ MinimalTriangleTest.class })
 public class Runner {
 }
