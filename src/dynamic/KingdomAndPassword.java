@@ -14,7 +14,7 @@ public class KingdomAndPassword {
   int digits[] = null;
   long old[][] = null;
   long base[] = null;
-  long dp[][][] = null;
+  long dp[][] = null;
 
   public long newPassword(long oldPassword, int[] restrictedDigits) {
     ArrayList<Integer> dg = new ArrayList<Integer>();
@@ -53,15 +53,13 @@ public class KingdomAndPassword {
       }
     }
 
-    dp = new long[1 << n][n][2];
-    for (long[][] d1 : dp) {
-      for (long[] d2 : d1) {
-        Arrays.fill(d2, -2);
-      }
+    dp = new long[1 << n][2];
+    for (long[] d2 : dp) {
+      Arrays.fill(d2, -2);
     }
 
-    long r1 = find(0, 1, 0);
-    long r2 = find(0, 0, n - 1);
+    long r1 = find(0, 1);
+    long r2 = find(0, 0);
 
     if (Math.abs(oldPassword - r1) < Math.abs(oldPassword - r2)) {
       return r1;
@@ -73,10 +71,12 @@ public class KingdomAndPassword {
     return Math.min(r1, r2);
   }
 
-  private long find(int taken, int dir, int k) {
+  private long find(int taken, int dir) {
+    int k = dir == 0 ? n - Integer.bitCount(taken) - 1 : Integer.bitCount(taken);
+
     if (k == -1) { return 0; }
     if (k == n) { return 0; }
-    if (dp[taken][k][dir] > -2) { return dp[taken][k][dir]; }
+    if (dp[taken][dir] > -2) { return dp[taken][dir]; }
 
     long best = INF;
     long rest = -1;
@@ -86,7 +86,7 @@ public class KingdomAndPassword {
         continue;
       }
 
-      long next = find(taken | (1 << i), dir, dir == 0 ? k - 1 : k + 1);
+      long next = find(taken | (1 << i), dir);
 
       if (next == -1) {
         continue;
@@ -104,7 +104,7 @@ public class KingdomAndPassword {
       }
     }
 
-    dp[taken][k][dir] = rest;
+    dp[taken][dir] = rest;
     return rest;
   }
 
