@@ -11,44 +11,23 @@ public class BoardSplitting {
   public int minimumCuts(int desiredLength, int desiredCount, int actualLength) {
     if (desiredLength == actualLength) { return 0; }
 
-    if (desiredLength < actualLength) {
-      int cuts = 0;
-      int curr = 0;
-      while (desiredCount > 0) {
-        if (curr == desiredLength) {
-          curr = 0;
-          desiredCount--;
-        } else if (curr > desiredLength) {
-          curr -= desiredLength;
-          cuts++;
-          desiredCount--;
-        } else {
-          cuts++;
-          curr += (actualLength - desiredLength);
-          desiredCount--;
-        }
+    int cuts = 0;
+    int curr = 0;
+
+    while (desiredCount > 0) {
+      if (curr == desiredLength) {
+        curr = actualLength;
+        desiredCount--;
+      } else if (curr > desiredLength) {
+        cuts++;
+        curr -= desiredLength;
+        desiredCount--;
+      } else {
+        curr += actualLength;
       }
-
-      return cuts;
-    } else {
-      int cuts = 0;
-      int curr = 0;
-
-      while (desiredCount > 0) {
-        if (curr == desiredLength) {
-          curr = 0;
-          desiredCount--;
-        } else if (curr > desiredLength) {
-          curr -= desiredLength;
-          cuts++;
-          desiredCount--;
-        } else {
-          curr += actualLength;
-        }
-      }
-
-      return cuts;
     }
+
+    return cuts;
   }
 
   private void debug(Object... os) {
