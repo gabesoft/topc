@@ -15,7 +15,7 @@ public class WorkingRabbits {
 
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
-                P += (int)(profit[i].charAt(j) - '0');
+                P += (profit[i].charAt(j) - '0');
             }
         }
 
