@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.simulation.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ AntsMeetTest.class })
+@Suite.SuiteClasses({ NonXorLifeTest.class })
 public class Runner {
 }
