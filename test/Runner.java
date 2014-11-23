@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PatrolRouteTest.class })
+@Suite.SuiteClasses({ StrangeDictionaryTest.class })
 public class Runner {
 }
