@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.simulation.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ NonXorLifeTest.class })
+@Suite.SuiteClasses({ RandomColoringDiv2Test.class })
 public class Runner {
 }
