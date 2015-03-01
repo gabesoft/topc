@@ -9,30 +9,16 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+647
 public class BuildingTowersEasy {
     public int maxHeight(int N, int[] x, int[] t) {
-        int[] H = new int[N];
+        int[] H  = new int[N];
+        int best = 0;
 
         for (int i = 0; i < N; i++) {
             H[i] = i;
-        }
 
-        for (int i = 0; i < x.length; i++) {
-            int j = x[i] - 1;
-            int h = t[i];
-            int d = j - h;
-
-            for (int k = 0; k < N; k++) {
-                if (k == j) {
-                    H[k] = Math.min(H[k], h);
-                } else if (k > j) {
-                    H[k] = Math.min(H[k], k - d);
-                } else {
-                    H[k] = Math.min(H[k], k - (d - 2 * (j - k)));
-                }
+            for (int j = 0; j < x.length; j++) {
+                H[i] = Math.min(H[i], t[j] + Math.abs(i - (x[j] - 1)));
             }
-        }
 
-        int best = 0;
-        for (int i = 0; i < N; i++) {
             best = Math.max(best, H[i]);
         }
 
