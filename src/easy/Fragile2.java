@@ -9,11 +9,9 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+648
 public class Fragile2 {
     public int countPairs(String[] graph) {
-        int n = graph.length;
-        HashSet<String> set = new HashSet<String>();
-
         int cc  = countConnectedComponents(graph, -1, -1);
         int cnt = 0;
+        int n   = graph.length;
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
