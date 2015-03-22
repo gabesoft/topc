@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.search.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheFootballDivTwoTest.class })
+@Suite.SuiteClasses({ TheConsecutiveIntegersDivOneTest.class })
 public class Runner {
 }
