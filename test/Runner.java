@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.search.*;
+import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ConnectingCarsTest.class })
+@Suite.SuiteClasses({ DecipherabilityEasyTest.class })
 public class Runner {
 }
