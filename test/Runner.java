@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TaroJiroDividingTest.class })
+@Suite.SuiteClasses({ TaroFillingAStringDiv2Test.class })
 public class Runner {
 }
