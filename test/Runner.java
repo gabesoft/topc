@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ TheKingsRoadsDiv2Test.class })
+@Suite.SuiteClasses({ ValueOfStringTest.class })
 public class Runner {
 }
