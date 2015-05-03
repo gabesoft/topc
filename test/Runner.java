@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ThePermutationGameTest.class })
+@Suite.SuiteClasses({ CountryGroupTest.class })
 public class Runner {
 }
