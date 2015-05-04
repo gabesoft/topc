@@ -17,7 +17,7 @@ public class CountryGroup {
             if (left > 0 && a[i] != prev) {
                 return -1;
             }
-            if (left ==  0) {
+            if (left == 0) {
                 prev = a[i];
                 left = a[i] - 1;
                 cnt++;
