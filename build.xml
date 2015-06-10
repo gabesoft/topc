@@ -18,7 +18,6 @@
   <property name="test.suite" value="topc.test.Runner" />
   <property name="junit.fork" value="true" />
   <property name="junit.forkmode" value="once" />
-  <property name="junit.jar" location="env.JUNIT_HOME/junit-4.8.2.jar" />
 
   <path id="classpath.compile">
     <fileset dir="${dir.lib}">
