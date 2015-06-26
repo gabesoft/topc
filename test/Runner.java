@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ModModModTest.class })
+@Suite.SuiteClasses({ CycleminTest.class })
 public class Runner {
 }
