@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ PoweritTest.class })
+@Suite.SuiteClasses({ CoverstaTest.class })
 public class Runner {
 }
