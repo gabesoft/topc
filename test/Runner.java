@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ CycleminTest.class })
+@Suite.SuiteClasses({ PrivateD2partyTest.class })
 public class Runner {
 }
