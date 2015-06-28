@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ CoverstaTest.class })
+@Suite.SuiteClasses({ InfiniteStringTest.class })
 public class Runner {
 }
