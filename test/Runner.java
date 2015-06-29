@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.sorting.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ BridgeBuildingDiv2Test.class })
+@Suite.SuiteClasses({ ColorfulLineGraphsDiv2Test.class })
 public class Runner {
 }
