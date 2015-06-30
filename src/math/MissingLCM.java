@@ -9,72 +9,53 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+661
 public class MissingLCM {
     public int getMin(int N) {
-        if (N == 1) { return 2; }
+        // if (N == 1) { return 2; }
 
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        int[] primes = getPrimes(N);
+        int M = 2;
 
-        for (int i = 2; i <= N; i++) {
-            addPrimes(i, map);
+        for (int p : primes) {
+            if (p == 0) { break; }
+
+            int max = 0;
+            int i = p;
+            while (i <= N) {
+                max = Math.max(max, getExponent(i, p));
+                i += p;
+            }
+            while (getExponent(i, p) < max) {
+                i += p;
+            }
+
+            M = Math.max(M, i);
         }
 
-        int M = 1;
-        while (map.size() > 0) {
-            removePrimes(N + M++, map);
-        }
-
-        return N + M - 1;
+        return M;
     }
 
-    private void removePrimes(int x, HashMap<Integer, Integer> map) {
-        for (int p = 2; p <= x / p; p++) {
-            if (x % p == 0) {
-                int cnt = 0;
-
-                while (x % p == 0) {
-                    cnt++;
-                    x /= p;
-                }
-
-                if (map.containsKey(p) && map.get(p) <= cnt) {
-                    map.remove(p);
-                }
-            }
+    private int getExponent(int x, int p) {
+        int exp = 0;
+        while (x % p == 0) {
+            exp++;
+            x /= p;
         }
-
-        if (x > 1) {
-            if (map.containsKey(x) && map.get(x) <= 1) {
-                map.remove(x);
-            }
-        }
+        return exp;
     }
 
-    private void addPrimes(int x, HashMap<Integer, Integer> map) {
-        for (int p = 2; p <= x / p; p++) {
-            if (x % p == 0) {
-                int cnt = 0;
+    private int[] getPrimes(int n) {
+        int[] res = new int[80000];
+        int j = 0;
+        boolean[] composite = new boolean[n + 1];
 
-                while (x % p == 0) {
-                    cnt++;
-                    x /= p;
+        for (int p = 2; p <= n; p++) {
+            if (!composite[p]) {
+                for (int i = p + p; i <= n; i += p) {
+                    composite[i] = true;
                 }
-
-                if (!map.containsKey(p)) {
-                    map.put(p, 0);
-                }
-
-                map.put(p,  Math.max(map.get(p), cnt));
+                res[j++] = p;
             }
         }
 
-        if (x > 1) {
-            if (!map.containsKey(x)) {
-                map.put(x, 0);
-            }
-            map.put(x, Math.max(map.get(x), 1));
-        }
-    }
-
-    private void debug(Object... os) {
-        System.out.println(Arrays.deepToString(os));
+        return res;
     }
 }
