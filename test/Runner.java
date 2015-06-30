@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ ColorfulLineGraphsDiv2Test.class })
+@Suite.SuiteClasses({ MissingLCMTest.class })
 public class Runner {
 }
