@@ -4,9 +4,9 @@ import junit.framework.Test;
 import junit.framework.TestSuite;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
-import topc.test.easy.*;
+import topc.test.math.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ RandomPancakeStackDiv2Test.class })
+@Suite.SuiteClasses({ PermutationCountsDiv2Test.class })
 public class Runner {
 }
