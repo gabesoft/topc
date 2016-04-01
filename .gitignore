@@ -8,3 +8,4 @@ out*.doc
 tmp*
 junitwatcher*
 .#*
+workbench.xmi

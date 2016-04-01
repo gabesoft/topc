@@ -50,6 +50,7 @@ public class SegmentsAndPoints {
         return false;
     }
 
+    @SuppressWarnings("unused")
     private void debug(Object... os) {
         System.out.println(Arrays.deepToString(os));
     }
