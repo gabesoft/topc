@@ -9,11 +9,31 @@ import java.io.*;
 // editorial: http://apps.topcoder.com/wiki/display/tc/SRM+686
 public class BracketSequenceDiv1 {
     public long count(String s) {
-        return 0L;
+        int n = s.length();
+        long[][] d = new long[n + 1][n + 1];
+
+        for (int i = 0; i <= n; i++) {
+            d[i][i] = 1;
+        }
+
+        for (int len = 1; len <= n; len++) {
+            for (int i = 0; i + len <= n; i++) {
+                int j = i + len;
+
+                d[i][j] = d[i + 1][j];
+
+                for (int k = i + 1; k < j; k++) {
+                    if (pairs(s.charAt(i), s.charAt(k))) {
+                        d[i][j] += d[i + 1][k] * d[k + 1][j];
+                    }
+                }
+            }
+        }
+
+        return d[0][n] - 1;
     }
 
-    @SuppressWarnings("unused")
-    private void debug(Object... os) {
-        System.out.println(Arrays.deepToString(os));
+    boolean pairs(char l, char r) {
+        return (l == '(' && r == ')') || (l == '[' && r == ']');
     }
 }
