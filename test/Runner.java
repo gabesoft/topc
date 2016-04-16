@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.easy.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ SegmentTreeTest.class })
+@Suite.SuiteClasses({ AdditiveNumberTest.class })
 public class Runner {
 }
