@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.codility.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ FibFrogTest.class })
+@Suite.SuiteClasses({ MinMaxDivisionTest.class })
 public class Runner {
 }
