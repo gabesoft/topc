@@ -9,23 +9,9 @@ import java.util.*;
 public class FibFrog {
     final Integer[] FIB  =  new Integer[] {0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,1597,2584,4181,6765,10946,17711,28657,46368,75025,121393,196418,317811,514229,832040,1346269};
     final int MAX = 2 << 29;
-    int[] cache;
-    boolean[] fib;
 
     public int solution(int[] A) {
-        int n = A.length;
-        cache = new int[n + 1];
-        fib = new boolean[FIB[FIB.length  -  1] + 1];
-
-        Arrays.fill(cache, -1);
-
-        for (int i = 0; i < FIB.length; i++) {
-            fib[FIB[i]] = true;
-        }
-
-        // int min = run(A, -1);
         int min = iter(A);
-
         return min >= MAX ? -1 : min;
     }
 
@@ -48,30 +34,4 @@ public class FibFrog {
         return best[n];
     }
 
-    private int run(int[] A, int s) {
-        int n = A.length;
-
-        if (fib[n - s]) {
-            return 1;
-        }
-
-        int key = s + 1;
-
-        if (cache[key] > -1) { return cache[key]; }
-
-        int best = MAX;
-        for (int i = s + 1; i < n; i++) {
-            if (A[i] == 1 && fib[i - s]) {
-                best = Math.min(best, 1 + run(A, i));
-            }
-        }
-
-        cache[key] = best;
-
-        return best;
-    }
-
-    private void debug(Object... os) {
-        System.out.println(Arrays.deepToString(os));
-    }
 }
