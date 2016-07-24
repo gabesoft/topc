@@ -43,7 +43,7 @@ public class UnitsMoving {
     for (int i = 0; i < n; i++) {
       Arrays.fill(seen, false);
       if (!dfs(i, cutoff, seen, parent)) {
-        match = false; 
+        match = false;
         break;
       }
     }

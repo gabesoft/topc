@@ -77,12 +77,12 @@ public class BuildingTowers {
         }
 
         @Override
-		public int compareTo(Lim o) {
+    public int compareTo(Lim o) {
             return this.x - o.x;
         }
 
         @Override
-		public String toString() {
+    public String toString() {
             return "(" + x + ", " + t + ")";
         }
     }
