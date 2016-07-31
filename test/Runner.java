@@ -7,6 +7,6 @@ import org.junit.runners.Suite;
 import topc.test.codility.*;
 
 @RunWith(Suite.class)
-@Suite.SuiteClasses({ NailingPlanksTest.class })
+@Suite.SuiteClasses({ MinAbsSumTest.class })
 public class Runner {
 }
